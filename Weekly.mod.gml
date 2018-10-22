@@ -1,5 +1,6 @@
 #define init
 trace("Current Weekly:#Mods=Compressing Fist#Character=Fish#Crown=Blood#Weapon=Shotgun");
+global.seed = 0;
 while(!mod_sideload()){wait 1;}
 global.modNum = 1;
 var i = 0;
@@ -24,6 +25,31 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Compressing Fist", "Weeklies/Compressing Fist.mod.gml");
-while (!file_loaded("Weeklies/Compressing Fist.mod.gml")) {wait 1;}
-mod_load("Weeklies/weekly.mod.gml");
+file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Compressing Fist.skill.gml", "Weeklies/Compressing Fist.skill.gml");
+while (!file_loaded("Weeklies/Compressing Fist.skill.gml")) {wait 1;}
+mod_load("Weeklies/Compressing Fist.skill.gml");
+
+#define step
+with(Player){
+	if(button_check(index, "talk")){
+		mod_unload(mod_current);
+	}
+}
+with(CharSelect){race="fish";}
+#define draw_pause
+var i = 0;
+repeat(4){
+	if(button_check(i, "talk")){
+		mod_unload(mod_current);
+	}
+	i++
+}
+#define game_start
+game_set_seed(global.seed);
+with(Player){
+	wep = wep_shotgun;
+	bwep = wep_none;
+}
+with(GameCont){
+	crown = crwn_blood;
+}
