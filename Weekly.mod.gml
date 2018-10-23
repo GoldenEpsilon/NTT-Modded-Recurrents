@@ -7,6 +7,11 @@ Crown=Blood
 Weapon=Shotgun");
 global.qualified = true;
 global.alias = "";
+global.seed = 0;
+global.start = true;
+while(!mod_sideload()){wait 1;}
+global.qualified = true;
+global.alias = "";
 with(Player){
 	instance_destroy();
 	global.qualified = false;
@@ -17,9 +22,6 @@ with(Revive){
 	global.qualified = false;
 	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
 }
-global.seed = 0;
-global.start = true;
-while(!mod_sideload()){wait 1;}
 global.modNum = 1;
 var i = 0;
 for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
@@ -82,6 +84,8 @@ if(global.qualified && !instance_exists(Player) && !instance_exists(Menu)){
 		score = global.alias + ": " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills:" + string(kills);
 	}
 	trace(score);
+	string_save(score, "weekly.txt");
+	file_upload(global.alias + " weekly.txt", "https://www.dropbox.com/request/f9R3fVJC4PEV3jWcwAgY")
 }
 #define draw_pause
 //Anti-Cheat
