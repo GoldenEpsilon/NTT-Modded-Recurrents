@@ -53,7 +53,7 @@ game_set_seed(global.seed);
 with(Player){
 	wep = 5;
 	ammo = [0,0,0,0,0];
-	repeat(3){instance_create(AmmoPickup,x,y)}
+	if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(AmmoPickup,x,y)}exit;}
 }
 with(GameCont){
 	crown = crwn_blood;
