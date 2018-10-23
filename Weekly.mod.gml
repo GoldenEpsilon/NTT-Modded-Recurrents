@@ -6,6 +6,7 @@ Character=Fish
 Crown=Blood
 Weapon=Shotgun");
 global.qualified = true;
+global.alias = "";
 with(Player){
 	instance_delete();
 	global.qualified = false;
@@ -57,6 +58,7 @@ repeat(4){
 	i++
 }
 if(global.start){
+	global.alias = "";
 	with(Player){
 		wep = 5;
 		ammo[0] = 0;
@@ -66,13 +68,19 @@ if(global.start){
 		ammo[4] = 0;
 		ammo[5] = 0;
 		if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(x,y,AmmoPickup)}exit;}
+		if(global.alias != ""){
+			global.alias += ", "
+		}
+		global.alias += alias;
 	}
 	global.start = false;
 }
 with(CharSelect){race="fish";}
 if(global.qualified && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
-	with(GameCont){score = area + "-" subarea + " L" + loops + " Kills:" + kills + " Cause Of Death:" + deathcause;}
+	with(GameCont){
+		score = global.alias + ": " + area + "-" subarea + " L" + loops + " Kills:" + kills + " Cause Of Death:" + deathcause;
+	}
 	trace(score);
 }
 #define draw_pause
