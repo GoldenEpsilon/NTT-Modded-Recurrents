@@ -25,9 +25,9 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Compressing Fist.skill.gml", "Weeklies/Compressing Fist.skill.gml");
-while (!file_loaded("Weeklies/Compressing Fist.skill.gml")) {wait 1;}
-mod_load("Weeklies/Compressing Fist.skill.gml");
+file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Compressing Fist.skill.gml", "Compressing Fist.skill.gml");
+while (!file_loaded("Compressing Fist.skill.gml")) {wait 1;}
+mod_load("data/Weekly.mod/Compressing Fist.skill.gml");
 
 #define step
 with(Player){
@@ -53,3 +53,5 @@ with(Player){
 with(GameCont){
 	crown = crwn_blood;
 }
+#define cleanup
+file_delete("Weeklies/Weekly.mod.gml");
