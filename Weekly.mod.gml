@@ -8,12 +8,12 @@ Weapon=Shotgun");
 global.qualified = true;
 global.alias = "";
 with(Player){
-	instance_delete();
+	instance_destroy();
 	global.qualified = false;
 	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
 }
 with(Revive){
-	instance_delete();
+	instance_destroy();
 	global.qualified = false;
 	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
 }
