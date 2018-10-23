@@ -3,6 +3,7 @@ trace("Current Weekly:#Mods=Compressing Fist#Character=Fish#Crown=Blood#Weapon=S
 global.seed = 0;
 while(!mod_sideload()){wait 1;}
 global.modNum = 1;
+global.start = true;
 var i = 0;
 for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
 	if(mod_get_names("mod")[i] != mod_current){mod_unload(mod_get_names("mod")[i]);}
@@ -38,6 +39,19 @@ repeat(4){
 	}
 	i++
 }*/
+if(global.start){
+	with(Player){
+		wep = 5;
+		ammo[0] = 0;
+		ammo[1] = 0;
+		ammo[2] = 0;
+		ammo[3] = 0;
+		ammo[4] = 0;
+		ammo[5] = 0;
+		if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(x,y,AmmoPickup)}exit;}
+	}
+	global.start = false;
+}
 with(CharSelect){race="fish";}
 #define draw_pause
 //Anti-Cheat
@@ -50,16 +64,7 @@ repeat(4){
 }*/
 #define game_start
 game_set_seed(global.seed);
-with(Player){
-	wep = 5;
-	ammo[0] = 0;
-	ammo[1] = 0;
-	ammo[2] = 0;
-	ammo[3] = 0;
-	ammo[4] = 0;
-	ammo[5] = 0;
-	if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(x,y,AmmoPickup)}exit;}
-}
+global.start = true;
 with(GameCont){
 	crown = crwn_blood;
 }
