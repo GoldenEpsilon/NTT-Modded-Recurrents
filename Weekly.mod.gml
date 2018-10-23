@@ -5,6 +5,17 @@ Mods=Compressing Fist
 Character=Fish
 Crown=Blood
 Weapon=Shotgun");
+global.qualified = true;
+with(Player){
+	instance_delete();
+	global.qualified = false;
+	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+}
+with(Revive){
+	instance_delete();
+	global.qualified = false;
+	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+}
 global.seed = 0;
 global.start = true;
 while(!mod_sideload()){wait 1;}
@@ -37,13 +48,14 @@ mod_load("data/Weekly.mod/Compressing Fist.skill.gml");
 
 #define step
 //Anti-Cheat
-/*var i = 0;
+var i = 0;
 repeat(4){
 	if(button_check(i, "talk")){
-		mod_unload(mod_current);
+		global.qualified = false;
+		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
 	}
 	i++
-}*/
+}
 if(global.start){
 	with(Player){
 		wep = 5;
@@ -58,15 +70,21 @@ if(global.start){
 	global.start = false;
 }
 with(CharSelect){race="fish";}
+if(global.qualified && !instance_exists(Player) && !instance_exists(Menu)){
+	var score = "";
+	with(GameCont){score = area + "-" subarea + " L" + loops + " Kills:" + kills + " Cause Of Death:" + deathcause;}
+	trace(score);
+}
 #define draw_pause
 //Anti-Cheat
-/*var i = 0;
+var i = 0;
 repeat(4){
 	if(button_check(i, "talk")){
-		mod_unload(mod_current);
+		global.qualified = false;
+		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
 	}
 	i++
-}*/
+}
 #define game_start
 game_set_seed(global.seed);
 global.start = true;
