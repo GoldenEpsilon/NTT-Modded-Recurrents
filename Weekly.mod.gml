@@ -86,7 +86,7 @@ with(CharSelect){race="fish";}
 if(global.qualified && !global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills:" + string(kills);
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills);
 	}
 	trace(score);
 	file_download("http://yal.cc/ping", "ping.txt");
