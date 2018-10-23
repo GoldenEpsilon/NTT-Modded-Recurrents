@@ -52,7 +52,12 @@ repeat(4){
 game_set_seed(global.seed);
 with(Player){
 	wep = 5;
-	ammo = [0,0,0,0,0];
+	ammo[0] = 0;
+	ammo[1] = 0;
+	ammo[2] = 0;
+	ammo[3] = 0;
+	ammo[4] = 0;
+	ammo[5] = 0;
 	if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(AmmoPickup,x,y)}exit;}
 }
 with(GameCont){
