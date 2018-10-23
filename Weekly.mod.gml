@@ -9,6 +9,7 @@ global.qualified = false;
 global.alias = "";
 global.seed = 0;
 global.start = true;
+global.finished = false;
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -82,14 +83,16 @@ if(global.start){
 	global.start = false;
 }
 with(CharSelect){race="fish";}
-if(global.qualified && !instance_exists(Player) && !instance_exists(Menu)){
+if(global.qualified && !global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
 		score = global.alias + ": " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills:" + string(kills);
 	}
 	trace(score);
-	string_save(score, "weekly.txt");
-	file_upload(global.alias + " weekly.txt", "https://www.dropbox.com/request/f9R3fVJC4PEV3jWcwAgY")
+	file_download("http://yal.cc/ping", "ping.txt");
+	global.finished = true;
+	while (!file_loaded("ping.txt")) wait 1;
+	string_save(score, global.alias + " " + string_load("ping.txt") + " weekly.txt");
 }
 #define draw_pause
 //Anti-Cheat
@@ -104,6 +107,7 @@ if(global.qualified == true){
 	}
 }
 #define game_start
+global.finished = false;
 game_set_seed(global.seed);
 global.start = true;
 with(GameCont){
