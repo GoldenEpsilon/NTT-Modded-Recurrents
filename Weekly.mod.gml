@@ -1,9 +1,14 @@
 #define init
-trace("Current Weekly:#Mods=Compressing Fist#Character=Fish#Crown=Blood#Weapon=Shotgun");
+trace("
+Current Weekly:
+Mods=Compressing Fist
+Character=Fish
+Crown=Blood
+Weapon=Shotgun");
 global.seed = 0;
+global.start = true;
 while(!mod_sideload()){wait 1;}
 global.modNum = 1;
-global.start = true;
 var i = 0;
 for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
 	if(mod_get_names("mod")[i] != mod_current){mod_unload(mod_get_names("mod")[i]);}
