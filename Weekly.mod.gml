@@ -50,9 +50,13 @@ repeat(4){
 }*/
 #define game_start
 game_set_seed(global.seed);
+with(Player){
+	wep = 5;
+	ammo = [0,0,0,0,0];
+	repeat(3){instance_create(AmmoPickup,x,y)}
+}
 with(GameCont){
 	crown = crwn_blood;
-	proto = 0;
 }
 #define cleanup
 file_delete("Weeklies/Weekly.mod.gml");
