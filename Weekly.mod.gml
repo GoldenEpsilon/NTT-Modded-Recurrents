@@ -30,28 +30,29 @@ while (!file_loaded("Compressing Fist.skill.gml")) {wait 1;}
 mod_load("data/Weekly.mod/Compressing Fist.skill.gml");
 
 #define step
-with(Player){
-	if(button_check(index, "talk")){
-		mod_unload(mod_current);
-	}
-}
-with(CharSelect){race="fish";}
-#define draw_pause
-var i = 0;
+//Anti-Cheat
+/*var i = 0;
 repeat(4){
 	if(button_check(i, "talk")){
 		mod_unload(mod_current);
 	}
 	i++
-}
+}*/
+with(CharSelect){race="fish";}
+#define draw_pause
+//Anti-Cheat
+/*var i = 0;
+repeat(4){
+	if(button_check(i, "talk")){
+		mod_unload(mod_current);
+	}
+	i++
+}*/
 #define game_start
 game_set_seed(global.seed);
-with(Player){
-	wep = wep_shotgun;
-	bwep = wep_none;
-}
 with(GameCont){
 	crown = crwn_blood;
+	proto = 0;
 }
 #define cleanup
 file_delete("Weeklies/Weekly.mod.gml");
