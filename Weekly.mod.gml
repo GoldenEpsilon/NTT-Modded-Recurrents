@@ -5,22 +5,24 @@ Mods=Compressing Fist
 Character=Fish
 Crown=Blood
 Weapon=Shotgun");
-global.qualified = true;
+global.qualified = false;
 global.alias = "";
 global.seed = 0;
 global.start = true;
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
-with(Player){
-	instance_destroy();
-	global.qualified = false;
-	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
-}
-with(Revive){
-	instance_destroy();
-	global.qualified = false;
-	trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+if(global.qualified == true){
+	with(Player){
+		instance_destroy();
+		global.qualified = false;
+		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+	}
+	with(Revive){
+		instance_destroy();
+		global.qualified = false;
+		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+	}
 }
 global.modNum = 1;
 var i = 0;
@@ -52,12 +54,14 @@ mod_load("data/Weekly.mod/Compressing Fist.skill.gml");
 #define step
 //Anti-Cheat
 var i = 0;
-repeat(4){
-	if(button_check(i, "talk")){
-		global.qualified = false;
-		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+if(global.qualified == true){
+	repeat(4){
+		if(button_check(i, "talk")){
+			global.qualified = false;
+			trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+		}
+		i++
 	}
-	i++
 }
 if(global.start){
 	global.alias = "";
@@ -90,12 +94,14 @@ if(global.qualified && !instance_exists(Player) && !instance_exists(Menu)){
 #define draw_pause
 //Anti-Cheat
 var i = 0;
-repeat(4){
-	if(button_check(i, "talk")){
-		global.qualified = false;
-		trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+if(global.qualified == true){
+	repeat(4){
+		if(button_check(i, "talk")){
+			global.qualified = false;
+			trace("You are now disqualified from high scores. Reload the mod from the character select screen to qualify again.");
+		}
+		i++
 	}
-	i++
 }
 #define game_start
 game_set_seed(global.seed);
