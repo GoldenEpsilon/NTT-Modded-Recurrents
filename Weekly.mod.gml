@@ -58,7 +58,7 @@ with(Player){
 	ammo[3] = 0;
 	ammo[4] = 0;
 	ammo[5] = 0;
-	if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(AmmoPickup,x,y)}exit;}
+	if(fork()){while(instance_exists(GenCont)){wait 1;}repeat(3){instance_create(x,y,AmmoPickup)}exit;}
 }
 with(GameCont){
 	crown = crwn_blood;
