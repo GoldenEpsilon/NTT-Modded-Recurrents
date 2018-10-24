@@ -171,7 +171,7 @@ with(CharSelect){race=${CHARACTERS[$CHR]};}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "'"'""'"'";
 	with(GameCont){
-		score = global.alias + "'"'": Area "'"'" + string(area) + "'"'"-"'"'" + string(subarea) + "'"'" L"'"'" + string(loops) + "'"'" Kills: "'"'" + string(kills);
+		score = global.alias + "'"'": Area "'"'" + string(area) + "'"'"-"'"'" + string(subarea) + "'"'" L"'"'" + string(loops) + "'"'" Kills: "'"'" + string(kills) + "'"'" Mods:$MOD1, $MOD2, $MOD3, $MOD4, $MOD5"'"'" + "'"'" Character=${CHARACTERS[$CHR]}"'"'" + "'"'" Crown=${CROWNS[$CRW]}"'"'" + "'"'" Weapon=${WEAPONS[$WEP]}"'"'" + "'"'" Seed=$SEED"'"'";
 	}
 	trace(score);
 	global.finished = true;
