@@ -47,7 +47,7 @@ FILES=()
 DWL=""
 cd D:/Documents/NTT-Weekly/WeeklyModDecider
 IFS=$'\n'
-for line in $(< $MOD1);do
+for line in $(< $MOD1) $(< $MOD2) $(< $MOD3) $(< $MOD4) $(< $MOD5);do
 	if [ ${line:0:1} = "|" ]
 	then
 		DOWNLOADS+=("${line:1:${#line}-1}")
