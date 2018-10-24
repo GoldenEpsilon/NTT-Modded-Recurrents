@@ -1,0 +1,14 @@
+NTT MUTATIONS X10 JSBURG REDUX CHANGELOG
+-bolt marrow now has the x100 function for specifically meltings bolts
+-bloodlust has a 10/13 chance to proc rather than a 10/15 chance
+-stat mutations properly account for meltingx100 now
+-boiling veins uses boilcap instead of being janky
+-bossx10 and copsx10 no longer use siNGLE CASE SWITCH STATMENTS and have some minor optimizations
+-hyper crystal now has that universal oneshot, and only its crystals have the big lasers
+-eagle eyes x10 no longer decreases accuarcy every frame, and has laser homing (not the bendy kind)
+-extra feet x10 has a Qol change, you get bonus friction to go with the speed
+-most with x if y checks have been replaced with instances_matching things
+-fixed lucky shot giving you improper ammo, now gives normal ammo, with 10 times the chance, only melting gets 10 times the ammo
+-fixed open mind x10 not having random floors
+-loophpx10 now increases enemy health by 50% per loop instead of the old formula i cant quite describe properly
+-probably added time_scale support, might have missed a couple things

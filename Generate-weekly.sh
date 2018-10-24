@@ -198,5 +198,5 @@ with(GameCont){
 }
 " > Weekly.mod.gml
 git add Weekly.mod.gml
-git commit -am "Updated The Weekly"
+git commit -am "Automatically Updated The Weekly on "$DATE
 git push
