@@ -88,13 +88,12 @@ CRW=$[$RANDOM % ${#CROWNS[@]}]
 WEP=$[$RANDOM % ${#WEAPONS[@]}]
 echo -e "
 #define init
-trace("'"'"
-Current Weekly:
-Mods=$MOD1, $MOD2, $MOD3, $MOD4, $MOD5
-Character=${CHARACTERS[$CHR]}
-Crown=${CROWNS[$CRW]}
-Weapon=${WEAPONS[$WEP]}
-Seed=$SEED"'"'");
+trace("'"'"Current Weekly:"'"'");
+trace("'"'"Mods=$MOD1, $MOD2, $MOD3, $MOD4, $MOD5"'"'");
+trace("'"'"Character=${CHARACTERS[$CHR]}"'"'");
+trace("'"'"Crown=${CROWNS[$CRW]}"'"'");
+trace("'"'"Weapon=${WEAPONS[$WEP]}"'"'");
+trace("'"'"Seed=$SEED"'"'");
 global.qualified = false;
 global.alias = "'"'""'"'";
 global.seed = $SEED;
@@ -141,6 +140,7 @@ $DWL
 
 #define step
 if(global.qualified == true){
+	var i = 0;
 	repeat(4){
 		if(button_check(i, "'"'"talk"'"'")){
 			global.qualified = false;
@@ -179,8 +179,8 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 }
 #define draw_pause
 //Anti-Cheat
-var i = 0;
 if(global.qualified == true){
+	var i = 0;
 	repeat(4){
 		if(button_check(i, "'"'"talk"'"'")){
 			global.qualified = false;
