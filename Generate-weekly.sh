@@ -175,7 +175,13 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	trace(score);
 	global.finished = true;
-	string_save(score, global.alias + "'"'" $DATE weekly.txt"'"'");
+	if(file_exists(global.alias + "'"'" $DATE weekly.txt"'"'")){
+		prevScores = string_load(global.alias + "'"'" $DATE weekly.txt"'"'");
+		while(!file_loaded(global.alias + "'"'" $DATE weekly.txt"'"'")){wait 1;}
+		string_save(prevScores, global.alias + "'"'" $DATE weekly.txt"'"'");
+	}else{
+		string_save(score, global.alias + "'"'" $DATE weekly.txt"'"'");
+	}
 }
 #define draw_pause
 //Anti-Cheat
@@ -196,7 +202,7 @@ global.start = true;
 with(GameCont){
 	crown = ${CROWNS[$CRW]};
 }
-" > Weekly.mod.gml
-git add Weekly.mod.gml
-git commit -am "Automatically Updated The Weekly on "$DATE
-git push
+" | tee Weekly.mod.gml PreviousWeeklies/${DATE}-Weekly.mod.gml
+#git add Weekly.mod.gml
+#git commit -am "Automatically Updated The Weekly on "$DATE
+#git push
