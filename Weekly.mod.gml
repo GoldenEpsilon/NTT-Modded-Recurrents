@@ -2,14 +2,14 @@
 #define init
 trace("
 Current Weekly:
-Mods=MS Paint Shader, Lots O' Muts, NTT X10 Ver 1.0.1, Paper Mario, Bloom Shader
-Character=char_bigdog
-Crown=crwn_hatred
-Weapon=wep_slugger
-Seed=5654");
+Mods=MS Paint Shader, NTT X10 Ver 1.0.1, Level Balls, Lots O' Muts, Chaos Guns
+Character=char_venuz
+Crown=crwn_blood
+Weapon=wep_lightning_shotgun
+Seed=22044");
 global.qualified = false;
 global.alias = "";
-global.seed = 5654;
+global.seed = 22044;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -67,7 +67,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_slugger;
+		wep = wep_lightning_shotgun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -82,7 +82,7 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race="char_bigdog";}
+with(CharSelect){race="char_venuz";}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
@@ -109,6 +109,6 @@ global.finished = false;
 game_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_hatred;
+	crown = crwn_blood;
 }
 
