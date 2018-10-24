@@ -175,7 +175,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	trace(score);
 	global.finished = true;
-	string_save(score, global.alias + "'"'" "'"'" + $DATE + "'"'" weekly.txt"'"'");
+	string_save(score, global.alias + "'"'" $DATE weekly.txt"'"'");
 }
 #define draw_pause
 //Anti-Cheat

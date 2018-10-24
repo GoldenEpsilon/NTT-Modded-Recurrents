@@ -1,14 +1,14 @@
 
 #define init
 trace("Current Weekly:");
-trace("Mods=NTT X10 Ver 1.0.1, Paper Mario, Lots O' Muts, MS Paint Shader, Level Balls");
+trace("Mods=Freak Arena, Chaos Guns, Lots O' Muts, NTT X10 Ver 1.0.1, Paper Mario");
 trace("Character=char_robot");
-trace("Crown=crwn_guns");
-trace("Weapon=wep_golden_grenade_launcher");
-trace("Seed=31880");
+trace("Crown=crwn_haste");
+trace("Weapon=wep_triple_machinegun");
+trace("Seed=31734");
 global.qualified = false;
 global.alias = "";
-global.seed = 31880;
+global.seed = 31734;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -48,6 +48,20 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/freakarena.mod.gml"), string_trim("freakarena.mod.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Blunderbuss.wep.gml"), string_trim("Chaos Guns/Blunderbuss.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Blunderbuss.wep.gml"), string_trim("Chaos Guns/Super Blunderbuss.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Chaos Minigun.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Hyper Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Compressing Fist.skill.gml"), string_trim("Lots O' Muts/Compressing Fist.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Confidence.skill.gml"), string_trim("Lots O' Muts/Confidence.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Duplicators.skill.gml"), string_trim("Lots O' Muts/Duplicators.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Garment Regenerator.skill.gml"), string_trim("Lots O' Muts/Garment Regenerator.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Rocket Casings.skill.gml"), string_trim("Lots O' Muts/Rocket Casings.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Sloppy Fingers.skill.gml"), string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Steel Nerves.skill.gml"), string_trim("Lots O' Muts/Steel Nerves.skill.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Unstable DNA.skill.gml"), string_trim("Lots O' Muts/Unstable DNA.skill.gml"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"), string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));
@@ -119,16 +133,20 @@ file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-M
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Compressing Fist.skill.gml"), string_trim("Lots O' Muts/Compressing Fist.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Confidence.skill.gml"), string_trim("Lots O' Muts/Confidence.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Duplicators.skill.gml"), string_trim("Lots O' Muts/Duplicators.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Garment Regenerator.skill.gml"), string_trim("Lots O' Muts/Garment Regenerator.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Rocket Casings.skill.gml"), string_trim("Lots O' Muts/Rocket Casings.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Sloppy Fingers.skill.gml"), string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Steel Nerves.skill.gml"), string_trim("Lots O' Muts/Steel Nerves.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Unstable DNA.skill.gml"), string_trim("Lots O' Muts/Unstable DNA.skill.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdMSPaint.mod.gml"), string_trim("ShdMSPaint.mod.gml"));
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/LevelBalls.mod.gml"), string_trim("LevelBalls.mod.gml"));
+while (!file_loaded(string_trim("freakarena.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Blunderbuss.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Super Blunderbuss.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Chaos Minigun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Compressing Fist.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Confidence.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Duplicators.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Garment Regenerator.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Rocket Casings.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Steel Nerves.skill.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Lots O' Muts/Unstable DNA.skill.gml"))) {wait 1;}
 while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"))) {wait 1;}
 while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"))) {wait 1;}
 while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"))) {wait 1;}
@@ -200,16 +218,20 @@ while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_
 while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}
 while (!file_loaded(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}
 while (!file_loaded(string_trim("papermario.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Compressing Fist.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Confidence.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Duplicators.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Garment Regenerator.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Rocket Casings.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Steel Nerves.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Lots O' Muts/Unstable DNA.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("ShdMSPaint.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("LevelBalls.mod.gml"))) {wait 1;}
+mod_load(string_trim("data/Weekly.mod/freakarena.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Compressing Fist.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Confidence.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Duplicators.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Garment Regenerator.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Rocket Casings.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Sloppy Fingers.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Steel Nerves.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Unstable DNA.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));
@@ -249,16 +271,6 @@ mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/ultrax10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/utilitiesx10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/venuzx10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/papermario.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Compressing Fist.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Confidence.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Duplicators.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Garment Regenerator.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Rocket Casings.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Sloppy Fingers.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Steel Nerves.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Unstable DNA.skill.gml"));
-mod_load(string_trim("data/Weekly.mod/ShdMSPaint.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/LevelBalls.mod.gml"));
 
 
 #define step
@@ -275,7 +287,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_golden_grenade_launcher;
+		wep = wep_triple_machinegun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -298,7 +310,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	trace(score);
 	global.finished = true;
-	string_save(score, global.alias + " " + 2018-10-23 + " weekly.txt");
+	string_save(score, global.alias + " 2018-10-23 weekly.txt");
 }
 #define draw_pause
 //Anti-Cheat
@@ -317,6 +329,6 @@ global.finished = false;
 game_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_guns;
+	crown = crwn_haste;
 }
 
