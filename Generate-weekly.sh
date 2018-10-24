@@ -167,7 +167,7 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race="'"'"${CHARACTERS[$CHR]}"'"'";}
+with(CharSelect){race=${CHARACTERS[$CHR]};}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "'"'""'"'";
 	with(GameCont){

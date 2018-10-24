@@ -2,14 +2,14 @@
 #define init
 trace("
 Current Weekly:
-Mods=MS Paint Shader, NTT X10 Ver 1.0.1, Level Balls, Lots O' Muts, Chaos Guns
-Character=char_venuz
-Crown=crwn_blood
-Weapon=wep_lightning_shotgun
-Seed=22044");
+Mods=Chaos Guns, Bloom Shader, Paper Mario, Level Balls, MS Paint Shader
+Character=char_fish
+Crown=crwn_curses
+Weapon=wep_super_flak_cannon
+Seed=15754");
 global.qualified = false;
 global.alias = "";
-global.seed = 22044;
+global.seed = 15754;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -49,9 +49,21 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdMSPaint.mod.gml"), string_trim("ShdMSPaint.mod.gml"));
-while (!file_loaded(string_trim("ShdMSPaint.mod.gml"))) {wait 1;}
-mod_load(string_trim("data/Weekly.mod/ShdMSPaint.mod.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Blunderbuss.wep.gml"), string_trim("Chaos Guns/Blunderbuss.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Blunderbuss.wep.gml"), string_trim("Chaos Guns/Super Blunderbuss.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Chaos Minigun.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"));
+file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Hyper Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+while (!file_loaded(string_trim("Chaos Guns/Blunderbuss.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Super Blunderbuss.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Chaos Minigun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"))) {wait 1;}
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Hyper Chaos Minigun.wep.gml"));
 
 
 #define step
@@ -67,7 +79,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_lightning_shotgun;
+		wep = wep_super_flak_cannon;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -82,7 +94,7 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race="char_venuz";}
+with(CharSelect){race=char_fish;}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
@@ -109,6 +121,6 @@ global.finished = false;
 game_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_blood;
+	crown = crwn_curses;
 }
 
