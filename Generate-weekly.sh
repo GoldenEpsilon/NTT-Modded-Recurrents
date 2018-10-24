@@ -1,7 +1,6 @@
 #!/bin/sh
 cd D:/Documents/NTT-Weekly
 DATE=`date +%Y-%m-%d`
-cat Weekly.mod.gml > PreviousWeeklies/${DATE}Weekly.mod.gml
 cd D:/Documents/NTT-Weekly/WeeklyModDecider
 RAND=$(shuf -en 1 *)
 cd D:/Documents/NTT-Weekly
@@ -176,14 +175,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	trace(score);
 	global.finished = true;
-	if(!file_exists(global.alias + "'"'" 2018-10-23 weekly.txt"'"'")){
-		string_save(score, global.alias + "'"'" 2018-10-23 weekly.txt"'"'");
-	}else{
-		compScore = string_load(global.alias + "'"'" 2018-10-23 weekly.txt"'"'");
-		while(!file_loaded()){wait 1;}
-		string_save(compScore + "'"'"
-"'"'" + score, global.alias + "'"'" 2018-10-23 weekly.txt"'"'");
-	}
+	string_save(score, global.alias + "'"'" $DATE weekly.txt"'"'");
 }
 #define draw_pause
 //Anti-Cheat
