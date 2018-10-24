@@ -310,6 +310,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	trace(score);
 	global.finished = true;
+	if(file_exists(global.alias + " 2018-10-23 weekly.txt")){
+		temp = string_load(global.alias + " 2018-10-23 weekly.txt");
+		while(!file_loaded(global.alias + " 2018-10-23 weekly.txt")){wait 1;}
+		score = temp + "
+" + score;
+	}
 	string_save(score, global.alias + " 2018-10-23 weekly.txt");
 }
 #define draw_pause
