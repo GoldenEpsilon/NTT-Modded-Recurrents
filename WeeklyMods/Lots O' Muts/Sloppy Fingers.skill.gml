@@ -37,7 +37,7 @@ with Player {
 				//drop weapon
 				with instance_create(x,y,ThrownWep){
 					motion_set(random_range(0,360), random_range(-4,0)+8);
-					team = other.team
+					team = other.team;
 					creator = other.team; 
 					wep = other.wep;
 					sprite_index = weapon_get_sprite(wep);
