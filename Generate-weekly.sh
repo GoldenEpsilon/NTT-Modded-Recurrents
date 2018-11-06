@@ -199,6 +199,7 @@ if(global.qualified == true){
 #define game_start
 global.finished = false;
 game_set_seed(global.seed);
+random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
 	crown = ${CROWNS[$CRW]};
