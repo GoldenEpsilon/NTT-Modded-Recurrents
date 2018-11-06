@@ -77,7 +77,7 @@ do
 done
 for i in ${DOWNLOADS[@]}
 do
-	DWL+="while (!file_loaded(string_trim("'"'$i'"'"))) {wait 1;}"$'\n'
+	DWL+="wait(file_load(string_trim("'"'$i'"'")));"$'\n'
 done
 for i in ${MODS[@]}
 do
@@ -88,18 +88,18 @@ CRW=$[$RANDOM % ${#CROWNS[@]}]
 WEP=$[$RANDOM % ${#WEAPONS[@]}]
 echo -e "
 #define init
-trace("'"'"Current Weekly:"'"'");
-trace("'"'"Mods=$MOD1, $MOD2, $MOD3, $MOD4, $MOD5"'"'");
-trace("'"'"Character=${CHARACTERS[$CHR]}"'"'");
-trace("'"'"Crown=${CROWNS[$CRW]}"'"'");
-trace("'"'"Weapon=${WEAPONS[$WEP]}"'"'");
-trace("'"'"Seed=$SEED"'"'");
 global.qualified = false;
 global.alias = "'"'""'"'";
 global.seed = $SEED;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
+trace("'"'"Current Weekly:"'"'");
+trace("'"'"Mods=$MOD1, $MOD2, $MOD3, $MOD4, $MOD5"'"'");
+trace("'"'"Character=${CHARACTERS[$CHR]}"'"'");
+trace("'"'"Crown=${CROWNS[$CRW]}"'"'");
+trace("'"'"Weapon=${WEAPONS[$WEP]}"'"'");
+trace("'"'"Seed=$SEED"'"'");
 global.qualified = true;
 global.alias = "'"'""'"'";
 if(global.qualified == true){
@@ -203,6 +203,6 @@ with(GameCont){
 	crown = ${CROWNS[$CRW]};
 }
 " | tee Weekly.mod.gml PreviousWeeklies/${DATE}-Weekly.mod.gml
-#git add Weekly.mod.gml
-#git commit -am "Automatically Updated The Weekly on "$DATE
-#git push
+git add Weekly.mod.gml
+git commit -am "Automatically Updated The Weekly on "$DATE
+git push
