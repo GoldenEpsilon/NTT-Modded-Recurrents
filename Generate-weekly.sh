@@ -73,7 +73,7 @@ done
 cd D:/Documents/NTT-Weekly
 for i in ${DOWNLOADS[@]}
 do
-	DWL+="file_download(string_trim("'"'"https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/"$i'"'"), string_trim("'"'$i'"'"));"$'\n'
+	DWL+="file_delete(string_trim("'"'$i'"'"));while (file_exists(string_trim("'"'$i'"'"))) {wait 1;}file_download(string_trim("'"'"https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/"$i'"'"), string_trim("'"'$i'"'"));"$'\n'
 done
 DWL+="wait(5);"$'\n'
 for i in ${DOWNLOADS[@]}
