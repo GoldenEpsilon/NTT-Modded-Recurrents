@@ -129,6 +129,7 @@ file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-M
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/shdFuzzy.mod.gml"), string_trim("shdFuzzy.mod.gml"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml"));
 file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bcannon.wep.gml"), string_trim("bcannon.wep.gml"));
+wait(5);
 wait(file_load(string_trim("Lots O' Muts/Compressing Fist.skill.gml")));
 wait(file_load(string_trim("Lots O' Muts/Confidence.skill.gml")));
 wait(file_load(string_trim("Lots O' Muts/Duplicators.skill.gml")));

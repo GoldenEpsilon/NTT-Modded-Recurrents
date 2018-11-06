@@ -75,6 +75,7 @@ for i in ${DOWNLOADS[@]}
 do
 	DWL+="file_download(string_trim("'"'"https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/"$i'"'"), string_trim("'"'$i'"'"));"$'\n'
 done
+DWL+="wait(5);"$'\n'
 for i in ${DOWNLOADS[@]}
 do
 	DWL+="wait(file_load(string_trim("'"'$i'"'")));"$'\n'
