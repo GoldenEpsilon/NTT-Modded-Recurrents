@@ -19,16 +19,15 @@ global.sprFingersIcon = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAA
 	
 #define skill_take
 	sound_play(sndMutTriggerFingers);
-if instance_exists(Player) {
-	with Player {
-		reloadspeed += 0.5;
-		accuracy += 1.5;
-	}
-}
 
 #define step
 
 with Player {
+	if (!variable_instance_exists(Player, "Sloppy_Fingers")) {
+		reloadspeed += 0.5;
+		accuracy += 1.5;
+		Sloppy_Fingers = 1;
+	}
 	if (fork()) {
 		var OldReload = reload;
 		wait 1;
