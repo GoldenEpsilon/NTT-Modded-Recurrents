@@ -2,16 +2,16 @@
 #define init
 global.qualified = false;
 global.alias = "";
-global.seed = 20310;
+global.seed = 10649;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
 trace("Current Weekly:");
-trace("Mods=Bloom Shader, Freak Arena, Paper Mario, MS Paint Shader, Fuzzy Shader");
-trace("Character=char_rebel");
-trace("Crown=crwn_destiny");
-trace("Weapon=wep_heavy_grenade_launcher");
-trace("Seed=20310");
+trace("Mods=MS Paint Shader, Nuke Launcher, Chaos Guns, Bandit Cannon, Level Balls");
+trace("Character=char_steroids");
+trace("Crown=crwn_hatred");
+trace("Weapon=wep_toxic_launcher");
+trace("Seed=10649");
 global.qualified = true;
 global.alias = "";
 if(global.qualified == true){
@@ -48,22 +48,34 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("ShdBloom.mod.gml"));while (file_exists(string_trim("ShdBloom.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdBloom.mod.gml"), string_trim("ShdBloom.mod.gml"));
-file_delete(string_trim("freakarena.mod.gml"));while (file_exists(string_trim("freakarena.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/freakarena.mod.gml"), string_trim("freakarena.mod.gml"));
-file_delete(string_trim("papermario.mod.gml"));while (file_exists(string_trim("papermario.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml"));
 file_delete(string_trim("ShdMSPaint.mod.gml"));while (file_exists(string_trim("ShdMSPaint.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdMSPaint.mod.gml"), string_trim("ShdMSPaint.mod.gml"));
-file_delete(string_trim("ShdFuzzy.mod.gml"));while (file_exists(string_trim("ShdFuzzy.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdFuzzy.mod.gml"), string_trim("ShdFuzzy.mod.gml"));
+file_delete(string_trim("nukelauncher.race.gml"));while (file_exists(string_trim("nukelauncher.race.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/nukelauncher.race.gml"), string_trim("nukelauncher.race.gml"));
+file_delete(string_trim("Chaos Guns/Blunderbuss.wep.gml"));while (file_exists(string_trim("Chaos Guns/Blunderbuss.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Blunderbuss.wep.gml"), string_trim("Chaos Guns/Blunderbuss.wep.gml"));
+file_delete(string_trim("Chaos Guns/Super Blunderbuss.wep.gml"));while (file_exists(string_trim("Chaos Guns/Super Blunderbuss.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Blunderbuss.wep.gml"), string_trim("Chaos Guns/Super Blunderbuss.wep.gml"));
+file_delete(string_trim("Chaos Guns/Chaos Minigun.wep.gml"));while (file_exists(string_trim("Chaos Guns/Chaos Minigun.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Chaos Minigun.wep.gml"));
+file_delete(string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"));while (file_exists(string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Super Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Super Chaos Minigun.wep.gml"));
+file_delete(string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"));while (file_exists(string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Chaos Guns/Hyper Chaos Minigun.wep.gml"), string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+file_delete(string_trim("bcannon.wep.gml"));while (file_exists(string_trim("bcannon.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bcannon.wep.gml"), string_trim("bcannon.wep.gml"));
+file_delete(string_trim("LevelBalls.mod.gml"));while (file_exists(string_trim("LevelBalls.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/LevelBalls.mod.gml"), string_trim("LevelBalls.mod.gml"));
 wait(5);
-wait(file_load(string_trim("ShdBloom.mod.gml")));
-wait(file_load(string_trim("freakarena.mod.gml")));
-wait(file_load(string_trim("papermario.mod.gml")));
 wait(file_load(string_trim("ShdMSPaint.mod.gml")));
-wait(file_load(string_trim("ShdFuzzy.mod.gml")));
-mod_load(string_trim("data/Weekly.mod/ShdBloom.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/freakarena.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/papermario.mod.gml"));
+wait(file_load(string_trim("nukelauncher.race.gml")));
+wait(file_load(string_trim("Chaos Guns/Blunderbuss.wep.gml")));
+wait(file_load(string_trim("Chaos Guns/Super Blunderbuss.wep.gml")));
+wait(file_load(string_trim("Chaos Guns/Chaos Minigun.wep.gml")));
+wait(file_load(string_trim("Chaos Guns/Super Chaos Minigun.wep.gml")));
+wait(file_load(string_trim("Chaos Guns/Hyper Chaos Minigun.wep.gml")));
+wait(file_load(string_trim("bcannon.wep.gml")));
+wait(file_load(string_trim("LevelBalls.mod.gml")));
 mod_load(string_trim("data/Weekly.mod/ShdMSPaint.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/ShdFuzzy.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/nukelauncher.race.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Blunderbuss.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Super Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/bcannon.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/LevelBalls.mod.gml"));
 
 
 #define step
@@ -80,7 +92,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_heavy_grenade_launcher;
+		wep = wep_toxic_launcher;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -95,20 +107,20 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race=char_rebel;}
+with(CharSelect){race=char_steroids;}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Bloom Shader, Freak Arena, Paper Mario, MS Paint Shader, Fuzzy Shader" + " Character=char_rebel" + " Crown=crwn_destiny" + " Weapon=wep_heavy_grenade_launcher" + " Seed=20310";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:MS Paint Shader, Nuke Launcher, Chaos Guns, Bandit Cannon, Level Balls" + " Character=char_steroids" + " Crown=crwn_hatred" + " Weapon=wep_toxic_launcher" + " Seed=10649";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-02-03 weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-02-03 weekly.txt");
-		while(!file_loaded(global.alias + " 2019-02-03 weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-02-03 weekly.txt");
+	if(file_exists(global.alias + " 2019-02-10 weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-02-10 weekly.txt");
+		while(!file_loaded(global.alias + " 2019-02-10 weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-02-10 weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-02-03 weekly.txt");
+		string_save(score, global.alias + " 2019-02-10 weekly.txt");
 	}
 }
 #define draw_pause
@@ -129,6 +141,6 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_destiny;
+	crown = crwn_hatred;
 }
 
