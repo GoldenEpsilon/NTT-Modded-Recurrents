@@ -107,12 +107,12 @@ if(global.qualified == true){
 	with(Player){
 		instance_destroy();
 		global.qualified = false;
-		trace("'"'"DON'T MAKE ME TURN ANTI-CHEAT ON"'"'");
+		trace("'"'"Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again."'"'");
 	}
 	with(Revive){
 		instance_destroy();
 		global.qualified = false;
-		trace("'"'"DON'T MAKE ME TURN ANTI-CHEAT ON"'"'");
+		trace("'"'"Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again."'"'");
 	}
 }
 var i = 0;
@@ -145,7 +145,7 @@ if(global.qualified == true){
 	repeat(4){
 		if(button_check(i, "'"'"talk"'"'")){
 			global.qualified = false;
-			trace("'"'"DON'T MAKE ME TURN ANTI-CHEAT ON"'"'");
+			trace("'"'"Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again."'"'");
 		}
 		i++
 	}
@@ -183,6 +183,42 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}else{
 		string_save(score, global.alias + "'"'" $DATE weekly.txt"'"'");
 	}
+	if(global.qualified){
+		file_delete("'"'"dl.txt"'"'");
+		while (file_exists("'"'"dl.txt"'"'")) {wait 1;}
+		file_download("'"'"https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/leaderboards/$DATE weekly.txt"'"'", "'"'"dl.txt"'"'");
+		while (!file_loaded("'"'"dl.txt"'"'")) {wait 1;}
+		leaderboard = string_load("'"'"dl.txt"'"'");
+		headers = ds_map_create();
+		ds_map_set(headers, "'"'"Authorization"'"'", "'"'"bearer 45d0595699dedb51962a5ae92048e6a077df85f6"'"'");
+		ds_map_set(headers, "'"'"Accept"'"'", "'"'"application/vnd.github.full+json"'"'");	
+		if(string_copy(leaderboard, 0, 4) == "'"'"404:"'"'"){
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/$DATE weekly.txt'
+		, "'"'"PUT"'"'", headers,
+		'{
+		"'"'"message"'"'":"'"'"Leaderboard Update"'"'",
+		"'"'"content"'"'":"'"'"'+base64(string_split(score, "'"'"Mods:"'"'")[0])+'"'"'"
+		}'
+		, "'"'"out.txt"'"'");
+	}else{
+		file_delete("'"'"sha.txt"'"'");
+		while (file_exists("'"'"sha.txt"'"'")) {wait 1;}
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/$DATE weekly.txt'
+		, "'"'"GET"'"'", headers,
+		''
+		, "'"'"sha.txt"'"'");
+		while (!file_loaded("'"'"sha.txt"'"'")) {wait 1;}
+		sha = string_split(string_split(string_load("'"'"sha.txt"'"'"), '"'"'"sha"'"'":"'"'"')[1], '"'"'"')[0];
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/$DATE weekly.txt'
+		, "'"'"PUT"'"'", headers,
+		'{
+		"'"'"message"'"'":"'"'"Leaderboard Update"'"'",
+		"'"'"content"'"'":"'"'"'+base64(leaderboard+"'"'"|"'"'"+string_split(score, "'"'"Mods:"'"'")[0])+'"'"'",
+		"'"'"sha"'"'":"'"'"'+sha+'"'"'"
+		}'
+		, "'"'"out.txt"'"'");
+	}
+	}
 }
 #define draw_pause
 //Anti-Cheat
@@ -191,7 +227,7 @@ if(global.qualified == true){
 	repeat(4){
 		if(button_check(i, "'"'"talk"'"'")){
 			global.qualified = false;
-			trace("'"'"DON'T MAKE ME TURN ANTI-CHEAT ON"'"'");
+			trace("'"'"Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again."'"'");
 		}
 		i++
 	}
@@ -204,7 +240,105 @@ global.start = true;
 with(GameCont){
 	crown = ${CROWNS[$CRW]};
 }
+#define base64(str)
+var retVal = "'"'""'"'";
+for(var i = 0; i < string_length(str)/3; i++){
+	if(string_length(str)/3-i>=1){
+		ord1 = string_ord_at(str, i*3+1);
+		ord2 = string_ord_at(str, (i*3)+2);
+		ord3 = string_ord_at(str, (i*3)+3);
+		char1 = base64Char((ord1&252)/4);
+		char2 = base64Char((ord1&3)*16+(ord2&240)/16);
+		char3 = base64Char((ord2&15)*4+(ord3&192)/64);
+		char4 = base64Char(ord3&63);
+		retVal += string(char1)+string(char2)+string(char3)+string(char4);
+	}else if(string_length(str) - i*3 == 2){
+		ord1 = string_ord_at(str, i*3+1);
+		ord2 = string_ord_at(str, (i*3)+2);
+		char1 = base64Char((ord1&252)/4);
+		char2 = base64Char((ord1&3)*16+(ord2&240)/16);
+		char3 = base64Char((ord2&15)*4);
+		retVal += string(char1)+string(char2)+string(char3)+"'"'"="'"'";
+	}else if(string_length(str) - i*3 == 1){
+		ord1 = string_ord_at(str, i*3+1);
+		char1 = base64Char((ord1&252)/4);
+		char2 = base64Char((ord1&3)*16);
+		retVal += string(char1)+string(char2)+"'"'"=="'"'";
+	}
+}
+return retVal;
+#define base64Char(num)
+var retVal = "'"'"="'"'";
+switch(num){
+	case 0:retVal = "'"'"A"'"'";break;
+	case 1:retVal = "'"'"B"'"'";break;
+	case 2:retVal = "'"'"C"'"'";break;
+	case 3:retVal = "'"'"D"'"'";break;
+	case 4:retVal = "'"'"E"'"'";break;
+	case 5:retVal = "'"'"F"'"'";break;
+	case 6:retVal = "'"'"G"'"'";break;
+	case 7:retVal = "'"'"H"'"'";break;
+	case 8:retVal = "'"'"I"'"'";break;
+	case 9:retVal = "'"'"J"'"'";break;
+	case 10:retVal = "'"'"K"'"'";break;
+	case 11:retVal = "'"'"L"'"'";break;
+	case 12:retVal = "'"'"M"'"'";break;
+	case 13:retVal = "'"'"N"'"'";break;
+	case 14:retVal = "'"'"O"'"'";break;
+	case 15:retVal = "'"'"P"'"'";break;
+	case 16:retVal = "'"'"Q"'"'";break;
+	case 17:retVal = "'"'"R"'"'";break;
+	case 18:retVal = "'"'"S"'"'";break;
+	case 19:retVal = "'"'"T"'"'";break;
+	case 20:retVal = "'"'"U"'"'";break;
+	case 21:retVal = "'"'"V"'"'";break;
+	case 22:retVal = "'"'"W"'"'";break;
+	case 23:retVal = "'"'"X"'"'";break;
+	case 24:retVal = "'"'"Y"'"'";break;
+	case 25:retVal = "'"'"Z"'"'";break;
+	case 26:retVal = "'"'"a"'"'";break;
+	case 27:retVal = "'"'"b"'"'";break;
+	case 28:retVal = "'"'"c"'"'";break;
+	case 29:retVal = "'"'"d"'"'";break;
+	case 30:retVal = "'"'"e"'"'";break;
+	case 31:retVal = "'"'"f"'"'";break;
+	case 32:retVal = "'"'"g"'"'";break;
+	case 33:retVal = "'"'"h"'"'";break;
+	case 34:retVal = "'"'"i"'"'";break;
+	case 35:retVal = "'"'"j"'"'";break;
+	case 36:retVal = "'"'"k"'"'";break;
+	case 37:retVal = "'"'"l"'"'";break;
+	case 38:retVal = "'"'"m"'"'";break;
+	case 39:retVal = "'"'"n"'"'";break;
+	case 40:retVal = "'"'"o"'"'";break;
+	case 41:retVal = "'"'"p"'"'";break;
+	case 42:retVal = "'"'"q"'"'";break;
+	case 43:retVal = "'"'"r"'"'";break;
+	case 44:retVal = "'"'"s"'"'";break;
+	case 45:retVal = "'"'"t"'"'";break;
+	case 46:retVal = "'"'"u"'"'";break;
+	case 47:retVal = "'"'"v"'"'";break;
+	case 48:retVal = "'"'"w"'"'";break;
+	case 49:retVal = "'"'"x"'"'";break;
+	case 50:retVal = "'"'"y"'"'";break;
+	case 51:retVal = "'"'"z"'"'";break;
+	case 52:retVal = "'"'"0"'"'";break;
+	case 53:retVal = "'"'"1"'"'";break;
+	case 54:retVal = "'"'"2"'"'";break;
+	case 55:retVal = "'"'"3"'"'";break;
+	case 56:retVal = "'"'"4"'"'";break;
+	case 57:retVal = "'"'"5"'"'";break;
+	case 58:retVal = "'"'"6"'"'";break;
+	case 59:retVal = "'"'"7"'"'";break;
+	case 60:retVal = "'"'"8"'"'";break;
+	case 61:retVal = "'"'"9"'"'";break;
+	case 62:retVal = "'"'"+"'"'";break;
+	case 63:retVal = "'"'"/"'"'";break;
+}
+return retVal;
 " | tee Weekly.mod.gml PreviousWeeklies/${DATE}-Weekly.mod.gml
 git add Weekly.mod.gml
+git add PreviousWeeklies/${DATE}-Weekly.mod.gml
+git add Generate-weekly.sh
 git commit -am "Automatically Updated The Weekly on "$DATE
 git push
