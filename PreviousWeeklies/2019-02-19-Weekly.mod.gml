@@ -2,16 +2,16 @@
 #define init
 global.qualified = false;
 global.alias = "";
-global.seed = 19212;
+global.seed = 22905;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
 trace("Current Weekly:");
-trace("Mods=Level Balls, NTT X10 Ver 1.0.1, Paper Mario, Nuke Launcher, Bloom Shader");
-trace("Character=char_crystal");
-trace("Crown=crwn_random");
-trace("Weapon=wep_golden_crossbow");
-trace("Seed=19212");
+trace("Mods=NTT X10 Ver 1.0.1, Lots O' Muts, Bandit Cannon, MS Paint Shader, Paper Mario");
+trace("Character=char_venuz");
+trace("Crown=crwn_curses");
+trace("Weapon=wep_wrench");
+trace("Seed=22905");
 global.qualified = true;
 global.alias = "";
 if(global.qualified == true){
@@ -48,7 +48,6 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("LevelBalls.mod.gml"));while (file_exists(string_trim("LevelBalls.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/LevelBalls.mod.gml"), string_trim("LevelBalls.mod.gml"));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"), string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));
@@ -119,11 +118,18 @@ file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_27.png"
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));
+file_delete(string_trim("Lots O' Muts/Compressing Fist.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Compressing Fist.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Compressing Fist.skill.gml"), string_trim("Lots O' Muts/Compressing Fist.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Confidence.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Confidence.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Confidence.skill.gml"), string_trim("Lots O' Muts/Confidence.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Duplicators.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Duplicators.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Duplicators.skill.gml"), string_trim("Lots O' Muts/Duplicators.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Garment Regenerator.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Garment Regenerator.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Garment Regenerator.skill.gml"), string_trim("Lots O' Muts/Garment Regenerator.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Rocket Casings.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Rocket Casings.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Rocket Casings.skill.gml"), string_trim("Lots O' Muts/Rocket Casings.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Sloppy Fingers.skill.gml"), string_trim("Lots O' Muts/Sloppy Fingers.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Steel Nerves.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Steel Nerves.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Steel Nerves.skill.gml"), string_trim("Lots O' Muts/Steel Nerves.skill.gml"));
+file_delete(string_trim("Lots O' Muts/Unstable DNA.skill.gml"));while (file_exists(string_trim("Lots O' Muts/Unstable DNA.skill.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Lots O' Muts/Unstable DNA.skill.gml"), string_trim("Lots O' Muts/Unstable DNA.skill.gml"));
+file_delete(string_trim("bcannon.wep.gml"));while (file_exists(string_trim("bcannon.wep.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bcannon.wep.gml"), string_trim("bcannon.wep.gml"));
+file_delete(string_trim("ShdMSPaint.mod.gml"));while (file_exists(string_trim("ShdMSPaint.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdMSPaint.mod.gml"), string_trim("ShdMSPaint.mod.gml"));
 file_delete(string_trim("papermario.mod.gml"));while (file_exists(string_trim("papermario.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml"));
-file_delete(string_trim("nukelauncher.race.gml"));while (file_exists(string_trim("nukelauncher.race.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/nukelauncher.race.gml"), string_trim("nukelauncher.race.gml"));
-file_delete(string_trim("ShdBloom.mod.gml"));while (file_exists(string_trim("ShdBloom.mod.gml"))) {wait 1;}file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdBloom.mod.gml"), string_trim("ShdBloom.mod.gml"));
 wait(5);
-wait(file_load(string_trim("LevelBalls.mod.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml")));
@@ -194,10 +200,17 @@ wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_27.pn
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
+wait(file_load(string_trim("Lots O' Muts/Compressing Fist.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Confidence.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Duplicators.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Garment Regenerator.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Rocket Casings.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Sloppy Fingers.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Steel Nerves.skill.gml")));
+wait(file_load(string_trim("Lots O' Muts/Unstable DNA.skill.gml")));
+wait(file_load(string_trim("bcannon.wep.gml")));
+wait(file_load(string_trim("ShdMSPaint.mod.gml")));
 wait(file_load(string_trim("papermario.mod.gml")));
-wait(file_load(string_trim("nukelauncher.race.gml")));
-wait(file_load(string_trim("ShdBloom.mod.gml")));
-mod_load(string_trim("data/Weekly.mod/LevelBalls.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));
@@ -236,9 +249,17 @@ mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/triggerfingersx10.skill
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/ultrax10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/utilitiesx10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/venuzx10.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Compressing Fist.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Confidence.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Duplicators.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Garment Regenerator.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Rocket Casings.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Sloppy Fingers.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Steel Nerves.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/Lots O' Muts/Unstable DNA.skill.gml"));
+mod_load(string_trim("data/Weekly.mod/bcannon.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/ShdMSPaint.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/papermario.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/nukelauncher.race.gml"));
-mod_load(string_trim("data/Weekly.mod/ShdBloom.mod.gml"));
 
 
 #define step
@@ -255,7 +276,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_golden_crossbow;
+		wep = wep_wrench;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -270,11 +291,11 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race=char_crystal;}
+with(CharSelect){race=char_venuz;}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Level Balls, NTT X10 Ver 1.0.1, Paper Mario, Nuke Launcher, Bloom Shader" + " Character=char_crystal" + " Crown=crwn_random" + " Weapon=wep_golden_crossbow" + " Seed=19212";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:NTT X10 Ver 1.0.1, Lots O' Muts, Bandit Cannon, MS Paint Shader, Paper Mario" + " Character=char_venuz" + " Crown=crwn_curses" + " Weapon=wep_wrench" + " Seed=22905";
 	}
 	trace(score);
 	global.finished = true;
@@ -292,7 +313,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		while (!file_loaded("dl.txt")) {wait 1;}
 		leaderboard = string_load("dl.txt");
 		headers = ds_map_create();
-		ds_map_set(headers, "Authorization", "token 443408bac5977cac7d5a09868ee86eb0842a52c0");
+		ds_map_set(headers, "Authorization", "token 332d41ff727ad978568"+"da5708b685138ac544244");
 		ds_map_set(headers, "Accept", "application/vnd.github.full+json");	
 		if(string_copy(leaderboard, 0, 4) == "404:"){
 		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/2019-02-19 weekly.txt'
@@ -340,7 +361,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_random;
+	crown = crwn_curses;
 }
 #define base64(str)
 var retVal = "";
