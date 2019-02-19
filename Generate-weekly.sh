@@ -190,7 +190,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		while (!file_loaded("'"'"dl.txt"'"'")) {wait 1;}
 		leaderboard = string_load("'"'"dl.txt"'"'");
 		headers = ds_map_create();
-		ds_map_set(headers, "'"'"Authorization"'"'", "'"'"bearer 45d0595699dedb51962a5ae92048e6a077df85f6"'"'");
+		ds_map_set(headers, "'"'"Authorization"'"'", "'"'"token e43dc762291e73d5334e61e783dc7e314507d22f"'"'");
 		ds_map_set(headers, "'"'"Accept"'"'", "'"'"application/vnd.github.full+json"'"'");	
 		if(string_copy(leaderboard, 0, 4) == "'"'"404:"'"'"){
 		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/$DATE weekly.txt'
@@ -337,10 +337,9 @@ switch(num){
 }
 return retVal;
 " | tee Weekly.mod.gml PreviousWeeklies/${DATE}-Weekly.mod.gml
-git fetch
-git pull
 git add Weekly.mod.gml
 git add PreviousWeeklies/${DATE}-Weekly.mod.gml
 git add Generate-weekly.sh
+git pull
 git commit -am "Automatically Updated The Weekly on "$DATE
 git push
