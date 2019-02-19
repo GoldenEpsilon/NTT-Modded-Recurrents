@@ -340,6 +340,6 @@ return retVal;
 git add Weekly.mod.gml
 git add PreviousWeeklies/${DATE}-Weekly.mod.gml
 git add Generate-weekly.sh
-git pull
 git commit -am "Automatically Updated The Weekly on "$DATE
+git pull
 git push
