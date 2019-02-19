@@ -1,1 +1,1 @@
-Mods:MS Paint Shader, Fuzzy Shader, Nuke Launcher, NTT X10 Ver 1.0.1, Bandit Cannon Character=char_fish Crown=crwn_life Weapon=wep_lightning_smg Seed=20897|Golden Epsilon: Area 1-2 L0 Kills: 13 |Golden Epsilon: Area 1-2 L0 Kills: 23 |Golden Epsilon: Area 1-1 L0 Kills: 8 
+Mods:MS Paint Shader, Fuzzy Shader, Nuke Launcher, NTT X10 Ver 1.0.1, Bandit Cannon Character=char_fish Crown=crwn_life Weapon=wep_lightning_smg Seed=20897|Golden Epsilon: Area 1-2 L0 Kills: 13 |Golden Epsilon: Area 1-2 L0 Kills: 23 |Golden Epsilon: Area 1-1 L0 Kills: 0 
