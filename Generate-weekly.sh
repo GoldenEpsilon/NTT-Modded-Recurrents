@@ -337,6 +337,7 @@ switch(num){
 }
 return retVal;
 " | tee Weekly.mod.gml PreviousWeeklies/${DATE}-Weekly.mod.gml
+git pull
 git add Weekly.mod.gml
 git add PreviousWeeklies/${DATE}-Weekly.mod.gml
 git add Generate-weekly.sh
