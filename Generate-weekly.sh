@@ -190,7 +190,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		while (!file_loaded("'"'"dl.txt"'"'")) {wait 1;}
 		leaderboard = string_load("'"'"dl.txt"'"'");
 		headers = ds_map_create();
-		ds_map_set(headers, "'"'"Authorization"'"'", "'"'"token ae9973fb51e636c37099e893c2d90c98f61d2af5"'"'");
+		ds_map_set(headers, "'"'"Authorization"'"'", "'"'"token 07288d8495807926befbcc1dfdbf6372a4f39bdf"'"'");
 		ds_map_set(headers, "'"'"Accept"'"'", "'"'"application/vnd.github.full+json"'"'");	
 		if(string_copy(leaderboard, 0, 4) == "'"'"404:"'"'"){
 		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/$DATE weekly.txt'
