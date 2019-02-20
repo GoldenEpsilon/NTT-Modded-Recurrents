@@ -1,1 +1,0 @@
-Mods:Fuzzy Shader, Nuke Launcher, MS Paint Shader, Bandit Cannon, Level Balls Character=char_chicken Crown=crwn_life Weapon=wep_energy_hammer Seed=10754|Golden Epsilon: Area 1-1 L0 Kills: 0 
