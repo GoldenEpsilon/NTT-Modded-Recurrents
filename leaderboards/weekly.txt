@@ -1,1 +1,0 @@
-Mods:Bloom Shader, Chaos Guns, Freak Arena, NTT X10 Ver 1.0.1, Paper Mario Character=char_skeleton Crown=crwn_blood Weapon=wep_golden_screwdriver Seed=27277|Golden Epsilon: Area 1-1 L0 Kills: 26 
