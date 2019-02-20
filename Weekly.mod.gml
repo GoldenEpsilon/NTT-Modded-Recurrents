@@ -1,9 +1,9 @@
 
-//Mods=Paper Mario,Fuzzy Shader,NTT X10 Ver 1.0.1,Level Balls,Freak Arena|Character=char_horror|Crown=crwn_death|Weapon=wep_shovel|Seed=28464
+//Mods=#  Bandit Cannon#  NTT X10 Ver 1.0.1#  Paper Mario#  MS Paint Shader#  Bloom Shader#Character=char_melting#Crown=crwn_blood#Weapon=wep_plasma_cannon#Seed=29615
 #define init
 global.qualified = false;
 global.alias = "";
-global.seed = 28464;
+global.seed = 29615;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -43,8 +43,7 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("papermario.mod.gml"));while (file_exists(string_trim("papermario.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml")));
-file_delete(string_trim("ShdFuzzy.mod.gml"));while (file_exists(string_trim("ShdFuzzy.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdFuzzy.mod.gml"), string_trim("ShdFuzzy.mod.gml")));
+file_delete(string_trim("bcannon.wep.gml"));while (file_exists(string_trim("bcannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bcannon.wep.gml"), string_trim("bcannon.wep.gml")));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml")));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"), string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml")));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"), string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml")));
@@ -115,11 +114,11 @@ file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_27.png"
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png")));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
 file_delete(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"));while (file_exists(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png"), string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
-file_delete(string_trim("LevelBalls.mod.gml"));while (file_exists(string_trim("LevelBalls.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/LevelBalls.mod.gml"), string_trim("LevelBalls.mod.gml")));
-file_delete(string_trim("freakarena.mod.gml"));while (file_exists(string_trim("freakarena.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/freakarena.mod.gml"), string_trim("freakarena.mod.gml")));
+file_delete(string_trim("papermario.mod.gml"));while (file_exists(string_trim("papermario.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/papermario.mod.gml"), string_trim("papermario.mod.gml")));
+file_delete(string_trim("ShdMSPaint.mod.gml"));while (file_exists(string_trim("ShdMSPaint.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdMSPaint.mod.gml"), string_trim("ShdMSPaint.mod.gml")));
+file_delete(string_trim("ShdBloom.mod.gml"));while (file_exists(string_trim("ShdBloom.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ShdBloom.mod.gml"), string_trim("ShdBloom.mod.gml")));
 wait(5);
-wait(file_load(string_trim("papermario.mod.gml")));
-wait(file_load(string_trim("ShdFuzzy.mod.gml")));
+wait(file_load(string_trim("bcannon.wep.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/backmusclex10.skill.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml")));
@@ -190,10 +189,10 @@ wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_27.pn
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_28.png")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
 wait(file_load(string_trim("NTT X10 Ver. 1.0.1/MutationHUD/sprSkillIconHUD_29.png")));
-wait(file_load(string_trim("LevelBalls.mod.gml")));
-wait(file_load(string_trim("freakarena.mod.gml")));
-mod_load(string_trim("data/Weekly.mod/papermario.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/ShdFuzzy.mod.gml"));
+wait(file_load(string_trim("papermario.mod.gml")));
+wait(file_load(string_trim("ShdMSPaint.mod.gml")));
+wait(file_load(string_trim("ShdBloom.mod.gml")));
+mod_load(string_trim("data/Weekly.mod/bcannon.wep.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/backmusclex10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/bloodlustx10.skill.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/boilingveinsx10.mod.gml"));
@@ -232,16 +231,17 @@ mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/triggerfingersx10.skill
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/ultrax10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/utilitiesx10.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/NTT X10 Ver. 1.0.1/venuzx10.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/LevelBalls.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/freakarena.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/papermario.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/ShdMSPaint.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/ShdBloom.mod.gml"));
 
 
 trace("Current Weekly:");
-trace("Mods=Paper Mario, Fuzzy Shader, NTT X10 Ver 1.0.1, Level Balls, Freak Arena");
-trace("Character=char_horror");
-trace("Crown=crwn_death");
-trace("Weapon=wep_shovel");
-trace("Seed=28464");
+trace("Mods=Bandit Cannon, NTT X10 Ver 1.0.1, Paper Mario, MS Paint Shader, Bloom Shader");
+trace("Character=char_melting");
+trace("Crown=crwn_blood");
+trace("Weapon=wep_plasma_cannon");
+trace("Seed=29615");
 
 #define step
 if(global.qualified == true){
@@ -257,7 +257,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_shovel;
+		wep = wep_plasma_cannon;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -272,11 +272,11 @@ if(global.start){
 	}
 	global.start = false;
 }
-with(CharSelect){race=char_horror;}
+with(CharSelect){race=char_melting;}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Paper Mario, Fuzzy Shader, NTT X10 Ver 1.0.1, Level Balls, Freak Arena" + " Character=char_horror" + " Crown=crwn_death" + " Weapon=wep_shovel" + " Seed=28464";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Bandit Cannon, NTT X10 Ver 1.0.1, Paper Mario, MS Paint Shader, Bloom Shader" + " Character=char_melting" + " Crown=crwn_blood" + " Weapon=wep_plasma_cannon" + " Seed=29615";
 	}
 	trace(score);
 	global.finished = true;
@@ -312,7 +312,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Paper Mario, Fuzzy Shader, NTT X10 Ver 1.0.1, Level Balls, Freak Arena" + " Character=char_horror" + " Crown=crwn_death" + " Weapon=wep_shovel" + " Seed=28464" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Bandit Cannon, NTT X10 Ver 1.0.1, Paper Mario, MS Paint Shader, Bloom Shader" + " Character=char_melting" + " Crown=crwn_blood" + " Weapon=wep_plasma_cannon" + " Seed=29615" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
 		}else{
@@ -355,7 +355,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_death;
+	crown = crwn_blood;
 }
 #define base64(str)
 var retVal = "";
