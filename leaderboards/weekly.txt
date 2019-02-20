@@ -1,0 +1,1 @@
+Mods:Lots O' Muts, Bandit Cannon, Level Balls, Chaos Guns, Fuzzy Shader Character=char_rebel Crown=crwn_death Weapon=wep_dog_missile Seed=15340|Golden Epsilon: Area 1-1 L0 Kills: 0 
