@@ -1,1 +1,1 @@
-Mods:Level Balls, Nuke Launcher, NTT X10 Ver 1.0.1, Bloom Shader, MS Paint Shader Character=char_robot Crown=crwn_blood Weapon=wep_hyper_rifle Seed=24170|Golden Epsilon: Area 1-1 L0 Kills: 8 |Golden Epsilon: Area 1-1 L0 Kills: 27 
+Mods:Level Balls, Nuke Launcher, NTT X10 Ver 1.0.1, Bloom Shader, MS Paint Shader Character=char_robot Crown=crwn_blood Weapon=wep_hyper_rifle Seed=24170|Golden Epsilon: Area 1-1 L0 Kills: 8 |Golden Epsilon: Area 1-1 L0 Kills: 27 |Golden Epsilon: Area 1-1 L0 Kills: 15 
