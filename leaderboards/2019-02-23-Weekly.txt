@@ -1,1 +1,1 @@
-Mods:Balls, Beamer, basicgunallies, Big Bandit, betterLoops Character=char_frog Crown=crwn_love Weapon=wep_double_minigun Seed=8732
+Mods:Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun Character=char_plant Crown=crwn_random Weapon=wep_laser_minigun Seed=12619

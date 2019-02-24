@@ -1,10 +1,10 @@
 
-/*@rMods@w=#  Babylon Shotgun#  !ARMAGGEDNN#  2 Hour Area#  6 Weapons#  Auto Bullet Shotgun#@bCharacter@w=#  char_plant#@yCrown@w=#  crwn_random#@gWeapon@w=#  wep_laser_minigun#@pSeed@w=12619*/
+/*@rMods@w=#  Ancient Hatred#  Belly#  Big Bandit#  BAR#  Baldi#@bCharacter@w=#  char_horror#@yCrown@w=#  crwn_blood#@gWeapon@w=#  wep_auto_grenade_shotgun#@pSeed@w=17969*/
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 12619;
+global.seed = 17969;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -47,11 +47,11 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 
 
 trace("Current Weekly:");
-trace("Mods=Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun");
-trace("Character=char_plant");
-trace("Crown=crwn_random");
-trace("Weapon=wep_laser_minigun");
-trace("Seed=12619");
+trace("Mods=Ancient Hatred, Belly, Big Bandit, BAR, Baldi");
+trace("Character=char_horror");
+trace("Crown=crwn_blood");
+trace("Weapon=wep_auto_grenade_shotgun");
+trace("Seed=17969");
 
 global.canStart = true;
 
@@ -69,7 +69,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_laser_minigun;
+		wep = wep_auto_grenade_shotgun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -85,11 +85,11 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_plant");visible=true;}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_horror");visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun" + " Character=char_plant" + " Crown=crwn_random" + " Weapon=wep_laser_minigun" + " Seed=12619";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Ancient Hatred, Belly, Big Bandit, BAR, Baldi" + " Character=char_horror" + " Crown=crwn_blood" + " Weapon=wep_auto_grenade_shotgun" + " Seed=17969";
 	}
 	trace(score);
 	global.finished = true;
@@ -125,10 +125,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun" + " Character=char_plant" + " Crown=crwn_random" + " Weapon=wep_laser_minigun" + " Seed=12619" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Ancient Hatred, Belly, Big Bandit, BAR, Baldi" + " Character=char_horror" + " Crown=crwn_blood" + " Weapon=wep_auto_grenade_shotgun" + " Seed=17969" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun" + " Character=char_plant" + " Crown=crwn_random")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Ancient Hatred, Belly, Big Bandit, BAR, Baldi" + " Character=char_horror" + " Crown=crwn_blood")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -170,7 +170,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = string_trim(crwn_random);
+	crown = string_trim(crwn_blood);
 }
 #define base64(str)
 var retVal = "";
