@@ -1,10 +1,10 @@
 
-/*@rMods@w=#  B#  Balls#  2 Hour Area#  Afterburn#  Armageddon Cannon#@bCharacter@w=#  char_random#@yCrown@w=#  crwn_random#@gWeapon@w=#  wep_incinerator#@pSeed@w=10330*/
+/*@rMods@w=#  Babylon Shotgun#  Area Health#  Armageddon Cannon#  Big Dog#  basicgunallies#@bCharacter@w=#  char_venuz#@yCrown@w=#  crwn_hatred#@gWeapon@w=#  wep_seeker_pistol#@pSeed@w=22967*/
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 10330;
+global.seed = 22967;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -47,11 +47,11 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 
 
 trace("Current Weekly:");
-trace("Mods=B, Balls, 2 Hour Area, Afterburn, Armageddon Cannon");
-trace("Character=char_random");
-trace("Crown=crwn_random");
-trace("Weapon=wep_incinerator");
-trace("Seed=10330");
+trace("Mods=Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies");
+trace("Character=char_venuz");
+trace("Crown=crwn_hatred");
+trace("Weapon=wep_seeker_pistol");
+trace("Seed=22967");
 
 global.canStart = true;
 
@@ -69,7 +69,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_incinerator;
+		wep = wep_seeker_pistol;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -85,11 +85,11 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_random");visible=true;}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_venuz");visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:B, Balls, 2 Hour Area, Afterburn, Armageddon Cannon" + " Character=char_random" + " Crown=crwn_random" + " Weapon=wep_incinerator" + " Seed=10330";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred" + " Weapon=wep_seeker_pistol" + " Seed=22967";
 	}
 	trace(score);
 	global.finished = true;
@@ -125,10 +125,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:B, Balls, 2 Hour Area, Afterburn, Armageddon Cannon" + " Character=char_random" + " Crown=crwn_random" + " Weapon=wep_incinerator" + " Seed=10330" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred" + " Weapon=wep_seeker_pistol" + " Seed=22967" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:B, Balls, 2 Hour Area, Afterburn, Armageddon Cannon" + " Character=char_random" + " Crown=crwn_random")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -170,7 +170,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = string_trim(crwn_random);
+	crown = string_trim(crwn_hatred);
 }
 #define base64(str)
 var retVal = "";
