@@ -1,6 +1,6 @@
 |2 hour area/2hours.area.gml
 :2 hour area/gfx/sprArrow.png
-:2 hour area/gfx/sprBox.png
+:2 hour area/gfx/sprBow.png
 :2 hour area/gfx/sprClouds.png
 :2 hour area/gfx/sprDebris.png
 :2 hour area/gfx/sprDecoration.png
@@ -11,8 +11,8 @@
 :2 hour area/gfx/sprSpiderIdle.png
 :2 hour area/gfx/sprSpiderWalk.png
 :2 hour area/gfx/sprTreeBot.png
-:2 hour area/gfx/sprTreeTop.pdn
-:2 hour area/gfx/sprTreeTop.png
+:2 hour area/gfx/sprTreetop.pdn
+:2 hour area/gfx/sprTreetop.png
 :2 hour area/gfx/sprWallBot.png
 :2 hour area/gfx/sprWallTop.png
 :2 hour area/gfx/sprWallTrans.png
