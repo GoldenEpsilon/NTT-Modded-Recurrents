@@ -1,1 +1,1 @@
-Mods:BadEnd, 6 Weapons, Assault Flak Cannon, Baller, !ARMAGGEDNN Character=Baller Crown=crwn_haste Weapon=wep_eraser Seed=24833
+Mods:Ancient Hatred, Airhorn, Assault Flak Cannon, Big Bandit, Babylon Shotgun Character=Big Bandit Crown=crown of ancient hatred Weapon=wep_golden_machinegun Seed=17356
