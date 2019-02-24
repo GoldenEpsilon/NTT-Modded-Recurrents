@@ -1,10 +1,10 @@
 
-/*@rMods@w=#  Babylon Shotgun#  Area Health#  Armageddon Cannon#  Big Dog#  basicgunallies#@bCharacter@w=#  char_venuz#@yCrown@w=#  crwn_hatred#@gWeapon@w=#  wep_seeker_pistol#@pSeed@w=22967*/
+/*@rMods@w=#  2 Hour Area#  !ARMAGGEDNN#  6 Weapons#  Afterburn#  basicgunallies#@bCharacter@w=#  char_melting#@yCrown@w=#  crwn_destiny#@gWeapon@w=#  wep_golden_screwdriver#@pSeed@w=24528*/
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 22967;
+global.seed = 24528;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -47,11 +47,11 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 
 
 trace("Current Weekly:");
-trace("Mods=Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies");
-trace("Character=char_venuz");
-trace("Crown=crwn_hatred");
-trace("Weapon=wep_seeker_pistol");
-trace("Seed=22967");
+trace("Mods=2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies");
+trace("Character=char_melting");
+trace("Crown=crwn_destiny");
+trace("Weapon=wep_golden_screwdriver");
+trace("Seed=24528");
 
 global.canStart = true;
 
@@ -69,7 +69,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_seeker_pistol;
+		wep = wep_golden_screwdriver;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -85,11 +85,11 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_venuz");visible=true;}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_trim("char_melting");visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred" + " Weapon=wep_seeker_pistol" + " Seed=22967";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies" + " Character=char_melting" + " Crown=crwn_destiny" + " Weapon=wep_golden_screwdriver" + " Seed=24528";
 	}
 	trace(score);
 	global.finished = true;
@@ -125,10 +125,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred" + " Weapon=wep_seeker_pistol" + " Seed=22967" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies" + " Character=char_melting" + " Crown=crwn_destiny" + " Weapon=wep_golden_screwdriver" + " Seed=24528" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies" + " Character=char_venuz" + " Crown=crwn_hatred")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies" + " Character=char_melting" + " Crown=crwn_destiny")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -170,7 +170,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = string_trim(crwn_hatred);
+	crown = string_trim(crwn_destiny);
 }
 #define base64(str)
 var retVal = "";
