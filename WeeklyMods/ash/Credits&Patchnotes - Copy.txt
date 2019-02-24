@@ -1,0 +1,28 @@
+[Credits:]
+Ash Character mod:
+Director: Classical
+Art: Fossilbro
+Programming: Classical
+Passive Concept: Notwendy
+Active and Ultras Concept: Classical
+B Skin Concept: Fossilbro
+Sound: Clipped by classical, Voice by Rich Evans
+The End Is Nigh by Edmund McMillen and Tyler Glaiel"
+
+[PatchNotes:]
+11/13/18- An epic Gamer Moment
+Mod Release!
+
+11/13/18 Hotfix - Special Effects
++ Added Smoke when Tumors get destroyed
++ Added Ultra Sounds 
+
+11/13/18 Hotfix @ - Count em'
++ Tumor Counter! keep track of your Tumors!
++ Ash Now Works in Multiplayer! (If more than one player uses him it breaks though)
+
+Planned Stuff:
+Balancing
+B-Skin
+Tumors as Drops (Eventually)
+Multiple Ash Support

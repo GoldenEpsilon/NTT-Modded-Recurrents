@@ -1,0 +1,117 @@
+|!ARMAGGEDNN/areas/crimson.area.gml
+|!ARMAGGEDNN/weapons/autoSh.weapon.gml
+|!ARMAGGEDNN/weapons/axeFire.wep.gml
+|!ARMAGGEDNN/weapons/blodSh.weapon.gml
+|!ARMAGGEDNN/weapons/boltednightmare.wep.gml
+|!ARMAGGEDNN/weapons/EGruntRifle.weapon.gml
+|!ARMAGGEDNN/weapons/EGruntRocket.weapon.gml
+|!ARMAGGEDNN/weapons/EInspectorSword.weapon.gml
+|!ARMAGGEDNN/weapons/enrgSh.weapon.gml
+|!ARMAGGEDNN/weapons/EShielderMinigun.weapon.gml
+|!ARMAGGEDNN/weapons/expllSh.weapon.gml
+|!ARMAGGEDNN/weapons/fireeSh.weapon.gml
+|!ARMAGGEDNN/weapons/Force100OfNature.wep.gml
+|!ARMAGGEDNN/weapons/gldnSh.weapon.gml
+|!ARMAGGEDNN/weapons/grabli.wep.gml
+|!ARMAGGEDNN/weapons/grnt.skin.gml
+|!ARMAGGEDNN/weapons/heavSh.weapon.gml
+|!ARMAGGEDNN/weapons/InspectorSlugger.weapon.gml
+|!ARMAGGEDNN/weapons/lightSh.weapon.gml
+|!ARMAGGEDNN/weapons/mcrfSh.weapon.gml
+|!ARMAGGEDNN/weapons/plasmaCannonMinigun.wep.gml
+|!ARMAGGEDNN/weapons/Porzygun.wep.gml
+|!ARMAGGEDNN/weapons/SCR.mod.gml
+|!ARMAGGEDNN/weapons/shd.skin.gml
+|!ARMAGGEDNN/weapons/ShielderHeavyGun.weapon.gml
+|!ARMAGGEDNN/weapons/spctr.skin.gml
+|!ARMAGGEDNN/weapons/superultraplasmacannon.wep.gml
+|!ARMAGGEDNN/weapons/ullapollcaber.wep.gml
+|!ARMAGGEDNN/weapons/ultrascrew.wep.gml
+|!ARMAGGEDNN/weapons/usnk.wep.gml
+|!ARMAGGEDNN/weapons/vamSh.weapon.gml
+|!ARMAGGEDNN/weapons/1.4/dubstepGun.wep.gml
+|!ARMAGGEDNN/weapons/1.4/LyapasGun.wep.gml
+|!ARMAGGEDNN/weapons/1.4/M16Rifle.wep.gml
+|!ARMAGGEDNN/weapons/1.4/ultraKatana.wep.gml
+|!ARMAGGEDNN/weapons/1.4/UltraM16.wep.gml
+|!ARMAGGEDNN/weapons/1.5/GaussHellYeah.wep.gml
+|!ARMAGGEDNN/weapons/1.5/GraveGun.wep.gml
+*Auto Shovel
+*Fire Axe
+*Blood Shovel
+*Bolted Nightmare
+*Plasma Bullet Rifle
+*IDPD Rocket
+*Inspector Sword
+*Energy Shovel
+*Shielder Minigun
+*Explosive Shovel
+*Flame Shovel
+*Force Hungreed Of Nature
+*Golden Shovel
+*Grabli
+*Heavy Shovel
+*Inspector Slugger
+*Cyber Shovel
+*Iron Shovel
+*Plasma Cannon Minigun
+*Porzygun
+*Shielder Heavy Gun
+*Ultra Super Plasma Cannon
+*Ullapoll Caber
+*Ultra Screwdriver
+*Ultra Super Nuke Launcher
+*Vampiric Shovel
+*Dubstep Gun
+*Lyapas Gun
+*M16-Rifle
+*Ultra Katana
+*Ultra M16
+*Gauss Gun
+*Grave Gun
+:!ARMAGGEDNN/areas/spr/F1
+:!ARMAGGEDNN/areas/spr/F1E
+:!ARMAGGEDNN/areas/spr/sprGrave1
+:!ARMAGGEDNN/areas/spr/sprGrave2
+:!ARMAGGEDNN/areas/spr/W1B
+:!ARMAGGEDNN/areas/spr/W1O
+:!ARMAGGEDNN/areas/spr/W1T
+:!ARMAGGEDNN/spr/boltm.png
+:!ARMAGGEDNN/spr/fireaxe.png
+:!ARMAGGEDNN/spr/flail.png
+:!ARMAGGEDNN/spr/grabli.png
+:!ARMAGGEDNN/spr/olDuspc.png
+:!ARMAGGEDNN/spr/shild.png
+:!ARMAGGEDNN/spr/sprASH.png
+:!ARMAGGEDNN/spr/sprBSH.png
+:!ARMAGGEDNN/spr/sprESH.png
+:!ARMAGGEDNN/spr/sprExSH.png
+:!ARMAGGEDNN/spr/sprForce100OfNature.png
+:!ARMAGGEDNN/spr/sprFSH.png
+:!ARMAGGEDNN/spr/sprGSH.png
+:!ARMAGGEDNN/spr/sprHSH.png
+:!ARMAGGEDNN/spr/sprISH.png
+:!ARMAGGEDNN/spr/sprLSH.png
+:!ARMAGGEDNN/spr/sprVSH.png
+:!ARMAGGEDNN/spr/swipe_flail.png
+:!ARMAGGEDNN/spr/ucaber.png
+:!ARMAGGEDNN/spr/ultradriver.png
+:!ARMAGGEDNN/spr/ushank.png
+:!ARMAGGEDNN/spr/usnk.png
+:!ARMAGGEDNN/spr/uspc.png
+:!ARMAGGEDNN/spr/zExplosiveSlash.png
+:!ARMAGGEDNN/spr/zFlameSlash.png
+:!ARMAGGEDNN/spr/zGoldSlash.png
+:!ARMAGGEDNN/spr/zVampirSlash.png
+:!ARMAGGEDNN/snd/FHONshot.ogg
+:!ARMAGGEDNN/snd/uspcShot.ogg
+:!ARMAGGEDNN/weapons/1.4/spr/dubstep.png
+:!ARMAGGEDNN/weapons/1.4/spr/lyapas.png
+:!ARMAGGEDNN/weapons/1.4/spr/lyapasGun.png
+:!ARMAGGEDNN/weapons/1.4/spr/lyapasP.png
+:!ARMAGGEDNN/weapons/1.4/spr/M16.png
+:!ARMAGGEDNN/weapons/1.4/spr/Shovel.png
+:!ARMAGGEDNN/weapons/1.4/spr/ukatana.png
+:!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png
+:!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png
+:!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png

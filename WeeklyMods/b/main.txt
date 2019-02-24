@@ -1,0 +1,2 @@
+/loadmod b
+/loadloc b

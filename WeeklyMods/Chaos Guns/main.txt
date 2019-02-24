@@ -1,5 +1,0 @@
-/loadwep Blunderbuss
-/loadwep Super Blunderbuss
-/loadwep Chaos Minigun
-/loadwep Super Chaos Minigun
-/loadwep Hyper Chaos Minigun

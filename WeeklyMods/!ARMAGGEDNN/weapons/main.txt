@@ -1,0 +1,63 @@
+/loadwep autoSh.weapon
+
+/loadwep blodSh.weapon
+
+/loadwep enrgSh.weapon
+
+/loadwep expllSh.weapon
+
+/loadwep fireeSh.weapon
+
+/loadwep gldnSh.weapon
+
+/loadwep heavSh.weapon
+
+/loadwep lightSh.weapon
+
+/loadwep mcrfSh.weapon
+
+/loadwep vamSh.weapon
+
+/loadwep axeFire
+
+/loadwep boltednightmare
+
+/loadwep EGruntRifle
+
+/loadwep EGruntRocket
+
+/loadwep EInspectorSword
+
+/loadwep EShielderMinigun
+
+/loadwep Force100OfNature
+
+/loadwep grabli
+
+/loadskin grnt
+
+/loadwep InspectorSlugger
+
+/loadwep plasmaCannonMinigun
+
+/loadwep Porzygun
+
+/loadmod SCR
+
+/loadskin shd
+
+/loadwep ShielderHeavyGun
+
+/loadskin spctr
+
+/loadwep superultraplasmacannon
+
+/loadwep ullapollcaber
+
+/loadwep ultrascrew
+
+/loadwep usnk
+
+/loadtxt 1.4
+
+/loadtxt 1.5

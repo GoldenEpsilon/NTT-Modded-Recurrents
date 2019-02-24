@@ -1,8 +1,0 @@
-/loadskill Compressing Fist
-/loadskill Confidence
-/loadskill Duplicators
-/loadskill Garment Regenerator
-/loadskill Rocket Casings
-/loadskill Sloppy Fingers
-/loadskill Steel Nerves
-/loadskill Unstable DNA

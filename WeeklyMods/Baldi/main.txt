@@ -1,0 +1,3 @@
+/loadmod baldi.race
+/loadmod ruler.wep
+/loadmod ultr.wep

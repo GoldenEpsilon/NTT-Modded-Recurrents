@@ -1,0 +1,42 @@
+[Credits:]
+Ash Character mod:
+Director: Classical
+Art: Fossilbro
+Programming: Classical
+Passive Concept: Notwendy
+Active and Ultras Concept: Classical
+B Skin Concept: Fossilbro
+Sound: Clipped by classical, Voice by Rich Evans
+The End Is Nigh by Edmund McMillen and Tyler Glaiel"
+
+[PatchNotes:]
+11/13/18 V1- An epic Gamer Moment
+Mod Release!
+
+11/13/18 V1.2 Hotfix - Special Effects
++ Added Smoke when Tumors get destroyed
++ Added Ultra Sounds 
+
+11/13/18 V2 Hotfix @ - Count em'
++ Tumor Counter! keep track of your Tumors!
++ Ash Now Works in Multiplayer! (If more than one player uses him it breaks though)
+
+11/14/18 V2.5 - A Bit tipsy with the RMB
+- Ash Now Starts with 5/6 health instead of 8/6 health.
++ RMB is now stronger with a tumor!
++ Added An extra tip, Along with Ultra Mutation Tips! (I think this might be the first NTT mod to have ultra mutation tips, but don't quote me on that)
+
+11/16/18 V2.6 - A Voice of a Blobman
+* Ash's sounds have been changed, generally being quieter.
++ Line for entering HQ!
+
+11/16/18 V3 - Balanacing Act
+- Ash now gains a tumor every TWO Levels. This may be a bit broken, so the pre nerf version is still up for download.
++ TB now actually does something! It gives you a 50% chance to get a tumor when you normally wouldn't.
++ Beating a level without taking damage gives you a tumor (Even if you get one that portal!)
+
+Planned Stuff:
+Balancing
+B-Skin
+Tumors as Drops (Eventually)
+Multiple Ash Support

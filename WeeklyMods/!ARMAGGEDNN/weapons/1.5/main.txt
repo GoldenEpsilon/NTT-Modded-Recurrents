@@ -1,0 +1,3 @@
+/loadwep GraveGun
+
+/loadwep GaussHellYeah.wep
