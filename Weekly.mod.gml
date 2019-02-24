@@ -1,10 +1,10 @@
 
-//@rMods@w=#  Airhorn#  B#  Auto Bullet Shotgun#  Area Health#  Auto Flame Crossbow#@bCharacter@w=#  char_robot#@yCrown@w=#  crwn_blood#@gWeapon@w=#  wep_lightning_hammer#@pSeed@w=18771
+//@rMods@w=#  6 Weapons#  BadEnd#  Area Health#  Bandit Brute#  basicgunallies#@bCharacter@w=#  char_frog#@yCrown@w=#  crwn_curses#@gWeapon@w=#  wep_shotgun#@pSeed@w=522
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 18771;
+global.seed = 522;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -44,31 +44,29 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("airhorn.wep.gml"));while (file_exists(string_trim("airhorn.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/airhorn.wep.gml"), string_trim("airhorn.wep.gml")));
-file_delete(string_trim("b/b.mod.gml"));while (file_exists(string_trim("b/b.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.mod.gml"), string_trim("b/b.mod.gml")));
-file_delete(string_trim("b/b.ini"));while (file_exists(string_trim("b/b.ini"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.ini"), string_trim("b/b.ini")));
-file_delete(string_trim("Auto_Bullet_Shotgun.wep.gml"));while (file_exists(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Auto_Bullet_Shotgun.wep.gml"), string_trim("Auto_Bullet_Shotgun.wep.gml")));
+file_delete(string_trim("6weapons.mod.gml"));while (file_exists(string_trim("6weapons.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml"), string_trim("6weapons.mod.gml")));
+file_delete(string_trim("badend.mod.gml"));while (file_exists(string_trim("badend.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/badend.mod.gml"), string_trim("badend.mod.gml")));
 file_delete(string_trim("area_health.mod.gml"));while (file_exists(string_trim("area_health.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/area_health.mod.gml"), string_trim("area_health.mod.gml")));
-file_delete(string_trim("AutoFlameCrossbow.wep.gml"));while (file_exists(string_trim("AutoFlameCrossbow.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/AutoFlameCrossbow.wep.gml"), string_trim("AutoFlameCrossbow.wep.gml")));
-while (!file_loaded(string_trim("airhorn.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("b/b.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("b/b.ini"))) {wait 1;}
-while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}
+file_delete(string_trim("BanditBrute.mod.gml"));while (file_exists(string_trim("BanditBrute.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BanditBrute.mod.gml"), string_trim("BanditBrute.mod.gml")));
+file_delete(string_trim("basicgunallies.mod.gml"));while (file_exists(string_trim("basicgunallies.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/basicgunallies.mod.gml"), string_trim("basicgunallies.mod.gml")));
+while (!file_loaded(string_trim("6weapons.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("badend.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("area_health.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("AutoFlameCrossbow.wep.gml"))) {wait 1;}
-mod_load(string_trim("data/Weekly.mod/airhorn.wep.gml"));
-mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/Auto_Bullet_Shotgun.wep.gml"));
+while (!file_loaded(string_trim("BanditBrute.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("basicgunallies.mod.gml"))) {wait 1;}
+mod_load(string_trim("data/Weekly.mod/6weapons.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/badend.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/area_health.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/AutoFlameCrossbow.wep.gml"));
+mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/basicgunallies.mod.gml"));
 
 
 trace("Current Weekly:");
-trace("Mods=Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow");
-trace("Character=char_robot");
-trace("Crown=crwn_blood");
-trace("Weapon=wep_lightning_hammer");
-trace("Seed=18771");
+trace("Mods=6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies");
+trace("Character=char_frog");
+trace("Crown=crwn_curses");
+trace("Weapon=wep_shotgun");
+trace("Seed=522");
 
 global.canStart = true;
 
@@ -86,7 +84,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_lightning_hammer;
+		wep = wep_shotgun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -102,11 +100,11 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=char_robot;visible=true;}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=char_frog;visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow" + " Character=char_robot" + " Crown=crwn_blood" + " Weapon=wep_lightning_hammer" + " Seed=18771";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies" + " Character=char_frog" + " Crown=crwn_curses" + " Weapon=wep_shotgun" + " Seed=522";
 	}
 	trace(score);
 	global.finished = true;
@@ -142,10 +140,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow" + " Character=char_robot" + " Crown=crwn_blood" + " Weapon=wep_lightning_hammer" + " Seed=18771" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies" + " Character=char_frog" + " Crown=crwn_curses" + " Weapon=wep_shotgun" + " Seed=522" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow" + " Character=char_robot" + " Crown=crwn_blood")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies" + " Character=char_frog" + " Crown=crwn_curses")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -187,7 +185,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_blood;
+	crown = crwn_curses;
 }
 #define base64(str)
 var retVal = "";

@@ -1,1 +1,1 @@
-Mods:Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow Character=char_robot Crown=crwn_blood Weapon=wep_lightning_hammer Seed=18771
+Mods:6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies Character=char_frog Crown=crwn_curses Weapon=wep_shotgun Seed=522
