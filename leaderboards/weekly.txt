@@ -1,2 +1,2 @@
 Mods:Auto Bullet Shotgun, Babylon Shotgun, BB, Baldi, Balls Character=bb Crown=crwn_death Weapon=wep_revolver Seed=6674
-|˜Saniblues: Area 1-1 L0 Kills: 2 |JimmyJuice: Area 1-1 L0 Kills: 12 |�Saniblues: Area 1-2 L0 Kills: 46 
+|ËœSaniblues: Area 1-1 L0 Kills: 2 |JimmyJuice: Area 1-1 L0 Kills: 12 |˜Saniblues: Area 1-2 L0 Kills: 46 |JimmyJuice: Area 1-3 L0 Kills: 43 
