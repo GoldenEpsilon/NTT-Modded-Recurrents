@@ -1,1 +1,1 @@
-Mods:BadEnd, banditstack, Ancient Hatred, Afterburn, Auto Revolver Character=char_plant Crown=crown of ancient hatred Weapon=wep_hyper_rifle Seed=1480
+Mods:BadEnd, 6 Weapons, Assault Flak Cannon, Baller, !ARMAGGEDNN Character=Baller Crown=crwn_haste Weapon=wep_eraser Seed=24833
