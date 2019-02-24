@@ -30,8 +30,6 @@ dostart = 1
 #define step
 mask_index = mskBanditBoss
 size = 3
-if button_check(index,"horn")
-instance_create(x,y,BigRad)
 if button_pressed(index,"spec") and charge = 0
 {
 	charge = 30
