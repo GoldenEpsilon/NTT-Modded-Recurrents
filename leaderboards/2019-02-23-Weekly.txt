@@ -1,0 +1,1 @@
+Mods:Big Dog, Auto Flame Crossbow, betterLoops, Ancient Hatred, Area Health Character=char_frog Crown=crwn_life Weapon=wep_grenade_shotgun Seed=17536

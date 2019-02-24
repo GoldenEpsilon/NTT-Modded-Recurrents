@@ -1,1 +1,1 @@
-Mods:Big Dog, Auto Flame Crossbow, betterLoops, Ancient Hatred, Area Health Character=char_frog Crown=crwn_life Weapon=wep_grenade_shotgun Seed=17536
+Mods:Airhorn, B, Auto Bullet Shotgun, Area Health, Auto Flame Crossbow Character=char_robot Crown=crwn_blood Weapon=wep_lightning_hammer Seed=18771
