@@ -1,1 +1,1 @@
-Mods:Belly, Airhorn, betterLoops, BB, Auto Flame Crossbow Character=char_fish Crown=crwn_guns Weapon=wep_sticky_launcher Seed=3167
+Mods:Belly, banditstack, Beamer, Assault Flak Cannon, Auto Flame Crossbow Character=char_skeleton Crown=crwn_curses Weapon=wep_heavy_machinegun Seed=13731
