@@ -1,1 +1,1 @@
-Mods:Afterburn, Big Bandit, Bear, Airhorn, Baldi Character=Big Bandit Crown= Weapon=wep_machinegun Seed=13144
+Mods:2 Hour Area, B, betterLoops, BB, Bandit Brute Character=bb Crown=crown of risk Weapon=wep_ion_cannon Seed=12964
