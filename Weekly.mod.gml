@@ -1,10 +1,10 @@
 
-//@rMods@w=#  Assault Flak Cannon#  B#  basicgunallies#  Bear#  betterLoops#@bCharacter@w=#  char_chicken#@yCrown@w=#  crwn_risk#@gWeapon@w=#  wep_lightning_pistol#@pSeed@w=20824
+//@rMods@w=#  Area Health#  Assault Flak Cannon#  basicgunallies#  Bandit Brute#  B#@bCharacter@w=#  #@yCrown@w=#  #@gWeapon@w=#  wep_heavy_auto_crossbow#@pSeed@w=28034
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 20824;
+global.seed = 28034;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -44,42 +44,31 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_delete(string_trim("area_health.mod.gml"));while (file_exists(string_trim("area_health.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/area_health.mod.gml"), string_trim("area_health.mod.gml")));
 file_delete(string_trim("Assault_Flak_Cannon.wep.gml"));while (file_exists(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Assault_Flak_Cannon.wep.gml"), string_trim("Assault_Flak_Cannon.wep.gml")));
+file_delete(string_trim("basicgunallies.mod.gml"));while (file_exists(string_trim("basicgunallies.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/basicgunallies.mod.gml"), string_trim("basicgunallies.mod.gml")));
+file_delete(string_trim("BanditBrute.mod.gml"));while (file_exists(string_trim("BanditBrute.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BanditBrute.mod.gml"), string_trim("BanditBrute.mod.gml")));
 file_delete(string_trim("b/b.mod.gml"));while (file_exists(string_trim("b/b.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.mod.gml"), string_trim("b/b.mod.gml")));
 file_delete(string_trim("b/b.ini"));while (file_exists(string_trim("b/b.ini"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.ini"), string_trim("b/b.ini")));
-file_delete(string_trim("basicgunallies.mod.gml"));while (file_exists(string_trim("basicgunallies.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/basicgunallies.mod.gml"), string_trim("basicgunallies.mod.gml")));
-file_delete(string_trim("bear/bear.race.gml"));while (file_exists(string_trim("bear/bear.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear.race.gml"), string_trim("bear/bear.race.gml")));
-file_delete(string_trim("bear/beargun.wep.gml"));while (file_exists(string_trim("bear/beargun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/beargun.wep.gml"), string_trim("bear/beargun.wep.gml")));
-file_delete(string_trim("a fucking gun.png"));while (file_exists(string_trim("a fucking gun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/a fucking gun.png"), string_trim("a fucking gun.png")));
-file_delete(string_trim("bear (1).png"));while (file_exists(string_trim("bear (1).png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear (1).png"), string_trim("bear (1).png")));
-file_delete(string_trim("bearhurt.png"));while (file_exists(string_trim("bearhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bearhurt.png"), string_trim("bearhurt.png")));
-file_delete(string_trim("bearidle.png"));while (file_exists(string_trim("bearidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bearidle.png"), string_trim("bearidle.png")));
-file_delete(string_trim("betterLoops.mod.gml"));while (file_exists(string_trim("betterLoops.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/betterLoops.mod.gml"), string_trim("betterLoops.mod.gml")));
+while (!file_loaded(string_trim("area_health.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("basicgunallies.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("BanditBrute.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("b/b.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("b/b.ini"))) {wait 1;}
-while (!file_loaded(string_trim("basicgunallies.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bear.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/beargun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("a fucking gun.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear (1).png"))) {wait 1;}
-while (!file_loaded(string_trim("bearhurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("bearidle.png"))) {wait 1;}
-while (!file_loaded(string_trim("betterLoops.mod.gml"))) {wait 1;}
+mod_load(string_trim("data/Weekly.mod/area_health.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/Assault_Flak_Cannon.wep.gml"));
-mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
 mod_load(string_trim("data/Weekly.mod/basicgunallies.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/bear/bear.race.gml"));
-mod_load(string_trim("data/Weekly.mod/bear/beargun.wep.gml"));
-mod_load(string_trim("data/Weekly.mod/betterLoops.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
+mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
 
 
 trace("Current Weekly:");
-trace("Mods=Assault Flak Cannon, B, basicgunallies, Bear, betterLoops");
-trace("Character=char_chicken");
-trace("Crown=crwn_risk");
-trace("Weapon=wep_lightning_pistol");
-trace("Seed=20824");
+trace("Mods=Area Health, Assault Flak Cannon, basicgunallies, Bandit Brute, B");
+trace("Character=");
+trace("Crown=");
+trace("Weapon=wep_heavy_auto_crossbow");
+trace("Seed=28034");
 
 global.canStart = true;
 
@@ -97,7 +86,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_lightning_pistol;
+		wep = wep_heavy_auto_crossbow;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -113,11 +102,11 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=char_chicken;visible=true;}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=;visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Assault Flak Cannon, B, basicgunallies, Bear, betterLoops" + " Character=char_chicken" + " Crown=crwn_risk" + " Weapon=wep_lightning_pistol" + " Seed=20824";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Area Health, Assault Flak Cannon, basicgunallies, Bandit Brute, B" + " Character=" + " Crown=" + " Weapon=wep_heavy_auto_crossbow" + " Seed=28034";
 	}
 	trace(score);
 	global.finished = true;
@@ -153,10 +142,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Assault Flak Cannon, B, basicgunallies, Bear, betterLoops" + " Character=char_chicken" + " Crown=crwn_risk" + " Weapon=wep_lightning_pistol" + " Seed=20824" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Area Health, Assault Flak Cannon, basicgunallies, Bandit Brute, B" + " Character=" + " Crown=" + " Weapon=wep_heavy_auto_crossbow" + " Seed=28034" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Assault Flak Cannon, B, basicgunallies, Bear, betterLoops" + " Character=char_chicken" + " Crown=crwn_risk")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Area Health, Assault Flak Cannon, basicgunallies, Bandit Brute, B" + " Character=" + " Crown=")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -198,7 +187,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = crwn_risk;
+	crown = ;
 }
 #define base64(str)
 var retVal = "";
