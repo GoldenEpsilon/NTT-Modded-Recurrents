@@ -1,1 +1,1 @@
-Mods:Big Dog, Big Bandit, Afterburn, !ARMAGGEDNN, Auto Revolver Character=char_chicken Crown=crwn_haste Weapon=wep_plasma_minigun Seed=7849
+Mods:Ash, Babylon Shotgun, Belly, basicgunallies, banditstack Character=char_plant Crown=crwn_hatred Weapon=wep_pop_gun Seed=22338

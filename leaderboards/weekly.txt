@@ -1,1 +1,1 @@
-Mods:Ash, Babylon Shotgun, Belly, basicgunallies, banditstack Character=char_plant Crown=crwn_hatred Weapon=wep_pop_gun Seed=22338
+Mods:Assault Flak Cannon, B, basicgunallies, Bear, betterLoops Character=char_chicken Crown=crwn_risk Weapon=wep_lightning_pistol Seed=20824
