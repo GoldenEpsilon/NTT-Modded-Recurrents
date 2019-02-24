@@ -1,2 +1,2 @@
 Mods:!ARMAGGEDNN, 2 Hour Area, Armageddon Cannon, 6 Weapons, Afterburn Character=eyes Crown=crown of risk Weapon=wep_hyper_rifle Seed=24312
-|Classical Sheep-r: Area 103-1 L0 Kills: 48 |Karmelyth, Aevusonian: Area 3-3 L0 Kills: 79 |Classical Sheep-r: Area 3-2 L0 Kills: 57 
+|Classical Sheep-r: Area 103-1 L0 Kills: 48 |Karmelyth, Aevusonian: Area 3-3 L0 Kills: 79 |Classical Sheep-r: Area 3-2 L0 Kills: 57 |Classical Sheep-r: Area 2hours-1 L0 Kills: 4 
