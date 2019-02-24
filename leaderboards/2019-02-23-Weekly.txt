@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun, Area Health, Armageddon Cannon, Big Dog, basicgunallies Character=char_venuz Crown=crwn_hatred Weapon=wep_seeker_pistol Seed=22967
+Mods:2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies Character=char_melting Crown=crwn_destiny Weapon=wep_golden_screwdriver Seed=24528
