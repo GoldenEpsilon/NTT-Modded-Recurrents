@@ -1,1 +1,2 @@
-Mods:Ancient Hatred, Airhorn, Assault Flak Cannon, Big Bandit, Babylon Shotgun Character=Big Bandit Crown=crown of ancient hatred Weapon=wep_golden_machinegun Seed=17356
+Mods:Assault Flak Cannon, Belly, Bear, Big Bandit, Ash Character=Bear Crown=crwn_hatred Weapon=wep_triple_machinegun Seed=17024
+|JimmyJuice: Area 1-2 L0 Kills: 67 
