@@ -225,6 +225,30 @@ mod_load(string_trim("data/Weekly.mod/bb.race.gml
 "));
 mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
 
+global.ModNames = "";
+		     
+var i = 0;
+for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
+	global.ModNames += mod_get_names("mod")[i]
+}
+for(i = 0; array_length(mod_get_names("weapon")) > 0; i=i){
+	global.ModNames += mod_get_names("weapon")[i]
+}
+for(i = 0; array_length(mod_get_names("area")) > 0; i=i){
+	global.ModNames += mod_get_names("area")[i]
+}
+for(i = 0; array_length(mod_get_names("crown")) > 0; i=i){
+	global.ModNames += mod_get_names("crown")[i]
+}
+for(i = 0; array_length(mod_get_names("race")) > 0; i=i){
+	global.ModNames += mod_get_names("race")[i]
+}
+for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
+	global.ModNames += mod_get_names("skill")[i]
+}
+for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
+	global.ModNames += mod_get_names("skin")[i]
+}
 
 trace("Current Weekly:");
 trace("Mods=2 Hour Area, B, betterLoops, BB, Bandit Brute");
@@ -237,12 +261,40 @@ global.canStart = true;
 
 #define step
 if(global.qualified == true){
+	ModNames = "";
+		     
 	var i = 0;
+	for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
+		ModNames += mod_get_names("mod")[i]
+	}
+	for(i = 0; array_length(mod_get_names("weapon")) > 0; i=i){
+		ModNames += mod_get_names("weapon")[i]
+	}
+	for(i = 0; array_length(mod_get_names("area")) > 0; i=i){
+		ModNames += mod_get_names("area")[i]
+	}
+	for(i = 0; array_length(mod_get_names("crown")) > 0; i=i){
+		ModNames += mod_get_names("crown")[i]
+	}
+	for(i = 0; array_length(mod_get_names("race")) > 0; i=i){
+		ModNames += mod_get_names("race")[i]
+	}
+	for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
+		ModNames += mod_get_names("skill")[i]
+	}
+	for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
+		ModNames += mod_get_names("skin")[i]
+	}
+	if(ModNames != global.ModNames){
+		trace("Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again.");
+		global.qualified = false;
+	}
+	var i2 = 0;
 	repeat(4){
-		if(button_check(i, "talk")){
+		if(button_check(i2, "talk")){
 			trace("Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again.");
 		}
-		i++
+		i2++
 	}
 }
 var i = 0;
