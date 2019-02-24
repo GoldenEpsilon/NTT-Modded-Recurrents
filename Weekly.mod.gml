@@ -260,8 +260,8 @@ trace("Seed=12964");
 global.canStart = true;
 
 #define step
-if(global.qualified == true){
-	ModNames = "";
+if(global.qualified == true && global.canStart){
+	var ModNames = "";
 		     
 	var i = 0;
 	for(i = 0; array_length(mod_get_names("mod")) > 1; i=i){
@@ -289,12 +289,14 @@ if(global.qualified == true){
 		trace("Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again.");
 		global.qualified = false;
 	}
-	var i2 = 0;
+}
+if(global.qualified == true){
+	var i = 0;
 	repeat(4){
-		if(button_check(i2, "talk")){
+		if(button_check(i, "talk")){
 			trace("Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again.");
 		}
-		i2++
+		i++
 	}
 }
 var i = 0;
