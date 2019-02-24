@@ -1,1 +1,1 @@
-Mods:Ancient Hatred, Belly, Big Bandit, BAR, Baldi Character=char_horror Crown=crwn_blood Weapon=wep_auto_grenade_shotgun Seed=17969
+Mods:Auto Bullet Shotgun, Babylon Shotgun, BB, Baldi, Balls Character=bb Crown=crwn_death Weapon=wep_revolver Seed=6674

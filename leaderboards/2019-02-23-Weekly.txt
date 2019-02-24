@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun, !ARMAGGEDNN, 2 Hour Area, 6 Weapons, Auto Bullet Shotgun Character=char_plant Crown=crwn_random Weapon=wep_laser_minigun Seed=12619
+Mods:Ancient Hatred, Belly, Big Bandit, BAR, Baldi Character=char_horror Crown=crwn_blood Weapon=wep_auto_grenade_shotgun Seed=17969
