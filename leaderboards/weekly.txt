@@ -1,1 +1,1 @@
-Mods:BAR, Baller, BB, Bandit Brute, Area Health Character=Baller Crown=crwn_blood Weapon=wep_hyper_slugger Seed=7457
+Mods:BadEnd, banditstack, Ancient Hatred, Afterburn, Auto Revolver Character=char_plant Crown=crown of ancient hatred Weapon=wep_hyper_rifle Seed=1480

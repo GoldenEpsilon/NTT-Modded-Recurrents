@@ -1,1 +1,1 @@
-Mods:Area Health, Assault Flak Cannon, basicgunallies, Bandit Brute, B Character= Crown= Weapon=wep_heavy_auto_crossbow Seed=28034
+Mods:BAR, Baller, BB, Bandit Brute, Area Health Character=Baller Crown=crwn_blood Weapon=wep_hyper_slugger Seed=7457
