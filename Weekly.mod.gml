@@ -1,10 +1,10 @@
 
-/*@rMods@w=#  Bandit Brute#  Auto Flame Crossbow#  Ash#  Ancient Hatred#  Babylon Shotgun#@bCharacter@w=#  char_horror#@yCrown@w=#  crwn_hatred#@gWeapon@w=#  wep_lightning_pistol#@pSeed@w=27917*/
+/*@rMods@w=#  Assault Flak Cannon#  betterLoops#  Afterburn#  Big Dog#  B#@bCharacter@w=#  char_horror#@yCrown@w=#  crwn_none#@gWeapon@w=#  wep_golden_splinter_gun#@pSeed@w=7317*/
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 27917;
+global.seed = 7317;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -47,11 +47,11 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 
 
 trace("Current Weekly:");
-trace("Mods=Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun");
+trace("Mods=Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B");
 trace("Character=char_horror");
-trace("Crown=crwn_hatred");
-trace("Weapon=wep_lightning_pistol");
-trace("Seed=27917");
+trace("Crown=crwn_none");
+trace("Weapon=wep_golden_splinter_gun");
+trace("Seed=7317");
 
 global.canStart = true;
 
@@ -69,7 +69,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_lightning_pistol;
+		wep = wep_golden_splinter_gun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -89,7 +89,7 @@ else{with(instances_matching(CustomObject, "name", mod_current)){instance_change
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun" + " Character=char_horror" + " Crown=crwn_hatred" + " Weapon=wep_lightning_pistol" + " Seed=27917";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B" + " Character=char_horror" + " Crown=crwn_none" + " Weapon=wep_golden_splinter_gun" + " Seed=7317";
 	}
 	trace(score);
 	global.finished = true;
@@ -125,10 +125,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun" + " Character=char_horror" + " Crown=crwn_hatred" + " Weapon=wep_lightning_pistol" + " Seed=27917" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B" + " Character=char_horror" + " Crown=crwn_none" + " Weapon=wep_golden_splinter_gun" + " Seed=7317" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun" + " Character=char_horror" + " Crown=crwn_hatred")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B" + " Character=char_horror" + " Crown=crwn_none")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -170,7 +170,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = string_trim(crwn_hatred);
+	crown = string_trim(crwn_none);
 }
 #define base64(str)
 var retVal = "";

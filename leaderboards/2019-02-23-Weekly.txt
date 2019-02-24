@@ -1,1 +1,1 @@
-Mods:Big Bandit, Auto Revolver, Babylon Shotgun, !ARMAGGEDNN, Area Health Character=char_rebel Crown=crwn_life Weapon=wep_flare_gun Seed=2711
+Mods:Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun Character=char_horror Crown=crwn_hatred Weapon=wep_lightning_pistol Seed=27917

@@ -1,1 +1,1 @@
-Mods:Bandit Brute, Auto Flame Crossbow, Ash, Ancient Hatred, Babylon Shotgun Character=char_horror Crown=crwn_hatred Weapon=wep_lightning_pistol Seed=27917
+Mods:Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B Character=char_horror Crown=crwn_none Weapon=wep_golden_splinter_gun Seed=7317
