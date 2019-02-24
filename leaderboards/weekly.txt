@@ -1,1 +1,1 @@
-Mods:Assault Flak Cannon, betterLoops, Afterburn, Big Dog, B Character=char_horror Crown=crwn_none Weapon=wep_golden_splinter_gun Seed=7317
+Mods:Balls, Beamer, basicgunallies, Big Bandit, betterLoops Character=char_frog Crown=crwn_love Weapon=wep_double_minigun Seed=8732
