@@ -1,10 +1,10 @@
 
-/*@rMods@w=#  B#  Auto Revolver#  Big Dog#  Afterburn#  Assault Flak Cannon#@bCharacter@w=#  char_eyes#@yCrown@w=#  crwn_luck#@gWeapon@w=#  wep_laser_minigun#@pSeed@w=29348*/
+/*@rMods@w=#  Bandit Brute#  banditstack#  Bear#  2 Hour Area#  Auto Revolver#@bCharacter@w=#  char_eyes#@yCrown@w=#  crwn_hatred#@gWeapon@w=#  wep_golden_disc_gun#@pSeed@w=19421*/
 #define init
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 29348;
+global.seed = 19421;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -47,11 +47,11 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 
 
 trace("Current Weekly:");
-trace("Mods=B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon");
+trace("Mods=Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver");
 trace("Character=char_eyes");
-trace("Crown=crwn_luck");
-trace("Weapon=wep_laser_minigun");
-trace("Seed=29348");
+trace("Crown=crwn_hatred");
+trace("Weapon=wep_golden_disc_gun");
+trace("Seed=19421");
 
 global.canStart = true;
 
@@ -69,7 +69,7 @@ if(global.qualified == true){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		wep = wep_laser_minigun;
+		wep = wep_golden_disc_gun;
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -89,7 +89,7 @@ else{with(instances_matching(CustomObject, "name", mod_current)){instance_change
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon" + " Character=char_eyes" + " Crown=crwn_luck" + " Weapon=wep_laser_minigun" + " Seed=29348";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver" + " Character=char_eyes" + " Crown=crwn_hatred" + " Weapon=wep_golden_disc_gun" + " Seed=19421";
 	}
 	trace(score);
 	global.finished = true;
@@ -125,10 +125,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon" + " Character=char_eyes" + " Crown=crwn_luck" + " Weapon=wep_laser_minigun" + " Seed=29348" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver" + " Character=char_eyes" + " Crown=crwn_hatred" + " Weapon=wep_golden_disc_gun" + " Seed=19421" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon" + " Character=char_eyes" + " Crown=crwn_luck")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver" + " Character=char_eyes" + " Crown=crwn_hatred")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
@@ -170,7 +170,7 @@ game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
 with(GameCont){
-	crown = string_trim(crwn_luck);
+	crown = string_trim(crwn_hatred);
 }
 #define base64(str)
 var retVal = "";

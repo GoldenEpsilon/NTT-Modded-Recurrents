@@ -1,1 +1,1 @@
-Mods:B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon Character=char_eyes Crown=crwn_luck Weapon=wep_laser_minigun Seed=29348
+Mods:Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver Character=char_eyes Crown=crwn_hatred Weapon=wep_golden_disc_gun Seed=19421

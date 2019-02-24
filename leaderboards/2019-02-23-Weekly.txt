@@ -1,2 +1,1 @@
-Mods:Assault Flak Cannon, Belly, Bear, Big Bandit, Ash Character=Bear Crown=crwn_hatred Weapon=wep_triple_machinegun Seed=17024
-|JimmyJuice: Area 1-2 L0 Kills: 67 
+Mods:B, Auto Revolver, Big Dog, Afterburn, Assault Flak Cannon Character=char_eyes Crown=crwn_luck Weapon=wep_laser_minigun Seed=29348
