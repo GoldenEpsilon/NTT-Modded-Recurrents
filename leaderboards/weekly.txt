@@ -1,2 +1,2 @@
 Mods:Bear, Balls, Auto Bullet Shotgun, Area Health, Ash Character=char_robot Crown=crwn_none Weapon=wep_sticky_launcher Seed=12290
-|Golden Epsilon: Area 1-3 L0 Kills: 86 |JimmyJuice: Area 1-3 L0 Kills: 66 |˜Saniblues: Area 1-3 L0 Kills: 73 |Classical Sheep-r: Area 2-1 L0 Kills: 104 |Karmelyth, Aevusonian: Area 1-2 L0 Kills: 19 
+|Golden Epsilon: Area 1-3 L0 Kills: 86 |JimmyJuice: Area 1-3 L0 Kills: 66 |˜Saniblues: Area 1-3 L0 Kills: 73 |Classical Sheep-r: Area 2-1 L0 Kills: 104 |Karmelyth, Aevusonian: Area 1-2 L0 Kills: 19 |�Saniblues: Area 3-2 L0 Kills: 276 
