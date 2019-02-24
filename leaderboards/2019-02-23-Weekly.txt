@@ -1,1 +1,1 @@
-Mods:2 Hour Area, !ARMAGGEDNN, 6 Weapons, Afterburn, basicgunallies Character=char_melting Crown=crwn_destiny Weapon=wep_golden_screwdriver Seed=24528
+Mods:Belly, Airhorn, betterLoops, BB, Auto Flame Crossbow Character=char_fish Crown=crwn_guns Weapon=wep_sticky_launcher Seed=3167
