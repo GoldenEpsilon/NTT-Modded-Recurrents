@@ -1,1 +1,1 @@
-Mods:6 Weapons, BadEnd, Area Health, Bandit Brute, basicgunallies Character=char_frog Crown=crwn_curses Weapon=wep_shotgun Seed=522
+Mods:Big Dog, Big Bandit, Afterburn, !ARMAGGEDNN, Auto Revolver Character=char_chicken Crown=crwn_haste Weapon=wep_plasma_minigun Seed=7849
