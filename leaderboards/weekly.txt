@@ -1,2 +1,1 @@
-Mods:NTT X10 Ver 1.0.1, Nuke Launcher, Level Balls, Bandit Cannon, Chaos Guns Character=char_steroids Crown=crwn_hatred Weapon=wep_laser_rifle Seed=26751
-|Golden Epsilon: Area 1-1 L0 Kills: 22 |Golden Epsilon: Area 1-2 L0 Kills: 52 
+Mods:Bear, Balls, Auto Bullet Shotgun, Area Health, Ash Character=char_robot Crown=crwn_none Weapon=wep_sticky_launcher Seed=12290
