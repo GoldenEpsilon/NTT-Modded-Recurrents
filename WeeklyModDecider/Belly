@@ -1,0 +1,14 @@
+|belly/belly.race.gml
+/Belly
+:belly/sndBellyChst.ogg
+:belly/sndBellyCnfm.ogg
+:belly/sndBellyCrwn.ogg
+:belly/sndBellyDead.ogg
+:belly/sndBellyHurt.ogg
+:belly/sndBellyIDPD.ogg
+:belly/sndBellyLowA.ogg
+:belly/sndBellyLowH.ogg
+:belly/sndBellySlct.ogg
+:belly/sndBellySpch.ogg
+:belly/sndBellyValt.ogg
+:belly/sndBellyWrld.ogg

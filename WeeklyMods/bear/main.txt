@@ -1,0 +1,2 @@
+/loadrace bear
+/loadwep beargun
