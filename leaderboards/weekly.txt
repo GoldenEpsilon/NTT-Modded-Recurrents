@@ -1,1 +1,1 @@
-Mods:Bandit Brute, banditstack, Bear, 2 Hour Area, Auto Revolver Character=char_eyes Crown=crwn_hatred Weapon=wep_golden_disc_gun Seed=19421
+Mods:B, Balls, 2 Hour Area, Afterburn, Armageddon Cannon Character=char_random Crown=crwn_random Weapon=wep_incinerator Seed=10330
