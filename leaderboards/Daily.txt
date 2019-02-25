@@ -1,1 +1,1 @@
-Mods:Airhorn,Ash,Balls,6 Weapons,!ARMAGGEDNN Character=Ash Crown=crown of blood Weapon=Cyber Shovel Seed=18141
+Mods:banditstack,Baldi,BAR,Babylon Shotgun,Auto Revolver Character=Baldi Crown=crown of life Weapon=Big Ass Revolver Seed=14173
