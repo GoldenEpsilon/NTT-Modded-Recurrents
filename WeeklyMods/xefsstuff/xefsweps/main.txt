@@ -1,0 +1,60 @@
+/loadwep knuckles/knuckles
+/loadwep knuckles/pillbugs
+/loadwep knuckles/heavy knuckles
+/loadwep knuckles/lightning knuckles
+/loadwep knuckles/gun knuckles
+/loadwep knuckles/ultra knuckles
+/loadwep knuckles/lead knuckles
+
+/loadmod knuckles/triggerknuckles
+
+/loadwep milksnake
+/loadwep serpent
+
+/loadwep cricket
+/loadwep cicada
+/loadwep thopha
+
+/loadwep carbine
+
+/loadwep trimmer
+
+/loadwep bullet/bullet spear
+/loadwep bullet/bullet trident
+/loadwep bullet/bullet shield
+/loadwep bullet/bullet gun
+/loadwep bullet/golden bullet spear
+
+/loadwep skillshot
+/loadwep superskillshot
+/loadwep clinometer
+
+/loadwep darts/darts
+/loadwep darts/hyper darts
+/loadwep darts/triple darts
+/loadwep darts/heavy darts
+/loadwep darts/gun darts
+/loadwep darts/bouncer darts
+/loadwep darts/poison darts
+/loadwep darts/golden darts
+
+/loadwep flywheel gun
+/loadwep flashlight
+
+/loadwep slade warhammer
+/loadwep cannondemnation
+/loadwep boollista
+
+/loadwep cloud/cloud pistol
+/loadwep cloud/cloud rifle
+/loadwep cloud/cloud shotgun
+/loadwep cloud/cloud cannon
+/loadwep cloud/cloud minigun
+
+/loadwep cloud/thunder cloud pistol
+/loadwep cloud/thunder cloud rifle
+/loadwep cloud/thunder cloud shotgun
+/loadwep cloud/thunder cloud cannon
+/loadwep cloud/thunder cloud minigun
+
+/loadwep supper slugger

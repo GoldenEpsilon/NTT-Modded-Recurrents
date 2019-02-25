@@ -1,0 +1,43 @@
+
+global.button = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAACXBIWXMAAAsSAAALEgHS3X78AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAADHklEQVRIx7WWT0gUcRTHv3taIxQ29JAr2KVil5B0iGJtQXdhTyIoGUKxS3mwgxid3PDUIduOXkQ2UtZjxgqiVML+gbVFD7NGLLvkqaBJQUmhwyYE02F4P3+/3/x2TKp3mWXmt+/z3vu+92Zch9WsCQCJZwkMj47jX5vrsJo1P228Yzfcl4KOf9DzafZb6xmEnk9D6xmsD9icnzABYCm3hYHeTkfASc5U513xaMQEgIHeTscMTus8OTUGLRA6zsCpRKd1/lcA0mBkck448+H9ilIrVzwaMak8fyqy7NwJYgOcBHICqCD/HwDAjEcjUEGWclvK4bva3QcAGHJ72L3FowNnALXqUm5LOJBYWFPWdmRyTgAQhM7q+TT0YlbMQOXcSUAeonKuBUL2EhGEgAR5+fS+bRYIwj+j9qQ1wgDxx3HwO4ns+r3niEcjuHi5zXHYyLFezFqAQMjS4MGNsDm7kcFh1XogQyij4dFxHG0X6nYZlYV3rhezFgAAZjcyAIDN+Qnwy0++8lb+tseySk6NHW/ZQIi1MgMQhBdcvvJLUQbwwurFLGZWP2NzfkINkG2gt5NpITcDzYk8gKlwEJqvvT4gsbAmwKib+BICYOLT8FEQZ3VDXSI6JM9BKhzEynqZTaxsQ24P+m5egeZrFyeZB/BZUAY+o4aq9wx8Rg0AEMsUMOT22EAEACBAbACCpMJBdlivfmHPVtbLbHLlVTFyKwjD3wytZxANuRJ+7W7XBwBAeewuAODJi1UhYt7xdGMbHv74aoN0mxdOzoCij2UKbB3sziSt1fHaGrpXP7/jdsM5myYEqquBz6jZAADgrewz59ONbTi/9xE7LR0sC8r07Z1+O4BKkwoHEcsUGCiWKQilIcey7bR04M2jawCgLhHfQXy/UzakB19/PoPFowNWyoZcyQL0+7vM1iYPVPuIB8hG3cRroGpdAUAQeVp9Rk0YMqcusn069vu7TABobfIIy06Onu8kANidSTKx5ej5ABgAAJYrJWX0PIDMW9mH4W9mC05+4+n5NLyV/WPAcqUk7CH5I4DfS6ovCh5OAQDAbyZwN+zN0pxZAAAAAElFTkSuQmCC",1,12,16)
+
+global.icon = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAB3RJTUUH4QYTDSURVrsMEAAAABd0RVh0U29mdHdhcmUAR0xEUE5HIHZlciAzLjRxhaThAAAACHRwTkdHTEQzAAAAAEqAKR8AAAAEZ0FNQQAAsY8L/GEFAAAABmJLR0QASABvAKgKRg8wAAAAlklEQVR4nGOwS53IQAmmSDNeA4DgPwyTbcAzEV3SDUC2efe+w/8JuYSJAQuobephCGUXZHBxtAHTID4uADfg0Oz8/yAMYt9obWWYyCsDFgfRID66GjhA9zPI2SAAomEYxscWJlj9DnQ2WDEIgGgQH1dYYA0DjepqhvzPT8BsEA3i4wSUxgJeA2B+JskAqqZEigygW24EAPpPKy9kFv8mAAAAAElFTkSuQmCC",1,8,8)
+global.hitbox = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsSAAALEgHS3X78AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAHklEQVQI12P8//8/AwMDw38GCGBk/A8VgQGsAihaAHbJD/fAYFqAAAAAAElFTkSuQmCC",1,2,2)
+
+#define skill_name
+	return "CONDENSED MEAT";
+	
+#define skill_text
+	return "@ssmaller @whitbox";
+
+#define skill_button
+	sprite_index = global.button;
+	
+#define skill_icon
+	return global.icon;
+	
+#define skill_wepspec
+	return 0;
+
+#define skill_tip
+	return "here comes the tiny boy";
+	
+#define skill_take
+	sound_play(sndMutStrongSpirit)
+	
+#define step
+
+with instances_matching(Player,"mask_index", mskPlayer){
+	mask_index = mskDebris
+	}
+with instances_matching(Player,"mask_index", mskDebris)
+	with script_bind_draw(hitbox,-3)
+		creator = other
+#define hitbox
+draw_set_alpha(0.5)
+with creator{
+	draw_sprite_ext(sprChickenB,1,x+0.5,y+0.5,1,1,0,player_get_color(index),0.1)
+	draw_sprite_ext(global.hitbox,1,x,y,1,1,0,player_get_color(index),0.7)
+	}
+draw_set_alpha(1)
+instance_destroy()

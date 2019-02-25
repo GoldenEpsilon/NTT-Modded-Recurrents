@@ -1,0 +1,5 @@
+/loadmod mods/pgw/mods/pgw_bl2.mod.gml
+/loadmod mods/pgw/mods/pgw_idpd.mod.gml
+/loadmod mods/pgw/gamblechest.mod.gml
+/loadmod mods/pgw/sharedammo.mod.gml
+/loadmod mods/pgw/bigweaponchest.mod.gml

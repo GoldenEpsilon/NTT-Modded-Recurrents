@@ -1,0 +1,102 @@
+|xefsstuff/Auditor.race.gml
+|xefsstuff/CopCar.mod.gml
+|xefsstuff/Patrol.race.gml
+|xefsstuff/poporobo.mod.gml
+|xefsstuff/xefsweps/boollista.wep.gml
+|xefsstuff/xefsweps/cannondemnation.wep.gml
+|xefsstuff/xefsweps/carbine.wep.gml
+|xefsstuff/xefsweps/cicada.wep.gml
+|xefsstuff/xefsweps/clinometer.wep.gml
+|xefsstuff/xefsweps/cricket.wep.gml
+|xefsstuff/xefsweps/flashlight.wep.gml
+|xefsstuff/xefsweps/flywheel gun.wep.gml
+|xefsstuff/xefsweps/MilkSnake.wep.gml
+|xefsstuff/xefsweps/Serpent.wep.gml
+|xefsstuff/xefsweps/skillshot.wep.gml
+|xefsstuff/xefsweps/slade warhammer.wep.gml
+|xefsstuff/xefsweps/superskillshot.wep.gml
+|xefsstuff/xefsweps/supper slugger.wep.gml
+|xefsstuff/xefsweps/thopha.wep.gml
+|xefsstuff/xefsweps/trimmer.wep.gml
+|xefsstuff/xefsweps/bullet/bullet gun.wep.gml
+|xefsstuff/xefsweps/bullet/bullet shield.wep.gml
+|xefsstuff/xefsweps/bullet/bullet spear.wep.gml
+|xefsstuff/xefsweps/bullet/bullet trident.wep.gml
+|xefsstuff/xefsweps/bullet/golden bullet spear.wep.gml
+|xefsstuff/xefsweps/cloud/cloud blaster.wep.gml
+|xefsstuff/xefsweps/cloud/cloud cannon.wep.gml
+|xefsstuff/xefsweps/cloud/cloud minigun.wep.gml
+|xefsstuff/xefsweps/cloud/cloud pistol.wep.gml
+|xefsstuff/xefsweps/cloud/cloud rifle.wep.gml
+|xefsstuff/xefsweps/cloud/cloud shotgun.wep.gml
+|xefsstuff/xefsweps/cloud/thunder cloud cannon.wep.gml
+|xefsstuff/xefsweps/cloud/thunder cloud minigun.wep.gml
+|xefsstuff/xefsweps/cloud/thunder cloud pistol.wep.gml
+|xefsstuff/xefsweps/cloud/thunder cloud rifle.wep.gml
+|xefsstuff/xefsweps/cloud/thunder cloud shotgun.wep.gml
+|xefsstuff/xefsweps/darts/bouncer darts.wep.gml
+|xefsstuff/xefsweps/darts/darts.wep.gml
+|xefsstuff/xefsweps/darts/golden darts.wep.gml
+|xefsstuff/xefsweps/darts/gun darts.wep.gml
+|xefsstuff/xefsweps/darts/heavy darts.wep.gml
+|xefsstuff/xefsweps/darts/hyper darts.wep.gml
+|xefsstuff/xefsweps/darts/poison darts.wep.gml
+|xefsstuff/xefsweps/darts/triple darts.wep.gml
+|xefsstuff/xefsweps/knuckles/gun knuckles.wep.gml
+|xefsstuff/xefsweps/knuckles/heavy knuckles.wep.gml
+|xefsstuff/xefsweps/knuckles/knuckles.wep.gml
+|xefsstuff/xefsweps/knuckles/lead knuckles.wep.gml
+|xefsstuff/xefsweps/knuckles/lightning knuckles.wep.gml
+|xefsstuff/xefsweps/knuckles/pillbugs.wep.gml
+|xefsstuff/xefsweps/knuckles/triggerknuckles.mod.gml
+|xefsstuff/xefsweps/knuckles/ultra knuckles.wep.gml
+/Auditor
+/Patrol
+*boollista
+*cannondemnation
+*carbine
+*cicada
+*clinometer
+*cricket
+*flashlight
+*flywheel gun
+*MilkSnake
+*Serpent
+*skillshot
+*slade warhammer
+*superskillshot
+*supper slugger
+*thopha
+*trimmer
+*bullet gun
+*bullet shield
+*bullet spear
+*bullet trident
+*golden bullet spear
+*cloud blaster
+*cloud cannon
+*cloud minigun
+*cloud pistol
+*cloud rifle
+*cloud shotgun
+*thunder cloud cannon
+*thunder cloud minigun
+*thunder cloud pistol
+*thunder cloud rifle
+*thunder cloud shotgun
+*bouncer darts
+*darts
+*golden darts
+*gun darts
+*heavy darts
+*hyper darts
+*poison darts
+*triple darts
+*gun knuckles
+*heavy knuckles
+*knuckles
+*lead knuckles
+*lightning knuckles
+*pillbugs
+*triggerknuckles
+*ultra knuckles

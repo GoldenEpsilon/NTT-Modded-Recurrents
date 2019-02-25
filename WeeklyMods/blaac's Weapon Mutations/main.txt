@@ -1,0 +1,8 @@
+// by blaac
+/loadskill condensedmeat
+/loadskill powderedgums
+/loadskill compoundelbow
+/loadskill concentration
+/loadskill excitedneurons
+/loadskill flamingpalms
+/loadmod noheavyheart

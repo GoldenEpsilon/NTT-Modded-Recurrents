@@ -1,0 +1,9 @@
+/loadmod procwep.wep.gml
+/loadmod pgw.mod.gml
+/loadmod reloadindicator.mod.gml
+/loadmod mods/pgw_idpd.mod.gml
+/loadmod mods/pgw_bl2.mod.gml
+/loadmod gamblechest.mod.gml
+/loadmod sharedammo.mod.gml
+/loadmod bigweaponchest.mod.gml
+/loadmod idpdgamblechest.mod.gml
