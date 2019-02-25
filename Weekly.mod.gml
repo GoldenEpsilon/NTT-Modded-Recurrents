@@ -217,14 +217,39 @@ while (!file_loaded(string_trim("betterLoops.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("bb.race.gml
 "))) {wait 1;}
 while (!file_loaded(string_trim("BanditBrute.mod.gml"))) {wait 1;}
-mod_load(string_trim("data/Weekly.mod/2 hour area/2hours.area.gml
+wait mod_load(string_trim("data/Weekly.mod/2 hour area/2hours.area.gml
 "));
-mod_load(string_trim("data/Weekly.mod/b/b.mod.gml
+wait mod_load(string_trim("data/Weekly.mod/b/b.mod.gml
 "));
-mod_load(string_trim("data/Weekly.mod/betterLoops.mod.gml"));
-mod_load(string_trim("data/Weekly.mod/bb.race.gml
+wait mod_load(string_trim("data/Weekly.mod/betterLoops.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bb.race.gml
 "));
-mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
+			  
+global.ModNames = "";
+		     
+var i = 0;
+for(i = 0; array_length(mod_get_names("mod")) > i; i++){
+	global.ModNames += mod_get_names("mod")[i]
+}
+for(i = 0; array_length(mod_get_names("weapon")) > i; i++){
+	global.ModNames += mod_get_names("weapon")[i]
+}
+for(i = 0; array_length(mod_get_names("area")) > i; i++){
+	global.ModNames += mod_get_names("area")[i]
+}
+for(i = 0; array_length(mod_get_names("crown")) > i; i++){
+	global.ModNames += mod_get_names("crown")[i]
+}
+for(i = 0; array_length(mod_get_names("race")) > i; i++){
+	global.ModNames += mod_get_names("race")[i]
+}
+for(i = 0; array_length(mod_get_names("skill")) > i; i++){
+	global.ModNames += mod_get_names("skill")[i]
+}
+for(i = 0; array_length(mod_get_names("skin")) > i; i++){
+	global.ModNames += mod_get_names("skin")[i]
+}
 
 trace("Current Weekly:");
 trace("Mods=2 Hour Area, B, betterLoops, BB, Bandit Brute");
@@ -236,6 +261,36 @@ trace("Seed=12964");
 global.canStart = true;
 
 #define step
+if(global.qualified == true && global.canStart && global.ModNames != ""){
+	var ModNames = "";
+		     
+	var i = 0;
+	for(i = 0; array_length(mod_get_names("mod")) > i; i++){
+		ModNames += mod_get_names("mod")[i]
+	}
+	for(i = 0; array_length(mod_get_names("weapon")) > i; i++){
+		ModNames += mod_get_names("weapon")[i]
+	}
+	for(i = 0; array_length(mod_get_names("area")) > i; i++){
+		ModNames += mod_get_names("area")[i]
+	}
+	for(i = 0; array_length(mod_get_names("crown")) > i; i++){
+		ModNames += mod_get_names("crown")[i]
+	}
+	for(i = 0; array_length(mod_get_names("race")) > i; i++){
+		ModNames += mod_get_names("race")[i]
+	}
+	for(i = 0; array_length(mod_get_names("skill")) > i; i++){
+		ModNames += mod_get_names("skill")[i]
+	}
+	for(i = 0; array_length(mod_get_names("skin")) > i; i++){
+		ModNames += mod_get_names("skin")[i]
+	}
+	if(ModNames != global.ModNames){
+		trace("Disqualified for uploading results. reload the weekly mod from the character select screen to qualify again. Reason: Incorrect mod list");
+		global.qualified = false;
+	}
+}
 if(global.qualified == true){
 	var i = 0;
 	repeat(4){
