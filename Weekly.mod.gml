@@ -261,7 +261,7 @@ trace("Seed=12964");
 global.canStart = true;
 
 #define step
-if(global.qualified == true && global.canStart){
+if(global.qualified == true && global.canStart && global.ModNames != ""){
 	var ModNames = "";
 		     
 	var i = 0;
