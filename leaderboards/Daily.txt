@@ -1,1 +1,1 @@
-Mods:BadEnd,Area Health,Ancient Hatred,B,Armageddon Cannon Character=chicken Crown=crown of ancient hatred Weapon=super plasma cannon Seed=22201
+Mods:Babylon Shotgun,Auto Flame Crossbow,BAR,Armageddon Cannon,Ash Character=Choose Crown=crown of blood Weapon=Big Ass Revolver Seed=10915
