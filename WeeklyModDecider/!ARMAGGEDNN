@@ -69,13 +69,13 @@
 *Ultra M16
 *Gauss Gun
 *Grave Gun
-:!ARMAGGEDNN/areas/spr/F1
-:!ARMAGGEDNN/areas/spr/F1E
-:!ARMAGGEDNN/areas/spr/sprGrave1
-:!ARMAGGEDNN/areas/spr/sprGrave2
-:!ARMAGGEDNN/areas/spr/W1B
-:!ARMAGGEDNN/areas/spr/W1O
-:!ARMAGGEDNN/areas/spr/W1T
+:!ARMAGGEDNN/areas/spr/F1.png
+:!ARMAGGEDNN/areas/spr/F1E.png
+:!ARMAGGEDNN/areas/spr/sprGrave1.png
+:!ARMAGGEDNN/areas/spr/sprGrave2.png
+:!ARMAGGEDNN/areas/spr/W1B.png
+:!ARMAGGEDNN/areas/spr/W1O.png
+:!ARMAGGEDNN/areas/spr/W1T.png
 :!ARMAGGEDNN/weapons/spr/boltm.png
 :!ARMAGGEDNN/weapons/spr/fireaxe.png
 :!ARMAGGEDNN/weapons/spr/flail.png
@@ -105,9 +105,9 @@
 :!ARMAGGEDNN/weapons/spr/zVampirSlash.png
 :!ARMAGGEDNN/weapons/snd/FHONshot.ogg
 :!ARMAGGEDNN/weapons/snd/uspcShot.ogg
-:!ARMAGGEDNN/weapons/1.4/spr/dubstep.png
+:!ARMAGGEDNN/weapons/1.4/spr/dubsteb.png
 :!ARMAGGEDNN/weapons/1.4/spr/lyapas.png
-:!ARMAGGEDNN/weapons/1.4/spr/lyapasGun.png
+:!ARMAGGEDNN/weapons/1.4/spr/LyapasGun.png
 :!ARMAGGEDNN/weapons/1.4/spr/lyapasP.png
 :!ARMAGGEDNN/weapons/1.4/spr/M16.png
 :!ARMAGGEDNN/weapons/1.4/spr/Shovel.png
