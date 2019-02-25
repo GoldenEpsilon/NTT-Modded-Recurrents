@@ -228,25 +228,25 @@ mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
 global.ModNames = "";
 		     
 var i = 0;
-for(i = 0; array_length(mod_get_names("mod")) > 1; i++){
+for(i = 0; array_length(mod_get_names("mod")) > i; i++){
 	global.ModNames += mod_get_names("mod")[i]
 }
-for(i = 0; array_length(mod_get_names("weapon")) > 0; i++){
+for(i = 0; array_length(mod_get_names("weapon")) > i; i++){
 	global.ModNames += mod_get_names("weapon")[i]
 }
-for(i = 0; array_length(mod_get_names("area")) > 0; i++){
+for(i = 0; array_length(mod_get_names("area")) > i; i++){
 	global.ModNames += mod_get_names("area")[i]
 }
-for(i = 0; array_length(mod_get_names("crown")) > 0; i++){
+for(i = 0; array_length(mod_get_names("crown")) > i; i++){
 	global.ModNames += mod_get_names("crown")[i]
 }
-for(i = 0; array_length(mod_get_names("race")) > 0; i++){
+for(i = 0; array_length(mod_get_names("race")) > i; i++){
 	global.ModNames += mod_get_names("race")[i]
 }
-for(i = 0; array_length(mod_get_names("skill")) > 0; i++){
+for(i = 0; array_length(mod_get_names("skill")) > i; i++){
 	global.ModNames += mod_get_names("skill")[i]
 }
-for(i = 0; array_length(mod_get_names("skin")) > 0; i++){
+for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 	global.ModNames += mod_get_names("skin")[i]
 }
 
@@ -264,25 +264,25 @@ if(global.qualified == true && global.canStart){
 	var ModNames = "";
 		     
 	var i = 0;
-	for(i = 0; array_length(mod_get_names("mod")) > 1; i++){
+	for(i = 0; array_length(mod_get_names("mod")) > i; i++){
 		ModNames += mod_get_names("mod")[i]
 	}
-	for(i = 0; array_length(mod_get_names("weapon")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("weapon")) > i; i++){
 		ModNames += mod_get_names("weapon")[i]
 	}
-	for(i = 0; array_length(mod_get_names("area")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("area")) > i; i++){
 		ModNames += mod_get_names("area")[i]
 	}
-	for(i = 0; array_length(mod_get_names("crown")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("crown")) > i; i++){
 		ModNames += mod_get_names("crown")[i]
 	}
-	for(i = 0; array_length(mod_get_names("race")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("race")) > i; i++){
 		ModNames += mod_get_names("race")[i]
 	}
-	for(i = 0; array_length(mod_get_names("skill")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("skill")) > i; i++){
 		ModNames += mod_get_names("skill")[i]
 	}
-	for(i = 0; array_length(mod_get_names("skin")) > 0; i++){
+	for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 		ModNames += mod_get_names("skin")[i]
 	}
 	if(ModNames != global.ModNames){
