@@ -1,1 +1,1 @@
-Mods:Afterburn,betterLoops,Big Dog,basicgunallies,Balls Character=Choose Crown=crown of guns Weapon=laserwrench Seed=9886
+Mods:6 Weapons,Big Bandit,Bandit Brute,Airhorn,!ARMAGGEDNN Character=Choose Crown=crown of life Weapon=Ultra Katana Seed=9778
