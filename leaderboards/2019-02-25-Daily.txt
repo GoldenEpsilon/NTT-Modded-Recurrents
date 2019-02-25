@@ -1,1 +1,1 @@
-Mods:2 Hour Area,Afterburn,BL2,bosshudredux,Bioluminary Oscillator Character=Choose Crown=crown of blood Weapon=blood launcher Seed=15053
+Mods:Balls,bow,brad,Boltshard,6 Weapons Character=Choose Crown=crown of haste Weapon=laserwrench Seed=21669

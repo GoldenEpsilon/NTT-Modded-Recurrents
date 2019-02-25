@@ -1,1 +1,1 @@
-Mods:Balls,bow,brad,Boltshard,6 Weapons Character=Choose Crown=crown of haste Weapon=laserwrench Seed=21669
+Mods:Fire Riders,Airhorn,BAR,xefsstuff,!ARMAGGEDNN Character=Choose Crown=crown of life Weapon=Flame Shovel Seed=18551
