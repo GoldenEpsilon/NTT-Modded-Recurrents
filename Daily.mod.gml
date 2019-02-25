@@ -1424,7 +1424,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
 			}
-			if(!LimitedTries && !fail){
+			if(!LimitedTries || !fail){
 				file_delete("sha.txt");
 				while (file_exists("sha.txt")) {wait 1;}
 				http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
