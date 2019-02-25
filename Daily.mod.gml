@@ -1373,7 +1373,7 @@ if(global.start){
 	global.start = false;
 }
 if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;if(!ChooseCharacter){race=string_lower(string_trim("Choose"));}}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){if(!ChooseCharacter){race=string_lower(string_trim("Choose"));}visible=true;with(CharSelect){if(race==other.race){instance_destroy();}}}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){if(!ChooseCharacter){race=string_lower(string_trim("Choose"));}visible=true;with(CharSelect){if(id != other.id && race==other.race){instance_destroy();}}}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
