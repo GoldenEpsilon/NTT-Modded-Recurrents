@@ -1,5 +1,5 @@
 
-/*@rMods@w=#  Area Health#  betterLoops#  !ARMAGGEDNN#  Baller#  Armageddon Cannon#@bCharacter@w=#  Choose#@yCrown@w=#  #@gWeapon@w=#  Ullapoll Caber#@pSeed@w=28815#Limited Tries:false*/
+/*@rMods@w=#  Big Dog#  Area Health#  !ARMAGGEDNN#  Airhorn#  Bear#@bCharacter@w=#  Choose#@yCrown@w=#  crown of guns#@gWeapon@w=#  Dubstep Gun#@pSeed@w=22485#Limited Tries:false*/
 /*#*/
 #define init
 #macro DailyScoreboardX 155
@@ -25,7 +25,7 @@ global.DailyWidth = 0;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 28815;
+global.seed = 22485;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -65,8 +65,8 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_delete(string_trim("bigdog.mod.gml"));while (file_exists(string_trim("bigdog.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bigdog.mod.gml"), string_trim("bigdog.mod.gml")));
 file_delete(string_trim("area_health.mod.gml"));while (file_exists(string_trim("area_health.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/area_health.mod.gml"), string_trim("area_health.mod.gml")));
-file_delete(string_trim("betterLoops.mod.gml"));while (file_exists(string_trim("betterLoops.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/betterLoops.mod.gml"), string_trim("betterLoops.mod.gml")));
 file_delete(string_trim("!ARMAGGEDNN/areas/crimson.area.gml"));while (file_exists(string_trim("!ARMAGGEDNN/areas/crimson.area.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/areas/crimson.area.gml"), string_trim("!ARMAGGEDNN/areas/crimson.area.gml")));
 file_delete(string_trim("!ARMAGGEDNN/weapons/autoSh.weapon.gml"));while (file_exists(string_trim("!ARMAGGEDNN/weapons/autoSh.weapon.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/weapons/autoSh.weapon.gml"), string_trim("!ARMAGGEDNN/weapons/autoSh.weapon.gml")));
 file_delete(string_trim("!ARMAGGEDNN/weapons/axeFire.wep.gml"));while (file_exists(string_trim("!ARMAGGEDNN/weapons/axeFire.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/weapons/axeFire.wep.gml"), string_trim("!ARMAGGEDNN/weapons/axeFire.wep.gml")));
@@ -151,10 +151,15 @@ file_delete(string_trim("!ARMAGGEDNN/weapons/1.4/spr/ukatana.png"));while (file
 file_delete(string_trim("!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png"));while (file_exists(string_trim("!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png"), string_trim("!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png")));
 file_delete(string_trim("!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png"));while (file_exists(string_trim("!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png"), string_trim("!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png")));
 file_delete(string_trim("!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png"));while (file_exists(string_trim("!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png"), string_trim("!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png")));
-file_delete(string_trim("baller.race.gml"));while (file_exists(string_trim("baller.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/baller.race.gml"), string_trim("baller.race.gml")));
-file_delete(string_trim("Armageddon_Cannon.wep.gml"));while (file_exists(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Armageddon_Cannon.wep.gml"), string_trim("Armageddon_Cannon.wep.gml")));
+file_delete(string_trim("airhorn.wep.gml"));while (file_exists(string_trim("airhorn.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/airhorn.wep.gml"), string_trim("airhorn.wep.gml")));
+file_delete(string_trim("bear/bear.race.gml"));while (file_exists(string_trim("bear/bear.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear.race.gml"), string_trim("bear/bear.race.gml")));
+file_delete(string_trim("bear/beargun.wep.gml"));while (file_exists(string_trim("bear/beargun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/beargun.wep.gml"), string_trim("bear/beargun.wep.gml")));
+file_delete(string_trim("bear/a fucking gun.png"));while (file_exists(string_trim("bear/a fucking gun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/a fucking gun.png"), string_trim("bear/a fucking gun.png")));
+file_delete(string_trim("bear/bear (1).png"));while (file_exists(string_trim("bear/bear (1).png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear (1).png"), string_trim("bear/bear (1).png")));
+file_delete(string_trim("bear/bearhurt.png"));while (file_exists(string_trim("bear/bearhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearhurt.png"), string_trim("bear/bearhurt.png")));
+file_delete(string_trim("bear/bearidle.png"));while (file_exists(string_trim("bear/bearidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearidle.png"), string_trim("bear/bearidle.png")));
+while (!file_loaded(string_trim("bigdog.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("area_health.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("betterLoops.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("!ARMAGGEDNN/areas/crimson.area.gml"))) {wait 1;}
 while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/autoSh.weapon.gml"))) {wait 1;}
 while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/axeFire.wep.gml"))) {wait 1;}
@@ -239,10 +244,15 @@ while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/1.4/spr/ukatana.png"))) {w
 while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/1.4/spr/ULTRA_M16.png"))) {wait 1;}
 while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/1.5/spr/GraveGun.png"))) {wait 1;}
 while (!file_loaded(string_trim("!ARMAGGEDNN/weapons/1.5/spr/sprLaserGauss.png"))) {wait 1;}
-while (!file_loaded(string_trim("baller.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("airhorn.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bear.race.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bear/beargun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bear/a fucking gun.png"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bear (1).png"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bearhurt.png"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bearidle.png"))) {wait 1;}
+mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
 mod_load(string_trim("data/Daily.mod/area_health.mod.gml"));
-mod_load(string_trim("data/Daily.mod/betterLoops.mod.gml"));
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/areas/crimson.area.gml"));
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/autoSh.weapon.gml"));
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/axeFire.wep.gml"));
@@ -281,16 +291,17 @@ mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/1.4/ultraKatana.wep.gml
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/1.4/UltraM16.wep.gml"));
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/1.5/GaussHellYeah.wep.gml"));
 mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/1.5/GraveGun.wep.gml"));
-mod_load(string_trim("data/Daily.mod/baller.race.gml"));
-mod_load(string_trim("data/Daily.mod/Armageddon_Cannon.wep.gml"));
+mod_load(string_trim("data/Daily.mod/airhorn.wep.gml"));
+mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
+mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
 
 
 trace("Current Daily:");
-trace("Mods=Area Health,betterLoops,!ARMAGGEDNN,Baller,Armageddon Cannon");
+trace("Mods=Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear");
 trace("Character=Choose");
-trace("Crown=");
-trace("Weapon=Ullapoll Caber");
-trace("Seed=28815");
+trace("Crown=crown of guns");
+trace("Weapon=Dubstep Gun");
+trace("Seed=22485");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -361,7 +372,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Ullapoll Caber"));
+		give_wep(string_trim("Dubstep Gun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -381,7 +392,7 @@ else{with(instances_matching(CustomObject, "name", mod_current)){instance_change
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Area Health,betterLoops,!ARMAGGEDNN,Baller,Armageddon Cannon" + " Character=Choose" + " Crown=" + " Weapon=Ullapoll Caber" + " Seed=28815";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear" + " Character=Choose" + " Crown=crown of guns" + " Weapon=Dubstep Gun" + " Seed=22485";
 	}
 	trace(score);
 	global.finished = true;
@@ -417,10 +428,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Area Health,betterLoops,!ARMAGGEDNN,Baller,Armageddon Cannon" + " Character=Choose" + " Crown=" + " Weapon=Ullapoll Caber" + " Seed=28815" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear" + " Character=Choose" + " Crown=crown of guns" + " Weapon=Dubstep Gun" + " Seed=22485" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Area Health,betterLoops,!ARMAGGEDNN,Baller,Armageddon Cannon" + " Character=Choose" + " Crown=" + " Weapon=Ullapoll Caber")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear" + " Character=Choose" + " Crown=crown of guns" + " Weapon=Dubstep Gun")) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i]))){fail=1;}
@@ -538,7 +549,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = ""
+name = "crown of guns"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
