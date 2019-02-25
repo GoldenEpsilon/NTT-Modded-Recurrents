@@ -1,1 +1,1 @@
-Mods:Bloodking,bouncybolts,xefsstuff,Beamer,Area Health Character=Choose Crown=crown of hatred Weapon=heavy darts Seed=28476
+Mods:2 Hour Area,Afterburn,BL2,bosshudredux,Bioluminary Oscillator Character=Choose Crown=crown of blood Weapon=blood launcher Seed=15053
