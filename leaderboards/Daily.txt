@@ -1,1 +1,1 @@
-Mods:BadEnd,Auto Bullet Shotgun,Armageddon Cannon,Ancient Hatred,Belly Character=Belly Crown=crown of ancient hatred Weapon=plasma minigun Seed=7766
+Mods:Big Dog,basicgunallies,Assault Flak Cannon,Bandit Brute,Ash Character=Ash Crown=crown of destiny Weapon=golden revolver Seed=1543

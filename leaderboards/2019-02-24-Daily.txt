@@ -1,1 +1,1 @@
-Mods:Big Dog,Auto Revolver,Balls,B,Babylon Shotgun Character=melting Crown=crown of protection Weapon=balls/laserwrench Seed=22816
+Mods:BadEnd,Auto Bullet Shotgun,Armageddon Cannon,Ancient Hatred,Belly Character=Belly Crown=crown of ancient hatred Weapon=plasma minigun Seed=7766
