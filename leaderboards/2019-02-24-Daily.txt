@@ -1,1 +1,1 @@
-Mods:Bear,Ancient Hatred,Belly,banditstack,Auto Flame Crossbow,B,Ash,Auto Bullet Shotgun,Balls,Afterburn Character=Belly Crown=crown of ancient hatred Weapon=A Fucking Gun Seed=11857
+Mods:Big Dog,Auto Revolver,Balls,B,Babylon Shotgun Character=melting Crown=crown of protection Weapon=balls/laserwrench Seed=22816
