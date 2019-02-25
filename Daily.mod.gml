@@ -1504,8 +1504,8 @@ if(instance_exists(Menu)){
 		draw_set_color(make_color_rgb(255,255,255));
 		for(var i = 0; (i+global.leaderboardPos) < array_length(global.leaderboard) && i < 5; i++){
 			draw_set_font(fntM0);
-			draw_text_nt(DailyScoreboardX + DailyScoreboardW/40 + 1, DailyScoreboardY + DailyScoreboardH/20 + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:" + make_color_rgb(255, 175, 0) + ")" : (i+global.leaderboardPos)==1 ? "@(color:" + make_color_rgb(200, 200, 200) + ")" : (i+global.leaderboardPos)==2 ? "@(color:" + make_color_rgb(150, 100, 0) + ")" : "") + "\#" + string(i+global.leaderboardPos+1));
-			draw_text_nt(DailyScoreboardX + DailyScoreboardW/40 + 35, DailyScoreboardY + DailyScoreboardH/20 + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:" + make_color_rgb(255, 175, 0) + ")" : (i+global.leaderboardPos)==1 ? "@(color:" + make_color_rgb(200, 200, 200) + ")" : (i+global.leaderboardPos)==2 ? "@(color:" + make_color_rgb(150, 100, 0) + ")" : "") + global.leaderboard[i+global.leaderboardPos][0]);
+			draw_text_nt(DailyScoreboardX + DailyScoreboardW/40 + 1, DailyScoreboardY + DailyScoreboardH/20 + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:" + string(make_color_rgb(255, 175, 0)) + ")" : (i+global.leaderboardPos)==1 ? "@(color:" + string(make_color_rgb(200, 200, 200)) + ")" : (i+global.leaderboardPos)==2 ? "@(color:" + string(make_color_rgb(150, 100, 0)) + ")" : "") + "\#" + string(i+global.leaderboardPos+1));
+			draw_text_nt(DailyScoreboardX + DailyScoreboardW/40 + 35, DailyScoreboardY + DailyScoreboardH/20 + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:" + string(make_color_rgb(255, 175, 0)) + ")" : (i+global.leaderboardPos)==1 ? "@(color:" + string(make_color_rgb(200, 200, 200)) + ")" : (i+global.leaderboardPos)==2 ? "@(color:" + string(make_color_rgb(150, 100, 0)) + ")" : "") + global.leaderboard[i+global.leaderboardPos][0]);
 			draw_set_font(fntSmall);
 			draw_text_nt(DailyScoreboardX + DailyScoreboardW/40 + 37, DailyScoreboardY + DailyScoreboardH/20 + i*15 + 9, "Level: " + global.leaderboard[i+global.leaderboardPos][1] + " Kills: " + string(global.leaderboard[i+global.leaderboardPos][2]));
 		}
