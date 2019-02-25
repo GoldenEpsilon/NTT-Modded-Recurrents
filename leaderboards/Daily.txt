@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun,Auto Flame Crossbow,BAR,Armageddon Cannon,Ash Character=Choose Crown=crown of blood Weapon=Big Ass Revolver Seed=10915
+Mods:Assault Flak Cannon,Afterburn,BadEnd,Airhorn,Area Health Character=Choose Crown=crown of luck Weapon=flame cannon Seed=18837
