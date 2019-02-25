@@ -1,1 +1,1 @@
-Mods:Big Dog,basicgunallies,Assault Flak Cannon,Bandit Brute,Ash Character=Ash Crown=crown of destiny Weapon=golden revolver Seed=1543
+Mods:Airhorn,Ash,Balls,6 Weapons,!ARMAGGEDNN Character=Ash Crown=crown of blood Weapon=Cyber Shovel Seed=18141
