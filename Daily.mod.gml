@@ -1418,8 +1418,8 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 " + " Seed=18551" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Fire Riders,Airhorn,BAR,xefsstuff,!ARMAGGEDNN" + " Character=Choose" + " Crown=crown of life" + " Weapon=Flame Shovel
-")) > 1){
+		}else if(array_length(string_split(leaderboard, "Fire Riders,Airhorn,BAR,xefsstuff,!ARMAGGEDNN" + " Character=Choose" + " Crown=crown of life" + " Weapon=Flame Shovel
+" + " Seed=18551")) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
