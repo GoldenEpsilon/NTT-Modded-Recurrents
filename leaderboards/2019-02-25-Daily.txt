@@ -1,1 +1,1 @@
-Mods:Area Health,betterLoops,!ARMAGGEDNN,Baller,Armageddon Cannon Character=Choose Crown= Weapon=Ullapoll Caber Seed=28815
+Mods:Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear Character=Choose Crown=crown of guns Weapon=Dubstep Gun Seed=22485

@@ -1,1 +1,1 @@
-Mods:Big Dog,Area Health,!ARMAGGEDNN,Airhorn,Bear Character=Choose Crown=crown of guns Weapon=Dubstep Gun Seed=22485
+Mods:Babylon Shotgun,Baldi,6 Weapons,Beamer,Bear Character=Choose Crown=crown of curses Weapon=A Fucking Gun Seed=1527
