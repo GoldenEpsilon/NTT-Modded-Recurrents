@@ -1,5 +1,6 @@
 
 /*@rMods@w=#  2 Hour Area#  B#  betterLoops#  BB#  Bandit Brute#@bCharacter@w=#  bb#@yCrown@w=#  crown of risk#@gWeapon@w=#  wep_ion_cannon#@pSeed@w=12964*/
+/**/
 #define init
 global.canStart = false;
 global.qualified = false;
