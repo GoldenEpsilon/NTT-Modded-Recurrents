@@ -1,6 +1,6 @@
 |balls/balls.mod.gml
 |balls/laserwrench.wep.gml
-*balls/laserwrench
+*laserwrench
 :balls/ball1.ogg
 :balls/ball2.ogg
 :balls/ball3.ogg
