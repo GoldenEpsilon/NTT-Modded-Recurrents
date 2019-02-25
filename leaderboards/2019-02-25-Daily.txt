@@ -1,1 +1,1 @@
-Mods:6 Weapons,Big Bandit,Bandit Brute,Airhorn,!ARMAGGEDNN Character=Choose Crown=crown of life Weapon=Ultra Katana Seed=9778
+Mods:Auto Revolver,Airhorn,Armageddon Cannon,Big Dog,6 Weapons Character=Choose Crown=crown of haste Weapon=super flak cannon Seed=14946
