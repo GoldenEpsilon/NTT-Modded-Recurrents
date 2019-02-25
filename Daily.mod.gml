@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Baller#  Bandit Brute#  betterLoops#  Big Dog#  Auto Revolver#@bCharacter@w=#  Baller#@yCrown@w=#  crown of protection#@gWeapon@w=#  ultra laser pistol#@pSeed@w=19839*/
-/*#*/
+/*@rMods@w=#  BadEnd#  Area Health#  Ancient Hatred#  B#  Armageddon Cannon#@bCharacter@w=#  chicken#@yCrown@w=#  crown of ancient hatred#@gWeapon@w=#  super plasma cannon#@pSeed@w=22201*/
+/*#Ancient Hatred[Crown that trades health for rads over time]#B[B]*/
 #define init
 #macro DailyScoreboardX 155
 #macro DailyScoreboardY 36
@@ -22,7 +22,7 @@ global.DailyWidth = 0;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 19839;
+global.seed = 22201;
 global.start = true;
 global.finished = false;
 while(!mod_sideload()){wait 1;}
@@ -62,29 +62,33 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("baller.race.gml"));while (file_exists(string_trim("baller.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/baller.race.gml"), string_trim("baller.race.gml")));
-file_delete(string_trim("BanditBrute.mod.gml"));while (file_exists(string_trim("BanditBrute.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BanditBrute.mod.gml"), string_trim("BanditBrute.mod.gml")));
-file_delete(string_trim("betterLoops.mod.gml"));while (file_exists(string_trim("betterLoops.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/betterLoops.mod.gml"), string_trim("betterLoops.mod.gml")));
-file_delete(string_trim("bigdog.mod.gml"));while (file_exists(string_trim("bigdog.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bigdog.mod.gml"), string_trim("bigdog.mod.gml")));
-file_delete(string_trim("autorevolver.wep.gml"));while (file_exists(string_trim("autorevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/autorevolver.wep.gml"), string_trim("autorevolver.wep.gml")));
-while (!file_loaded(string_trim("baller.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("BanditBrute.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("betterLoops.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bigdog.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("autorevolver.wep.gml"))) {wait 1;}
-mod_load(string_trim("data/Daily.mod/baller.race.gml"));
-mod_load(string_trim("data/Daily.mod/BanditBrute.mod.gml"));
-mod_load(string_trim("data/Daily.mod/betterLoops.mod.gml"));
-mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
-mod_load(string_trim("data/Daily.mod/autorevolver.wep.gml"));
+file_delete(string_trim("badend.mod.gml"));while (file_exists(string_trim("badend.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/badend.mod.gml"), string_trim("badend.mod.gml")));
+file_delete(string_trim("area_health.mod.gml"));while (file_exists(string_trim("area_health.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/area_health.mod.gml"), string_trim("area_health.mod.gml")));
+file_delete(string_trim("ancienthatred.crown.gml"));while (file_exists(string_trim("ancienthatred.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ancienthatred.crown.gml"), string_trim("ancienthatred.crown.gml")));
+file_delete(string_trim("b/b.mod.gml"));while (file_exists(string_trim("b/b.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.mod.gml"), string_trim("b/b.mod.gml")));
+file_delete(string_trim("b/b.ini"));while (file_exists(string_trim("b/b.ini"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.ini"), string_trim("b/b.ini")));
+file_delete(string_trim("b/redB.png"));while (file_exists(string_trim("b/redB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/redB.png"), string_trim("b/redB.png")));
+file_delete(string_trim("Armageddon_Cannon.wep.gml"));while (file_exists(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Armageddon_Cannon.wep.gml"), string_trim("Armageddon_Cannon.wep.gml")));
+while (!file_loaded(string_trim("badend.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("area_health.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("ancienthatred.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("b/b.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("b/b.ini"))) {wait 1;}
+while (!file_loaded(string_trim("b/redB.png"))) {wait 1;}
+while (!file_loaded(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}
+mod_load(string_trim("data/Daily.mod/badend.mod.gml"));
+mod_load(string_trim("data/Daily.mod/area_health.mod.gml"));
+mod_load(string_trim("data/Daily.mod/ancienthatred.crown.gml"));
+mod_load(string_trim("data/Daily.mod/b/b.mod.gml"));
+mod_load(string_trim("data/Daily.mod/Armageddon_Cannon.wep.gml"));
 
 
 trace("Current Daily:");
-trace("Mods=Baller,Bandit Brute,betterLoops,Big Dog,Auto Revolver");
-trace("Character=Baller");
-trace("Crown=crown of protection");
-trace("Weapon=ultra laser pistol");
-trace("Seed=19839");
+trace("Mods=BadEnd,Area Health,Ancient Hatred,B,Armageddon Cannon");
+trace("Character=chicken");
+trace("Crown=crown of ancient hatred");
+trace("Weapon=super plasma cannon");
+trace("Seed=22201");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -155,7 +159,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("ultra laser pistol"));
+		give_wep(string_trim("super plasma cannon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -170,12 +174,12 @@ if(global.start){
 	}
 	global.start = false;
 }
-if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;race=string_lower(string_trim("Baller"));}}
-else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_lower(string_trim("Baller"));visible=true;}}
+if(!global.canStart){with(CharSelect){instance_change(CustomObject, 0);name=mod_current;race=string_lower(string_trim("chicken"));}}
+else{with(instances_matching(CustomObject, "name", mod_current)){instance_change(CharSelect, 0);}with(CharSelect){race=string_lower(string_trim("chicken"));visible=true;}}
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:Baller,Bandit Brute,betterLoops,Big Dog,Auto Revolver" + " Character=Baller" + " Crown=crown of protection" + " Weapon=ultra laser pistol" + " Seed=19839";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Mods:BadEnd,Area Health,Ancient Hatred,B,Armageddon Cannon" + " Character=chicken" + " Crown=crown of ancient hatred" + " Weapon=super plasma cannon" + " Seed=22201";
 	}
 	trace(score);
 	global.finished = true;
@@ -211,10 +215,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Baller,Bandit Brute,betterLoops,Big Dog,Auto Revolver" + " Character=Baller" + " Crown=crown of protection" + " Weapon=ultra laser pistol" + " Seed=19839" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:BadEnd,Area Health,Ancient Hatred,B,Armageddon Cannon" + " Character=chicken" + " Crown=crown of ancient hatred" + " Weapon=super plasma cannon" + " Seed=22201" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "Mods:Baller,Bandit Brute,betterLoops,Big Dog,Auto Revolver" + " Character=Baller" + " Crown=crown of protection")) > 1){
+		}else if(array_length(string_split(leaderboard, "Mods:BadEnd,Area Health,Ancient Hatred,B,Armageddon Cannon" + " Character=chicken" + " Crown=crown of ancient hatred")) > 1){
 			file_delete("sha.txt");
 			while (file_exists("sha.txt")) {wait 1;}
 			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
@@ -313,7 +317,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){race=string_lower(string_trim("Baller"));}
+with(Player){race=string_lower(string_trim("chicken"));}
 give_crown();
 
 //Stolen from YAL's debug mod.
@@ -322,7 +326,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = "crown of protection"
+name = "crown of ancient hatred"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
