@@ -1449,6 +1449,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		}else{
 			trace("You are playing on an older modded Daily, so your scores were not uploaded. If this is incorrect, contact Golden Epsilon on discord through the Nuclear Throne discord: https://www.discord.gg/nt");
 		}
+		wait(10);
 		global.leaderboardLoaded = 0;
 		file_delete("dl.txt");
 		while (file_exists("dl.txt")) {wait 1;}
