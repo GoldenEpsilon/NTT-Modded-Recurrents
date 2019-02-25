@@ -1,1 +1,1 @@
-Mods:Assault Flak Cannon,Afterburn,BadEnd,Airhorn,Area Health Character=Choose Crown=crown of luck Weapon=flame cannon Seed=18837
+Mods:Ash,Auto Bullet Shotgun,!ARMAGGEDNN,Armageddon Cannon,basicgunallies Character=Choose Crown=crown of luck Weapon=Explosive Shovel Seed=23768

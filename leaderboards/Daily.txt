@@ -1,1 +1,1 @@
-Mods:Ash,Auto Bullet Shotgun,!ARMAGGEDNN,Armageddon Cannon,basicgunallies Character=Choose Crown=crown of luck Weapon=Explosive Shovel Seed=23768
+Mods:Afterburn,betterLoops,Big Dog,basicgunallies,Balls Character=Choose Crown=crown of guns Weapon=laserwrench Seed=9886
