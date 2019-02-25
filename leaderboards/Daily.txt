@@ -1,1 +1,1 @@
-Mods:banditstack,Baldi,BAR,Babylon Shotgun,Auto Revolver Character=Baldi Crown=crown of life Weapon=Big Ass Revolver Seed=14173
+Mods:Airhorn,Area Health,!ARMAGGEDNN,basicgunallies,Auto Revolver Character=crystal Crown=crown of luck Weapon=Golden Shovel Seed=1501
