@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun,Baldi,6 Weapons,Beamer,Bear Character=Choose Crown=crown of curses Weapon=A Fucking Gun Seed=1527
+Mods:xefsstuff,Blaac's Weapon Mutations,Bear,BadEnd,Boltshard Character=Choose Crown=crown of luck Weapon=cloud shotgun Seed=32096
