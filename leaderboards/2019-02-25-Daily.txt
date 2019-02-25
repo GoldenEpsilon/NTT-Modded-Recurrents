@@ -1,1 +1,1 @@
-Mods:xefsstuff,Blaac's Weapon Mutations,Bear,BadEnd,Boltshard Character=Choose Crown=crown of luck Weapon=cloud shotgun Seed=32096
+Mods:Bloodking,bouncybolts,xefsstuff,Beamer,Area Health Character=Choose Crown=crown of hatred Weapon=heavy darts Seed=28476
