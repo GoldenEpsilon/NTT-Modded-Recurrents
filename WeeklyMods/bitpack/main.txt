@@ -1,0 +1,8 @@
+/loadskill cannonpalms
+/loadskill psychicshock
+/loadskill sabotage
+/loadskill titaniumtendons
+/loadskill toxiclungs
+/loadrace miku
+/loadwep industrialshankgun
+/cwep industrialshankgun

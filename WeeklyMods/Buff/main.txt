@@ -1,0 +1,10 @@
+/loadmod buff
+/loadwep hyperrifle
+/loadwep smartgun
+/loadwep heavynadelauncher
+/loadmod waterboost
+/loadmod gunwarrant
+/loadmod teleport
+/loadmod projectilestyle
+/loadmod hardertokill
+/loadmod rogueultras

@@ -1,0 +1,20 @@
+|cultra.mod.gml
+|C Ultras/crystal.skill.gml
+|C Ultras/eyes.skill.gml
+|C Ultras/fish.skill.gml
+|C Ultras/melting.skill.gml
+|C Ultras/plant.skill.gml
+|C Ultras/yv.skill.gml
+:C Ultras/crystalc.png
+:C Ultras/crystalcicon.png
+:C Ultras/eyesc.png
+:C Ultras/eyescicon.png
+:C Ultras/FishC.png
+:C Ultras/FishCicon.png
+:C Ultras/MeltingC.png
+:C Ultras/MeltingCicon.png
+:C Ultras/plantc.png
+:C Ultras/plantcicon.png
+:C Ultras/yvc.png
+:C Ultras/yvcicon.png
+?Adds a C ultra to all#the vanilla characters

@@ -1,0 +1,6 @@
+/loadskill fish
+/loadskill melting
+/loadskill crystal
+/loadskill eyes
+/loadskill plant
+/loadskill yv
