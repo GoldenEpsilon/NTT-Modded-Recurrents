@@ -1,5 +1,6 @@
 
-/*@rMods@w=#  C Ultras#  bouncermini#  Bear#  Grappler#  Carmageddon#@bCharacter@w=#  Choose#@yCrown@w=#  #@gWeapon@w=#  A Fucking Gun#@pSeed@w=13587#Limited Tries:false*/
+/*@rMods@w=#  C Ultras#  bouncermini#  Bear#  Grappler#  Carmageddon#@bCharacter@w=#  Choose#@yCrown@w=#  #@gWeapon@w=#  A Fucking Gun
+#@pSeed@w=13587#Limited Tries:false*/
 /*|C Ultras[Adds a C ultra to all#the vanilla characters]|bouncermini[FILL THE SKIES WITH BULLETS]|Bear[4 da meeeeeeeeee#eeeeemez]|Grappler[For when you really want to throw someone at someone else.]|Carmageddon[WARNING: May contain drifting]*/
 #define init
 #macro weeklyButtonX 6
@@ -95,76 +96,233 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("cultra.mod.gml"));while (file_exists(string_trim("cultra.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cultra.mod.gml"), string_trim("cultra.mod.gml")));
-file_delete(string_trim("C Ultras/crystal.skill.gml"));while (file_exists(string_trim("C Ultras/crystal.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystal.skill.gml"), string_trim("C Ultras/crystal.skill.gml")));
-file_delete(string_trim("C Ultras/eyes.skill.gml"));while (file_exists(string_trim("C Ultras/eyes.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyes.skill.gml"), string_trim("C Ultras/eyes.skill.gml")));
-file_delete(string_trim("C Ultras/fish.skill.gml"));while (file_exists(string_trim("C Ultras/fish.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/fish.skill.gml"), string_trim("C Ultras/fish.skill.gml")));
-file_delete(string_trim("C Ultras/melting.skill.gml"));while (file_exists(string_trim("C Ultras/melting.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/melting.skill.gml"), string_trim("C Ultras/melting.skill.gml")));
-file_delete(string_trim("C Ultras/plant.skill.gml"));while (file_exists(string_trim("C Ultras/plant.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plant.skill.gml"), string_trim("C Ultras/plant.skill.gml")));
-file_delete(string_trim("C Ultras/yv.skill.gml"));while (file_exists(string_trim("C Ultras/yv.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yv.skill.gml"), string_trim("C Ultras/yv.skill.gml")));
-file_delete(string_trim("C Ultras/crystalc.png"));while (file_exists(string_trim("C Ultras/crystalc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystalc.png"), string_trim("C Ultras/crystalc.png")));
-file_delete(string_trim("C Ultras/crystalcicon.png"));while (file_exists(string_trim("C Ultras/crystalcicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystalcicon.png"), string_trim("C Ultras/crystalcicon.png")));
-file_delete(string_trim("C Ultras/eyesc.png"));while (file_exists(string_trim("C Ultras/eyesc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyesc.png"), string_trim("C Ultras/eyesc.png")));
-file_delete(string_trim("C Ultras/eyescicon.png"));while (file_exists(string_trim("C Ultras/eyescicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyescicon.png"), string_trim("C Ultras/eyescicon.png")));
-file_delete(string_trim("C Ultras/FishC.png"));while (file_exists(string_trim("C Ultras/FishC.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/FishC.png"), string_trim("C Ultras/FishC.png")));
-file_delete(string_trim("C Ultras/FishCicon.png"));while (file_exists(string_trim("C Ultras/FishCicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/FishCicon.png"), string_trim("C Ultras/FishCicon.png")));
-file_delete(string_trim("C Ultras/MeltingC.png"));while (file_exists(string_trim("C Ultras/MeltingC.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/MeltingC.png"), string_trim("C Ultras/MeltingC.png")));
-file_delete(string_trim("C Ultras/MeltingCicon.png"));while (file_exists(string_trim("C Ultras/MeltingCicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/MeltingCicon.png"), string_trim("C Ultras/MeltingCicon.png")));
-file_delete(string_trim("C Ultras/plantc.png"));while (file_exists(string_trim("C Ultras/plantc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plantc.png"), string_trim("C Ultras/plantc.png")));
-file_delete(string_trim("C Ultras/plantcicon.png"));while (file_exists(string_trim("C Ultras/plantcicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plantcicon.png"), string_trim("C Ultras/plantcicon.png")));
-file_delete(string_trim("C Ultras/yvc.png"));while (file_exists(string_trim("C Ultras/yvc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yvc.png"), string_trim("C Ultras/yvc.png")));
-file_delete(string_trim("C Ultras/yvcicon.png"));while (file_exists(string_trim("C Ultras/yvcicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yvcicon.png"), string_trim("C Ultras/yvcicon.png")));
-file_delete(string_trim("bouncermini/bouncermini.wep.gml"));while (file_exists(string_trim("bouncermini/bouncermini.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/bouncermini.wep.gml"), string_trim("bouncermini/bouncermini.wep.gml")));
-file_delete(string_trim("bouncermini/sprBouncerMinigun.png"));while (file_exists(string_trim("bouncermini/sprBouncerMinigun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/sprBouncerMinigun.png"), string_trim("bouncermini/sprBouncerMinigun.png")));
-file_delete(string_trim("bear/bear.race.gml"));while (file_exists(string_trim("bear/bear.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear.race.gml"), string_trim("bear/bear.race.gml")));
-file_delete(string_trim("bear/beargun.wep.gml"));while (file_exists(string_trim("bear/beargun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/beargun.wep.gml"), string_trim("bear/beargun.wep.gml")));
-file_delete(string_trim("bear/a fucking gun.png"));while (file_exists(string_trim("bear/a fucking gun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/a fucking gun.png"), string_trim("bear/a fucking gun.png")));
-file_delete(string_trim("bear/bear (1).png"));while (file_exists(string_trim("bear/bear (1).png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear (1).png"), string_trim("bear/bear (1).png")));
-file_delete(string_trim("bear/bearhurt.png"));while (file_exists(string_trim("bear/bearhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearhurt.png"), string_trim("bear/bearhurt.png")));
-file_delete(string_trim("bear/bearidle.png"));while (file_exists(string_trim("bear/bearidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearidle.png"), string_trim("bear/bearidle.png")));
-file_delete(string_trim("grappler.race.gml"));while (file_exists(string_trim("grappler.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/grappler.race.gml"), string_trim("grappler.race.gml")));
-file_delete(string_trim("carmageddon.mod.gml"));while (file_exists(string_trim("carmageddon.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/carmageddon.mod.gml"), string_trim("carmageddon.mod.gml")));
-while (!file_loaded(string_trim("cultra.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/crystal.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/eyes.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/fish.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/melting.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/plant.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/yv.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/crystalc.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/crystalcicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/eyesc.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/eyescicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/FishC.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/FishCicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/MeltingC.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/MeltingCicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/plantc.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/plantcicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/yvc.png"))) {wait 1;}
-while (!file_loaded(string_trim("C Ultras/yvcicon.png"))) {wait 1;}
-while (!file_loaded(string_trim("bouncermini/bouncermini.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bouncermini/sprBouncerMinigun.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bear.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/beargun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/a fucking gun.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bear (1).png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bearhurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bearidle.png"))) {wait 1;}
-while (!file_loaded(string_trim("grappler.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("carmageddon.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/cultra.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/crystal.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/eyes.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/fish.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/melting.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/plant.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/C Ultras/yv.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/bouncermini/bouncermini.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/grappler.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/carmageddon.mod.gml"));
+file_delete(string_trim("cultra.mod.gml
+"));while (file_exists(string_trim("cultra.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cultra.mod.gml
+"), string_trim("cultra.mod.gml
+")));
+file_delete(string_trim("C Ultras/crystal.skill.gml
+"));while (file_exists(string_trim("C Ultras/crystal.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystal.skill.gml
+"), string_trim("C Ultras/crystal.skill.gml
+")));
+file_delete(string_trim("C Ultras/eyes.skill.gml
+"));while (file_exists(string_trim("C Ultras/eyes.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyes.skill.gml
+"), string_trim("C Ultras/eyes.skill.gml
+")));
+file_delete(string_trim("C Ultras/fish.skill.gml
+"));while (file_exists(string_trim("C Ultras/fish.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/fish.skill.gml
+"), string_trim("C Ultras/fish.skill.gml
+")));
+file_delete(string_trim("C Ultras/melting.skill.gml
+"));while (file_exists(string_trim("C Ultras/melting.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/melting.skill.gml
+"), string_trim("C Ultras/melting.skill.gml
+")));
+file_delete(string_trim("C Ultras/plant.skill.gml
+"));while (file_exists(string_trim("C Ultras/plant.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plant.skill.gml
+"), string_trim("C Ultras/plant.skill.gml
+")));
+file_delete(string_trim("C Ultras/yv.skill.gml
+"));while (file_exists(string_trim("C Ultras/yv.skill.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yv.skill.gml
+"), string_trim("C Ultras/yv.skill.gml
+")));
+file_delete(string_trim("C Ultras/crystalc.png
+"));while (file_exists(string_trim("C Ultras/crystalc.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystalc.png
+"), string_trim("C Ultras/crystalc.png
+")));
+file_delete(string_trim("C Ultras/crystalcicon.png
+"));while (file_exists(string_trim("C Ultras/crystalcicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/crystalcicon.png
+"), string_trim("C Ultras/crystalcicon.png
+")));
+file_delete(string_trim("C Ultras/eyesc.png
+"));while (file_exists(string_trim("C Ultras/eyesc.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyesc.png
+"), string_trim("C Ultras/eyesc.png
+")));
+file_delete(string_trim("C Ultras/eyescicon.png
+"));while (file_exists(string_trim("C Ultras/eyescicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/eyescicon.png
+"), string_trim("C Ultras/eyescicon.png
+")));
+file_delete(string_trim("C Ultras/FishC.png
+"));while (file_exists(string_trim("C Ultras/FishC.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/FishC.png
+"), string_trim("C Ultras/FishC.png
+")));
+file_delete(string_trim("C Ultras/FishCicon.png
+"));while (file_exists(string_trim("C Ultras/FishCicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/FishCicon.png
+"), string_trim("C Ultras/FishCicon.png
+")));
+file_delete(string_trim("C Ultras/MeltingC.png
+"));while (file_exists(string_trim("C Ultras/MeltingC.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/MeltingC.png
+"), string_trim("C Ultras/MeltingC.png
+")));
+file_delete(string_trim("C Ultras/MeltingCicon.png
+"));while (file_exists(string_trim("C Ultras/MeltingCicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/MeltingCicon.png
+"), string_trim("C Ultras/MeltingCicon.png
+")));
+file_delete(string_trim("C Ultras/plantc.png
+"));while (file_exists(string_trim("C Ultras/plantc.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plantc.png
+"), string_trim("C Ultras/plantc.png
+")));
+file_delete(string_trim("C Ultras/plantcicon.png
+"));while (file_exists(string_trim("C Ultras/plantcicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/plantcicon.png
+"), string_trim("C Ultras/plantcicon.png
+")));
+file_delete(string_trim("C Ultras/yvc.png
+"));while (file_exists(string_trim("C Ultras/yvc.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yvc.png
+"), string_trim("C Ultras/yvc.png
+")));
+file_delete(string_trim("C Ultras/yvcicon.png
+"));while (file_exists(string_trim("C Ultras/yvcicon.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/C Ultras/yvcicon.png
+"), string_trim("C Ultras/yvcicon.png
+")));
+file_delete(string_trim("bouncermini/bouncermini.wep.gml
+"));while (file_exists(string_trim("bouncermini/bouncermini.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/bouncermini.wep.gml
+"), string_trim("bouncermini/bouncermini.wep.gml
+")));
+file_delete(string_trim("bouncermini/sprBouncerMinigun.png
+"));while (file_exists(string_trim("bouncermini/sprBouncerMinigun.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/sprBouncerMinigun.png
+"), string_trim("bouncermini/sprBouncerMinigun.png
+")));
+file_delete(string_trim("bear/bear.race.gml
+"));while (file_exists(string_trim("bear/bear.race.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear.race.gml
+"), string_trim("bear/bear.race.gml
+")));
+file_delete(string_trim("bear/beargun.wep.gml
+"));while (file_exists(string_trim("bear/beargun.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/beargun.wep.gml
+"), string_trim("bear/beargun.wep.gml
+")));
+file_delete(string_trim("bear/a fucking gun.png
+"));while (file_exists(string_trim("bear/a fucking gun.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/a fucking gun.png
+"), string_trim("bear/a fucking gun.png
+")));
+file_delete(string_trim("bear/bear (1).png
+"));while (file_exists(string_trim("bear/bear (1).png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear (1).png
+"), string_trim("bear/bear (1).png
+")));
+file_delete(string_trim("bear/bearhurt.png
+"));while (file_exists(string_trim("bear/bearhurt.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearhurt.png
+"), string_trim("bear/bearhurt.png
+")));
+file_delete(string_trim("bear/bearidle.png
+"));while (file_exists(string_trim("bear/bearidle.png
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearidle.png
+"), string_trim("bear/bearidle.png
+")));
+file_delete(string_trim("grappler.race.gml
+"));while (file_exists(string_trim("grappler.race.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/grappler.race.gml
+"), string_trim("grappler.race.gml
+")));
+file_delete(string_trim("carmageddon.mod.gml
+"));while (file_exists(string_trim("carmageddon.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/carmageddon.mod.gml
+"), string_trim("carmageddon.mod.gml
+")));
+while (!file_loaded(string_trim("cultra.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/crystal.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/eyes.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/fish.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/melting.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/plant.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/yv.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/crystalc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/crystalcicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/eyesc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/eyescicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/FishC.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/FishCicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/MeltingC.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/MeltingCicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/plantc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/plantcicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/yvc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("C Ultras/yvcicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("bouncermini/bouncermini.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("bouncermini/sprBouncerMinigun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bear.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/beargun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/a fucking gun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bear (1).png
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bearhurt.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("bear/bearidle.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("grappler.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("carmageddon.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/cultra.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/crystal.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/eyes.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/fish.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/melting.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/plant.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/C Ultras/yv.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/bouncermini/bouncermini.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/grappler.race.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/carmageddon.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -196,7 +354,8 @@ trace("Current Daily:");
 trace("Mods=C Ultras,bouncermini,Bear,Grappler,Carmageddon");
 trace("Character=Choose");
 trace("Crown=");
-trace("Weapon=A Fucking Gun");
+trace("Weapon=A Fucking Gun
+");
 trace("Seed=13587");
 
 global.canStart = true;
@@ -326,7 +485,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("A Fucking Gun"));
+		give_wep(string_trim("A Fucking Gun
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -373,7 +533,8 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun" + " Seed=13587";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun
+" + " Seed=13587";
 	}
 	trace(score);
 	global.finished = true;
@@ -409,10 +570,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun" + " Seed=13587" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun
+" + " Seed=13587" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "ods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun" + " Seed=13587")) > 1){
+		}else if(array_length(string_split(leaderboard, "ods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun
+" + " Seed=13587")) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -442,7 +605,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		}else{
 			trace("You are playing on an older modded Daily, so your scores were not uploaded. If this is incorrect, contact Golden Epsilon on discord through the Nuclear Throne discord: https://www.discord.gg/nt");
 		}
-		wait(10);
+		wait(60);
 		global.leaderboardLoaded = 0;
 		file_delete("dl.txt");
 		while (file_exists("dl.txt")) {wait 1;}
