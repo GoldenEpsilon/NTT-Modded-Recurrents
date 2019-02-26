@@ -1,1 +1,1 @@
-Mods:Area Health,bouncybolts,Blaac's Weapon Mutations,Big Bandit,xefsstuff Character=Choose Crown=crown of love Weapon=flashlight Seed=30239
+Mods:C Ultras,bouncermini,Bear,Grappler,Carmageddon Character=Choose Crown= Weapon=A Fucking Gun Seed=13587
