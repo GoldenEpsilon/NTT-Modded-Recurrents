@@ -1,1 +1,1 @@
-Mods:bouncybolts,Bomber,Challenge Mode,Fire Riders,Charge Template Character=Choose Crown=crown of blood Weapon=ct Seed=28984
+Mods:Assault Flak Cannon,Bandit,Buff,Some Crowns,Carmageddon Character=Choose Crown=plague Weapon=smartgun Seed=550

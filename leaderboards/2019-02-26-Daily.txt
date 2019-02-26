@@ -1,1 +1,1 @@
-Mods:Big Dog,Chaos Guns,Buff,Blindness,brad Character=Choose Crown=crown of death Weapon=heavyauto Seed=31366
+Mods:bouncybolts,Bomber,Challenge Mode,Fire Riders,Charge Template Character=Choose Crown=crown of blood Weapon=ct Seed=28984
