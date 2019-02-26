@@ -1,1 +1,1 @@
-Mods:boys,Blindness,brad,Ancient Hatred,Bloodking Character=Choose Crown=crown of ancient hatred Weapon=nowep Seed=3834
+Mods:B,Balls,Baldi,Babylon Shotgun,BadEnd Character=Choose Crown=crown of curses Weapon=laserwrench Seed=18425

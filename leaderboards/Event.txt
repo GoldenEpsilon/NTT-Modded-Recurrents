@@ -1,1 +1,1 @@
-Mods:B,Balls,Baldi,Babylon Shotgun,BadEnd Character=Choose Crown=crown of curses Weapon=laserwrench Seed=18425
+Mods:Belly,Big Bandit,BL2,Blindness,Bloodking Character=Choose Crown=crown of risk Weapon=seeker shotgun Seed=7769
