@@ -1,1 +1,1 @@
-Mods:Auto Flame Crossbow,Champions,bouncermini,Car,Carmageddon Character=Choose Crown=crown of curses Weapon=Auto Flame Crossbow Seed=17479
+Mods:Area Health,bouncybolts,Blaac's Weapon Mutations,Big Bandit,xefsstuff Character=Choose Crown=crown of love Weapon=flashlight Seed=30239

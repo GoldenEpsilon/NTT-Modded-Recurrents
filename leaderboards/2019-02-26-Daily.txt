@@ -1,1 +1,1 @@
-Mods:Assault Flak Cannon,Bandit,Buff,Some Crowns,Carmageddon Character=Choose Crown=plague Weapon=smartgun Seed=550
+Mods:Auto Flame Crossbow,Champions,bouncermini,Car,Carmageddon Character=Choose Crown=crown of curses Weapon=Auto Flame Crossbow Seed=17479
