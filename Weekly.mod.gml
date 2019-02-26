@@ -1,6 +1,6 @@
 
 /*@rMods@w=#  2 Hour Area#  B#  betterLoops#  BB#  Bandit Brute#@bCharacter@w=#  bb#@yCrown@w=#  crown of risk#@gWeapon@w=#  wep_ion_cannon#@pSeed@w=12964*/
-/*#2 Hour Area[...Just play it.]*/
+/*|2 Hour Area[...Just play it.]|B[B]|betterLoops[Less enemies, more health per enemy in loops.]|BB[The mod that it's cool to hate on now.]|Bandit Brute[Randomly replaces bandits with Bandit Brutes]*/
 #define init
 global.canStart = false;
 global.qualified = false;
