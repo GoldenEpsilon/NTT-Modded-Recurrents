@@ -1,1 +1,1 @@
-Mods:Bandit,Big Dog,blstorm,Big Bandit,Afterburn Character=Choose Crown=crown of life Weapon=blstorm Seed=13674
+Mods:Baller,2 Hour Area,Auto Bullet Shotgun,Blindness,Boltshard Character=Choose Crown=crown of haste Weapon=Boltshard Seed=8847

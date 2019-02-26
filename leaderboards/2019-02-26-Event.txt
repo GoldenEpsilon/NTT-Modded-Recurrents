@@ -1,1 +1,1 @@
-Mods:Bigger Bandit,blstorm,banditstack,2 Hour Area,Big Bandit Character=Choose Crown=crown of destiny Weapon=blstorm Seed=27004
+Mods:Bandit,Big Dog,blstorm,Big Bandit,Afterburn Character=Choose Crown=crown of life Weapon=blstorm Seed=13674
