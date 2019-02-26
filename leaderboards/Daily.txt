@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred Character=Choose Crown=crown of ancient hatred Weapon=Babylon Shotgun Seed=15474
+Mods:Big Dog,Chaos Guns,Buff,Blindness,brad Character=Choose Crown=crown of death Weapon=heavyauto Seed=31366
