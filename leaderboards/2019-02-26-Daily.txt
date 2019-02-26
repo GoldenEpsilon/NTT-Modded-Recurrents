@@ -1,1 +1,2 @@
-Mods:Charge Template,Ash,Car,Cannondemnation,Challenge Test Character=Choose Crown=crown of death Weapon=cannondemnation Seed=24054
+Mods:Bullet Time,Assault Flak Cannon,Baldi,Charge Template 2,bouncybolts Character=Choose Crown= Weapon=Baldi/ruler Seed=25318
+|Golden Epsilon: Area 1-1 L0 Kills: 5 Character: rogue 
