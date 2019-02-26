@@ -1,1 +1,1 @@
-Mods:Bullet Time,bow,Carmageddon,brad,Assault Flak Cannon Character=Choose Crown=crown of hatred Weapon=bow Seed=960
+Mods:Blaac's Weapon Mutations,Big Dog,bow,Balls,Bigger Bandit Character=Choose Crown=crown of life Weapon=laserwrench Seed=22775

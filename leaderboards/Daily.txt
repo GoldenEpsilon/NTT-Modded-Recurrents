@@ -1,1 +1,1 @@
-Mods:Blaac's Weapon Mutations,Big Dog,bow,Balls,Bigger Bandit Character=Choose Crown=crown of life Weapon=laserwrench Seed=22775
+Mods:Charge Template,Ash,Car,Cannondemnation,Challenge Test Character=Choose Crown=crown of death Weapon=cannondemnation Seed=24054
