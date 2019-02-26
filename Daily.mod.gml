@@ -574,8 +574,8 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 " + " Seed=13587" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "ods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun
-" + " Seed=13587")) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:C Ultras,bouncermini,Bear,Grappler,Carmageddon" + " Character=Choose" + " Crown=" + " Weapon=A Fucking Gun
+" + " Seed=13587",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
