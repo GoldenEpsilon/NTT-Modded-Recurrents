@@ -1,1 +1,1 @@
-Mods:Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer Character=Choose Crown=crown of love Weapon=Beamer Seed=8384
+Mods:Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred Character=Choose Crown=crown of ancient hatred Weapon=Babylon Shotgun Seed=15474

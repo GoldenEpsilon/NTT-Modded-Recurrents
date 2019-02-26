@@ -1,1 +1,1 @@
-Mods:Auto Bullet Shotgun,Belly,Champions,Bioluminary Oscillator,Carpocalypse Character=Choose Crown= Weapon=Auto Bullet Shotgun Seed=2317
+Mods:Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer Character=Choose Crown=crown of love Weapon=Beamer Seed=8384

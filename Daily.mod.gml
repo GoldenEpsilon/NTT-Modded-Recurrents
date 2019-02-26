@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Cannoner#  Challenge Test#  Camper Boys#  6 Weapons#  Beamer#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Beamer#@pSeed@w=8384#Limited Tries:false*/
-/*|Cannoner[EIGHT RADICAL SHOTS]|Challenge Test[GOTTA GO FAST]|Camper Boys[Convinces the vanilla mutants#to let the custom characters#warm up by the fire]|6 Weapons[Gives you one weapon slot for each ammo type like DOOM]|Beamer[BZAAAAAP]*/
+/*@rMods@w=#  Babylon Shotgun#  banditstack#  Bandit#  B#  Ancient Hatred#@bCharacter@w=#  Choose#@yCrown@w=#  crown of ancient hatred#@gWeapon@w=#  Babylon Shotgun#@pSeed@w=15474#Limited Tries:false*/
+/*|Babylon Shotgun[So much destruction your enemies will babble-on]|banditstack[Can stack bandits,#leaving the player in awe#of their balancing skills]|Bandit[Armed only with your trusty Bandit Blaster,#it's you against the entire wasteland, baby!]|B[B]|Ancient Hatred[Crown that trades health for rads over time]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 8384;
+global.seed = 15474;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,33 +95,25 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("cannoner.wep.gml"));while (file_exists(string_trim("cannoner.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cannoner.wep.gml"), string_trim("cannoner.wep.gml")));
-file_delete(string_trim("challenge_test.mod.gml"));while (file_exists(string_trim("challenge_test.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/challenge_test.mod.gml"), string_trim("challenge_test.mod.gml")));
-file_delete(string_trim("camperboys.mod.gml"));while (file_exists(string_trim("camperboys.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/camperboys.mod.gml"), string_trim("camperboys.mod.gml")));
-file_delete(string_trim("6weapons.mod.gml"));while (file_exists(string_trim("6weapons.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml"), string_trim("6weapons.mod.gml")));
-file_delete(string_trim("beamer/beamer.wep.gml"));while (file_exists(string_trim("beamer/beamer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/beamer.wep.gml"), string_trim("beamer/beamer.wep.gml")));
-file_delete(string_trim("beamer/mskBeam.png"));while (file_exists(string_trim("beamer/mskBeam.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/mskBeam.png"), string_trim("beamer/mskBeam.png")));
-file_delete(string_trim("beamer/sprBeam.png"));while (file_exists(string_trim("beamer/sprBeam.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/sprBeam.png"), string_trim("beamer/sprBeam.png")));
-file_delete(string_trim("beamer/sprBeamCharge.png"));while (file_exists(string_trim("beamer/sprBeamCharge.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/sprBeamCharge.png"), string_trim("beamer/sprBeamCharge.png")));
-file_delete(string_trim("beamer/sprBeamEnd.png"));while (file_exists(string_trim("beamer/sprBeamEnd.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/sprBeamEnd.png"), string_trim("beamer/sprBeamEnd.png")));
-file_delete(string_trim("beamer/sprBeamer.png"));while (file_exists(string_trim("beamer/sprBeamer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/sprBeamer.png"), string_trim("beamer/sprBeamer.png")));
-file_delete(string_trim("beamer/sprBeamStart.png"));while (file_exists(string_trim("beamer/sprBeamStart.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/beamer/sprBeamStart.png"), string_trim("beamer/sprBeamStart.png")));
-while (!file_loaded(string_trim("cannoner.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("challenge_test.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("camperboys.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("6weapons.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/beamer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/mskBeam.png"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/sprBeam.png"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/sprBeamCharge.png"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/sprBeamEnd.png"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/sprBeamer.png"))) {wait 1;}
-while (!file_loaded(string_trim("beamer/sprBeamStart.png"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/cannoner.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/challenge_test.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/camperboys.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/6weapons.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/beamer/beamer.wep.gml"));
+file_delete(string_trim("babylon_shotgun.wep.gml"));while (file_exists(string_trim("babylon_shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/babylon_shotgun.wep.gml"), string_trim("babylon_shotgun.wep.gml")));
+file_delete(string_trim("banditstack.mod.gml"));while (file_exists(string_trim("banditstack.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/banditstack.mod.gml"), string_trim("banditstack.mod.gml")));
+file_delete(string_trim("bandit.race.gml"));while (file_exists(string_trim("bandit.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bandit.race.gml"), string_trim("bandit.race.gml")));
+file_delete(string_trim("b/b.mod.gml"));while (file_exists(string_trim("b/b.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.mod.gml"), string_trim("b/b.mod.gml")));
+file_delete(string_trim("b/b.ini"));while (file_exists(string_trim("b/b.ini"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/b.ini"), string_trim("b/b.ini")));
+file_delete(string_trim("b/redB.png"));while (file_exists(string_trim("b/redB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/b/redB.png"), string_trim("b/redB.png")));
+file_delete(string_trim("ancienthatred.crown.gml"));while (file_exists(string_trim("ancienthatred.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/ancienthatred.crown.gml"), string_trim("ancienthatred.crown.gml")));
+while (!file_loaded(string_trim("babylon_shotgun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("banditstack.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bandit.race.gml"))) {wait 1;}
+while (!file_loaded(string_trim("b/b.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("b/b.ini"))) {wait 1;}
+while (!file_loaded(string_trim("b/redB.png"))) {wait 1;}
+while (!file_loaded(string_trim("ancienthatred.crown.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/babylon_shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/banditstack.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bandit.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/b/b.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/ancienthatred.crown.gml"));
 
 
 global.ModNames = "";
@@ -150,11 +142,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer");
+trace("Mods=Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred");
 trace("Character=Choose");
-trace("Crown=crown of love");
-trace("Weapon=Beamer");
-trace("Seed=8384");
+trace("Crown=crown of ancient hatred");
+trace("Weapon=Babylon Shotgun");
+trace("Seed=15474");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -186,6 +178,7 @@ while (file_exists("Daily.txt")) {wait 1;}
 file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/Daily.mod.gml", "Daily.txt");
 while (!file_loaded("Daily.txt")) {wait 1;}
 global.Daily = string_replace_all(string_replace_all(string_split(string_split(string_load("Daily.txt"), "*/")[0], "/*")[1],chr(10),""),chr(13),"");
+global.Flavor = string_replace_all(string_replace_all(string_split(string_split(string_load("Daily.txt"), "*/")[1], "/*")[1],chr(10),""),chr(13),"");
 global.DailyHeight = string_count("#", global.Daily);
 global.DailyWidth = 0;
 var temp = string_split(global.Daily, "#");
@@ -193,6 +186,12 @@ for(var i = 0; i < array_length(temp); i++){
 	if(string_length(temp[i]) > global.DailyWidth){global.DailyWidth = string_length(temp[i]);}
 }
 file_unload("Daily.txt");
+
+global.details = global.Daily;
+global.detailsHeight = global.DailyHeight;
+global.detailsWidth = global.DailyWidth;
+global.detailsFlavor = global.Flavor;
+global.weeklyCurrentY = -(weeklyCurrentH+weeklyCurrentLH*global.detailsHeight-global.weeklyCurrentMax);
 
 #define step
 if(instance_exists(Menu)){
@@ -276,7 +275,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Beamer"));
+		give_wep(string_trim("Babylon Shotgun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -323,7 +322,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer" + " Character=Choose" + " Crown=crown of love" + " Weapon=Beamer" + " Seed=8384";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred" + " Character=Choose" + " Crown=crown of ancient hatred" + " Weapon=Babylon Shotgun" + " Seed=15474";
 	}
 	trace(score);
 	global.finished = true;
@@ -359,10 +358,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer" + " Character=Choose" + " Crown=crown of love" + " Weapon=Beamer" + " Seed=8384" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred" + " Character=Choose" + " Crown=crown of ancient hatred" + " Weapon=Babylon Shotgun" + " Seed=15474" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard, "ods:Cannoner,Challenge Test,Camper Boys,6 Weapons,Beamer" + " Character=Choose" + " Crown=crown of love" + " Weapon=Beamer" + " Seed=8384")) > 1){
+		}else if(array_length(string_split(leaderboard, "ods:Babylon Shotgun,banditstack,Bandit,B,Ancient Hatred" + " Character=Choose" + " Crown=crown of ancient hatred" + " Weapon=Babylon Shotgun" + " Seed=15474")) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -445,19 +444,19 @@ if(instance_exists(Menu)){
 	draw_set_font(fntSmall);
 	draw_set_color(point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], weeklyButtonX-5, 32, weeklyButtonX + weeklyButtonW+3, weeklyButtonY + weeklyButtonH+10)?make_color_rgb(255,255,255):make_color_rgb(100,100,100));
 	draw_text(weeklyButtonX + weeklyButtonW/2, weeklyButtonY + weeklyButtonH + 1, global.menu==0?"Weekly":(global.menu==1?"Daily":(global.menu==2?"Event":"")));
-	draw_set_color(make_color_rgb(0,0,0));
-	draw_roundrect(global.weeklyCurrentX, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)+global.weeklyCurrentBH, 0);
-	draw_set_color(make_color_rgb(100,100,100));
-	draw_rectangle(global.weeklyCurrentX+1, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)-1, 0);
-	draw_set_color(point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], global.weeklyCurrentX, global.weeklyCurrentY, global.weeklyCurrentX+(weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight) + global.weeklyCurrentBH)?make_color_rgb(255,255,255):make_color_rgb(100,100,100));
-	draw_text(global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth)/2, global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight) + global.weeklyCurrentBH/2-2, string_copy("Description", 1, floor((weeklyCurrentW+weeklyCurrentLW*global.detailsWidth)/4)));
-	draw_set_halign(halign);
-	if(global.details != undefined){
+	if(global.details != ){
+		draw_set_color(make_color_rgb(0,0,0));
+		draw_roundrect(global.weeklyCurrentX, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)+global.weeklyCurrentBH, 0);
+		draw_set_color(make_color_rgb(100,100,100));
+		draw_rectangle(global.weeklyCurrentX+1, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)-1, 0);
+		draw_set_color(point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], global.weeklyCurrentX, global.weeklyCurrentY, global.weeklyCurrentX+(weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight) + global.weeklyCurrentBH)?make_color_rgb(255,255,255):make_color_rgb(100,100,100));
+		draw_text(global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth)/2, global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight) + global.weeklyCurrentBH/2-2, string_copy(Description, 1, floor((weeklyCurrentW+weeklyCurrentLW*global.detailsWidth)/4)));
+		draw_set_halign(halign);
 		draw_set_font(fntSmall);
 		draw_text_nt(global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth)/20 + 1, global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)/20 + 1, global.details);
+		draw_set_color(make_color_rgb(0,0,0));
+		draw_rectangle(global.weeklyCurrentX, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), 35, 0);
 	}
-	draw_set_color(make_color_rgb(0,0,0));
-	draw_rectangle(global.weeklyCurrentX, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), 35, 0);
 	draw_set_color(make_color_rgb(100,100,100));
 	draw_roundrect(global.weeklyScoreboardX + global.weeklyScoreboardW/4, 30 + global.weeklyScoreboardH, global.weeklyScoreboardX+global.weeklyScoreboardW*3/4, 48 + global.weeklyScoreboardH, 0);
 	draw_roundrect(global.weeklyScoreboardX, 32 + global.weeklyScoreboardH, global.weeklyScoreboardX+global.weeklyScoreboardW, 35 + global.weeklyScoreboardH, 0);
@@ -517,7 +516,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = "crown of love"
+name = "crown of ancient hatred"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
