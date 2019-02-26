@@ -1,1 +1,1 @@
-Mods:Baller,2 Hour Area,Auto Bullet Shotgun,Blindness,Boltshard Character=Choose Crown=crown of haste Weapon=Boltshard Seed=8847
+Mods:boys,Blindness,brad,Ancient Hatred,Bloodking Character=Choose Crown=crown of ancient hatred Weapon=nowep Seed=3834
