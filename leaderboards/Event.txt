@@ -1,1 +1,1 @@
-Mods:blstorm,bossbar,brad,Assault Flak Cannon,blackholes Character=Choose Crown=crown of haste Weapon=nowep Seed=4755
+Mods:Bigger Bandit,blstorm,banditstack,2 Hour Area,Big Bandit Character=Choose Crown=crown of destiny Weapon=blstorm Seed=27004
