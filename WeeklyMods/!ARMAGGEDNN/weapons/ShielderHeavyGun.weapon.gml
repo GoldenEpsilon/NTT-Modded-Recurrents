@@ -1,13 +1,13 @@
-#define init
+global.sprite6 = sprite_add_weapon("spr/sprPopoHeavyGun.png", 5, 6);
 
 #define weapon_name
-return loc("!argdn:ShiHeavyGun", "SHIELDER HEAVY GUN");
+return loc("!argdn:ShiHeavyGun", "POLICE MACHINEGUN");
 
 #define weapon_type
 return 1;
 
 #define weapon_sprt
-return sprPopoHeavyGun;
+return global.sprite6;
 
 #define weapon_auto
 return true;

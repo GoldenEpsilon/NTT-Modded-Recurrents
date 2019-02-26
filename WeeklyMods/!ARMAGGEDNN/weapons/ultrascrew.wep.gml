@@ -1,4 +1,4 @@
-global.ult = sprite_add_weapon("spr/ultradriver.png", 3, 2)
+global.ult = sprite_add_weapon("spr/ultradriver.png", 3, 3)
 global.shank = sprite_add("spr/ushank.png",2, 1, 7)
 #define weapon_name
 return loc("!argdn:UltScrew", "ULTRA SCREWDRIVER");

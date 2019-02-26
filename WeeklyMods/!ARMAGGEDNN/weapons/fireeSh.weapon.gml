@@ -10,16 +10,16 @@ return 4;
 return 0;
 
 #define weapon_cost
-return 3;
+return 2;
 
 #define weapon_load
-return 38;
+return 35;
 
 #define weapon_sprt
 return global.sprFSH;
 
 #define weapon_area
-return 7;
+return 11;
 
 #define weapon_swap
 return sndSwapHammer;
@@ -37,7 +37,7 @@ sound_play(sndShovel);
 instance_create(x, y, Dust);
 with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_y(__long_arms * 20, __angle), Slash)) {
 	sprite_index = global.sprFSHS;
-	damage = 21;
+	damage = 14;
 	motion_add(__angle, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -45,7 +45,7 @@ with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle + 60 * accuracy), Slash)) {
 	sprite_index = global.sprFSHS;
-	damage = 21;
+	damage = 14;
 	motion_add(__angle + 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -53,11 +53,20 @@ with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy)
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle - 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle - 60 * accuracy), Slash)) {
 	sprite_index = global.sprFSHS;
-	damage = 21;
+	damage = 14;
 	motion_add(__angle - 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
 	creator = other;
+}
+sound_play(sndDoubleFireShotgun);
+repeat (35) {
+	with (instance_create(x, y, Flame)) {
+		motion_add(__angle + (random(120) - 55) * other.accuracy, 7);
+		image_angle = direction;
+		team = other.team;
+		creator = other;
+	}
 }
 wepangle = -wepangle;
 motion_add(__angle, 6);
@@ -65,7 +74,7 @@ weapon_post(-4, 24, 1);
 
 with (enemy) {
 	if place_meeting(x,y,Slash) {
-		repeat (6) with instance_create(x,y,FlameShell) {
+		repeat (2) with instance_create(x,y,FlameShell) {
 		}
 	}
 }

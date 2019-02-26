@@ -13,13 +13,13 @@ return 0;
 return 0;
 
 #define weapon_load
-return 45;
+return 40;
 
 #define weapon_sprt
 return global.sprExSH;
 
 #define weapon_area
-return 7;
+return 5;
 
 #define weapon_swap
 return sndSwapHammer;
@@ -33,7 +33,7 @@ sound_play(sndShovel);
 instance_create(x, y, Dust);
 with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_y(__long_arms * 20, __angle), Slash)) {
 	sprite_index = global.sprExSHS;
-	damage = 20;
+	damage = 16;
 	motion_add(__angle, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -41,7 +41,7 @@ with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle + 60 * accuracy), Slash)) {
 	sprite_index = global.sprExSHS;
-	damage = 20;
+	damage = 16;
 	motion_add(__angle + 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -49,19 +49,21 @@ with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy)
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle - 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle - 60 * accuracy), Slash)) {
 	sprite_index = global.sprExSHS;
-	damage = 20;
+	damage = 1;
 	motion_add(__angle - 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
 	creator = other;
 }
+sound_play(sndGrenade);
+with (instance_create(x, y, Grenade)) {
+	sticky = 0;
+	motion_add(__angle + (random(6) - 3) * other.accuracy, 40);
+	image_angle = direction;
+	team = other.team;
+	creator = other;
+}
+
 wepangle = -wepangle;
 motion_add(__angle, 6);
 weapon_post(-4, 24, 1);
-
-with (enemy) {
-	if place_meeting(x,y,Slash) {
-		instance_create(x,y,Explosion) {
-		}
-	}
-}

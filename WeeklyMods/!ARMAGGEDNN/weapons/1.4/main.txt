@@ -1,9 +1,0 @@
-/loadwep dubstepGun
-
-/loadwep ultrakatana
-
-/loadwep lyapasgun
-
-/loadwep UltraM16
-
-/loadwep m16rifle

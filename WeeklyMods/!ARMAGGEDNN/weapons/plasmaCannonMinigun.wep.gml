@@ -1,3 +1,4 @@
+global.sprVSH = sprite_add_weapon("spr/sprPCMini.png", 11, 8);
 #define weapon_name
 return loc("!argdn:PCMinigun", "PLASMA CANNON MINIGUN");
 #define weapon_type

@@ -1,8 +1,8 @@
 #define init
 
 																									#define skin_name // имя щедевра
-																									return "Ice"
-																									+ "#BY Uralap44#~~~~~#~~~~~~~"
+																									return "ins peter"
+																									+ "#BY someone#~~~~~#~~~~~~~"
 																									
 	#define skin_sprite // пошел нахуй! я не знаю чо вот ёто снизу дэлаэт блэт
 	switch (argument0) {

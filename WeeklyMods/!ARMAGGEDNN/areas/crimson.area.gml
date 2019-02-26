@@ -61,6 +61,7 @@ return [lx, 9];
 
 #define area_transit
 if (area = 0 && subarea == 1) {
+	loops -= 1
     area = "crimson";
 	subarea = 1
 	hard += 2
@@ -74,8 +75,3 @@ if subarea = 7 {
 	subarea = 3
 	loops += 1
 	}
-#define step
-if area = "crimson" && subarea = 6 {
-	instance_create(Player.x,Player.y,Nothing2)
-	}
-

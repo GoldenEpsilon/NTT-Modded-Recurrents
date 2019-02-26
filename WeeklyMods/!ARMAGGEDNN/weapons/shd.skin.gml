@@ -2,8 +2,8 @@
 global.shield = sprite_add ("spr/shild.png",1, 50, 34);
 
 																									#define skin_name // имя щедевра
-																									return "Ice"
-																									+ "#BY Uralap44#~~~~~#~~~~~~~"
+																									return "shuelderr"
+																									+ "#BY nucklear trnon#~~~~~#~~~~~~~"
 																									
 	#define skin_sprite // пошел нахуй! я не знаю чо вот ёто снизу дэлаэт блэт
 	switch (argument0) {
@@ -18,9 +18,9 @@ global.shield = sprite_add ("spr/shild.png",1, 50, 34);
 }
 
 #define create
-snd_hurt = sndEliteShielderHurtM
-snd_dead = sndEliteShielderDeadM
-snd_wrld = sndEliteShielderEnterM
+snd_hurt = sndEliteShielderHurt
+snd_dead = sndEliteShielderDead
+snd_wrld = sndEliteShielderEnter
 
 #define skin_race // раса скина
 return 2;

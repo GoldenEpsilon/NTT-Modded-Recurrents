@@ -12,7 +12,7 @@ return 0;
 return 0;
 
 #define weapon_load
-return 35;
+return 25;
 
 #define weapon_sprt
 return global.axe;
@@ -33,7 +33,7 @@ sound_play(sndHammer);
 instance_create(x, y, Dust);
 with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_y(__long_arms * 20, __angle), Slash)) {
 	sprite_index = sprHeavySlash;
-	damage = 40;
+	damage = 12;
 	motion_add(__angle, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;

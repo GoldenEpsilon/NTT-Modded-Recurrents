@@ -1,19 +1,19 @@
-#define init
+global.sprite5 = sprite_add_weapon("spr/sprPopoSlugger.png", 2, 6);
 
 #define weapon_name
-return loc("!argdn:InsSlugg", "INSPECTOR SLUGGER");
+return loc("!argdn:InsSlugg", "POLICE SLUGGER");
 
 #define weapon_type
 return 2;
 
 #define weapon_sprt
-return sprPopoSlugger;
+return global.sprite5;
 
 #define weapon_auto
 return true;
 
 #define weapon_load
-return 14;
+return 16;
 
 #define weapon_cost
 return 1;
@@ -34,7 +34,7 @@ repeat (1) if (instance_exists(self)) {
 		motion_add(other.gunangle + random_range(-1, 1) * 25, 2 + random(2));
 	}
 	with (instance_create(x, y, PopoSlug)) {
-		motion_add(other.gunangle + random_range(-1, 1) * 2 * other.accuracy, 16);
+		motion_add(other.gunangle + random_range(-1, 1) * 2 * other.accuracy, 20);
 		image_angle = direction;
 		team = other.team;
 		creator = other;

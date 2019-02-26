@@ -1,9 +1,9 @@
 #define init
-global.shield = sprite_add ("shild.png",1, 50, 34);
+global.shield = sprite_add ("spr/shild.png",1, 50, 34);
 
 																									#define skin_name // имя щедевра
-																									return "Ice"
-																									+ "#BY Uralap44#~~~~~#~~~~~~~"
+																									return "grynt"
+																									+ "#BY vlambeer lol#~~~~~#~~~~~~~"
 																									
 	#define skin_sprite // пошел нахуй! я не знаю чо вот ёто снизу дэлаэт блэт
 	switch (argument0) {

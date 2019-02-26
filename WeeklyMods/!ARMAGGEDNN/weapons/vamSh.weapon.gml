@@ -19,7 +19,7 @@ return 90;
 return global.sprVSH;
 
 #define weapon_area
-return 8;
+return 20;
 
 #define weapon_swap
 return sndSwapHammer;
@@ -60,8 +60,10 @@ wepangle = -wepangle;
 motion_add(__angle, 6);
 weapon_post(-4, 24, 1);
 
-#define step
+#define step(primary)
+if (primary) {
 	with enemy {
 		if my_health <= 0
 			instance_create(x,y,HPPickup)
 				}
+			}

@@ -1,7 +1,7 @@
-#define init
+global.sprite3 = sprite_add_weapon("spr/sprenergybaton.png", 5, 8);
 
 #define weapon_name
-return loc("!argdn:EInSword", "INSPECTOR SWORD");
+return loc("!argdn:EInSword", "POLICE BATON");
 
 #define weapon_type
 return 0;
@@ -13,13 +13,13 @@ return 0;
 return 2;
 
 #define weapon_load
-return 28;
+return 33;
 
 #define weapon_sprt
-return sprEnergyBaton;
+return global.sprite3;
 
 #define weapon_area
-return 12;
+return 14;
 
 #define weapon_swap
 return sndSwapEnergy;
@@ -40,4 +40,10 @@ with (instance_create(x + lengthdir_x(skill_get(13) * 20, __angle), y + lengthdi
 wepangle = -wepangle;
 motion_add(__angle, 6);
 weapon_post(-4, 24, 1);
+
+
+
+
+
+
 

@@ -1,13 +1,13 @@
-#define init
+global.sprite1 = sprite_add_weapon("spr/sprelitepopogun.png", 1, 5);
 
 #define weapon_name
-return loc("!argdn:EGruRfle", "PLASMA BULLET RIFLE");
+return loc("!argdn:EGruRfle", "POLICE ASSAULT RIFLE");
 
 #define weapon_type
 return 1;
 
 #define weapon_sprt
-return sprElitePopoGun;
+return global.sprite1;
 
 #define weapon_auto
 return false;
@@ -16,13 +16,13 @@ return false;
 return 8.5;
 
 #define weapon_cost
-return 3;
+return 4;
 
 #define weapon_swap
 return sndSwapEnergy;
 
 #define weapon_area
-return 3;
+return 12;
 
 #define weapon_text
 return "IDPD GUN";

@@ -1,5 +1,7 @@
+global.sprite4 = sprite_add_weapon("spr/sprPopoPlasmaMinigun.png", 6, 8);
+
 #define weapon_name
-return loc("!argdn:EShMinig", "SHIELDER MINIGUN");
+return loc("!argdn:EShMinig", "POLICE PLASMA MINIGUN");
 
 #define weapon_type
 return 5;
@@ -11,13 +13,13 @@ return 1;
 return 1;
 
 #define weapon_load
-return 4;
+return 6;
 
 #define weapon_sprt
-return sprPopoPlasmaMinigun;
+return global.sprite4;
 
 #define weapon_area
-return 14;
+return 20;
 
 #define weapon_swap
 return sndSwapEnergy;

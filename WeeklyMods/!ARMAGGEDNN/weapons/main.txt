@@ -58,6 +58,4 @@
 
 /loadwep usnk
 
-/loadtxt 1.4
-
-/loadtxt 1.5
+/loadtxt main2

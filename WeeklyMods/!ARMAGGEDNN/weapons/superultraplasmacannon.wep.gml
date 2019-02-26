@@ -19,13 +19,13 @@ return 550;
 return global.sprite;
 
 #define weapon_area
-return 18;
+return 49;
 
 #define weapon_swap
 return sndSwapEnergy;
 
 #define weapon_text
-return "USPC!";
+return "SPC!";
 
 #define weapon_rads
 return 300;
@@ -35,6 +35,7 @@ var __angle = gunangle;
 sound_play(global.sndUltraSuperPlasmaCannon);
 repeat (3) with (instance_create(x + lengthdir_x(8, __angle), y + lengthdir_y(8, __angle), PlasmaHuge)) {
 	motion_add(__angle + (random(4) - 2) * other.accuracy, 2);
+	damage = 9;
 	image_xscale = 6;
 	image_yscale = 6;
 	image_angle = direction;
@@ -44,3 +45,11 @@ repeat (3) with (instance_create(x + lengthdir_x(8, __angle), y + lengthdir_y(8,
 motion_add(__angle + 180, 6);
 weapon_post(10, -8, 8);
 resetSpeed = 0;
+#define step(primary)
+if (primary) {
+	Player.maxspeed = 3
+}
+else
+{
+Player.maxspeed = 4
+}

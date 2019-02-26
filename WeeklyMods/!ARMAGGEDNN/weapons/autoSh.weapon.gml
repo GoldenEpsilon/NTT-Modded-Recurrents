@@ -18,7 +18,7 @@ return 15;
 return global.sprASH;
 
 #define weapon_area
-return 4;
+return 3;
 
 #define weapon_swap
 return sndSwapHammer;

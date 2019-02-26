@@ -1,5 +1,6 @@
+global.sprite2 = sprite_add_weapon("spr/sprPopoRocket.png", 2, 4);
 #define weapon_name
-return loc("!argdn:EGruRock", "IDPD ROCKET");
+return loc("!argdn:EGruRock", "POLICE ROCKET");
 
 #define weapon_type
 return 4;
@@ -11,13 +12,13 @@ return 0;
 return 2;
 
 #define weapon_load
-return 30;
+return 28;
 
 #define weapon_sprt
-return sprPopoRocket;
+return global.sprite2;
 
 #define weapon_area
-return 9;
+return 12;
 
 #define weapon_swap
 return sndSwapExplosive;
@@ -31,6 +32,7 @@ sound_play(sndRocket);
 with (instance_create(x, y, PopoRocket)) {
 	motion_add(__angle + (random(4) - 2) * other.accuracy, 12);
 	image_angle = direction;
+	damage = 18;
 	team = other.team;
 	creator = other;
 }

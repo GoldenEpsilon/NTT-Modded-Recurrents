@@ -1,6 +1,6 @@
 global.sprLSH = sprite_add_weapon("spr/sprLSH.png", 8, 7);
 #define weapon_name
-return loc("!argdn:LightninSh", "CYBER SHOVEL");
+return loc("!argdn:LightninSh", "ELECTRIC SHOVEL");
 #define weapon_type
 return 0;
 #define weapon_auto
@@ -12,7 +12,7 @@ return 48;
 #define weapon_sprt
 return global.sprLSH;
 #define weapon_area
-return 12;
+return 16;
 #define weapon_swap
 return sndSwapHammer;
 #define weapon_text

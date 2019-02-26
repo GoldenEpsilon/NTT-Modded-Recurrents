@@ -32,7 +32,7 @@ sound_play(sndShovel);
 instance_create(x, y, Dust);
 with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_y(__long_arms * 20, __angle), Slash)) {
 	sprite_index = sprHeavySlash;
-	damage = 22;
+	damage = 26;
 	motion_add(__angle, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -40,7 +40,7 @@ with (instance_create(x + lengthdir_x(__long_arms * 20, __angle), y + lengthdir_
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle + 60 * accuracy), Slash)) {
 	sprite_index = sprHeavySlash;
-	damage = 22;
+	damage = 26;
 	motion_add(__angle + 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -48,7 +48,7 @@ with (instance_create(x + lengthdir_x(__long_arms * 15, __angle + 60 * accuracy)
 }
 with (instance_create(x + lengthdir_x(__long_arms * 15, __angle - 60 * accuracy), y + lengthdir_y(__long_arms * 15, __angle - 60 * accuracy), Slash)) {
 	sprite_index = sprHeavySlash;
-	damage = 22;
+	damage = 26;
 	motion_add(__angle - 60 * other.accuracy, 2 + 3 * __long_arms);
 	image_angle = direction;
 	team = other.team;
@@ -57,4 +57,13 @@ with (instance_create(x + lengthdir_x(__long_arms * 15, __angle - 60 * accuracy)
 wepangle = -wepangle;
 motion_add(__angle, 6);
 weapon_post(-4, 24, 1);
+
+#define step(primary)
+if (primary) {
+	Player.maxspeed = 3.5
+}
+else
+{
+Player.maxspeed = 4
+}
 

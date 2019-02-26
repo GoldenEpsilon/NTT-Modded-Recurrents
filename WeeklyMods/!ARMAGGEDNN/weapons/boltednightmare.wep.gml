@@ -12,7 +12,7 @@ return 1;
 #define weapon_sprt
 return global.sprit;
 #define weapon_area
-return 13;
+return 15;
 #define weapon_swap
 return sndSwapMachinegun;
 #define weapon_text
@@ -26,6 +26,6 @@ with (instance_create(x, y, Bolt)) {
 	team = other.team;
 	creator = other;
 }
-motion_add(__angle - 380, 0.5);
+motion_add(__angle + 180, 4);
 weapon_post(4, -7, 4);
 

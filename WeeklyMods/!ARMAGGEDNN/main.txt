@@ -1,3 +1,2 @@
-/loadmod areas/crimson.area
-
-/loadtxt weapons
+/load weapons
+/load areas

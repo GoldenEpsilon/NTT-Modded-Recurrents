@@ -1,0 +1,112 @@
+--ARMAGGEDNN VERSION FIXED CHANGELOG--
+Vampiric Shovel
+- changed pallete of sprite, and redrawn slashes for it;
+- area 8 > 20
+
+Auto Shovel
+ - area 4 > 3.
+ 
+Blood Shovel
+ - area 7 > 8
+ 
+Bolted N.
+ - area 13 > 15
+ - fixed knockback to player, from pushing him forward with force of 1, now it pushes back with forse of 4, negating moving forward
+ 
+Fire Axe
+ - firerate 35 > 25
+ - damage 40 > 12
+
+Elite Grunt Rifle
+ - renamed
+ - fixed hud display
+ - area 3 > 12
+ - cost 3 > 4
+ 
+Elite Grunt Rocket
+ - renamed
+ - fixed hud display
+ - firerate 30 > 28
+ - area 6 > 12
+ - damage 20 > 36
+  
+Elite Inspector Sword
+ - fixed hud display
+ - firerate 28 > 33
+ - area 11 > 14
+   
+Elite Shielder Gun
+ - fixed hud display
+ - firerate 4 > 8
+ - area 13 > 20
+   
+Explosive Shovel
+ - damage 20 > 16
+ - area 5 > 12
+ - fires a grenade
+ - removed explosions in slash impacts
+ 
+Fire Shovel
+ - decreased flame pellets on impact 6 > 3
+ - added flame haf-ring on slash
+ - cost 3 > 2
+ - damage 21 > 14
+ - area 4 > 11
+ - firerate 28 > 25
+   
+Force Hungreed of Nature
+ - redid sprite
+ - reduced pellets per shell 22 > 18
+ - added a lot of cosmetic shells to launch
+ - area 11 > 22
+   
+Golden Shovel
+ - redrawn sprite to something more original-ish
+ - area 10 > 6
+ - damage 10 > 12
+ - firerate 32 > 35
+   
+Grabli
+ -added functional:
+ -damage (for each slash!) random 2 to 20
+ -firerate random 20 to 25
+	
+Heavy Shovel
+ - damage 22 > 26
+ - when holstered: -0.5|1.5(plant) speed (4|5(plant) > 3.5)
+ now actually heavy!
+  
+Inspector Slug
+ - slug speed 16 > 20
+ - area 3 > 6
+ 
+Ligth Shovel
+ - area 12 > 16
+ 
+Plasma Cannon Mini
+ - renamed PLASMA CANNON MINIGUN > BIG PLASMA MINIGUN
+ - added sprite
+ 
+Porzygun
+ - damage 30 > 9
+ - slash disappears faster
+ 
+Ultra Super Plasma Cannon
+ - dps 13400 > 5600
+ - area 13 > 49
+
+M16
+ - area 4 > 8
+
+Ultra M16
+ - damage 11 > 14
+
+Ultra Super Nuke
+ - rads 15 > 150
+ - cost 9 > 18
+ - area 18 > 33
+
+Caber
+ - now nukes on impact!
+ - firerate 11 > 45
+ - cost 0 > 4 explosives
