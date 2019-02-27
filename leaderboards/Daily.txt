@@ -1,1 +1,1 @@
-Mods:!ARMAGGEDNN,CoD Proper,Ash,brad,Colored Projectiles Character=Choose Crown=crown of protection Weapon=Vampiric Shovel Seed=1120
+Mods:Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler Character=Choose Crown=crown of death Weapon=brimthrone Seed=18262
