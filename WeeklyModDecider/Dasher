@@ -1,0 +1,3 @@
+|dasher.race.gml
+/dasher
+?Dash at thing#-> pick up thing#-> throw thing#-> repeat.

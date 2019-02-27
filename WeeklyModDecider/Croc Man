@@ -1,0 +1,16 @@
+|Croc_Man/crocman.race.gml
+/crocman
+:Croc_Man/Walk.png
+:Croc_Man/Ultras.png
+:Croc_Man/Teleport.png
+:Croc_Man/Teleport.ogg
+:Croc_Man/Select.png
+:Croc_Man/Radial.png
+:Croc_Man/Portrait.png
+:Croc_Man/Map.png
+:Croc_Man/Idle.png
+:Croc_Man/Hurt.png
+:Croc_Man/CrushHit.ogg
+:Croc_Man/Ankh.png
+:Croc_Man/Ankh.ogg
+?From what I can tell you either#don't take damage from anything or#you die instantly because of that passive.
