@@ -1,1 +1,1 @@
-Mods:Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns Character=Choose Crown=carnage Weapon=Assault Flak Cannon Seed=24272
+Mods:Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area Character=Choose Crown=crown of luck Weapon=Corsair Seed=29705

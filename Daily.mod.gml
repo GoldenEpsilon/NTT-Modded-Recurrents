@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Bloodking#  Corsair#  Big Bandit#  Confuse#  2 Hour Area#@bCharacter@w=#  Choose#@yCrown@w=#  crown of luck#@gWeapon@w=#  Corsair#@pSeed@w=29705#Limited Tries:false*/
-/*|Bloodking[Blood, pain, and a half-finished character.]|Corsair[The Corsair from EtG#Plot A Course]|Big Bandit['Nuff said.]|Confuse[I guess you had a bit#too much to drink last night, eh?]|2 Hour Area[Who Love Minecraf]*/
+/*@rMods@w=#  Big Dog#  Chest Bandits#  brad#  Crazy Allies#  bosshudredux#@bCharacter@w=#  Choose#@yCrown@w=#  crown of guns#@gWeapon@w=#  nowep#@pSeed@w=5660#Limited Tries:false*/
+/*|Big Dog[HE IS AWAKENED]|Chest Bandits[Gets rid of bandits in random areas]|brad[Adds Brad from LISA: the Painful RPG]|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|bosshudredux[For knowing how bad your weapons are, every once in a while]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 29705;
+global.seed = 5660;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,144 +95,117 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("Bloodking/fishexample.race.gml"));while (file_exists(string_trim("Bloodking/fishexample.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/fishexample.race.gml"), string_trim("Bloodking/fishexample.race.gml")));
-file_delete(string_trim("Bloodking/freaksummondead.png"));while (file_exists(string_trim("Bloodking/freaksummondead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/freaksummondead.png"), string_trim("Bloodking/freaksummondead.png")));
-file_delete(string_trim("Bloodking/freaksummonhurt.png"));while (file_exists(string_trim("Bloodking/freaksummonhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/freaksummonhurt.png"), string_trim("Bloodking/freaksummonhurt.png")));
-file_delete(string_trim("Bloodking/freaksummonidle.png"));while (file_exists(string_trim("Bloodking/freaksummonidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/freaksummonidle.png"), string_trim("Bloodking/freaksummonidle.png")));
-file_delete(string_trim("Bloodking/freaksummonwalk.png"));while (file_exists(string_trim("Bloodking/freaksummonwalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/freaksummonwalk.png"), string_trim("Bloodking/freaksummonwalk.png")));
-file_delete(string_trim("Bloodking/sprBigPortrait.png"));while (file_exists(string_trim("Bloodking/sprBigPortrait.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprBigPortrait.png"), string_trim("Bloodking/sprBigPortrait.png")));
-file_delete(string_trim("Bloodking/sprCharSelect.png"));while (file_exists(string_trim("Bloodking/sprCharSelect.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprCharSelect.png"), string_trim("Bloodking/sprCharSelect.png")));
-file_delete(string_trim("Bloodking/sprEGIconHUDA.png"));while (file_exists(string_trim("Bloodking/sprEGIconHUDA.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprEGIconHUDA.png"), string_trim("Bloodking/sprEGIconHUDA.png")));
-file_delete(string_trim("Bloodking/sprEGIconHUDB.png"));while (file_exists(string_trim("Bloodking/sprEGIconHUDB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprEGIconHUDB.png"), string_trim("Bloodking/sprEGIconHUDB.png")));
-file_delete(string_trim("Bloodking/sprEGSkillIcon.png"));while (file_exists(string_trim("Bloodking/sprEGSkillIcon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprEGSkillIcon.png"), string_trim("Bloodking/sprEGSkillIcon.png")));
-file_delete(string_trim("Bloodking/sprgunallydead.png"));while (file_exists(string_trim("Bloodking/sprgunallydead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprgunallydead.png"), string_trim("Bloodking/sprgunallydead.png")));
-file_delete(string_trim("Bloodking/sprgunallyhurt.png"));while (file_exists(string_trim("Bloodking/sprgunallyhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprgunallyhurt.png"), string_trim("Bloodking/sprgunallyhurt.png")));
-file_delete(string_trim("Bloodking/sprgunallyidle.png"));while (file_exists(string_trim("Bloodking/sprgunallyidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprgunallyidle.png"), string_trim("Bloodking/sprgunallyidle.png")));
-file_delete(string_trim("Bloodking/sprgunallywalk.png"));while (file_exists(string_trim("Bloodking/sprgunallywalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprgunallywalk.png"), string_trim("Bloodking/sprgunallywalk.png")));
-file_delete(string_trim("Bloodking/sprLoadoutSkin.png"));while (file_exists(string_trim("Bloodking/sprLoadoutSkin.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprLoadoutSkin.png"), string_trim("Bloodking/sprLoadoutSkin.png")));
-file_delete(string_trim("Bloodking/sprMapIcon.png"));while (file_exists(string_trim("Bloodking/sprMapIcon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMapIcon.png"), string_trim("Bloodking/sprMapIcon.png")));
-file_delete(string_trim("Bloodking/sprMutant1BDead.png"));while (file_exists(string_trim("Bloodking/sprMutant1BDead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BDead.png"), string_trim("Bloodking/sprMutant1BDead.png")));
-file_delete(string_trim("Bloodking/sprMutant1BGoSit.png"));while (file_exists(string_trim("Bloodking/sprMutant1BGoSit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BGoSit.png"), string_trim("Bloodking/sprMutant1BGoSit.png")));
-file_delete(string_trim("Bloodking/sprMutant1BHurt.png"));while (file_exists(string_trim("Bloodking/sprMutant1BHurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BHurt.png"), string_trim("Bloodking/sprMutant1BHurt.png")));
-file_delete(string_trim("Bloodking/sprMutant1BIdle.png"));while (file_exists(string_trim("Bloodking/sprMutant1BIdle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BIdle.png"), string_trim("Bloodking/sprMutant1BIdle.png")));
-file_delete(string_trim("Bloodking/sprMutant1BSit.png"));while (file_exists(string_trim("Bloodking/sprMutant1BSit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BSit.png"), string_trim("Bloodking/sprMutant1BSit.png")));
-file_delete(string_trim("Bloodking/sprMutant1BWalk.png"));while (file_exists(string_trim("Bloodking/sprMutant1BWalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1BWalk.png"), string_trim("Bloodking/sprMutant1BWalk.png")));
-file_delete(string_trim("Bloodking/sprMutant1Dead.png"));while (file_exists(string_trim("Bloodking/sprMutant1Dead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1Dead.png"), string_trim("Bloodking/sprMutant1Dead.png")));
-file_delete(string_trim("Bloodking/sprMutant1GoSit.png"));while (file_exists(string_trim("Bloodking/sprMutant1GoSit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1GoSit.png"), string_trim("Bloodking/sprMutant1GoSit.png")));
-file_delete(string_trim("Bloodking/sprMutant1Hurt.png"));while (file_exists(string_trim("Bloodking/sprMutant1Hurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1Hurt.png"), string_trim("Bloodking/sprMutant1Hurt.png")));
-file_delete(string_trim("Bloodking/sprMutant1Idle.png"));while (file_exists(string_trim("Bloodking/sprMutant1Idle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1Idle.png"), string_trim("Bloodking/sprMutant1Idle.png")));
-file_delete(string_trim("Bloodking/sprMutant1Sit.png"));while (file_exists(string_trim("Bloodking/sprMutant1Sit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1Sit.png"), string_trim("Bloodking/sprMutant1Sit.png")));
-file_delete(string_trim("Bloodking/sprMutant1Walk.png"));while (file_exists(string_trim("Bloodking/sprMutant1Walk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprMutant1Walk.png"), string_trim("Bloodking/sprMutant1Walk.png")));
-file_delete(string_trim("Bloodking/sprRogueAmmochestopen.png"));while (file_exists(string_trim("Bloodking/sprRogueAmmochestopen.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprRogueAmmochestopen.png"), string_trim("Bloodking/sprRogueAmmochestopen.png")));
-file_delete(string_trim("Bloodking/sprRogueAmmochest_strip7.png"));while (file_exists(string_trim("Bloodking/sprRogueAmmochest_strip7.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprRogueAmmochest_strip7.png"), string_trim("Bloodking/sprRogueAmmochest_strip7.png")));
-file_delete(string_trim("Bloodking/sprRogueAmmo_strip7.png"));while (file_exists(string_trim("Bloodking/sprRogueAmmo_strip7.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Bloodking/sprRogueAmmo_strip7.png"), string_trim("Bloodking/sprRogueAmmo_strip7.png")));
-file_delete(string_trim("corsair/chrg.wep.gml"));while (file_exists(string_trim("corsair/chrg.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/corsair/chrg.wep.gml"), string_trim("corsair/chrg.wep.gml")));
-file_delete(string_trim("corsair/corsair.png"));while (file_exists(string_trim("corsair/corsair.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/corsair/corsair.png"), string_trim("corsair/corsair.png")));
-file_delete(string_trim("corsair/corsair_pickup.png"));while (file_exists(string_trim("corsair/corsair_pickup.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/corsair/corsair_pickup.png"), string_trim("corsair/corsair_pickup.png")));
-file_delete(string_trim("Big Bandit/bigbandit.race.gml"));while (file_exists(string_trim("Big Bandit/bigbandit.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/bigbandit.race.gml"), string_trim("Big Bandit/bigbandit.race.gml")));
-file_delete(string_trim("Big Bandit/bigrifle.wep.gml"));while (file_exists(string_trim("Big Bandit/bigrifle.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/bigrifle.wep.gml"), string_trim("Big Bandit/bigrifle.wep.gml")));
-file_delete(string_trim("Big Bandit/BigBanditA.png"));while (file_exists(string_trim("Big Bandit/BigBanditA.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditA.png"), string_trim("Big Bandit/BigBanditA.png")));
-file_delete(string_trim("Big Bandit/BigBanditB.png"));while (file_exists(string_trim("Big Bandit/BigBanditB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditB.png"), string_trim("Big Bandit/BigBanditB.png")));
-file_delete(string_trim("Big Bandit/BigBanditGun.png"));while (file_exists(string_trim("Big Bandit/BigBanditGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditGun.png"), string_trim("Big Bandit/BigBanditGun.png")));
-file_delete(string_trim("Big Bandit/BigBanditIcon.png"));while (file_exists(string_trim("Big Bandit/BigBanditIcon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditIcon.png"), string_trim("Big Bandit/BigBanditIcon.png")));
-file_delete(string_trim("Big Bandit/BigBanditIconA.png"));while (file_exists(string_trim("Big Bandit/BigBanditIconA.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditIconA.png"), string_trim("Big Bandit/BigBanditIconA.png")));
-file_delete(string_trim("Big Bandit/BigBanditIconB.png"));while (file_exists(string_trim("Big Bandit/BigBanditIconB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditIconB.png"), string_trim("Big Bandit/BigBanditIconB.png")));
-file_delete(string_trim("Big Bandit/BigBanditMap.png"));while (file_exists(string_trim("Big Bandit/BigBanditMap.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditMap.png"), string_trim("Big Bandit/BigBanditMap.png")));
-file_delete(string_trim("Big Bandit/BigBanditPortrait.png"));while (file_exists(string_trim("Big Bandit/BigBanditPortrait.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Bandit/BigBanditPortrait.png"), string_trim("Big Bandit/BigBanditPortrait.png")));
-file_delete(string_trim("confuse.mod.gml"));while (file_exists(string_trim("confuse.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/confuse.mod.gml"), string_trim("confuse.mod.gml")));
-file_delete(string_trim("2 hour area/2hours.area.gml"));while (file_exists(string_trim("2 hour area/2hours.area.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/2hours.area.gml"), string_trim("2 hour area/2hours.area.gml")));
-file_delete(string_trim("2 hour area/gfx/sprArrow.png"));while (file_exists(string_trim("2 hour area/gfx/sprArrow.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprArrow.png"), string_trim("2 hour area/gfx/sprArrow.png")));
-file_delete(string_trim("2 hour area/gfx/sprBow.png"));while (file_exists(string_trim("2 hour area/gfx/sprBow.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprBow.png"), string_trim("2 hour area/gfx/sprBow.png")));
-file_delete(string_trim("2 hour area/gfx/sprClouds.png"));while (file_exists(string_trim("2 hour area/gfx/sprClouds.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprClouds.png"), string_trim("2 hour area/gfx/sprClouds.png")));
-file_delete(string_trim("2 hour area/gfx/sprDebris.png"));while (file_exists(string_trim("2 hour area/gfx/sprDebris.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprDebris.png"), string_trim("2 hour area/gfx/sprDebris.png")));
-file_delete(string_trim("2 hour area/gfx/sprDecoration.png"));while (file_exists(string_trim("2 hour area/gfx/sprDecoration.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprDecoration.png"), string_trim("2 hour area/gfx/sprDecoration.png")));
-file_delete(string_trim("2 hour area/gfx/sprFloor.png"));while (file_exists(string_trim("2 hour area/gfx/sprFloor.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprFloor.png"), string_trim("2 hour area/gfx/sprFloor.png")));
-file_delete(string_trim("2 hour area/gfx/sprFloorB.png"));while (file_exists(string_trim("2 hour area/gfx/sprFloorB.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprFloorB.png"), string_trim("2 hour area/gfx/sprFloorB.png")));
-file_delete(string_trim("2 hour area/gfx/sprFloorExplo.png"));while (file_exists(string_trim("2 hour area/gfx/sprFloorExplo.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprFloorExplo.png"), string_trim("2 hour area/gfx/sprFloorExplo.png")));
-file_delete(string_trim("2 hour area/gfx/sprSpiderHurt.png"));while (file_exists(string_trim("2 hour area/gfx/sprSpiderHurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprSpiderHurt.png"), string_trim("2 hour area/gfx/sprSpiderHurt.png")));
-file_delete(string_trim("2 hour area/gfx/sprSpiderIdle.png"));while (file_exists(string_trim("2 hour area/gfx/sprSpiderIdle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprSpiderIdle.png"), string_trim("2 hour area/gfx/sprSpiderIdle.png")));
-file_delete(string_trim("2 hour area/gfx/sprSpiderWalk.png"));while (file_exists(string_trim("2 hour area/gfx/sprSpiderWalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprSpiderWalk.png"), string_trim("2 hour area/gfx/sprSpiderWalk.png")));
-file_delete(string_trim("2 hour area/gfx/sprTreeBot.png"));while (file_exists(string_trim("2 hour area/gfx/sprTreeBot.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprTreeBot.png"), string_trim("2 hour area/gfx/sprTreeBot.png")));
-file_delete(string_trim("2 hour area/gfx/sprTreetop.pdn"));while (file_exists(string_trim("2 hour area/gfx/sprTreetop.pdn"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprTreetop.pdn"), string_trim("2 hour area/gfx/sprTreetop.pdn")));
-file_delete(string_trim("2 hour area/gfx/sprTreetop.png"));while (file_exists(string_trim("2 hour area/gfx/sprTreetop.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprTreetop.png"), string_trim("2 hour area/gfx/sprTreetop.png")));
-file_delete(string_trim("2 hour area/gfx/sprWallBot.png"));while (file_exists(string_trim("2 hour area/gfx/sprWallBot.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprWallBot.png"), string_trim("2 hour area/gfx/sprWallBot.png")));
-file_delete(string_trim("2 hour area/gfx/sprWallTop.png"));while (file_exists(string_trim("2 hour area/gfx/sprWallTop.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprWallTop.png"), string_trim("2 hour area/gfx/sprWallTop.png")));
-file_delete(string_trim("2 hour area/gfx/sprWallTrans.png"));while (file_exists(string_trim("2 hour area/gfx/sprWallTrans.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprWallTrans.png"), string_trim("2 hour area/gfx/sprWallTrans.png")));
-file_delete(string_trim("2 hour area/gfx/sprZombieHurt.png"));while (file_exists(string_trim("2 hour area/gfx/sprZombieHurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprZombieHurt.png"), string_trim("2 hour area/gfx/sprZombieHurt.png")));
-file_delete(string_trim("2 hour area/gfx/sprZombieIdle.png"));while (file_exists(string_trim("2 hour area/gfx/sprZombieIdle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprZombieIdle.png"), string_trim("2 hour area/gfx/sprZombieIdle.png")));
-file_delete(string_trim("2 hour area/gfx/sprZombieWalk.png"));while (file_exists(string_trim("2 hour area/gfx/sprZombieWalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/2 hour area/gfx/sprZombieWalk.png"), string_trim("2 hour area/gfx/sprZombieWalk.png")));
-while (!file_loaded(string_trim("Bloodking/fishexample.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/freaksummondead.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/freaksummonhurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/freaksummonidle.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/freaksummonwalk.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprBigPortrait.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprCharSelect.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprEGIconHUDA.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprEGIconHUDB.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprEGSkillIcon.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprgunallydead.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprgunallyhurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprgunallyidle.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprgunallywalk.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprLoadoutSkin.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMapIcon.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BDead.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BGoSit.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BHurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BIdle.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BSit.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1BWalk.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1Dead.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1GoSit.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1Hurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1Idle.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1Sit.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprMutant1Walk.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprRogueAmmochestopen.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprRogueAmmochest_strip7.png"))) {wait 1;}
-while (!file_loaded(string_trim("Bloodking/sprRogueAmmo_strip7.png"))) {wait 1;}
-while (!file_loaded(string_trim("corsair/chrg.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("corsair/corsair.png"))) {wait 1;}
-while (!file_loaded(string_trim("corsair/corsair_pickup.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/bigbandit.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/bigrifle.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditA.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditB.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditIcon.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditIconA.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditIconB.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditMap.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Bandit/BigBanditPortrait.png"))) {wait 1;}
-while (!file_loaded(string_trim("confuse.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/2hours.area.gml"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprArrow.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprBow.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprClouds.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprDebris.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprDecoration.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprFloor.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprFloorB.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprFloorExplo.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprSpiderHurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprSpiderIdle.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprSpiderWalk.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprTreeBot.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprTreetop.pdn"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprTreetop.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprWallBot.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprWallTop.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprWallTrans.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprZombieHurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprZombieIdle.png"))) {wait 1;}
-while (!file_loaded(string_trim("2 hour area/gfx/sprZombieWalk.png"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/Bloodking/fishexample.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/corsair/chrg.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Big Bandit/bigbandit.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Big Bandit/bigrifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/confuse.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/2 hour area/2hours.area.gml"));
+file_delete(string_trim("bigdog.mod.gml"));while (file_exists(string_trim("bigdog.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bigdog.mod.gml"), string_trim("bigdog.mod.gml")));
+file_delete(string_trim("chestbandits.mod.gml"));while (file_exists(string_trim("chestbandits.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/chestbandits.mod.gml"), string_trim("chestbandits.mod.gml")));
+file_delete(string_trim("brad/brad.mod.gml"));while (file_exists(string_trim("brad/brad.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/brad.mod.gml"), string_trim("brad/brad.mod.gml")));
+file_delete(string_trim("brad/brad.race.gml"));while (file_exists(string_trim("brad/brad.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/brad.race.gml"), string_trim("brad/brad.race.gml")));
+file_delete(string_trim("brad/nowep.wep.gml"));while (file_exists(string_trim("brad/nowep.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/nowep.wep.gml"), string_trim("brad/nowep.wep.gml")));
+file_delete(string_trim("brad/dead.ogg"));while (file_exists(string_trim("brad/dead.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/dead.ogg"), string_trim("brad/dead.ogg")));
+file_delete(string_trim("brad/dead.png"));while (file_exists(string_trim("brad/dead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/dead.png"), string_trim("brad/dead.png")));
+file_delete(string_trim("brad/deadb.png"));while (file_exists(string_trim("brad/deadb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/deadb.png"), string_trim("brad/deadb.png")));
+file_delete(string_trim("brad/get.ogg"));while (file_exists(string_trim("brad/get.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/get.ogg"), string_trim("brad/get.ogg")));
+file_delete(string_trim("brad/gun1.png"));while (file_exists(string_trim("brad/gun1.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/gun1.png"), string_trim("brad/gun1.png")));
+file_delete(string_trim("brad/hit.ogg"));while (file_exists(string_trim("brad/hit.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hit.ogg"), string_trim("brad/hit.ogg")));
+file_delete(string_trim("brad/hit.png"));while (file_exists(string_trim("brad/hit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hit.png"), string_trim("brad/hit.png")));
+file_delete(string_trim("brad/hitb.png"));while (file_exists(string_trim("brad/hitb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hitb.png"), string_trim("brad/hitb.png")));
+file_delete(string_trim("brad/hjerky.png"));while (file_exists(string_trim("brad/hjerky.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hjerky.png"), string_trim("brad/hjerky.png")));
+file_delete(string_trim("brad/hurt.ogg"));while (file_exists(string_trim("brad/hurt.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hurt.ogg"), string_trim("brad/hurt.ogg")));
+file_delete(string_trim("brad/hurt.png"));while (file_exists(string_trim("brad/hurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hurt.png"), string_trim("brad/hurt.png")));
+file_delete(string_trim("brad/hurtb.png"));while (file_exists(string_trim("brad/hurtb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/hurtb.png"), string_trim("brad/hurtb.png")));
+file_delete(string_trim("brad/idle.png"));while (file_exists(string_trim("brad/idle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/idle.png"), string_trim("brad/idle.png")));
+file_delete(string_trim("brad/idleb.png"));while (file_exists(string_trim("brad/idleb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/idleb.png"), string_trim("brad/idleb.png")));
+file_delete(string_trim("brad/itemframe.png"));while (file_exists(string_trim("brad/itemframe.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/itemframe.png"), string_trim("brad/itemframe.png")));
+file_delete(string_trim("brad/joy.png"));while (file_exists(string_trim("brad/joy.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/joy.png"), string_trim("brad/joy.png")));
+file_delete(string_trim("brad/joypickup.png"));while (file_exists(string_trim("brad/joypickup.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/joypickup.png"), string_trim("brad/joypickup.png")));
+file_delete(string_trim("brad/loadout.png"));while (file_exists(string_trim("brad/loadout.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/loadout.png"), string_trim("brad/loadout.png")));
+file_delete(string_trim("brad/mapicon.png"));while (file_exists(string_trim("brad/mapicon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/mapicon.png"), string_trim("brad/mapicon.png")));
+file_delete(string_trim("brad/mjerky.png"));while (file_exists(string_trim("brad/mjerky.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/mjerky.png"), string_trim("brad/mjerky.png")));
+file_delete(string_trim("brad/nothing.png"));while (file_exists(string_trim("brad/nothing.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/nothing.png"), string_trim("brad/nothing.png")));
+file_delete(string_trim("brad/pissed.ogg"));while (file_exists(string_trim("brad/pissed.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/pissed.ogg"), string_trim("brad/pissed.ogg")));
+file_delete(string_trim("brad/portrait.png"));while (file_exists(string_trim("brad/portrait.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/portrait.png"), string_trim("brad/portrait.png")));
+file_delete(string_trim("brad/rustle.ogg"));while (file_exists(string_trim("brad/rustle.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/rustle.ogg"), string_trim("brad/rustle.ogg")));
+file_delete(string_trim("brad/sack.png"));while (file_exists(string_trim("brad/sack.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/sack.png"), string_trim("brad/sack.png")));
+file_delete(string_trim("brad/say.ogg"));while (file_exists(string_trim("brad/say.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/say.ogg"), string_trim("brad/say.ogg")));
+file_delete(string_trim("brad/select.ogg"));while (file_exists(string_trim("brad/select.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/select.ogg"), string_trim("brad/select.ogg")));
+file_delete(string_trim("brad/select.png"));while (file_exists(string_trim("brad/select.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/select.png"), string_trim("brad/select.png")));
+file_delete(string_trim("brad/text.ogg"));while (file_exists(string_trim("brad/text.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/text.ogg"), string_trim("brad/text.ogg")));
+file_delete(string_trim("brad/ultraa.ogg"));while (file_exists(string_trim("brad/ultraa.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/ultraa.ogg"), string_trim("brad/ultraa.ogg")));
+file_delete(string_trim("brad/ultraa.png"));while (file_exists(string_trim("brad/ultraa.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/ultraa.png"), string_trim("brad/ultraa.png")));
+file_delete(string_trim("brad/ultrab.ogg"));while (file_exists(string_trim("brad/ultrab.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/ultrab.ogg"), string_trim("brad/ultrab.ogg")));
+file_delete(string_trim("brad/ultrab.png"));while (file_exists(string_trim("brad/ultrab.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/ultrab.png"), string_trim("brad/ultrab.png")));
+file_delete(string_trim("brad/ultras.png"));while (file_exists(string_trim("brad/ultras.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/ultras.png"), string_trim("brad/ultras.png")));
+file_delete(string_trim("brad/unknownitem.png"));while (file_exists(string_trim("brad/unknownitem.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/unknownitem.png"), string_trim("brad/unknownitem.png")));
+file_delete(string_trim("brad/use.ogg"));while (file_exists(string_trim("brad/use.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/use.ogg"), string_trim("brad/use.ogg")));
+file_delete(string_trim("brad/walk.png"));while (file_exists(string_trim("brad/walk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/walk.png"), string_trim("brad/walk.png")));
+file_delete(string_trim("brad/walkb.png"));while (file_exists(string_trim("brad/walkb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/walkb.png"), string_trim("brad/walkb.png")));
+file_delete(string_trim("brad/wep0.png"));while (file_exists(string_trim("brad/wep0.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep0.png"), string_trim("brad/wep0.png")));
+file_delete(string_trim("brad/wep1.png"));while (file_exists(string_trim("brad/wep1.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep1.png"), string_trim("brad/wep1.png")));
+file_delete(string_trim("brad/wep2.png"));while (file_exists(string_trim("brad/wep2.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep2.png"), string_trim("brad/wep2.png")));
+file_delete(string_trim("brad/wep3.png"));while (file_exists(string_trim("brad/wep3.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep3.png"), string_trim("brad/wep3.png")));
+file_delete(string_trim("brad/wep4.png"));while (file_exists(string_trim("brad/wep4.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep4.png"), string_trim("brad/wep4.png")));
+file_delete(string_trim("brad/wep5.png"));while (file_exists(string_trim("brad/wep5.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/wep5.png"), string_trim("brad/wep5.png")));
+file_delete(string_trim("brad/yell.ogg"));while (file_exists(string_trim("brad/yell.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brad/yell.ogg"), string_trim("brad/yell.ogg")));
+file_delete(string_trim("crazyallies.mod.gml"));while (file_exists(string_trim("crazyallies.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/crazyallies.mod.gml"), string_trim("crazyallies.mod.gml")));
+file_delete(string_trim("bosshudredux.mod.gml"));while (file_exists(string_trim("bosshudredux.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bosshudredux.mod.gml"), string_trim("bosshudredux.mod.gml")));
+while (!file_loaded(string_trim("bigdog.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("chestbandits.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("brad/brad.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("brad/brad.race.gml"))) {wait 1;}
+while (!file_loaded(string_trim("brad/nowep.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("brad/dead.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/dead.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/deadb.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/get.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/gun1.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hit.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hit.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hitb.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hjerky.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hurt.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hurt.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/hurtb.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/idle.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/idleb.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/itemframe.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/joy.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/joypickup.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/loadout.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/mapicon.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/mjerky.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/nothing.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/pissed.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/portrait.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/rustle.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/sack.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/say.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/select.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/select.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/text.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/ultraa.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/ultraa.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/ultrab.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/ultrab.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/ultras.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/unknownitem.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/use.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("brad/walk.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/walkb.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep0.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep1.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep2.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep3.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep4.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/wep5.png"))) {wait 1;}
+while (!file_loaded(string_trim("brad/yell.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("crazyallies.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bosshudredux.mod.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/chestbandits.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/brad/brad.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/brad/brad.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/brad/nowep.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/crazyallies.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml"));
 
 
 global.ModNames = "";
@@ -261,11 +234,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area");
+trace("Mods=Big Dog,Chest Bandits,brad,Crazy Allies,bosshudredux");
 trace("Character=Choose");
-trace("Crown=crown of luck");
-trace("Weapon=Corsair");
-trace("Seed=29705");
+trace("Crown=crown of guns");
+trace("Weapon=nowep");
+trace("Seed=5660");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -394,7 +367,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Corsair"));
+		give_wep(string_trim("nowep"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -441,7 +414,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area" + " Character=Choose" + " Crown=crown of luck" + " Weapon=Corsair" + " Seed=29705";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Big Dog,Chest Bandits,brad,Crazy Allies,bosshudredux" + " Character=Choose" + " Crown=crown of guns" + " Weapon=nowep" + " Seed=5660";
 	}
 	trace(score);
 	global.finished = true;
@@ -477,10 +450,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area" + " Character=Choose" + " Crown=crown of luck" + " Weapon=Corsair" + " Seed=29705" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Big Dog,Chest Bandits,brad,Crazy Allies,bosshudredux" + " Character=Choose" + " Crown=crown of guns" + " Weapon=nowep" + " Seed=5660" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_replace_all(string_replace_all(string_split(leaderboard,chr(10),""),chr(13),"")), string_replace_all(string_replace_all("ods:Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area" + " Character=Choose" + " Crown=crown of luck" + " Weapon=Corsair" + " Seed=29705",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_replace_all(string_replace_all(string_split(leaderboard,chr(10),""),chr(13),"")), string_replace_all(string_replace_all("ods:Big Dog,Chest Bandits,brad,Crazy Allies,bosshudredux" + " Character=Choose" + " Crown=crown of guns" + " Weapon=nowep" + " Seed=5660",chr(10),""),chr(13),"")) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -635,7 +608,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = "crown of luck"
+name = "crown of guns"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
