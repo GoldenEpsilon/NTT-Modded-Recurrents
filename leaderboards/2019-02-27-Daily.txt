@@ -1,1 +1,1 @@
-Mods:Bloodking,Corsair,Big Bandit,Confuse,2 Hour Area Character=Choose Crown=crown of luck Weapon=Corsair Seed=29705
+Mods:Big Dog,Chest Bandits,brad,Crazy Allies,bosshudredux Character=Choose Crown=crown of guns Weapon=nowep Seed=5660
