@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Colored Palace#  Cursed Hyper Crystal#  Bomber#  Challenge Test#  Bear#@bCharacter@w=#  Choose#@yCrown@w=#  crown of risk#@gWeapon@w=#  A Fucking Gun#@pSeed@w=16030#Limited Tries:false*/
-/*|Colored Palace[Gives a palace a#well-deserved paint job.]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Bomber[Bombs?]|Challenge Test[GOTTA GO FAST]|Bear[4 da meeeeeeeeee#eeeeemez]*/
+/*@rMods@w=#  Cycle#  Big Dog Snipers#  CoD Proper#  Colored Palace#  Cannoner#@bCharacter@w=#  Choose#@yCrown@w=#  crown of blood#@gWeapon@w=#  cannoner#@pSeed@w=14668#Limited Tries:false*/
+/*|Cycle[Makes it so you keep gaining mutations, but you only keep the last 10]|Big Dog Snipers[The actual boss]|Colored Palace[Gives a palace a#well-deserved paint job.]|Cannoner[EIGHT RADICAL SHOTS]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 16030;
+global.seed = 14668;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,6 +95,9 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_delete(string_trim("cycle.mod.gml"));while (file_exists(string_trim("cycle.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cycle.mod.gml"), string_trim("cycle.mod.gml")));
+file_delete(string_trim("bigdogsnipers.mod.gml"));while (file_exists(string_trim("bigdogsnipers.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bigdogsnipers.mod.gml"), string_trim("bigdogsnipers.mod.gml")));
+file_delete(string_trim("codproper.mod.gml"));while (file_exists(string_trim("codproper.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/codproper.mod.gml"), string_trim("codproper.mod.gml")));
 file_delete(string_trim("coloredpalace/coloredpalace.mod.gml"));while (file_exists(string_trim("coloredpalace/coloredpalace.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/coloredpalace.mod.gml"), string_trim("coloredpalace/coloredpalace.mod.gml")));
 file_delete(string_trim("coloredpalace/sprDebris7_grey.png"));while (file_exists(string_trim("coloredpalace/sprDebris7_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprDebris7_grey.png"), string_trim("coloredpalace/sprDebris7_grey.png")));
 file_delete(string_trim("coloredpalace/sprFloor7B_grey.png"));while (file_exists(string_trim("coloredpalace/sprFloor7B_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprFloor7B_grey.png"), string_trim("coloredpalace/sprFloor7B_grey.png")));
@@ -104,15 +107,10 @@ file_delete(string_trim("coloredpalace/sprWall7Bot_grey.png"));while (file_exis
 file_delete(string_trim("coloredpalace/sprWall7Out_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Out_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Out_grey.png"), string_trim("coloredpalace/sprWall7Out_grey.png")));
 file_delete(string_trim("coloredpalace/sprWall7Top_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Top_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Top_grey.png"), string_trim("coloredpalace/sprWall7Top_grey.png")));
 file_delete(string_trim("coloredpalace/sprWall7Trans_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Trans_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Trans_grey.png"), string_trim("coloredpalace/sprWall7Trans_grey.png")));
-file_delete(string_trim("cursedhypercrystal.mod.gml"));while (file_exists(string_trim("cursedhypercrystal.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cursedhypercrystal.mod.gml"), string_trim("cursedhypercrystal.mod.gml")));
-file_delete(string_trim("bomber.race.gml"));while (file_exists(string_trim("bomber.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bomber.race.gml"), string_trim("bomber.race.gml")));
-file_delete(string_trim("challenge_test.mod.gml"));while (file_exists(string_trim("challenge_test.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/challenge_test.mod.gml"), string_trim("challenge_test.mod.gml")));
-file_delete(string_trim("bear/bear.race.gml"));while (file_exists(string_trim("bear/bear.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear.race.gml"), string_trim("bear/bear.race.gml")));
-file_delete(string_trim("bear/beargun.wep.gml"));while (file_exists(string_trim("bear/beargun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/beargun.wep.gml"), string_trim("bear/beargun.wep.gml")));
-file_delete(string_trim("bear/a fucking gun.png"));while (file_exists(string_trim("bear/a fucking gun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/a fucking gun.png"), string_trim("bear/a fucking gun.png")));
-file_delete(string_trim("bear/bear (1).png"));while (file_exists(string_trim("bear/bear (1).png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bear (1).png"), string_trim("bear/bear (1).png")));
-file_delete(string_trim("bear/bearhurt.png"));while (file_exists(string_trim("bear/bearhurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearhurt.png"), string_trim("bear/bearhurt.png")));
-file_delete(string_trim("bear/bearidle.png"));while (file_exists(string_trim("bear/bearidle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bear/bearidle.png"), string_trim("bear/bearidle.png")));
+file_delete(string_trim("cannoner.wep.gml"));while (file_exists(string_trim("cannoner.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cannoner.wep.gml"), string_trim("cannoner.wep.gml")));
+while (!file_loaded(string_trim("cycle.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("bigdogsnipers.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("codproper.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("coloredpalace/coloredpalace.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("coloredpalace/sprDebris7_grey.png"))) {wait 1;}
 while (!file_loaded(string_trim("coloredpalace/sprFloor7B_grey.png"))) {wait 1;}
@@ -122,21 +120,12 @@ while (!file_loaded(string_trim("coloredpalace/sprWall7Bot_grey.png"))) {wait 1
 while (!file_loaded(string_trim("coloredpalace/sprWall7Out_grey.png"))) {wait 1;}
 while (!file_loaded(string_trim("coloredpalace/sprWall7Top_grey.png"))) {wait 1;}
 while (!file_loaded(string_trim("coloredpalace/sprWall7Trans_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("cursedhypercrystal.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bomber.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("challenge_test.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bear.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/beargun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bear/a fucking gun.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bear (1).png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bearhurt.png"))) {wait 1;}
-while (!file_loaded(string_trim("bear/bearidle.png"))) {wait 1;}
+while (!file_loaded(string_trim("cannoner.wep.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Event.mod/cycle.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/bigdogsnipers.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/codproper.mod.gml"));
 wait mod_load(string_trim("data/Event.mod/coloredpalace/coloredpalace.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/cursedhypercrystal.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/bomber.race.gml"));
-wait mod_load(string_trim("data/Event.mod/challenge_test.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Event.mod/bear/beargun.wep.gml"));
+wait mod_load(string_trim("data/Event.mod/cannoner.wep.gml"));
 
 
 global.ModNames = "";
@@ -165,11 +154,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Event:");
-trace("Mods=Colored Palace,Cursed Hyper Crystal,Bomber,Challenge Test,Bear");
+trace("Mods=Cycle,Big Dog Snipers,CoD Proper,Colored Palace,Cannoner");
 trace("Character=Choose");
-trace("Crown=crown of risk");
-trace("Weapon=A Fucking Gun");
-trace("Seed=16030");
+trace("Crown=crown of blood");
+trace("Weapon=cannoner");
+trace("Seed=14668");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -298,7 +287,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("A Fucking Gun"));
+		give_wep(string_trim("cannoner"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -328,7 +317,7 @@ else{
 		instance_change(CharSelect, 0);
 	}
 	with(CharSelect){
-		if(variable_instance_exists(self, "temp_image_index"){image_index = temp_image_index;}
+		if(variable_instance_exists(self, "temp_image_index")){image_index = temp_image_index;}
 		xstart=5+(game_width-10)*(index/instance_number(CharSelect));
 		if(instance_exists(self) && !ChooseCharacter){
 			if(race!=string_lower(string_trim("Choose"))){
@@ -348,7 +337,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Colored Palace,Cursed Hyper Crystal,Bomber,Challenge Test,Bear" + " Character=Choose" + " Crown=crown of risk" + " Weapon=A Fucking Gun" + " Seed=16030";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cycle,Big Dog Snipers,CoD Proper,Colored Palace,Cannoner" + " Character=Choose" + " Crown=crown of blood" + " Weapon=cannoner" + " Seed=14668";
 	}
 	trace(score);
 	global.finished = true;
@@ -384,10 +373,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Colored Palace,Cursed Hyper Crystal,Bomber,Challenge Test,Bear" + " Character=Choose" + " Crown=crown of risk" + " Weapon=A Fucking Gun" + " Seed=16030" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cycle,Big Dog Snipers,CoD Proper,Colored Palace,Cannoner" + " Character=Choose" + " Crown=crown of blood" + " Weapon=cannoner" + " Seed=14668" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Colored Palace,Cursed Hyper Crystal,Bomber,Challenge Test,Bear" + " Character=Choose" + " Crown=crown of risk" + " Weapon=A Fucking Gun" + " Seed=16030",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cycle,Big Dog Snipers,CoD Proper,Colored Palace,Cannoner" + " Character=Choose" + " Crown=crown of blood" + " Weapon=cannoner" + " Seed=14668",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -541,7 +530,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = "crown of risk"
+name = "crown of blood"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
