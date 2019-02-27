@@ -1,1 +1,1 @@
-Mods:blackholes,bow,blaac48,!ARMAGGEDNN,Baldi Character=Choose Crown=crown of luck Weapon=Force Hungreed Of Nature Seed=24090
+Mods:Blaac's Weapon Mutations,Cycle,betterLoops,blackholes,Buff Character=Choose Crown=crown of hatred Weapon=hyperrifle Seed=31836
