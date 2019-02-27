@@ -343,7 +343,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	}
 	if(global.qualified){
 		headers = ds_map_create();
-		ds_map_set(headers, "Authorization", "token 21df58cedf37bef276"+"5127ee22846b1cfc9705f4");
+		ds_map_set(headers, "Authorization", "token 7349069d71cc5b8e1165"+"40e940c2ad5650ea32de");
 		ds_map_set(headers, "Cache-Control", "no-cache");
 		ds_map_set(headers, "Accept", "application/vnd.github.full+json");	
 		file_delete("dl.txt");
