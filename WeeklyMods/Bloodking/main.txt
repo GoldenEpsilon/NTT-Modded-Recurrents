@@ -1,0 +1,4 @@
+/loadmod fishexample.race
+/loadsprite sprrogueammo sprRogueAmmo_strip7
+/loadsprite sprrogueammochest sprRogueAmmoChest_strip7
+/loadsprite sprrogueammochestopen sprRogueAmmoChestopen
