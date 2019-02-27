@@ -1,1 +1,1 @@
-Mods:Cool Shadows,Bullet Time,Baldi,,Bandit,,xefsstuff Character=Choose Crown=crown of hatred Weapon=thunder cloud minigun Seed=15291
+Mods:Fire Riders,Buff,Baldi,Bandit,xefsstuff Character=Choose Crown=crown of guns Weapon=bullet spear Seed=19346
