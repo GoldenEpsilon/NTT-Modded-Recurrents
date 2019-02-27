@@ -39,7 +39,7 @@ global.weeklyScoreboardH = 0;
 global.weeklyScoreboardMin = 0;
 global.weeklyScoreboardMax = 152;
 global.headers = ds_map_create();
-ds_map_set(global.headers, "Authorization", "token 21df58cedf37bef2765127ee22846b1cfc9705f4");
+ds_map_set(global.headers, "Authorization", "token 7349069d71cc5b8e1165"+"40e940c2ad5650ea32de");
 ds_map_set(global.headers, "Cache-Control", "no-cache");	
 ds_map_set(global.headers, "Accept", "application/vnd.github.full+json");	
 file_delete("dl.txt");
