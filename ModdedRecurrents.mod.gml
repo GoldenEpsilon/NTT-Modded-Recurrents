@@ -164,7 +164,7 @@ if(mod_sideload() && instance_exists(Menu)){
 	}
 	if(button_pressed(0, "fire") && point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], swapX - 5, 32, swapX + swapW + 5, swapY + swapH + 6)){
 		global.menu++;
-		global.menu%=3;
+		global.menu%=2;
 		global.details = global.menu == 0 ? global.weekly : (global.menu == 1 ? global.daily : global.event);
 		global.detailsHeight = global.menu == 0 ? global.weeklyHeight : (global.menu == 1 ? global.dailyHeight : global.eventHeight);
 		global.detailsWidth = global.menu == 0 ? global.weeklyWidth : (global.menu == 1 ? global.dailyWidth : global.eventWidth);
