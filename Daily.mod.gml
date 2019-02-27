@@ -1,5 +1,6 @@
 
-/*@rMods@w=#  Crazy Allies#  Assault Flak Cannon#  BAR#  Boltshard#  bosshudredux#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Boltshard#@pSeed@w=11855#Limited Tries:false*/
+/*@rMods@w=#  Crazy Allies#  Assault Flak Cannon#  BAR#  Boltshard#  bosshudredux#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Boltshard
+#@pSeed@w=11855#Limited Tries:false*/
 /*|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]|BAR[A Big Ass Revolver.]|Boltshard[If looking cool was good at killing,#this would one-shot the throne.]|bosshudredux[For knowing how bad your weapons are, every once in a while]*/
 #define init
 #macro weeklyButtonX 6
@@ -95,21 +96,51 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("crazyallies.mod.gml"));while (file_exists(string_trim("crazyallies.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/crazyallies.mod.gml"), string_trim("crazyallies.mod.gml")));
-file_delete(string_trim("Assault_Flak_Cannon.wep.gml"));while (file_exists(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Assault_Flak_Cannon.wep.gml"), string_trim("Assault_Flak_Cannon.wep.gml")));
-file_delete(string_trim("BAR.wep.gml"));while (file_exists(string_trim("BAR.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BAR.wep.gml"), string_trim("BAR.wep.gml")));
-file_delete(string_trim("Boltshard.wep.gml"));while (file_exists(string_trim("Boltshard.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Boltshard.wep.gml"), string_trim("Boltshard.wep.gml")));
-file_delete(string_trim("bosshudredux.mod.gml"));while (file_exists(string_trim("bosshudredux.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bosshudredux.mod.gml"), string_trim("bosshudredux.mod.gml")));
-while (!file_loaded(string_trim("crazyallies.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("BAR.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Boltshard.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bosshudredux.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/crazyallies.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Assault_Flak_Cannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/BAR.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Boltshard.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml"));
+file_delete(string_trim("crazyallies.mod.gml
+"));while (file_exists(string_trim("crazyallies.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/crazyallies.mod.gml
+"), string_trim("crazyallies.mod.gml
+")));
+file_delete(string_trim("Assault_Flak_Cannon.wep.gml
+"));while (file_exists(string_trim("Assault_Flak_Cannon.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Assault_Flak_Cannon.wep.gml
+"), string_trim("Assault_Flak_Cannon.wep.gml
+")));
+file_delete(string_trim("BAR.wep.gml
+"));while (file_exists(string_trim("BAR.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BAR.wep.gml
+"), string_trim("BAR.wep.gml
+")));
+file_delete(string_trim("Boltshard.wep.gml
+"));while (file_exists(string_trim("Boltshard.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Boltshard.wep.gml
+"), string_trim("Boltshard.wep.gml
+")));
+file_delete(string_trim("bosshudredux.mod.gml
+"));while (file_exists(string_trim("bosshudredux.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bosshudredux.mod.gml
+"), string_trim("bosshudredux.mod.gml
+")));
+while (!file_loaded(string_trim("crazyallies.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("Assault_Flak_Cannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("BAR.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("Boltshard.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("bosshudredux.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/crazyallies.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Assault_Flak_Cannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/BAR.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Boltshard.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -141,12 +172,13 @@ trace("Current Daily:");
 trace("Mods=Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux");
 trace("Character=Choose");
 trace("Crown=crown of love");
-trace("Weapon=Boltshard");
+trace("Weapon=Boltshard
+");
 trace("Seed=11855");
 
 global.canStart = true;
 global.headers = ds_map_create();
-ds_map_set(global.headers, "Authorization", "token 21df58cedf37bef276512"+"7ee22846b1cfc9705f4");
+ds_map_set(global.headers, "Authorization", "token 7349069d71cc5b8e1165"+"40e940c2ad5650ea32de");
 ds_map_set(global.headers, "Cache-Control", "no-cache");	
 ds_map_set(global.headers, "Accept", "application/vnd.github.full+json");	file_delete("dl.txt");
 while (file_exists("dl.txt")) {wait 1;}
@@ -271,7 +303,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Boltshard"));
+		give_wep(string_trim("Boltshard
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -318,7 +351,8 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard" + " Seed=11855";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard
+" + " Seed=11855";
 	}
 	trace(score);
 	global.finished = true;
@@ -354,10 +388,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard" + " Seed=11855" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard
+" + " Seed=11855" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard" + " Seed=11855",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Crazy Allies,Assault Flak Cannon,BAR,Boltshard,bosshudredux" + " Character=Choose" + " Crown=crown of love" + " Weapon=Boltshard
+" + " Seed=11855",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
