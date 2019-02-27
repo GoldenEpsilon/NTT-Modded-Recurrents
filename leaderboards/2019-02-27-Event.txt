@@ -1,1 +1,1 @@
-Mods:Ancient Hatred,Area Health,Some Crowns,blstorm,Bloodking Character=Choose Crown=torment Weapon=blstorm Seed=31792
+Mods:C Ultras,Brimthrone,Champions,blstorm,Charge Template 2 Character=Choose Crown=crown of luck Weapon=charge_template Seed=291

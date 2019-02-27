@@ -1,1 +1,1 @@
-Mods:C Ultras,Brimthrone,Champions,blstorm,Charge Template 2 Character=Choose Crown=crown of luck Weapon=charge_template Seed=291
+Mods:Colored Palace,Cursed Hyper Crystal,Bomber,Challenge Test,Bear Character=Choose Crown=crown of risk Weapon=A Fucking Gun Seed=16030
