@@ -1,0 +1,3 @@
+/loadwep idpdslugpistol.wep
+/loadrace chrononaut.race
+/loadmod chrononaut_gui.mod

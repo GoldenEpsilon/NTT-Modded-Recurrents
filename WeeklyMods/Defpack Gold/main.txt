@@ -1,0 +1,70 @@
+/loadwep Spam Gun.wep.gml
+/loadwep Fire Spam Gun.wep.gml
+/loadwep Ultra Spam Gun.wep.gml
+/loadwep Psy Revolver.wep.gml
+/loadwep Psy Machinegun.wep.gml
+/loadwep Psy Minigun.wep.gml
+/loadwep Psy SMG.wep.gml
+/loadwep Psy Pop Gun.wep.gml
+/loadwep Gunhammer.wep.gml
+/loadwep Heavy Gunhammer.wep.gml
+/loadwep Ultra Gunhammer.wep.gml
+/loadwep Heavy Nuke Launcher.wep.gml
+/loadwep IDPD Slugger.wep.gml
+/loadwep IDPD Minigun.wep.gml
+/loadwep IDPD Grenade Launcher.wep.gml
+/loadwep IDPD Bazooka.wep.gml
+/loadwep IDPD Plasma Minigun.wep.gml
+/loadwep Auto Splinter Gun.wep.gml
+/loadwep Auto Grenade Launcher.wep.gml
+/loadwep Auto Flak Cannon.wep.gml
+/loadwep Laser Flak Cannon.wep.gml
+/loadwep Super Flame Cannon.wep.gml
+/loadwep Super Toxic Cannon.wep.gml
+/loadwep Toxic Cannon.wep.gml
+/loadwep Super Heavy Slugger.wep.gml
+/loadwep Triple Laser Pistol.wep.gml
+/loadwep Triple Laser Rifle.wep.gml
+/loadwep Abris Pistol.wep.gml
+/loadwep Auto Abris Launcher.wep.gml
+/loadwep Plasma Abris Launcher.wep.gml
+/loadwep Abris Launcher.wep.gml
+/loadwep Heavy Abris Launcher.wep.gml
+/loadwep Super Abris Launcher.wep.gml
+/loadwep Blood Abris Launcher.wep.gml
+/loadwep Lightning Abris Launcher.wep.gml
+/loadwep Bullet Cannon.wep.gml
+/loadwep Bouncer Bullet Cannon.wep.gml
+/loadwep Shot Cannon.wep.gml
+/loadwep Hot Shot Cannon.wep.gml
+/loadwep Psy Shot Cannon.wep.gml
+/loadwep Ultra Shot Cannon.wep.gml
+/loadwep Ultra Bullet Cannon.wep.gml
+/loadwep Shot Cannon.wep.gml
+/loadwep Hot Flare Gun.wep.gml
+/loadwep Blood Crossbow.wep.gml
+/loadwep Heavy Blood Crossbow.wep.gml
+/loadwep Heavy Toxic Crossbow.wep.gml
+/loadwep Lucky Machinegun.wep.gml
+/loadwep Inquisitor.wep.gml
+/loadwep Defender.wep.gml
+/loadwep Bouncer Pistol.wep.gml
+/loadwep Apergig Tanat.wep.gml
+/loadwep Master Claymore.wep.gml
+/loadwep Master Screwdriver.wep.gml
+/loadwep Hot Crossbow.wep.gml
+/loadwep Hyper Crossbow.wep.gml
+/loadwep Smart Nuke Launcher.wep.gml
+/loadwep Smart Bazooka.wep.gml
+/loadwep Gatling Smart Bazooka.wep.gml
+/loadwep Heavy Minigun.wep.gml
+/loadwep Square Gun.wep.gml
+/loadwep Lightning Gunhammer.wep.gml
+/loadwep Scorcher.wep.gml
+/loadwep Andromeda Launcher.wep.gml
+/loadwep Bolt Gun.wep.gml
+/loadwep Energy Gun.wep.gml
+/loadwep Bullet Machinegun.wep.gml
+/loadwep Circle Gun.wep.gml
+/loadwep big toothbrush.wep.gml
+/loadwep Claymore.wep.gml

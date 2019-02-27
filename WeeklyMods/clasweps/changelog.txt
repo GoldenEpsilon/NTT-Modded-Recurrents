@@ -1,0 +1,90 @@
+Clasweps - V.1 : The Ultra Update
+Added a bunch of weapons like the flame sword, Energy Wrench, and Heavy Shovel.
++Added in a second set of ultra weapons! welcome the Ultra Rifle, Ultra Slugger, Ultra Splinter Gun, Ultra Bazooka, And Ultra Plasma gun!
+
+Clasweps - V.12 : The ultraer update
++added in the 3rd set of ultra weapons! pop gun, flak cannon, seeker, flamethrower, and lightning.
+
+Clasweps - V1.5 : A Very Toxic Update
++Added a bunch of Toxic Weapons.
+-Removed Pre Camp in its entirety, it was not fun.
+
+Clasweps V.2 : Oh my god where did all of these weapons come from
+Added way too many weapons.
+
+Clasweps V0.21 : Balancing...
+*Long Arms Interations Now work properly, indirectly buffing all melees.
+*Less Burst weapons have errors when dying while firing.
+*Bloody revolver's bullets have a new sprite and trail.
++ Bloody Revolver And Bloody Rifle has a delay before attempting to aquire a target. this makes the homing less aggresive, and shots easier to hit.
++ Boxing Gloves Get Caught on Walls Less.
++ Made Multiflak cannon, Super Focus Flak, and bloody revolver cheaper.
++ Executioner is One Third Faster.
++ Broken Flak Has More AOE During its travelling.
++ Burst shotties now fire more bullets, plus cycle bursts slightly faster.
++ TECHICALLY added Cannon and Super Burst shotty, forgot to add them to the main.txt
+- Battle Shovel has smaller slices.
+- Burst Shotty has less range.
+- Heavy shotty costs more ammo.
+- Heavy SMG is less accurate.
+- Laser wave gun now costs 5 ammo.
+= Blazer Shoots faster, but is less accurate.
+= The initial Flak Of the Focused flak cannon is Slower, But shells are faster.
+= Hyper Revolver now fires in a two round burst. this makes it more effective, but has a higher cost.
+//Thank you Jsburg for feedback that allowed me to make these changes!
+
+Clasweps V0.22 : Racing Hyper Thoughts
++Added a NEW Mutation, Racing Thoughts.
++Added the Hyper Shotgun, Hyper Flaregun, And the Hyper Cannon!
+*Reworked the Hyper Revolver to work like a real hyper weapon.
+*The Old Hyper Revolver has been rebranded as the Quickdraw.
+
+Clasweps V0.3 : A Charged Update + 100 Weapon Milestone!
+! Officially Passed 100 Weapons!
++ Added The Charge Family of weapons.
++ Added Explosion pistol, Explosion Gun, And Blood explosion gun.
++ Added mine Launcher, Mine Shotgun, and Blood Mine Launcher.
++ Added Dart Gun plus a Gatling Varient.
++ Added Focus Shotgun.
++ Added Evil's Bane.
++ Added 3 weapons based on [Nothing.]
++ Added A fukin slot machine.
++ Probably added some more weapons.
+* Genocide Is Now Charged, But has a Shorter Reload, Making it Better without trigger fingers, but worse with trigs.
+
+Clasweps V0.35 : Dead Body Lootin'
++ Added Weapons For Enemies to drop.
++ Added boss weapons.
+* [Noone] Now drops the [Nothing] Weapons.
+
+Clasweps V0.4 : Shrine
++ Added Something Very Special.
++ Added Omega Revolver.
+
+Clasweps V0.41 : This was only released to fix a major bug (also new weaponos)
+* Fixed a bug related to A .4 Addition.
++ Added Giga Hammer.
++ Added More Stuff.
+
+Clasweps V0.5 : Feeling Itchy!
+! OFFICIAL ITCH RELEASE!
++ Added the guider weapons.
++ Added some secret weapons
+
+Clasweps V0.51 : Tidying Up the table
+* Made Adjustments to the drop table, making some weapons drop earlier and some drop later.
++ Added The Fireballer, And The Toxinballer.
++ Fucking Fixed The Guider Pistol. Holy shit that was so incomplete like, Fuck!
++ Buffed the long and wide swords.
++ Added Some more secret weapons.
+
+Clasweps V0.52 : This was made to fix one Bug, Turned into a crown update
+* IDPD Weapons Now Work Properly.
++ Added Bloodballer and assy- Asysse= Blood Genocide.
++ Added FOUR CROWNS.
+
+Clasweps V0.55 : Get I C C E D Dummy
++ Added the Ice weapons!
++ Added Trailer Weapons.
++ Added the Hunting Rifle.
+* there may an expansion of this update, so look out for that.

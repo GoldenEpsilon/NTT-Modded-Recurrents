@@ -1,0 +1,32 @@
+///BOLT///
+
+//BLOOD
+
+/loadwep finished stuff/blood crossbow
+///loadwep finished stuff/heavy blood crossbow
+
+//SPLINTER
+
+/loadwep nail gun
+/loadwep finished stuff/splinter cannon
+/loadwep millimata
+
+//DISC
+
+/loadwep finished stuff/bouncer disc gun
+/loadwep finished stuff/sticky disc gun
+/loadwep mega disc gun
+/loadwep record dealer
+/loadwep disc spam gun
+
+//BOWS
+/loadwep bow
+/loadwep explosive bow
+
+//OTHER BOLT
+
+/loadwep marker
+/loadwep heavy toxic crossbow
+/loadwep hyper crossbow
+
+/load mainexplosives

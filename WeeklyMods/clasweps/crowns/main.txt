@@ -1,0 +1,4 @@
+/loadcrown choice
+/loadcrown slaughter
+/loadcrown pain
+/loadcrown slots

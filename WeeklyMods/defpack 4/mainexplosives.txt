@@ -1,0 +1,67 @@
+
+///EXPLOSIVE///
+
+//ABRIS
+
+/loadwep abris pistol
+/loadwep abris launcher
+/loadwep abris rifle
+/loadwep auto abris launcher
+/loadwep super abris launcher
+/loadwep blood abris launcher
+
+//ROCKLET
+
+/loadwep rocklet pistol
+/loadwep rocklet rifle
+/loadwep rocklet minigun
+/loadwep rocklet cannon
+/loadwep super rocklet cannon
+
+//SONIC
+
+/loadwep sonic launcher
+/loadwep assault sonic launcher
+/loadwep finished stuff/supersonic launcher
+/loadwep screecher
+
+//MINI EXPLOSIONS
+/loadwep flechette bazooka
+
+//DRILL
+
+/loadwep drill launcher
+/loadwep mega drill launcher
+
+//TOXIC
+
+/loadwep finished stuff/toxicthrower
+/loadwep finished stuff/cobra
+
+//SMART
+
+///loadwep smart bazooka
+/loadwep finished stuff/smart nuke launcher
+
+//CANNON
+
+/loadwep toxic cannon
+
+//OTHER EXPLOSIVE
+
+/loadwep chainsaw
+/loadwep claymore
+/loadwep kaboomerang
+/loadwep auto grenade launcher
+/loadwep finished stuff/heavy nuke launcher
+/loadwep firestorm
+/loadwep finished stuff/andromeda launcher
+/loadwep finished stuff/toxic carronader
+/loadwep finished stuff/blaster
+/loadwep puncher
+/loadwep buster
+/loadwep pulser
+/loadwep airstrike
+/loadwep herald
+
+/load mainenergy
