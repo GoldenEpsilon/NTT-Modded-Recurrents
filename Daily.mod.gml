@@ -1,7 +1,7 @@
 
 /*@rMods@w=#  Crazy Allies#  Assault Flak Cannon#  BAR#  Boltshard#  bosshudredux#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Boltshard
 #@pSeed@w=11855#Limited Tries:false*/
-/*|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]|BAR[A Big Ass Revolver.]|Boltshard[If looking cool was good at killing,#this would one-shot the throne.]|bosshudredux[For knowing how bad your weapons are, every once in a while]*/
+/*|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]|BAR[A Big Ass Revolver.]|Boltshard[If looking cool was good at killing,#this would one-shot the throne.]|bosshudredux[For knowing how bad your weapons are,#every once in a while]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
