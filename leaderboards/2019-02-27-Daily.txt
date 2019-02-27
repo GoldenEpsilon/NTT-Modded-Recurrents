@@ -1,1 +1,1 @@
-Mods:Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler Character=Choose Crown=crown of death Weapon=brimthrone Seed=18262
+Mods:Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns Character=Choose Crown=carnage Weapon=Assault Flak Cannon Seed=24272
