@@ -1,1 +1,1 @@
-Mods:Assault Flak Cannon,Cool Trails,BL2,Cuz,Challenge Mode Character=Choose Crown=crown of protection Weapon=Assault Flak Cannon Seed=28455
+Mods:blackholes,bow,blaac48,!ARMAGGEDNN,Baldi Character=Choose Crown=crown of luck Weapon=Force Hungreed Of Nature Seed=24090
