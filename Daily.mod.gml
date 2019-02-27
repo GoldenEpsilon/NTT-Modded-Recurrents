@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Brimthrone#  Colored Palace#  Chicken Head#  Cool Trails#  Grappler#@bCharacter@w=#  Choose#@yCrown@w=#  crown of death#@gWeapon@w=#  brimthrone#@pSeed@w=18262#Limited Tries:false*/
-/*|Brimthrone[A portable throne, to#know how it feels to#zap people with that laser.]|Colored Palace[Gives a palace a#well-deserved paint job.]|Chicken Head[Chicken can now carry her head.#Gross.]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]|Grappler[For when you really want to throw someone at someone else.]*/
+/*@rMods@w=#  Assault Flak Cannon#  CoD Proper#  Dasher#  Damage Numbers#  Some Crowns#@bCharacter@w=#  Choose#@yCrown@w=#  carnage#@gWeapon@w=#  Assault Flak Cannon#@pSeed@w=24272#Limited Tries:false*/
+/*|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]|Dasher[Dash at thing#-> pick up thing#-> throw thing#-> repeat.]|Damage Numbers[So you can see how good/bad#your setup is on the fly!]|Some Crowns[Adds... Some Crowns.#dunno what you expected]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 18262;
+global.seed = 24272;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,37 +95,39 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("brimthrone.wep.gml"));while (file_exists(string_trim("brimthrone.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brimthrone.wep.gml"), string_trim("brimthrone.wep.gml")));
-file_delete(string_trim("coloredpalace/coloredpalace.mod.gml"));while (file_exists(string_trim("coloredpalace/coloredpalace.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/coloredpalace.mod.gml"), string_trim("coloredpalace/coloredpalace.mod.gml")));
-file_delete(string_trim("coloredpalace/sprDebris7_grey.png"));while (file_exists(string_trim("coloredpalace/sprDebris7_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprDebris7_grey.png"), string_trim("coloredpalace/sprDebris7_grey.png")));
-file_delete(string_trim("coloredpalace/sprFloor7B_grey.png"));while (file_exists(string_trim("coloredpalace/sprFloor7B_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprFloor7B_grey.png"), string_trim("coloredpalace/sprFloor7B_grey.png")));
-file_delete(string_trim("coloredpalace/sprFloor7Explo_grey.png"));while (file_exists(string_trim("coloredpalace/sprFloor7Explo_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprFloor7Explo_grey.png"), string_trim("coloredpalace/sprFloor7Explo_grey.png")));
-file_delete(string_trim("coloredpalace/sprFloor7_grey.png"));while (file_exists(string_trim("coloredpalace/sprFloor7_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprFloor7_grey.png"), string_trim("coloredpalace/sprFloor7_grey.png")));
-file_delete(string_trim("coloredpalace/sprWall7Bot_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Bot_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Bot_grey.png"), string_trim("coloredpalace/sprWall7Bot_grey.png")));
-file_delete(string_trim("coloredpalace/sprWall7Out_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Out_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Out_grey.png"), string_trim("coloredpalace/sprWall7Out_grey.png")));
-file_delete(string_trim("coloredpalace/sprWall7Top_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Top_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Top_grey.png"), string_trim("coloredpalace/sprWall7Top_grey.png")));
-file_delete(string_trim("coloredpalace/sprWall7Trans_grey.png"));while (file_exists(string_trim("coloredpalace/sprWall7Trans_grey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coloredpalace/sprWall7Trans_grey.png"), string_trim("coloredpalace/sprWall7Trans_grey.png")));
-file_delete(string_trim("chickenhead.mod.gml"));while (file_exists(string_trim("chickenhead.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/chickenhead.mod.gml"), string_trim("chickenhead.mod.gml")));
-file_delete(string_trim("cooltrails.mod.gml"));while (file_exists(string_trim("cooltrails.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooltrails.mod.gml"), string_trim("cooltrails.mod.gml")));
-file_delete(string_trim("grappler.race.gml"));while (file_exists(string_trim("grappler.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/grappler.race.gml"), string_trim("grappler.race.gml")));
-while (!file_loaded(string_trim("brimthrone.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/coloredpalace.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprDebris7_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprFloor7B_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprFloor7Explo_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprFloor7_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprWall7Bot_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprWall7Out_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprWall7Top_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("coloredpalace/sprWall7Trans_grey.png"))) {wait 1;}
-while (!file_loaded(string_trim("chickenhead.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("cooltrails.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("grappler.race.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/brimthrone.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/coloredpalace/coloredpalace.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/chickenhead.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/grappler.race.gml"));
+file_delete(string_trim("Assault_Flak_Cannon.wep.gml"));while (file_exists(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Assault_Flak_Cannon.wep.gml"), string_trim("Assault_Flak_Cannon.wep.gml")));
+file_delete(string_trim("codproper.mod.gml"));while (file_exists(string_trim("codproper.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/codproper.mod.gml"), string_trim("codproper.mod.gml")));
+file_delete(string_trim("dasher.race.gml"));while (file_exists(string_trim("dasher.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/dasher.race.gml"), string_trim("dasher.race.gml")));
+file_delete(string_trim("damagenumbers.mod.gml"));while (file_exists(string_trim("damagenumbers.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/damagenumbers.mod.gml"), string_trim("damagenumbers.mod.gml")));
+file_delete(string_trim("Some Crowns/balance.crown.gml"));while (file_exists(string_trim("Some Crowns/balance.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/balance.crown.gml"), string_trim("Some Crowns/balance.crown.gml")));
+file_delete(string_trim("Some Crowns/bullethell.crown.gml"));while (file_exists(string_trim("Some Crowns/bullethell.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/bullethell.crown.gml"), string_trim("Some Crowns/bullethell.crown.gml")));
+file_delete(string_trim("Some Crowns/carnage.crown.gml"));while (file_exists(string_trim("Some Crowns/carnage.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/carnage.crown.gml"), string_trim("Some Crowns/carnage.crown.gml")));
+file_delete(string_trim("Some Crowns/dogs.crown.gml"));while (file_exists(string_trim("Some Crowns/dogs.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/dogs.crown.gml"), string_trim("Some Crowns/dogs.crown.gml")));
+file_delete(string_trim("Some Crowns/plague.crown.gml"));while (file_exists(string_trim("Some Crowns/plague.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/plague.crown.gml"), string_trim("Some Crowns/plague.crown.gml")));
+file_delete(string_trim("Some Crowns/stamina.crown.gml"));while (file_exists(string_trim("Some Crowns/stamina.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/stamina.crown.gml"), string_trim("Some Crowns/stamina.crown.gml")));
+file_delete(string_trim("Some Crowns/torment.crown.gml"));while (file_exists(string_trim("Some Crowns/torment.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Some Crowns/torment.crown.gml"), string_trim("Some Crowns/torment.crown.gml")));
+while (!file_loaded(string_trim("Assault_Flak_Cannon.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("codproper.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("dasher.race.gml"))) {wait 1;}
+while (!file_loaded(string_trim("damagenumbers.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/balance.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/bullethell.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/carnage.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/dogs.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/plague.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/stamina.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Some Crowns/torment.crown.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/Assault_Flak_Cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/codproper.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dasher.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/damagenumbers.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/balance.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/bullethell.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/carnage.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/dogs.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/plague.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/stamina.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Some Crowns/torment.crown.gml"));
 
 
 global.ModNames = "";
@@ -154,11 +156,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler");
+trace("Mods=Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns");
 trace("Character=Choose");
-trace("Crown=crown of death");
-trace("Weapon=brimthrone");
-trace("Seed=18262");
+trace("Crown=carnage");
+trace("Weapon=Assault Flak Cannon");
+trace("Seed=24272");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -287,7 +289,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("brimthrone"));
+		give_wep(string_trim("Assault Flak Cannon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -334,7 +336,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler" + " Character=Choose" + " Crown=crown of death" + " Weapon=brimthrone" + " Seed=18262";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns" + " Character=Choose" + " Crown=carnage" + " Weapon=Assault Flak Cannon" + " Seed=24272";
 	}
 	trace(score);
 	global.finished = true;
@@ -370,10 +372,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler" + " Character=Choose" + " Crown=crown of death" + " Weapon=brimthrone" + " Seed=18262" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns" + " Character=Choose" + " Crown=carnage" + " Weapon=Assault Flak Cannon" + " Seed=24272" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(leaderboard,chr(10),""),chr(13),"")), string_replace_all(string_replace_all("ods:Brimthrone,Colored Palace,Chicken Head,Cool Trails,Grappler" + " Character=Choose" + " Crown=crown of death" + " Weapon=brimthrone" + " Seed=18262",chr(10),),chr(13),""))) > 1){
+		}else if(array_length(string_split(leaderboard,chr(10),""),chr(13),"")), string_replace_all(string_replace_all("ods:Assault Flak Cannon,CoD Proper,Dasher,Damage Numbers,Some Crowns" + " Character=Choose" + " Crown=carnage" + " Weapon=Assault Flak Cannon" + " Seed=24272",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -528,7 +530,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = "crown of death"
+name = "carnage"
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
