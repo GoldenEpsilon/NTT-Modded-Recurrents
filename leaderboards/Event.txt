@@ -1,1 +1,1 @@
-Mods:Cycle,Big Dog Snipers,CoD Proper,Colored Palace,Cannoner Character=Choose Crown=crown of blood Weapon=cannoner Seed=14668
+Mods:Assault Flak Cannon,Cool Trails,BL2,Cuz,Challenge Mode Character=Choose Crown=crown of protection Weapon=Assault Flak Cannon Seed=28455
