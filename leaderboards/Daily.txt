@@ -1,1 +1,1 @@
-Mods:Chrononaut,BadEnd,Champions,Colored Projectiles,bosshudredux Character=Choose Crown=crown of guns Weapon=idpdslugpistol Seed=16102
+Mods:!ARMAGGEDNN,CoD Proper,Ash,brad,Colored Projectiles Character=Choose Crown=crown of protection Weapon=Vampiric Shovel Seed=1120
