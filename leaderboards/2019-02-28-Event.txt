@@ -1,1 +1,1 @@
-Mods:Armageddon Cannon,Baldi,Grappler,Big Bandit,DIO Character=Choose Crown=none Weapon=Baldi/ultraruler Seed=25515
+Mods:bouncermini,Carpocalypse,Croc Man,Big Toothbrush,Freak Arena Character=Choose Crown=crown of protection Weapon=Big Toothbrush Seed=17537

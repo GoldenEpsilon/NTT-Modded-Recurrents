@@ -1,1 +1,1 @@
-Mods:bouncermini,Carpocalypse,Croc Man,Big Toothbrush,Freak Arena Character=Choose Crown=crown of protection Weapon=Big Toothbrush Seed=17537
+Mods:xefsstuff,Vanthro,Corsair,bosshudredux,Freak Arena Character=Choose Crown=crown of death Weapon=flashlight Seed=3084
