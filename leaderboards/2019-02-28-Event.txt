@@ -1,0 +1,1 @@
+Mods:Fire Riders,Buff,Baldi,Bandit,xefsstuff Character=Choose Crown=crown of guns Weapon=bullet spear Seed=19346
