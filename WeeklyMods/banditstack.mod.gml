@@ -1,7 +1,7 @@
 #define step
 with(Bandit)
 {
-  if "stacked" not in self 
+  if "stacked" not in self or "stack" not in self
   {
     stacked = noone;
     stack = noone;
