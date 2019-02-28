@@ -1,0 +1,18 @@
+/gml trace("---")
+/loadskill Disc Skill
+/loadmod Disc Tools
+/loadwep Disc Pistol
+/loadwep Disc Gun
+/loadwep Mini Disc Gun
+/loadwep Disc Rifle
+/loadwep Disc Cannon
+/loadwep Disc Launcher
+/loadwep Disc Shotgun
+/loadwep Seeker Disc Gun
+/loadwep Hyper Disc Gun
+/loadwep Toxic Disc Gun
+/loadwep Flame Disc Gun
+/loadwep Lightning Disc Gun
+/loadwep Bloody Disc Gun
+/loadwep Smart Disc Gun
+/loadwep Splinter Gun Disc Gun

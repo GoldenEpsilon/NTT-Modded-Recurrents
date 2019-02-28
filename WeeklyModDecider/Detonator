@@ -1,0 +1,13 @@
+|Detonator/detonator.race.gml
+:Detonator/Sprites/sprDead.png
+:Detonator/Sprites/sprHurt.png
+:Detonator/Sprites/sprIcon.png
+:Detonator/Sprites/sprIdle.png
+:Detonator/Sprites/sprPort.png
+:Detonator/Sprites/sprSit1.png
+:Detonator/Sprites/sprSit2.png
+:Detonator/Sprites/sprSlct.png
+:Detonator/Sprites/sprUltSlct.png
+:Detonator/Sprites/sprWalk.png
+/detonator
+?Active has a radius#where when you release#it blows up your bullets

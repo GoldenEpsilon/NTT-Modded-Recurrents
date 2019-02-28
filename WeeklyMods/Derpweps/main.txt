@@ -1,0 +1,15 @@
+//"Snake" Weapons
+/loadwep derpweps/plasmasnake
+/loadwep derpweps/superplasmasnake
+/loadwep derpweps/flamesnake
+/loadwep derpweps/superflamesnake
+/loadwep derpweps/grenadesnake
+/loadwep derpweps/supergrenadesnake
+/loadwep derpweps/lasersnake
+/loadwep derpweps/superlasersnake
+//"The Bolt" Weapons
+/loadwep derpweps/thebolt
+/loadwep derpweps/thespraybolt
+/loadwep derpweps/thediscbolt
+/loadwep derpweps/thesuperbolt
+/loadwep derpweps/thesuperdiscbolt
