@@ -1,1 +1,2 @@
 Mods:Cool Flame,Chips,Car,Area Health,xefsstuff Character=Choose Crown=crown of blood Weapon=cloud cannon Seed=22011
+|Golden Epsilon: Area 1-2 L0 Kills: 62 Character: Patrol 
