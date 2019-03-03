@@ -1,6 +1,7 @@
 
-/*@rMods@w=#  Fire Riders#  6 Weapons#  Brimthrone#  Cool Flame#  blstorm#@bCharacter@w=#  Choose#@yCrown@w=#  crown of haste#@gWeapon@w=#  brimthrone#@pSeed@w=10532#Limited Tries:false*/
-/*|Fire Riders[NOTE: when the gators on your back die, you start taking damage.]|6 Weapons[Gives you one weapon slot for each ammo type like DOOM]|Brimthrone[A portable throne, to#know how it feels to#zap people with that laser.]|Cool Flame[Make all those enemies liars!##What do you mean that's#not how that works?]|blstorm[BLEED YOURSELF DRY]*/
+/*@rMods@w=#  Fire Riders#  6 Weapons#  Brimthrone#  Cool Flame#  blstorm#@bCharacter@w=#  Choose#@yCrown@w=#  crown of haste#@gWeapon@w=#  brimthrone
+#@pSeed@w=10532#Limited Tries:false*/
+/*|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|6 Weapons[Gives you one weapon slot#for each ammo type like DOOM]|Brimthrone[A portable throne, to#know how it feels to#zap people with that laser.]|Cool Flame[Make all those enemies liars!##What do you mean that's#not how that works?]|blstorm[BLEED YOURSELF DRY]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -95,21 +96,51 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("fireriders.race.gml"));while (file_exists(string_trim("fireriders.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/fireriders.race.gml"), string_trim("fireriders.race.gml")));
-file_delete(string_trim("6weapons.mod.gml"));while (file_exists(string_trim("6weapons.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml"), string_trim("6weapons.mod.gml")));
-file_delete(string_trim("brimthrone.wep.gml"));while (file_exists(string_trim("brimthrone.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brimthrone.wep.gml"), string_trim("brimthrone.wep.gml")));
-file_delete(string_trim("coolflame.mod.gml"));while (file_exists(string_trim("coolflame.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolflame.mod.gml"), string_trim("coolflame.mod.gml")));
-file_delete(string_trim("blstorm.wep.gml"));while (file_exists(string_trim("blstorm.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/blstorm.wep.gml"), string_trim("blstorm.wep.gml")));
-while (!file_loaded(string_trim("fireriders.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("6weapons.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("brimthrone.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coolflame.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("blstorm.wep.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Weekly.mod/fireriders.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/6weapons.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/brimthrone.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/coolflame.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml"));
+file_delete(string_trim("fireriders.race.gml
+"));while (file_exists(string_trim("fireriders.race.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/fireriders.race.gml
+"), string_trim("fireriders.race.gml
+")));
+file_delete(string_trim("6weapons.mod.gml
+"));while (file_exists(string_trim("6weapons.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml
+"), string_trim("6weapons.mod.gml
+")));
+file_delete(string_trim("brimthrone.wep.gml
+"));while (file_exists(string_trim("brimthrone.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/brimthrone.wep.gml
+"), string_trim("brimthrone.wep.gml
+")));
+file_delete(string_trim("coolflame.mod.gml
+"));while (file_exists(string_trim("coolflame.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolflame.mod.gml
+"), string_trim("coolflame.mod.gml
+")));
+file_delete(string_trim("blstorm.wep.gml
+"));while (file_exists(string_trim("blstorm.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/blstorm.wep.gml
+"), string_trim("blstorm.wep.gml
+")));
+while (!file_loaded(string_trim("fireriders.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("6weapons.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("brimthrone.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("coolflame.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("blstorm.wep.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Weekly.mod/fireriders.race.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/6weapons.mod.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/brimthrone.wep.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/coolflame.mod.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml
+"));
 
 
 global.ModNames = "";
@@ -141,7 +172,8 @@ trace("Current Weekly:");
 trace("Mods=Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm");
 trace("Character=Choose");
 trace("Crown=crown of haste");
-trace("Weapon=brimthrone");
+trace("Weapon=brimthrone
+");
 trace("Seed=10532");
 
 global.canStart = true;
@@ -271,7 +303,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("brimthrone"));
+		give_wep(string_trim("brimthrone
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -321,7 +354,8 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone" + " Seed=10532";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone
+" + " Seed=10532";
 	}
 	trace(score);
 	global.finished = true;
@@ -357,10 +391,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone" + " Seed=10532" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone
+" + " Seed=10532" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone" + " Seed=10532",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm" + " Character=Choose" + " Crown=crown of haste" + " Weapon=brimthrone
+" + " Seed=10532",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
