@@ -206,7 +206,7 @@ while (file_exists("Weekly.txt")) {wait 1;}
 file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/Weekly.mod.gml", "Weekly.txt");
 while (!file_loaded("Weekly.txt")) {wait 1;}
 global.Weekly = string_replace_all(string_replace_all(string_split(string_split(string_load("Weekly.txt"), "*/")[0], "/*")[1],chr(10),""),chr(13),"");
-global.Flavor = string_replace_all(string_replace_all(string_split(string_split(string_load("Daily.txt"), "*/")[1], "/*")[1],chr(10),""),chr(13),"");
+global.Flavor = string_replace_all(string_replace_all(string_split(string_split(string_load("Weekly.txt"), "*/")[1], "/*")[1],chr(10),""),chr(13),"");
 global.WeeklyHeight = string_count("#", global.Weekly);
 global.WeeklyWidth = 0;
 var temp = string_split(global.Weekly, "#");
