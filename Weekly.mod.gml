@@ -500,7 +500,11 @@ if(instance_exists(Menu)){
 	draw_rectangle(global.weeklyScoreboardX, 30, global.weeklyScoreboardX+global.weeklyScoreboardW, 33 + global.weeklyScoreboardH, 0);
 	draw_rectangle(global.weeklyScoreboardX, 30, global.weeklyScoreboardX+global.weeklyScoreboardW, 35, 0);
 	draw_triangle(global.weeklyScoreboardX + global.weeklyScoreboardW/2-8, 37 + floor(global.weeklyScoreboardH), global.weeklyScoreboardX + global.weeklyScoreboardW/2+8, 37 + floor(global.weeklyScoreboardH), global.weeklyScoreboardX + global.weeklyScoreboardW/2, 45 + floor(global.weeklyScoreboardH), 0);
+	var valign = draw_get_valign();
+	var halign = draw_get_halign();
 	if(global.leaderboardLoaded && array_length(global.leaderboard) > 0){
+		draw_set_valign(0);
+		draw_set_halign(0);
 		draw_set_font(fntM0);
 		draw_set_color(make_color_rgb(255,255,255));
 		for(var i = 0; (i+global.leaderboardPos) < array_length(global.leaderboard) && i < floor((global.weeklyScoreboardH)/15); i++){
@@ -511,16 +515,14 @@ if(instance_exists(Menu)){
 			draw_text_nt(global.weeklyScoreboardX  + 37 - (10 * (2 - string_length(string(i+global.leaderboardPos+1)))), global.weeklyScoreboardY + i*15 + 9, string_copy("L: " + global.leaderboard[i+global.leaderboardPos][1] + " K: " + string(global.leaderboard[i+global.leaderboardPos][2]) + ((global.leaderboard[i+global.leaderboardPos][3] != "") ? (" C: " + global.leaderboard[i+global.leaderboardPos][3]) : ""), 1, floor((global.weeklyScoreboardW)/4) + (-5 - 2*string_length(string(i+global.leaderboardPos+1)))));
 		}
 	}else if(global.leaderboardOpening){
-		var valign = draw_get_valign();
-		var halign = draw_get_halign();
 		draw_set_valign(1);
 		draw_set_halign(1);
 		draw_set_font(fntM0);
 		draw_set_color(make_color_rgb(255,255,255));
 		draw_text_nt(global.weeklyScoreboardX + global.weeklyScoreboardW/2 + 1, global.weeklyScoreboardY + global.weeklyScoreboardH/2 + 1, "LOADING SCORES#(if there are any!)")
-		draw_set_valign(valign);
-		draw_set_halign(halign);
 	}
+	draw_set_valign(valign);
+	draw_set_halign(halign);
 	if(global.details != ""){
 		temp = string_split(global.detailsFlavor, "|");
 		for(var i = 0; i < array_length(temp); i++){
