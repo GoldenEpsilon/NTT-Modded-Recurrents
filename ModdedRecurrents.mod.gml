@@ -44,7 +44,7 @@ ds_map_set(global.headers, "Cache-Control", "no-cache");
 ds_map_set(global.headers, "Accept", "application/vnd.github.full+json");	
 file_delete("dl.txt");
 while (file_exists("dl.txt")) {wait 1;}
-http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
+http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
 , "GET", global.headers,
 ''
 , "dl.txt");
@@ -172,7 +172,7 @@ if(mod_sideload() && instance_exists(Menu)){
 		if(!global.descriptionOpening){global.weeklyCurrentY = -(weeklyCurrentH+weeklyCurrentLH*global.detailsHeight-global.weeklyCurrentMax);}
 		file_delete("dl.txt");
 		while (file_exists("dl.txt")) {wait 1;}
-		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/'+(global.menu == 0?'weekly.txt':(global.menu == 1 ? 'Daily.txt' : 'Event.txt'))
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/'+(global.menu == 0?'Weekly.txt':(global.menu == 1 ? 'Daily.txt' : 'Event.txt'))
 		, "GET", global.headers,
 		''
 		, "dl.txt");
