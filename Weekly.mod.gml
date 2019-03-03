@@ -182,7 +182,7 @@ ds_map_set(global.headers, "Authorization", "token 7349069d71cc5b8e1165"+"40e940
 ds_map_set(global.headers, "Cache-Control", "no-cache");	
 ds_map_set(global.headers, "Accept", "application/vnd.github.full+json");	file_delete("dl.txt");
 while (file_exists("dl.txt")) {wait 1;}
-http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/weekly.txt'
+http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
 , "GET", global.headers,
 ''
 , "dl.txt");
