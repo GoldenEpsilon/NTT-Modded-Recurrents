@@ -1,0 +1,2 @@
+Mods:Fire Riders,6 Weapons,Brimthrone,Cool Flame,blstorm Character=Choose Crown=crown of haste Weapon=brimthrone
+ Seed=10532
