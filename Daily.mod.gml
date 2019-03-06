@@ -1,5 +1,6 @@
 
-/*@rMods@w=#  Auto Bullet Shotgun#  Bandit#  Camper Boys#  Carpocalypse#  6 Weapons#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  Auto Bullet Shotgun#@pSeed@w=6303#Limited Tries:false*/
+/*@rMods@w=#  Auto Bullet Shotgun#  Bandit#  Camper Boys#  Carpocalypse#  6 Weapons#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  Auto Bullet Shotgun
+#@pSeed@w=6303#Limited Tries:false*/
 /*|Auto Bullet Shotgun[BLAM BLAM BLAMMO]|Bandit[Armed only with your trusty Bandit Blaster,#it's you against the entire wasteland, baby!]|Camper Boys[Convinces the vanilla mutants#to let the custom characters#warm up by the fire]|Carpocalypse[Beep Beep, motherf***er]|6 Weapons[Gives you one weapon slot#for each ammo type like DOOM]*/
 #define init
 #macro weeklyButtonX 6
@@ -95,21 +96,51 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("Auto_Bullet_Shotgun.wep.gml"));while (file_exists(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Auto_Bullet_Shotgun.wep.gml"), string_trim("Auto_Bullet_Shotgun.wep.gml")));
-file_delete(string_trim("bandit.race.gml"));while (file_exists(string_trim("bandit.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bandit.race.gml"), string_trim("bandit.race.gml")));
-file_delete(string_trim("camperboys.mod.gml"));while (file_exists(string_trim("camperboys.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/camperboys.mod.gml"), string_trim("camperboys.mod.gml")));
-file_delete(string_trim("carpocalypse.mod.gml"));while (file_exists(string_trim("carpocalypse.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/carpocalypse.mod.gml"), string_trim("carpocalypse.mod.gml")));
-file_delete(string_trim("6weapons.mod.gml"));while (file_exists(string_trim("6weapons.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml"), string_trim("6weapons.mod.gml")));
-while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bandit.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("camperboys.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("carpocalypse.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("6weapons.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/Auto_Bullet_Shotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/bandit.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/camperboys.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/carpocalypse.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/6weapons.mod.gml"));
+file_delete(string_trim("Auto_Bullet_Shotgun.wep.gml
+"));while (file_exists(string_trim("Auto_Bullet_Shotgun.wep.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Auto_Bullet_Shotgun.wep.gml
+"), string_trim("Auto_Bullet_Shotgun.wep.gml
+")));
+file_delete(string_trim("bandit.race.gml
+"));while (file_exists(string_trim("bandit.race.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bandit.race.gml
+"), string_trim("bandit.race.gml
+")));
+file_delete(string_trim("camperboys.mod.gml
+"));while (file_exists(string_trim("camperboys.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/camperboys.mod.gml
+"), string_trim("camperboys.mod.gml
+")));
+file_delete(string_trim("carpocalypse.mod.gml
+"));while (file_exists(string_trim("carpocalypse.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/carpocalypse.mod.gml
+"), string_trim("carpocalypse.mod.gml
+")));
+file_delete(string_trim("6weapons.mod.gml
+"));while (file_exists(string_trim("6weapons.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/6weapons.mod.gml
+"), string_trim("6weapons.mod.gml
+")));
+while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("bandit.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("camperboys.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("carpocalypse.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("6weapons.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/Auto_Bullet_Shotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/bandit.race.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/camperboys.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/carpocalypse.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/6weapons.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -139,10 +170,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 
 trace("Current Daily:");
 trace("Mods=Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons");
-trace("Character=Choose");
-trace("Crown=crown of protection");
-trace("Weapon=Auto Bullet Shotgun");
-trace("Seed=6303");
+trace("Character:Choose");
+trace("Crown:crown of protection");
+trace("Weapon:Auto Bullet Shotgun
+");
+trace("Seed:6303");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -271,7 +303,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Auto Bullet Shotgun"));
+		give_wep(string_trim("Auto Bullet Shotgun
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -321,7 +354,8 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character=Choose" + " Crown=crown of protection" + " Weapon=Auto Bullet Shotgun" + " Seed=6303";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Auto Bullet Shotgun
+" + " Seed:6303";
 	}
 	trace(score);
 	global.finished = true;
@@ -357,10 +391,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character=Choose" + " Crown=crown of protection" + " Weapon=Auto Bullet Shotgun" + " Seed=6303" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Auto Bullet Shotgun
+" + " Seed:6303" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character=Choose" + " Crown=crown of protection" + " Weapon=Auto Bullet Shotgun" + " Seed=6303",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Auto Bullet Shotgun,Bandit,Camper Boys,Carpocalypse,6 Weapons" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Auto Bullet Shotgun
+" + " Seed:6303",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
