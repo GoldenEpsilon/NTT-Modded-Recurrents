@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bouncermini#  Big Toothbrush#  Dasher#  Bandit#  Armageddon Cannon#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Armageddon Cannon#@pSeed@w=14496#Limited Tries:false*/
-/*|bouncermini[FILL THE SKIES WITH BULLETS]|Big Toothbrush[a big toothbrush for big mouths]|Dasher[Dash at thing#-> pick up thing#-> throw thing#-> repeat.]|Bandit[Armed only with your trusty Bandit Blaster,#it's you against the entire wasteland, baby!]|Armageddon Cannon[Some people just want to watch the world burn...]*/
+/*@rMods@w=#  Armageddon Cannon#  BAR#  Area Health#  Cooler Hud#  banditstack#@bCharacter@w=#  Choose#@yCrown@w=#  crown of blood#@gWeapon@w=#  Armageddon Cannon#@pSeed@w=1023#Limited Tries:false*/
+/*|Armageddon Cannon[Some people just want to watch the world burn...]|BAR[A Big Ass Revolver.]|Area Health[A nice mod that shows how many enemies are left.]|Cooler Hud[Symphony of the Throne]|banditstack[Can stack bandits,#leaving the player in awe#of their balancing skills]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 14496;
+global.seed = 1023;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,25 +95,21 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("bouncermini/bouncermini.wep.gml"));while (file_exists(string_trim("bouncermini/bouncermini.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/bouncermini.wep.gml"), string_trim("bouncermini/bouncermini.wep.gml")));
-file_delete(string_trim("bouncermini/sprBouncerMinigun.png"));while (file_exists(string_trim("bouncermini/sprBouncerMinigun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bouncermini/sprBouncerMinigun.png"), string_trim("bouncermini/sprBouncerMinigun.png")));
-file_delete(string_trim("Big Toothbrush/Big Toothbrush.wep.gml"));while (file_exists(string_trim("Big Toothbrush/Big Toothbrush.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Toothbrush/Big Toothbrush.wep.gml"), string_trim("Big Toothbrush/Big Toothbrush.wep.gml")));
-file_delete(string_trim("Big Toothbrush/Big Toothbrush.png"));while (file_exists(string_trim("Big Toothbrush/Big Toothbrush.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Big Toothbrush/Big Toothbrush.png"), string_trim("Big Toothbrush/Big Toothbrush.png")));
-file_delete(string_trim("dasher.race.gml"));while (file_exists(string_trim("dasher.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/dasher.race.gml"), string_trim("dasher.race.gml")));
-file_delete(string_trim("bandit.race.gml"));while (file_exists(string_trim("bandit.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/bandit.race.gml"), string_trim("bandit.race.gml")));
 file_delete(string_trim("Armageddon_Cannon.wep.gml"));while (file_exists(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Armageddon_Cannon.wep.gml"), string_trim("Armageddon_Cannon.wep.gml")));
-while (!file_loaded(string_trim("bouncermini/bouncermini.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bouncermini/sprBouncerMinigun.png"))) {wait 1;}
-while (!file_loaded(string_trim("Big Toothbrush/Big Toothbrush.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("Big Toothbrush/Big Toothbrush.png"))) {wait 1;}
-while (!file_loaded(string_trim("dasher.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim("bandit.race.gml"))) {wait 1;}
+file_delete(string_trim("BAR.wep.gml"));while (file_exists(string_trim("BAR.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/BAR.wep.gml"), string_trim("BAR.wep.gml")));
+file_delete(string_trim("area_health.mod.gml"));while (file_exists(string_trim("area_health.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/area_health.mod.gml"), string_trim("area_health.mod.gml")));
+file_delete(string_trim("coolerhud.mod.gml"));while (file_exists(string_trim("coolerhud.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolerhud.mod.gml"), string_trim("coolerhud.mod.gml")));
+file_delete(string_trim("banditstack.mod.gml"));while (file_exists(string_trim("banditstack.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/banditstack.mod.gml"), string_trim("banditstack.mod.gml")));
 while (!file_loaded(string_trim("Armageddon_Cannon.wep.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Event.mod/bouncermini/bouncermini.wep.gml"));
-wait mod_load(string_trim("data/Event.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
-wait mod_load(string_trim("data/Event.mod/dasher.race.gml"));
-wait mod_load(string_trim("data/Event.mod/bandit.race.gml"));
+while (!file_loaded(string_trim("BAR.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("area_health.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("coolerhud.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("banditstack.mod.gml"))) {wait 1;}
 wait mod_load(string_trim("data/Event.mod/Armageddon_Cannon.wep.gml"));
+wait mod_load(string_trim("data/Event.mod/BAR.wep.gml"));
+wait mod_load(string_trim("data/Event.mod/area_health.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/coolerhud.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/banditstack.mod.gml"));
 
 
 global.ModNames = "";
@@ -142,11 +138,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Event:");
-trace("Mods=bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon");
+trace("Mods=Armageddon Cannon,BAR,Area Health,Cooler Hud,banditstack");
 trace("Character:Choose");
-trace("Crown:none");
+trace("Crown:crown of blood");
 trace("Weapon:Armageddon Cannon");
-trace("Seed:;14496;");
+trace("Seed:;1023;");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -325,7 +321,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon" + " Character:Choose" + " Crown:none" + " Weapon:Armageddon Cannon" + " Seed:;14496;";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Armageddon Cannon,BAR,Area Health,Cooler Hud,banditstack" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Armageddon Cannon" + " Seed:;1023;";
 	}
 	trace(score);
 	global.finished = true;
@@ -361,10 +357,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon" + " Character:Choose" + " Crown:none" + " Weapon:Armageddon Cannon" + " Seed:;14496;" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Armageddon Cannon,BAR,Area Health,Cooler Hud,banditstack" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Armageddon Cannon" + " Seed:;1023;" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon" + " Character:Choose" + " Crown:none" + " Weapon:Armageddon Cannon" + " Seed:;14496;",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Armageddon Cannon,BAR,Area Health,Cooler Hud,banditstack" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Armageddon Cannon" + " Seed:;1023;",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -520,7 +516,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("none");
+name = string_trim("crown of blood");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

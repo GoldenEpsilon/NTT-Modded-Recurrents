@@ -1,1 +1,1 @@
-Mods:bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon Character:Choose Crown:none Weapon:Armageddon Cannon Seed:;14496;
+Mods:Armageddon Cannon,BAR,Area Health,Cooler Hud,banditstack Character:Choose Crown:crown of blood Weapon:Armageddon Cannon Seed:;1023;
