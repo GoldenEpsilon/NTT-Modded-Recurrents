@@ -1,1 +1,1 @@
-Mods:DIO,Cycle,Carpocalypse,Big Dog Snipers,CoD Proper Character:Choose Crown:crown of guns Weapon:plasma rifle Seed:;9621;
+Mods:B,Chest Bandits,Corsair,Confuse,Detonator Character:Choose Crown:crown of haste Weapon:Corsair Seed:;10496;
