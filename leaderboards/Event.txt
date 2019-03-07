@@ -1,1 +1,1 @@
-Mods:DIO,Fire Riders,Bandit Brute,Crypt Of The Necrodancer,Beamer Character:Choose Crown:crown of death Weapon:Beamer Seed:;27261;
+Mods:bouncermini,Big Toothbrush,Dasher,Bandit,Armageddon Cannon Character:Choose Crown:none Weapon:Armageddon Cannon Seed:;14496;
