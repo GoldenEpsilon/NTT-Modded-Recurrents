@@ -1,1 +1,1 @@
-Mods:B,Chest Bandits,Corsair,Confuse,Detonator Character:Choose Crown:crown of haste Weapon:Corsair Seed:;10496;
+Mods:DIO,Fire Riders,Bandit Brute,Crypt Of The Necrodancer,Beamer Character:Choose Crown:crown of death Weapon:Beamer Seed:;27261;
