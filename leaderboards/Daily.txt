@@ -1,2 +1,2 @@
 Mods:bow,bouncermini,Cuz,basicgunallies,Croc Man Character:Choose Crown:crown of haste Weapon:bow Seed:;29117; Date:;2019-03-07;
-|Golden Epsilon: Area 5-3 L0 Kills: 315 Character: crocman |Stay Moist: Area 1-1 L0 Kills: 7 Character: crocman |Stay Moist: Area 1-3 L0 Kills: 85 Character: crocman |Stay Moist: Area 4-1 L1 Kills: 1661 Character: rogue 
+|Golden Epsilon: Area 5-3 L0 Kills: 315 Character: crocman |Stay Moist: Area 1-1 L0 Kills: 7 Character: crocman |Stay Moist: Area 1-3 L0 Kills: 85 Character: crocman |Stay Moist: Area 4-1 L1 Kills: 1661 Character: rogue |Knilax: Area 7-3 L0 Kills: 419 Character: rebel 
