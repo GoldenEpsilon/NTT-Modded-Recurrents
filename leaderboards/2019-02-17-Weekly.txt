@@ -1,1 +1,0 @@
-Mods:Afterburn, Big Bandit, Bear, Airhorn, Baldi Character=Big Bandit Crown= Weapon=wep_machinegun Seed=13144
