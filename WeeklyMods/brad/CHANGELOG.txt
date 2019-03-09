@@ -1,0 +1,10 @@
+version3
+
+FIXED
+- Improved performance
+- Fixed possible errors with multiplayer
+- Picking up weapons now reloads your gun
+- Fixed color issue
+- Inventory now closes when inside of a portal
+- Removed debug button
+- Weapon pickups now give ammo

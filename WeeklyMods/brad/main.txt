@@ -1,0 +1,3 @@
+/loadrace brad
+/loadmod brad
+//loadwep nowep
