@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun,CoDeath,Cool Dust,Auto Bullet Shotgun,DIO Character:Choose Crown:CoDeath Weapon:Auto Bullet Shotgun Seed:;6431;
+Mods:betterLoops,Camper Boys,Big Toothbrush,Colored Palace,C Ultras Character:Choose Crown:crown of curses Weapon:Big Toothbrush Seed:27502 Date:;2019-03-09;
