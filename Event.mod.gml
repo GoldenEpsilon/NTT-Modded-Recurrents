@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Auto Revolver#  DIO#  Cool Dust#  blackholes#  Detonator B#@bCharacter@w=#  Choose#@yCrown@w=#  crown of hatred#@gWeapon@w=#  Auto Revolver#@pSeed@w=16909#Limited Tries:false*/
-/*|Auto Revolver[A truly auto weapon.]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]|Cool Dust[It's not just dust, it's#COOL DUST]|blackholes[All projectiles attract enemies of the user#that means you get pulled into enemy bullets, too.#this is going to be a hard one...]|Detonator B[Alternate version, where#active blows up#your bullets anywhere]*/
+/*@rMods@w=#  Babylon Shotgun#  CoDeath#  Cool Dust#  Auto Bullet Shotgun#  DIO#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath#@gWeapon@w=#  Auto Bullet Shotgun#@pSeed@w=6431#Limited Tries:false*/
+/*|Babylon Shotgun[So much destruction your enemies will babble-on]|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]|Cool Dust[It's not just dust, it's#COOL DUST]|Auto Bullet Shotgun[BLAM BLAM BLAMMO]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 16909;
+global.seed = 6431;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,7 +95,10 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("autorevolver.wep.gml"));while (file_exists(string_trim("autorevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/autorevolver.wep.gml"), string_trim("autorevolver.wep.gml")));
+file_delete(string_trim("babylon_shotgun.wep.gml"));while (file_exists(string_trim("babylon_shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/babylon_shotgun.wep.gml"), string_trim("babylon_shotgun.wep.gml")));
+file_delete(string_trim("CoDeath.crown.gml"));while (file_exists(string_trim("CoDeath.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/CoDeath.crown.gml"), string_trim("CoDeath.crown.gml")));
+file_delete(string_trim("cooldust.mod.gml"));while (file_exists(string_trim("cooldust.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldust.mod.gml"), string_trim("cooldust.mod.gml")));
+file_delete(string_trim("Auto_Bullet_Shotgun.wep.gml"));while (file_exists(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Auto_Bullet_Shotgun.wep.gml"), string_trim("Auto_Bullet_Shotgun.wep.gml")));
 file_delete(string_trim("DIO/DIO.race.gml"));while (file_exists(string_trim("DIO/DIO.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/DIO.race.gml"), string_trim("DIO/DIO.race.gml")));
 file_delete(string_trim("DIO/walk.png"));while (file_exists(string_trim("DIO/walk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/walk.png"), string_trim("DIO/walk.png")));
 file_delete(string_trim("DIO/sprUltras.png"));while (file_exists(string_trim("DIO/sprUltras.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/sprUltras.png"), string_trim("DIO/sprUltras.png")));
@@ -125,10 +128,10 @@ file_delete(string_trim("DIO/map.png"));while (file_exists(string_trim("DIO/map
 file_delete(string_trim("DIO/idle.png"));while (file_exists(string_trim("DIO/idle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/idle.png"), string_trim("DIO/idle.png")));
 file_delete(string_trim("DIO/hurt.png"));while (file_exists(string_trim("DIO/hurt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/hurt.png"), string_trim("DIO/hurt.png")));
 file_delete(string_trim("DIO/dead.png"));while (file_exists(string_trim("DIO/dead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/DIO/dead.png"), string_trim("DIO/dead.png")));
-file_delete(string_trim("cooldust.mod.gml"));while (file_exists(string_trim("cooldust.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldust.mod.gml"), string_trim("cooldust.mod.gml")));
-file_delete(string_trim("blackholes.mod.gml"));while (file_exists(string_trim("blackholes.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/blackholes.mod.gml"), string_trim("blackholes.mod.gml")));
-file_delete(string_trim("detonatorb.race.gml"));while (file_exists(string_trim("detonatorb.race.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/detonatorb.race.gml"), string_trim("detonatorb.race.gml")));
-while (!file_loaded(string_trim("autorevolver.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("babylon_shotgun.wep.gml"))) {wait 1;}
+while (!file_loaded(string_trim("CoDeath.crown.gml"))) {wait 1;}
+while (!file_loaded(string_trim("cooldust.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/DIO.race.gml"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/walk.png"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/sprUltras.png"))) {wait 1;}
@@ -158,14 +161,11 @@ while (!file_loaded(string_trim("DIO/map.png"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/idle.png"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/hurt.png"))) {wait 1;}
 while (!file_loaded(string_trim("DIO/dead.png"))) {wait 1;}
-while (!file_loaded(string_trim("cooldust.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("blackholes.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("detonatorb.race.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Event.mod/autorevolver.wep.gml"));
-wait mod_load(string_trim("data/Event.mod/DIO/DIO.race.gml"));
+wait mod_load(string_trim("data/Event.mod/babylon_shotgun.wep.gml"));
+wait mod_load(string_trim("data/Event.mod/CoDeath.crown.gml"));
 wait mod_load(string_trim("data/Event.mod/cooldust.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/blackholes.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/detonatorb.race.gml"));
+wait mod_load(string_trim("data/Event.mod/Auto_Bullet_Shotgun.wep.gml"));
+wait mod_load(string_trim("data/Event.mod/DIO/DIO.race.gml"));
 
 
 global.ModNames = "";
@@ -194,11 +194,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Event:");
-trace("Mods=Auto Revolver,DIO,Cool Dust,blackholes,Detonator B");
+trace("Mods=Babylon Shotgun,CoDeath,Cool Dust,Auto Bullet Shotgun,DIO");
 trace("Character:Choose");
-trace("Crown:crown of hatred");
-trace("Weapon:Auto Revolver");
-trace("Seed:;16909;");
+trace("Crown:CoDeath");
+trace("Weapon:Auto Bullet Shotgun");
+trace("Seed:;6431;");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -327,7 +327,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Auto Revolver"));
+		give_wep(string_trim("Auto Bullet Shotgun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -377,7 +377,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Auto Revolver,DIO,Cool Dust,blackholes,Detonator B" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Auto Revolver" + " Seed:;16909;";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Babylon Shotgun,CoDeath,Cool Dust,Auto Bullet Shotgun,DIO" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Auto Bullet Shotgun" + " Seed:;6431;";
 	}
 	trace(score);
 	global.finished = true;
@@ -413,10 +413,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Auto Revolver,DIO,Cool Dust,blackholes,Detonator B" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Auto Revolver" + " Seed:;16909;" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Babylon Shotgun,CoDeath,Cool Dust,Auto Bullet Shotgun,DIO" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Auto Bullet Shotgun" + " Seed:;6431;" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Auto Revolver,DIO,Cool Dust,blackholes,Detonator B" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Auto Revolver" + " Seed:;16909;",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Babylon Shotgun,CoDeath,Cool Dust,Auto Bullet Shotgun,DIO" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Auto Bullet Shotgun" + " Seed:;6431;",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -572,7 +572,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of hatred");
+name = string_trim("CoDeath");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
