@@ -1,6 +1,6 @@
 
-/*@pDesc@w=Cool.#@rMods@w=#  Cool#  Dark,#  Cool#  Dust,#  Cool#  Flame,#  Cool#  Hud,#  Cool#  Shadows,#  Cool#  Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of risk#@gWeapon@w=#  ultra shovel#@pSeed@w=26079#Limited Tries:false*/
-/*|*/
+/*@pDesc@w=Cool.#@rMods@w=#  Cool Dark,#  Cool Dust,#  Cool Flame,#  Cool Hud,#  Cool Shadows,#  Cool Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of life#@gWeapon@w=#  guitar#@pSeed@w=3138#Limited Tries:false*/
+/*|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 26079;
+global.seed = 3138;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,6 +95,9 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_delete(string_trim("cooltrails.mod.gml"));while (file_exists(string_trim("cooltrails.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooltrails.mod.gml"), string_trim("cooltrails.mod.gml")));
+while (!file_loaded(string_trim("cooltrails.mod.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Event.mod/cooltrails.mod.gml"));
 
 
 global.ModNames = "";
@@ -123,11 +126,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Event:");
-trace("Mods=Cool,Dark,,Cool,Dust,,Cool,Flame,,Cool,Hud,,Cool,Shadows,,Cool,Trails");
+trace("Mods=Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails");
 trace("Character:Choose");
-trace("Crown:crown of risk");
-trace("Weapon:ultra shovel");
-trace("Seed:;26079;");
+trace("Crown:crown of life");
+trace("Weapon:guitar");
+trace("Seed:;3138;");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -256,7 +259,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("ultra shovel"));
+		give_wep(string_trim("guitar"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -306,7 +309,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool,Dark,,Cool,Dust,,Cool,Flame,,Cool,Hud,,Cool,Shadows,,Cool,Trails" + " Character:Choose" + " Crown:crown of risk" + " Weapon:ultra shovel" + " Seed:;26079;";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;";
 	}
 	trace(score);
 	global.finished = true;
@@ -342,10 +345,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cool,Dark,,Cool,Dust,,Cool,Flame,,Cool,Hud,,Cool,Shadows,,Cool,Trails" + " Character:Choose" + " Crown:crown of risk" + " Weapon:ultra shovel" + " Seed:;26079;" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool,Dark,,Cool,Dust,,Cool,Flame,,Cool,Hud,,Cool,Shadows,,Cool,Trails" + " Character:Choose" + " Crown:crown of risk" + " Weapon:ultra shovel" + " Seed:;26079;",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -501,7 +504,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of risk");
+name = string_trim("crown of life");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
