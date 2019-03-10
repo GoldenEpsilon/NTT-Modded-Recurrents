@@ -479,7 +479,7 @@ if(mod_sideload() && instance_exists(Menu)){
 	draw_set_valign(1);
 	draw_set_halign(1);
 	draw_set_font(fnt1);
-	draw_text_nt(global.scoreboardX + global.scoreboardW*9/10 + 2, 26 + global.scoreboardH + 20 * global.scoreboardH/global.scoreboardMax, global.scoreboardType == 0 ? "All" : global.scoreboardType == 1 ? "Hig" : global.scoreboardType == 2 ? "1ST" : "");
+	draw_text_nt(global.scoreboardX + global.scoreboardW*9/10 + 2, 21 + global.scoreboardH + 20 * global.scoreboardH/global.scoreboardMax, global.scoreboardType == 0 ? "All" : global.scoreboardType == 1 ? "Hig" : global.scoreboardType == 2 ? "1ST" : "");
 	draw_roundrect(global.scoreboardX, 32 + global.scoreboardH, global.scoreboardX+global.scoreboardW, 35 + global.scoreboardH, 0);
 	draw_set_color(make_color_rgb(150,150,150));
 	draw_roundrect(global.scoreboardX + global.scoreboardW/2-10, 30 + global.scoreboardH, global.scoreboardX+global.scoreboardW/2+10, 46 + global.scoreboardH, 0);
