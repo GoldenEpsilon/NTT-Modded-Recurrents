@@ -95,18 +95,42 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("cooldust.mod.gml"));while (file_exists(string_trim("cooldust.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldust.mod.gml"), string_trim("cooldust.mod.gml")));
-file_delete(string_trim("coolflame.mod.gml"));while (file_exists(string_trim("coolflame.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolflame.mod.gml"), string_trim("coolflame.mod.gml")));
-file_delete(string_trim("coolshadows.mod.gml"));while (file_exists(string_trim("coolshadows.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolshadows.mod.gml"), string_trim("coolshadows.mod.gml")));
-file_delete(string_trim("cooltrails.mod.gml"));while (file_exists(string_trim("cooltrails.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooltrails.mod.gml"), string_trim("cooltrails.mod.gml")));
-while (!file_loaded(string_trim("cooldust.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coolflame.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coolshadows.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("cooltrails.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Event.mod/cooldust.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/coolflame.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/coolshadows.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/cooltrails.mod.gml"));
+file_delete(string_trim("cooldust.mod.gml
+"));while (file_exists(string_trim("cooldust.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldust.mod.gml
+"), string_trim("cooldust.mod.gml
+")));
+file_delete(string_trim("coolflame.mod.gml
+"));while (file_exists(string_trim("coolflame.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolflame.mod.gml
+"), string_trim("coolflame.mod.gml
+")));
+file_delete(string_trim("coolshadows.mod.gml
+"));while (file_exists(string_trim("coolshadows.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolshadows.mod.gml
+"), string_trim("coolshadows.mod.gml
+")));
+file_delete(string_trim("cooltrails.mod.gml
+"));while (file_exists(string_trim("cooltrails.mod.gml
+"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooltrails.mod.gml
+"), string_trim("cooltrails.mod.gml
+")));
+while (!file_loaded(string_trim("cooldust.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("coolflame.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("coolshadows.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("cooltrails.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Event.mod/cooldust.mod.gml
+"));
+wait mod_load(string_trim("data/Event.mod/coolflame.mod.gml
+"));
+wait mod_load(string_trim("data/Event.mod/coolshadows.mod.gml
+"));
+wait mod_load(string_trim("data/Event.mod/cooltrails.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -139,7 +163,7 @@ trace("Mods=Cool Dust,Cool Flame,Cool Shadows,Cool Trails");
 trace("Character:Choose");
 trace("Crown:crown of guns");
 trace("Weapon:double shotgun");
-trace("Seed:;13383;");
+trace("Seed:13383");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -318,7 +342,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:;13383;";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:13383";
 	}
 	trace(score);
 	global.finished = true;
@@ -354,10 +378,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:;13383;" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:13383" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:;13383;",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:double shotgun" + " Seed:13383",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
