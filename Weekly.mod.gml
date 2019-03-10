@@ -1377,7 +1377,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_lower(string_trim("DIO"));}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race="DIO";}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
