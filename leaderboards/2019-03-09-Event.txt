@@ -1,1 +1,1 @@
-Mods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails Character:Choose Crown:crown of life Weapon:guitar Seed:3138 Date:;2019-03-09;
+Mods:Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails Character:Choose Crown:crown of destiny Weapon:heavy slugger Seed:25115 Date:;2019-03-09;
