@@ -1,6 +1,6 @@
 
-/*@pDesc@w=Cool.#@rMods@w=#  Cool Dark,#  Cool Dust,#  Cool Flame,#  Cool Hud,#  Cool Shadows,#  Cool Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of life#@gWeapon@w=#  guitar#@pSeed@w=3138#Limited Tries:false*/
-/*|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]*/
+/*@pDesc@w=Cool.#@rMods@w=#  Cool Dark#  Cool Dust#  Cool Flame#  Cool Hud#  Cool Shadows#  Cool Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of destiny#@gWeapon@w=#  heavy slugger#@pSeed@w=25115#Limited Tries:false*/
+/*|Cool Dark[spoopy time]|Cool Dust[It's not just dust, it's#COOL DUST]|Cool Flame[Make all those enemies liars!##What do you mean that's#not how that works?]|Cool Hud[*C418 starts playing*]|Cool Shadows[WHAT IS IT?#IT'S FOLLOWING MY EVERY MOVE!]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -53,7 +53,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 3138;
+global.seed = 25115;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -95,8 +95,49 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+file_delete(string_trim("cooldark.mod.gml"));while (file_exists(string_trim("cooldark.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldark.mod.gml"), string_trim("cooldark.mod.gml")));
+file_delete(string_trim("cooldust.mod.gml"));while (file_exists(string_trim("cooldust.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooldust.mod.gml"), string_trim("cooldust.mod.gml")));
+file_delete(string_trim("coolflame.mod.gml"));while (file_exists(string_trim("coolflame.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolflame.mod.gml"), string_trim("coolflame.mod.gml")));
+file_delete(string_trim("coolhud/coolbar.png"));while (file_exists(string_trim("coolhud/coolbar.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolbar.png"), string_trim("coolhud/coolbar.png")));
+file_delete(string_trim("coolhud/coolbolt.png"));while (file_exists(string_trim("coolhud/coolbolt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolbolt.png"), string_trim("coolhud/coolbolt.png")));
+file_delete(string_trim("coolhud/coolbox.png"));while (file_exists(string_trim("coolhud/coolbox.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolbox.png"), string_trim("coolhud/coolbox.png")));
+file_delete(string_trim("coolhud/coolbullet.png"));while (file_exists(string_trim("coolhud/coolbullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolbullet.png"), string_trim("coolhud/coolbullet.png")));
+file_delete(string_trim("coolhud/coolenergy.png"));while (file_exists(string_trim("coolhud/coolenergy.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolenergy.png"), string_trim("coolhud/coolenergy.png")));
+file_delete(string_trim("coolhud/coolexplo.png"));while (file_exists(string_trim("coolhud/coolexplo.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolexplo.png"), string_trim("coolhud/coolexplo.png")));
+file_delete(string_trim("coolhud/coolheart.png"));while (file_exists(string_trim("coolhud/coolheart.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolheart.png"), string_trim("coolhud/coolheart.png")));
+file_delete(string_trim("coolhud/coolhearts.png"));while (file_exists(string_trim("coolhud/coolhearts.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolhearts.png"), string_trim("coolhud/coolhearts.png")));
+file_delete(string_trim("coolhud/coolnumbers.png"));while (file_exists(string_trim("coolhud/coolnumbers.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolnumbers.png"), string_trim("coolhud/coolnumbers.png")));
+file_delete(string_trim("coolhud/coolshell.png"));while (file_exists(string_trim("coolhud/coolshell.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolshell.png"), string_trim("coolhud/coolshell.png")));
+file_delete(string_trim("coolhud/coolui.mod.gml"));while (file_exists(string_trim("coolhud/coolui.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolui.mod.gml"), string_trim("coolhud/coolui.mod.gml")));
+file_delete(string_trim("coolhud/coolxp.png"));while (file_exists(string_trim("coolhud/coolxp.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolxp.png"), string_trim("coolhud/coolxp.png")));
+file_delete(string_trim("coolhud/coolxpf.png"));while (file_exists(string_trim("coolhud/coolxpf.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/coolxpf.png"), string_trim("coolhud/coolxpf.png")));
+file_delete(string_trim("coolhud/oof.ogg"));while (file_exists(string_trim("coolhud/oof.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolhud/oof.ogg"), string_trim("coolhud/oof.ogg")));
+file_delete(string_trim("coolshadows.mod.gml"));while (file_exists(string_trim("coolshadows.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolshadows.mod.gml"), string_trim("coolshadows.mod.gml")));
 file_delete(string_trim("cooltrails.mod.gml"));while (file_exists(string_trim("cooltrails.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/cooltrails.mod.gml"), string_trim("cooltrails.mod.gml")));
+while (!file_loaded(string_trim("cooldark.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("cooldust.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("coolflame.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolbar.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolbolt.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolbox.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolbullet.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolenergy.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolexplo.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolheart.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolhearts.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolnumbers.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolshell.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolui.mod.gml"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolxp.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/coolxpf.png"))) {wait 1;}
+while (!file_loaded(string_trim("coolhud/oof.ogg"))) {wait 1;}
+while (!file_loaded(string_trim("coolshadows.mod.gml"))) {wait 1;}
 while (!file_loaded(string_trim("cooltrails.mod.gml"))) {wait 1;}
+wait mod_load(string_trim("data/Event.mod/cooldark.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/cooldust.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/coolflame.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/coolhud/coolui.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/coolshadows.mod.gml"));
 wait mod_load(string_trim("data/Event.mod/cooltrails.mod.gml"));
 
 
@@ -126,11 +167,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Event:");
-trace("Mods=Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails");
+trace("Mods=Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails");
 trace("Character:Choose");
-trace("Crown:crown of life");
-trace("Weapon:guitar");
-trace("Seed:;3138;");
+trace("Crown:crown of destiny");
+trace("Weapon:heavy slugger");
+trace("Seed:;25115;");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -259,7 +300,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("guitar"));
+		give_wep(string_trim("heavy slugger"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -309,7 +350,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:heavy slugger" + " Seed:;25115;";
 	}
 	trace(score);
 	global.finished = true;
@@ -345,10 +386,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:heavy slugger" + " Seed:;25115;" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool Dark,,Cool Dust,,Cool Flame,,Cool Hud,,Cool Shadows,,Cool Trails" + " Character:Choose" + " Crown:crown of life" + " Weapon:guitar" + " Seed:;3138;",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all("ods:Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:heavy slugger" + " Seed:;25115;",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -504,7 +545,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of life");
+name = string_trim("crown of destiny");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
