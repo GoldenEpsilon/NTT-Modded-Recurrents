@@ -525,10 +525,10 @@ if(mod_sideload() && instance_exists(Menu)){
 		draw_set_valign(1);
 		draw_set_halign(1);
 		draw_set_font(fnt1);
-		if(global.recurrentNum < array_length((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))) - 1){draw_text_nt(20, 220, "<<");}
+		if(global.recurrentNum < array_length((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))) - 1){draw_text_nt(20, 216, "<<");}
 		var Title = gp_month_name(string_split((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))[global.recurrentNum], "-")[1]) + " " + string_split((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))[global.recurrentNum], "-")[2] + ", " + string_split((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))[global.recurrentNum], "-")[0] + (global.recurrentNum == 0 ? " (Current)" : "");
-		draw_text_nt(game_width / 2, 220, Title);
-		if(global.recurrentNum > 0){draw_text_nt(game_width - 20, 220, ">>");}
+		draw_text_nt(game_width / 2, 216, Title);
+		if(global.recurrentNum > 0){draw_text_nt(game_width - 20, 216, ">>");}
 	}
 	draw_set_valign(valign);
 	draw_set_halign(halign);
