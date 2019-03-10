@@ -1,1 +1,1 @@
-Mods:betterLoops,Camper Boys,Big Toothbrush,Colored Palace,C Ultras Character:Choose Crown:crown of curses Weapon:Big Toothbrush Seed:27502 Date:;2019-03-09;
+Mods:Cool,Dark,,Cool,Dust,,Cool,Flame,,Cool,Hud,,Cool,Shadows,,Cool,Trails Character:Choose Crown:crown of risk Weapon:ultra shovel Seed:26079 Date:;2019-03-09;
