@@ -1156,7 +1156,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race=string_lower(string_trim("DIO"));
+			race=string_trim("DIO");
 		}
 	}
 }
