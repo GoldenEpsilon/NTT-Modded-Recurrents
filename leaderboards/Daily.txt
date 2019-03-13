@@ -1,2 +1,2 @@
 Mods:Chips,Airhorn,Croc Man,betterLoops,Area Health Character:Choose Crown:crown of guns Weapon:Airhorn Seed:19530 Date:;2019-03-13;
-|Golden Epsilon: Area 5-2 L0 Kills: 215 Character: venuz |Gull the flying worm: Area 3-3 L0 Kills: 38 Character: crocman |Gull the flying worm: Area 1-1 L0 Kills: 2 Character: crocman 
+|Golden Epsilon: Area 5-2 L0 Kills: 215 Character: venuz |Gull the flying worm: Area 3-3 L0 Kills: 38 Character: crocman |Gull the flying worm: Area 1-1 L0 Kills: 2 Character: crocman |Gull the flying worm: Area 101-1 L0 Kills: 28 Character: crocman 
