@@ -1171,7 +1171,7 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(race)!=string_lower(string_trim("DIO"))){
+			if(string_lower(race)!=string_trim("DIO")){
 				instance_destroy();
 			}
 		}
