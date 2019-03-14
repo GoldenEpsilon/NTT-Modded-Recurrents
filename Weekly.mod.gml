@@ -1171,8 +1171,12 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(race)!=string_trim("unknown")){
-				instance_destroy();
+			if(string_lower(race)!=string_trim("dio") && fork()){
+				wait(0);
+				if(string_lower(race)!=string_trim("dio")){
+					instance_destroy();
+				}
+				exit;
 			}
 		}
 		with(CharSelect){
