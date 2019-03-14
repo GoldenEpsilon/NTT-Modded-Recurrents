@@ -1,5 +1,7 @@
 
-/*@rMods@w=#  Balls#  Clasweps#  Auto Bullet Shotgun#  Devastator#  Cooler Hud#@bCharacter@w=#  Choose#@yCrown@w=#  Slaughter#@gWeapon@w=#  ExplosionPistol#@pSeed@w=23130#Limited Tries:false*/
+/*@rMods@w=#  Balls#  Clasweps#  Auto Bullet Shotgun#  Devastator#  Cooler Hud#@bCharacter@w=#  Choose#@yCrown@w=#  Slaughter
+#@gWeapon@w=#  ExplosionPistol
+#@pSeed@w=23130#Limited Tries:false*/
 /*|Balls[Boing. Thwakk. Boing. Boing. Thwakk. CRASH!!!]|Clasweps[You got ultra weapons,#you got zappy weapons,#call now and you'll even get#some crowns thrown in for free!]|Auto Bullet Shotgun[BLAM BLAM BLAMMO]|Devastator[Changes the devastator#to make it more interesting]|Cooler Hud[Symphony of the Throne]*/
 #define init
 #macro weeklyButtonX 6
@@ -19,6 +21,7 @@
 #macro ChooseCharacter true
 #macro ChooseCrown false
 #macro LimitedTries false
+#macro Github "https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/"
 
 global.sprWeekly = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAABNklEQVRIDWO0doj8z0ABOLJ/GQW6GRhYQLofvbpPliFyYopgfXLalmTpf3T1OAMTWTqpqGnUAYMrBECJAoRxAVrIg3MByMLHYUfg9iKz4YJIDJC87CobJBHy9Q94FMBDAOQdG8coiK8cFqP4DsahhTyKA47isBjmAFrIwx3wv54ZZg9RtNwqVGXk6seaBhgZGRnuPvjAAKcb/0L4jX9RbcXBg+uDmYNHPzwEkM36/x9SP8HpepCsAMN/MI2sEjsbrg9mDh79KCHACHMpzOUwGiZOIATI0Y8SApB4FGAgxQfIYUCO/qEZApPmXkD2OJxNbAgg6ycuBBgZ4ZYga4YLQhk40wAe/cSlAWhqxmc5yA04QwCPfrgDyG1WwUKBXP0oUQAzjJ70gDsAHAWw1i25PsfXiCFkJgCiFgWoHcePfAAAAABJRU5ErkJggg==",2,0,0);
 global.sprEvent = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAIAAAAUMWhjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAAC/SURBVEhL7Y+xDQIxDEW9CAswwUk0rMFY9LcTDSUSIzBC+D7fnRzLJHaTArC+IufnWy+m0/mSUkkWAw7HKSgBGLOhP6CrsQBc3GHta4D2tbSPZgUUussDN0abj9gO0L7V5g8HoOF5k1a+AUTyFaArA+iqBgSqAgTKBxDR4/mSE7+QU55cQDvPgYEbLPzEBoE8p35mg+t8s4BmSR5NawOc7C9pBxDIc6q7gaQdwIfSeVxXQFA7IKivAaSEmUSV8gZDGKxrqTAwHQAAAABJRU5ErkJggg==",2,0,0);
@@ -95,1081 +98,2156 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-file_delete(string_trim("balls/balls.mod.gml"));while (file_exists(string_trim("balls/balls.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/balls.mod.gml"), string_trim("balls/balls.mod.gml")));
-file_delete(string_trim("balls/laserwrench.wep.gml"));while (file_exists(string_trim("balls/laserwrench.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/laserwrench.wep.gml"), string_trim("balls/laserwrench.wep.gml")));
-file_delete(string_trim("balls/ball1.ogg"));while (file_exists(string_trim("balls/ball1.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/ball1.ogg"), string_trim("balls/ball1.ogg")));
-file_delete(string_trim("balls/ball2.ogg"));while (file_exists(string_trim("balls/ball2.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/ball2.ogg"), string_trim("balls/ball2.ogg")));
-file_delete(string_trim("balls/ball3.ogg"));while (file_exists(string_trim("balls/ball3.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/ball3.ogg"), string_trim("balls/ball3.ogg")));
-file_delete(string_trim("balls/ball4.ogg"));while (file_exists(string_trim("balls/ball4.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/balls/ball4.ogg"), string_trim("balls/ball4.ogg")));
-file_delete(string_trim("clasweps/widesword.wep.gml"));while (file_exists(string_trim("clasweps/widesword.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/widesword.wep.gml"), string_trim("clasweps/widesword.wep.gml")));
-file_delete(string_trim("clasweps/ultrasuperdiscgun.wep.gml"));while (file_exists(string_trim("clasweps/ultrasuperdiscgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultrasuperdiscgun.wep.gml"), string_trim("clasweps/ultrasuperdiscgun.wep.gml")));
-file_delete(string_trim("clasweps/ultrasplinter.wep.gml"));while (file_exists(string_trim("clasweps/ultrasplinter.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultrasplinter.wep.gml"), string_trim("clasweps/ultrasplinter.wep.gml")));
-file_delete(string_trim("clasweps/ultraseeker.wep.gml"));while (file_exists(string_trim("clasweps/ultraseeker.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraseeker.wep.gml"), string_trim("clasweps/ultraseeker.wep.gml")));
-file_delete(string_trim("clasweps/ultrarifle.wep.gml"));while (file_exists(string_trim("clasweps/ultrarifle.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultrarifle.wep.gml"), string_trim("clasweps/ultrarifle.wep.gml")));
-file_delete(string_trim("clasweps/ultrapopgun.wep.gml"));while (file_exists(string_trim("clasweps/ultrapopgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultrapopgun.wep.gml"), string_trim("clasweps/ultrapopgun.wep.gml")));
-file_delete(string_trim("clasweps/ultraplasmagun.wep.gml"));while (file_exists(string_trim("clasweps/ultraplasmagun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraplasmagun.wep.gml"), string_trim("clasweps/ultraplasmagun.wep.gml")));
-file_delete(string_trim("clasweps/ultralightning.wep.gml"));while (file_exists(string_trim("clasweps/ultralightning.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultralightning.wep.gml"), string_trim("clasweps/ultralightning.wep.gml")));
-file_delete(string_trim("clasweps/ultradiscgun.wep.gml"));while (file_exists(string_trim("clasweps/ultradiscgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultradiscgun.wep.gml"), string_trim("clasweps/ultradiscgun.wep.gml")));
-file_delete(string_trim("clasweps/torch.wep.gml"));while (file_exists(string_trim("clasweps/torch.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/torch.wep.gml"), string_trim("clasweps/torch.wep.gml")));
-file_delete(string_trim("clasweps/swiftsword.wep.gml"));while (file_exists(string_trim("clasweps/swiftsword.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/swiftsword.wep.gml"), string_trim("clasweps/swiftsword.wep.gml")));
-file_delete(string_trim("clasweps/splintergatling.wep.gml"));while (file_exists(string_trim("clasweps/splintergatling.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/splintergatling.wep.gml"), string_trim("clasweps/splintergatling.wep.gml")));
-file_delete(string_trim("clasweps/snl.wep.gml"));while (file_exists(string_trim("clasweps/snl.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/snl.wep.gml"), string_trim("clasweps/snl.wep.gml")));
-file_delete(string_trim("clasweps/slc.wep.gml"));while (file_exists(string_trim("clasweps/slc.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/slc.wep.gml"), string_trim("clasweps/slc.wep.gml")));
-file_delete(string_trim("clasweps/shrineroom.area.gml"));while (file_exists(string_trim("clasweps/shrineroom.area.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/shrineroom.area.gml"), string_trim("clasweps/shrineroom.area.gml")));
-file_delete(string_trim("clasweps/shine.wep.gml"));while (file_exists(string_trim("clasweps/shine.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/shine.wep.gml"), string_trim("clasweps/shine.wep.gml")));
-file_delete(string_trim("clasweps/scorpionarm.wep.gml"));while (file_exists(string_trim("clasweps/scorpionarm.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/scorpionarm.wep.gml"), string_trim("clasweps/scorpionarm.wep.gml")));
-file_delete(string_trim("clasweps/scorcher.wep.gml"));while (file_exists(string_trim("clasweps/scorcher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/scorcher.wep.gml"), string_trim("clasweps/scorcher.wep.gml")));
-file_delete(string_trim("clasweps/ringofplasma.wep.gml"));while (file_exists(string_trim("clasweps/ringofplasma.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ringofplasma.wep.gml"), string_trim("clasweps/ringofplasma.wep.gml")));
-file_delete(string_trim("clasweps/ringoffire.wep.gml"));while (file_exists(string_trim("clasweps/ringoffire.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ringoffire.wep.gml"), string_trim("clasweps/ringoffire.wep.gml")));
-file_delete(string_trim("clasweps/racingthoughts.skill.gml"));while (file_exists(string_trim("clasweps/racingthoughts.skill.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/racingthoughts.skill.gml"), string_trim("clasweps/racingthoughts.skill.gml")));
-file_delete(string_trim("clasweps/quickdraw.wep.gml"));while (file_exists(string_trim("clasweps/quickdraw.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/quickdraw.wep.gml"), string_trim("clasweps/quickdraw.wep.gml")));
-file_delete(string_trim("clasweps/plasmashotty.wep.gml"));while (file_exists(string_trim("clasweps/plasmashotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/plasmashotty.wep.gml"), string_trim("clasweps/plasmashotty.wep.gml")));
-file_delete(string_trim("clasweps/orbitalstriker.wep.gml"));while (file_exists(string_trim("clasweps/orbitalstriker.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/orbitalstriker.wep.gml"), string_trim("clasweps/orbitalstriker.wep.gml")));
-file_delete(string_trim("clasweps/orbitalbarrage.wep.gml"));while (file_exists(string_trim("clasweps/orbitalbarrage.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/orbitalbarrage.wep.gml"), string_trim("clasweps/orbitalbarrage.wep.gml")));
-file_delete(string_trim("clasweps/multislicer.wep.gml"));while (file_exists(string_trim("clasweps/multislicer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/multislicer.wep.gml"), string_trim("clasweps/multislicer.wep.gml")));
-file_delete(string_trim("clasweps/multiflakcannon.wep.gml"));while (file_exists(string_trim("clasweps/multiflakcannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/multiflakcannon.wep.gml"), string_trim("clasweps/multiflakcannon.wep.gml")));
-file_delete(string_trim("clasweps/longsword.wep.gml"));while (file_exists(string_trim("clasweps/longsword.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/longsword.wep.gml"), string_trim("clasweps/longsword.wep.gml")));
-file_delete(string_trim("clasweps/lightningscrew.wep.gml"));while (file_exists(string_trim("clasweps/lightningscrew.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/lightningscrew.wep.gml"), string_trim("clasweps/lightningscrew.wep.gml")));
-file_delete(string_trim("clasweps/lightningflak.wep.gml"));while (file_exists(string_trim("clasweps/lightningflak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/lightningflak.wep.gml"), string_trim("clasweps/lightningflak.wep.gml")));
-file_delete(string_trim("clasweps/kirbyhammer.wep.gml"));while (file_exists(string_trim("clasweps/kirbyhammer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/kirbyhammer.wep.gml"), string_trim("clasweps/kirbyhammer.wep.gml")));
-file_delete(string_trim("clasweps/iceslugger.wep.gml"));while (file_exists(string_trim("clasweps/iceslugger.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/iceslugger.wep.gml"), string_trim("clasweps/iceslugger.wep.gml")));
-file_delete(string_trim("clasweps/iceshotgun.wep.gml"));while (file_exists(string_trim("clasweps/iceshotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/iceshotgun.wep.gml"), string_trim("clasweps/iceshotgun.wep.gml")));
-file_delete(string_trim("clasweps/hypershotgun.wep.gml"));while (file_exists(string_trim("clasweps/hypershotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/hypershotgun.wep.gml"), string_trim("clasweps/hypershotgun.wep.gml")));
-file_delete(string_trim("clasweps/hyperrevolver.wep.gml"));while (file_exists(string_trim("clasweps/hyperrevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/hyperrevolver.wep.gml"), string_trim("clasweps/hyperrevolver.wep.gml")));
-file_delete(string_trim("clasweps/hyperflare.wep.gml"));while (file_exists(string_trim("clasweps/hyperflare.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/hyperflare.wep.gml"), string_trim("clasweps/hyperflare.wep.gml")));
-file_delete(string_trim("clasweps/hyperflak.wep.gml"));while (file_exists(string_trim("clasweps/hyperflak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/hyperflak.wep.gml"), string_trim("clasweps/hyperflak.wep.gml")));
-file_delete(string_trim("clasweps/heavywave.wep.gml"));while (file_exists(string_trim("clasweps/heavywave.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/heavywave.wep.gml"), string_trim("clasweps/heavywave.wep.gml")));
-file_delete(string_trim("clasweps/heavystriker.wep.gml"));while (file_exists(string_trim("clasweps/heavystriker.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/heavystriker.wep.gml"), string_trim("clasweps/heavystriker.wep.gml")));
-file_delete(string_trim("clasweps/heavyshovel.wep.gml"));while (file_exists(string_trim("clasweps/heavyshovel.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/heavyshovel.wep.gml"), string_trim("clasweps/heavyshovel.wep.gml")));
-file_delete(string_trim("clasweps/heavyshot.wep.gml"));while (file_exists(string_trim("clasweps/heavyshot.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/heavyshot.wep.gml"), string_trim("clasweps/heavyshot.wep.gml")));
-file_delete(string_trim("clasweps/goldscorpionarm.wep.gml"));while (file_exists(string_trim("clasweps/goldscorpionarm.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/goldscorpionarm.wep.gml"), string_trim("clasweps/goldscorpionarm.wep.gml")));
-file_delete(string_trim("clasweps/goldenblazer.wep.gml"));while (file_exists(string_trim("clasweps/goldenblazer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/goldenblazer.wep.gml"), string_trim("clasweps/goldenblazer.wep.gml")));
-file_delete(string_trim("clasweps/funnyxd.wep.gml"));while (file_exists(string_trim("clasweps/funnyxd.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/funnyxd.wep.gml"), string_trim("clasweps/funnyxd.wep.gml")));
-file_delete(string_trim("clasweps/executioner.wep.gml"));while (file_exists(string_trim("clasweps/executioner.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/executioner.wep.gml"), string_trim("clasweps/executioner.wep.gml")));
-file_delete(string_trim("clasweps/evilsbane.wep.gml"));while (file_exists(string_trim("clasweps/evilsbane.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/evilsbane.wep.gml"), string_trim("clasweps/evilsbane.wep.gml")));
-file_delete(string_trim("clasweps/energywrench.wep.gml"));while (file_exists(string_trim("clasweps/energywrench.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/energywrench.wep.gml"), string_trim("clasweps/energywrench.wep.gml")));
-file_delete(string_trim("clasweps/energyshovel.wep.gml"));while (file_exists(string_trim("clasweps/energyshovel.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/energyshovel.wep.gml"), string_trim("clasweps/energyshovel.wep.gml")));
-file_delete(string_trim("clasweps/energyjackhammer.wep.gml"));while (file_exists(string_trim("clasweps/energyjackhammer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/energyjackhammer.wep.gml"), string_trim("clasweps/energyjackhammer.wep.gml")));
-file_delete(string_trim("clasweps/enemyloot.mod.gml"));while (file_exists(string_trim("clasweps/enemyloot.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/enemyloot.mod.gml"), string_trim("clasweps/enemyloot.mod.gml")));
-file_delete(string_trim("clasweps/doubleiceshotgun.wep.gml"));while (file_exists(string_trim("clasweps/doubleiceshotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/doubleiceshotgun.wep.gml"), string_trim("clasweps/doubleiceshotgun.wep.gml")));
-file_delete(string_trim("clasweps/doghead.wep.gml"));while (file_exists(string_trim("clasweps/doghead.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/doghead.wep.gml"), string_trim("clasweps/doghead.wep.gml")));
-file_delete(string_trim("clasweps/crowns/slots.crown.gml"));while (file_exists(string_trim("clasweps/crowns/slots.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/slots.crown.gml"), string_trim("clasweps/crowns/slots.crown.gml")));
-file_delete(string_trim("clasweps/crowns/Slaughter.crown.gml"));while (file_exists(string_trim("clasweps/crowns/Slaughter.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Slaughter.crown.gml"), string_trim("clasweps/crowns/Slaughter.crown.gml")));
-file_delete(string_trim("clasweps/crowns/Pain.crown.gml"));while (file_exists(string_trim("clasweps/crowns/Pain.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Pain.crown.gml"), string_trim("clasweps/crowns/Pain.crown.gml")));
-file_delete(string_trim("clasweps/crowns/Choice.crown.gml"));while (file_exists(string_trim("clasweps/crowns/Choice.crown.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Choice.crown.gml"), string_trim("clasweps/crowns/Choice.crown.gml")));
-file_delete(string_trim("clasweps/claswepsshit.mod.gml"));while (file_exists(string_trim("clasweps/claswepsshit.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/claswepsshit.mod.gml"), string_trim("clasweps/claswepsshit.mod.gml")));
-file_delete(string_trim("clasweps/chimerashell.wep.gml"));while (file_exists(string_trim("clasweps/chimerashell.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/chimerashell.wep.gml"), string_trim("clasweps/chimerashell.wep.gml")));
-file_delete(string_trim("clasweps/chimeraexplosive.wep.gml"));while (file_exists(string_trim("clasweps/chimeraexplosive.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/chimeraexplosive.wep.gml"), string_trim("clasweps/chimeraexplosive.wep.gml")));
-file_delete(string_trim("clasweps/chimeraenergy.wep.gml"));while (file_exists(string_trim("clasweps/chimeraenergy.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/chimeraenergy.wep.gml"), string_trim("clasweps/chimeraenergy.wep.gml")));
-file_delete(string_trim("clasweps/chimerabullet.wep.gml"));while (file_exists(string_trim("clasweps/chimerabullet.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/chimerabullet.wep.gml"), string_trim("clasweps/chimerabullet.wep.gml")));
-file_delete(string_trim("clasweps/chimerabolt.wep.gml"));while (file_exists(string_trim("clasweps/chimerabolt.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/chimerabolt.wep.gml"), string_trim("clasweps/chimerabolt.wep.gml")));
-file_delete(string_trim("clasweps/catalyst.wep.gml"));while (file_exists(string_trim("clasweps/catalyst.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/catalyst.wep.gml"), string_trim("clasweps/catalyst.wep.gml")));
-file_delete(string_trim("clasweps/casey.wep.gml"));while (file_exists(string_trim("clasweps/casey.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/casey.wep.gml"), string_trim("clasweps/casey.wep.gml")));
-file_delete(string_trim("clasweps/cannon.wep.gml"));while (file_exists(string_trim("clasweps/cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/cannon.wep.gml"), string_trim("clasweps/cannon.wep.gml")));
-file_delete(string_trim("clasweps/brokenflak.wep.gml"));while (file_exists(string_trim("clasweps/brokenflak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/brokenflak.wep.gml"), string_trim("clasweps/brokenflak.wep.gml")));
-file_delete(string_trim("clasweps/bossintros.mod.gml"));while (file_exists(string_trim("clasweps/bossintros.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/bossintros.mod.gml"), string_trim("clasweps/bossintros.mod.gml")));
-file_delete(string_trim("clasweps/bloodyrifle.wep.gml"));while (file_exists(string_trim("clasweps/bloodyrifle.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/bloodyrifle.wep.gml"), string_trim("clasweps/bloodyrifle.wep.gml")));
-file_delete(string_trim("clasweps/bloodyrevolver.wep.gml"));while (file_exists(string_trim("clasweps/bloodyrevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/bloodyrevolver.wep.gml"), string_trim("clasweps/bloodyrevolver.wep.gml")));
-file_delete(string_trim("clasweps/blazer.wep.gml"));while (file_exists(string_trim("clasweps/blazer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/blazer.wep.gml"), string_trim("clasweps/blazer.wep.gml")));
-file_delete(string_trim("clasweps/battleshovel.wep.gml"));while (file_exists(string_trim("clasweps/battleshovel.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/battleshovel.wep.gml"), string_trim("clasweps/battleshovel.wep.gml")));
-file_delete(string_trim("clasweps/autoiceshotgun.wep.gml"));while (file_exists(string_trim("clasweps/autoiceshotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/autoiceshotgun.wep.gml"), string_trim("clasweps/autoiceshotgun.wep.gml")));
-file_delete(string_trim("clasweps/autoburstshotty.wep.gml"));while (file_exists(string_trim("clasweps/autoburstshotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/autoburstshotty.wep.gml"), string_trim("clasweps/autoburstshotty.wep.gml")));
-file_delete(string_trim("clasweps/ZapMachineGun.wep.gml"));while (file_exists(string_trim("clasweps/ZapMachineGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ZapMachineGun.wep.gml"), string_trim("clasweps/ZapMachineGun.wep.gml")));
-file_delete(string_trim("clasweps/Zap shotgun.wep.gml"));while (file_exists(string_trim("clasweps/Zap shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap shotgun.wep.gml"), string_trim("clasweps/Zap shotgun.wep.gml")));
-file_delete(string_trim("clasweps/Zap gun.wep.gml"));while (file_exists(string_trim("clasweps/Zap gun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap gun.wep.gml"), string_trim("clasweps/Zap gun.wep.gml")));
-file_delete(string_trim("clasweps/Zap Cannon.wep.gml"));while (file_exists(string_trim("clasweps/Zap Cannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap Cannon.wep.gml"), string_trim("clasweps/Zap Cannon.wep.gml")));
-file_delete(string_trim("clasweps/Ultraflamethrower.wep.gml"));while (file_exists(string_trim("clasweps/Ultraflamethrower.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ultraflamethrower.wep.gml"), string_trim("clasweps/Ultraflamethrower.wep.gml")));
-file_delete(string_trim("clasweps/UltraSlug.wep.gml"));while (file_exists(string_trim("clasweps/UltraSlug.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSlug.wep.gml"), string_trim("clasweps/UltraSlug.wep.gml")));
-file_delete(string_trim("clasweps/UltraFlak.wep.gml"));while (file_exists(string_trim("clasweps/UltraFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraFlak.wep.gml"), string_trim("clasweps/UltraFlak.wep.gml")));
-file_delete(string_trim("clasweps/UltraBazook.wep.gml"));while (file_exists(string_trim("clasweps/UltraBazook.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraBazook.wep.gml"), string_trim("clasweps/UltraBazook.wep.gml")));
-file_delete(string_trim("clasweps/TurboLauncher.wep.gml"));while (file_exists(string_trim("clasweps/TurboLauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TurboLauncher.wep.gml"), string_trim("clasweps/TurboLauncher.wep.gml")));
-file_delete(string_trim("clasweps/TrailerPistol.wep.gml"));while (file_exists(string_trim("clasweps/TrailerPistol.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerPistol.wep.gml"), string_trim("clasweps/TrailerPistol.wep.gml")));
-file_delete(string_trim("clasweps/TrailerGun.wep.gml"));while (file_exists(string_trim("clasweps/TrailerGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerGun.wep.gml"), string_trim("clasweps/TrailerGun.wep.gml")));
-file_delete(string_trim("clasweps/TrailerCannon.wep.gml"));while (file_exists(string_trim("clasweps/TrailerCannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerCannon.wep.gml"), string_trim("clasweps/TrailerCannon.wep.gml")));
-file_delete(string_trim("clasweps/Toxinballer.wep.gml"));while (file_exists(string_trim("clasweps/Toxinballer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Toxinballer.wep.gml"), string_trim("clasweps/Toxinballer.wep.gml")));
-file_delete(string_trim("clasweps/ToxicShotty.wep.gml"));while (file_exists(string_trim("clasweps/ToxicShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicShotty.wep.gml"), string_trim("clasweps/ToxicShotty.wep.gml")));
-file_delete(string_trim("clasweps/ToxicFlak.wep.gml"));while (file_exists(string_trim("clasweps/ToxicFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicFlak.wep.gml"), string_trim("clasweps/ToxicFlak.wep.gml")));
-file_delete(string_trim("clasweps/ToxicDiscGun.wep.gml"));while (file_exists(string_trim("clasweps/ToxicDiscGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicDiscGun.wep.gml"), string_trim("clasweps/ToxicDiscGun.wep.gml")));
-file_delete(string_trim("clasweps/ToxicBlazer.wep.gml"));while (file_exists(string_trim("clasweps/ToxicBlazer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicBlazer.wep.gml"), string_trim("clasweps/ToxicBlazer.wep.gml")));
-file_delete(string_trim("clasweps/ToxicBazooka.wep.gml"));while (file_exists(string_trim("clasweps/ToxicBazooka.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicBazooka.wep.gml"), string_trim("clasweps/ToxicBazooka.wep.gml")));
-file_delete(string_trim("clasweps/ThroneGun.wep.gml"));while (file_exists(string_trim("clasweps/ThroneGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneGun.wep.gml"), string_trim("clasweps/ThroneGun.wep.gml")));
-file_delete(string_trim("clasweps/ThroneCannon.wep.gml"));while (file_exists(string_trim("clasweps/ThroneCannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneCannon.wep.gml"), string_trim("clasweps/ThroneCannon.wep.gml")));
-file_delete(string_trim("clasweps/ThroneBeam.wep.gml"));while (file_exists(string_trim("clasweps/ThroneBeam.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneBeam.wep.gml"), string_trim("clasweps/ThroneBeam.wep.gml")));
-file_delete(string_trim("clasweps/SuperIceFlakCannon.wep.gml"));while (file_exists(string_trim("clasweps/SuperIceFlakCannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperIceFlakCannon.wep.gml"), string_trim("clasweps/SuperIceFlakCannon.wep.gml")));
-file_delete(string_trim("clasweps/SuperFocusedFlak.wep.gml"));while (file_exists(string_trim("clasweps/SuperFocusedFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperFocusedFlak.wep.gml"), string_trim("clasweps/SuperFocusedFlak.wep.gml")));
-file_delete(string_trim("clasweps/SuperBurstShotty.wep.gml"));while (file_exists(string_trim("clasweps/SuperBurstShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperBurstShotty.wep.gml"), string_trim("clasweps/SuperBurstShotty.wep.gml")));
-file_delete(string_trim("clasweps/Sniper.wep.gml"));while (file_exists(string_trim("clasweps/Sniper.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Sniper.wep.gml"), string_trim("clasweps/Sniper.wep.gml")));
-file_delete(string_trim("clasweps/SlotMachine.wep.gml"));while (file_exists(string_trim("clasweps/SlotMachine.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SlotMachine.wep.gml"), string_trim("clasweps/SlotMachine.wep.gml")));
-file_delete(string_trim("clasweps/Ricochetcrossbow.wep.gml"));while (file_exists(string_trim("clasweps/Ricochetcrossbow.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ricochetcrossbow.wep.gml"), string_trim("clasweps/Ricochetcrossbow.wep.gml")));
-file_delete(string_trim("clasweps/RapidPistol.wep.gml"));while (file_exists(string_trim("clasweps/RapidPistol.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/RapidPistol.wep.gml"), string_trim("clasweps/RapidPistol.wep.gml")));
-file_delete(string_trim("clasweps/RageBlaster.wep.gml"));while (file_exists(string_trim("clasweps/RageBlaster.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/RageBlaster.wep.gml"), string_trim("clasweps/RageBlaster.wep.gml")));
-file_delete(string_trim("clasweps/Poposcorcher.wep.gml"));while (file_exists(string_trim("clasweps/Poposcorcher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Poposcorcher.wep.gml"), string_trim("clasweps/Poposcorcher.wep.gml")));
-file_delete(string_trim("clasweps/PopoZapper.wep.gml"));while (file_exists(string_trim("clasweps/PopoZapper.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoZapper.wep.gml"), string_trim("clasweps/PopoZapper.wep.gml")));
-file_delete(string_trim("clasweps/PopoSpreader.wep.gml"));while (file_exists(string_trim("clasweps/PopoSpreader.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoSpreader.wep.gml"), string_trim("clasweps/PopoSpreader.wep.gml")));
-file_delete(string_trim("clasweps/PopoSMG.wep.gml"));while (file_exists(string_trim("clasweps/PopoSMG.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoSMG.wep.gml"), string_trim("clasweps/PopoSMG.wep.gml")));
-file_delete(string_trim("clasweps/PopoRevolver.wep.gml"));while (file_exists(string_trim("clasweps/PopoRevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoRevolver.wep.gml"), string_trim("clasweps/PopoRevolver.wep.gml")));
-file_delete(string_trim("clasweps/PopoGuider.wep.gml"));while (file_exists(string_trim("clasweps/PopoGuider.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoGuider.wep.gml"), string_trim("clasweps/PopoGuider.wep.gml")));
-file_delete(string_trim("clasweps/PopoGenocide.wep.gml"));while (file_exists(string_trim("clasweps/PopoGenocide.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoGenocide.wep.gml"), string_trim("clasweps/PopoGenocide.wep.gml")));
-file_delete(string_trim("clasweps/PopoFireballer.wep.gml"));while (file_exists(string_trim("clasweps/PopoFireballer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoFireballer.wep.gml"), string_trim("clasweps/PopoFireballer.wep.gml")));
-file_delete(string_trim("clasweps/PopoExplosionGun.wep.gml"));while (file_exists(string_trim("clasweps/PopoExplosionGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoExplosionGun.wep.gml"), string_trim("clasweps/PopoExplosionGun.wep.gml")));
-file_delete(string_trim("clasweps/PopoCharger.wep.gml"));while (file_exists(string_trim("clasweps/PopoCharger.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoCharger.wep.gml"), string_trim("clasweps/PopoCharger.wep.gml")));
-file_delete(string_trim("clasweps/PopoBurstShotty.wep.gml"));while (file_exists(string_trim("clasweps/PopoBurstShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoBurstShotty.wep.gml"), string_trim("clasweps/PopoBurstShotty.wep.gml")));
-file_delete(string_trim("clasweps/PopoBADS.wep.gml"));while (file_exists(string_trim("clasweps/PopoBADS.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoBADS.wep.gml"), string_trim("clasweps/PopoBADS.wep.gml")));
-file_delete(string_trim("clasweps/PlasmaNuker.wep.gml"));while (file_exists(string_trim("clasweps/PlasmaNuker.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaNuker.wep.gml"), string_trim("clasweps/PlasmaNuker.wep.gml")));
-file_delete(string_trim("clasweps/PlasmaFlak.wep.gml"));while (file_exists(string_trim("clasweps/PlasmaFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaFlak.wep.gml"), string_trim("clasweps/PlasmaFlak.wep.gml")));
-file_delete(string_trim("clasweps/PlasmaBazooka.wep.gml"));while (file_exists(string_trim("clasweps/PlasmaBazooka.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaBazooka.wep.gml"), string_trim("clasweps/PlasmaBazooka.wep.gml")));
-file_delete(string_trim("clasweps/OmegaRevolver.wep.gml"));while (file_exists(string_trim("clasweps/OmegaRevolver.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/OmegaRevolver.wep.gml"), string_trim("clasweps/OmegaRevolver.wep.gml")));
-file_delete(string_trim("clasweps/NecroMachine.wep.gml"));while (file_exists(string_trim("clasweps/NecroMachine.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/NecroMachine.wep.gml"), string_trim("clasweps/NecroMachine.wep.gml")));
-file_delete(string_trim("clasweps/MiniNukeLauncher.wep.gml"));while (file_exists(string_trim("clasweps/MiniNukeLauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniNukeLauncher.wep.gml"), string_trim("clasweps/MiniNukeLauncher.wep.gml")));
-file_delete(string_trim("clasweps/MineShotgun.wep.gml"));while (file_exists(string_trim("clasweps/MineShotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MineShotgun.wep.gml"), string_trim("clasweps/MineShotgun.wep.gml")));
-file_delete(string_trim("clasweps/MineLauncher.wep.gml"));while (file_exists(string_trim("clasweps/MineLauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MineLauncher.wep.gml"), string_trim("clasweps/MineLauncher.wep.gml")));
-file_delete(string_trim("clasweps/MegaNuker.wep.gml"));while (file_exists(string_trim("clasweps/MegaNuker.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MegaNuker.wep.gml"), string_trim("clasweps/MegaNuker.wep.gml")));
-file_delete(string_trim("clasweps/LilGunther.wep.gml"));while (file_exists(string_trim("clasweps/LilGunther.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LilGunther.wep.gml"), string_trim("clasweps/LilGunther.wep.gml")));
-file_delete(string_trim("clasweps/LightningWrench.wep.gml"));while (file_exists(string_trim("clasweps/LightningWrench.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LightningWrench.wep.gml"), string_trim("clasweps/LightningWrench.wep.gml")));
-file_delete(string_trim("clasweps/Laserwave.wep.gml"));while (file_exists(string_trim("clasweps/Laserwave.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Laserwave.wep.gml"), string_trim("clasweps/Laserwave.wep.gml")));
-file_delete(string_trim("clasweps/KingBlade.wep.gml"));while (file_exists(string_trim("clasweps/KingBlade.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/KingBlade.wep.gml"), string_trim("clasweps/KingBlade.wep.gml")));
-file_delete(string_trim("clasweps/InvCrystalLaser.wep.gml"));while (file_exists(string_trim("clasweps/InvCrystalLaser.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/InvCrystalLaser.wep.gml"), string_trim("clasweps/InvCrystalLaser.wep.gml")));
-file_delete(string_trim("clasweps/IceFlakCannon.wep.gml"));while (file_exists(string_trim("clasweps/IceFlakCannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceFlakCannon.wep.gml"), string_trim("clasweps/IceFlakCannon.wep.gml")));
-file_delete(string_trim("clasweps/IceCannon.wep.gml"));while (file_exists(string_trim("clasweps/IceCannon.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceCannon.wep.gml"), string_trim("clasweps/IceCannon.wep.gml")));
-file_delete(string_trim("clasweps/HuntingRifle.wep.gml"));while (file_exists(string_trim("clasweps/HuntingRifle.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HuntingRifle.wep.gml"), string_trim("clasweps/HuntingRifle.wep.gml")));
-file_delete(string_trim("clasweps/Hellfire.wep.gml"));while (file_exists(string_trim("clasweps/Hellfire.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Hellfire.wep.gml"), string_trim("clasweps/Hellfire.wep.gml")));
-file_delete(string_trim("clasweps/HeavySMG.wep.gml"));while (file_exists(string_trim("clasweps/HeavySMG.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavySMG.wep.gml"), string_trim("clasweps/HeavySMG.wep.gml")));
-file_delete(string_trim("clasweps/HeavyLaser.wep.gml"));while (file_exists(string_trim("clasweps/HeavyLaser.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyLaser.wep.gml"), string_trim("clasweps/HeavyLaser.wep.gml")));
-file_delete(string_trim("clasweps/HeavyGlove.wep.gml"));while (file_exists(string_trim("clasweps/HeavyGlove.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyGlove.wep.gml"), string_trim("clasweps/HeavyGlove.wep.gml")));
-file_delete(string_trim("clasweps/HeavyFlare.wep.gml"));while (file_exists(string_trim("clasweps/HeavyFlare.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyFlare.wep.gml"), string_trim("clasweps/HeavyFlare.wep.gml")));
-file_delete(string_trim("clasweps/HeavyFlak.wep.gml"));while (file_exists(string_trim("clasweps/HeavyFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyFlak.wep.gml"), string_trim("clasweps/HeavyFlak.wep.gml")));
-file_delete(string_trim("clasweps/GuiderShotty.wep.gml"));while (file_exists(string_trim("clasweps/GuiderShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuiderShotty.wep.gml"), string_trim("clasweps/GuiderShotty.wep.gml")));
-file_delete(string_trim("clasweps/GuiderPistol.wep.gml"));while (file_exists(string_trim("clasweps/GuiderPistol.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuiderPistol.wep.gml"), string_trim("clasweps/GuiderPistol.wep.gml")));
-file_delete(string_trim("clasweps/GuiderMinigun.wep.gml"));while (file_exists(string_trim("clasweps/GuiderMinigun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuiderMinigun.wep.gml"), string_trim("clasweps/GuiderMinigun.wep.gml")));
-file_delete(string_trim("clasweps/GuiderBlaster.wep.gml"));while (file_exists(string_trim("clasweps/GuiderBlaster.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuiderBlaster.wep.gml"), string_trim("clasweps/GuiderBlaster.wep.gml")));
-file_delete(string_trim("clasweps/GoldenFireballer.wep.gml"));while (file_exists(string_trim("clasweps/GoldenFireballer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GoldenFireballer.wep.gml"), string_trim("clasweps/GoldenFireballer.wep.gml")));
-file_delete(string_trim("clasweps/GigaHammer.wep.gml"));while (file_exists(string_trim("clasweps/GigaHammer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GigaHammer.wep.gml"), string_trim("clasweps/GigaHammer.wep.gml")));
-file_delete(string_trim("clasweps/Genocide.wep.gml"));while (file_exists(string_trim("clasweps/Genocide.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Genocide.wep.gml"), string_trim("clasweps/Genocide.wep.gml")));
-file_delete(string_trim("clasweps/GatlingNader.wep.gml"));while (file_exists(string_trim("clasweps/GatlingNader.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GatlingNader.wep.gml"), string_trim("clasweps/GatlingNader.wep.gml")));
-file_delete(string_trim("clasweps/GatlingMiniNader.wep.gml"));while (file_exists(string_trim("clasweps/GatlingMiniNader.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GatlingMiniNader.wep.gml"), string_trim("clasweps/GatlingMiniNader.wep.gml")));
-file_delete(string_trim("clasweps/FocusedFlak.wep.gml"));while (file_exists(string_trim("clasweps/FocusedFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/FocusedFlak.wep.gml"), string_trim("clasweps/FocusedFlak.wep.gml")));
-file_delete(string_trim("clasweps/FocusShotty.wep.gml"));while (file_exists(string_trim("clasweps/FocusShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/FocusShotty.wep.gml"), string_trim("clasweps/FocusShotty.wep.gml")));
-file_delete(string_trim("clasweps/Flamesword.wep.gml"));while (file_exists(string_trim("clasweps/Flamesword.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Flamesword.wep.gml"), string_trim("clasweps/Flamesword.wep.gml")));
-file_delete(string_trim("clasweps/Fireballer.wep.gml"));while (file_exists(string_trim("clasweps/Fireballer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Fireballer.wep.gml"), string_trim("clasweps/Fireballer.wep.gml")));
-file_delete(string_trim("clasweps/ExplosionPistol.wep.gml"));while (file_exists(string_trim("clasweps/ExplosionPistol.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ExplosionPistol.wep.gml"), string_trim("clasweps/ExplosionPistol.wep.gml")));
-file_delete(string_trim("clasweps/ExplosionGun.wep.gml"));while (file_exists(string_trim("clasweps/ExplosionGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ExplosionGun.wep.gml"), string_trim("clasweps/ExplosionGun.wep.gml")));
-file_delete(string_trim("clasweps/DemolitionsLauncher.wep.gml"));while (file_exists(string_trim("clasweps/DemolitionsLauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DemolitionsLauncher.wep.gml"), string_trim("clasweps/DemolitionsLauncher.wep.gml")));
-file_delete(string_trim("clasweps/DartlingGun.wep.gml"));while (file_exists(string_trim("clasweps/DartlingGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DartlingGun.wep.gml"), string_trim("clasweps/DartlingGun.wep.gml")));
-file_delete(string_trim("clasweps/DartGun.wep.gml"));while (file_exists(string_trim("clasweps/DartGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DartGun.wep.gml"), string_trim("clasweps/DartGun.wep.gml")));
-file_delete(string_trim("clasweps/CrystalLaser.wep.gml"));while (file_exists(string_trim("clasweps/CrystalLaser.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/CrystalLaser.wep.gml"), string_trim("clasweps/CrystalLaser.wep.gml")));
-file_delete(string_trim("clasweps/ChargeSlugger.wep.gml"));while (file_exists(string_trim("clasweps/ChargeSlugger.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeSlugger.wep.gml"), string_trim("clasweps/ChargeSlugger.wep.gml")));
-file_delete(string_trim("clasweps/ChargePlasma.wep.gml"));while (file_exists(string_trim("clasweps/ChargePlasma.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargePlasma.wep.gml"), string_trim("clasweps/ChargePlasma.wep.gml")));
-file_delete(string_trim("clasweps/ChargeLaser.wep.gml"));while (file_exists(string_trim("clasweps/ChargeLaser.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeLaser.wep.gml"), string_trim("clasweps/ChargeLaser.wep.gml")));
-file_delete(string_trim("clasweps/ChargeGun.wep.gml"));while (file_exists(string_trim("clasweps/ChargeGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeGun.wep.gml"), string_trim("clasweps/ChargeGun.wep.gml")));
-file_delete(string_trim("clasweps/ChargeFlamethrower.wep.gml"));while (file_exists(string_trim("clasweps/ChargeFlamethrower.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeFlamethrower.wep.gml"), string_trim("clasweps/ChargeFlamethrower.wep.gml")));
-file_delete(string_trim("clasweps/ChargeFlak.wep.gml"));while (file_exists(string_trim("clasweps/ChargeFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeFlak.wep.gml"), string_trim("clasweps/ChargeFlak.wep.gml")));
-file_delete(string_trim("clasweps/ChargeDisc.wep.gml"));while (file_exists(string_trim("clasweps/ChargeDisc.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeDisc.wep.gml"), string_trim("clasweps/ChargeDisc.wep.gml")));
-file_delete(string_trim("clasweps/ChargeCrossbow.wep.gml"));while (file_exists(string_trim("clasweps/ChargeCrossbow.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeCrossbow.wep.gml"), string_trim("clasweps/ChargeCrossbow.wep.gml")));
-file_delete(string_trim("clasweps/ChargeBlade.wep.gml"));while (file_exists(string_trim("clasweps/ChargeBlade.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeBlade.wep.gml"), string_trim("clasweps/ChargeBlade.wep.gml")));
-file_delete(string_trim("clasweps/ChargeBazooka.wep.gml"));while (file_exists(string_trim("clasweps/ChargeBazooka.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeBazooka.wep.gml"), string_trim("clasweps/ChargeBazooka.wep.gml")));
-file_delete(string_trim("clasweps/BusterGun.wep.gml"));while (file_exists(string_trim("clasweps/BusterGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BusterGun.wep.gml"), string_trim("clasweps/BusterGun.wep.gml")));
-file_delete(string_trim("clasweps/BurstShotty.wep.gml"));while (file_exists(string_trim("clasweps/BurstShotty.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BurstShotty.wep.gml"), string_trim("clasweps/BurstShotty.wep.gml")));
-file_delete(string_trim("clasweps/BoxingGlove.wep.gml"));while (file_exists(string_trim("clasweps/BoxingGlove.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BoxingGlove.wep.gml"), string_trim("clasweps/BoxingGlove.wep.gml")));
-file_delete(string_trim("clasweps/BouncerFlak.wep.gml"));while (file_exists(string_trim("clasweps/BouncerFlak.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BouncerFlak.wep.gml"), string_trim("clasweps/BouncerFlak.wep.gml")));
-file_delete(string_trim("clasweps/BluntHammer.wep.gml"));while (file_exists(string_trim("clasweps/BluntHammer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BluntHammer.wep.gml"), string_trim("clasweps/BluntHammer.wep.gml")));
-file_delete(string_trim("clasweps/Bloodballer.wep.gml"));while (file_exists(string_trim("clasweps/Bloodballer.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Bloodballer.wep.gml"), string_trim("clasweps/Bloodballer.wep.gml")));
-file_delete(string_trim("clasweps/BloodMineLauncher.wep.gml"));while (file_exists(string_trim("clasweps/BloodMineLauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodMineLauncher.wep.gml"), string_trim("clasweps/BloodMineLauncher.wep.gml")));
-file_delete(string_trim("clasweps/BloodGenocide.wep.gml"));while (file_exists(string_trim("clasweps/BloodGenocide.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodGenocide.wep.gml"), string_trim("clasweps/BloodGenocide.wep.gml")));
-file_delete(string_trim("clasweps/BloodExplosionGun.wep.gml"));while (file_exists(string_trim("clasweps/BloodExplosionGun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodExplosionGun.wep.gml"), string_trim("clasweps/BloodExplosionGun.wep.gml")));
-file_delete(string_trim("clasweps/BlinkSword.Wep.gml"));while (file_exists(string_trim("clasweps/BlinkSword.Wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BlinkSword.Wep.gml"), string_trim("clasweps/BlinkSword.Wep.gml")));
-file_delete(string_trim("clasweps/BigBlaster.wep.gml"));while (file_exists(string_trim("clasweps/BigBlaster.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BigBlaster.wep.gml"), string_trim("clasweps/BigBlaster.wep.gml")));
-file_delete(string_trim("clasweps/BanditBlaster.wep.gml"));while (file_exists(string_trim("clasweps/BanditBlaster.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BanditBlaster.wep.gml"), string_trim("clasweps/BanditBlaster.wep.gml")));
-file_delete(string_trim("clasweps/BallMomBlaster.wep.gml"));while (file_exists(string_trim("clasweps/BallMomBlaster.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BallMomBlaster.wep.gml"), string_trim("clasweps/BallMomBlaster.wep.gml")));
-file_delete(string_trim("clasweps/BADS.wep.gml"));while (file_exists(string_trim("clasweps/BADS.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BADS.wep.gml"), string_trim("clasweps/BADS.wep.gml")));
-file_delete(string_trim("clasweps/Acelauncher.wep.gml"));while (file_exists(string_trim("clasweps/Acelauncher.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Acelauncher.wep.gml"), string_trim("clasweps/Acelauncher.wep.gml")));
-file_delete(string_trim("clasweps/AccuserHand.wep.gml"));while (file_exists(string_trim("clasweps/AccuserHand.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/AccuserHand.wep.gml"), string_trim("clasweps/AccuserHand.wep.gml")));
-file_delete(string_trim("clasweps/widesword.png"));while (file_exists(string_trim("clasweps/widesword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/widesword.png"), string_trim("clasweps/widesword.png")));
-file_delete(string_trim("clasweps/ultraseekerpro.png"));while (file_exists(string_trim("clasweps/ultraseekerpro.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraseekerpro.png"), string_trim("clasweps/ultraseekerpro.png")));
-file_delete(string_trim("clasweps/ultraplasmaproj.png"));while (file_exists(string_trim("clasweps/ultraplasmaproj.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraplasmaproj.png"), string_trim("clasweps/ultraplasmaproj.png")));
-file_delete(string_trim("clasweps/ultraplasmaimpact.png"));while (file_exists(string_trim("clasweps/ultraplasmaimpact.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraplasmaimpact.png"), string_trim("clasweps/ultraplasmaimpact.png")));
-file_delete(string_trim("clasweps/ultramegaseeker.png"));while (file_exists(string_trim("clasweps/ultramegaseeker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultramegaseeker.png"), string_trim("clasweps/ultramegaseeker.png")));
-file_delete(string_trim("clasweps/ultraflame.png"));while (file_exists(string_trim("clasweps/ultraflame.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ultraflame.png"), string_trim("clasweps/ultraflame.png")));
-file_delete(string_trim("clasweps/thoughtslightning.png"));while (file_exists(string_trim("clasweps/thoughtslightning.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/thoughtslightning.png"), string_trim("clasweps/thoughtslightning.png")));
-file_delete(string_trim("clasweps/swiftsword.png"));while (file_exists(string_trim("clasweps/swiftsword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/swiftsword.png"), string_trim("clasweps/swiftsword.png")));
-file_delete(string_trim("clasweps/sprBaseball.png"));while (file_exists(string_trim("clasweps/sprBaseball.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/sprBaseball.png"), string_trim("clasweps/sprBaseball.png")));
-file_delete(string_trim("clasweps/shine.ogg"));while (file_exists(string_trim("clasweps/shine.ogg"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/shine.ogg"), string_trim("clasweps/shine.ogg")));
-file_delete(string_trim("clasweps/ringofplasma.png"));while (file_exists(string_trim("clasweps/ringofplasma.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ringofplasma.png"), string_trim("clasweps/ringofplasma.png")));
-file_delete(string_trim("clasweps/ringoffire.png"));while (file_exists(string_trim("clasweps/ringoffire.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ringoffire.png"), string_trim("clasweps/ringoffire.png")));
-file_delete(string_trim("clasweps/racingthoughtsbutton.png"));while (file_exists(string_trim("clasweps/racingthoughtsbutton.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/racingthoughtsbutton.png"), string_trim("clasweps/racingthoughtsbutton.png")));
-file_delete(string_trim("clasweps/orbitalstriker.png"));while (file_exists(string_trim("clasweps/orbitalstriker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/orbitalstriker.png"), string_trim("clasweps/orbitalstriker.png")));
-file_delete(string_trim("clasweps/orbitalbarrage.png"));while (file_exists(string_trim("clasweps/orbitalbarrage.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/orbitalbarrage.png"), string_trim("clasweps/orbitalbarrage.png")));
-file_delete(string_trim("clasweps/multiflakcannon.png"));while (file_exists(string_trim("clasweps/multiflakcannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/multiflakcannon.png"), string_trim("clasweps/multiflakcannon.png")));
-file_delete(string_trim("clasweps/longsword.png"));while (file_exists(string_trim("clasweps/longsword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/longsword.png"), string_trim("clasweps/longsword.png")));
-file_delete(string_trim("clasweps/lightningshank.png"));while (file_exists(string_trim("clasweps/lightningshank.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/lightningshank.png"), string_trim("clasweps/lightningshank.png")));
-file_delete(string_trim("clasweps/lightningflak.png"));while (file_exists(string_trim("clasweps/lightningflak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/lightningflak.png"), string_trim("clasweps/lightningflak.png")));
-file_delete(string_trim("clasweps/heavy shovel.png"));while (file_exists(string_trim("clasweps/heavy shovel.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/heavy shovel.png"), string_trim("clasweps/heavy shovel.png")));
-file_delete(string_trim("clasweps/evilsbane.png"));while (file_exists(string_trim("clasweps/evilsbane.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/evilsbane.png"), string_trim("clasweps/evilsbane.png")));
-file_delete(string_trim("clasweps/crowns/Crown of Slots.png"));while (file_exists(string_trim("clasweps/crowns/Crown of Slots.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Crown of Slots.png"), string_trim("clasweps/crowns/Crown of Slots.png")));
-file_delete(string_trim("clasweps/crowns/Crown of Slaughter.png"));while (file_exists(string_trim("clasweps/crowns/Crown of Slaughter.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Crown of Slaughter.png"), string_trim("clasweps/crowns/Crown of Slaughter.png")));
-file_delete(string_trim("clasweps/crowns/Crown of Pain.png"));while (file_exists(string_trim("clasweps/crowns/Crown of Pain.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/Crown of Pain.png"), string_trim("clasweps/crowns/Crown of Pain.png")));
-file_delete(string_trim("clasweps/crowns/ChoiceBuddyWalk.png"));while (file_exists(string_trim("clasweps/crowns/ChoiceBuddyWalk.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/ChoiceBuddyWalk.png"), string_trim("clasweps/crowns/ChoiceBuddyWalk.png")));
-file_delete(string_trim("clasweps/crowns/ChoiceBuddyIdle.png"));while (file_exists(string_trim("clasweps/crowns/ChoiceBuddyIdle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/crowns/ChoiceBuddyIdle.png"), string_trim("clasweps/crowns/ChoiceBuddyIdle.png")));
-file_delete(string_trim("clasweps/catalyst.png"));while (file_exists(string_trim("clasweps/catalyst.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/catalyst.png"), string_trim("clasweps/catalyst.png")));
-file_delete(string_trim("clasweps/bulletcannon.png"));while (file_exists(string_trim("clasweps/bulletcannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/bulletcannon.png"), string_trim("clasweps/bulletcannon.png")));
-file_delete(string_trim("clasweps/barragemarker.png"));while (file_exists(string_trim("clasweps/barragemarker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/barragemarker.png"), string_trim("clasweps/barragemarker.png")));
-file_delete(string_trim("clasweps/bads.png"));while (file_exists(string_trim("clasweps/bads.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/bads.png"), string_trim("clasweps/bads.png")));
-file_delete(string_trim("clasweps/ZapSlug.png"));while (file_exists(string_trim("clasweps/ZapSlug.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ZapSlug.png"), string_trim("clasweps/ZapSlug.png")));
-file_delete(string_trim("clasweps/ZapMG.png"));while (file_exists(string_trim("clasweps/ZapMG.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ZapMG.png"), string_trim("clasweps/ZapMG.png")));
-file_delete(string_trim("clasweps/ZapBullet.png"));while (file_exists(string_trim("clasweps/ZapBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ZapBullet.png"), string_trim("clasweps/ZapBullet.png")));
-file_delete(string_trim("clasweps/Zap Shotgun.png"));while (file_exists(string_trim("clasweps/Zap Shotgun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap Shotgun.png"), string_trim("clasweps/Zap Shotgun.png")));
-file_delete(string_trim("clasweps/Zap Gun.png"));while (file_exists(string_trim("clasweps/Zap Gun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap Gun.png"), string_trim("clasweps/Zap Gun.png")));
-file_delete(string_trim("clasweps/Zap Cannon.png"));while (file_exists(string_trim("clasweps/Zap Cannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Zap Cannon.png"), string_trim("clasweps/Zap Cannon.png")));
-file_delete(string_trim("clasweps/Ultrasuperdiscgun.png"));while (file_exists(string_trim("clasweps/Ultrasuperdiscgun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ultrasuperdiscgun.png"), string_trim("clasweps/Ultrasuperdiscgun.png")));
-file_delete(string_trim("clasweps/UltraslugDissapear.png"));while (file_exists(string_trim("clasweps/UltraslugDissapear.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraslugDissapear.png"), string_trim("clasweps/UltraslugDissapear.png")));
-file_delete(string_trim("clasweps/Ultradiscgun.png"));while (file_exists(string_trim("clasweps/Ultradiscgun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ultradiscgun.png"), string_trim("clasweps/Ultradiscgun.png")));
-file_delete(string_trim("clasweps/Ultrabazooka.png"));while (file_exists(string_trim("clasweps/Ultrabazooka.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ultrabazooka.png"), string_trim("clasweps/Ultrabazooka.png")));
-file_delete(string_trim("clasweps/UltraSuperDisc.png"));while (file_exists(string_trim("clasweps/UltraSuperDisc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSuperDisc.png"), string_trim("clasweps/UltraSuperDisc.png")));
-file_delete(string_trim("clasweps/UltraSplinterPro.png"));while (file_exists(string_trim("clasweps/UltraSplinterPro.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSplinterPro.png"), string_trim("clasweps/UltraSplinterPro.png")));
-file_delete(string_trim("clasweps/UltraSplinter.png"));while (file_exists(string_trim("clasweps/UltraSplinter.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSplinter.png"), string_trim("clasweps/UltraSplinter.png")));
-file_delete(string_trim("clasweps/UltraSmoke.png"));while (file_exists(string_trim("clasweps/UltraSmoke.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSmoke.png"), string_trim("clasweps/UltraSmoke.png")));
-file_delete(string_trim("clasweps/UltraSlugger.png"));while (file_exists(string_trim("clasweps/UltraSlugger.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSlugger.png"), string_trim("clasweps/UltraSlugger.png")));
-file_delete(string_trim("clasweps/UltraSlugHit.png"));while (file_exists(string_trim("clasweps/UltraSlugHit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSlugHit.png"), string_trim("clasweps/UltraSlugHit.png")));
-file_delete(string_trim("clasweps/UltraSlug.png"));while (file_exists(string_trim("clasweps/UltraSlug.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSlug.png"), string_trim("clasweps/UltraSlug.png")));
-file_delete(string_trim("clasweps/UltraSeeker.png"));while (file_exists(string_trim("clasweps/UltraSeeker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraSeeker.png"), string_trim("clasweps/UltraSeeker.png")));
-file_delete(string_trim("clasweps/UltraRocketFlame.png"));while (file_exists(string_trim("clasweps/UltraRocketFlame.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraRocketFlame.png"), string_trim("clasweps/UltraRocketFlame.png")));
-file_delete(string_trim("clasweps/UltraRocket.png"));while (file_exists(string_trim("clasweps/UltraRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraRocket.png"), string_trim("clasweps/UltraRocket.png")));
-file_delete(string_trim("clasweps/UltraRifle.png"));while (file_exists(string_trim("clasweps/UltraRifle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraRifle.png"), string_trim("clasweps/UltraRifle.png")));
-file_delete(string_trim("clasweps/UltraPop.png"));while (file_exists(string_trim("clasweps/UltraPop.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraPop.png"), string_trim("clasweps/UltraPop.png")));
-file_delete(string_trim("clasweps/UltraPlasmaTrail.png"));while (file_exists(string_trim("clasweps/UltraPlasmaTrail.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraPlasmaTrail.png"), string_trim("clasweps/UltraPlasmaTrail.png")));
-file_delete(string_trim("clasweps/UltraPlasma.png"));while (file_exists(string_trim("clasweps/UltraPlasma.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraPlasma.png"), string_trim("clasweps/UltraPlasma.png")));
-file_delete(string_trim("clasweps/UltraMainRocket.png"));while (file_exists(string_trim("clasweps/UltraMainRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraMainRocket.png"), string_trim("clasweps/UltraMainRocket.png")));
-file_delete(string_trim("clasweps/UltraLightning.png"));while (file_exists(string_trim("clasweps/UltraLightning.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraLightning.png"), string_trim("clasweps/UltraLightning.png")));
-file_delete(string_trim("clasweps/UltraFlamethrower.png"));while (file_exists(string_trim("clasweps/UltraFlamethrower.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraFlamethrower.png"), string_trim("clasweps/UltraFlamethrower.png")));
-file_delete(string_trim("clasweps/UltraFlakBullet.png"));while (file_exists(string_trim("clasweps/UltraFlakBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraFlakBullet.png"), string_trim("clasweps/UltraFlakBullet.png")));
-file_delete(string_trim("clasweps/UltraFlak.png"));while (file_exists(string_trim("clasweps/UltraFlak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraFlak.png"), string_trim("clasweps/UltraFlak.png")));
-file_delete(string_trim("clasweps/UltraDisc.png"));while (file_exists(string_trim("clasweps/UltraDisc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/UltraDisc.png"), string_trim("clasweps/UltraDisc.png")));
-file_delete(string_trim("clasweps/TurboRocket.png"));while (file_exists(string_trim("clasweps/TurboRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TurboRocket.png"), string_trim("clasweps/TurboRocket.png")));
-file_delete(string_trim("clasweps/TurboLauncher.png"));while (file_exists(string_trim("clasweps/TurboLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TurboLauncher.png"), string_trim("clasweps/TurboLauncher.png")));
-file_delete(string_trim("clasweps/TrueUltraSuperDiscGun.png"));while (file_exists(string_trim("clasweps/TrueUltraSuperDiscGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrueUltraSuperDiscGun.png"), string_trim("clasweps/TrueUltraSuperDiscGun.png")));
-file_delete(string_trim("clasweps/TrailerPistol.png"));while (file_exists(string_trim("clasweps/TrailerPistol.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerPistol.png"), string_trim("clasweps/TrailerPistol.png")));
-file_delete(string_trim("clasweps/TrailerGun.png"));while (file_exists(string_trim("clasweps/TrailerGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerGun.png"), string_trim("clasweps/TrailerGun.png")));
-file_delete(string_trim("clasweps/TrailerCannon.png"));while (file_exists(string_trim("clasweps/TrailerCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/TrailerCannon.png"), string_trim("clasweps/TrailerCannon.png")));
-file_delete(string_trim("clasweps/ToxinBaller.png"));while (file_exists(string_trim("clasweps/ToxinBaller.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxinBaller.png"), string_trim("clasweps/ToxinBaller.png")));
-file_delete(string_trim("clasweps/Toxicball.png"));while (file_exists(string_trim("clasweps/Toxicball.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Toxicball.png"), string_trim("clasweps/Toxicball.png")));
-file_delete(string_trim("clasweps/ToxicShotty.png"));while (file_exists(string_trim("clasweps/ToxicShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicShotty.png"), string_trim("clasweps/ToxicShotty.png")));
-file_delete(string_trim("clasweps/ToxicRocket.png"));while (file_exists(string_trim("clasweps/ToxicRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicRocket.png"), string_trim("clasweps/ToxicRocket.png")));
-file_delete(string_trim("clasweps/ToxicFlak.png"));while (file_exists(string_trim("clasweps/ToxicFlak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicFlak.png"), string_trim("clasweps/ToxicFlak.png")));
-file_delete(string_trim("clasweps/ToxicDiscGun.png"));while (file_exists(string_trim("clasweps/ToxicDiscGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicDiscGun.png"), string_trim("clasweps/ToxicDiscGun.png")));
-file_delete(string_trim("clasweps/ToxicDisc.png"));while (file_exists(string_trim("clasweps/ToxicDisc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicDisc.png"), string_trim("clasweps/ToxicDisc.png")));
-file_delete(string_trim("clasweps/ToxicBlazer.png"));while (file_exists(string_trim("clasweps/ToxicBlazer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicBlazer.png"), string_trim("clasweps/ToxicBlazer.png")));
-file_delete(string_trim("clasweps/ToxicBazooka.png"));while (file_exists(string_trim("clasweps/ToxicBazooka.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ToxicBazooka.png"), string_trim("clasweps/ToxicBazooka.png")));
-file_delete(string_trim("clasweps/Torch.png"));while (file_exists(string_trim("clasweps/Torch.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Torch.png"), string_trim("clasweps/Torch.png")));
-file_delete(string_trim("clasweps/ThroneGun.png"));while (file_exists(string_trim("clasweps/ThroneGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneGun.png"), string_trim("clasweps/ThroneGun.png")));
-file_delete(string_trim("clasweps/ThroneCannon.png"));while (file_exists(string_trim("clasweps/ThroneCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneCannon.png"), string_trim("clasweps/ThroneCannon.png")));
-file_delete(string_trim("clasweps/ThroneBeam.png"));while (file_exists(string_trim("clasweps/ThroneBeam.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ThroneBeam.png"), string_trim("clasweps/ThroneBeam.png")));
-file_delete(string_trim("clasweps/SuperNukeLauncher.png"));while (file_exists(string_trim("clasweps/SuperNukeLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperNukeLauncher.png"), string_trim("clasweps/SuperNukeLauncher.png")));
-file_delete(string_trim("clasweps/SuperIceFlakCannon.png"));while (file_exists(string_trim("clasweps/SuperIceFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperIceFlakCannon.png"), string_trim("clasweps/SuperIceFlakCannon.png")));
-file_delete(string_trim("clasweps/SuperIceFlakBullet.png"));while (file_exists(string_trim("clasweps/SuperIceFlakBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperIceFlakBullet.png"), string_trim("clasweps/SuperIceFlakBullet.png")));
-file_delete(string_trim("clasweps/SuperFocusedFlakCannon.png"));while (file_exists(string_trim("clasweps/SuperFocusedFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperFocusedFlakCannon.png"), string_trim("clasweps/SuperFocusedFlakCannon.png")));
-file_delete(string_trim("clasweps/SuperBurstShotty.png"));while (file_exists(string_trim("clasweps/SuperBurstShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SuperBurstShotty.png"), string_trim("clasweps/SuperBurstShotty.png")));
-file_delete(string_trim("clasweps/Super Laser Cannon.png"));while (file_exists(string_trim("clasweps/Super Laser Cannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Super Laser Cannon.png"), string_trim("clasweps/Super Laser Cannon.png")));
-file_delete(string_trim("clasweps/Strikemarker.png"));while (file_exists(string_trim("clasweps/Strikemarker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Strikemarker.png"), string_trim("clasweps/Strikemarker.png")));
-file_delete(string_trim("clasweps/SniperBullet.png"));while (file_exists(string_trim("clasweps/SniperBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SniperBullet.png"), string_trim("clasweps/SniperBullet.png")));
-file_delete(string_trim("clasweps/Sniper.png"));while (file_exists(string_trim("clasweps/Sniper.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Sniper.png"), string_trim("clasweps/Sniper.png")));
-file_delete(string_trim("clasweps/SlotMachine.png"));while (file_exists(string_trim("clasweps/SlotMachine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/SlotMachine.png"), string_trim("clasweps/SlotMachine.png")));
-file_delete(string_trim("clasweps/ShineMask.png"));while (file_exists(string_trim("clasweps/ShineMask.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ShineMask.png"), string_trim("clasweps/ShineMask.png")));
-file_delete(string_trim("clasweps/Shine.png"));while (file_exists(string_trim("clasweps/Shine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Shine.png"), string_trim("clasweps/Shine.png")));
-file_delete(string_trim("clasweps/ScorpionArm.png"));while (file_exists(string_trim("clasweps/ScorpionArm.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ScorpionArm.png"), string_trim("clasweps/ScorpionArm.png")));
-file_delete(string_trim("clasweps/Scorcher.png"));while (file_exists(string_trim("clasweps/Scorcher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Scorcher.png"), string_trim("clasweps/Scorcher.png")));
-file_delete(string_trim("clasweps/Ricochetcrossbow.png"));while (file_exists(string_trim("clasweps/Ricochetcrossbow.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ricochetcrossbow.png"), string_trim("clasweps/Ricochetcrossbow.png")));
-file_delete(string_trim("clasweps/Ricochetbolt.png"));while (file_exists(string_trim("clasweps/Ricochetbolt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ricochetbolt.png"), string_trim("clasweps/Ricochetbolt.png")));
-file_delete(string_trim("clasweps/Reflector.png"));while (file_exists(string_trim("clasweps/Reflector.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Reflector.png"), string_trim("clasweps/Reflector.png")));
-file_delete(string_trim("clasweps/RapidPistol.png"));while (file_exists(string_trim("clasweps/RapidPistol.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/RapidPistol.png"), string_trim("clasweps/RapidPistol.png")));
-file_delete(string_trim("clasweps/RageBlaster.png"));while (file_exists(string_trim("clasweps/RageBlaster.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/RageBlaster.png"), string_trim("clasweps/RageBlaster.png")));
-file_delete(string_trim("clasweps/RacingThoughtsIcon.png"));while (file_exists(string_trim("clasweps/RacingThoughtsIcon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/RacingThoughtsIcon.png"), string_trim("clasweps/RacingThoughtsIcon.png")));
-file_delete(string_trim("clasweps/Quickdraw.png"));while (file_exists(string_trim("clasweps/Quickdraw.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Quickdraw.png"), string_trim("clasweps/Quickdraw.png")));
-file_delete(string_trim("clasweps/PopoZapper.png"));while (file_exists(string_trim("clasweps/PopoZapper.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoZapper.png"), string_trim("clasweps/PopoZapper.png")));
-file_delete(string_trim("clasweps/PopoSpreader.png"));while (file_exists(string_trim("clasweps/PopoSpreader.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoSpreader.png"), string_trim("clasweps/PopoSpreader.png")));
-file_delete(string_trim("clasweps/PopoScorcher.png"));while (file_exists(string_trim("clasweps/PopoScorcher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoScorcher.png"), string_trim("clasweps/PopoScorcher.png")));
-file_delete(string_trim("clasweps/PopoSMG.png"));while (file_exists(string_trim("clasweps/PopoSMG.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoSMG.png"), string_trim("clasweps/PopoSMG.png")));
-file_delete(string_trim("clasweps/PopoRevolver.png"));while (file_exists(string_trim("clasweps/PopoRevolver.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoRevolver.png"), string_trim("clasweps/PopoRevolver.png")));
-file_delete(string_trim("clasweps/PopoGuider.png"));while (file_exists(string_trim("clasweps/PopoGuider.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoGuider.png"), string_trim("clasweps/PopoGuider.png")));
-file_delete(string_trim("clasweps/PopoGenocide.png"));while (file_exists(string_trim("clasweps/PopoGenocide.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoGenocide.png"), string_trim("clasweps/PopoGenocide.png")));
-file_delete(string_trim("clasweps/PopoFireballer.png"));while (file_exists(string_trim("clasweps/PopoFireballer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoFireballer.png"), string_trim("clasweps/PopoFireballer.png")));
-file_delete(string_trim("clasweps/PopoFireball.png"));while (file_exists(string_trim("clasweps/PopoFireball.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoFireball.png"), string_trim("clasweps/PopoFireball.png")));
-file_delete(string_trim("clasweps/PopoExplosiongun.png"));while (file_exists(string_trim("clasweps/PopoExplosiongun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoExplosiongun.png"), string_trim("clasweps/PopoExplosiongun.png")));
-file_delete(string_trim("clasweps/PopoCharger.png"));while (file_exists(string_trim("clasweps/PopoCharger.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoCharger.png"), string_trim("clasweps/PopoCharger.png")));
-file_delete(string_trim("clasweps/PopoBurstShotty.png"));while (file_exists(string_trim("clasweps/PopoBurstShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoBurstShotty.png"), string_trim("clasweps/PopoBurstShotty.png")));
-file_delete(string_trim("clasweps/PopoBads.png"));while (file_exists(string_trim("clasweps/PopoBads.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PopoBads.png"), string_trim("clasweps/PopoBads.png")));
-file_delete(string_trim("clasweps/PlasmaShotty.png"));while (file_exists(string_trim("clasweps/PlasmaShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaShotty.png"), string_trim("clasweps/PlasmaShotty.png")));
-file_delete(string_trim("clasweps/PlasmaRocket.png"));while (file_exists(string_trim("clasweps/PlasmaRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaRocket.png"), string_trim("clasweps/PlasmaRocket.png")));
-file_delete(string_trim("clasweps/PlasmaNukeLauncher.png"));while (file_exists(string_trim("clasweps/PlasmaNukeLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaNukeLauncher.png"), string_trim("clasweps/PlasmaNukeLauncher.png")));
-file_delete(string_trim("clasweps/PlasmaNuke.png"));while (file_exists(string_trim("clasweps/PlasmaNuke.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaNuke.png"), string_trim("clasweps/PlasmaNuke.png")));
-file_delete(string_trim("clasweps/PlasmaFlak.png"));while (file_exists(string_trim("clasweps/PlasmaFlak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaFlak.png"), string_trim("clasweps/PlasmaFlak.png")));
-file_delete(string_trim("clasweps/PlasmaBazooka.png"));while (file_exists(string_trim("clasweps/PlasmaBazooka.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/PlasmaBazooka.png"), string_trim("clasweps/PlasmaBazooka.png")));
-file_delete(string_trim("clasweps/OmegaRevolver.png"));while (file_exists(string_trim("clasweps/OmegaRevolver.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/OmegaRevolver.png"), string_trim("clasweps/OmegaRevolver.png")));
-file_delete(string_trim("clasweps/NecroMachine.png"));while (file_exists(string_trim("clasweps/NecroMachine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/NecroMachine.png"), string_trim("clasweps/NecroMachine.png")));
-file_delete(string_trim("clasweps/NecroAllyRez.png"));while (file_exists(string_trim("clasweps/NecroAllyRez.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/NecroAllyRez.png"), string_trim("clasweps/NecroAllyRez.png")));
-file_delete(string_trim("clasweps/NecroAllyArea.png"));while (file_exists(string_trim("clasweps/NecroAllyArea.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/NecroAllyArea.png"), string_trim("clasweps/NecroAllyArea.png")));
-file_delete(string_trim("clasweps/Multislicer.gif"));while (file_exists(string_trim("clasweps/Multislicer.gif"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Multislicer.gif"), string_trim("clasweps/Multislicer.gif")));
-file_delete(string_trim("clasweps/MiniNukeLauncher.png"));while (file_exists(string_trim("clasweps/MiniNukeLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniNukeLauncher.png"), string_trim("clasweps/MiniNukeLauncher.png")));
-file_delete(string_trim("clasweps/MiniNuke.png"));while (file_exists(string_trim("clasweps/MiniNuke.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniNuke.png"), string_trim("clasweps/MiniNuke.png")));
-file_delete(string_trim("clasweps/MiniMineBlink.png"));while (file_exists(string_trim("clasweps/MiniMineBlink.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniMineBlink.png"), string_trim("clasweps/MiniMineBlink.png")));
-file_delete(string_trim("clasweps/MiniMine.png"));while (file_exists(string_trim("clasweps/MiniMine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniMine.png"), string_trim("clasweps/MiniMine.png")));
-file_delete(string_trim("clasweps/MiniGrenadeGatling.png"));while (file_exists(string_trim("clasweps/MiniGrenadeGatling.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MiniGrenadeGatling.png"), string_trim("clasweps/MiniGrenadeGatling.png")));
-file_delete(string_trim("clasweps/MineShotgun.png"));while (file_exists(string_trim("clasweps/MineShotgun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MineShotgun.png"), string_trim("clasweps/MineShotgun.png")));
-file_delete(string_trim("clasweps/MineLaunchr.png"));while (file_exists(string_trim("clasweps/MineLaunchr.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MineLaunchr.png"), string_trim("clasweps/MineLaunchr.png")));
-file_delete(string_trim("clasweps/Mine.png"));while (file_exists(string_trim("clasweps/Mine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Mine.png"), string_trim("clasweps/Mine.png")));
-file_delete(string_trim("clasweps/MegaNukeLauncher.png"));while (file_exists(string_trim("clasweps/MegaNukeLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MegaNukeLauncher.png"), string_trim("clasweps/MegaNukeLauncher.png")));
-file_delete(string_trim("clasweps/MegaNuke.png"));while (file_exists(string_trim("clasweps/MegaNuke.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/MegaNuke.png"), string_trim("clasweps/MegaNuke.png")));
-file_delete(string_trim("clasweps/LilGunther.png"));while (file_exists(string_trim("clasweps/LilGunther.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LilGunther.png"), string_trim("clasweps/LilGunther.png")));
-file_delete(string_trim("clasweps/LightningWrench.png"));while (file_exists(string_trim("clasweps/LightningWrench.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LightningWrench.png"), string_trim("clasweps/LightningWrench.png")));
-file_delete(string_trim("clasweps/LightningScrewdriver.png"));while (file_exists(string_trim("clasweps/LightningScrewdriver.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LightningScrewdriver.png"), string_trim("clasweps/LightningScrewdriver.png")));
-file_delete(string_trim("clasweps/LightningFlakCannon.png"));while (file_exists(string_trim("clasweps/LightningFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LightningFlakCannon.png"), string_trim("clasweps/LightningFlakCannon.png")));
-file_delete(string_trim("clasweps/LaserWave.png"));while (file_exists(string_trim("clasweps/LaserWave.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LaserWave.png"), string_trim("clasweps/LaserWave.png")));
-file_delete(string_trim("clasweps/LULDisc.png"));while (file_exists(string_trim("clasweps/LULDisc.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/LULDisc.png"), string_trim("clasweps/LULDisc.png")));
-file_delete(string_trim("clasweps/KirbyHammer.png"));while (file_exists(string_trim("clasweps/KirbyHammer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/KirbyHammer.png"), string_trim("clasweps/KirbyHammer.png")));
-file_delete(string_trim("clasweps/KingBladeSword.png"));while (file_exists(string_trim("clasweps/KingBladeSword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/KingBladeSword.png"), string_trim("clasweps/KingBladeSword.png")));
-file_delete(string_trim("clasweps/KingBladeGhost.png"));while (file_exists(string_trim("clasweps/KingBladeGhost.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/KingBladeGhost.png"), string_trim("clasweps/KingBladeGhost.png")));
-file_delete(string_trim("clasweps/Jab.png"));while (file_exists(string_trim("clasweps/Jab.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Jab.png"), string_trim("clasweps/Jab.png")));
-file_delete(string_trim("clasweps/InvCrystalGun.png"));while (file_exists(string_trim("clasweps/InvCrystalGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/InvCrystalGun.png"), string_trim("clasweps/InvCrystalGun.png")));
-file_delete(string_trim("clasweps/IceSlugger.png"));while (file_exists(string_trim("clasweps/IceSlugger.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceSlugger.png"), string_trim("clasweps/IceSlugger.png")));
-file_delete(string_trim("clasweps/IceSlugHit.png"));while (file_exists(string_trim("clasweps/IceSlugHit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceSlugHit.png"), string_trim("clasweps/IceSlugHit.png")));
-file_delete(string_trim("clasweps/IceSlugDissapear.png"));while (file_exists(string_trim("clasweps/IceSlugDissapear.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceSlugDissapear.png"), string_trim("clasweps/IceSlugDissapear.png")));
-file_delete(string_trim("clasweps/IceSlug.png"));while (file_exists(string_trim("clasweps/IceSlug.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceSlug.png"), string_trim("clasweps/IceSlug.png")));
-file_delete(string_trim("clasweps/IceShot.png"));while (file_exists(string_trim("clasweps/IceShot.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceShot.png"), string_trim("clasweps/IceShot.png")));
-file_delete(string_trim("clasweps/IceShellHit.png"));while (file_exists(string_trim("clasweps/IceShellHit.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceShellHit.png"), string_trim("clasweps/IceShellHit.png")));
-file_delete(string_trim("clasweps/IceShellDissapear.png"));while (file_exists(string_trim("clasweps/IceShellDissapear.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceShellDissapear.png"), string_trim("clasweps/IceShellDissapear.png")));
-file_delete(string_trim("clasweps/IceShell.png"));while (file_exists(string_trim("clasweps/IceShell.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceShell.png"), string_trim("clasweps/IceShell.png")));
-file_delete(string_trim("clasweps/IceShard.png"));while (file_exists(string_trim("clasweps/IceShard.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceShard.png"), string_trim("clasweps/IceShard.png")));
-file_delete(string_trim("clasweps/IceFlakCannon.png"));while (file_exists(string_trim("clasweps/IceFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceFlakCannon.png"), string_trim("clasweps/IceFlakCannon.png")));
-file_delete(string_trim("clasweps/IceFlakBullet.png"));while (file_exists(string_trim("clasweps/IceFlakBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceFlakBullet.png"), string_trim("clasweps/IceFlakBullet.png")));
-file_delete(string_trim("clasweps/IceCannon.png"));while (file_exists(string_trim("clasweps/IceCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/IceCannon.png"), string_trim("clasweps/IceCannon.png")));
-file_delete(string_trim("clasweps/Hyper_Revolver.png"));while (file_exists(string_trim("clasweps/Hyper_Revolver.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Hyper_Revolver.png"), string_trim("clasweps/Hyper_Revolver.png")));
-file_delete(string_trim("clasweps/HyperShotty.png"));while (file_exists(string_trim("clasweps/HyperShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HyperShotty.png"), string_trim("clasweps/HyperShotty.png")));
-file_delete(string_trim("clasweps/HyperFlaregun.png"));while (file_exists(string_trim("clasweps/HyperFlaregun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HyperFlaregun.png"), string_trim("clasweps/HyperFlaregun.png")));
-file_delete(string_trim("clasweps/HyperFlakCannon.png"));while (file_exists(string_trim("clasweps/HyperFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HyperFlakCannon.png"), string_trim("clasweps/HyperFlakCannon.png")));
-file_delete(string_trim("clasweps/HuntingRifle.png"));while (file_exists(string_trim("clasweps/HuntingRifle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HuntingRifle.png"), string_trim("clasweps/HuntingRifle.png")));
-file_delete(string_trim("clasweps/Hellfire.png"));while (file_exists(string_trim("clasweps/Hellfire.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Hellfire.png"), string_trim("clasweps/Hellfire.png")));
-file_delete(string_trim("clasweps/Heavystrikemarker.png"));while (file_exists(string_trim("clasweps/Heavystrikemarker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Heavystrikemarker.png"), string_trim("clasweps/Heavystrikemarker.png")));
-file_delete(string_trim("clasweps/HeavyWaveGun.png"));while (file_exists(string_trim("clasweps/HeavyWaveGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyWaveGun.png"), string_trim("clasweps/HeavyWaveGun.png")));
-file_delete(string_trim("clasweps/HeavyStriker.png"));while (file_exists(string_trim("clasweps/HeavyStriker.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyStriker.png"), string_trim("clasweps/HeavyStriker.png")));
-file_delete(string_trim("clasweps/HeavySMG.png"));while (file_exists(string_trim("clasweps/HeavySMG.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavySMG.png"), string_trim("clasweps/HeavySMG.png")));
-file_delete(string_trim("clasweps/HeavyLaser.png"));while (file_exists(string_trim("clasweps/HeavyLaser.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyLaser.png"), string_trim("clasweps/HeavyLaser.png")));
-file_delete(string_trim("clasweps/HeavyJab.png"));while (file_exists(string_trim("clasweps/HeavyJab.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyJab.png"), string_trim("clasweps/HeavyJab.png")));
-file_delete(string_trim("clasweps/HeavyGlove.png"));while (file_exists(string_trim("clasweps/HeavyGlove.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyGlove.png"), string_trim("clasweps/HeavyGlove.png")));
-file_delete(string_trim("clasweps/HeavyFlaregun.png"));while (file_exists(string_trim("clasweps/HeavyFlaregun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyFlaregun.png"), string_trim("clasweps/HeavyFlaregun.png")));
-file_delete(string_trim("clasweps/HeavyFlare.png"));while (file_exists(string_trim("clasweps/HeavyFlare.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyFlare.png"), string_trim("clasweps/HeavyFlare.png")));
-file_delete(string_trim("clasweps/HeavyFlak.png"));while (file_exists(string_trim("clasweps/HeavyFlak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/HeavyFlak.png"), string_trim("clasweps/HeavyFlak.png")));
-file_delete(string_trim("clasweps/Heavy shotty.png"));while (file_exists(string_trim("clasweps/Heavy shotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Heavy shotty.png"), string_trim("clasweps/Heavy shotty.png")));
-file_delete(string_trim("clasweps/GuidedShotty.png"));while (file_exists(string_trim("clasweps/GuidedShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuidedShotty.png"), string_trim("clasweps/GuidedShotty.png")));
-file_delete(string_trim("clasweps/GuidedPistol.png"));while (file_exists(string_trim("clasweps/GuidedPistol.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuidedPistol.png"), string_trim("clasweps/GuidedPistol.png")));
-file_delete(string_trim("clasweps/GuidedMinigun.png"));while (file_exists(string_trim("clasweps/GuidedMinigun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuidedMinigun.png"), string_trim("clasweps/GuidedMinigun.png")));
-file_delete(string_trim("clasweps/GuidedBlaster.png"));while (file_exists(string_trim("clasweps/GuidedBlaster.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GuidedBlaster.png"), string_trim("clasweps/GuidedBlaster.png")));
-file_delete(string_trim("clasweps/Greensmallexplosion.png"));while (file_exists(string_trim("clasweps/Greensmallexplosion.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Greensmallexplosion.png"), string_trim("clasweps/Greensmallexplosion.png")));
-file_delete(string_trim("clasweps/GoldenFireballer.png"));while (file_exists(string_trim("clasweps/GoldenFireballer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GoldenFireballer.png"), string_trim("clasweps/GoldenFireballer.png")));
-file_delete(string_trim("clasweps/GoldenBlazer.png"));while (file_exists(string_trim("clasweps/GoldenBlazer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GoldenBlazer.png"), string_trim("clasweps/GoldenBlazer.png")));
-file_delete(string_trim("clasweps/GoldScorpionArm.png"));while (file_exists(string_trim("clasweps/GoldScorpionArm.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GoldScorpionArm.png"), string_trim("clasweps/GoldScorpionArm.png")));
-file_delete(string_trim("clasweps/GigaHammer.png"));while (file_exists(string_trim("clasweps/GigaHammer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GigaHammer.png"), string_trim("clasweps/GigaHammer.png")));
-file_delete(string_trim("clasweps/Genocide.png"));while (file_exists(string_trim("clasweps/Genocide.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Genocide.png"), string_trim("clasweps/Genocide.png")));
-file_delete(string_trim("clasweps/GatlingSplinter.png"));while (file_exists(string_trim("clasweps/GatlingSplinter.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GatlingSplinter.png"), string_trim("clasweps/GatlingSplinter.png")));
-file_delete(string_trim("clasweps/GatlingLauncher.png"));while (file_exists(string_trim("clasweps/GatlingLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/GatlingLauncher.png"), string_trim("clasweps/GatlingLauncher.png")));
-file_delete(string_trim("clasweps/FocusedFlakCannon.png"));while (file_exists(string_trim("clasweps/FocusedFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/FocusedFlakCannon.png"), string_trim("clasweps/FocusedFlakCannon.png")));
-file_delete(string_trim("clasweps/FocusShotgun.png"));while (file_exists(string_trim("clasweps/FocusShotgun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/FocusShotgun.png"), string_trim("clasweps/FocusShotgun.png")));
-file_delete(string_trim("clasweps/FlameSword.png"));while (file_exists(string_trim("clasweps/FlameSword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/FlameSword.png"), string_trim("clasweps/FlameSword.png")));
-file_delete(string_trim("clasweps/Fireballer.png"));while (file_exists(string_trim("clasweps/Fireballer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Fireballer.png"), string_trim("clasweps/Fireballer.png")));
-file_delete(string_trim("clasweps/Explosiongun.png"));while (file_exists(string_trim("clasweps/Explosiongun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Explosiongun.png"), string_trim("clasweps/Explosiongun.png")));
-file_delete(string_trim("clasweps/ExplosionPistol.png"));while (file_exists(string_trim("clasweps/ExplosionPistol.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ExplosionPistol.png"), string_trim("clasweps/ExplosionPistol.png")));
-file_delete(string_trim("clasweps/ExecutionerHand.png"));while (file_exists(string_trim("clasweps/ExecutionerHand.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ExecutionerHand.png"), string_trim("clasweps/ExecutionerHand.png")));
-file_delete(string_trim("clasweps/Executioner.png"));while (file_exists(string_trim("clasweps/Executioner.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Executioner.png"), string_trim("clasweps/Executioner.png")));
-file_delete(string_trim("clasweps/Evilsbanebeam.png"));while (file_exists(string_trim("clasweps/Evilsbanebeam.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Evilsbanebeam.png"), string_trim("clasweps/Evilsbanebeam.png")));
-file_delete(string_trim("clasweps/Energy Wrench.png"));while (file_exists(string_trim("clasweps/Energy Wrench.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Energy Wrench.png"), string_trim("clasweps/Energy Wrench.png")));
-file_delete(string_trim("clasweps/Energy Shovel.png"));while (file_exists(string_trim("clasweps/Energy Shovel.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Energy Shovel.png"), string_trim("clasweps/Energy Shovel.png")));
-file_delete(string_trim("clasweps/Energy Jackhammer.png"));while (file_exists(string_trim("clasweps/Energy Jackhammer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Energy Jackhammer.png"), string_trim("clasweps/Energy Jackhammer.png")));
-file_delete(string_trim("clasweps/DoubleIceShot.png"));while (file_exists(string_trim("clasweps/DoubleIceShot.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DoubleIceShot.png"), string_trim("clasweps/DoubleIceShot.png")));
-file_delete(string_trim("clasweps/DogHead.png"));while (file_exists(string_trim("clasweps/DogHead.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DogHead.png"), string_trim("clasweps/DogHead.png")));
-file_delete(string_trim("clasweps/DemolitionsLauncher.png"));while (file_exists(string_trim("clasweps/DemolitionsLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DemolitionsLauncher.png"), string_trim("clasweps/DemolitionsLauncher.png")));
-file_delete(string_trim("clasweps/Demolitionbomb.png"));while (file_exists(string_trim("clasweps/Demolitionbomb.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Demolitionbomb.png"), string_trim("clasweps/Demolitionbomb.png")));
-file_delete(string_trim("clasweps/DartlingGun.png"));while (file_exists(string_trim("clasweps/DartlingGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DartlingGun.png"), string_trim("clasweps/DartlingGun.png")));
-file_delete(string_trim("clasweps/DartGun.png"));while (file_exists(string_trim("clasweps/DartGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/DartGun.png"), string_trim("clasweps/DartGun.png")));
-file_delete(string_trim("clasweps/Dart.png"));while (file_exists(string_trim("clasweps/Dart.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Dart.png"), string_trim("clasweps/Dart.png")));
-file_delete(string_trim("clasweps/CrystalGun.png"));while (file_exists(string_trim("clasweps/CrystalGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/CrystalGun.png"), string_trim("clasweps/CrystalGun.png")));
-file_delete(string_trim("clasweps/ChimeraShell.png"));while (file_exists(string_trim("clasweps/ChimeraShell.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChimeraShell.png"), string_trim("clasweps/ChimeraShell.png")));
-file_delete(string_trim("clasweps/ChimeraExplosive.png"));while (file_exists(string_trim("clasweps/ChimeraExplosive.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChimeraExplosive.png"), string_trim("clasweps/ChimeraExplosive.png")));
-file_delete(string_trim("clasweps/ChimeraEnergy.png"));while (file_exists(string_trim("clasweps/ChimeraEnergy.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChimeraEnergy.png"), string_trim("clasweps/ChimeraEnergy.png")));
-file_delete(string_trim("clasweps/ChimeraBullet.png"));while (file_exists(string_trim("clasweps/ChimeraBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChimeraBullet.png"), string_trim("clasweps/ChimeraBullet.png")));
-file_delete(string_trim("clasweps/ChimeraBolt.png"));while (file_exists(string_trim("clasweps/ChimeraBolt.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChimeraBolt.png"), string_trim("clasweps/ChimeraBolt.png")));
-file_delete(string_trim("clasweps/ChargeSlugger.png"));while (file_exists(string_trim("clasweps/ChargeSlugger.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeSlugger.png"), string_trim("clasweps/ChargeSlugger.png")));
-file_delete(string_trim("clasweps/ChargePlasmagun.png"));while (file_exists(string_trim("clasweps/ChargePlasmagun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargePlasmagun.png"), string_trim("clasweps/ChargePlasmagun.png")));
-file_delete(string_trim("clasweps/ChargeLaser.png"));while (file_exists(string_trim("clasweps/ChargeLaser.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeLaser.png"), string_trim("clasweps/ChargeLaser.png")));
-file_delete(string_trim("clasweps/ChargeGun.png"));while (file_exists(string_trim("clasweps/ChargeGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeGun.png"), string_trim("clasweps/ChargeGun.png")));
-file_delete(string_trim("clasweps/ChargeFlamethrower.png"));while (file_exists(string_trim("clasweps/ChargeFlamethrower.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeFlamethrower.png"), string_trim("clasweps/ChargeFlamethrower.png")));
-file_delete(string_trim("clasweps/ChargeFlakCannon.png"));while (file_exists(string_trim("clasweps/ChargeFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeFlakCannon.png"), string_trim("clasweps/ChargeFlakCannon.png")));
-file_delete(string_trim("clasweps/ChargeDiscGun.png"));while (file_exists(string_trim("clasweps/ChargeDiscGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeDiscGun.png"), string_trim("clasweps/ChargeDiscGun.png")));
-file_delete(string_trim("clasweps/ChargeCrossbow.png"));while (file_exists(string_trim("clasweps/ChargeCrossbow.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeCrossbow.png"), string_trim("clasweps/ChargeCrossbow.png")));
-file_delete(string_trim("clasweps/ChargeBlade.png"));while (file_exists(string_trim("clasweps/ChargeBlade.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeBlade.png"), string_trim("clasweps/ChargeBlade.png")));
-file_delete(string_trim("clasweps/ChargeBazooka.png"));while (file_exists(string_trim("clasweps/ChargeBazooka.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/ChargeBazooka.png"), string_trim("clasweps/ChargeBazooka.png")));
-file_delete(string_trim("clasweps/Casey.png"));while (file_exists(string_trim("clasweps/Casey.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Casey.png"), string_trim("clasweps/Casey.png")));
-file_delete(string_trim("clasweps/Cannon.png"));while (file_exists(string_trim("clasweps/Cannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Cannon.png"), string_trim("clasweps/Cannon.png")));
-file_delete(string_trim("clasweps/BusterGun.png"));while (file_exists(string_trim("clasweps/BusterGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BusterGun.png"), string_trim("clasweps/BusterGun.png")));
-file_delete(string_trim("clasweps/BurstShotty.png"));while (file_exists(string_trim("clasweps/BurstShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BurstShotty.png"), string_trim("clasweps/BurstShotty.png")));
-file_delete(string_trim("clasweps/BrokenFlakCannon.png"));while (file_exists(string_trim("clasweps/BrokenFlakCannon.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BrokenFlakCannon.png"), string_trim("clasweps/BrokenFlakCannon.png")));
-file_delete(string_trim("clasweps/BoxingGlove.png"));while (file_exists(string_trim("clasweps/BoxingGlove.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BoxingGlove.png"), string_trim("clasweps/BoxingGlove.png")));
-file_delete(string_trim("clasweps/Bouncer Flak.png"));while (file_exists(string_trim("clasweps/Bouncer Flak.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Bouncer Flak.png"), string_trim("clasweps/Bouncer Flak.png")));
-file_delete(string_trim("clasweps/BluntHammer.png"));while (file_exists(string_trim("clasweps/BluntHammer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BluntHammer.png"), string_trim("clasweps/BluntHammer.png")));
-file_delete(string_trim("clasweps/BloodyTrail.png"));while (file_exists(string_trim("clasweps/BloodyTrail.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodyTrail.png"), string_trim("clasweps/BloodyTrail.png")));
-file_delete(string_trim("clasweps/BloodyRifle.png"));while (file_exists(string_trim("clasweps/BloodyRifle.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodyRifle.png"), string_trim("clasweps/BloodyRifle.png")));
-file_delete(string_trim("clasweps/BloodyRevolver.png"));while (file_exists(string_trim("clasweps/BloodyRevolver.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodyRevolver.png"), string_trim("clasweps/BloodyRevolver.png")));
-file_delete(string_trim("clasweps/BloodyBullet.png"));while (file_exists(string_trim("clasweps/BloodyBullet.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodyBullet.png"), string_trim("clasweps/BloodyBullet.png")));
-file_delete(string_trim("clasweps/BloodsuckerProj.png"));while (file_exists(string_trim("clasweps/BloodsuckerProj.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodsuckerProj.png"), string_trim("clasweps/BloodsuckerProj.png")));
-file_delete(string_trim("clasweps/Bloodballer.png"));while (file_exists(string_trim("clasweps/Bloodballer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Bloodballer.png"), string_trim("clasweps/Bloodballer.png")));
-file_delete(string_trim("clasweps/Bloodball.png"));while (file_exists(string_trim("clasweps/Bloodball.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Bloodball.png"), string_trim("clasweps/Bloodball.png")));
-file_delete(string_trim("clasweps/BloodMineLauncher.png"));while (file_exists(string_trim("clasweps/BloodMineLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodMineLauncher.png"), string_trim("clasweps/BloodMineLauncher.png")));
-file_delete(string_trim("clasweps/BloodMine.png"));while (file_exists(string_trim("clasweps/BloodMine.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodMine.png"), string_trim("clasweps/BloodMine.png")));
-file_delete(string_trim("clasweps/BloodGenocide.png"));while (file_exists(string_trim("clasweps/BloodGenocide.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodGenocide.png"), string_trim("clasweps/BloodGenocide.png")));
-file_delete(string_trim("clasweps/BloodFlame.png"));while (file_exists(string_trim("clasweps/BloodFlame.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodFlame.png"), string_trim("clasweps/BloodFlame.png")));
-file_delete(string_trim("clasweps/BloodExplosionGun.png"));while (file_exists(string_trim("clasweps/BloodExplosionGun.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BloodExplosionGun.png"), string_trim("clasweps/BloodExplosionGun.png")));
-file_delete(string_trim("clasweps/BlinkSword.png"));while (file_exists(string_trim("clasweps/BlinkSword.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BlinkSword.png"), string_trim("clasweps/BlinkSword.png")));
-file_delete(string_trim("clasweps/Blazer.png"));while (file_exists(string_trim("clasweps/Blazer.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Blazer.png"), string_trim("clasweps/Blazer.png")));
-file_delete(string_trim("clasweps/BigBlaster.png"));while (file_exists(string_trim("clasweps/BigBlaster.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BigBlaster.png"), string_trim("clasweps/BigBlaster.png")));
-file_delete(string_trim("clasweps/Battleshovel.png"));while (file_exists(string_trim("clasweps/Battleshovel.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Battleshovel.png"), string_trim("clasweps/Battleshovel.png")));
-file_delete(string_trim("clasweps/BanditBlaster.png"));while (file_exists(string_trim("clasweps/BanditBlaster.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BanditBlaster.png"), string_trim("clasweps/BanditBlaster.png")));
-file_delete(string_trim("clasweps/BallMomBlaster.png"));while (file_exists(string_trim("clasweps/BallMomBlaster.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BallMomBlaster.png"), string_trim("clasweps/BallMomBlaster.png")));
-file_delete(string_trim("clasweps/BADSRocket.png"));while (file_exists(string_trim("clasweps/BADSRocket.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/BADSRocket.png"), string_trim("clasweps/BADSRocket.png")));
-file_delete(string_trim("clasweps/AutoIceShot.png"));while (file_exists(string_trim("clasweps/AutoIceShot.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/AutoIceShot.png"), string_trim("clasweps/AutoIceShot.png")));
-file_delete(string_trim("clasweps/AutoBurstShotty.png"));while (file_exists(string_trim("clasweps/AutoBurstShotty.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/AutoBurstShotty.png"), string_trim("clasweps/AutoBurstShotty.png")));
-file_delete(string_trim("clasweps/AceLauncher.png"));while (file_exists(string_trim("clasweps/AceLauncher.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/AceLauncher.png"), string_trim("clasweps/AceLauncher.png")));
-file_delete(string_trim("clasweps/Ace.png"));while (file_exists(string_trim("clasweps/Ace.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/Ace.png"), string_trim("clasweps/Ace.png")));
-file_delete(string_trim("clasweps/AccuserHand.png"));while (file_exists(string_trim("clasweps/AccuserHand.png"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/clasweps/AccuserHand.png"), string_trim("clasweps/AccuserHand.png")));
-file_delete(string_trim("Auto_Bullet_Shotgun.wep.gml"));while (file_exists(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/Auto_Bullet_Shotgun.wep.gml"), string_trim("Auto_Bullet_Shotgun.wep.gml")));
-file_delete(string_trim("devastator.mod.gml"));while (file_exists(string_trim("devastator.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/devastator.mod.gml"), string_trim("devastator.mod.gml")));
-file_delete(string_trim("coolerhud.mod.gml"));while (file_exists(string_trim("coolerhud.mod.gml"))) {wait 1;}wait(file_download(string_trim("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/coolerhud.mod.gml"), string_trim("coolerhud.mod.gml")));
-while (!file_loaded(string_trim("balls/balls.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("balls/laserwrench.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("balls/ball1.ogg"))) {wait 1;}
-while (!file_loaded(string_trim("balls/ball2.ogg"))) {wait 1;}
-while (!file_loaded(string_trim("balls/ball3.ogg"))) {wait 1;}
-while (!file_loaded(string_trim("balls/ball4.ogg"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/widesword.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultrasuperdiscgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultrasplinter.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraseeker.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultrarifle.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultrapopgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraplasmagun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultralightning.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultradiscgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/torch.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/swiftsword.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/splintergatling.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/snl.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/slc.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/shrineroom.area.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/shine.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/scorpionarm.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/scorcher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ringofplasma.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ringoffire.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/racingthoughts.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/quickdraw.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/plasmashotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/orbitalstriker.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/orbitalbarrage.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/multislicer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/multiflakcannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/longsword.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/lightningscrew.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/lightningflak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/kirbyhammer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/iceslugger.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/iceshotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/hypershotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/hyperrevolver.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/hyperflare.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/hyperflak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/heavywave.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/heavystriker.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/heavyshovel.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/heavyshot.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/goldscorpionarm.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/goldenblazer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/funnyxd.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/executioner.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/evilsbane.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/energywrench.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/energyshovel.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/energyjackhammer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/enemyloot.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/doubleiceshotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/doghead.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/slots.crown.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Slaughter.crown.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Pain.crown.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Choice.crown.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/claswepsshit.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/chimerashell.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/chimeraexplosive.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/chimeraenergy.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/chimerabullet.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/chimerabolt.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/catalyst.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/casey.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/cannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/brokenflak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/bossintros.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/bloodyrifle.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/bloodyrevolver.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/blazer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/battleshovel.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/autoiceshotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/autoburstshotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ZapMachineGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap shotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap gun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap Cannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ultraflamethrower.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSlug.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraBazook.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TurboLauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerPistol.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerCannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Toxinballer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicDiscGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicBlazer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicBazooka.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneCannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneBeam.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperIceFlakCannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperFocusedFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperBurstShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Sniper.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SlotMachine.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ricochetcrossbow.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/RapidPistol.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/RageBlaster.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Poposcorcher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoZapper.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoSpreader.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoSMG.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoRevolver.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoGuider.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoGenocide.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoFireballer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoExplosionGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoCharger.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoBurstShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoBADS.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaNuker.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaBazooka.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/OmegaRevolver.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/NecroMachine.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniNukeLauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MineShotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MineLauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MegaNuker.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LilGunther.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LightningWrench.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Laserwave.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/KingBlade.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/InvCrystalLaser.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceFlakCannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceCannon.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HuntingRifle.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Hellfire.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavySMG.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyLaser.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyGlove.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyFlare.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuiderShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuiderPistol.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuiderMinigun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuiderBlaster.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GoldenFireballer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GigaHammer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Genocide.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GatlingNader.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GatlingMiniNader.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/FocusedFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/FocusShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Flamesword.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Fireballer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ExplosionPistol.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ExplosionGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DemolitionsLauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DartlingGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DartGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/CrystalLaser.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeSlugger.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargePlasma.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeLaser.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeFlamethrower.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeDisc.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeCrossbow.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeBlade.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeBazooka.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BusterGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BurstShotty.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BoxingGlove.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BouncerFlak.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BluntHammer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Bloodballer.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodMineLauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodGenocide.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodExplosionGun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BlinkSword.Wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BigBlaster.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BanditBlaster.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BallMomBlaster.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BADS.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Acelauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/AccuserHand.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/widesword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraseekerpro.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraplasmaproj.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraplasmaimpact.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultramegaseeker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ultraflame.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/thoughtslightning.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/swiftsword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/sprBaseball.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/shine.ogg"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ringofplasma.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ringoffire.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/racingthoughtsbutton.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/orbitalstriker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/orbitalbarrage.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/multiflakcannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/longsword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/lightningshank.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/lightningflak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/heavy shovel.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/evilsbane.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Crown of Slots.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Crown of Slaughter.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/Crown of Pain.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/ChoiceBuddyWalk.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/crowns/ChoiceBuddyIdle.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/catalyst.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/bulletcannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/barragemarker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/bads.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ZapSlug.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ZapMG.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ZapBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap Shotgun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap Gun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Zap Cannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ultrasuperdiscgun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraslugDissapear.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ultradiscgun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ultrabazooka.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSuperDisc.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSplinterPro.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSplinter.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSmoke.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSlugger.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSlugHit.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSlug.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraSeeker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraRocketFlame.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraRifle.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraPop.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraPlasmaTrail.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraPlasma.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraMainRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraLightning.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraFlamethrower.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraFlakBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraFlak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/UltraDisc.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TurboRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TurboLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrueUltraSuperDiscGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerPistol.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/TrailerCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxinBaller.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Toxicball.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicFlak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicDiscGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicDisc.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicBlazer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ToxicBazooka.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Torch.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ThroneBeam.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperNukeLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperIceFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperIceFlakBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperFocusedFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SuperBurstShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Super Laser Cannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Strikemarker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SniperBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Sniper.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/SlotMachine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ShineMask.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Shine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ScorpionArm.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Scorcher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ricochetcrossbow.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ricochetbolt.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Reflector.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/RapidPistol.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/RageBlaster.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/RacingThoughtsIcon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Quickdraw.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoZapper.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoSpreader.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoScorcher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoSMG.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoRevolver.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoGuider.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoGenocide.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoFireballer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoFireball.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoExplosiongun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoCharger.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoBurstShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PopoBads.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaNukeLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaNuke.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaFlak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/PlasmaBazooka.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/OmegaRevolver.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/NecroMachine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/NecroAllyRez.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/NecroAllyArea.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Multislicer.gif"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniNukeLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniNuke.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniMineBlink.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniMine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MiniGrenadeGatling.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MineShotgun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MineLaunchr.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Mine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MegaNukeLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/MegaNuke.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LilGunther.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LightningWrench.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LightningScrewdriver.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LightningFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LaserWave.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/LULDisc.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/KirbyHammer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/KingBladeSword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/KingBladeGhost.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Jab.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/InvCrystalGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceSlugger.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceSlugHit.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceSlugDissapear.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceSlug.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceShot.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceShellHit.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceShellDissapear.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceShell.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceShard.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceFlakBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/IceCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Hyper_Revolver.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HyperShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HyperFlaregun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HyperFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HuntingRifle.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Hellfire.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Heavystrikemarker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyWaveGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyStriker.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavySMG.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyLaser.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyJab.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyGlove.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyFlaregun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyFlare.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/HeavyFlak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Heavy shotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuidedShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuidedPistol.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuidedMinigun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GuidedBlaster.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Greensmallexplosion.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GoldenFireballer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GoldenBlazer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GoldScorpionArm.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GigaHammer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Genocide.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GatlingSplinter.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/GatlingLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/FocusedFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/FocusShotgun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/FlameSword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Fireballer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Explosiongun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ExplosionPistol.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ExecutionerHand.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Executioner.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Evilsbanebeam.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Energy Wrench.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Energy Shovel.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Energy Jackhammer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DoubleIceShot.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DogHead.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DemolitionsLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Demolitionbomb.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DartlingGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/DartGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Dart.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/CrystalGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChimeraShell.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChimeraExplosive.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChimeraEnergy.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChimeraBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChimeraBolt.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeSlugger.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargePlasmagun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeLaser.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeFlamethrower.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeDiscGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeCrossbow.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeBlade.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/ChargeBazooka.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Casey.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Cannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BusterGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BurstShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BrokenFlakCannon.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BoxingGlove.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Bouncer Flak.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BluntHammer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodyTrail.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodyRifle.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodyRevolver.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodyBullet.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodsuckerProj.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Bloodballer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Bloodball.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodMineLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodMine.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodGenocide.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodFlame.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BloodExplosionGun.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BlinkSword.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Blazer.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BigBlaster.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Battleshovel.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BanditBlaster.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BallMomBlaster.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/BADSRocket.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/AutoIceShot.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/AutoBurstShotty.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/AceLauncher.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/Ace.png"))) {wait 1;}
-while (!file_loaded(string_trim("clasweps/AccuserHand.png"))) {wait 1;}
-while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim("devastator.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim("coolerhud.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/balls/balls.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/balls/laserwrench.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/widesword.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasuperdiscgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasplinter.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultraseeker.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultrarifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultrapopgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultraplasmagun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultralightning.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ultradiscgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/torch.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/swiftsword.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/splintergatling.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/snl.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/slc.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/shrineroom.area.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/shine.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/scorpionarm.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/scorcher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ringofplasma.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ringoffire.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/racingthoughts.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/quickdraw.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/plasmashotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalstriker.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalbarrage.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/multislicer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/multiflakcannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/longsword.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/lightningscrew.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/lightningflak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/kirbyhammer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/iceslugger.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/iceshotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/hypershotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/hyperrevolver.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflare.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/heavywave.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/heavystriker.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshovel.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshot.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/goldscorpionarm.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/goldenblazer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/funnyxd.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/executioner.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/evilsbane.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/energywrench.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/energyshovel.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/energyjackhammer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/enemyloot.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/doubleiceshotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/doghead.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/slots.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Slaughter.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Pain.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Choice.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/claswepsshit.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/chimerashell.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraexplosive.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraenergy.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabullet.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/catalyst.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/casey.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/cannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/brokenflak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/bossintros.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrevolver.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/blazer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/battleshovel.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/autoiceshotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/autoburstshotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ZapMachineGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Zap shotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Zap gun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Zap Cannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Ultraflamethrower.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/UltraSlug.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/UltraFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/UltraBazook.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/TurboLauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerPistol.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerCannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Toxinballer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicDiscGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicBlazer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicBazooka.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneCannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneBeam.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/SuperIceFlakCannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/SuperFocusedFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/SuperBurstShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Sniper.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/SlotMachine.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Ricochetcrossbow.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/RapidPistol.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/RageBlaster.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Poposcorcher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoZapper.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoSpreader.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoSMG.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoRevolver.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoGuider.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoGenocide.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoFireballer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoExplosionGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoCharger.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoBurstShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PopoBADS.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaNuker.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaBazooka.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/OmegaRevolver.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/NecroMachine.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/MiniNukeLauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/MineShotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/MineLauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/MegaNuker.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/LilGunther.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/LightningWrench.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Laserwave.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/KingBlade.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/InvCrystalLaser.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/IceFlakCannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/IceCannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HuntingRifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Hellfire.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HeavySMG.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyLaser.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyGlove.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyFlare.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderPistol.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderMinigun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderBlaster.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GoldenFireballer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GigaHammer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Genocide.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GatlingNader.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/GatlingMiniNader.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/FocusedFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/FocusShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Flamesword.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Fireballer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionPistol.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/DemolitionsLauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/DartlingGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/DartGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/CrystalLaser.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeSlugger.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargePlasma.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeLaser.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeFlamethrower.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeDisc.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeCrossbow.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeBlade.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeBazooka.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BusterGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BurstShotty.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BoxingGlove.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BouncerFlak.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BluntHammer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Bloodballer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BloodMineLauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BloodGenocide.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BloodExplosionGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BlinkSword.Wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BigBlaster.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BanditBlaster.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BallMomBlaster.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/BADS.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/Acelauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/clasweps/AccuserHand.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Auto_Bullet_Shotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/devastator.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/coolerhud.mod.gml"));
+downloadmod("balls/balls.mod.gml
+");
+downloadmod("balls/laserwrench.wep.gml
+");
+downloadmod("balls/ball1.ogg
+");
+downloadmod("balls/ball2.ogg
+");
+downloadmod("balls/ball3.ogg
+");
+downloadmod("balls/ball4.ogg
+");
+downloadmod("clasweps/widesword.wep.gml
+");
+downloadmod("clasweps/ultrasuperdiscgun.wep.gml
+");
+downloadmod("clasweps/ultrasplinter.wep.gml
+");
+downloadmod("clasweps/ultraseeker.wep.gml
+");
+downloadmod("clasweps/ultrarifle.wep.gml
+");
+downloadmod("clasweps/ultrapopgun.wep.gml
+");
+downloadmod("clasweps/ultraplasmagun.wep.gml
+");
+downloadmod("clasweps/ultralightning.wep.gml
+");
+downloadmod("clasweps/ultradiscgun.wep.gml
+");
+downloadmod("clasweps/torch.wep.gml
+");
+downloadmod("clasweps/swiftsword.wep.gml
+");
+downloadmod("clasweps/splintergatling.wep.gml
+");
+downloadmod("clasweps/snl.wep.gml
+");
+downloadmod("clasweps/slc.wep.gml
+");
+downloadmod("clasweps/shrineroom.area.gml
+");
+downloadmod("clasweps/shine.wep.gml
+");
+downloadmod("clasweps/scorpionarm.wep.gml
+");
+downloadmod("clasweps/scorcher.wep.gml
+");
+downloadmod("clasweps/ringofplasma.wep.gml
+");
+downloadmod("clasweps/ringoffire.wep.gml
+");
+downloadmod("clasweps/racingthoughts.skill.gml
+");
+downloadmod("clasweps/quickdraw.wep.gml
+");
+downloadmod("clasweps/plasmashotty.wep.gml
+");
+downloadmod("clasweps/orbitalstriker.wep.gml
+");
+downloadmod("clasweps/orbitalbarrage.wep.gml
+");
+downloadmod("clasweps/multislicer.wep.gml
+");
+downloadmod("clasweps/multiflakcannon.wep.gml
+");
+downloadmod("clasweps/longsword.wep.gml
+");
+downloadmod("clasweps/lightningscrew.wep.gml
+");
+downloadmod("clasweps/lightningflak.wep.gml
+");
+downloadmod("clasweps/kirbyhammer.wep.gml
+");
+downloadmod("clasweps/iceslugger.wep.gml
+");
+downloadmod("clasweps/iceshotgun.wep.gml
+");
+downloadmod("clasweps/hypershotgun.wep.gml
+");
+downloadmod("clasweps/hyperrevolver.wep.gml
+");
+downloadmod("clasweps/hyperflare.wep.gml
+");
+downloadmod("clasweps/hyperflak.wep.gml
+");
+downloadmod("clasweps/heavywave.wep.gml
+");
+downloadmod("clasweps/heavystriker.wep.gml
+");
+downloadmod("clasweps/heavyshovel.wep.gml
+");
+downloadmod("clasweps/heavyshot.wep.gml
+");
+downloadmod("clasweps/goldscorpionarm.wep.gml
+");
+downloadmod("clasweps/goldenblazer.wep.gml
+");
+downloadmod("clasweps/funnyxd.wep.gml
+");
+downloadmod("clasweps/executioner.wep.gml
+");
+downloadmod("clasweps/evilsbane.wep.gml
+");
+downloadmod("clasweps/energywrench.wep.gml
+");
+downloadmod("clasweps/energyshovel.wep.gml
+");
+downloadmod("clasweps/energyjackhammer.wep.gml
+");
+downloadmod("clasweps/enemyloot.mod.gml
+");
+downloadmod("clasweps/doubleiceshotgun.wep.gml
+");
+downloadmod("clasweps/doghead.wep.gml
+");
+downloadmod("clasweps/crowns/slots.crown.gml
+");
+downloadmod("clasweps/crowns/Slaughter.crown.gml
+");
+downloadmod("clasweps/crowns/Pain.crown.gml
+");
+downloadmod("clasweps/crowns/Choice.crown.gml
+");
+downloadmod("clasweps/claswepsshit.mod.gml
+");
+downloadmod("clasweps/chimerashell.wep.gml
+");
+downloadmod("clasweps/chimeraexplosive.wep.gml
+");
+downloadmod("clasweps/chimeraenergy.wep.gml
+");
+downloadmod("clasweps/chimerabullet.wep.gml
+");
+downloadmod("clasweps/chimerabolt.wep.gml
+");
+downloadmod("clasweps/catalyst.wep.gml
+");
+downloadmod("clasweps/casey.wep.gml
+");
+downloadmod("clasweps/cannon.wep.gml
+");
+downloadmod("clasweps/brokenflak.wep.gml
+");
+downloadmod("clasweps/bossintros.mod.gml
+");
+downloadmod("clasweps/bloodyrifle.wep.gml
+");
+downloadmod("clasweps/bloodyrevolver.wep.gml
+");
+downloadmod("clasweps/blazer.wep.gml
+");
+downloadmod("clasweps/battleshovel.wep.gml
+");
+downloadmod("clasweps/autoiceshotgun.wep.gml
+");
+downloadmod("clasweps/autoburstshotty.wep.gml
+");
+downloadmod("clasweps/ZapMachineGun.wep.gml
+");
+downloadmod("clasweps/Zap shotgun.wep.gml
+");
+downloadmod("clasweps/Zap gun.wep.gml
+");
+downloadmod("clasweps/Zap Cannon.wep.gml
+");
+downloadmod("clasweps/Ultraflamethrower.wep.gml
+");
+downloadmod("clasweps/UltraSlug.wep.gml
+");
+downloadmod("clasweps/UltraFlak.wep.gml
+");
+downloadmod("clasweps/UltraBazook.wep.gml
+");
+downloadmod("clasweps/TurboLauncher.wep.gml
+");
+downloadmod("clasweps/TrailerPistol.wep.gml
+");
+downloadmod("clasweps/TrailerGun.wep.gml
+");
+downloadmod("clasweps/TrailerCannon.wep.gml
+");
+downloadmod("clasweps/Toxinballer.wep.gml
+");
+downloadmod("clasweps/ToxicShotty.wep.gml
+");
+downloadmod("clasweps/ToxicFlak.wep.gml
+");
+downloadmod("clasweps/ToxicDiscGun.wep.gml
+");
+downloadmod("clasweps/ToxicBlazer.wep.gml
+");
+downloadmod("clasweps/ToxicBazooka.wep.gml
+");
+downloadmod("clasweps/ThroneGun.wep.gml
+");
+downloadmod("clasweps/ThroneCannon.wep.gml
+");
+downloadmod("clasweps/ThroneBeam.wep.gml
+");
+downloadmod("clasweps/SuperIceFlakCannon.wep.gml
+");
+downloadmod("clasweps/SuperFocusedFlak.wep.gml
+");
+downloadmod("clasweps/SuperBurstShotty.wep.gml
+");
+downloadmod("clasweps/Sniper.wep.gml
+");
+downloadmod("clasweps/SlotMachine.wep.gml
+");
+downloadmod("clasweps/Ricochetcrossbow.wep.gml
+");
+downloadmod("clasweps/RapidPistol.wep.gml
+");
+downloadmod("clasweps/RageBlaster.wep.gml
+");
+downloadmod("clasweps/Poposcorcher.wep.gml
+");
+downloadmod("clasweps/PopoZapper.wep.gml
+");
+downloadmod("clasweps/PopoSpreader.wep.gml
+");
+downloadmod("clasweps/PopoSMG.wep.gml
+");
+downloadmod("clasweps/PopoRevolver.wep.gml
+");
+downloadmod("clasweps/PopoGuider.wep.gml
+");
+downloadmod("clasweps/PopoGenocide.wep.gml
+");
+downloadmod("clasweps/PopoFireballer.wep.gml
+");
+downloadmod("clasweps/PopoExplosionGun.wep.gml
+");
+downloadmod("clasweps/PopoCharger.wep.gml
+");
+downloadmod("clasweps/PopoBurstShotty.wep.gml
+");
+downloadmod("clasweps/PopoBADS.wep.gml
+");
+downloadmod("clasweps/PlasmaNuker.wep.gml
+");
+downloadmod("clasweps/PlasmaFlak.wep.gml
+");
+downloadmod("clasweps/PlasmaBazooka.wep.gml
+");
+downloadmod("clasweps/OmegaRevolver.wep.gml
+");
+downloadmod("clasweps/NecroMachine.wep.gml
+");
+downloadmod("clasweps/MiniNukeLauncher.wep.gml
+");
+downloadmod("clasweps/MineShotgun.wep.gml
+");
+downloadmod("clasweps/MineLauncher.wep.gml
+");
+downloadmod("clasweps/MegaNuker.wep.gml
+");
+downloadmod("clasweps/LilGunther.wep.gml
+");
+downloadmod("clasweps/LightningWrench.wep.gml
+");
+downloadmod("clasweps/Laserwave.wep.gml
+");
+downloadmod("clasweps/KingBlade.wep.gml
+");
+downloadmod("clasweps/InvCrystalLaser.wep.gml
+");
+downloadmod("clasweps/IceFlakCannon.wep.gml
+");
+downloadmod("clasweps/IceCannon.wep.gml
+");
+downloadmod("clasweps/HuntingRifle.wep.gml
+");
+downloadmod("clasweps/Hellfire.wep.gml
+");
+downloadmod("clasweps/HeavySMG.wep.gml
+");
+downloadmod("clasweps/HeavyLaser.wep.gml
+");
+downloadmod("clasweps/HeavyGlove.wep.gml
+");
+downloadmod("clasweps/HeavyFlare.wep.gml
+");
+downloadmod("clasweps/HeavyFlak.wep.gml
+");
+downloadmod("clasweps/GuiderShotty.wep.gml
+");
+downloadmod("clasweps/GuiderPistol.wep.gml
+");
+downloadmod("clasweps/GuiderMinigun.wep.gml
+");
+downloadmod("clasweps/GuiderBlaster.wep.gml
+");
+downloadmod("clasweps/GoldenFireballer.wep.gml
+");
+downloadmod("clasweps/GigaHammer.wep.gml
+");
+downloadmod("clasweps/Genocide.wep.gml
+");
+downloadmod("clasweps/GatlingNader.wep.gml
+");
+downloadmod("clasweps/GatlingMiniNader.wep.gml
+");
+downloadmod("clasweps/FocusedFlak.wep.gml
+");
+downloadmod("clasweps/FocusShotty.wep.gml
+");
+downloadmod("clasweps/Flamesword.wep.gml
+");
+downloadmod("clasweps/Fireballer.wep.gml
+");
+downloadmod("clasweps/ExplosionPistol.wep.gml
+");
+downloadmod("clasweps/ExplosionGun.wep.gml
+");
+downloadmod("clasweps/DemolitionsLauncher.wep.gml
+");
+downloadmod("clasweps/DartlingGun.wep.gml
+");
+downloadmod("clasweps/DartGun.wep.gml
+");
+downloadmod("clasweps/CrystalLaser.wep.gml
+");
+downloadmod("clasweps/ChargeSlugger.wep.gml
+");
+downloadmod("clasweps/ChargePlasma.wep.gml
+");
+downloadmod("clasweps/ChargeLaser.wep.gml
+");
+downloadmod("clasweps/ChargeGun.wep.gml
+");
+downloadmod("clasweps/ChargeFlamethrower.wep.gml
+");
+downloadmod("clasweps/ChargeFlak.wep.gml
+");
+downloadmod("clasweps/ChargeDisc.wep.gml
+");
+downloadmod("clasweps/ChargeCrossbow.wep.gml
+");
+downloadmod("clasweps/ChargeBlade.wep.gml
+");
+downloadmod("clasweps/ChargeBazooka.wep.gml
+");
+downloadmod("clasweps/BusterGun.wep.gml
+");
+downloadmod("clasweps/BurstShotty.wep.gml
+");
+downloadmod("clasweps/BoxingGlove.wep.gml
+");
+downloadmod("clasweps/BouncerFlak.wep.gml
+");
+downloadmod("clasweps/BluntHammer.wep.gml
+");
+downloadmod("clasweps/Bloodballer.wep.gml
+");
+downloadmod("clasweps/BloodMineLauncher.wep.gml
+");
+downloadmod("clasweps/BloodGenocide.wep.gml
+");
+downloadmod("clasweps/BloodExplosionGun.wep.gml
+");
+downloadmod("clasweps/BlinkSword.Wep.gml
+");
+downloadmod("clasweps/BigBlaster.wep.gml
+");
+downloadmod("clasweps/BanditBlaster.wep.gml
+");
+downloadmod("clasweps/BallMomBlaster.wep.gml
+");
+downloadmod("clasweps/BADS.wep.gml
+");
+downloadmod("clasweps/Acelauncher.wep.gml
+");
+downloadmod("clasweps/AccuserHand.wep.gml
+");
+downloadmod("clasweps/widesword.png
+");
+downloadmod("clasweps/ultraseekerpro.png
+");
+downloadmod("clasweps/ultraplasmaproj.png
+");
+downloadmod("clasweps/ultraplasmaimpact.png
+");
+downloadmod("clasweps/ultramegaseeker.png
+");
+downloadmod("clasweps/ultraflame.png
+");
+downloadmod("clasweps/thoughtslightning.png
+");
+downloadmod("clasweps/swiftsword.png
+");
+downloadmod("clasweps/sprBaseball.png
+");
+downloadmod("clasweps/shine.ogg
+");
+downloadmod("clasweps/ringofplasma.png
+");
+downloadmod("clasweps/ringoffire.png
+");
+downloadmod("clasweps/racingthoughtsbutton.png
+");
+downloadmod("clasweps/orbitalstriker.png
+");
+downloadmod("clasweps/orbitalbarrage.png
+");
+downloadmod("clasweps/multiflakcannon.png
+");
+downloadmod("clasweps/longsword.png
+");
+downloadmod("clasweps/lightningshank.png
+");
+downloadmod("clasweps/lightningflak.png
+");
+downloadmod("clasweps/heavy shovel.png
+");
+downloadmod("clasweps/evilsbane.png
+");
+downloadmod("clasweps/crowns/Crown of Slots.png
+");
+downloadmod("clasweps/crowns/Crown of Slaughter.png
+");
+downloadmod("clasweps/crowns/Crown of Pain.png
+");
+downloadmod("clasweps/crowns/ChoiceBuddyWalk.png
+");
+downloadmod("clasweps/crowns/ChoiceBuddyIdle.png
+");
+downloadmod("clasweps/catalyst.png
+");
+downloadmod("clasweps/bulletcannon.png
+");
+downloadmod("clasweps/barragemarker.png
+");
+downloadmod("clasweps/bads.png
+");
+downloadmod("clasweps/ZapSlug.png
+");
+downloadmod("clasweps/ZapMG.png
+");
+downloadmod("clasweps/ZapBullet.png
+");
+downloadmod("clasweps/Zap Shotgun.png
+");
+downloadmod("clasweps/Zap Gun.png
+");
+downloadmod("clasweps/Zap Cannon.png
+");
+downloadmod("clasweps/Ultrasuperdiscgun.png
+");
+downloadmod("clasweps/UltraslugDissapear.png
+");
+downloadmod("clasweps/Ultradiscgun.png
+");
+downloadmod("clasweps/Ultrabazooka.png
+");
+downloadmod("clasweps/UltraSuperDisc.png
+");
+downloadmod("clasweps/UltraSplinterPro.png
+");
+downloadmod("clasweps/UltraSplinter.png
+");
+downloadmod("clasweps/UltraSmoke.png
+");
+downloadmod("clasweps/UltraSlugger.png
+");
+downloadmod("clasweps/UltraSlugHit.png
+");
+downloadmod("clasweps/UltraSlug.png
+");
+downloadmod("clasweps/UltraSeeker.png
+");
+downloadmod("clasweps/UltraRocketFlame.png
+");
+downloadmod("clasweps/UltraRocket.png
+");
+downloadmod("clasweps/UltraRifle.png
+");
+downloadmod("clasweps/UltraPop.png
+");
+downloadmod("clasweps/UltraPlasmaTrail.png
+");
+downloadmod("clasweps/UltraPlasma.png
+");
+downloadmod("clasweps/UltraMainRocket.png
+");
+downloadmod("clasweps/UltraLightning.png
+");
+downloadmod("clasweps/UltraFlamethrower.png
+");
+downloadmod("clasweps/UltraFlakBullet.png
+");
+downloadmod("clasweps/UltraFlak.png
+");
+downloadmod("clasweps/UltraDisc.png
+");
+downloadmod("clasweps/TurboRocket.png
+");
+downloadmod("clasweps/TurboLauncher.png
+");
+downloadmod("clasweps/TrueUltraSuperDiscGun.png
+");
+downloadmod("clasweps/TrailerPistol.png
+");
+downloadmod("clasweps/TrailerGun.png
+");
+downloadmod("clasweps/TrailerCannon.png
+");
+downloadmod("clasweps/ToxinBaller.png
+");
+downloadmod("clasweps/Toxicball.png
+");
+downloadmod("clasweps/ToxicShotty.png
+");
+downloadmod("clasweps/ToxicRocket.png
+");
+downloadmod("clasweps/ToxicFlak.png
+");
+downloadmod("clasweps/ToxicDiscGun.png
+");
+downloadmod("clasweps/ToxicDisc.png
+");
+downloadmod("clasweps/ToxicBlazer.png
+");
+downloadmod("clasweps/ToxicBazooka.png
+");
+downloadmod("clasweps/Torch.png
+");
+downloadmod("clasweps/ThroneGun.png
+");
+downloadmod("clasweps/ThroneCannon.png
+");
+downloadmod("clasweps/ThroneBeam.png
+");
+downloadmod("clasweps/SuperNukeLauncher.png
+");
+downloadmod("clasweps/SuperIceFlakCannon.png
+");
+downloadmod("clasweps/SuperIceFlakBullet.png
+");
+downloadmod("clasweps/SuperFocusedFlakCannon.png
+");
+downloadmod("clasweps/SuperBurstShotty.png
+");
+downloadmod("clasweps/Super Laser Cannon.png
+");
+downloadmod("clasweps/Strikemarker.png
+");
+downloadmod("clasweps/SniperBullet.png
+");
+downloadmod("clasweps/Sniper.png
+");
+downloadmod("clasweps/SlotMachine.png
+");
+downloadmod("clasweps/ShineMask.png
+");
+downloadmod("clasweps/Shine.png
+");
+downloadmod("clasweps/ScorpionArm.png
+");
+downloadmod("clasweps/Scorcher.png
+");
+downloadmod("clasweps/Ricochetcrossbow.png
+");
+downloadmod("clasweps/Ricochetbolt.png
+");
+downloadmod("clasweps/Reflector.png
+");
+downloadmod("clasweps/RapidPistol.png
+");
+downloadmod("clasweps/RageBlaster.png
+");
+downloadmod("clasweps/RacingThoughtsIcon.png
+");
+downloadmod("clasweps/Quickdraw.png
+");
+downloadmod("clasweps/PopoZapper.png
+");
+downloadmod("clasweps/PopoSpreader.png
+");
+downloadmod("clasweps/PopoScorcher.png
+");
+downloadmod("clasweps/PopoSMG.png
+");
+downloadmod("clasweps/PopoRevolver.png
+");
+downloadmod("clasweps/PopoGuider.png
+");
+downloadmod("clasweps/PopoGenocide.png
+");
+downloadmod("clasweps/PopoFireballer.png
+");
+downloadmod("clasweps/PopoFireball.png
+");
+downloadmod("clasweps/PopoExplosiongun.png
+");
+downloadmod("clasweps/PopoCharger.png
+");
+downloadmod("clasweps/PopoBurstShotty.png
+");
+downloadmod("clasweps/PopoBads.png
+");
+downloadmod("clasweps/PlasmaShotty.png
+");
+downloadmod("clasweps/PlasmaRocket.png
+");
+downloadmod("clasweps/PlasmaNukeLauncher.png
+");
+downloadmod("clasweps/PlasmaNuke.png
+");
+downloadmod("clasweps/PlasmaFlak.png
+");
+downloadmod("clasweps/PlasmaBazooka.png
+");
+downloadmod("clasweps/OmegaRevolver.png
+");
+downloadmod("clasweps/NecroMachine.png
+");
+downloadmod("clasweps/NecroAllyRez.png
+");
+downloadmod("clasweps/NecroAllyArea.png
+");
+downloadmod("clasweps/Multislicer.gif
+");
+downloadmod("clasweps/MiniNukeLauncher.png
+");
+downloadmod("clasweps/MiniNuke.png
+");
+downloadmod("clasweps/MiniMineBlink.png
+");
+downloadmod("clasweps/MiniMine.png
+");
+downloadmod("clasweps/MiniGrenadeGatling.png
+");
+downloadmod("clasweps/MineShotgun.png
+");
+downloadmod("clasweps/MineLaunchr.png
+");
+downloadmod("clasweps/Mine.png
+");
+downloadmod("clasweps/MegaNukeLauncher.png
+");
+downloadmod("clasweps/MegaNuke.png
+");
+downloadmod("clasweps/LilGunther.png
+");
+downloadmod("clasweps/LightningWrench.png
+");
+downloadmod("clasweps/LightningScrewdriver.png
+");
+downloadmod("clasweps/LightningFlakCannon.png
+");
+downloadmod("clasweps/LaserWave.png
+");
+downloadmod("clasweps/LULDisc.png
+");
+downloadmod("clasweps/KirbyHammer.png
+");
+downloadmod("clasweps/KingBladeSword.png
+");
+downloadmod("clasweps/KingBladeGhost.png
+");
+downloadmod("clasweps/Jab.png
+");
+downloadmod("clasweps/InvCrystalGun.png
+");
+downloadmod("clasweps/IceSlugger.png
+");
+downloadmod("clasweps/IceSlugHit.png
+");
+downloadmod("clasweps/IceSlugDissapear.png
+");
+downloadmod("clasweps/IceSlug.png
+");
+downloadmod("clasweps/IceShot.png
+");
+downloadmod("clasweps/IceShellHit.png
+");
+downloadmod("clasweps/IceShellDissapear.png
+");
+downloadmod("clasweps/IceShell.png
+");
+downloadmod("clasweps/IceShard.png
+");
+downloadmod("clasweps/IceFlakCannon.png
+");
+downloadmod("clasweps/IceFlakBullet.png
+");
+downloadmod("clasweps/IceCannon.png
+");
+downloadmod("clasweps/Hyper_Revolver.png
+");
+downloadmod("clasweps/HyperShotty.png
+");
+downloadmod("clasweps/HyperFlaregun.png
+");
+downloadmod("clasweps/HyperFlakCannon.png
+");
+downloadmod("clasweps/HuntingRifle.png
+");
+downloadmod("clasweps/Hellfire.png
+");
+downloadmod("clasweps/Heavystrikemarker.png
+");
+downloadmod("clasweps/HeavyWaveGun.png
+");
+downloadmod("clasweps/HeavyStriker.png
+");
+downloadmod("clasweps/HeavySMG.png
+");
+downloadmod("clasweps/HeavyLaser.png
+");
+downloadmod("clasweps/HeavyJab.png
+");
+downloadmod("clasweps/HeavyGlove.png
+");
+downloadmod("clasweps/HeavyFlaregun.png
+");
+downloadmod("clasweps/HeavyFlare.png
+");
+downloadmod("clasweps/HeavyFlak.png
+");
+downloadmod("clasweps/Heavy shotty.png
+");
+downloadmod("clasweps/GuidedShotty.png
+");
+downloadmod("clasweps/GuidedPistol.png
+");
+downloadmod("clasweps/GuidedMinigun.png
+");
+downloadmod("clasweps/GuidedBlaster.png
+");
+downloadmod("clasweps/Greensmallexplosion.png
+");
+downloadmod("clasweps/GoldenFireballer.png
+");
+downloadmod("clasweps/GoldenBlazer.png
+");
+downloadmod("clasweps/GoldScorpionArm.png
+");
+downloadmod("clasweps/GigaHammer.png
+");
+downloadmod("clasweps/Genocide.png
+");
+downloadmod("clasweps/GatlingSplinter.png
+");
+downloadmod("clasweps/GatlingLauncher.png
+");
+downloadmod("clasweps/FocusedFlakCannon.png
+");
+downloadmod("clasweps/FocusShotgun.png
+");
+downloadmod("clasweps/FlameSword.png
+");
+downloadmod("clasweps/Fireballer.png
+");
+downloadmod("clasweps/Explosiongun.png
+");
+downloadmod("clasweps/ExplosionPistol.png
+");
+downloadmod("clasweps/ExecutionerHand.png
+");
+downloadmod("clasweps/Executioner.png
+");
+downloadmod("clasweps/Evilsbanebeam.png
+");
+downloadmod("clasweps/Energy Wrench.png
+");
+downloadmod("clasweps/Energy Shovel.png
+");
+downloadmod("clasweps/Energy Jackhammer.png
+");
+downloadmod("clasweps/DoubleIceShot.png
+");
+downloadmod("clasweps/DogHead.png
+");
+downloadmod("clasweps/DemolitionsLauncher.png
+");
+downloadmod("clasweps/Demolitionbomb.png
+");
+downloadmod("clasweps/DartlingGun.png
+");
+downloadmod("clasweps/DartGun.png
+");
+downloadmod("clasweps/Dart.png
+");
+downloadmod("clasweps/CrystalGun.png
+");
+downloadmod("clasweps/ChimeraShell.png
+");
+downloadmod("clasweps/ChimeraExplosive.png
+");
+downloadmod("clasweps/ChimeraEnergy.png
+");
+downloadmod("clasweps/ChimeraBullet.png
+");
+downloadmod("clasweps/ChimeraBolt.png
+");
+downloadmod("clasweps/ChargeSlugger.png
+");
+downloadmod("clasweps/ChargePlasmagun.png
+");
+downloadmod("clasweps/ChargeLaser.png
+");
+downloadmod("clasweps/ChargeGun.png
+");
+downloadmod("clasweps/ChargeFlamethrower.png
+");
+downloadmod("clasweps/ChargeFlakCannon.png
+");
+downloadmod("clasweps/ChargeDiscGun.png
+");
+downloadmod("clasweps/ChargeCrossbow.png
+");
+downloadmod("clasweps/ChargeBlade.png
+");
+downloadmod("clasweps/ChargeBazooka.png
+");
+downloadmod("clasweps/Casey.png
+");
+downloadmod("clasweps/Cannon.png
+");
+downloadmod("clasweps/BusterGun.png
+");
+downloadmod("clasweps/BurstShotty.png
+");
+downloadmod("clasweps/BrokenFlakCannon.png
+");
+downloadmod("clasweps/BoxingGlove.png
+");
+downloadmod("clasweps/Bouncer Flak.png
+");
+downloadmod("clasweps/BluntHammer.png
+");
+downloadmod("clasweps/BloodyTrail.png
+");
+downloadmod("clasweps/BloodyRifle.png
+");
+downloadmod("clasweps/BloodyRevolver.png
+");
+downloadmod("clasweps/BloodyBullet.png
+");
+downloadmod("clasweps/BloodsuckerProj.png
+");
+downloadmod("clasweps/Bloodballer.png
+");
+downloadmod("clasweps/Bloodball.png
+");
+downloadmod("clasweps/BloodMineLauncher.png
+");
+downloadmod("clasweps/BloodMine.png
+");
+downloadmod("clasweps/BloodGenocide.png
+");
+downloadmod("clasweps/BloodFlame.png
+");
+downloadmod("clasweps/BloodExplosionGun.png
+");
+downloadmod("clasweps/BlinkSword.png
+");
+downloadmod("clasweps/Blazer.png
+");
+downloadmod("clasweps/BigBlaster.png
+");
+downloadmod("clasweps/Battleshovel.png
+");
+downloadmod("clasweps/BanditBlaster.png
+");
+downloadmod("clasweps/BallMomBlaster.png
+");
+downloadmod("clasweps/BADSRocket.png
+");
+downloadmod("clasweps/AutoIceShot.png
+");
+downloadmod("clasweps/AutoBurstShotty.png
+");
+downloadmod("clasweps/AceLauncher.png
+");
+downloadmod("clasweps/Ace.png
+");
+downloadmod("clasweps/AccuserHand.png
+");
+downloadmod("Auto_Bullet_Shotgun.wep.gml
+");
+downloadmod("devastator.mod.gml
+");
+downloadmod("coolerhud.mod.gml
+");
+while (!file_loaded(string_trim("balls/balls.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("balls/laserwrench.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("balls/ball1.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim("balls/ball2.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim("balls/ball3.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim("balls/ball4.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/widesword.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultrasuperdiscgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultrasplinter.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraseeker.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultrarifle.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultrapopgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraplasmagun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultralightning.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultradiscgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/torch.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/swiftsword.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/splintergatling.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/snl.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/slc.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/shrineroom.area.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/shine.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/scorpionarm.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/scorcher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ringofplasma.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ringoffire.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/racingthoughts.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/quickdraw.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/plasmashotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/orbitalstriker.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/orbitalbarrage.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/multislicer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/multiflakcannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/longsword.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/lightningscrew.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/lightningflak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/kirbyhammer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/iceslugger.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/iceshotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/hypershotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/hyperrevolver.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/hyperflare.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/hyperflak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/heavywave.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/heavystriker.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/heavyshovel.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/heavyshot.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/goldscorpionarm.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/goldenblazer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/funnyxd.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/executioner.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/evilsbane.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/energywrench.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/energyshovel.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/energyjackhammer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/enemyloot.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/doubleiceshotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/doghead.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/slots.crown.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Slaughter.crown.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Pain.crown.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Choice.crown.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/claswepsshit.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/chimerashell.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/chimeraexplosive.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/chimeraenergy.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/chimerabullet.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/chimerabolt.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/catalyst.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/casey.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/cannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/brokenflak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/bossintros.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/bloodyrifle.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/bloodyrevolver.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/blazer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/battleshovel.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/autoiceshotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/autoburstshotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ZapMachineGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap shotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap gun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap Cannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ultraflamethrower.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSlug.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraBazook.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TurboLauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerPistol.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerCannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Toxinballer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicDiscGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicBlazer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicBazooka.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneCannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneBeam.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperIceFlakCannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperFocusedFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperBurstShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Sniper.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SlotMachine.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ricochetcrossbow.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/RapidPistol.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/RageBlaster.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Poposcorcher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoZapper.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoSpreader.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoSMG.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoRevolver.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoGuider.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoGenocide.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoFireballer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoExplosionGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoCharger.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoBurstShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoBADS.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaNuker.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaBazooka.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/OmegaRevolver.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/NecroMachine.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniNukeLauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MineShotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MineLauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MegaNuker.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LilGunther.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LightningWrench.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Laserwave.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/KingBlade.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/InvCrystalLaser.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceFlakCannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceCannon.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HuntingRifle.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Hellfire.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavySMG.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyLaser.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyGlove.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyFlare.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuiderShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuiderPistol.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuiderMinigun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuiderBlaster.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GoldenFireballer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GigaHammer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Genocide.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GatlingNader.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GatlingMiniNader.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/FocusedFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/FocusShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Flamesword.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Fireballer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ExplosionPistol.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ExplosionGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DemolitionsLauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DartlingGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DartGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/CrystalLaser.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeSlugger.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargePlasma.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeLaser.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeFlamethrower.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeDisc.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeCrossbow.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeBlade.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeBazooka.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BusterGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BurstShotty.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BoxingGlove.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BouncerFlak.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BluntHammer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Bloodballer.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodMineLauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodGenocide.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodExplosionGun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BlinkSword.Wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BigBlaster.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BanditBlaster.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BallMomBlaster.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BADS.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Acelauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/AccuserHand.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/widesword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraseekerpro.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraplasmaproj.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraplasmaimpact.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultramegaseeker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ultraflame.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/thoughtslightning.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/swiftsword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/sprBaseball.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/shine.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ringofplasma.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ringoffire.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/racingthoughtsbutton.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/orbitalstriker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/orbitalbarrage.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/multiflakcannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/longsword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/lightningshank.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/lightningflak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/heavy shovel.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/evilsbane.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Crown of Slots.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Crown of Slaughter.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/Crown of Pain.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/ChoiceBuddyWalk.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/crowns/ChoiceBuddyIdle.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/catalyst.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/bulletcannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/barragemarker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/bads.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ZapSlug.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ZapMG.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ZapBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap Shotgun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap Gun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Zap Cannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ultrasuperdiscgun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraslugDissapear.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ultradiscgun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ultrabazooka.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSuperDisc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSplinterPro.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSplinter.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSmoke.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSlugger.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSlugHit.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSlug.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraSeeker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraRocketFlame.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraRifle.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraPop.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraPlasmaTrail.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraPlasma.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraMainRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraLightning.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraFlamethrower.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraFlakBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraFlak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/UltraDisc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TurboRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TurboLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrueUltraSuperDiscGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerPistol.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/TrailerCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxinBaller.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Toxicball.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicFlak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicDiscGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicDisc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicBlazer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ToxicBazooka.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Torch.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ThroneBeam.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperNukeLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperIceFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperIceFlakBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperFocusedFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SuperBurstShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Super Laser Cannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Strikemarker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SniperBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Sniper.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/SlotMachine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ShineMask.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Shine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ScorpionArm.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Scorcher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ricochetcrossbow.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ricochetbolt.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Reflector.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/RapidPistol.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/RageBlaster.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/RacingThoughtsIcon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Quickdraw.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoZapper.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoSpreader.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoScorcher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoSMG.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoRevolver.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoGuider.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoGenocide.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoFireballer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoFireball.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoExplosiongun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoCharger.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoBurstShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PopoBads.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaNukeLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaNuke.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaFlak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/PlasmaBazooka.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/OmegaRevolver.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/NecroMachine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/NecroAllyRez.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/NecroAllyArea.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Multislicer.gif
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniNukeLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniNuke.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniMineBlink.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniMine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MiniGrenadeGatling.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MineShotgun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MineLaunchr.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Mine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MegaNukeLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/MegaNuke.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LilGunther.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LightningWrench.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LightningScrewdriver.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LightningFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LaserWave.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/LULDisc.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/KirbyHammer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/KingBladeSword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/KingBladeGhost.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Jab.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/InvCrystalGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceSlugger.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceSlugHit.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceSlugDissapear.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceSlug.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceShot.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceShellHit.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceShellDissapear.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceShell.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceShard.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceFlakBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/IceCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Hyper_Revolver.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HyperShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HyperFlaregun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HyperFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HuntingRifle.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Hellfire.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Heavystrikemarker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyWaveGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyStriker.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavySMG.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyLaser.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyJab.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyGlove.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyFlaregun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyFlare.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/HeavyFlak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Heavy shotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuidedShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuidedPistol.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuidedMinigun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GuidedBlaster.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Greensmallexplosion.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GoldenFireballer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GoldenBlazer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GoldScorpionArm.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GigaHammer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Genocide.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GatlingSplinter.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/GatlingLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/FocusedFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/FocusShotgun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/FlameSword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Fireballer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Explosiongun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ExplosionPistol.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ExecutionerHand.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Executioner.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Evilsbanebeam.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Energy Wrench.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Energy Shovel.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Energy Jackhammer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DoubleIceShot.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DogHead.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DemolitionsLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Demolitionbomb.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DartlingGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/DartGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Dart.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/CrystalGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChimeraShell.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChimeraExplosive.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChimeraEnergy.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChimeraBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChimeraBolt.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeSlugger.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargePlasmagun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeLaser.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeFlamethrower.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeDiscGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeCrossbow.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeBlade.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/ChargeBazooka.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Casey.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Cannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BusterGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BurstShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BrokenFlakCannon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BoxingGlove.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Bouncer Flak.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BluntHammer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodyTrail.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodyRifle.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodyRevolver.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodyBullet.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodsuckerProj.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Bloodballer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Bloodball.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodMineLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodMine.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodGenocide.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodFlame.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BloodExplosionGun.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BlinkSword.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Blazer.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BigBlaster.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Battleshovel.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BanditBlaster.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BallMomBlaster.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/BADSRocket.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/AutoIceShot.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/AutoBurstShotty.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/AceLauncher.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/Ace.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("clasweps/AccuserHand.png
+"))) {wait 1;}
+while (!file_loaded(string_trim("Auto_Bullet_Shotgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("devastator.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim("coolerhud.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/balls/balls.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/balls/laserwrench.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/widesword.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasuperdiscgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasplinter.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraseeker.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrarifle.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrapopgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraplasmagun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultralightning.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultradiscgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/torch.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/swiftsword.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/splintergatling.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/snl.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/slc.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/shrineroom.area.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/shine.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/scorpionarm.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/scorcher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ringofplasma.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ringoffire.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/racingthoughts.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/quickdraw.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/plasmashotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalstriker.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalbarrage.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/multislicer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/multiflakcannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/longsword.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lightningscrew.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lightningflak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/kirbyhammer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/iceslugger.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/iceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hypershotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperrevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflare.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavywave.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavystriker.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshovel.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshot.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/goldscorpionarm.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/goldenblazer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/funnyxd.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/executioner.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/evilsbane.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energywrench.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energyshovel.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energyjackhammer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/enemyloot.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/doubleiceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/doghead.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/slots.crown.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Slaughter.crown.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Pain.crown.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/Choice.crown.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/claswepsshit.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerashell.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraexplosive.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraenergy.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabullet.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabolt.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/catalyst.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/casey.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/cannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/brokenflak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bossintros.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrifle.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/blazer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/battleshovel.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/autoiceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/autoburstshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ZapMachineGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Zap shotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Zap gun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Zap Cannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Ultraflamethrower.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/UltraSlug.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/UltraFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/UltraBazook.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/TurboLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerPistol.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/TrailerCannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Toxinballer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicDiscGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicBlazer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ToxicBazooka.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneCannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ThroneBeam.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/SuperIceFlakCannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/SuperFocusedFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/SuperBurstShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Sniper.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/SlotMachine.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Ricochetcrossbow.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/RapidPistol.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/RageBlaster.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Poposcorcher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoZapper.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoSpreader.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoSMG.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoRevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoGuider.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoGenocide.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoFireballer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoExplosionGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoCharger.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoBurstShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PopoBADS.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaNuker.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/PlasmaBazooka.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/OmegaRevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/NecroMachine.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MiniNukeLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MineShotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MineLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MegaNuker.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/LilGunther.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/LightningWrench.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Laserwave.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/KingBlade.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/InvCrystalLaser.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/IceFlakCannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/IceCannon.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HuntingRifle.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Hellfire.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavySMG.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyLaser.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyGlove.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyFlare.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavyFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderPistol.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderMinigun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GuiderBlaster.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GoldenFireballer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GigaHammer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Genocide.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GatlingNader.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GatlingMiniNader.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/FocusedFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/FocusShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Flamesword.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Fireballer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionPistol.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DemolitionsLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DartlingGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DartGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/CrystalLaser.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeSlugger.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargePlasma.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeLaser.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeFlamethrower.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeDisc.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeCrossbow.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeBlade.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ChargeBazooka.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BusterGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BurstShotty.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BoxingGlove.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BouncerFlak.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BluntHammer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Bloodballer.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodMineLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodGenocide.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodExplosionGun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BlinkSword.Wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BigBlaster.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BanditBlaster.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BallMomBlaster.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BADS.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Acelauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/AccuserHand.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Auto_Bullet_Shotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/devastator.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/coolerhud.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -1200,8 +2278,10 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 trace("Current Daily:");
 trace("Mods=Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud");
 trace("Character:Choose");
-trace("Crown:Slaughter");
-trace("Weapon:ExplosionPistol");
+trace("Crown:Slaughter
+");
+trace("Weapon:ExplosionPistol
+");
 trace("Seed:23130");
 
 global.canStart = true;
@@ -1331,7 +2411,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("ExplosionPistol"));
+		give_wep(string_trim("ExplosionPistol
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -1381,7 +2462,9 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter" + " Weapon:ExplosionPistol" + " Seed:23130";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter
+" + " Weapon:ExplosionPistol
+" + " Seed:23130";
 	}
 	trace(score);
 	global.finished = true;
@@ -1417,10 +2500,14 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter" + " Weapon:ExplosionPistol" + " Seed:23130" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter
+" + " Weapon:ExplosionPistol
+" + " Seed:23130" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter" + " Weapon:ExplosionPistol" + " Seed:23130",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud" + " Character:Choose" + " Crown:Slaughter
+" + " Weapon:ExplosionPistol
+" + " Seed:23130",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -1576,7 +2663,8 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("Slaughter");
+name = string_trim("Slaughter
+");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
@@ -1861,3 +2949,5 @@ switch(str){
 }
 return retVal;
 
+#define downloadmod(name)
+file_delete(string_trim(name));while (file_exists(string_trim(name))) {wait 1;}wait(file_download(string_trim(Github + name), string_trim(name)));
