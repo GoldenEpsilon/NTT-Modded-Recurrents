@@ -1171,9 +1171,14 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(race)!=string_trim("DIO")){
-				instance_destroy();
+			if(string_lower(race)!=string_trim("dio") && fork()){
+				wait(0);
+				if(string_lower(race)!=string_trim("dio")){
+					instance_destroy();
+				}
+				exit;
 			}
+			xstart=(game_width-10)/2;
 		}
 		with(CharSelect){
 			if(instance_exists(self) && instance_exists(other) && id != other.id && race==other.race){
