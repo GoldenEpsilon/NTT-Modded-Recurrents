@@ -1178,6 +1178,7 @@ else{
 				}
 				exit;
 			}
+			xstart=(game_width-10)/2;
 		}
 		with(CharSelect){
 			if(instance_exists(self) && instance_exists(other) && id != other.id && race==other.race){
