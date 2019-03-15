@@ -1137,5 +1137,5 @@ return retVal;
 
 #define downloadmod(name)
 var n = string_trim(name);
-file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");
+file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));file_load(data+n);trace(n+" downloaded.");
 
