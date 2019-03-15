@@ -1136,5 +1136,6 @@ switch(str){
 return retVal;
 
 #define downloadmod(name)
+var n = string_trim(name);
 file_delete(data+mod_current+".mod/"+n);while(file_exists(data+mod_current+".mod/"+n)){wait 1;}wait(file_download(Github+n,data+mod_current+".mod/"+n));trace(n+" downloaded.");
 
