@@ -1,0 +1,1 @@
+/loadrace Dummy/dummy.race.gml
