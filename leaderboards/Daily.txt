@@ -1,2 +1,1 @@
-Mods:Balls,Clasweps,Auto Bullet Shotgun,Devastator,Cooler Hud Character:Choose Crown:Slaughter Weapon:ExplosionPistol Seed:23130 Date:;2019-03-14;
-|Golden Epsilon: Area 1-3 L0 Kills: 79 Character: fish 
+Mods:Charge Template 2,Blood,Cool Shadows,xefsstuff,Cool Trails Character:Choose Crown:crown of life Weapon:cannondemnation Seed:29223 Date:;2019-03-15;
