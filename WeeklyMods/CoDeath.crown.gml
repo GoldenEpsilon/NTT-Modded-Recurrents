@@ -1,5 +1,5 @@
 #define crown_name // Crown Name
-	return "CROWN OF DEATH";
+	return "CODEATH";
 
 #define crown_text // Description
 	return "LARGER EXPLOSIONS#EXPLOSIVE DEATH";
