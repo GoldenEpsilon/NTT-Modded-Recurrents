@@ -1,1 +1,1 @@
-Mods:Crazy Traps,Damage Numbers,Baldi,blstorm,boys Character:Choose Crown:none Weapon:Baldi/ultraruler Seed:10280 Date:;2019-03-16;
+Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff Character:Choose Crown:deathpit Weapon:heavynadelauncher Seed:23490 Date:;2019-03-17;
