@@ -1,1 +1,2 @@
-Mods:Cool Dark,Cool Dust,Cool Flame,Cool Hud,Cool Shadows,Cool Trails Character:Choose Crown:crown of destiny Weapon:heavy slugger Seed:25115 Date:;2019-03-09;
+Mods:Cool Dust,Cool Flame,Cool Shadows,Cool Trails Character:Choose Crown:crown of guns Weapon:double shotgun Seed:13383 Date:;2019-03-09;
+|Golden Epsilon: Area 2-1 L0 Kills: 89 Character: venuz |Aurielle, The Taleteller: Area 2-1 L0 Kills: 113 Character: venuz |Pirog: Area 1-3 L0 Kills: 69 Character: venuz |Pirog: Area 5-3 L0 Kills: 341 Character: venuz 
