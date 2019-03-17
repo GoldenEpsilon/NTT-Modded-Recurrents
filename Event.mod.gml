@@ -1837,97 +1837,179 @@ while (!file_loaded(string_trim(data+"clasweps/Ace.png
 "))) {wait 1;}
 while (!file_loaded(string_trim(data+"clasweps/AccuserHand.png
 "))) {wait 1;}
-wait mod_load(string_trim("data/Event.mod/clasweps/widesword.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultrasuperdiscgun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultrasplinter.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultraseeker.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultrarifle.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultrapopgun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultraplasmagun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultralightning.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ultradiscgun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/torch.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/swiftsword.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/splintergatling.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/snl.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/slc.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/shrineroom.area.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/shine.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/scorpionarm.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/scorcher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ringofplasma.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ringoffire.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/racingthoughts.skill.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/quickdraw.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/plasmashotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/orbitalstriker.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/orbitalbarrage.wep.gml
-"));
 wait mod_load(string_trim("data/Event.mod/clasweps/multislicer.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/multiflakcannon.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/casey.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/longsword.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/lightningscrew.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/widesword.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/multiflakcannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/Blazer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/scorcher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/poposcorcher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/goldenblazer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/torch.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/flamesword.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/lightningflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/kirbyhammer.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/brokenflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/iceslugger.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/focusedflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/iceshotgun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/superfocusedflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/hypershotgun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/zap gun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/zapmachinegun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/zap shotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/zap cannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popozapper.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ExplosionPistol.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ExplosionGun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BloodExplosionGun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popoexplosiongun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/MineLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/MineShotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BloodMineLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/DemolitionsLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/bouncerflak.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/poporevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popoSMG.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/quickdraw.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/hyperrevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/hypershotgun.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/hyperflare.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/hyperflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/heavywave.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/fireballer.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/heavystriker.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxinballer.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/heavyshovel.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/bloodballer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popofireballer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/goldenfireballer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/cannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BusterGun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/Catalyst.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/EvilsBane.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/kingblade.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popospreader.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/slc.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/battleshovel.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/burstshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/autoburstshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/superburstshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popoburstshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/guiderpistol.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/guiderblaster.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/guidershotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/guiderminigun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/accuserhand.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popoguider.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargegun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargeslugger.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargeflak.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargecrossbow.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargedisc.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargebazooka.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargeflamethrower.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargelaser.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargeplasma.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chargeblade.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popocharger.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/focusshotty.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/bloodyrevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/bloodyrifle.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/iceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/doubleiceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/autoiceshotgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/iceslugger.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/iceflakcannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/supericeflakcannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/icecannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/trailerpistol.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/trailergun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/trailercannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/HeavySMG.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/heavyFlare.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/heavyshot.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/goldscorpionarm.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/goldenblazer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/funnyxd.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/executioner.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/evilsbane.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/heavyshovel.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/energywrench.wep.gml
 "));
@@ -1935,273 +2017,182 @@ wait mod_load(string_trim("data/Event.mod/clasweps/energyshovel.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/energyjackhammer.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/enemyloot.mod.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/lightningwrench.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/doubleiceshotgun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/lightningscrew.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/doghead.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/Ricochetcrossbow.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/crowns/slots.crown.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/laserwave.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/crowns/Slaughter.crown.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/heavywave.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/crowns/Pain.crown.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/plasmashotty.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/crowns/Choice.crown.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/plasmaflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/claswepsshit.mod.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/plasmabazooka.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/plasmanuker.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/splintergatling.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/gatlingnader.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/gatlingmininader.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/turboLauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/DartGun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/DartlingGun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/heavyflak.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/orbitalbarrage.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/scorpionarm.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/goldscorpionarm.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/huntingrifle.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BlinkSword.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BluntHammer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/GigaHammer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/Ringoffire.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/Ringofplasma.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chimerabullet.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/chimerashell.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/chimerabolt.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/chimeraexplosive.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/chimeraenergy.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/chimerabullet.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/rageblaster.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/chimerabolt.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/slc.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/catalyst.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/meganuker.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/casey.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/mininukelauncher.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/cannon.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/snl.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/brokenflak.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/boxingglove.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/bossintros.mod.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/heavyglove.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/bloodyrifle.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxicshotty.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/bloodyrevolver.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxicbazooka.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/blazer.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxicflak.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/battleshovel.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxicdiscgun.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/autoiceshotgun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/toxicblazer.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/autoburstshotty.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/orbitalstriker.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/ZapMachineGun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/heavystriker.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/Zap shotgun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/orbitalbarrage.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/Zap gun.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/shine.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/Zap Cannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Ultraflamethrower.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/UltraSlug.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/UltraFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/UltraBazook.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/TurboLauncher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/TrailerPistol.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/TrailerGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/TrailerCannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Toxinballer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ToxicShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ToxicFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ToxicDiscGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ToxicBlazer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ToxicBazooka.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ThroneGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ThroneCannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ThroneBeam.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/SuperIceFlakCannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/SuperFocusedFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/SuperBurstShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Sniper.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/SlotMachine.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Ricochetcrossbow.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/RapidPistol.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/RageBlaster.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Poposcorcher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoZapper.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoSpreader.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoSMG.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoRevolver.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoGuider.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoGenocide.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoFireballer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoExplosionGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoCharger.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoBurstShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PopoBADS.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PlasmaNuker.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PlasmaFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/PlasmaBazooka.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/OmegaRevolver.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/NecroMachine.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/MiniNukeLauncher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/MineShotgun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/MineLauncher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/MegaNuker.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/LilGunther.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/LightningWrench.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Laserwave.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/KingBlade.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/InvCrystalLaser.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/IceFlakCannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/IceCannon.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HuntingRifle.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Hellfire.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HeavySMG.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HeavyLaser.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HeavyGlove.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HeavyFlare.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/HeavyFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GuiderShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GuiderPistol.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GuiderMinigun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GuiderBlaster.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GoldenFireballer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GigaHammer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Genocide.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GatlingNader.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/GatlingMiniNader.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/FocusedFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/FocusShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Flamesword.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Fireballer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ExplosionPistol.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ExplosionGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/DemolitionsLauncher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/DartlingGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/DartGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/CrystalLaser.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeSlugger.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargePlasma.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeLaser.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeFlamethrower.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeDisc.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeCrossbow.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeBlade.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/ChargeBazooka.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BusterGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BurstShotty.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BoxingGlove.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BouncerFlak.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BluntHammer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/Bloodballer.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BloodMineLauncher.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BloodGenocide.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BloodExplosionGun.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BlinkSword.Wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BigBlaster.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BanditBlaster.wep.gml
-"));
-wait mod_load(string_trim("data/Event.mod/clasweps/BallMomBlaster.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/AceLauncher.wep.gml
 "));
 wait mod_load(string_trim("data/Event.mod/clasweps/BADS.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/Acelauncher.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/popobads.wep.gml
 "));
-wait mod_load(string_trim("data/Event.mod/clasweps/AccuserHand.wep.gml
+wait mod_load(string_trim("data/Event.mod/clasweps/Hellfire.wep.gml
 "));
-
+wait mod_load(string_trim("data/Event.mod/clasweps/Genocide.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/BloodGenocide.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/popogenocide.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/banditblaster.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/sniper.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/rapidpistol.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/bigblaster.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/doghead.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/lilgunther.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ballmomblaster.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/crystallaser.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/invcrystallaser.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/NecroMachine.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/omegarevolver.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/thronegun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/thronecannon.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/thronebeam.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultrarifle.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultraslug.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultrasplinter.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultrabazook.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultraplasmagun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultradiscgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultrapopgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultraflak.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultraseeker.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultraflamethrower.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultralightning.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/ultrasuperdiscgun.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/kirbyhammer.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/slotmachine.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/slotmachine.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/slotmachine.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/slotmachine.wep.gml
+"));
+wait mod_load(string_trim("data/Event.mod/clasweps/shrineroom.area.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/racingthoughts.skill.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/enemyloot.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/claswepsshit.mod.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/crowns/choice.crown.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/crowns/slaughter.crown.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/crowns/pain.crown.gml"));
+wait mod_load(string_trim("data/Event.mod/clasweps/crowns/slots.crown.gml"));
 
 global.ModNames = "";
 		     
