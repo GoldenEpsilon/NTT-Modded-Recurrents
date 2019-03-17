@@ -1,5 +1,6 @@
 
-/*@rMods@w=#  Crazy Traps#  Damage Numbers#  Baldi#  blstorm#  boys#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Baldi/ultraruler#@pSeed@w=10280#Limited Tries:false*/
+/*@rMods@w=#  Crazy Traps#  Damage Numbers#  Baldi#  blstorm#  boys#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Baldi/ultraruler
+#@pSeed@w=10280#Limited Tries:false*/
 /*|Crazy Traps[Not only does#this place flame traps everywhere,#they have random projectiles, too!#Have fun with disc traps....]|Damage Numbers[So you can see how good/bad#your setup is on the fly!]|Baldi[Baldi's Basics in Education and Learning#is a state-of-the-art, fully 3D interactive,#fun-time educational game that teaches a slew of subjects!]|blstorm[BLEED YOURSELF DRY]|boys[Instead of hit points, you have a 1hp clone per hit point, and max health basically doesn't exist.]*/
 #define init
 #macro weeklyButtonX 6
@@ -97,71 +98,136 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("crazytraps.mod.gml");
-downloadmod("damagenumbers.mod.gml");
-downloadmod("Baldi/baldi.race.gml");
-downloadmod("Baldi/ruler.wep.gml");
-downloadmod("Baldi/ultraruler.wep.gml");
-downloadmod("Baldi/aha.ogg");
-downloadmod("Baldi/baldi.png");
-downloadmod("Baldi/dead.png");
-downloadmod("Baldi/goodjob.ogg");
-downloadmod("Baldi/GoSit.png");
-downloadmod("Baldi/hurt.png");
-downloadmod("Baldi/mapicon.png");
-downloadmod("Baldi/nothing.ogg");
-downloadmod("Baldi/nothing.png");
-downloadmod("Baldi/Portrait.png");
-downloadmod("Baldi/reee.ogg");
-downloadmod("Baldi/ruler.png");
-downloadmod("Baldi/select.ogg");
-downloadmod("Baldi/select.png");
-downloadmod("Baldi/sit.png");
-downloadmod("Baldi/smack.ogg");
-downloadmod("Baldi/sprMapIcon.png");
-downloadmod("Baldi/ultraa.png");
-downloadmod("Baldi/ultrab.png");
-downloadmod("Baldi/ultraruler.png");
-downloadmod("Baldi/ultras.png");
-downloadmod("Baldi/wow.ogg");
-downloadmod("blstorm.wep.gml");
-downloadmod("boys.mod.gml");
-while (!file_loaded(string_trim(data+"crazytraps.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"damagenumbers.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/baldi.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ruler.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ultraruler.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/aha.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/baldi.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/dead.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/goodjob.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/GoSit.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/hurt.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/mapicon.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/nothing.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/nothing.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/Portrait.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/reee.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ruler.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/select.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/select.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/sit.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/smack.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/sprMapIcon.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ultraa.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ultrab.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ultraruler.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/ultras.png"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Baldi/wow.ogg"))) {wait 1;}
-while (!file_loaded(string_trim(data+"blstorm.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"boys.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/crazytraps.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/damagenumbers.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Baldi/baldi.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Baldi/ruler.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Baldi/ultraruler.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/blstorm.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/boys.mod.gml"));
+downloadmod("crazytraps.mod.gml
+");
+downloadmod("damagenumbers.mod.gml
+");
+downloadmod("Baldi/baldi.race.gml
+");
+downloadmod("Baldi/ruler.wep.gml
+");
+downloadmod("Baldi/ultraruler.wep.gml
+");
+downloadmod("Baldi/aha.ogg
+");
+downloadmod("Baldi/baldi.png
+");
+downloadmod("Baldi/dead.png
+");
+downloadmod("Baldi/goodjob.ogg
+");
+downloadmod("Baldi/GoSit.png
+");
+downloadmod("Baldi/hurt.png
+");
+downloadmod("Baldi/mapicon.png
+");
+downloadmod("Baldi/nothing.ogg
+");
+downloadmod("Baldi/nothing.png
+");
+downloadmod("Baldi/Portrait.png
+");
+downloadmod("Baldi/reee.ogg
+");
+downloadmod("Baldi/ruler.png
+");
+downloadmod("Baldi/select.ogg
+");
+downloadmod("Baldi/select.png
+");
+downloadmod("Baldi/sit.png
+");
+downloadmod("Baldi/smack.ogg
+");
+downloadmod("Baldi/sprMapIcon.png
+");
+downloadmod("Baldi/ultraa.png
+");
+downloadmod("Baldi/ultrab.png
+");
+downloadmod("Baldi/ultraruler.png
+");
+downloadmod("Baldi/ultras.png
+");
+downloadmod("Baldi/wow.ogg
+");
+downloadmod("blstorm.wep.gml
+");
+downloadmod("boys.mod.gml
+");
+while (!file_loaded(string_trim(data+"crazytraps.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"damagenumbers.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/baldi.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ruler.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ultraruler.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/aha.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/baldi.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/dead.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/goodjob.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/GoSit.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/hurt.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/mapicon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/nothing.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/nothing.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/Portrait.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/reee.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ruler.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/select.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/select.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/sit.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/smack.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/sprMapIcon.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ultraa.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ultrab.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ultraruler.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/ultras.png
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Baldi/wow.ogg
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"blstorm.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"boys.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/crazytraps.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/damagenumbers.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Baldi/baldi.race.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Baldi/ruler.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Baldi/ultraruler.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/blstorm.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/boys.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -193,7 +259,8 @@ trace("Current Daily:");
 trace("Mods=Crazy Traps,Damage Numbers,Baldi,blstorm,boys");
 trace("Character:Choose");
 trace("Crown:none");
-trace("Weapon:Baldi/ultraruler");
+trace("Weapon:Baldi/ultraruler
+");
 trace("Seed:10280");
 
 global.canStart = true;
@@ -323,7 +390,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Baldi/ultraruler"));
+		give_wep(string_trim("Baldi/ultraruler
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -378,7 +446,8 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler" + " Seed:10280";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler
+" + " Seed:10280";
 	}
 	trace(score);
 	global.finished = true;
@@ -414,10 +483,12 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler" + " Seed:10280" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler
+" + " Seed:10280" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler" + " Seed:10280",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crazy Traps,Damage Numbers,Baldi,blstorm,boys" + " Character:Choose" + " Crown:none" + " Weapon:Baldi/ultraruler
+" + " Seed:10280",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -860,5 +931,5 @@ return retVal;
 
 #define downloadmod(name)
 var n = string_trim(name);
-file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,data+n));trace(n+" downloaded.");
+file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");
 
