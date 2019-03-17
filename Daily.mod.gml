@@ -1,5 +1,7 @@
 
-/*@rMods@w=#  Cuz#  Death Pit#  CoD Proper#  banditstack#  Buff#@bCharacter@w=#  Choose#@yCrown@w=#  deathpit#@gWeapon@w=#  heavynadelauncher#@pSeed@w=23490#Limited Tries:false*/
+/*@rMods@w=#  Cuz#  Death Pit#  CoD Proper#  banditstack#  Buff#@bCharacter@w=#  Choose#@yCrown@w=#  deathpit
+#@gWeapon@w=#  heavynadelauncher
+#@pSeed@w=23490#Limited Tries:false*/
 /*|Cuz[Has an energy shield, for some reason.]|Death Pit[FIGHT TO THE DEATH#IN THIS SMALL SQUARE#WHEN YOU HAVE THIS CROWN#DO IT NOW]|banditstack[Can stack bandits,#leaving the player in awe#of their balancing skills]|Buff[Buffs to various weapons,#ultras, mutations,#and more]*/
 #define init
 #macro weeklyButtonX 6
@@ -97,60 +99,114 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("cuz.race.gml");
-downloadmod("deathpit.crown.gml");
-downloadmod("codproper.mod.gml");
-downloadmod("banditstack.mod.gml");
-downloadmod("Buff/buff.mod.gml");
-downloadmod("Buff/gunwarrant.mod.gml");
-downloadmod("Buff/hardertokill.mod.gml");
-downloadmod("Buff/heavyauto.wep.gml");
-downloadmod("Buff/heavynadelauncher.wep.gml");
-downloadmod("Buff/hyperrifle.wep.gml");
-downloadmod("Buff/luckyshot.skill.gml");
-downloadmod("Buff/projectilestyle.mod.gml");
-downloadmod("Buff/rogueultras.mod.gml");
-downloadmod("Buff/sharpteeth.skill.gml");
-downloadmod("Buff/smartgun.wep.gml");
-downloadmod("Buff/steroidsultras.mod.gml");
-downloadmod("Buff/teleport.mod.gml");
-downloadmod("Buff/waterboost.mod.gml");
-while (!file_loaded(string_trim(data+"cuz.race.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"deathpit.crown.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"codproper.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"banditstack.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/buff.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/gunwarrant.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/hardertokill.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/heavyauto.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/heavynadelauncher.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/hyperrifle.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/luckyshot.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/projectilestyle.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/rogueultras.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/sharpteeth.skill.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/smartgun.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/steroidsultras.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/teleport.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"Buff/waterboost.mod.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/cuz.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/deathpit.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/codproper.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/banditstack.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/buff.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/gunwarrant.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/hardertokill.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/heavyauto.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/heavynadelauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/hyperrifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/luckyshot.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/projectilestyle.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/rogueultras.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/sharpteeth.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/smartgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/steroidsultras.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/teleport.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/waterboost.mod.gml"));
+downloadmod("cuz.race.gml
+");
+downloadmod("deathpit.crown.gml
+");
+downloadmod("codproper.mod.gml
+");
+downloadmod("banditstack.mod.gml
+");
+downloadmod("Buff/buff.mod.gml
+");
+downloadmod("Buff/gunwarrant.mod.gml
+");
+downloadmod("Buff/hardertokill.mod.gml
+");
+downloadmod("Buff/heavyauto.wep.gml
+");
+downloadmod("Buff/heavynadelauncher.wep.gml
+");
+downloadmod("Buff/hyperrifle.wep.gml
+");
+downloadmod("Buff/luckyshot.skill.gml
+");
+downloadmod("Buff/projectilestyle.mod.gml
+");
+downloadmod("Buff/rogueultras.mod.gml
+");
+downloadmod("Buff/sharpteeth.skill.gml
+");
+downloadmod("Buff/smartgun.wep.gml
+");
+downloadmod("Buff/steroidsultras.mod.gml
+");
+downloadmod("Buff/teleport.mod.gml
+");
+downloadmod("Buff/waterboost.mod.gml
+");
+while (!file_loaded(string_trim(data+"cuz.race.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"deathpit.crown.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"codproper.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"banditstack.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/buff.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/gunwarrant.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/hardertokill.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/heavyauto.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/heavynadelauncher.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/hyperrifle.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/luckyshot.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/projectilestyle.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/rogueultras.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/sharpteeth.skill.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/smartgun.wep.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/steroidsultras.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/teleport.mod.gml
+"))) {wait 1;}
+while (!file_loaded(string_trim(data+"Buff/waterboost.mod.gml
+"))) {wait 1;}
+wait mod_load(string_trim("data/Daily.mod/cuz.race.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/deathpit.crown.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/codproper.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/banditstack.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/buff.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/gunwarrant.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/hardertokill.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/heavyauto.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/heavynadelauncher.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/hyperrifle.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/luckyshot.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/projectilestyle.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/rogueultras.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/sharpteeth.skill.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/smartgun.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/steroidsultras.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/teleport.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/Buff/waterboost.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -181,8 +237,10 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 trace("Current Daily:");
 trace("Mods=Cuz,Death Pit,CoD Proper,banditstack,Buff");
 trace("Character:Choose");
-trace("Crown:deathpit");
-trace("Weapon:heavynadelauncher");
+trace("Crown:deathpit
+");
+trace("Weapon:heavynadelauncher
+");
 trace("Seed:23490");
 
 global.canStart = true;
@@ -312,7 +370,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("heavynadelauncher"));
+		give_wep(string_trim("heavynadelauncher
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -367,7 +426,9 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit" + " Weapon:heavynadelauncher" + " Seed:23490";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit
+" + " Weapon:heavynadelauncher
+" + " Seed:23490";
 	}
 	trace(score);
 	global.finished = true;
@@ -403,10 +464,14 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit" + " Weapon:heavynadelauncher" + " Seed:23490" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit
+" + " Weapon:heavynadelauncher
+" + " Seed:23490" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit" + " Weapon:heavynadelauncher" + " Seed:23490",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cuz,Death Pit,CoD Proper,banditstack,Buff" + " Character:Choose" + " Crown:deathpit
+" + " Weapon:heavynadelauncher
+" + " Seed:23490",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -562,7 +627,8 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("deathpit");
+name = string_trim("deathpit
+");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
@@ -849,5 +915,5 @@ return retVal;
 
 #define downloadmod(name)
 var n = string_trim(name);
-file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,data+n));trace(n+" downloaded.");
+file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");
 
