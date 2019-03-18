@@ -1,1 +1,1 @@
-Mods:Cuz,Death Pit,CoD Proper,banditstack,Buff Character:Choose Crown:deathpit Weapon:heavynadelauncher Seed:23490 Date:;2019-03-17;
+Mods:Fire Riders,Car,bow,Carpocalypse,Bigger Bandit Character:Choose Crown:crown of hatred Weapon:bow Seed:1022 Date:;2019-03-18;
