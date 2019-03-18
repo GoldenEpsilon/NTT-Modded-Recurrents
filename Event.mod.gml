@@ -1,5 +1,5 @@
 
-/*@pDesc@w=Do you have the luck o' the irish?#@rMods@w=#  Clasweps#@bCharacter@w=#  Choose#@yCrown@w=#  slots#@gWeapon@w=#  slot machine#@pSeed@w=11898#Limited Tries:false*/
+/*@pDesc@w=Do you have the#luck o' the irish?#@rMods@w=#  Clasweps#@bCharacter@w=#  Choose#@yCrown@w=#  slots#@gWeapon@w=#  slot machine#@pSeed@w=11898#Limited Tries:false*/
 /*|Clasweps[You got ultra weapons,#you got zappy weapons,#call now and you'll even get#some crowns thrown in for free!]*/
 #define init
 #macro weeklyButtonX 6
