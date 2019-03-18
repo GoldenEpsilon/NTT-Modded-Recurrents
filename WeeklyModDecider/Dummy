@@ -1,0 +1,11 @@
+|Dummy/dummy.race.gml
+/dummy
+:Dummy/dummy_die.png
+:Dummy/dummy_hurt.png
+:Dummy/dummy_idle.png
+:Dummy/dummy_portrait.png
+:Dummy/dummy_select.png
+:Dummy/dummy_sot.png
+:Dummy/dummy_sot1.png
+:Dummy/dummy_walk.png
+?No strings on me!
