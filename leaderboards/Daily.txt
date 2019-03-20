@@ -1,2 +1,1 @@
-Mods:Belly,Boltshard,Death Pit,Cool Trails,Director Character:Choose Crown:deathpit Weapon:Boltshard Seed:4878 Date:;2019-03-19;
-|MattFright: Area 1-3 L0 Kills: 213 Character: venuz 
+Mods:Cool Shadows,blstorm,Croc Man,Auto Bullet Shotgun,Double Pop Gun Character:Choose Crown:crown of luck Weapon:double_pop_gun Seed:1628 Date:;2019-03-20;
