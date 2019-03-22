@@ -1,1 +1,2 @@
 Mods:Chaos Guns,BAR,Grappler,Elite Turrets 2,bouncybolts Character:Choose Crown:crown of guns Weapon:Chaos Minigun Seed:12622 Date:;2019-03-22;
+|Golden Epsilon: Area 7-3 L0 Kills: 438 Character: fish 
