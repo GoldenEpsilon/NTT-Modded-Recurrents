@@ -1,2 +1,2 @@
 Mods:Chaos Guns,BAR,Grappler,Elite Turrets 2,bouncybolts Character:Choose Crown:crown of guns Weapon:Chaos Minigun Seed:12622 Date:;2019-03-22;
-|Golden Epsilon: Area 7-3 L0 Kills: 438 Character: fish |Skelzie: Area 1-1 L0 Kills: 30 Character: grappler |Skelzie: Area 1-1 L0 Kills: 46 Character: grappler |Skelzie: Area 2-1 L0 Kills: 147 Character: crystal |Me: Area 104-1 L0 Kills: 287 Character: fish 
+|Golden Epsilon: Area 7-3 L0 Kills: 438 Character: fish |Skelzie: Area 1-1 L0 Kills: 30 Character: grappler |Skelzie: Area 1-1 L0 Kills: 46 Character: grappler |Skelzie: Area 2-1 L0 Kills: 147 Character: crystal |Me: Area 104-1 L0 Kills: 287 Character: fish |Hello: Area 3-3 L0 Kills: 221 Character: steroids 
