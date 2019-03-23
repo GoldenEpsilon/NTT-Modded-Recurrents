@@ -1,5 +1,7 @@
 
-/*@rMods@w=#  Dodge Roll#  Cool Trails#  Elite Turrets 2#  Cannondemnation#  CoDeath#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath#@gWeapon@w=#  cannondemnation#@pSeed@w=30490#Limited Tries:false*/
+/*@rMods@w=#  Dodge Roll#  Cool Trails#  Elite Turrets 2#  Cannondemnation#  CoDeath#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath
+#@gWeapon@w=#  cannondemnation
+#@pSeed@w=30490#Limited Tries:false*/
 /*|Dodge Roll[Fish visited the Gungeon#on holiday and#came back with new tricks!]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]|Elite Turrets 2[Electric Boogaloo.#(affects Labs turrets)]|Cannondemnation[DOOM DEATH DESTRUCTION##AND LINKIN PARK]|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]*/
 #define init
 #macro weeklyButtonX 6
@@ -97,21 +99,26 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("dodgeroll.mod.gml");
-downloadmod("cooltrails.mod.gml");
-downloadmod("EliteTurret2.mod.gml");
-downloadmod("cannondemnation.wep.gml");
-downloadmod("CoDeath.crown.gml");
-while (!file_loaded(string_trim(data+"dodgeroll.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"cooltrails.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"EliteTurret2.mod.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"cannondemnation.wep.gml"))) {wait 1;}
-while (!file_loaded(string_trim(data+"CoDeath.crown.gml"))) {wait 1;}
-wait mod_load(string_trim("data/Daily.mod/dodgeroll.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/cannondemnation.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/CoDeath.crown.gml"));
+downloadmod("dodgeroll.mod.gml
+");
+downloadmod("cooltrails.mod.gml
+");
+downloadmod("EliteTurret2.mod.gml
+");
+downloadmod("cannondemnation.wep.gml
+");
+downloadmod("CoDeath.crown.gml
+");
+wait mod_load(string_trim("data/Daily.mod/dodgeroll.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/cannondemnation.wep.gml
+"));
+wait mod_load(string_trim("data/Daily.mod/CoDeath.crown.gml
+"));
 
 
 global.ModNames = "";
@@ -142,8 +149,10 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 trace("Current Daily:");
 trace("Mods=Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath");
 trace("Character:Choose");
-trace("Crown:CoDeath");
-trace("Weapon:cannondemnation");
+trace("Crown:CoDeath
+");
+trace("Weapon:cannondemnation
+");
 trace("Seed:30490");
 
 global.canStart = true;
@@ -273,7 +282,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("cannondemnation"));
+		give_wep(string_trim("cannondemnation
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -328,7 +338,9 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:cannondemnation" + " Seed:30490";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath
+" + " Weapon:cannondemnation
+" + " Seed:30490";
 	}
 	trace(score);
 	global.finished = true;
@@ -364,10 +376,14 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:cannondemnation" + " Seed:30490" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath
+" + " Weapon:cannondemnation
+" + " Seed:30490" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:cannondemnation" + " Seed:30490",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dodge Roll,Cool Trails,Elite Turrets 2,Cannondemnation,CoDeath" + " Character:Choose" + " Crown:CoDeath
+" + " Weapon:cannondemnation
+" + " Seed:30490",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -523,7 +539,8 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath");
+name = string_trim("CoDeath
+");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
@@ -811,4 +828,5 @@ return retVal;
 #define downloadmod(name)
 var n = string_trim(name);
 file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");file_load(data+n);
+while (!file_exists(data+n)) {wait 1;file_load(data+n);}
 
