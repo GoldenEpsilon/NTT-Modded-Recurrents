@@ -1,7 +1,6 @@
 
-/*@rMods@w=#  BL2#  bossbar#  CoDeath#  Colored Palace#  basicgunallies#@bCharacter@w=#  chicken#@yCrown@w=#  CoDeath
-#@gWeapon@w=#  double flame shotgun#@pSeed@w=15629#Limited Tries:false*/
-/*|BL2[Borderlands 2 x Nuclear Throne]|bossbar[For when you want to know#just how close you were to looping]|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]|Colored Palace[Gives a palace a#well-deserved paint job.]|basicgunallies[Ever wanted your allies to have normal guns?#Wait - @q HE'S GOT A GRENADE LAUNCHER!#@q@qRUN!!!]*/
+/*@rMods@w=#  Dummy#  Carbine#  Cooler Hud#  blstorm#  Blood#@bCharacter@w=#  carbine#@yCrown@w=#  crown of destiny#@gWeapon@w=#  blstorm#@pSeed@w=17822#Limited Tries:false*/
+/*|Dummy[No strings on me!]|Carbine[Pew Pew.]|Cooler Hud[Symphony of the Throne]|blstorm[BLEED YOURSELF DRY]|Blood[If Nuclear Throne had an M rating...]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +55,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 15629;
+global.seed = 17822;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "chicken";
+global.Race = "carbine";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,1140 +97,24 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("BL2/bigweaponchest.mod.gml
-");
-downloadmod("BL2/gamblechest.mod.gml
-");
-downloadmod("BL2/idpdgamblechest.mod.gml
-");
-downloadmod("BL2/pgw.mod.gml
-");
-downloadmod("BL2/procwep.wep.gml
-");
-downloadmod("BL2/reloadindicator.mod.gml
-");
-downloadmod("BL2/sharedammo.mod.gml
-");
-downloadmod("BL2/mods/pgw_bl2.mod.gml
-");
-downloadmod("BL2/mods/pgw_idpd.mod.gml
-");
-downloadmod("BL2/mods/res/bl2/ban/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/ar/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/rl/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/shot/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ban/smg/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/han0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/han1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/ar/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/han0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/han1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/lsr/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/han0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/han1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/smg/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/han0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/han1.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/dah/sni/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/han0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/han1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/lsr/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/han0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/han1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/shot/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/han0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/han1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/smg/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/han0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/han1.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/hyp/sni/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/han0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/han1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/ar/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/han0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/han1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/shot/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/han0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/han1.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/jak/sni/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/han0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/han1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/rl/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/han0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/han1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/smg/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/han0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/han1.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/mal/sni/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/rl/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/shot/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/han0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/han1.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/ted/smg/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/han0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/han1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/ar/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/han0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/han1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/rl/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/han0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/han1.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/tor/shot/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ref.pdn
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/han0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/han1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/ar/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/han0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/han1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/pis/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/han0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/han1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/rl/muz1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/bod0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/bod1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/han0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/han1.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/muz0.png
-");
-downloadmod("BL2/mods/res/bl2/vla/sni/muz1.png
-");
-downloadmod("BL2/mods/res/idpd/bod0.png
-");
-downloadmod("BL2/mods/res/idpd/bod1.png
-");
-downloadmod("BL2/mods/res/idpd/bod2.png
-");
-downloadmod("BL2/mods/res/idpd/bod3.png
-");
-downloadmod("BL2/mods/res/idpd/bod4.png
-");
-downloadmod("BL2/mods/res/idpd/han0.png
-");
-downloadmod("BL2/mods/res/idpd/han1.png
-");
-downloadmod("BL2/mods/res/idpd/han2.png
-");
-downloadmod("BL2/mods/res/idpd/han3.png
-");
-downloadmod("BL2/mods/res/idpd/han4.png
-");
-downloadmod("BL2/mods/res/idpd/muz0.png
-");
-downloadmod("BL2/mods/res/idpd/muz1.png
-");
-downloadmod("BL2/mods/res/idpd/muz2.png
-");
-downloadmod("BL2/mods/res/idpd/muz3.png
-");
-downloadmod("BL2/mods/res/idpd/muz4.png
-");
-downloadmod("BL2/mods/res/idpd/sprElitePopoGun.png
-");
-downloadmod("BL2/mods/res/idpd/sprPopoGun.png
-");
-downloadmod("BL2/mods/res/idpd/sprPopoHeavyGun.png
-");
-downloadmod("BL2/mods/res/idpd/sprPopoSlugger.png
-");
-downloadmod("BL2/res/bigweaponchest/bigWeaponChest.ase
-");
-downloadmod("BL2/res/bigweaponchest/sprBigWeaponChest.png
-");
-downloadmod("BL2/res/bigweaponchest/sprBigWeaponChestOpen.png
-");
-downloadmod("BL2/res/bigweaponchest/sprBigWeaponChestOpening.png
-");
-downloadmod("BL2/res/bigweaponchest/sprWeaponChestBig_strip7.png
-");
-downloadmod("BL2/res/gamblechest/gambleChest.ase
-");
-downloadmod("BL2/res/gamblechest/sprGambleChest.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestBounce.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestPrizeBottom.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestPrizeLeft.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestPulling.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestRolling.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestTransformed.png
-");
-downloadmod("BL2/res/gamblechest/sprGambleChestTransforming.png
-");
-downloadmod("BL2/res/idpdgamblechest/idpdGambleChest.ase
-");
-downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChest.png
-");
-downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChestTransformed.png
-");
-downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChestTransforming.png
-");
-downloadmod("BL2/res/pgw/mskProcwep.png
-");
-downloadmod("bossbar.mod.gml
-");
-downloadmod("CoDeath.crown.gml
-");
-downloadmod("coloredpalace/coloredpalace.mod.gml
-");
-downloadmod("coloredpalace/sprDebris7_grey.png
-");
-downloadmod("coloredpalace/sprFloor7B_grey.png
-");
-downloadmod("coloredpalace/sprFloor7Explo_grey.png
-");
-downloadmod("coloredpalace/sprFloor7_grey.png
-");
-downloadmod("coloredpalace/sprWall7Bot_grey.png
-");
-downloadmod("coloredpalace/sprWall7Out_grey.png
-");
-downloadmod("coloredpalace/sprWall7Top_grey.png
-");
-downloadmod("coloredpalace/sprWall7Trans_grey.png
-");
-downloadmod("basicgunallies.mod.gml
-");
-while (!file_loaded(string_trim(data+"BL2/bigweaponchest.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/gamblechest.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/idpdgamblechest.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/pgw.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/procwep.wep.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/reloadindicator.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/sharedammo.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/pgw_bl2.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/pgw_idpd.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/ar/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/rl/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/shot/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ban/smg/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/ar/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/lsr/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/smg/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/dah/sni/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/lsr/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/shot/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/smg/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/hyp/sni/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/ar/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/shot/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/jak/sni/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/rl/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/smg/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/mal/sni/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/rl/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/shot/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/ted/smg/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/ar/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/rl/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/tor/shot/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ref.pdn
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/ar/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/pis/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/rl/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/bl2/vla/sni/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/bod0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/bod1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/bod2.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/bod3.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/bod4.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/han0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/han1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/han2.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/han3.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/han4.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/muz0.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/muz1.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/muz2.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/muz3.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/muz4.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/sprElitePopoGun.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/sprPopoGun.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/sprPopoHeavyGun.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/mods/res/idpd/sprPopoSlugger.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/bigweaponchest/bigWeaponChest.ase
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/bigweaponchest/sprBigWeaponChest.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/bigweaponchest/sprBigWeaponChestOpen.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/bigweaponchest/sprBigWeaponChestOpening.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/bigweaponchest/sprWeaponChestBig_strip7.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/gambleChest.ase
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChest.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestBounce.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestPrizeBottom.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestPrizeLeft.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestPulling.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestRolling.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestTransformed.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/gamblechest/sprGambleChestTransforming.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/idpdgamblechest/idpdGambleChest.ase
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/idpdgamblechest/sprIDPDGambleChest.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/idpdgamblechest/sprIDPDGambleChestTransformed.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/idpdgamblechest/sprIDPDGambleChestTransforming.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"BL2/res/pgw/mskProcwep.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"bossbar.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"CoDeath.crown.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/coloredpalace.mod.gml
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprDebris7_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprFloor7B_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprFloor7Explo_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprFloor7_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprWall7Bot_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprWall7Out_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprWall7Top_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"coloredpalace/sprWall7Trans_grey.png
-"))) {wait 1;}
-while (!file_loaded(string_trim(data+"basicgunallies.mod.gml
-"))) {wait 1;}
-wait mod_load(string_trim("data/Weekly.mod/BL2/bigweaponchest.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/gamblechest.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/idpdgamblechest.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/pgw.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/procwep.wep.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/reloadindicator.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/sharedammo.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/mods/pgw_bl2.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/BL2/mods/pgw_idpd.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/bossbar.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/CoDeath.crown.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/coloredpalace/coloredpalace.mod.gml
-"));
-wait mod_load(string_trim("data/Weekly.mod/basicgunallies.mod.gml
-"));
+downloadmod("Dummy/dummy.race.gml");
+downloadmod("Dummy/dummy_die.png");
+downloadmod("Dummy/dummy_hurt.png");
+downloadmod("Dummy/dummy_idle.png");
+downloadmod("Dummy/dummy_portrait.png");
+downloadmod("Dummy/dummy_select.png");
+downloadmod("Dummy/dummy_sot.png");
+downloadmod("Dummy/dummy_sot1.png");
+downloadmod("Dummy/dummy_walk.png");
+downloadmod("carbine.wep.gml");
+downloadmod("coolerhud.mod.gml");
+downloadmod("blstorm.wep.gml");
+downloadmod("blood.mod.gml");
+wait mod_load(string_trim("data/Weekly.mod/Dummy/dummy.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/carbine.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/coolerhud.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blood.mod.gml"));
 
 
 global.ModNames = "";
@@ -1260,12 +143,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=BL2,bossbar,CoDeath,Colored Palace,basicgunallies");
-trace("Character:chicken");
-trace("Crown:CoDeath
-");
-trace("Weapon:double flame shotgun");
-trace("Seed:15629");
+trace("Mods=Dummy,Carbine,Cooler Hud,blstorm,Blood");
+trace("Character:carbine");
+trace("Crown:crown of destiny");
+trace("Weapon:blstorm");
+trace("Seed:17822");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -1394,7 +276,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("double flame shotgun"));
+		give_wep(string_trim("blstorm"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -1415,7 +297,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race=chicken;
+			race="carbine";
 		}
 	}
 }
@@ -1430,9 +312,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("chicken")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("carbine")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("chicken"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("carbine"))){
 					instance_destroy();
 				}
 				exit;
@@ -1449,17 +331,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:BL2,bossbar,CoDeath,Colored Palace,basicgunallies" + " Character:chicken" + " Crown:CoDeath
-" + " Weapon:double flame shotgun" + " Seed:15629";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-03-17 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-03-17 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-03-17 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-03-17 Weekly.txt");
+	if(file_exists(global.alias + " 2019-03-24 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-03-24 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-03-24 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-03-24 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-03-17 Weekly.txt");
+		string_save(score, global.alias + " 2019-03-24 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -1486,12 +367,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:BL2,bossbar,CoDeath,Colored Palace,basicgunallies" + " Character:chicken" + " Crown:CoDeath
-" + " Weapon:double flame shotgun" + " Seed:15629" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":BL2,bossbar,CoDeath,Colored Palace,basicgunallies" + " Character:chicken" + " Crown:CoDeath
-" + " Weapon:double flame shotgun" + " Seed:15629",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -1607,7 +486,7 @@ if(instance_exists(Menu)){
 			draw_text_nt(global.weeklyScoreboardX + 1, global.weeklyScoreboardY + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:"+string(make_color_rgb(255, 175, 0))+")" : (i+global.leaderboardPos)==1 ? "@(color:"+string(make_color_rgb(200, 200, 200))+")" : (i+global.leaderboardPos)==2 ? "@(color:"+string(make_color_rgb(150, 100, 0))+")" : "") + "\#" + string_copy(string(i+global.leaderboardPos+1), 1, floor((global.weeklyScoreboardW)/8) + (0 - string_length(string(i+global.leaderboardPos+1)))));
 			draw_text_nt(global.weeklyScoreboardX + 35 - (10 * (2 - string_length(string(i+global.leaderboardPos+1)))), global.weeklyScoreboardY + i*15 + 1, ((i+global.leaderboardPos) == 0 ? "@(color:"+string(make_color_rgb(255, 175, 0))+")" : (i+global.leaderboardPos)==1 ? "@(color:"+string(make_color_rgb(200, 200, 200))+")" : (i+global.leaderboardPos)==2 ? "@(color:"+string(make_color_rgb(150, 100, 0))+")" : "") + string_copy(string(global.leaderboard[i+global.leaderboardPos][0]), 1, floor((global.weeklyScoreboardW)/8) + (-2 - string_length(string(i+global.leaderboardPos+1)))));
 			draw_set_font(fntSmall);
-			draw_text_nt(global.weeklyScoreboardX  + 37 - (10 * (2 - string_length(string(i+global.leaderboardPos+1)))), global.weeklyScoreboardY + i*15 + 9, string_copy("L: " + global.leaderboard[i+global.leaderboardPos][1] + " K: " + string(global.leaderboard[i+global.leaderboardPos][2]) + ((global.leaderboard[i+global.leaderboardPos][3] != "") ? (" C: " + global.leaderboard[i+global.leaderboardPos][3]) : ""), 1, floor((global.weeklyScoreboardW)/4) + (-5 - 2*string_length(string(i+global.leaderboardPos+1)))));
+			draw_text_nt(global.weeklyScoreboardX  + 37 - (10 * (2 - string_length(string(i+global.leaderboardPos+1)))), global.weeklyScoreboardY + i*15 + 9, string_copy("L: " + global.leaderboard[i+global.leaderboardPos][1] + " K: " + string(global.leaderboard[i+global.leaderboardPos][2]) + ((string_trim(global.leaderboard[i+global.leaderboardPos][3]) != "") ? (" C: " + global.leaderboard[i+global.leaderboardPos][3]) : ""), 1, floor((global.weeklyScoreboardW)/4) + (-5 - 2*string_length(string(i+global.leaderboardPos+1)))));
 		}
 	}else if(global.leaderboardOpening){
 		draw_set_valign(1);
@@ -1638,7 +517,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=chicken;}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race="carbine";}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -1647,8 +526,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath
-");
+name = string_trim("crown of destiny");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
@@ -1936,4 +814,5 @@ return retVal;
 #define downloadmod(name)
 var n = string_trim(name);
 file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");file_load(data+n);
+while (!file_exists(data+n)) {wait 1;file_load(data+n);}
 
