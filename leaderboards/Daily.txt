@@ -1,2 +1,1 @@
-Mods:Damage Numbers,Cool Dark,Bandit,Challenge Mode,!ARMAGGEDNN Character:Choose Crown:crown of luck Weapon:Inspector Slugger Seed:11983 Date:;2019-03-24;
-|Toastline: Area 1-1 L0 Kills: 2 Character: bandit |Toastline: Area 1-1 L0 Kills: 14 Character: bandit |Toastline: Area 1-1 L0 Kills: 2 Character: venuz |Toastline: Area 1-2 L0 Kills: 46 Character: venuz |Aurielle, The Taleteller: Area 1-1 L0 Kills: 5 Character: venuz |Aurielle, The Taleteller: Area 1-1 L0 Kills: 11 Character: venuz 
+Mods:Bioluminary Oscillator,Double Maxigun,Balls,!ARMAGGEDNN,Charge Template Character:Choose Crown:crown of risk Weapon:Inspector Slugger Seed:8294 Date:;2019-03-25;
