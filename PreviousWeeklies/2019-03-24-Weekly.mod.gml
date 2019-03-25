@@ -1,5 +1,7 @@
 
-/*@rMods@w=#  Dummy#  Carbine#  Cooler Hud#  blstorm#  Blood#@bCharacter@w=#  carbine#@yCrown@w=#  crown of destiny#@gWeapon@w=#  blstorm#@pSeed@w=17822#Limited Tries:false*/
+/*@rMods@w=#  Dummy#  Carbine#  Cooler Hud#  blstorm#  Blood#@bCharacter@w=#  dummy
+#@yCrown@w=#  crown of destiny#@gWeapon@w=#  blstorm
+#@pSeed@w=17822#Limited Tries:false*/
 /*|Dummy[No strings on me!]|Carbine[Pew Pew.]|Cooler Hud[Symphony of the Throne]|blstorm[BLEED YOURSELF DRY]|Blood[If Nuclear Throne had an M rating...]*/
 #define init
 #macro weeklyButtonX 6
@@ -59,7 +61,8 @@ global.seed = 17822;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "carbine";
+global.Race = "dummy
+";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -97,24 +100,42 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Dummy/dummy.race.gml");
-downloadmod("Dummy/dummy_die.png");
-downloadmod("Dummy/dummy_hurt.png");
-downloadmod("Dummy/dummy_idle.png");
-downloadmod("Dummy/dummy_portrait.png");
-downloadmod("Dummy/dummy_select.png");
-downloadmod("Dummy/dummy_sot.png");
-downloadmod("Dummy/dummy_sot1.png");
-downloadmod("Dummy/dummy_walk.png");
-downloadmod("carbine.wep.gml");
-downloadmod("coolerhud.mod.gml");
-downloadmod("blstorm.wep.gml");
-downloadmod("blood.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/Dummy/dummy.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/carbine.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/coolerhud.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blood.mod.gml"));
+downloadmod("Dummy/dummy.race.gml
+");
+downloadmod("Dummy/dummy_die.png
+");
+downloadmod("Dummy/dummy_hurt.png
+");
+downloadmod("Dummy/dummy_idle.png
+");
+downloadmod("Dummy/dummy_portrait.png
+");
+downloadmod("Dummy/dummy_select.png
+");
+downloadmod("Dummy/dummy_sot.png
+");
+downloadmod("Dummy/dummy_sot1.png
+");
+downloadmod("Dummy/dummy_walk.png
+");
+downloadmod("carbine.wep.gml
+");
+downloadmod("coolerhud.mod.gml
+");
+downloadmod("blstorm.wep.gml
+");
+downloadmod("blood.mod.gml
+");
+wait mod_load(string_trim("data/Weekly.mod/Dummy/dummy.race.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/carbine.wep.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/coolerhud.mod.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml
+"));
+wait mod_load(string_trim("data/Weekly.mod/blood.mod.gml
+"));
 
 
 global.ModNames = "";
@@ -144,9 +165,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 
 trace("Current Weekly:");
 trace("Mods=Dummy,Carbine,Cooler Hud,blstorm,Blood");
-trace("Character:carbine");
+trace("Character:carbine
+");
 trace("Crown:crown of destiny");
-trace("Weapon:blstorm");
+trace("Weapon:blstorm
+");
 trace("Seed:17822");
 
 global.canStart = true;
@@ -276,7 +299,8 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("blstorm"));
+		give_wep(string_trim("blstorm
+"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -297,7 +321,8 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="carbine";
+			race="dummy
+";
 		}
 	}
 }
@@ -312,9 +337,11 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("carbine")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("dummy
+")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("carbine"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("dummy
+"))){
 					instance_destroy();
 				}
 				exit;
@@ -331,7 +358,9 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine
+" + " Crown:crown of destiny" + " Weapon:blstorm
+" + " Seed:17822";
 	}
 	trace(score);
 	global.finished = true;
@@ -367,10 +396,14 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine
+" + " Crown:crown of destiny" + " Weapon:blstorm
+" + " Seed:17822" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:17822",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dummy,Carbine,Cooler Hud,blstorm,Blood" + " Character:carbine
+" + " Crown:crown of destiny" + " Weapon:blstorm
+" + " Seed:17822",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -517,7 +550,8 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race="carbine";}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race="dummy
+";}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
