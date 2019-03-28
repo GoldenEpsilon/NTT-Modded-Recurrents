@@ -1,1 +1,1 @@
-Mods:Cannondemnation,Some Crowns,Chaos Guns,xefsstuff,Blood Character:Choose Crown:torment Weapon:cloud pistol Seed:20490 Date:;2019-03-27;
+Mods:Crazy Allies,Director,Carbine,Charge Template 2,Bandit Character:Choose Crown:none Weapon:charge_template Seed:21367 Date:;2019-03-28;
