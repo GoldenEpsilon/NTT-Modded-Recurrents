@@ -1,0 +1,1 @@
+Mods:Crazy Allies,Director,Carbine,Charge Template 2,Bandit Character:Choose Crown:none Weapon:charge_template Seed:21367 Date:;2019-03-28;

@@ -1,1 +1,1 @@
-Mods:Crazy Allies,Director,Carbine,Charge Template 2,Bandit Character:Choose Crown:none Weapon:charge_template Seed:21367 Date:;2019-03-28;
+Mods:Chest Bandits,C Ultras,Bioluminary Oscillator,Drop Me Gun,bossbar Character:Choose Crown:crown of haste Weapon:Bioluminary Oscillator Seed:4658 Date:;2019-03-29;
