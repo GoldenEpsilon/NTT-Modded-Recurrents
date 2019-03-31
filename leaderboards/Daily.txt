@@ -1,1 +1,1 @@
-Mods:Double Time,Double Pop Gun,C Ultras,Bigger Bandit,Big Dog Character:Choose Crown:crown of luck Weapon:double_pop_gun Seed:14691 Date:;2019-03-30;
+Mods:Defect,Double Maxigun,Vanthro,bow,Cannoner Character:Choose Crown:crown of risk Weapon:bow Seed:14434 Date:;2019-03-31;
