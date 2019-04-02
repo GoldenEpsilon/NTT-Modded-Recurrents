@@ -1,1 +1,1 @@
-Mods:blackholes,Cool Hud,Dummy,basicgunallies,Vanthro Character:Choose Crown:crown of risk Weapon:auto grenade shotgun Seed:11805 Date:;2019-04-01;
+Mods:CoDeath,Boltshard,Determination,Charge Template,C Ultras Character:Choose Crown:CoDeath Weapon:ct Seed:19933 Date:;2019-04-02;
