@@ -1,1 +1,2 @@
 Mods:bow,Grappler,basicgunallies,BadEnd,Cool Hud Character:grappler Crown:crown of guns Weapon:bow Seed:26527 Date:;2019-03-31;
+|Golden Epsilon: Area 1-2 L0 Kills: 19 Character:  
