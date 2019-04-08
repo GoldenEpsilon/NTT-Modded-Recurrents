@@ -1,2 +1,1 @@
-Mods:Buff,Auto Bullet Shotgun,Double Time,betterLoops,Bioluminary Oscillator Character:Choose Crown:crown of guns Weapon:Auto Bullet Shotgun Seed:2506 Date:;2019-04-06;
-|Gull the flying worm: Area 1-3 L0 Kills: 51 Character: chicken 
+Mods:Elite Minigun,Drama Kill,Bitpack,Double Maxigun,Double Pop Gun Character:Choose Crown:crown of life Weapon:double_pop_gun Seed:5050 Date:;2019-04-08;
