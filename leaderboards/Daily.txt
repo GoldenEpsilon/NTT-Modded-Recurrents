@@ -1,1 +1,1 @@
-Mods:Big Dog Snipers,Baldi,Chrononaut,Director,Carbine Character:Choose Crown:crown of risk Weapon:Baldi/ruler Seed:29715 Date:;2019-04-14;
+Mods:bossbar,Belly,Auto Bullet Shotgun,Doctor,Croc Man Character:Choose Crown:crown of death Weapon:Auto Bullet Shotgun Seed:15430 Date:;2019-04-15;
