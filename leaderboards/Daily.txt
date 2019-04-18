@@ -1,1 +1,1 @@
-Mods:Babylon Shotgun,Beamer,xefsstuff,Dasher,Chips Character:Choose Crown:none Weapon:heavy darts Seed:4166 Date:;2019-04-17;
+Mods:Challenge Test,Drop Me Gun,Auto Bullet Shotgun,blstorm,Elite Rifle Character:Choose Crown:crown of guns Weapon:eliterifle Seed:27876 Date:;2019-04-18;
