@@ -1,1 +1,1 @@
-Mods:Challenge Test,Drop Me Gun,Auto Bullet Shotgun,blstorm,Elite Rifle Character:Choose Crown:crown of guns Weapon:eliterifle Seed:27876 Date:;2019-04-18;
+Mods:Big Bandit,Big Dog Snipers,bosshudredux,Balls,Cool Dust Character:Choose Crown:crown of protection Weapon:laserwrench Seed:15293 Date:;2019-04-19;
