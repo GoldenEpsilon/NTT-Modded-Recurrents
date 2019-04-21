@@ -1,5 +1,5 @@
 
-/*@pDesc@w=Hop like a bunny to the music to get more eggs!#@rMods@w=#  Egg#  Blaac's Weapon Mutations#  Crypt Of The Necrodancer#@bCharacter@w=#  Choose#@yCrown@w=#  crown of curses#@gWeapon@w=#  pop gun#@pSeed@w=18040#Limited Tries:false*/
+/*@pDesc@w=Hop like a bunny#to the music#to get more eggs!#@rMods@w=#  Egg#  Blaac's Weapon Mutations#  Crypt Of The Necrodancer#@bCharacter@w=#  Choose#@yCrown@w=#  crown of curses#@gWeapon@w=#  pop gun#@pSeed@w=18040#Limited Tries:false*/
 /*|Egg[You will GIVE#me an @qEGG]|Blaac's Weapon Mutations[YOU GET A WEAPON MUTATION!#YOU GET A WEAPON MUTATION!#EVERYONE GETS A WEAPON MUTATION!!!]|Crypt Of The Necrodancer[Move to the beat!]*/
 #define init
 #macro weeklyButtonX 6
@@ -97,51 +97,96 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Egg.mod.gml");
-downloadmod("blaac's Weapon Mutations/compoundelbow.skill.gml");
-downloadmod("blaac's Weapon Mutations/concentration.skill.gml");
-downloadmod("blaac's Weapon Mutations/condensedmeat.skill.gml");
-downloadmod("blaac's Weapon Mutations/excitedneurons.skill.gml");
-downloadmod("blaac's Weapon Mutations/flamingpalms.skill.gml");
-downloadmod("blaac's Weapon Mutations/noheavyheart.mod.gml");
-downloadmod("blaac's Weapon Mutations/powderedgums.skill.gml");
-downloadmod("cotn/cotn.mod.gml");
-downloadmod("cotn/beatmaps/zone1_1.txt");
-downloadmod("cotn/beatmaps/zone1_2.txt");
-downloadmod("cotn/beatmaps/zone1_3.txt");
-downloadmod("cotn/beatmaps/zone2_1.txt");
-downloadmod("cotn/beatmaps/zone2_2.txt");
-downloadmod("cotn/beatmaps/zone2_3.txt");
-downloadmod("cotn/beatmaps/zone4_1.txt");
-downloadmod("cotn/beatmaps/zone4_2.txt");
-downloadmod("cotn/beatmaps/zone4_3.txt");
-downloadmod("cotn/beatmaps/zone3_1.txt");
-downloadmod("cotn/beatmaps/zone3_2.txt");
-downloadmod("cotn/beatmaps/zone3_3.txt");
-downloadmod("cotn/music/zone1_1.ogg");
-downloadmod("cotn/music/zone1_2.ogg");
-downloadmod("cotn/music/zone1_3.ogg");
-downloadmod("cotn/music/zone2_1.ogg");
-downloadmod("cotn/music/zone2_2.ogg");
-downloadmod("cotn/music/zone2_3.ogg");
-downloadmod("cotn/music/zone4_1.ogg");
-downloadmod("cotn/music/zone4_2.ogg");
-downloadmod("cotn/music/zone4_3.ogg");
-downloadmod("cotn/music/zone3_1c.ogg");
-downloadmod("cotn/music/zone3_2c.ogg");
-downloadmod("cotn/music/zone3_3c.ogg");
-downloadmod("cotn/music/zone3_1h.ogg");
-downloadmod("cotn/music/zone3_2h.ogg");
-downloadmod("cotn/music/zone3_3h.ogg");
-wait mod_load(string_trim("data/Event.mod/Egg.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/compoundelbow.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/concentration.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/condensedmeat.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/excitedneurons.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/flamingpalms.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/noheavyheart.mod.gml"));
-wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/powderedgums.skill.gml"));
-wait mod_load(string_trim("data/Event.mod/cotn/cotn.mod.gml"));
+downloadmod("Egg.mod.gml
+");
+downloadmod("blaac's Weapon Mutations/compoundelbow.skill.gml
+");
+downloadmod("blaac's Weapon Mutations/concentration.skill.gml
+");
+downloadmod("blaac's Weapon Mutations/condensedmeat.skill.gml
+");
+downloadmod("blaac's Weapon Mutations/excitedneurons.skill.gml
+");
+downloadmod("blaac's Weapon Mutations/flamingpalms.skill.gml
+");
+downloadmod("blaac's Weapon Mutations/noheavyheart.mod.gml
+");
+downloadmod("blaac's Weapon Mutations/powderedgums.skill.gml
+");
+downloadmod("cotn/cotn.mod.gml
+");
+downloadmod("cotn/beatmaps/zone1_1.txt
+");
+downloadmod("cotn/beatmaps/zone1_2.txt
+");
+downloadmod("cotn/beatmaps/zone1_3.txt
+");
+downloadmod("cotn/beatmaps/zone2_1.txt
+");
+downloadmod("cotn/beatmaps/zone2_2.txt
+");
+downloadmod("cotn/beatmaps/zone2_3.txt
+");
+downloadmod("cotn/beatmaps/zone4_1.txt
+");
+downloadmod("cotn/beatmaps/zone4_2.txt
+");
+downloadmod("cotn/beatmaps/zone4_3.txt
+");
+downloadmod("cotn/beatmaps/zone3_1.txt
+");
+downloadmod("cotn/beatmaps/zone3_2.txt
+");
+downloadmod("cotn/beatmaps/zone3_3.txt
+");
+downloadmod("cotn/music/zone1_1.ogg
+");
+downloadmod("cotn/music/zone1_2.ogg
+");
+downloadmod("cotn/music/zone1_3.ogg
+");
+downloadmod("cotn/music/zone2_1.ogg
+");
+downloadmod("cotn/music/zone2_2.ogg
+");
+downloadmod("cotn/music/zone2_3.ogg
+");
+downloadmod("cotn/music/zone4_1.ogg
+");
+downloadmod("cotn/music/zone4_2.ogg
+");
+downloadmod("cotn/music/zone4_3.ogg
+");
+downloadmod("cotn/music/zone3_1c.ogg
+");
+downloadmod("cotn/music/zone3_2c.ogg
+");
+downloadmod("cotn/music/zone3_3c.ogg
+");
+downloadmod("cotn/music/zone3_1h.ogg
+");
+downloadmod("cotn/music/zone3_2h.ogg
+");
+downloadmod("cotn/music/zone3_3h.ogg
+");
+wait mod_load(string_trim("data/Event.mod/Egg.mod.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/compoundelbow.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/concentration.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/condensedmeat.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/excitedneurons.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/flamingpalms.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/noheavyheart.mod.gml
+"));
+wait mod_load(string_trim("data/Event.mod/blaac's Weapon Mutations/powderedgums.skill.gml
+"));
+wait mod_load(string_trim("data/Event.mod/cotn/cotn.mod.gml
+"));
 
 
 global.ModNames = "";
