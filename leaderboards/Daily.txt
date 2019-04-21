@@ -1,1 +1,1 @@
-Mods:Chips,Derpweps,Bigger Bandit,Cool Flame,Crypt Of The Necrodancer Character:Choose Crown:crown of destiny Weapon:thebolt Seed:13776 Date:;2019-04-20;
+Mods:Bomber,bouncybolts,Babylon Shotgun,Double Maxigun,Confuse Character:Choose Crown:crown of love Weapon:Babylon Shotgun Seed:26604 Date:;2019-04-21;
