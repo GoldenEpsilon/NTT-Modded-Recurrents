@@ -1,1 +1,1 @@
-Mods:Damage Numbers,Colored Palace,Chrononaut,Discs,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:Disc Shotgun Seed:15565 Date:;2019-04-27;
+Mods:Cool Flame,Fire Riders,Cooler Hud,Disk Marrow,BAR Character:Choose Crown:crown of life Weapon:Big Ass Revolver Seed:32309 Date:;2019-04-28;
