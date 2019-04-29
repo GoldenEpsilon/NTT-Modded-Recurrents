@@ -1,1 +1,2 @@
 Mods:bossbar,BadEnd,!ARMAGGEDNN,Dogfly,blstorm Character:rebel Crown:crown of risk Weapon:Fire Axe Seed:2921 Date:;2019-04-28;
+|Strider: Area 3-1 L0 Kills: 128 Character:  
