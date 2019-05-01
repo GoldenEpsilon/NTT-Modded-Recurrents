@@ -1,2 +1,2 @@
 Mods:Auto Bullet Shotgun,Blood,Big Bandit,6 Weapons,Elite Turrets 2 Character:Choose Crown:none Weapon:Auto Bullet Shotgun Seed:5936 Date:;2019-04-30;
-|Strider: Area 7-3 L0 Kills: 382 Character: bigbandit 
+|Strider: Area 7-3 L0 Kills: 382 Character: bigbandit |Strider: Area 5-3 L0 Kills: 194 Character: horror 
