@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Cycle#  Bigger Bandit#  CoD Proper#  Camper Boys#  Elite Dasher#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  super crossbow#@pSeed@w=32412#Limited Tries:false*/
-/*|Cycle[Makes it so you keep gaining mutations, but you only keep the last 10]|Bigger Bandit[Ever gotten bored of Big Dog?]|Camper Boys[Convinces the vanilla mutants#to let the custom characters#warm up by the fire]|Elite Dasher[@qPICK UP ALL THE THINGS]*/
+/*@rMods@w=#  Area Health#  Cursed Hyper Crystal#  Chaos Guns#  Defect#  Freak Arena#@bCharacter@w=#  Choose#@yCrown@w=#  crown of curses#@gWeapon@w=#  Super Chaos Minigun#@pSeed@w=22975#Limited Tries:false*/
+/*|Area Health[A nice mod that shows how many enemies are left.]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Chaos Guns[For when you need a bit#more chaos in your life.]|Defect[BEEP BOOP I AM ROBOT]|Freak Arena[Do you think you can survive#in the @qFREAK ARENA???]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -55,7 +55,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 32412;
+global.seed = 22975;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -97,16 +97,24 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("cycle.mod.gml");
-downloadmod("biggerbandit.mod.gml");
-downloadmod("codproper.mod.gml");
-downloadmod("camperboys.mod.gml");
-downloadmod("elitedasher.race.gml");
-wait mod_load(string_trim("data/Daily.mod/cycle.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/biggerbandit.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/codproper.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/camperboys.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/elitedasher.race.gml"));
+downloadmod("area_health.mod.gml");
+downloadmod("cursedhypercrystal.mod.gml");
+downloadmod("Chaos Guns/Blunderbuss.wep.gml");
+downloadmod("Chaos Guns/Super Blunderbuss.wep.gml");
+downloadmod("Chaos Guns/Chaos Minigun.wep.gml");
+downloadmod("Chaos Guns/Super Chaos Minigun.wep.gml");
+downloadmod("Chaos Guns/Hyper Chaos Minigun.wep.gml");
+downloadmod("defect.race.gml");
+downloadmod("freakarena_daily.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/area_health.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cursedhypercrystal.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Chaos Guns/Blunderbuss.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Chaos Guns/Super Blunderbuss.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Chaos Guns/Chaos Minigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Chaos Guns/Super Chaos Minigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Chaos Guns/Hyper Chaos Minigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/defect.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/freakarena_daily.mod.gml"));
 
 
 global.ModNames = "";
@@ -135,11 +143,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Cycle,Bigger Bandit,CoD Proper,Camper Boys,Elite Dasher");
+trace("Mods=Area Health,Cursed Hyper Crystal,Chaos Guns,Defect,Freak Arena");
 trace("Character:Choose");
-trace("Crown:crown of protection");
-trace("Weapon:super crossbow");
-trace("Seed:32412");
+trace("Crown:crown of curses");
+trace("Weapon:Super Chaos Minigun");
+trace("Seed:22975");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -268,7 +276,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("super crossbow"));
+		give_wep(string_trim("Super Chaos Minigun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -323,16 +331,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cycle,Bigger Bandit,CoD Proper,Camper Boys,Elite Dasher" + " Character:Choose" + " Crown:crown of protection" + " Weapon:super crossbow" + " Seed:32412";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Area Health,Cursed Hyper Crystal,Chaos Guns,Defect,Freak Arena" + " Character:Choose" + " Crown:crown of curses" + " Weapon:Super Chaos Minigun" + " Seed:22975";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-05-04 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-05-04 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-05-04 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-05-04 Daily.txt");
+	if(file_exists(global.alias + " 2019-05-05 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-05-05 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-05-05 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-05-05 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-05-04 Daily.txt");
+		string_save(score, global.alias + " 2019-05-05 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -359,10 +367,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cycle,Bigger Bandit,CoD Proper,Camper Boys,Elite Dasher" + " Character:Choose" + " Crown:crown of protection" + " Weapon:super crossbow" + " Seed:32412" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Area Health,Cursed Hyper Crystal,Chaos Guns,Defect,Freak Arena" + " Character:Choose" + " Crown:crown of curses" + " Weapon:Super Chaos Minigun" + " Seed:22975" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cycle,Bigger Bandit,CoD Proper,Camper Boys,Elite Dasher" + " Character:Choose" + " Crown:crown of protection" + " Weapon:super crossbow" + " Seed:32412",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Area Health,Cursed Hyper Crystal,Chaos Guns,Defect,Freak Arena" + " Character:Choose" + " Crown:crown of curses" + " Weapon:Super Chaos Minigun" + " Seed:22975",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -518,7 +526,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of protection");
+name = string_trim("crown of curses");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
