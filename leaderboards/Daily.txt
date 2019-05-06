@@ -1,1 +1,1 @@
-Mods:Area Health,Cursed Hyper Crystal,Chaos Guns,Defect,Freak Arena Character:Choose Crown:crown of curses Weapon:Super Chaos Minigun Seed:22975 Date:;2019-05-05;
+Mods:Ash,basicgunallies,Fire Riders,Druid,Dumb Shells Character:Choose Crown:crown of destiny Weapon:splinter pistol Seed:4144 Date:;2019-05-06;
