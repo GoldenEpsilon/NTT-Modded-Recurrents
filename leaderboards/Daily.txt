@@ -1,1 +1,1 @@
-Mods:Elite Turrets,Bitpack,Bear,banditstack,Balls Character:Choose Crown:crown of blood Weapon:A Fucking Gun Seed:22473 Date:;2019-05-10;
+Mods:BAR,Druid,Big Dog Snipers,Defect,Devastator Character:Choose Crown:crown of curses Weapon:Big Ass Revolver Seed:24099 Date:;2019-05-11;
