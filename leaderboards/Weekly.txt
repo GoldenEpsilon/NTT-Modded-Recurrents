@@ -1,2 +1,1 @@
-Mods:blaac48,Bloodking,Bandit,Carmageddon,Crazy Bandits Character:bandit Crown:none Weapon:heavy machinegun Seed:20231 Date:;2019-05-05;
-|Strider: Area 1-1 L0 Kills: 43 Character:  
+Mods:Carpocalypse,Bloodking,betterLoops,banditstack,Cooler Hud Character:bloodking Crown:crown of guns Weapon:golden laser pistol Seed:10539 Date:;2019-05-12;
