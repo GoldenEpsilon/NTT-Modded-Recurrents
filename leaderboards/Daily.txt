@@ -1,2 +1,1 @@
-Mods:Drop Me Gun,Crazy Allies,Detonator B,Big Toothbrush,blaac48 Character:Choose Crown:crown of guns Weapon:Big Toothbrush Seed:12845 Date:;2019-05-15;
-|Ross Douthat: Area 1-1 L0 Kills: 11 Character: rebel |Ross Douthat: Area 3-3 L0 Kills: 180 Character: detonatorb 
+Mods:CoDeath,Camper Boys,Bioluminary Oscillator,Double Plasma Minigun,Cursed Hyper Crystal Character:Choose Crown:CoDeath Weapon:doubleplasma Seed:1396 Date:;2019-05-16;
