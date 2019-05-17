@@ -1,2 +1,2 @@
 Mods:bouncermini,Challenge Test,Buff,Determination,Dumb Shells Character:Choose Crown:crown of risk Weapon:hyperrifle Seed:30626 Date:;2019-05-17;
-|Cetaceous: Area 1-1 L0 Kills: 3 Character: rebel |Cetaceous: Area 3-2 L0 Kills: 139 Character: rebel 
+|Cetaceous: Area 1-1 L0 Kills: 3 Character: rebel |Cetaceous: Area 3-2 L0 Kills: 139 Character: rebel |Ross Douthat: Area 5-2 L0 Kills: 295 Character: chicken 
