@@ -1,2 +1,1 @@
-Mods:Chaos Guns,Assault Flak Cannon,Chrononaut,Cooler Hud,Belly Character:Choose Crown:crown of death Weapon:Super Chaos Minigun Seed:25965 Date:;2019-05-18;
-|Ross Douthat: Area 1-1 L0 Kills: 10 Character: chrononaut |Ross Douthat: Area 4-1 L0 Kills: 197 Character: chrononaut 
+Mods:Bloodking,Clasweps,Dumb Shells,Colored Palace,Bandit Character:Choose Crown:Slaughter Weapon:chargeflak Seed:364 Date:;2019-05-19;
