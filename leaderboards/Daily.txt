@@ -1,2 +1,1 @@
-Mods:Bloodking,Clasweps,Dumb Shells,Colored Palace,Bandit Character:Choose Crown:Slaughter Weapon:chargeflak Seed:364 Date:;2019-05-19;
-|Ross Douthat: Area 103-1 L0 Kills: 116 Character: fishexample 
+Mods:Cool Shadows,Director,bossbar,BL2,Bomber Character:Choose Crown:crown of haste Weapon:gatling slugger Seed:30950 Date:;2019-05-20;
