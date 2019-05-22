@@ -1,2 +1,1 @@
-Mods:Cool Shadows,Director,bossbar,BL2,Bomber Character:Choose Crown:crown of haste Weapon:gatling slugger Seed:30950 Date:;2019-05-20;
-|Ross Douthat: Area 7-3 L0 Kills: 497 Character: inmaterace |Ross Douthat: Area 1-1 L0 Kills: 3 Character: bomber 
+Mods:Bigger Bandit,Ash,Baldi,Chrononaut,Cosmi Gun Enemies Character:Choose Crown:crown of haste Weapon:idpdslugpistol Seed:27125 Date:;2019-05-22;
