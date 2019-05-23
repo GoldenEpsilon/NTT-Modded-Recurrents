@@ -1,2 +1,1 @@
-Mods:Bigger Bandit,Ash,Baldi,Chrononaut,Cosmi Gun Enemies Character:Choose Crown:crown of haste Weapon:idpdslugpistol Seed:27125 Date:;2019-05-22;
-|Ross Douthat: Area 1-1 L0 Kills: 4 Character: ash |Ross Douthat: Area 1-1 L0 Kills: 9 Character: ash |Ross Douthat: Area 1-2 L0 Kills: 40 Character: chrononaut 
+Mods:Buff,Cool Dust,Double Laser Minigun,Director,Blindness Character:Choose Crown:crown of haste Weapon:hyperrifle Seed:8012 Date:;2019-05-23;
