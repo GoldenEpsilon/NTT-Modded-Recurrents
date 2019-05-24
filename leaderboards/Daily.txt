@@ -1,2 +1,1 @@
-Mods:Buff,Cool Dust,Double Laser Minigun,Director,Blindness Character:Choose Crown:crown of haste Weapon:hyperrifle Seed:8012 Date:;2019-05-23;
-|Ross Douthat: Area 103-1 L0 Kills: 182 Character: eyes 
+Mods:Dodge Roll,Detailer,Devastator,Crypt Of The Necrodancer,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:grenade launcher Seed:1659 Date:;2019-05-24;
