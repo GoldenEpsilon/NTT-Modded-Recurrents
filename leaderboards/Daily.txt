@@ -1,1 +1,1 @@
-Mods:Dodge Roll,Detailer,Devastator,Crypt Of The Necrodancer,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:grenade launcher Seed:1659 Date:;2019-05-24;
+Mods:Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon Character:Choose Crown:crown of death Weapon:eggplant Seed:12656 Date:;2019-05-25;
