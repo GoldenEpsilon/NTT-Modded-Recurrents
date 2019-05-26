@@ -1,2 +1,1 @@
-Mods:Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon Character:Choose Crown:crown of death Weapon:eggplant Seed:12656 Date:;2019-05-25;
-|Ross Douthat: Area 0-1 L0 Kills: 0 Character: DIO 
+Mods:Fire Riders,Bioluminary Oscillator,Double Time,Bullet Time,Baller Character:Choose Crown:crown of destiny Weapon:Bioluminary Oscillator Seed:26770 Date:;2019-05-26;
