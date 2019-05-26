@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Freak Arena#  DIO#  Damage Numbers#  Blindness#  Carmageddon#@bCharacter@w=#  Choose#@yCrown@w=#  crown of death#@gWeapon@w=#  eggplant#@pSeed@w=12656#Limited Tries:false*/
-/*|Freak Arena[Do you think you can survive#in the @qFREAK ARENA???]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]|Damage Numbers[So you can see how good/bad#your setup is on the fly!]|Blindness[MY GLASSES! I BROKE MY GLASSES!]|Carmageddon[WARNING: May contain drifting]*/
+/*@rMods@w=#  Fire Riders#  Bioluminary Oscillator#  Double Time#  Bullet Time#  Baller#@bCharacter@w=#  Choose#@yCrown@w=#  crown of destiny#@gWeapon@w=#  Bioluminary Oscillator#@pSeed@w=26770#Limited Tries:false*/
+/*|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|Bioluminary Oscillator[TARGET AQUIRED]|Double Time[GOTTAGOFAST]|Bullet Time[The closer you are to bullets#the slower time moves]|Baller[Fire burns...#me like fire...]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -55,7 +55,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 12656;
+global.seed = 26770;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -97,44 +97,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("freakarena_daily.mod.gml");
-downloadmod("DIO/DIO.race.gml");
-downloadmod("DIO/walk.png");
-downloadmod("DIO/sprUltras.png");
-downloadmod("DIO/sprTheWorld.png");
-downloadmod("DIO/sprSelect.png");
-downloadmod("DIO/sprPortrait.png");
-downloadmod("DIO/sprMuda.png");
-downloadmod("DIO/sprKnife.png");
-downloadmod("DIO/sprFist.png");
-downloadmod("DIO/sprArm.png");
-downloadmod("DIO/sndWry.ogg");
-downloadmod("DIO/sndWrld.ogg");
-downloadmod("DIO/sndStopTime.ogg");
-downloadmod("DIO/sndStand.ogg");
-downloadmod("DIO/sndRoadRoller.ogg");
-downloadmod("DIO/sndPunchUpgEnd.ogg");
-downloadmod("DIO/sndPunchUpg.ogg");
-downloadmod("DIO/sndPunch.ogg");
-downloadmod("DIO/sndLowH.ogg");
-downloadmod("DIO/sndLowA.ogg");
-downloadmod("DIO/sndLow.ogg");
-downloadmod("DIO/sndKnives.ogg");
-downloadmod("DIO/sndHurt.ogg");
-downloadmod("DIO/sndFreeze.ogg");
-downloadmod("DIO/sndDie.ogg");
-downloadmod("DIO/map.png");
-downloadmod("DIO/idle.png");
-downloadmod("DIO/hurt.png");
-downloadmod("DIO/dead.png");
-downloadmod("damagenumbers.mod.gml");
-downloadmod("blindness.mod.gml");
-downloadmod("carmageddon.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/freakarena_daily.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/DIO/DIO.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/damagenumbers.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/blindness.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/carmageddon.mod.gml"));
+downloadmod("fireriders.race.gml");
+downloadmod("Bioluminary_Oscillator.gml");
+downloadmod("Double Time.mod.gml");
+downloadmod("bullettime.mod.gml");
+downloadmod("baller.race.gml");
+wait mod_load(string_trim("data/Daily.mod/fireriders.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/Bioluminary_Oscillator.gml"));
+wait mod_load(string_trim("data/Daily.mod/Double Time.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bullettime.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/baller.race.gml"));
 
 
 global.ModNames = "";
@@ -163,11 +135,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon");
+trace("Mods=Fire Riders,Bioluminary Oscillator,Double Time,Bullet Time,Baller");
 trace("Character:Choose");
-trace("Crown:crown of death");
-trace("Weapon:eggplant");
-trace("Seed:12656");
+trace("Crown:crown of destiny");
+trace("Weapon:Bioluminary Oscillator");
+trace("Seed:26770");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -296,7 +268,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("eggplant"));
+		give_wep(string_trim("Bioluminary Oscillator"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -351,16 +323,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon" + " Character:Choose" + " Crown:crown of death" + " Weapon:eggplant" + " Seed:12656";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Fire Riders,Bioluminary Oscillator,Double Time,Bullet Time,Baller" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Bioluminary Oscillator" + " Seed:26770";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-05-25 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-05-25 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-05-25 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-05-25 Daily.txt");
+	if(file_exists(global.alias + " 2019-05-26 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-05-26 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-05-26 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-05-26 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-05-25 Daily.txt");
+		string_save(score, global.alias + " 2019-05-26 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -387,10 +359,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon" + " Character:Choose" + " Crown:crown of death" + " Weapon:eggplant" + " Seed:12656" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Fire Riders,Bioluminary Oscillator,Double Time,Bullet Time,Baller" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Bioluminary Oscillator" + " Seed:26770" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Freak Arena,DIO,Damage Numbers,Blindness,Carmageddon" + " Character:Choose" + " Crown:crown of death" + " Weapon:eggplant" + " Seed:12656",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Fire Riders,Bioluminary Oscillator,Double Time,Bullet Time,Baller" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Bioluminary Oscillator" + " Seed:26770",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -546,7 +518,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of death");
+name = string_trim("crown of destiny");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

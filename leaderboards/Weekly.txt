@@ -1,2 +1,1 @@
-Mods:Elite Rifle,Big Bandit,bow,Cool Trails,Brimthrone Character:BigBandit Crown:crown of death Weapon:brimthrone Seed:350 Date:;2019-05-19;
-|Ross Douthat: Area 7-3 L0 Kills: 430 Character:  |hanan_gayming: Area 5-1 L0 Kills: 259 Character:  
+Mods:Cool Shadows,Camper Boys,Buff,Crazy Allies,Cannoner Character:crystal Crown:crown of luck Weapon:cannoner Seed:9083 Date:;2019-05-26;
