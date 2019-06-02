@@ -1,2 +1,1 @@
-Mods:Cool Shadows,Camper Boys,Buff,Crazy Allies,Cannoner Character:crystal Crown:crown of luck Weapon:cannoner Seed:9083 Date:;2019-05-26;
-|Ross Douthat: Area 1-1 L0 Kills: 7 Character:  |Ross Douthat: Area 5-2 L0 Kills: 110 Character:  |muffin: Area 1-1 L0 Kills: 3 Character:  |muffin: Area 1-3 L0 Kills: 82 Character:  
+Mods:C Ultras,Cool Hud,Area Health,Big Dog Snipers,Druid Character:druid Crown:crown of life Weapon:shovel Seed:2296 Date:;2019-06-02;

@@ -1,1 +1,1 @@
-Mods:Chest Bandits,Determination,Elite Gamers,Discs,Doctor Character:Choose Crown:crown of haste Weapon:Flame Disc Gun Seed:32710 Date:;2019-06-01;
+Mods:Elite Turrets,Vanthro,Colored Projectiles,Cricket,B Character:Choose Crown:crown of luck Weapon:Cricket Seed:4804 Date:;2019-06-02;
