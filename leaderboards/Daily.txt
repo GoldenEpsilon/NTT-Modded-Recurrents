@@ -1,1 +1,1 @@
-Mods:Elite Turrets,Vanthro,Colored Projectiles,Cricket,B Character:Choose Crown:crown of luck Weapon:Cricket Seed:4804 Date:;2019-06-02;
+Mods:Blindness,basicgunallies,Area Health,Disk Marrow,Double Pop Gun Character:Choose Crown:crown of death Weapon:double_pop_gun Seed:19998 Date:;2019-06-03;
