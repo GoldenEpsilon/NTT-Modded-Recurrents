@@ -1,0 +1,1 @@
+Mods:Blindness,basicgunallies,Area Health,Disk Marrow,Double Pop Gun Character:Choose Crown:crown of death Weapon:double_pop_gun Seed:19998 Date:;2019-06-03;
