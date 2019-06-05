@@ -1,1 +1,1 @@
-Mods:Grappler,Elite Rifle,Double Maxigun,Colored Palace,Elite Minigun Character:Choose Crown:crown of risk Weapon:Double Maxigun Seed:24133 Date:;2019-06-04;
+Mods:Double Laser Minigun,Auto Revolver,Dumb Shells,Cuz,Elite Dasher Character:Choose Crown:crown of protection Weapon:doublelaser Seed:31045 Date:;2019-06-05;
