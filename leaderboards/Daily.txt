@@ -1,1 +1,1 @@
-Mods:Bandit,Challenge Test,betterLoops,Cool Hud,Damage Numbers Character:Choose Crown:crown of death Weapon:pop rifle Seed:29532 Date:;2019-06-06;
+Mods:Elite Minigun,Crazy Bandits,Bandit,Carbine,Bitpack Character:Choose Crown:crown of blood Weapon:industrialshankgun Seed:14723 Date:;2019-06-07;
