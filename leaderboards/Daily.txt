@@ -1,2 +1,1 @@
-Mods:Elite Minigun,Crazy Bandits,Bandit,Carbine,Bitpack Character:Choose Crown:crown of blood Weapon:industrialshankgun Seed:14723 Date:;2019-06-07;
-|muffin: Area 1-1 L0 Kills: 0 Character: bandit |muffin: Area 1-1 L0 Kills: 18 Character: miku 
+Mods:Cosmi Gun Enemies,Vanthro,blackholes,Crazy Allies,Auto Flame Crossbow Character:Choose Crown:crown of love Weapon:Auto Flame Crossbow Seed:2122 Date:;2019-06-08;
