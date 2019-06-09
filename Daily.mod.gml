@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Cosmi Gun Enemies#  Vanthro#  blackholes#  Crazy Allies#  Auto Flame Crossbow#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Auto Flame Crossbow#@pSeed@w=2122#Limited Tries:false*/
-/*|Cosmi Gun Enemies[RUN THEY HAVE REAL GUNS]|Vanthro[...blame 4chan.]|blackholes[All projectiles attract enemies of the user#that means you get pulled into enemy bullets, too.#this is going to be a hard one...]|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|Auto Flame Crossbow[If flames were good this would be better than just looking cool...]*/
+/*@rMods@w=#  Colored Palace#  blaac48#  Big Dog#  Detailer#  Bear#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  A Fucking Gun#@pSeed@w=22978#Limited Tries:false*/
+/*|Colored Palace[Gives a palace a#well-deserved paint job.]|blaac48[The jungle is deeper]|Big Dog[HE IS AWAKENED]|Detailer[Adds pretty patches of things]|Bear[4 da meeeeeeeeee#eeeeemez]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -55,7 +55,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 2122;
+global.seed = 22978;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -97,16 +97,30 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("CosmiGunEnemies.mod.gml");
-downloadmod("vanthro.race.gml");
-downloadmod("blackholes.mod.gml");
-downloadmod("crazyallies.mod.gml");
-downloadmod("AutoFlameCrossbow.wep.gml");
-wait mod_load(string_trim("data/Daily.mod/CosmiGunEnemies.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/vanthro.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/blackholes.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/crazyallies.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/AutoFlameCrossbow.wep.gml"));
+downloadmod("coloredpalace/coloredpalace.mod.gml");
+downloadmod("coloredpalace/sprDebris7_grey.png");
+downloadmod("coloredpalace/sprFloor7B_grey.png");
+downloadmod("coloredpalace/sprFloor7Explo_grey.png");
+downloadmod("coloredpalace/sprFloor7_grey.png");
+downloadmod("coloredpalace/sprWall7Bot_grey.png");
+downloadmod("coloredpalace/sprWall7Out_grey.png");
+downloadmod("coloredpalace/sprWall7Top_grey.png");
+downloadmod("coloredpalace/sprWall7Trans_grey.png");
+downloadmod("blaac48.area.gml");
+downloadmod("bigdog.mod.gml");
+downloadmod("Detailer.mod.gml");
+downloadmod("bear/bear.race.gml");
+downloadmod("bear/beargun.wep.gml");
+downloadmod("bear/a fucking gun.png");
+downloadmod("bear/bear (1).png");
+downloadmod("bear/bearhurt.png");
+downloadmod("bear/bearidle.png");
+wait mod_load(string_trim("data/Daily.mod/coloredpalace/coloredpalace.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/blaac48.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Detailer.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
 
 
 global.ModNames = "";
@@ -135,11 +149,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Cosmi Gun Enemies,Vanthro,blackholes,Crazy Allies,Auto Flame Crossbow");
+trace("Mods=Colored Palace,blaac48,Big Dog,Detailer,Bear");
 trace("Character:Choose");
 trace("Crown:crown of love");
-trace("Weapon:Auto Flame Crossbow");
-trace("Seed:2122");
+trace("Weapon:A Fucking Gun");
+trace("Seed:22978");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -268,7 +282,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Auto Flame Crossbow"));
+		give_wep(string_trim("A Fucking Gun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -323,16 +337,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cosmi Gun Enemies,Vanthro,blackholes,Crazy Allies,Auto Flame Crossbow" + " Character:Choose" + " Crown:crown of love" + " Weapon:Auto Flame Crossbow" + " Seed:2122";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-06-08 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-06-08 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-06-08 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-06-08 Daily.txt");
+	if(file_exists(global.alias + " 2019-06-09 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-06-09 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-06-09 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-06-09 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-06-08 Daily.txt");
+		string_save(score, global.alias + " 2019-06-09 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -359,10 +373,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Cosmi Gun Enemies,Vanthro,blackholes,Crazy Allies,Auto Flame Crossbow" + " Character:Choose" + " Crown:crown of love" + " Weapon:Auto Flame Crossbow" + " Seed:2122" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cosmi Gun Enemies,Vanthro,blackholes,Crazy Allies,Auto Flame Crossbow" + " Character:Choose" + " Crown:crown of love" + " Weapon:Auto Flame Crossbow" + " Seed:2122",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
