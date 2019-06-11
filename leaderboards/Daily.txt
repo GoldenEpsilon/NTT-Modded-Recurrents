@@ -1,1 +1,1 @@
-Mods:Bullet Time,Cooler Hud,Dogfly,Dumb Shells,Cycle Character:Choose Crown:crown of hatred Weapon:toxic launcher Seed:13911 Date:;2019-06-10;
+Mods:Double Pop Gun,bow,Bigger Bandit,Dasher,Challenge Mode Character:Choose Crown:crown of guns Weapon:double_pop_gun Seed:12711 Date:;2019-06-11;
