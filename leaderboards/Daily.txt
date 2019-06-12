@@ -1,1 +1,1 @@
-Mods:Double Pop Gun,bow,Bigger Bandit,Dasher,Challenge Mode Character:Choose Crown:crown of guns Weapon:double_pop_gun Seed:12711 Date:;2019-06-11;
+Mods:Charge Template 2,Death Pit,Crazy Traps,DIO,Dummy Character:Choose Crown:deathpit Weapon:charge_template Seed:6367 Date:;2019-06-12;
