@@ -1,1 +1,1 @@
-Mods:Charge Template 2,Death Pit,Crazy Traps,DIO,Dummy Character:Choose Crown:deathpit Weapon:charge_template Seed:6367 Date:;2019-06-12;
+Mods:Bullet Time,Big Dog Snipers,basicgunallies,Chips,Cool Shadows Character:Choose Crown:crown of blood Weapon:chicken sword Seed:20772 Date:;2019-06-13;
