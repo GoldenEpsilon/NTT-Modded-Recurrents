@@ -207,6 +207,7 @@ if(instance_exists(Menu)){
 		while (!file_loaded("load.txt")) {wait 1;}
 		mod_load("data/"+mod_current+".mod/ModdedRecurrents.mod.gml");
 		mod_loadtext("data/"+mod_current+".mod/load.txt");
+		mod_unload(mod_current);
 	}
 	if(button_pressed(0, "fire") && point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], global.weeklyScoreboardX, global.weeklyScoreboardY, global.weeklyScoreboardX + global.weeklyScoreboardW, global.weeklyScoreboardY + global.weeklyScoreboardH/2) && global.menu >= 0){
 		global.leaderboardPos-=floor(((global.weeklyScoreboardH)/15)/2);
@@ -827,4 +828,52 @@ return retVal;
 var n = string_trim(name);
 file_delete(data+n);while(file_exists(data+n)){wait 1;}wait(file_download(Github+n,n));trace(n+" downloaded.");file_load(data+n);
 while (!file_exists(data+n)) {wait 1;file_load(data+n);}
+
+#define gp_button_check
+//x,y,w,h,?hold,?index
+var retVal = false;
+if(argument_count == 4 || (argument_count == 5 && argument[4] == 0)){
+	var mouseX = mouse_x[0]-view_xview[0];
+	var mouseY = mouse_y[0]-view_yview[0];
+	var x = argument[0];
+	var y = argument[1];
+	var w = argument[2];
+	var h = argument[3];
+	for(var i = 0; i < 4; i++){
+		var mouseX = mouse_x[i]-view_xview[i];
+		var mouseY = mouse_y[i]-view_yview[i];
+		if(!retVal){retVal = (button_pressed(i, "fire") && point_in_rectangle(mouseX,mouseY,x,y,x+w,y+h));}
+	}
+}else if(argument_count == 5){
+	var mouseX = mouse_x[0]-view_xview[0];
+	var mouseY = mouse_y[0]-view_yview[0];
+	var x = argument[0];
+	var y = argument[1];
+	var w = argument[2];
+	var h = argument[3];
+	for(var i = 0; i < 4; i++){
+		var mouseX = mouse_x[i]-view_xview[i];
+		var mouseY = mouse_y[i]-view_yview[i];
+		if(!retVal){retVal = (button_check(i, "fire") && point_in_rectangle(mouseX,mouseY,x,y,x+w,y+h));}
+	}
+}
+else if(argument_count == 6 && argument[4] == 0){
+	var mouseX = mouse_x[argument[5]]-view_xview[argument[5]];
+	var mouseY = mouse_y[argument[5]]-view_yview[argument[5]];
+	var x = argument[0];
+	var y = argument[1];
+	var w = argument[2];
+	var h = argument[3];
+	if(!retVal){retVal = (button_pressed(argument[5], "fire") && point_in_rectangle(mouseX,mouseY,x,y,x+w,y+h));}
+}
+else if(argument_count == 6){
+	var mouseX = mouse_x[argument[5]]-view_xview[argument[5]];
+	var mouseY = mouse_y[argument[5]]-view_yview[argument[5]];
+	var x = argument[0];
+	var y = argument[1];
+	var w = argument[2];
+	var h = argument[3];
+	if(!retVal){retVal = (button_check(argument[5], "fire") && point_in_rectangle(mouseX,mouseY,x,y,x+w,y+h));}
+}
+return retVal;
 
