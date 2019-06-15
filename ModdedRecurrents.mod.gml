@@ -16,6 +16,7 @@ global.leaderboard1=[];
 global.leaderboard2=[];
 global.leaderboard3=[];
 global.leaderboardLoaded = 0;
+global.leaderboardExists = 0;
 global.leaderboardPos = 0;
 global.leaderboardOpening = 0;
 global.descriptionOpening = 0;
@@ -261,6 +262,7 @@ if(mod_sideload() && instance_exists(Menu)){
 	}
 	if(gp_button_check(swapX - 5, 32, swapW + 5, swapH + 6)){
 		global.recurrentNum = 0;
+		global.leaderboardLoaded = 0;
 		global.menu++;
 		global.menu%=3;
 		global.details = global.menu == 0 ? global.weekly : (global.menu == 1 ? global.daily : global.event);
@@ -323,6 +325,7 @@ if(mod_sideload() && instance_exists(Menu)){
 	}
 	if(gp_button_check(9,206,21,20) && global.menu >= 0 && global.recurrentNum < array_length((global.menu==0?global.prevWeeklies:(global.menu==1?global.prevDailies:(global.menu==2?global.prevEvents:global.prevDailies)))) - 1){
 		global.recurrentNum++;
+		global.leaderboardLoaded = 0;
 		
 		file_delete("Recurrent.txt");
 		while (file_exists("Recurrent.txt")) {wait 1;}
@@ -363,6 +366,7 @@ if(mod_sideload() && instance_exists(Menu)){
 	}
 	if(gp_button_check(game_width - 32,206,21,20) && global.menu >= 0 && global.recurrentNum > 0){
 		global.recurrentNum--;
+		global.leaderboardLoaded = 0;
 		
 		file_delete("Recurrent.txt");
 		while (file_exists("Recurrent.txt")) {wait 1;}
@@ -499,7 +503,7 @@ if(mod_sideload() && instance_exists(Menu)){
 			draw_set_font(fntSmall);
 			draw_text_nt(global.scoreboardX  + 37 - (10 * (2 - string_length(string(i+global.leaderboardPos+1)))), global.scoreboardY + i*15 + 9, string_copy("L: " + global.leaderboard[i+global.leaderboardPos][1] + " K: " + string(global.leaderboard[i+global.leaderboardPos][2]) + ((string_trim(global.leaderboard[i+global.leaderboardPos][3]) != "") ? (" C: " + global.leaderboard[i+global.leaderboardPos][3]) : ""), 1, floor((global.scoreboardW)/4) + (-5 - 2*string_length(string(i+global.leaderboardPos+1)))));
 		}
-	}else if(global.leaderboardOpening){
+	}else if(global.leaderboardOpening && !global.leaderboardLoaded){
 		draw_set_valign(1);
 		draw_set_halign(1);
 		draw_set_font(fntM0);
@@ -540,6 +544,7 @@ with(instances_matching(instances_matching(CustomObject, "GuiPack", "gp_ticker")
 }
 //</GuiPack>
 #define updateLeaderboard(str)
+global.leaderboardExists = 1;
 global.leaderboard = [];
 for(var i = 1; i < array_length(str); i++){
 	array_push(global.leaderboard, [string_split(str[i], ":")[0], string_split(string_split(str[i], "Area ")[1], "Kills")[0], real(string_split(string_split(str[i], "Character: ")[0], "Kills: ")[1]), array_length(string_split(str[i], "Character: ")) > 1 ? string_split(str[i], "Character: ")[1] : ""]);

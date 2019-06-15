@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  CoDeath#  Fire Riders#  Bear#  Cosmi#  Big Dog#@bCharacter@w=#  fireriders#@yCrown@w=#  CoDeath#@gWeapon@w=#  A Fucking Gun#@pSeed@w=17926#Limited Tries:false*/
-/*|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|Bear[4 da meeeeeeeeee#eeeeemez]|Cosmi[*insert *insert *insert self insert joke here* joke here* joke here*]|Big Dog[HE IS AWAKENED]*/
+/*@rMods@w=#  Colored Palace#  blaac48#  Big Dog#  Detailer#  Bear#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  A Fucking Gun#@pSeed@w=22978#Limited Tries:false*/
+/*|Colored Palace[Gives a palace a#well-deserved paint job.]|blaac48[The jungle is deeper]|Big Dog[HE IS AWAKENED]|Detailer[Adds pretty patches of things]|Bear[4 da meeeeeeeeee#eeeeemez]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -16,7 +16,7 @@
 #macro swapY 36
 #macro swapW 17
 #macro swapH 10
-#macro ChooseCharacter false
+#macro ChooseCharacter true
 #macro ChooseCrown false
 #macro LimitedTries false
 #macro Github "https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/WeeklyMods/"
@@ -24,7 +24,7 @@
 
 global.sprWeekly = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAABNklEQVRIDWO0doj8z0ABOLJ/GQW6GRhYQLofvbpPliFyYopgfXLalmTpf3T1OAMTWTqpqGnUAYMrBECJAoRxAVrIg3MByMLHYUfg9iKz4YJIDJC87CobJBHy9Q94FMBDAOQdG8coiK8cFqP4DsahhTyKA47isBjmAFrIwx3wv54ZZg9RtNwqVGXk6seaBhgZGRnuPvjAAKcb/0L4jX9RbcXBg+uDmYNHPzwEkM36/x9SP8HpepCsAMN/MI2sEjsbrg9mDh79KCHACHMpzOUwGiZOIATI0Y8SApB4FGAgxQfIYUCO/qEZApPmXkD2OJxNbAgg6ycuBBgZ4ZYga4YLQhk40wAe/cSlAWhqxmc5yA04QwCPfrgDyG1WwUKBXP0oUQAzjJ70gDsAHAWw1i25PsfXiCFkJgCiFgWoHcePfAAAAABJRU5ErkJggg==",2,0,0);
 global.sprEvent = sprite_add_base64("iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAIAAAAUMWhjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAAC/SURBVEhL7Y+xDQIxDEW9CAswwUk0rMFY9LcTDSUSIzBC+D7fnRzLJHaTArC+IufnWy+m0/mSUkkWAw7HKSgBGLOhP6CrsQBc3GHta4D2tbSPZgUUussDN0abj9gO0L7V5g8HoOF5k1a+AUTyFaArA+iqBgSqAgTKBxDR4/mSE7+QU55cQDvPgYEbLPzEBoE8p35mg+t8s4BmSR5NawOc7C9pBxDIc6q7gaQdwIfSeVxXQFA7IKivAaSEmUSV8gZDGKxrqTAwHQAAAABJRU5ErkJggg==",2,0,0);
-global.menu = ("Weekly" == "D"+"aily") + ("Weekly" == "Event")*2;
+global.menu = ("Daily" == "D"+"aily") + ("Daily" == "Event")*2;
 global.leaderboard="";
 global.leaderboardLoaded = 0;
 global.leaderboardPos = 0;
@@ -55,24 +55,24 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 17926;
+global.seed = 22978;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "fireriders";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
+global.Race = "Choose";
 if(global.qualified == true){
 	with(Player){
 		instance_destroy();
 		global.qualified = false;
-		trace("Disqualified for uploading results. reload the Weekly mod from the character select screen to qualify again.");
+		trace("Disqualified for uploading results. reload the Daily mod from the character select screen to qualify again.");
 	}
 	with(Revive){
 		instance_destroy();
 		global.qualified = false;
-		trace("Disqualified for uploading results. reload the Weekly mod from the character select screen to qualify again.");
+		trace("Disqualified for uploading results. reload the Daily mod from the character select screen to qualify again.");
 	}
 }
 var i = 0;
@@ -97,22 +97,30 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("CoDeath.crown.gml");
-downloadmod("fireriders.race.gml");
+downloadmod("coloredpalace/coloredpalace.mod.gml");
+downloadmod("coloredpalace/sprDebris7_grey.png");
+downloadmod("coloredpalace/sprFloor7B_grey.png");
+downloadmod("coloredpalace/sprFloor7Explo_grey.png");
+downloadmod("coloredpalace/sprFloor7_grey.png");
+downloadmod("coloredpalace/sprWall7Bot_grey.png");
+downloadmod("coloredpalace/sprWall7Out_grey.png");
+downloadmod("coloredpalace/sprWall7Top_grey.png");
+downloadmod("coloredpalace/sprWall7Trans_grey.png");
+downloadmod("blaac48.area.gml");
+downloadmod("bigdog.mod.gml");
+downloadmod("Detailer.mod.gml");
 downloadmod("bear/bear.race.gml");
 downloadmod("bear/beargun.wep.gml");
 downloadmod("bear/a fucking gun.png");
 downloadmod("bear/bear (1).png");
 downloadmod("bear/bearhurt.png");
 downloadmod("bear/bearidle.png");
-downloadmod("cosmi.race.gml");
-downloadmod("bigdog.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/CoDeath.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/fireriders.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bear/beargun.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cosmi.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bigdog.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/coloredpalace/coloredpalace.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/blaac48.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Detailer.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
 
 
 global.ModNames = "";
@@ -140,12 +148,12 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 	global.ModNames += mod_get_names("skin")[i]
 }
 
-trace("Current Weekly:");
-trace("Mods=CoDeath,Fire Riders,Bear,Cosmi,Big Dog");
-trace("Character:fireriders");
-trace("Crown:CoDeath");
+trace("Current Daily:");
+trace("Mods=Colored Palace,blaac48,Big Dog,Detailer,Bear");
+trace("Character:Choose");
+trace("Crown:crown of love");
 trace("Weapon:A Fucking Gun");
-trace("Seed:17926");
+trace("Seed:22978");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -153,7 +161,7 @@ ds_map_set(global.headers, "Authorization", "token 7349069d71cc5b8e1165"+"40e940
 ds_map_set(global.headers, "Cache-Control", "no-cache");	
 ds_map_set(global.headers, "Accept", "application/vnd.github.full+json");	file_delete("dl.txt");
 while (file_exists("dl.txt")) {wait 1;}
-http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 , "GET", global.headers,
 ''
 , "dl.txt");
@@ -172,42 +180,28 @@ global.leaderboardLoaded = 1;
 file_unload("dl.txt");
 
 
-file_delete("Weekly.txt");
-while (file_exists("Weekly.txt")) {wait 1;}
-file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/Weekly.mod.gml", "Weekly.txt");
-while (!file_loaded("Weekly.txt")) {wait 1;}
-global.Weekly = string_replace_all(string_replace_all(string_split(string_split(string_load("Weekly.txt"), "*/")[0], "/*")[1],chr(10),""),chr(13),"");
-global.Flavor = string_replace_all(string_replace_all(string_split(string_split(string_load("Weekly.txt"), "*/")[1], "/*")[1],chr(10),""),chr(13),"");
-global.WeeklyHeight = string_count("#", global.Weekly);
-global.WeeklyWidth = 0;
-var temp = string_split(global.Weekly, "#");
+file_delete("Daily.txt");
+while (file_exists("Daily.txt")) {wait 1;}
+file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/Daily.mod.gml", "Daily.txt");
+while (!file_loaded("Daily.txt")) {wait 1;}
+global.Daily = string_replace_all(string_replace_all(string_split(string_split(string_load("Daily.txt"), "*/")[0], "/*")[1],chr(10),""),chr(13),"");
+global.Flavor = string_replace_all(string_replace_all(string_split(string_split(string_load("Daily.txt"), "*/")[1], "/*")[1],chr(10),""),chr(13),"");
+global.DailyHeight = string_count("#", global.Daily);
+global.DailyWidth = 0;
+var temp = string_split(global.Daily, "#");
 for(var i = 0; i < array_length(temp); i++){
-	if(string_length(temp[i]) > global.WeeklyWidth){global.WeeklyWidth = string_length(temp[i]);}
+	if(string_length(temp[i]) > global.DailyWidth){global.DailyWidth = string_length(temp[i]);}
 }
-file_unload("Weekly.txt");
+file_unload("Daily.txt");
 
-global.details = global.Weekly;
-global.detailsHeight = global.WeeklyHeight;
-global.detailsWidth = global.WeeklyWidth;
+global.details = global.Daily;
+global.detailsHeight = global.DailyHeight;
+global.detailsWidth = global.DailyWidth;
 global.detailsFlavor = global.Flavor;
 global.weeklyCurrentY = -(weeklyCurrentH+weeklyCurrentLH*global.detailsHeight-global.weeklyCurrentMax);
 
 #define step
 if(instance_exists(Menu)){
-	if(gp_button_check(weeklyButtonX-5, 32, weeklyButtonW+3, weeklyButtonH+10)){
-		trace("LOADING MODDED RECURRENTS. PLEASE WAIT.");
-		file_delete("ModdedRecurrents.mod.gml");
-		while (file_exists("ModdedRecurrents.mod.gml")) {wait 1;}
-		file_download("https://raw.githubusercontent.com/GoldenEpsilon/NTT-Modded-Recurrents/master/ModdedRecurrents.mod.gml", "ModdedRecurrents.mod.gml");
-		file_load("ModdedRecurrents.mod.gml");
-		while (!file_exists("ModdedRecurrents.mod.gml")) {wait 1;}
-		string_save("/loadtext load2", "load.txt");
-		string_save("/allowmod ModdedRecurrents", "load2.txt");
-		file_load("load.txt");
-		while (!file_loaded("load.txt")) {wait 1;}
-		mod_load("data/"+mod_current+".mod/ModdedRecurrents.mod.gml");
-		mod_loadtext("data/"+mod_current+".mod/load.txt");
-	}
 	if(button_pressed(0, "fire") && point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], global.weeklyScoreboardX, global.weeklyScoreboardY, global.weeklyScoreboardX + global.weeklyScoreboardW, global.weeklyScoreboardY + global.weeklyScoreboardH/2) && global.menu >= 0){
 		global.leaderboardPos-=floor(((global.weeklyScoreboardH)/15)/2);
 		global.leaderboardPos = max(global.leaderboardPos, 0);
@@ -273,7 +267,7 @@ if(global.qualified == true){
 	var i = 0;
 	repeat(4){
 		if(button_check(i, "talk")){
-			trace("Disqualified for uploading results. reload the Weekly mod from the character select screen to qualify again.");
+			trace("Disqualified for uploading results. reload the Daily mod from the character select screen to qualify again.");
 		}
 		i++
 	}
@@ -309,7 +303,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="fireriders";
+			race="Choose";
 		}
 	}
 }
@@ -324,9 +318,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("fireriders")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("Choose")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("fireriders"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("Choose"))){
 					instance_destroy();
 				}
 				exit;
@@ -343,16 +337,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:CoDeath,Fire Riders,Bear,Cosmi,Big Dog" + " Character:fireriders" + " Crown:CoDeath" + " Weapon:A Fucking Gun" + " Seed:17926";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-06-09 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-06-09 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-06-09 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-06-09 Weekly.txt");
+	if(file_exists(global.alias + " 2019-06-09 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-06-09 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-06-09 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-06-09 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-06-09 Weekly.txt");
+		string_save(score, global.alias + " 2019-06-09 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -361,7 +355,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		ds_map_set(headers, "Accept", "application/vnd.github.full+json");	
 		file_delete("dl.txt");
 		while (file_exists("dl.txt")) {wait 1;}
-		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 		, "GET", headers,
 		''
 		, "dl.txt");
@@ -375,14 +369,14 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 		}
 		file_unload("dl.txt");
 		if(string_copy(leaderboard, 0, 3) == "404"){
-			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+			http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:CoDeath,Fire Riders,Bear,Cosmi,Big Dog" + " Character:fireriders" + " Crown:CoDeath" + " Weapon:A Fucking Gun" + " Seed:17926" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":CoDeath,Fire Riders,Bear,Cosmi,Big Dog" + " Character:fireriders" + " Crown:CoDeath" + " Weapon:A Fucking Gun" + " Seed:17926",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Colored Palace,blaac48,Big Dog,Detailer,Bear" + " Character:Choose" + " Crown:crown of love" + " Weapon:A Fucking Gun" + " Seed:22978",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -390,7 +384,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			if(!LimitedTries || !fail){
 				file_delete("sha.txt");
 				while (file_exists("sha.txt")) {wait 1;}
-				http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+				http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 				, "GET", headers,
 				''
 				, "sha.txt");
@@ -398,7 +392,7 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 				wait file_load("sha.txt");
 				sha = string_split(string_split(string_load("sha.txt"), '"sha":"')[1], '"')[0];
 				file_unload("sha.txt");
-				http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+				http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 				, "PUT", headers,
 				'{
 				"message":"Leaderboard Update",
@@ -407,16 +401,16 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 				}'
 				, "out.txt");
 			}else{
-				trace("You've already played this Weekly!");
+				trace("You've already played this Daily!");
 			}
 		}else{
-			trace("You are playing on an older modded Weekly, so your scores were not uploaded. If this is incorrect, contact Golden Epsilon on discord through the Nuclear Throne discord: https://www.discord.gg/nt");
+			trace("You are playing on an older modded Daily, so your scores were not uploaded. If this is incorrect, contact Golden Epsilon on discord through the Nuclear Throne discord: https://www.discord.gg/nt");
 		}
 		wait(60);
 		global.leaderboardLoaded = 0;
 		file_delete("dl.txt");
 		while (file_exists("dl.txt")) {wait 1;}
-		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Weekly.txt'
+		http_request('https://api.github.com/repos/GoldenEpsilon/NTT-Modded-Recurrents/contents/leaderboards/Daily.txt'
 		, "GET", global.headers,
 		''
 		, "dl.txt");
@@ -444,7 +438,7 @@ if(global.qualified == true){
 	repeat(4){
 		if(button_check(i, "talk")){
 			global.qualified = false;
-			trace("Disqualified for uploading results. reload the Weekly mod from the character select screen to qualify again.");
+			trace("Disqualified for uploading results. reload the Daily mod from the character select screen to qualify again.");
 		}
 		i++
 	}
@@ -452,9 +446,9 @@ if(global.qualified == true){
 #define draw_gui
 draw_set_font(fntSmall);
 if(global.qualified == true){
-	draw_text_nt(game_width - 25, game_height - 6, "Weekly");
+	draw_text_nt(game_width - 25, game_height - 6, "Daily");
 }else{
-	draw_text_nt(game_width - 7*4 - 25, game_height - 12, "DISQUALIFIED#       Weekly");
+	draw_text_nt(game_width - 7*4 - 25, game_height - 12, "DISQUALIFIED#       Daily");
 }
 if(instance_exists(Menu)){
 	var valign = draw_get_valign();
@@ -465,7 +459,7 @@ if(instance_exists(Menu)){
 	draw_set_halign(1);
 	draw_set_font(fntSmall);
 	draw_set_color(point_in_rectangle(mouse_x[0] - view_xview[0], mouse_y[0] - view_yview[0], weeklyButtonX-5, 32, weeklyButtonX + weeklyButtonW+3, weeklyButtonY + weeklyButtonH+10)?make_color_rgb(255,255,255):make_color_rgb(100,100,100));
-	draw_text(weeklyButtonX + weeklyButtonW/2, weeklyButtonY + weeklyButtonH + 1, global.menu==0?"Weekly":(global.menu==1?"Weekly":(global.menu==2?"Event":"")));
+	draw_text(weeklyButtonX + weeklyButtonW/2, weeklyButtonY + weeklyButtonH + 1, global.menu==0?"Weekly":(global.menu==1?"Daily":(global.menu==2?"Event":"")));
 	if(global.details != ""){
 		draw_set_color(make_color_rgb(0,0,0));
 		draw_roundrect(global.weeklyCurrentX, 0, global.weeklyCurrentX + (weeklyCurrentW+weeklyCurrentLW*global.detailsWidth), global.weeklyCurrentY + (weeklyCurrentH+weeklyCurrentLH*global.detailsHeight)+global.weeklyCurrentBH, 0);
@@ -529,7 +523,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race="fireriders";}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race="Choose";}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -538,7 +532,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath");
+name = string_trim("crown of love");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
