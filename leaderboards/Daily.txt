@@ -1,1 +1,1 @@
-Mods:Devastator,Crazy Allies,Bioluminary Oscillator,Colored Palace,Assault Flak Cannon Character:Choose Crown:crown of guns Weapon:Bioluminary Oscillator Seed:22904 Date:;2019-06-15;
+Mods:Champions,Fire Riders,Bandit Brute,Crypt Of The Necrodancer,CoD Proper Character:Choose Crown:crown of hatred Weapon:lightning pistol Seed:30442 Date:;2019-06-16;

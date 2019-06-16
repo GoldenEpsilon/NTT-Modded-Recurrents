@@ -1,2 +1,1 @@
-Mods:CoDeath,Fire Riders,Bear,Cosmi,Big Dog Character:fireriders Crown:CoDeath Weapon:A Fucking Gun Seed:17926 Date:;2019-06-09;
-|sam the candyman amv: Area 5-1 L0 Kills: 208 Character:  |Ross Douthat: Area 3-1 L1 Kills: 908 Character:  
+Mods:Carpocalypse,xefsstuff,CoD Proper,Cosmi,Double Plasma Minigun Character:Auditor Crown:crown of curses Weapon:supper slugger Seed:32019 Date:;2019-06-16;
