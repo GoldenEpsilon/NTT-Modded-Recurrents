@@ -1,1 +1,1 @@
-Mods:Champions,Fire Riders,Bandit Brute,Crypt Of The Necrodancer,CoD Proper Character:Choose Crown:crown of hatred Weapon:lightning pistol Seed:30442 Date:;2019-06-16;
+Mods:Bitpack,Cuz,Cool Shadows,Chrononaut,Assault Flak Cannon Character:Choose Crown:crown of protection Weapon:Assault Flak Cannon Seed:18681 Date:;2019-06-17;
