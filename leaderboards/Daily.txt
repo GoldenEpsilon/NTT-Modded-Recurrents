@@ -1,1 +1,1 @@
-Mods:Bitpack,Cuz,Cool Shadows,Chrononaut,Assault Flak Cannon Character:Choose Crown:crown of protection Weapon:Assault Flak Cannon Seed:18681 Date:;2019-06-17;
+Mods:blackholes,Beamer,Chips,6 Weapons,Doctor Character:Choose Crown:crown of love Weapon:Beamer Seed:10983 Date:;2019-06-18;
