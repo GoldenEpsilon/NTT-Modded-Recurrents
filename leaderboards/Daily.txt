@@ -1,1 +1,1 @@
-Mods:blackholes,Beamer,Chips,6 Weapons,Doctor Character:Choose Crown:crown of love Weapon:Beamer Seed:10983 Date:;2019-06-18;
+Mods:Carmageddon,Detailer,Cooler Hud,blackholes,Big Dog Snipers Character:Choose Crown:crown of haste Weapon:triple machinegun Seed:21255 Date:;2019-06-19;
