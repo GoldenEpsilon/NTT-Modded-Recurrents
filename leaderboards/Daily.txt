@@ -1,1 +1,1 @@
-Mods:Carmageddon,Detailer,Cooler Hud,blackholes,Big Dog Snipers Character:Choose Crown:crown of haste Weapon:triple machinegun Seed:21255 Date:;2019-06-19;
+Mods:Elite Turrets,Detonator,Champions,Area Health,Elite Gamers Character:Choose Crown:crown of luck Weapon:guitar Seed:24042 Date:;2019-06-20;
