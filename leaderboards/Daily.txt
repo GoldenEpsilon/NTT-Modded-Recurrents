@@ -1,1 +1,1 @@
-Mods:Derpweps,Fire Riders,Clasweps,Elite Dasher,Cool Shadows Character:Choose Crown:Slaughter Weapon:ultrarifle Seed:25655 Date:;2019-06-21;
+Mods:bouncermini,Doctor,Bandit Brute,Dumb Shells,bow Character:Choose Crown:crown of protection Weapon:bow Seed:5382 Date:;2019-06-22;
