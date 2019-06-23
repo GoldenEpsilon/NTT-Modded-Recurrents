@@ -1,2 +1,1 @@
-Mods:bouncermini,Doctor,Bandit Brute,Dumb Shells,bow Character:Choose Crown:crown of protection Weapon:bow Seed:5382 Date:;2019-06-22;
-|а_а QaZuMBi а_ам: Area 1-2 L1 Kills: 592 Character: Doctor 
+Mods:Bandit,Minecraft Area,B,Croc Man,Ash Character:Choose Crown:crown of haste Weapon:heavy machinegun Seed:28782 Date:;2019-06-23;
