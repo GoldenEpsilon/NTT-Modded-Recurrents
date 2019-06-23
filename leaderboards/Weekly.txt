@@ -1,1 +1,1 @@
-Mods:Carpocalypse,xefsstuff,CoD Proper,Cosmi,Double Plasma Minigun Character:Auditor Crown:crown of curses Weapon:supper slugger Seed:32019 Date:;2019-06-16;
+Mods:Corsair,Drop Me Gun,Beamer,Carmageddon,Doctor Character:Doctor Crown:crown of curses Weapon:Beamer Seed:24769 Date:;2019-06-23;

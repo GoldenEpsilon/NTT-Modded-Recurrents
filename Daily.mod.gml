@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bouncermini#  Doctor#  Bandit Brute#  Dumb Shells#  bow#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  bow#@pSeed@w=5382#Limited Tries:false*/
-/*|bouncermini[FILL THE SKIES WITH BULLETS]|Doctor[The feathery, creepy,#totally-not-about-to-#stab-you-with-a-knife#doctor is in!]|Bandit Brute[Randomly replaces bandits with Bandit Brutes]|Dumb Shells[And on that dumbshell,#it's time to start.]|bow[It's a bow.]*/
+/*@rMods@w=#  Bandit#  Minecraft Area#  B#  Croc Man#  Ash#@bCharacter@w=#  Choose#@yCrown@w=#  crown of haste#@gWeapon@w=#  heavy machinegun#@pSeed@w=28782#Limited Tries:false*/
+/*|Bandit[Armed only with your trusty Bandit Blaster,#it's you against the entire wasteland, baby!]|Minecraft Area[Who Love Minecraf]|B[B]|Croc Man[From what I can tell you either#don't take damage from anything or#you die instantly because of that passive.]|Ash[Guy from The End Is Nigh.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 5382;
+global.seed = 28782;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,17 +98,85 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bouncermini/bouncermini.wep.gml");
-downloadmod("bouncermini/sprBouncerMinigun.png");
-downloadmod("Doctor.race.gml");
-downloadmod("BanditBrute.mod.gml");
-downloadmod("dumbshells.mod.gml");
-downloadmod("bow.wep.gml");
-wait mod_load(string_trim("data/Daily.mod/bouncermini/bouncermini.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Doctor.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/BanditBrute.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/dumbshells.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/bow.wep.gml"));
+downloadmod("bandit.race.gml");
+downloadmod("2 hour area/2hours.area.gml");
+downloadmod("2 hour area/gfx/sprArrow.png");
+downloadmod("2 hour area/gfx/sprBow.png");
+downloadmod("2 hour area/gfx/sprClouds.png");
+downloadmod("2 hour area/gfx/sprDebris.png");
+downloadmod("2 hour area/gfx/sprDecoration.png");
+downloadmod("2 hour area/gfx/sprFloor.png");
+downloadmod("2 hour area/gfx/sprFloorB.png");
+downloadmod("2 hour area/gfx/sprFloorExplo.png");
+downloadmod("2 hour area/gfx/sprSpiderHurt.png");
+downloadmod("2 hour area/gfx/sprSpiderIdle.png");
+downloadmod("2 hour area/gfx/sprSpiderWalk.png");
+downloadmod("2 hour area/gfx/sprTreeBot.png");
+downloadmod("2 hour area/gfx/sprTreetop.pdn");
+downloadmod("2 hour area/gfx/sprTreetop.png");
+downloadmod("2 hour area/gfx/sprWallBot.png");
+downloadmod("2 hour area/gfx/sprWallTop.png");
+downloadmod("2 hour area/gfx/sprWallTrans.png");
+downloadmod("2 hour area/gfx/sprZombieHurt.png");
+downloadmod("2 hour area/gfx/sprZombieIdle.png");
+downloadmod("2 hour area/gfx/sprZombieWalk.png");
+downloadmod("b/b.mod.gml");
+downloadmod("b/b.ini");
+downloadmod("b/redB.png");
+downloadmod("Croc_Man/crocman.race.gml");
+downloadmod("Croc_Man/Walk.png");
+downloadmod("Croc_Man/Ultras.png");
+downloadmod("Croc_Man/Teleport.png");
+downloadmod("Croc_Man/Teleport.ogg");
+downloadmod("Croc_Man/Select.png");
+downloadmod("Croc_Man/Radial.png");
+downloadmod("Croc_Man/Portrait.png");
+downloadmod("Croc_Man/Map.png");
+downloadmod("Croc_Man/Idle.png");
+downloadmod("Croc_Man/Hurt.png");
+downloadmod("Croc_Man/CrushHit.ogg");
+downloadmod("Croc_Man/Ankh.png");
+downloadmod("Croc_Man/Ankh.ogg");
+downloadmod("ash/ash.race.gml");
+downloadmod("ash/ashgosit.png");
+downloadmod("ash/ashidle_b.png");
+downloadmod("ash/AshUltraA.ogg");
+downloadmod("ash/AshUltraB.ogg");
+downloadmod("ash/Chest.ogg");
+downloadmod("ash/Damage.ogg");
+downloadmod("ash/Death.ogg");
+downloadmod("ash/IDPD.ogg");
+downloadmod("ash/Lowammo.ogg");
+downloadmod("ash/LowHealth.ogg");
+downloadmod("ash/menuash.png");
+downloadmod("ash/nothing.ogg");
+downloadmod("ash/Select.ogg");
+downloadmod("ash/Speech.ogg");
+downloadmod("ash/sprAshDead.png");
+downloadmod("ash/sprAshHurt.png");
+downloadmod("ash/sprAshIdle.png");
+downloadmod("ash/SprAshSit.png");
+downloadmod("ash/SprAshWalk.png");
+downloadmod("ash/sprBigPortrait.png");
+downloadmod("ash/sprEGIconHUDA.png");
+downloadmod("ash/sprEGIconHUDB.png");
+downloadmod("ash/sprEGSkillIcon.png");
+downloadmod("ash/sprLoadoutSkin.png");
+downloadmod("ash/sprMapIcon.png");
+downloadmod("ash/sprMutant1Dead.png");
+downloadmod("ash/sprMutant1GoSit.png");
+downloadmod("ash/sprMutant1Hurt.png");
+downloadmod("ash/sprMutant1Idle.png");
+downloadmod("ash/sprMutant1Sit.png");
+downloadmod("ash/sprMutant1Walk.png");
+downloadmod("ash/Tumor.ogg");
+downloadmod("ash/tumour.png");
+downloadmod("ash/tumourcounter.png");
+wait mod_load(string_trim("data/Daily.mod/bandit.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/2 hour area/2hours.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/b/b.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Croc_Man/crocman.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/ash/ash.race.gml"));
 
 
 global.ModNames = "";
@@ -137,11 +205,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=bouncermini,Doctor,Bandit Brute,Dumb Shells,bow");
+trace("Mods=Bandit,Minecraft Area,B,Croc Man,Ash");
 trace("Character:Choose");
-trace("Crown:crown of protection");
-trace("Weapon:bow");
-trace("Seed:5382");
+trace("Crown:crown of haste");
+trace("Weapon:heavy machinegun");
+trace("Seed:28782");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -286,7 +354,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("bow"));
+		give_wep(string_trim("heavy machinegun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -341,16 +409,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bouncermini,Doctor,Bandit Brute,Dumb Shells,bow" + " Character:Choose" + " Crown:crown of protection" + " Weapon:bow" + " Seed:5382";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bandit,Minecraft Area,B,Croc Man,Ash" + " Character:Choose" + " Crown:crown of haste" + " Weapon:heavy machinegun" + " Seed:28782";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-06-22 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-06-22 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-06-22 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-06-22 Daily.txt");
+	if(file_exists(global.alias + " 2019-06-23 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-06-23 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-06-23 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-06-23 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-06-22 Daily.txt");
+		string_save(score, global.alias + " 2019-06-23 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -377,10 +445,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bouncermini,Doctor,Bandit Brute,Dumb Shells,bow" + " Character:Choose" + " Crown:crown of protection" + " Weapon:bow" + " Seed:5382" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Bandit,Minecraft Area,B,Croc Man,Ash" + " Character:Choose" + " Crown:crown of haste" + " Weapon:heavy machinegun" + " Seed:28782" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bouncermini,Doctor,Bandit Brute,Dumb Shells,bow" + " Character:Choose" + " Crown:crown of protection" + " Weapon:bow" + " Seed:5382",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Bandit,Minecraft Area,B,Croc Man,Ash" + " Character:Choose" + " Crown:crown of haste" + " Weapon:heavy machinegun" + " Seed:28782",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -539,7 +607,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of protection");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
