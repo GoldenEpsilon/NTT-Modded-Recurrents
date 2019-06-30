@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Corsair#  Drop Me Gun#  Beamer#  Carmageddon#  Doctor#@bCharacter@w=#  Doctor#@yCrown@w=#  crown of curses#@gWeapon@w=#  Beamer#@pSeed@w=24769#Limited Tries:false*/
-/*|Corsair[The Corsair from EtG#Plot A Course]|Drop Me Gun[Hold "Pick up weapon"#for a couple seconds#to drop your weapon.]|Beamer[BZAAAAAP]|Carmageddon[WARNING: May contain drifting]|Doctor[The feathery, creepy,#totally-not-about-to-#stab-you-with-a-knife#doctor is in!]*/
+/*@rMods@w=#  Cool Dust#  Elite Gamers#  Auto Revolver#  Cannondemnation#  Bullet Time#@bCharacter@w=#  melting#@yCrown@w=#  crown of risk#@gWeapon@w=#  cannondemnation#@pSeed@w=11248#Limited Tries:false*/
+/*|Cool Dust[It's not just dust, it's#COOL DUST]|Elite Gamers[The bad guys got#aiming classes]|Auto Revolver[A truly auto weapon.]|Cannondemnation[DOOM DEATH DESTRUCTION##AND LINKIN PARK]|Bullet Time[The closer you are to bullets#the slower time moves]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 24769;
+global.seed = 11248;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "Doctor";
+global.Race = "melting";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,24 +98,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("corsair/chrg.wep.gml");
-downloadmod("corsair/corsair.png");
-downloadmod("corsair/corsair_pickup.png");
-downloadmod("dropMeGun.mod.gml");
-downloadmod("beamer/beamer.wep.gml");
-downloadmod("beamer/mskBeam.png");
-downloadmod("beamer/sprBeam.png");
-downloadmod("beamer/sprBeamCharge.png");
-downloadmod("beamer/sprBeamEnd.png");
-downloadmod("beamer/sprBeamer.png");
-downloadmod("beamer/sprBeamStart.png");
-downloadmod("carmageddon.mod.gml");
-downloadmod("Doctor.race.gml");
-wait mod_load(string_trim("data/Weekly.mod/corsair/chrg.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/dropMeGun.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/beamer/beamer.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/carmageddon.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Doctor.race.gml"));
+downloadmod("cooldust.mod.gml");
+downloadmod("elitegamers.mod.gml");
+downloadmod("autorevolver.wep.gml");
+downloadmod("cannondemnation.wep.gml");
+downloadmod("bullettime.mod.gml");
+wait mod_load(string_trim("data/Weekly.mod/cooldust.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/elitegamers.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/autorevolver.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cannondemnation.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bullettime.mod.gml"));
 
 
 global.ModNames = "";
@@ -144,11 +136,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Corsair,Drop Me Gun,Beamer,Carmageddon,Doctor");
-trace("Character:Doctor");
-trace("Crown:crown of curses");
-trace("Weapon:Beamer");
-trace("Seed:24769");
+trace("Mods=Cool Dust,Elite Gamers,Auto Revolver,Cannondemnation,Bullet Time");
+trace("Character:melting");
+trace("Crown:crown of risk");
+trace("Weapon:cannondemnation");
+trace("Seed:11248");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -293,7 +285,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Beamer"));
+		give_wep(string_trim("cannondemnation"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -314,7 +306,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="Doctor";
+			race="melting";
 		}
 	}
 }
@@ -329,9 +321,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("Doctor")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("melting")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("Doctor"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("melting"))){
 					instance_destroy();
 				}
 				exit;
@@ -348,16 +340,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Corsair,Drop Me Gun,Beamer,Carmageddon,Doctor" + " Character:Doctor" + " Crown:crown of curses" + " Weapon:Beamer" + " Seed:24769";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Dust,Elite Gamers,Auto Revolver,Cannondemnation,Bullet Time" + " Character:melting" + " Crown:crown of risk" + " Weapon:cannondemnation" + " Seed:11248";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-06-23 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-06-23 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-06-23 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-06-23 Weekly.txt");
+	if(file_exists(global.alias + " 2019-06-30 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-06-30 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-06-30 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-06-30 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-06-23 Weekly.txt");
+		string_save(score, global.alias + " 2019-06-30 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -384,10 +376,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Corsair,Drop Me Gun,Beamer,Carmageddon,Doctor" + " Character:Doctor" + " Crown:crown of curses" + " Weapon:Beamer" + " Seed:24769" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cool Dust,Elite Gamers,Auto Revolver,Cannondemnation,Bullet Time" + " Character:melting" + " Crown:crown of risk" + " Weapon:cannondemnation" + " Seed:11248" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Corsair,Drop Me Gun,Beamer,Carmageddon,Doctor" + " Character:Doctor" + " Crown:crown of curses" + " Weapon:Beamer" + " Seed:24769",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cool Dust,Elite Gamers,Auto Revolver,Cannondemnation,Bullet Time" + " Character:melting" + " Crown:crown of risk" + " Weapon:cannondemnation" + " Seed:11248",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -537,7 +529,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("Doctor");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("melting");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -546,7 +538,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of curses");
+name = string_trim("crown of risk");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
