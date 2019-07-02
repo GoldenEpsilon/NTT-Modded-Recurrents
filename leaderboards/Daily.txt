@@ -1,1 +1,1 @@
-Mods:Brimthrone,Chips,Cool Shadows,Charge Template,brad Character:Choose Crown:crown of guns Weapon:brimthrone Seed:8401 Date:;2019-07-01;
+Mods:Elite Dasher,Colored Palace,Baller,Blindness,Champions Character:Choose Crown:none Weapon:super slugger Seed:29909 Date:;2019-07-02;
