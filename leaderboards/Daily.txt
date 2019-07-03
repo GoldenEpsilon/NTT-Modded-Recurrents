@@ -1,1 +1,1 @@
-Mods:Elite Dasher,Colored Palace,Baller,Blindness,Champions Character:Choose Crown:none Weapon:super slugger Seed:29909 Date:;2019-07-02;
+Mods:basicgunallies,BAR,blstorm,Cuz,banditstack Character:Choose Crown:none Weapon:Big Ass Revolver Seed:14936 Date:;2019-07-03;
