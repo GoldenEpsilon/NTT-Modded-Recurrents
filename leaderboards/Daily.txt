@@ -1,1 +1,1 @@
-Mods:basicgunallies,BAR,blstorm,Cuz,banditstack Character:Choose Crown:none Weapon:Big Ass Revolver Seed:14936 Date:;2019-07-03;
+Mods:Detonator,Director,B,Elite Rifle,CoDeath Character:Choose Crown:CoDeath Weapon:eliterifle Seed:12738 Date:;2019-07-04;
