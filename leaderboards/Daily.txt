@@ -1,1 +1,1 @@
-Mods:Detonator,Director,B,Elite Rifle,CoDeath Character:Choose Crown:CoDeath Weapon:eliterifle Seed:12738 Date:;2019-07-04;
+Mods:Minecraft Area,Cool Flame,Defect,!ARMAGGEDNN,Beamer Character:Choose Crown:crown of haste Weapon:IDPD Rocket Seed:2291 Date:;2019-07-05;

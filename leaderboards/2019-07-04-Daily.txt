@@ -1,0 +1,1 @@
+Mods:Detonator,Director,B,Elite Rifle,CoDeath Character:Choose Crown:CoDeath Weapon:eliterifle Seed:12738 Date:;2019-07-04;
