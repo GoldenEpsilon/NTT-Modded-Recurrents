@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Bullet Time#  !ARMAGGEDNN#  Bigger Bandit#  basicgunallies#  Blindness#@bCharacter@w=#  Choose#@yCrown@w=#  crown of hatred#@gWeapon@w=#  Ultra Super Plasma Cannon#@pSeed@w=2182#Limited Tries:false*/
-/*|Bullet Time[The closer you are to bullets#the slower time moves]|!ARMAGGEDNN[This big mod for NTT is adding 36 new Suppa CrAzY WeaPONs##Also there is a customarea (you will die)]|Bigger Bandit[Ever gotten bored of Big Dog?]|basicgunallies[Ever wanted your allies to have normal guns?#Wait - @q HE'S GOT A GRENADE LAUNCHER!#@q@qRUN!!!]|Blindness[MY GLASSES! I BROKE MY GLASSES!]*/
+/*@rMods@w=#  Bullet Time#  Cursed Hyper Crystal#  Minecraft Area#  Crazy Bandits#  Grappler#@bCharacter@w=#  Choose#@yCrown@w=#  crown of hatred#@gWeapon@w=#  jackhammer#@pSeed@w=29117#Limited Tries:false*/
+/*|Bullet Time[The closer you are to bullets#the slower time moves]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Minecraft Area[Who Love Minecraf]|Crazy Bandits[THEY HAVE GUNS]|Grappler[For when you really want to throw someone at someone else.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 2182;
+global.seed = 29117;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -99,140 +99,35 @@ for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
 downloadmod("bullettime.mod.gml");
-downloadmod("!ARMAGGEDNN/areas/crimson.area.gml");
-downloadmod("!ARMAGGEDNN/weapons/autoSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/axeFire.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/blodSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/boltednightmare.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/ded.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/dubstepGun.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/EGruntRifle.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/EGruntRocket.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/EInspectorSword.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/enrgSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/EShielderMinigun.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/expllSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/fireeSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/Force100OfNature.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/gldnSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/grabli.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/grnt.skin.gml");
-downloadmod("!ARMAGGEDNN/weapons/heavSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/InspectorSlugger.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/lightSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/LyapasGun.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/M16Rifle.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/mcrfSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/plasmaCannonMinigun.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/Porzygun.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/SCR.mod.gml");
-downloadmod("!ARMAGGEDNN/weapons/shd.skin.gml");
-downloadmod("!ARMAGGEDNN/weapons/ShielderHeavyGun.weapon.gml");
-downloadmod("!ARMAGGEDNN/weapons/spctr.skin.gml");
-downloadmod("!ARMAGGEDNN/weapons/superultraplasmacannon.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/ullapollcaber.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/ultraKatana.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/UltraM16.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/ultrascrew.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/usnk.wep.gml");
-downloadmod("!ARMAGGEDNN/weapons/vamSh.weapon.gml");
-downloadmod("!ARMAGGEDNN/areas/spr/F1.png");
-downloadmod("!ARMAGGEDNN/areas/spr/F1E.png");
-downloadmod("!ARMAGGEDNN/areas/spr/sprGrave1.png");
-downloadmod("!ARMAGGEDNN/areas/spr/sprGrave2.png");
-downloadmod("!ARMAGGEDNN/areas/spr/W1B.png");
-downloadmod("!ARMAGGEDNN/areas/spr/W1O.png");
-downloadmod("!ARMAGGEDNN/areas/spr/W1T.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/boltm.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/fireaxe.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/flail.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/grabli.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/olDuspc.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/shild.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprASH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprBSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprESH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprExSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprForce100OfNature.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprFSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprGSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprHSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprISH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprLSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprVSH.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/swipe_flail.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/ucaber.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/ultradriver.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/ushank.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/usnk.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/uspc.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/zExplosiveSlash.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/zFlameSlash.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/zGoldSlash.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/zVampirSlash.png");
-downloadmod("!ARMAGGEDNN/weapons/snd/FHONshot.ogg");
-downloadmod("!ARMAGGEDNN/weapons/snd/uspcShot.ogg");
-downloadmod("!ARMAGGEDNN/weapons/snd/die.ogg");
-downloadmod("!ARMAGGEDNN/weapons/spr/dubsteb.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/fckyou.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprelitepopogun.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprPopoRocket.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprPopoPlasmaMinigun.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprPopoSlugger.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprPopoHeavyGun.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprPCMini.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/sprenergybaton.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/lyapas.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/LyapasGun.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/lyapasP.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/M16.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/Shovel.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/ukatana.png");
-downloadmod("!ARMAGGEDNN/weapons/spr/ULTRA_M16.png");
-downloadmod("biggerbandit.mod.gml");
-downloadmod("basicgunallies.mod.gml");
-downloadmod("blindness.mod.gml");
+downloadmod("cursedhypercrystal.mod.gml");
+downloadmod("2 hour area/2hours.area.gml");
+downloadmod("2 hour area/gfx/sprArrow.png");
+downloadmod("2 hour area/gfx/sprBow.png");
+downloadmod("2 hour area/gfx/sprClouds.png");
+downloadmod("2 hour area/gfx/sprDebris.png");
+downloadmod("2 hour area/gfx/sprDecoration.png");
+downloadmod("2 hour area/gfx/sprFloor.png");
+downloadmod("2 hour area/gfx/sprFloorB.png");
+downloadmod("2 hour area/gfx/sprFloorExplo.png");
+downloadmod("2 hour area/gfx/sprSpiderHurt.png");
+downloadmod("2 hour area/gfx/sprSpiderIdle.png");
+downloadmod("2 hour area/gfx/sprSpiderWalk.png");
+downloadmod("2 hour area/gfx/sprTreeBot.png");
+downloadmod("2 hour area/gfx/sprTreetop.pdn");
+downloadmod("2 hour area/gfx/sprTreetop.png");
+downloadmod("2 hour area/gfx/sprWallBot.png");
+downloadmod("2 hour area/gfx/sprWallTop.png");
+downloadmod("2 hour area/gfx/sprWallTrans.png");
+downloadmod("2 hour area/gfx/sprZombieHurt.png");
+downloadmod("2 hour area/gfx/sprZombieIdle.png");
+downloadmod("2 hour area/gfx/sprZombieWalk.png");
+downloadmod("crazybandits.mod.gml");
+downloadmod("grappler.race.gml");
 wait mod_load(string_trim("data/Daily.mod/bullettime.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/areas/crimson.area.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/autoSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/axeFire.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/blodSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/boltednightmare.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/ded.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/dubstepGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/EGruntRifle.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/EGruntRocket.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/EInspectorSword.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/enrgSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/EShielderMinigun.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/expllSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/fireeSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/Force100OfNature.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/gldnSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/grabli.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/grnt.skin.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/heavSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/InspectorSlugger.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/lightSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/LyapasGun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/M16Rifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/mcrfSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/plasmaCannonMinigun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/Porzygun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/SCR.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/shd.skin.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/ShielderHeavyGun.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/spctr.skin.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/superultraplasmacannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/ullapollcaber.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/ultraKatana.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/UltraM16.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/ultrascrew.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/usnk.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/!ARMAGGEDNN/weapons/vamSh.weapon.gml"));
-wait mod_load(string_trim("data/Daily.mod/biggerbandit.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/basicgunallies.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/blindness.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cursedhypercrystal.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/2 hour area/2hours.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/crazybandits.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/grappler.race.gml"));
 
 
 global.ModNames = "";
@@ -261,11 +156,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Bullet Time,!ARMAGGEDNN,Bigger Bandit,basicgunallies,Blindness");
+trace("Mods=Bullet Time,Cursed Hyper Crystal,Minecraft Area,Crazy Bandits,Grappler");
 trace("Character:Choose");
 trace("Crown:crown of hatred");
-trace("Weapon:Ultra Super Plasma Cannon");
-trace("Seed:2182");
+trace("Weapon:jackhammer");
+trace("Seed:29117");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -410,7 +305,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Ultra Super Plasma Cannon"));
+		give_wep(string_trim("jackhammer"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -465,16 +360,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bullet Time,!ARMAGGEDNN,Bigger Bandit,basicgunallies,Blindness" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Ultra Super Plasma Cannon" + " Seed:2182";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bullet Time,Cursed Hyper Crystal,Minecraft Area,Crazy Bandits,Grappler" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:jackhammer" + " Seed:29117";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-07-06 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-07-06 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-07-06 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-07-06 Daily.txt");
+	if(file_exists(global.alias + " 2019-07-07 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-07-07 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-07-07 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-07-07 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-07-06 Daily.txt");
+		string_save(score, global.alias + " 2019-07-07 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -501,10 +396,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Bullet Time,!ARMAGGEDNN,Bigger Bandit,basicgunallies,Blindness" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Ultra Super Plasma Cannon" + " Seed:2182" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Bullet Time,Cursed Hyper Crystal,Minecraft Area,Crazy Bandits,Grappler" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:jackhammer" + " Seed:29117" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Bullet Time,!ARMAGGEDNN,Bigger Bandit,basicgunallies,Blindness" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Ultra Super Plasma Cannon" + " Seed:2182",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Bullet Time,Cursed Hyper Crystal,Minecraft Area,Crazy Bandits,Grappler" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:jackhammer" + " Seed:29117",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
