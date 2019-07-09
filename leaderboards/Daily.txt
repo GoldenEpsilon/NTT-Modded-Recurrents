@@ -1,1 +1,1 @@
-Mods:bouncermini,Boltshard,bosshudredux,Chest Bandits,bossbar Character:Choose Crown:crown of haste Weapon:Boltshard Seed:946 Date:;2019-07-08;
+Mods:Cursed Hyper Crystal,CoDeath,Chicken Head,Brimthrone,BadEnd Character:Choose Crown:CoDeath Weapon:brimthrone Seed:28598 Date:;2019-07-09;
