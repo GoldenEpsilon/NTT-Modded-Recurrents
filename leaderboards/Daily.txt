@@ -1,1 +1,1 @@
-Mods:bouncermini,Crazy Allies,Charge Template,Detailer,Drama Kill Character:Choose Crown:crown of curses Weapon:ct Seed:26888 Date:;2019-07-10;
+Mods:Charge Template,Some Crowns,Drama Kill,blstorm,Balls Character:Choose Crown:dogs Weapon:laserwrench Seed:21094 Date:;2019-07-11;
