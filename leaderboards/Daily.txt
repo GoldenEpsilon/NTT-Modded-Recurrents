@@ -1,2 +1,1 @@
-Mods:Charge Template,Some Crowns,Drama Kill,blstorm,Balls Character:Choose Crown:dogs Weapon:laserwrench Seed:21094 Date:;2019-07-11;
-|WhoNeedsAUserName?: Area 1-3 L0 Kills: 73 Character: venuz 
+Mods:Cycle,Blaac's Weapon Mutations,bow,Crazy Traps,betterLoops Character:Choose Crown:crown of death Weapon:bow Seed:9173 Date:;2019-07-12;
