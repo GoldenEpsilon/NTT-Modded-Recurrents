@@ -1,1 +1,1 @@
-Mods:Ancient Hatred,Dodge Roll,Cosmi Gun Enemies,Confuse,Elite Dasher Character:Choose Crown:crown of ancient hatred Weapon:lightning pistol Seed:10340 Date:;2019-07-15;
+Mods:Dummy,Crazy Traps,Big Toothbrush,Cooler Hud,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:Big Toothbrush Seed:8498 Date:;2019-07-17;
