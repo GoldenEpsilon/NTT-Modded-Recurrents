@@ -1,1 +1,1 @@
-Mods:Dummy,Crazy Traps,Big Toothbrush,Cooler Hud,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:Big Toothbrush Seed:8498 Date:;2019-07-17;
+Mods:Baldi,Auto Bullet Shotgun,Cuz,Determination,Big Toothbrush Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:24357 Date:;2019-07-18;
