@@ -1,1 +1,1 @@
-Mods:Bigger Bandit,Ash,Champions,Cannondemnation,Blaac's Weapon Mutations Character:Choose Crown:crown of life Weapon:cannondemnation Seed:27877 Date:;2019-07-19;
+Mods:Afterburn,Auto Bullet Shotgun,Carpocalypse,Airhorn,Bitpack Character:Choose Crown:crown of life Weapon:Auto Bullet Shotgun Seed:24304 Date:;2019-07-21;

@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Damage Numbers#  Drama Kill#  6 Weapons#  Brimthrone#  Elite Rifle#@bCharacter@w=#  chicken#@yCrown@w=#  crown of hatred#@gWeapon@w=#  eliterifle#@pSeed@w=7329#Limited Tries:false*/
-/*|Damage Numbers[So you can see how good/bad#your setup is on the fly!]|Drama Kill[For when you want#to feel really good#for defeating Big Bandit]|6 Weapons[Gives you one weapon slot#for each ammo type like DOOM]|Brimthrone[A portable throne, to#know how it feels to#zap people with that laser.]|Elite Rifle[I'm just gonna grab that,#thank you very much.]*/
+/*@rMods@w=#  bossbar#  C Ultras#  Champions#  Airhorn#  Blaac's Weapon Mutations#@bCharacter@w=#  robot#@yCrown@w=#  crown of blood#@gWeapon@w=#  Airhorn#@pSeed@w=24604#Limited Tries:false*/
+/*|bossbar[For when you want to know#just how close you were to looping]|C Ultras[Adds a C ultra to all#the vanilla characters]|Champions[weeeee are the buffed minionssss,#my frieeeeeendssss]|Airhorn[Ever wanted to use the airhorn with every character?##Now you can!]|Blaac's Weapon Mutations[YOU GET A WEAPON MUTATION!#YOU GET A WEAPON MUTATION!#EVERYONE GETS A WEAPON MUTATION!!!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 7329;
+global.seed = 24604;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "chicken";
+global.Race = "robot";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,16 +98,52 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("damagenumbers.mod.gml");
-downloadmod("dramakill.mod.gml");
-downloadmod("6weapons.mod.gml");
-downloadmod("brimthrone.wep.gml");
-downloadmod("eliterifle.wep.gml");
-wait mod_load(string_trim("data/Weekly.mod/damagenumbers.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/dramakill.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/6weapons.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/brimthrone.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/eliterifle.wep.gml"));
+downloadmod("bossbar.mod.gml");
+downloadmod("cultra.mod.gml");
+downloadmod("C Ultras/crystal.skill.gml");
+downloadmod("C Ultras/eyes.skill.gml");
+downloadmod("C Ultras/fish.skill.gml");
+downloadmod("C Ultras/melting.skill.gml");
+downloadmod("C Ultras/plant.skill.gml");
+downloadmod("C Ultras/yv.skill.gml");
+downloadmod("C Ultras/crystalc.png");
+downloadmod("C Ultras/crystalcicon.png");
+downloadmod("C Ultras/eyesc.png");
+downloadmod("C Ultras/eyescicon.png");
+downloadmod("C Ultras/FishC.png");
+downloadmod("C Ultras/FishCicon.png");
+downloadmod("C Ultras/MeltingC.png");
+downloadmod("C Ultras/MeltingCicon.png");
+downloadmod("C Ultras/plantc.png");
+downloadmod("C Ultras/plantcicon.png");
+downloadmod("C Ultras/yvc.png");
+downloadmod("C Ultras/yvcicon.png");
+downloadmod("champions.mod.gml");
+downloadmod("airhorn.wep.gml");
+downloadmod("blaac's Weapon Mutations/compoundelbow.skill.gml");
+downloadmod("blaac's Weapon Mutations/concentration.skill.gml");
+downloadmod("blaac's Weapon Mutations/condensedmeat.skill.gml");
+downloadmod("blaac's Weapon Mutations/excitedneurons.skill.gml");
+downloadmod("blaac's Weapon Mutations/flamingpalms.skill.gml");
+downloadmod("blaac's Weapon Mutations/noheavyheart.mod.gml");
+downloadmod("blaac's Weapon Mutations/powderedgums.skill.gml");
+wait mod_load(string_trim("data/Weekly.mod/bossbar.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cultra.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/crystal.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/eyes.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/fish.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/melting.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/plant.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/C Ultras/yv.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/champions.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/airhorn.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/compoundelbow.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/concentration.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/condensedmeat.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/excitedneurons.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/flamingpalms.skill.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/noheavyheart.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/powderedgums.skill.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +172,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Damage Numbers,Drama Kill,6 Weapons,Brimthrone,Elite Rifle");
-trace("Character:chicken");
-trace("Crown:crown of hatred");
-trace("Weapon:eliterifle");
-trace("Seed:7329");
+trace("Mods=bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations");
+trace("Character:robot");
+trace("Crown:crown of blood");
+trace("Weapon:Airhorn");
+trace("Seed:24604");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +321,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("eliterifle"));
+		give_wep(string_trim("Airhorn"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -306,7 +342,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="chicken";
+			race="robot";
 		}
 	}
 }
@@ -321,9 +357,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("chicken")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("robot")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("chicken"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("robot"))){
 					instance_destroy();
 				}
 				exit;
@@ -340,16 +376,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Damage Numbers,Drama Kill,6 Weapons,Brimthrone,Elite Rifle" + " Character:chicken" + " Crown:crown of hatred" + " Weapon:eliterifle" + " Seed:7329";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-07-14 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-07-14 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-07-14 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-07-14 Weekly.txt");
+	if(file_exists(global.alias + " 2019-07-21 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-07-21 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-07-21 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-07-21 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-07-14 Weekly.txt");
+		string_save(score, global.alias + " 2019-07-21 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +412,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Damage Numbers,Drama Kill,6 Weapons,Brimthrone,Elite Rifle" + " Character:chicken" + " Crown:crown of hatred" + " Weapon:eliterifle" + " Seed:7329" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Damage Numbers,Drama Kill,6 Weapons,Brimthrone,Elite Rifle" + " Character:chicken" + " Crown:crown of hatred" + " Weapon:eliterifle" + " Seed:7329",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -529,7 +565,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("chicken");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("robot");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -538,7 +574,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of hatred");
+name = string_trim("crown of blood");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
