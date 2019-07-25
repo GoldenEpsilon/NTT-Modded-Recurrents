@@ -1,0 +1,1 @@
+Mods:Blindness,Blood,Detailer,Determination,Bomber Character:Choose Crown:crown of curses Weapon:revolver Seed:5493 Date:;2019-07-24;

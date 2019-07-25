@@ -1,1 +1,1 @@
-Mods:Blindness,Blood,Detailer,Determination,Bomber Character:Choose Crown:crown of curses Weapon:revolver Seed:5493 Date:;2019-07-24;
+Mods:Auto Flame Crossbow,Determination,Devastator,Doctor,Corsair Character:Choose Crown:crown of haste Weapon:Auto Flame Crossbow Seed:26190 Date:;2019-07-25;
