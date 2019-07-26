@@ -1,0 +1,1 @@
+Mods:Auto Flame Crossbow,Determination,Devastator,Doctor,Corsair Character:Choose Crown:crown of haste Weapon:Auto Flame Crossbow Seed:26190 Date:;2019-07-25;
