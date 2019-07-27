@@ -1,1 +1,1 @@
-Mods:boys,Colored Palace,Auto Bullet Shotgun,Death Pit,Double Time Character:Choose Crown:deathpit Weapon:Auto Bullet Shotgun Seed:28706 Date:;2019-07-26;
+Mods:Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2 Character:Choose Crown:deathpit Weapon:blood hammer Seed:23841 Date:;2019-07-27;
