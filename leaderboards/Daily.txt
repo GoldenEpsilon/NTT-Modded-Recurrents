@@ -1,1 +1,1 @@
-Mods:Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2 Character:Choose Crown:deathpit Weapon:blood hammer Seed:23841 Date:;2019-07-27;
+Mods:boys,BL2,Dasher,Elite Minigun,bow Character:Choose Crown:crown of haste Weapon:elitemini Seed:8948 Date:;2019-07-28;
