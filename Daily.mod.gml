@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Druid#  Cursed Hyper Crystal#  Bandit Brute#  Death Pit#  Elite Turrets 2#@bCharacter@w=#  Choose#@yCrown@w=#  deathpit#@gWeapon@w=#  blood hammer#@pSeed@w=23841#Limited Tries:false*/
-/*|Druid[Not Getafix,#but he'll do.]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Bandit Brute[Randomly replaces bandits with Bandit Brutes]|Death Pit[FIGHT TO THE DEATH#IN THIS SMALL SQUARE#WHEN YOU HAVE THIS CROWN#DO IT NOW]|Elite Turrets 2[Electric Boogaloo.#(affects Labs turrets)]*/
+/*@rMods@w=#  boys#  BL2#  Dasher#  Elite Minigun#  bow#@bCharacter@w=#  Choose#@yCrown@w=#  crown of haste#@gWeapon@w=#  elitemini#@pSeed@w=8948#Limited Tries:false*/
+/*|boys[Instead of hit points, you have a 1hp clone per hit point, and max health basically doesn't exist.]|BL2[Borderlands 2 x Nuclear Throne]|Dasher[Dash at thing#-> pick up thing#-> throw thing#-> repeat.]|Elite Minigun[Man, it feels nice#using their own guns on them.]|bow[It's a bow.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 23841;
+global.seed = 8948;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,40 +98,288 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Druid_Race/druid.race.gml");
-downloadmod("Druid_Race/Storagething/Directionalswitch.ogg");
-downloadmod("Druid_Race/Storagething/DruidDeath.png");
-downloadmod("Druid_Race/Storagething/DruidHurt.png");
-downloadmod("Druid_Race/Storagething/DruidIcon.png");
-downloadmod("Druid_Race/Storagething/DruidIdle.png");
-downloadmod("Druid_Race/Storagething/DruidPoof.ogg");
-downloadmod("Druid_Race/Storagething/DruidPooff.ogg");
-downloadmod("Druid_Race/Storagething/DruidWalk.png");
-downloadmod("Druid_Race/Storagething/MechanicDead.png");
-downloadmod("Druid_Race/Storagething/MechanicHurt.png");
-downloadmod("Druid_Race/Storagething/MechanicIcon.png");
-downloadmod("Druid_Race/Storagething/MechanicIdle.png");
-downloadmod("Druid_Race/Storagething/MechanicMenu.png");
-downloadmod("Druid_Race/Storagething/MechanicTurret.png");
-downloadmod("Druid_Race/Storagething/MechanicTurretA.png");
-downloadmod("Druid_Race/Storagething/MechanicTurretAB.png");
-downloadmod("Druid_Race/Storagething/MechanicTurretB.png");
-downloadmod("Druid_Race/Storagething/MechanicWalk.png");
-downloadmod("Druid_Race/Storagething/RobloxDyingBreath.ogg");
-downloadmod("Druid_Race/Storagething/Shatter.ogg");
-downloadmod("Druid_Race/Storagething/Silent.ogg");
-downloadmod("Druid_Race/Storagething/sprToast.png");
-downloadmod("Druid_Race/Storagething/ssss.mp3");
-downloadmod("Druid_Race/Storagething/UUHHN.ogg");
-downloadmod("cursedhypercrystal.mod.gml");
-downloadmod("BanditBrute.mod.gml");
-downloadmod("deathpit.crown.gml");
-downloadmod("EliteTurret2.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/Druid_Race/druid.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/cursedhypercrystal.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/BanditBrute.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/deathpit.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml"));
+downloadmod("boys.mod.gml");
+downloadmod("BL2/bigweaponchest.mod.gml");
+downloadmod("BL2/gamblechest.mod.gml");
+downloadmod("BL2/idpdgamblechest.mod.gml");
+downloadmod("BL2/pgw.mod.gml");
+downloadmod("BL2/procwep.wep.gml");
+downloadmod("BL2/reloadindicator.mod.gml");
+downloadmod("BL2/sharedammo.mod.gml");
+downloadmod("BL2/mods/pgw_bl2.mod.gml");
+downloadmod("BL2/mods/pgw_idpd.mod.gml");
+downloadmod("BL2/mods/res/bl2/ban/ref.pdn");
+downloadmod("BL2/mods/res/bl2/ban/ar/bod0.png");
+downloadmod("BL2/mods/res/bl2/ban/ar/bod1.png");
+downloadmod("BL2/mods/res/bl2/ban/ar/han0.png");
+downloadmod("BL2/mods/res/bl2/ban/ar/han1.png");
+downloadmod("BL2/mods/res/bl2/ban/ar/muz0.png");
+downloadmod("BL2/mods/res/bl2/ban/ar/muz1.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/ban/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/bod0.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/bod1.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/han0.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/han1.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/muz0.png");
+downloadmod("BL2/mods/res/bl2/ban/rl/muz1.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/bod0.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/bod1.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/han0.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/han1.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/muz0.png");
+downloadmod("BL2/mods/res/bl2/ban/shot/muz1.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/bod0.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/bod1.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/han0.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/han1.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/muz0.png");
+downloadmod("BL2/mods/res/bl2/ban/smg/muz1.png");
+downloadmod("BL2/mods/res/bl2/dah/ref.pdn");
+downloadmod("BL2/mods/res/bl2/dah/ar/bod0.png");
+downloadmod("BL2/mods/res/bl2/dah/ar/bod1.png");
+downloadmod("BL2/mods/res/bl2/dah/ar/han0.png");
+downloadmod("BL2/mods/res/bl2/dah/ar/han1.png");
+downloadmod("BL2/mods/res/bl2/dah/ar/muz0.png");
+downloadmod("BL2/mods/res/bl2/dah/ar/muz1.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/bod0.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/bod1.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/han0.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/han1.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/muz0.png");
+downloadmod("BL2/mods/res/bl2/dah/lsr/muz1.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/dah/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/bod0.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/bod1.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/han0.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/han1.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/muz0.png");
+downloadmod("BL2/mods/res/bl2/dah/smg/muz1.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/bod0.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/bod1.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/han0.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/han1.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/muz0.png");
+downloadmod("BL2/mods/res/bl2/dah/sni/muz1.png");
+downloadmod("BL2/mods/res/bl2/hyp/ref.pdn");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/bod0.png");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/bod1.png");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/han0.png");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/han1.png");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/muz0.png");
+downloadmod("BL2/mods/res/bl2/hyp/lsr/muz1.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/hyp/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/bod0.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/bod1.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/han0.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/han1.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/muz0.png");
+downloadmod("BL2/mods/res/bl2/hyp/shot/muz1.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/bod0.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/bod1.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/han0.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/han1.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/muz0.png");
+downloadmod("BL2/mods/res/bl2/hyp/smg/muz1.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/bod0.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/bod1.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/han0.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/han1.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/muz0.png");
+downloadmod("BL2/mods/res/bl2/hyp/sni/muz1.png");
+downloadmod("BL2/mods/res/bl2/jak/ref.pdn");
+downloadmod("BL2/mods/res/bl2/jak/ar/bod0.png");
+downloadmod("BL2/mods/res/bl2/jak/ar/bod1.png");
+downloadmod("BL2/mods/res/bl2/jak/ar/han0.png");
+downloadmod("BL2/mods/res/bl2/jak/ar/han1.png");
+downloadmod("BL2/mods/res/bl2/jak/ar/muz0.png");
+downloadmod("BL2/mods/res/bl2/jak/ar/muz1.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/jak/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/bod0.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/bod1.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/han0.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/han1.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/muz0.png");
+downloadmod("BL2/mods/res/bl2/jak/shot/muz1.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/bod0.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/bod1.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/han0.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/han1.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/muz0.png");
+downloadmod("BL2/mods/res/bl2/jak/sni/muz1.png");
+downloadmod("BL2/mods/res/bl2/mal/ref.pdn");
+downloadmod("BL2/mods/res/bl2/mal/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/mal/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/mal/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/mal/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/mal/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/mal/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/bod0.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/bod1.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/han0.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/han1.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/muz0.png");
+downloadmod("BL2/mods/res/bl2/mal/rl/muz1.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/bod0.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/bod1.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/han0.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/han1.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/muz0.png");
+downloadmod("BL2/mods/res/bl2/mal/smg/muz1.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/bod0.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/bod1.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/han0.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/han1.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/muz0.png");
+downloadmod("BL2/mods/res/bl2/mal/sni/muz1.png");
+downloadmod("BL2/mods/res/bl2/ted/ref.pdn");
+downloadmod("BL2/mods/res/bl2/ted/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/ted/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/ted/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/ted/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/ted/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/ted/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/bod0.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/bod1.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/han0.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/han1.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/muz0.png");
+downloadmod("BL2/mods/res/bl2/ted/rl/muz1.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/bod0.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/bod1.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/han0.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/han1.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/muz0.png");
+downloadmod("BL2/mods/res/bl2/ted/shot/muz1.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/bod0.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/bod1.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/han0.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/han1.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/muz0.png");
+downloadmod("BL2/mods/res/bl2/ted/smg/muz1.png");
+downloadmod("BL2/mods/res/bl2/tor/ref.pdn");
+downloadmod("BL2/mods/res/bl2/tor/ar/bod0.png");
+downloadmod("BL2/mods/res/bl2/tor/ar/bod1.png");
+downloadmod("BL2/mods/res/bl2/tor/ar/han0.png");
+downloadmod("BL2/mods/res/bl2/tor/ar/han1.png");
+downloadmod("BL2/mods/res/bl2/tor/ar/muz0.png");
+downloadmod("BL2/mods/res/bl2/tor/ar/muz1.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/tor/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/bod0.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/bod1.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/han0.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/han1.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/muz0.png");
+downloadmod("BL2/mods/res/bl2/tor/rl/muz1.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/bod0.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/bod1.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/han0.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/han1.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/muz0.png");
+downloadmod("BL2/mods/res/bl2/tor/shot/muz1.png");
+downloadmod("BL2/mods/res/bl2/vla/ref.pdn");
+downloadmod("BL2/mods/res/bl2/vla/ar/bod0.png");
+downloadmod("BL2/mods/res/bl2/vla/ar/bod1.png");
+downloadmod("BL2/mods/res/bl2/vla/ar/han0.png");
+downloadmod("BL2/mods/res/bl2/vla/ar/han1.png");
+downloadmod("BL2/mods/res/bl2/vla/ar/muz0.png");
+downloadmod("BL2/mods/res/bl2/vla/ar/muz1.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/bod0.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/bod1.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/han0.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/han1.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/muz0.png");
+downloadmod("BL2/mods/res/bl2/vla/pis/muz1.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/bod0.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/bod1.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/han0.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/han1.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/muz0.png");
+downloadmod("BL2/mods/res/bl2/vla/rl/muz1.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/bod0.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/bod1.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/han0.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/han1.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/muz0.png");
+downloadmod("BL2/mods/res/bl2/vla/sni/muz1.png");
+downloadmod("BL2/mods/res/idpd/bod0.png");
+downloadmod("BL2/mods/res/idpd/bod1.png");
+downloadmod("BL2/mods/res/idpd/bod2.png");
+downloadmod("BL2/mods/res/idpd/bod3.png");
+downloadmod("BL2/mods/res/idpd/bod4.png");
+downloadmod("BL2/mods/res/idpd/han0.png");
+downloadmod("BL2/mods/res/idpd/han1.png");
+downloadmod("BL2/mods/res/idpd/han2.png");
+downloadmod("BL2/mods/res/idpd/han3.png");
+downloadmod("BL2/mods/res/idpd/han4.png");
+downloadmod("BL2/mods/res/idpd/muz0.png");
+downloadmod("BL2/mods/res/idpd/muz1.png");
+downloadmod("BL2/mods/res/idpd/muz2.png");
+downloadmod("BL2/mods/res/idpd/muz3.png");
+downloadmod("BL2/mods/res/idpd/muz4.png");
+downloadmod("BL2/mods/res/idpd/sprElitePopoGun.png");
+downloadmod("BL2/mods/res/idpd/sprPopoGun.png");
+downloadmod("BL2/mods/res/idpd/sprPopoHeavyGun.png");
+downloadmod("BL2/mods/res/idpd/sprPopoSlugger.png");
+downloadmod("BL2/res/bigweaponchest/bigWeaponChest.ase");
+downloadmod("BL2/res/bigweaponchest/sprBigWeaponChest.png");
+downloadmod("BL2/res/bigweaponchest/sprBigWeaponChestOpen.png");
+downloadmod("BL2/res/bigweaponchest/sprBigWeaponChestOpening.png");
+downloadmod("BL2/res/bigweaponchest/sprWeaponChestBig_strip7.png");
+downloadmod("BL2/res/gamblechest/gambleChest.ase");
+downloadmod("BL2/res/gamblechest/sprGambleChest.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestBounce.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestPrizeBottom.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestPrizeLeft.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestPulling.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestRolling.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestTransformed.png");
+downloadmod("BL2/res/gamblechest/sprGambleChestTransforming.png");
+downloadmod("BL2/res/idpdgamblechest/idpdGambleChest.ase");
+downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChest.png");
+downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChestTransformed.png");
+downloadmod("BL2/res/idpdgamblechest/sprIDPDGambleChestTransforming.png");
+downloadmod("BL2/res/pgw/mskProcwep.png");
+downloadmod("dasher.race.gml");
+downloadmod("elitemini.wep.gml");
+downloadmod("bow.wep.gml");
+wait mod_load(string_trim("data/Daily.mod/boys.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/bigweaponchest.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/gamblechest.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/idpdgamblechest.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/pgw.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/procwep.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/reloadindicator.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/sharedammo.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/mods/pgw_bl2.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/BL2/mods/pgw_idpd.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dasher.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/elitemini.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/bow.wep.gml"));
 
 
 global.ModNames = "";
@@ -160,11 +408,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2");
+trace("Mods=boys,BL2,Dasher,Elite Minigun,bow");
 trace("Character:Choose");
-trace("Crown:deathpit");
-trace("Weapon:blood hammer");
-trace("Seed:23841");
+trace("Crown:crown of haste");
+trace("Weapon:elitemini");
+trace("Seed:8948");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -309,7 +557,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("blood hammer"));
+		give_wep(string_trim("elitemini"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -364,16 +612,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2" + " Character:Choose" + " Crown:deathpit" + " Weapon:blood hammer" + " Seed:23841";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:boys,BL2,Dasher,Elite Minigun,bow" + " Character:Choose" + " Crown:crown of haste" + " Weapon:elitemini" + " Seed:8948";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-07-27 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-07-27 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-07-27 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-07-27 Daily.txt");
+	if(file_exists(global.alias + " 2019-07-28 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-07-28 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-07-28 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-07-28 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-07-27 Daily.txt");
+		string_save(score, global.alias + " 2019-07-28 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -400,10 +648,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2" + " Character:Choose" + " Crown:deathpit" + " Weapon:blood hammer" + " Seed:23841" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:boys,BL2,Dasher,Elite Minigun,bow" + " Character:Choose" + " Crown:crown of haste" + " Weapon:elitemini" + " Seed:8948" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Druid,Cursed Hyper Crystal,Bandit Brute,Death Pit,Elite Turrets 2" + " Character:Choose" + " Crown:deathpit" + " Weapon:blood hammer" + " Seed:23841",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":boys,BL2,Dasher,Elite Minigun,bow" + " Character:Choose" + " Crown:crown of haste" + " Weapon:elitemini" + " Seed:8948",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -562,7 +810,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("deathpit");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

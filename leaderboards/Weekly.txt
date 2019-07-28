@@ -1,1 +1,1 @@
-Mods:bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations Character:robot Crown:crown of blood Weapon:Airhorn Seed:24604 Date:;2019-07-21;
+Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust Character:bouncermini Crown:crown of life Weapon:Big Ass Revolver Seed:7861 Date:;2019-07-28;

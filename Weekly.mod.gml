@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bossbar#  C Ultras#  Champions#  Airhorn#  Blaac's Weapon Mutations#@bCharacter@w=#  robot#@yCrown@w=#  crown of blood#@gWeapon@w=#  Airhorn#@pSeed@w=24604#Limited Tries:false*/
-/*|bossbar[For when you want to know#just how close you were to looping]|C Ultras[Adds a C ultra to all#the vanilla characters]|Champions[weeeee are the buffed minionssss,#my frieeeeeendssss]|Airhorn[Ever wanted to use the airhorn with every character?##Now you can!]|Blaac's Weapon Mutations[YOU GET A WEAPON MUTATION!#YOU GET A WEAPON MUTATION!#EVERYONE GETS A WEAPON MUTATION!!!]*/
+/*@rMods@w=#  Elite Gamers#  Elite Minigun#  BAR#  bouncermini#  Cool Dust#@bCharacter@w=#  bouncermini#@yCrown@w=#  crown of life#@gWeapon@w=#  Big Ass Revolver#@pSeed@w=7861#Limited Tries:false*/
+/*|Elite Gamers[The bad guys got#aiming classes]|Elite Minigun[Man, it feels nice#using their own guns on them.]|BAR[A Big Ass Revolver.]|bouncermini[FILL THE SKIES WITH BULLETS]|Cool Dust[It's not just dust, it's#COOL DUST]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 24604;
+global.seed = 7861;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "robot";
+global.Race = "bouncermini";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,52 +98,17 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bossbar.mod.gml");
-downloadmod("cultra.mod.gml");
-downloadmod("C Ultras/crystal.skill.gml");
-downloadmod("C Ultras/eyes.skill.gml");
-downloadmod("C Ultras/fish.skill.gml");
-downloadmod("C Ultras/melting.skill.gml");
-downloadmod("C Ultras/plant.skill.gml");
-downloadmod("C Ultras/yv.skill.gml");
-downloadmod("C Ultras/crystalc.png");
-downloadmod("C Ultras/crystalcicon.png");
-downloadmod("C Ultras/eyesc.png");
-downloadmod("C Ultras/eyescicon.png");
-downloadmod("C Ultras/FishC.png");
-downloadmod("C Ultras/FishCicon.png");
-downloadmod("C Ultras/MeltingC.png");
-downloadmod("C Ultras/MeltingCicon.png");
-downloadmod("C Ultras/plantc.png");
-downloadmod("C Ultras/plantcicon.png");
-downloadmod("C Ultras/yvc.png");
-downloadmod("C Ultras/yvcicon.png");
-downloadmod("champions.mod.gml");
-downloadmod("airhorn.wep.gml");
-downloadmod("blaac's Weapon Mutations/compoundelbow.skill.gml");
-downloadmod("blaac's Weapon Mutations/concentration.skill.gml");
-downloadmod("blaac's Weapon Mutations/condensedmeat.skill.gml");
-downloadmod("blaac's Weapon Mutations/excitedneurons.skill.gml");
-downloadmod("blaac's Weapon Mutations/flamingpalms.skill.gml");
-downloadmod("blaac's Weapon Mutations/noheavyheart.mod.gml");
-downloadmod("blaac's Weapon Mutations/powderedgums.skill.gml");
-wait mod_load(string_trim("data/Weekly.mod/bossbar.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cultra.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/crystal.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/eyes.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/fish.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/melting.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/plant.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/yv.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/champions.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/airhorn.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/compoundelbow.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/concentration.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/condensedmeat.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/excitedneurons.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/flamingpalms.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/noheavyheart.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/blaac's Weapon Mutations/powderedgums.skill.gml"));
+downloadmod("elitegamers.mod.gml");
+downloadmod("elitemini.wep.gml");
+downloadmod("BAR.wep.gml");
+downloadmod("bouncermini/bouncermini.wep.gml");
+downloadmod("bouncermini/sprBouncerMinigun.png");
+downloadmod("cooldust.mod.gml");
+wait mod_load(string_trim("data/Weekly.mod/elitegamers.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/elitemini.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/BAR.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bouncermini/bouncermini.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cooldust.mod.gml"));
 
 
 global.ModNames = "";
@@ -172,11 +137,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations");
-trace("Character:robot");
-trace("Crown:crown of blood");
-trace("Weapon:Airhorn");
-trace("Seed:24604");
+trace("Mods=Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust");
+trace("Character:bouncermini");
+trace("Crown:crown of life");
+trace("Weapon:Big Ass Revolver");
+trace("Seed:7861");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -321,7 +286,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Airhorn"));
+		give_wep(string_trim("Big Ass Revolver"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -342,7 +307,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="robot";
+			race="bouncermini";
 		}
 	}
 }
@@ -357,9 +322,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("robot")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("bouncermini")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("robot"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("bouncermini"))){
 					instance_destroy();
 				}
 				exit;
@@ -376,16 +341,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-07-21 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-07-21 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-07-21 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-07-21 Weekly.txt");
+	if(file_exists(global.alias + " 2019-07-28 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-07-28 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-07-28 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-07-28 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-07-21 Weekly.txt");
+		string_save(score, global.alias + " 2019-07-28 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -412,10 +377,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bossbar,C Ultras,Champions,Airhorn,Blaac's Weapon Mutations" + " Character:robot" + " Crown:crown of blood" + " Weapon:Airhorn" + " Seed:24604",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -565,7 +530,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("robot");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("bouncermini");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -574,7 +539,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of blood");
+name = string_trim("crown of life");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
