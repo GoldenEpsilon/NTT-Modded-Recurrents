@@ -1,1 +1,1 @@
-Mods:boys,BL2,Dasher,Elite Minigun,bow Character:Choose Crown:crown of haste Weapon:elitemini Seed:8948 Date:;2019-07-28;
+Mods:Dumb Shells,Bandit Brute,Baller,Champions,Chrononaut Character:Choose Crown:crown of curses Weapon:idpdslugpistol Seed:29581 Date:;2019-07-29;
