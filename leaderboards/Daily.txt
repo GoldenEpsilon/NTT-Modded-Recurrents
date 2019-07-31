@@ -1,1 +1,1 @@
-Mods:Belly,Crypt Of The Necrodancer,Chrononaut,Cricket,Chips Character:Choose Crown:crown of destiny Weapon:idpdslugpistol Seed:24740 Date:;2019-07-30;
+Mods:Cricket,B,Cool Dark,Big Dog Snipers,Cursed Hyper Crystal Character:Choose Crown:crown of risk Weapon:Cricket Seed:6849 Date:;2019-07-31;
