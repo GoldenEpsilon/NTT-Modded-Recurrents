@@ -1,1 +1,1 @@
-Mods:Fire Riders,Minecraft Area,Cool Trails,Corsair,Double Plasma Minigun Character:Choose Crown:crown of death Weapon:Corsair Seed:11882 Date:;2019-08-01;
+Mods:Cool Dust,Bitpack,Croc Man,Dogfly,Crazy Bandits Character:Choose Crown:none Weapon:industrialshankgun Seed:15119 Date:;2019-08-02;
