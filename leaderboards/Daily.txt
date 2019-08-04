@@ -1,1 +1,1 @@
-Mods:Baldi,CoDeath,Drop Me Gun,bow,Dummy Character:Choose Crown:CoDeath Weapon:bow Seed:1798 Date:;2019-08-03;
+Mods:Buff,blackholes,Chrononaut,Charge Template,Cool Dark Character:Choose Crown:crown of luck Weapon:hyperrifle Seed:32660 Date:;2019-08-04;

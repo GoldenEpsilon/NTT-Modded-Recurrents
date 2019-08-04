@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Elite Gamers#  Elite Minigun#  BAR#  bouncermini#  Cool Dust#@bCharacter@w=#  bouncermini#@yCrown@w=#  crown of life#@gWeapon@w=#  Big Ass Revolver#@pSeed@w=7861#Limited Tries:false*/
-/*|Elite Gamers[The bad guys got#aiming classes]|Elite Minigun[Man, it feels nice#using their own guns on them.]|BAR[A Big Ass Revolver.]|bouncermini[FILL THE SKIES WITH BULLETS]|Cool Dust[It's not just dust, it's#COOL DUST]*/
+/*@rMods@w=#  basicgunallies#  Detonator#  bow#  Ash#  Death Pit#@bCharacter@w=#  detonator#@yCrown@w=#  deathpit#@gWeapon@w=#  bow#@pSeed@w=16190#Limited Tries:false*/
+/*|basicgunallies[Ever wanted your allies to have normal guns?#Wait - @q HE'S GOT A GRENADE LAUNCHER!#@q@qRUN!!!]|Detonator[Active has a radius#where when you release#it blows up your bullets]|bow[It's a bow.]|Ash[Guy from The End Is Nigh.]|Death Pit[FIGHT TO THE DEATH#IN THIS SMALL SQUARE#WHEN YOU HAVE THIS CROWN#DO IT NOW]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 7861;
+global.seed = 16190;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "bouncermini";
+global.Race = "detonator";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,17 +98,60 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("elitegamers.mod.gml");
-downloadmod("elitemini.wep.gml");
-downloadmod("BAR.wep.gml");
-downloadmod("bouncermini/bouncermini.wep.gml");
-downloadmod("bouncermini/sprBouncerMinigun.png");
-downloadmod("cooldust.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/elitegamers.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/elitemini.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/BAR.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bouncermini/bouncermini.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cooldust.mod.gml"));
+downloadmod("basicgunallies.mod.gml");
+downloadmod("Detonator/detonator.race.gml");
+downloadmod("Detonator/Sprites/sprDead.png");
+downloadmod("Detonator/Sprites/sprHurt.png");
+downloadmod("Detonator/Sprites/sprIcon.png");
+downloadmod("Detonator/Sprites/sprIdle.png");
+downloadmod("Detonator/Sprites/sprPort.png");
+downloadmod("Detonator/Sprites/sprSit1.png");
+downloadmod("Detonator/Sprites/sprSit2.png");
+downloadmod("Detonator/Sprites/sprSlct.png");
+downloadmod("Detonator/Sprites/sprUltSlct.png");
+downloadmod("Detonator/Sprites/sprWalk.png");
+downloadmod("bow.wep.gml");
+downloadmod("ash/ash.race.gml");
+downloadmod("ash/ashgosit.png");
+downloadmod("ash/ashidle_b.png");
+downloadmod("ash/AshUltraA.ogg");
+downloadmod("ash/AshUltraB.ogg");
+downloadmod("ash/Chest.ogg");
+downloadmod("ash/Damage.ogg");
+downloadmod("ash/Death.ogg");
+downloadmod("ash/IDPD.ogg");
+downloadmod("ash/Lowammo.ogg");
+downloadmod("ash/LowHealth.ogg");
+downloadmod("ash/menuash.png");
+downloadmod("ash/nothing.ogg");
+downloadmod("ash/Select.ogg");
+downloadmod("ash/Speech.ogg");
+downloadmod("ash/sprAshDead.png");
+downloadmod("ash/sprAshHurt.png");
+downloadmod("ash/sprAshIdle.png");
+downloadmod("ash/SprAshSit.png");
+downloadmod("ash/SprAshWalk.png");
+downloadmod("ash/sprBigPortrait.png");
+downloadmod("ash/sprEGIconHUDA.png");
+downloadmod("ash/sprEGIconHUDB.png");
+downloadmod("ash/sprEGSkillIcon.png");
+downloadmod("ash/sprLoadoutSkin.png");
+downloadmod("ash/sprMapIcon.png");
+downloadmod("ash/sprMutant1Dead.png");
+downloadmod("ash/sprMutant1GoSit.png");
+downloadmod("ash/sprMutant1Hurt.png");
+downloadmod("ash/sprMutant1Idle.png");
+downloadmod("ash/sprMutant1Sit.png");
+downloadmod("ash/sprMutant1Walk.png");
+downloadmod("ash/Tumor.ogg");
+downloadmod("ash/tumour.png");
+downloadmod("ash/tumourcounter.png");
+downloadmod("deathpit.crown.gml");
+wait mod_load(string_trim("data/Weekly.mod/basicgunallies.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Detonator/detonator.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bow.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/ash/ash.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/deathpit.crown.gml"));
 
 
 global.ModNames = "";
@@ -137,11 +180,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust");
-trace("Character:bouncermini");
-trace("Crown:crown of life");
-trace("Weapon:Big Ass Revolver");
-trace("Seed:7861");
+trace("Mods=basicgunallies,Detonator,bow,Ash,Death Pit");
+trace("Character:detonator");
+trace("Crown:deathpit");
+trace("Weapon:bow");
+trace("Seed:16190");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -286,7 +329,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Big Ass Revolver"));
+		give_wep(string_trim("bow"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -307,7 +350,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="bouncermini";
+			race="detonator";
 		}
 	}
 }
@@ -322,9 +365,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("bouncermini")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("detonator")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("bouncermini"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("detonator"))){
 					instance_destroy();
 				}
 				exit;
@@ -341,16 +384,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:basicgunallies,Detonator,bow,Ash,Death Pit" + " Character:detonator" + " Crown:deathpit" + " Weapon:bow" + " Seed:16190";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-07-28 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-07-28 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-07-28 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-07-28 Weekly.txt");
+	if(file_exists(global.alias + " 2019-08-04 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-08-04 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-08-04 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-08-04 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-07-28 Weekly.txt");
+		string_save(score, global.alias + " 2019-08-04 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -377,10 +420,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:basicgunallies,Detonator,bow,Ash,Death Pit" + " Character:detonator" + " Crown:deathpit" + " Weapon:bow" + " Seed:16190" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust" + " Character:bouncermini" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:7861",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":basicgunallies,Detonator,bow,Ash,Death Pit" + " Character:detonator" + " Crown:deathpit" + " Weapon:bow" + " Seed:16190",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -530,7 +573,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("bouncermini");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("detonator");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -539,7 +582,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of life");
+name = string_trim("deathpit");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
