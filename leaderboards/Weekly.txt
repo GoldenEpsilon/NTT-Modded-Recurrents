@@ -1,1 +1,1 @@
-Mods:Elite Gamers,Elite Minigun,BAR,bouncermini,Cool Dust Character:bouncermini Crown:crown of life Weapon:Big Ass Revolver Seed:7861 Date:;2019-07-28;
+Mods:basicgunallies,Detonator,bow,Ash,Death Pit Character:detonator Crown:deathpit Weapon:bow Seed:16190 Date:;2019-08-04;
