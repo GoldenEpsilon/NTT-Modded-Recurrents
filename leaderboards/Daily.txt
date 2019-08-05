@@ -1,1 +1,1 @@
-Mods:Buff,blackholes,Chrononaut,Charge Template,Cool Dark Character:Choose Crown:crown of luck Weapon:hyperrifle Seed:32660 Date:;2019-08-04;
+Mods:Dasher x10,Chips,Blaac's Weapon Mutations,Detonator B,Bandit Brute Character:Choose Crown:none Weapon:ultra grenade launcher Seed:21962 Date:;2019-08-05;
