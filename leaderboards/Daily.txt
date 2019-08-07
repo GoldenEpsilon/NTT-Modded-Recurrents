@@ -1,1 +1,1 @@
-Mods:Bullet Time,Cosmi Gun Enemies,Big Bandit,Airhorn,Brimthrone Character:Choose Crown:crown of protection Weapon:brimthrone Seed:6682 Date:;2019-08-06;
+Mods:Dummy,Belly,Elite Turrets 2,Cooler Hud,Double Plasma Minigun Character:Choose Crown:crown of death Weapon:doubleplasma Seed:4747 Date:;2019-08-07;
