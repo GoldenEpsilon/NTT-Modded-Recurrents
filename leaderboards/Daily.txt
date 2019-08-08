@@ -1,1 +1,1 @@
-Mods:Dummy,Belly,Elite Turrets 2,Cooler Hud,Double Plasma Minigun Character:Choose Crown:crown of death Weapon:doubleplasma Seed:4747 Date:;2019-08-07;
+Mods:Big Bandit,Confuse,Colored Palace,Crazy Traps,Double Laser Minigun Character:Choose Crown:crown of curses Weapon:doublelaser Seed:20548 Date:;2019-08-08;
