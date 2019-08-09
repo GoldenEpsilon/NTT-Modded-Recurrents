@@ -1,0 +1,1 @@
+Mods:Big Bandit,Confuse,Colored Palace,Crazy Traps,Double Laser Minigun Character:Choose Crown:crown of curses Weapon:doublelaser Seed:20548 Date:;2019-08-08;
