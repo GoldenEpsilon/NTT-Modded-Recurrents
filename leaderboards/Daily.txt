@@ -1,1 +1,1 @@
-Mods:Chrononaut,Crypt Of The Necrodancer,Ash,bossbar,Dodge Roll Character:Choose Crown:crown of guns Weapon:idpdslugpistol Seed:29834 Date:;2019-08-09;
+Mods:Assault Flak Cannon,Afterburn,Dogfly,Crypt Of The Necrodancer,Bloodking Character:Choose Crown:crown of haste Weapon:Assault Flak Cannon Seed:6667 Date:;2019-08-10;
