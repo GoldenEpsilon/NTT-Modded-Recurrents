@@ -1,0 +1,1 @@
+Mods:basicgunallies,Detonator,bow,Ash,Death Pit Character:detonator Crown:deathpit Weapon:bow Seed:16190 Date:;2019-08-04;

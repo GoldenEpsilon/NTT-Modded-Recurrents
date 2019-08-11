@@ -1,1 +1,1 @@
-Mods:basicgunallies,Detonator,bow,Ash,Death Pit Character:detonator Crown:deathpit Weapon:bow Seed:16190 Date:;2019-08-04;
+Mods:bossbar,Cool Shadows,Cosmi Gun Enemies,Crazy Traps,Armageddon Cannon Character:frog Crown:crown of guns Weapon:Armageddon Cannon Seed:29014 Date:;2019-08-11;
