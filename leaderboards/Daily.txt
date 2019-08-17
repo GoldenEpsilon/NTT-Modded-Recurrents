@@ -1,1 +1,1 @@
-Mods:Elite Dasher,Cosmi Gun Enemies,Cool Flame,Double Pop Gun,Cooler Hud Character:Choose Crown:crown of destiny Weapon:double_pop_gun Seed:4093 Date:;2019-08-16;
+Mods:Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:21787 Date:;2019-08-17;
