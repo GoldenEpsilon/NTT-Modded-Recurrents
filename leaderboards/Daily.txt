@@ -1,1 +1,1 @@
-Mods:Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:21787 Date:;2019-08-17;
+Mods:Crypt Of The Necrodancer,Cool Hud,Big Toothbrush,Dasher x10,Elite Dasher Character:Choose Crown:crown of destiny Weapon:Big Toothbrush Seed:24268 Date:;2019-08-18;
