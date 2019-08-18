@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Big Toothbrush#  Carpocalypse#  DIO#  Bandit#  blackholes#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  Big Toothbrush#@pSeed@w=21787#Limited Tries:false*/
-/*|Big Toothbrush[a big toothbrush for big mouths]|Carpocalypse[Beep Beep, motherf***er]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]|Bandit[Armed only with your trusty Bandit Blaster,#it's you against the entire wasteland, baby!]|blackholes[All projectiles attract enemies of the user#that means you get pulled into enemy bullets, too.#this is going to be a hard one...]*/
+/*@rMods@w=#  Crypt Of The Necrodancer#  Cool Hud#  Big Toothbrush#  Dasher x10#  Elite Dasher#@bCharacter@w=#  Choose#@yCrown@w=#  crown of destiny#@gWeapon@w=#  Big Toothbrush#@pSeed@w=24268#Limited Tries:false*/
+/*|Crypt Of The Necrodancer[Move to the beat!]|Cool Hud[*C418 starts playing*]|Big Toothbrush[a big toothbrush for big mouths]|Dasher x10[@qEXTREME DASHING]|Elite Dasher[@qPICK UP ALL THE THINGS]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 21787;
+global.seed = 24268;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,45 +98,57 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+downloadmod("cotn/cotn.mod.gml");
+downloadmod("cotn/beatmaps/zone1_1.txt");
+downloadmod("cotn/beatmaps/zone1_2.txt");
+downloadmod("cotn/beatmaps/zone1_3.txt");
+downloadmod("cotn/beatmaps/zone2_1.txt");
+downloadmod("cotn/beatmaps/zone2_2.txt");
+downloadmod("cotn/beatmaps/zone2_3.txt");
+downloadmod("cotn/beatmaps/zone4_1.txt");
+downloadmod("cotn/beatmaps/zone4_2.txt");
+downloadmod("cotn/beatmaps/zone4_3.txt");
+downloadmod("cotn/beatmaps/zone3_1.txt");
+downloadmod("cotn/beatmaps/zone3_2.txt");
+downloadmod("cotn/beatmaps/zone3_3.txt");
+downloadmod("cotn/music/zone1_1.ogg");
+downloadmod("cotn/music/zone1_2.ogg");
+downloadmod("cotn/music/zone1_3.ogg");
+downloadmod("cotn/music/zone2_1.ogg");
+downloadmod("cotn/music/zone2_2.ogg");
+downloadmod("cotn/music/zone2_3.ogg");
+downloadmod("cotn/music/zone4_1.ogg");
+downloadmod("cotn/music/zone4_2.ogg");
+downloadmod("cotn/music/zone4_3.ogg");
+downloadmod("cotn/music/zone3_1c.ogg");
+downloadmod("cotn/music/zone3_2c.ogg");
+downloadmod("cotn/music/zone3_3c.ogg");
+downloadmod("cotn/music/zone3_1h.ogg");
+downloadmod("cotn/music/zone3_2h.ogg");
+downloadmod("cotn/music/zone3_3h.ogg");
+downloadmod("coolhud/coolbar.png");
+downloadmod("coolhud/coolbolt.png");
+downloadmod("coolhud/coolbox.png");
+downloadmod("coolhud/coolbullet.png");
+downloadmod("coolhud/coolenergy.png");
+downloadmod("coolhud/coolexplo.png");
+downloadmod("coolhud/coolheart.png");
+downloadmod("coolhud/coolhearts.png");
+downloadmod("coolhud/coolnumbers.png");
+downloadmod("coolhud/coolshell.png");
+downloadmod("coolhud/coolui.mod.gml");
+downloadmod("coolhud/coolxp.png");
+downloadmod("coolhud/coolxpf.png");
+downloadmod("coolhud/oof.ogg");
 downloadmod("Big Toothbrush/Big Toothbrush.wep.gml");
 downloadmod("Big Toothbrush/Big Toothbrush.png");
-downloadmod("carpocalypse.mod.gml");
-downloadmod("DIO/DIO.race.gml");
-downloadmod("DIO/walk.png");
-downloadmod("DIO/sprUltras.png");
-downloadmod("DIO/sprTheWorld.png");
-downloadmod("DIO/sprSelect.png");
-downloadmod("DIO/sprPortrait.png");
-downloadmod("DIO/sprMuda.png");
-downloadmod("DIO/sprKnife.png");
-downloadmod("DIO/sprFist.png");
-downloadmod("DIO/sprArm.png");
-downloadmod("DIO/sndWry.ogg");
-downloadmod("DIO/sndWrld.ogg");
-downloadmod("DIO/sndStopTime.ogg");
-downloadmod("DIO/sndStand.ogg");
-downloadmod("DIO/sndRoadRoller.ogg");
-downloadmod("DIO/sndPunchUpgEnd.ogg");
-downloadmod("DIO/sndPunchUpg.ogg");
-downloadmod("DIO/sndPunch.ogg");
-downloadmod("DIO/sndLowH.ogg");
-downloadmod("DIO/sndLowA.ogg");
-downloadmod("DIO/sndLow.ogg");
-downloadmod("DIO/sndKnives.ogg");
-downloadmod("DIO/sndHurt.ogg");
-downloadmod("DIO/sndFreeze.ogg");
-downloadmod("DIO/sndDie.ogg");
-downloadmod("DIO/map.png");
-downloadmod("DIO/idle.png");
-downloadmod("DIO/hurt.png");
-downloadmod("DIO/dead.png");
-downloadmod("bandit.race.gml");
-downloadmod("blackholes.mod.gml");
+downloadmod("dasherx10.race.gml");
+downloadmod("elitedasher.race.gml");
+wait mod_load(string_trim("data/Daily.mod/cotn/cotn.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/coolhud/coolui.mod.gml"));
 wait mod_load(string_trim("data/Daily.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/carpocalypse.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/DIO/DIO.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/bandit.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/blackholes.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dasherx10.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/elitedasher.race.gml"));
 
 
 global.ModNames = "";
@@ -165,11 +177,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes");
+trace("Mods=Crypt Of The Necrodancer,Cool Hud,Big Toothbrush,Dasher x10,Elite Dasher");
 trace("Character:Choose");
-trace("Crown:crown of protection");
+trace("Crown:crown of destiny");
 trace("Weapon:Big Toothbrush");
-trace("Seed:21787");
+trace("Seed:24268");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -369,16 +381,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:21787";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crypt Of The Necrodancer,Cool Hud,Big Toothbrush,Dasher x10,Elite Dasher" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Big Toothbrush" + " Seed:24268";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-08-17 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-08-17 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-08-17 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-08-17 Daily.txt");
+	if(file_exists(global.alias + " 2019-08-18 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-08-18 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-08-18 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-08-18 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-08-17 Daily.txt");
+		string_save(score, global.alias + " 2019-08-18 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -405,10 +417,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:21787" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Crypt Of The Necrodancer,Cool Hud,Big Toothbrush,Dasher x10,Elite Dasher" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Big Toothbrush" + " Seed:24268" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Big Toothbrush,Carpocalypse,DIO,Bandit,blackholes" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:21787",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crypt Of The Necrodancer,Cool Hud,Big Toothbrush,Dasher x10,Elite Dasher" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Big Toothbrush" + " Seed:24268",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -567,7 +579,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of protection");
+name = string_trim("crown of destiny");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
