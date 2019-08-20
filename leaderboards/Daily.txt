@@ -1,1 +1,1 @@
-Mods:bouncermini,Vanthro,DIO,Cool Trails,Blood Character:Choose Crown:crown of life Weapon:ultra laser pistol Seed:20643 Date:;2019-08-19;
+Mods:bow,Double Plasma Minigun,bouncermini,Carbine,CoDeath Character:Choose Crown:CoDeath Weapon:bow Seed:22338 Date:;2019-08-20;
