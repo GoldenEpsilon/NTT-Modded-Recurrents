@@ -1,1 +1,1 @@
-Mods:bow,Double Plasma Minigun,bouncermini,Carbine,CoDeath Character:Choose Crown:CoDeath Weapon:bow Seed:22338 Date:;2019-08-20;
+Mods:Auto Bullet Shotgun,Chrononaut,Elite Gamers,Dodge Roll,Baldi Character:Choose Crown:crown of luck Weapon:Baldi/ultraruler Seed:995 Date:;2019-08-21;
