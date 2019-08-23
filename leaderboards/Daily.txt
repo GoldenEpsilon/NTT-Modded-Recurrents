@@ -1,1 +1,1 @@
-Mods:Cannoner,BAR,Dasher x10,Elite Turrets 2,B Character:Choose Crown:crown of death Weapon:Big Ass Revolver Seed:24831 Date:;2019-08-22;
+Mods:Devastator,Damage Numbers,Brimthrone,B,Elite Gamers Character:Choose Crown:none Weapon:brimthrone Seed:532 Date:;2019-08-23;
