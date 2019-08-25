@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Dogfly#  Cool Trails#  Carbine#  Corsair#  bosshudredux#@bCharacter@w=#  Choose#@yCrown@w=#  crown of blood#@gWeapon@w=#  Corsair#@pSeed@w=22100#Limited Tries:false*/
-/*|Dogfly[The dog guardians#learned to jump good.]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]|Carbine[Pew Pew.]|Corsair[The Corsair from EtG#Plot A Course]|bosshudredux[For knowing how bad your weapons are,#every once in a while]*/
+/*@rMods@w=#  Minecraft Area#  Fire Riders#  Dasher x10#  Elite Turrets#  Assault Flak Cannon#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Assault Flak Cannon#@pSeed@w=19783#Limited Tries:false*/
+/*|Minecraft Area[Who Love Minecraf]|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|Dasher x10[@qEXTREME DASHING]|Elite Turrets[V.2.0.maybe-we-#got-all-the-bugs-#this-time]|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 22100;
+global.seed = 19783;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,18 +98,36 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("dogfly.mod.gml");
-downloadmod("cooltrails.mod.gml");
-downloadmod("carbine.wep.gml");
-downloadmod("corsair/chrg.wep.gml");
-downloadmod("corsair/corsair.png");
-downloadmod("corsair/corsair_pickup.png");
-downloadmod("bosshudredux.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/dogfly.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/carbine.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/corsair/chrg.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml"));
+downloadmod("2 hour area/2hours.area.gml");
+downloadmod("2 hour area/gfx/sprArrow.png");
+downloadmod("2 hour area/gfx/sprBow.png");
+downloadmod("2 hour area/gfx/sprClouds.png");
+downloadmod("2 hour area/gfx/sprDebris.png");
+downloadmod("2 hour area/gfx/sprDecoration.png");
+downloadmod("2 hour area/gfx/sprFloor.png");
+downloadmod("2 hour area/gfx/sprFloorB.png");
+downloadmod("2 hour area/gfx/sprFloorExplo.png");
+downloadmod("2 hour area/gfx/sprSpiderHurt.png");
+downloadmod("2 hour area/gfx/sprSpiderIdle.png");
+downloadmod("2 hour area/gfx/sprSpiderWalk.png");
+downloadmod("2 hour area/gfx/sprTreeBot.png");
+downloadmod("2 hour area/gfx/sprTreetop.pdn");
+downloadmod("2 hour area/gfx/sprTreetop.png");
+downloadmod("2 hour area/gfx/sprWallBot.png");
+downloadmod("2 hour area/gfx/sprWallTop.png");
+downloadmod("2 hour area/gfx/sprWallTrans.png");
+downloadmod("2 hour area/gfx/sprZombieHurt.png");
+downloadmod("2 hour area/gfx/sprZombieIdle.png");
+downloadmod("2 hour area/gfx/sprZombieWalk.png");
+downloadmod("fireriders.race.gml");
+downloadmod("dasherx10.race.gml");
+downloadmod("EliteTurrets.mod.gml");
+downloadmod("Assault_Flak_Cannon.wep.gml");
+wait mod_load(string_trim("data/Daily.mod/2 hour area/2hours.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/fireriders.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/dasherx10.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/EliteTurrets.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Assault_Flak_Cannon.wep.gml"));
 
 
 global.ModNames = "";
@@ -138,11 +156,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Dogfly,Cool Trails,Carbine,Corsair,bosshudredux");
+trace("Mods=Minecraft Area,Fire Riders,Dasher x10,Elite Turrets,Assault Flak Cannon");
 trace("Character:Choose");
-trace("Crown:crown of blood");
-trace("Weapon:Corsair");
-trace("Seed:22100");
+trace("Crown:crown of love");
+trace("Weapon:Assault Flak Cannon");
+trace("Seed:19783");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -287,7 +305,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Corsair"));
+		give_wep(string_trim("Assault Flak Cannon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -342,16 +360,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dogfly,Cool Trails,Carbine,Corsair,bosshudredux" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Corsair" + " Seed:22100";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Minecraft Area,Fire Riders,Dasher x10,Elite Turrets,Assault Flak Cannon" + " Character:Choose" + " Crown:crown of love" + " Weapon:Assault Flak Cannon" + " Seed:19783";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-08-24 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-08-24 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-08-24 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-08-24 Daily.txt");
+	if(file_exists(global.alias + " 2019-08-25 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-08-25 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-08-25 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-08-25 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-08-24 Daily.txt");
+		string_save(score, global.alias + " 2019-08-25 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -378,10 +396,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Dogfly,Cool Trails,Carbine,Corsair,bosshudredux" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Corsair" + " Seed:22100" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Minecraft Area,Fire Riders,Dasher x10,Elite Turrets,Assault Flak Cannon" + " Character:Choose" + " Crown:crown of love" + " Weapon:Assault Flak Cannon" + " Seed:19783" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dogfly,Cool Trails,Carbine,Corsair,bosshudredux" + " Character:Choose" + " Crown:crown of blood" + " Weapon:Corsair" + " Seed:22100",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Minecraft Area,Fire Riders,Dasher x10,Elite Turrets,Assault Flak Cannon" + " Character:Choose" + " Crown:crown of love" + " Weapon:Assault Flak Cannon" + " Seed:19783",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -540,7 +558,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of blood");
+name = string_trim("crown of love");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
