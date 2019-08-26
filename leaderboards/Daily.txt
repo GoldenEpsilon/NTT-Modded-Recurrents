@@ -1,2 +1,1 @@
-Mods:Minecraft Area,Fire Riders,Dasher x10,Elite Turrets,Assault Flak Cannon Character:Choose Crown:crown of love Weapon:Assault Flak Cannon Seed:19783 Date:;2019-08-25;
-|Cozzzy: Area 7-3 L0 Kills: 224 Character: fireriders 
+Mods:Belly,Baldi,Discs,Ancient Hatred,Carpocalypse Character:Choose Crown:crown of ancient hatred Weapon:Splinter Gun Disc Gun Seed:13031 Date:;2019-08-26;
