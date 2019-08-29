@@ -1,1 +1,1 @@
-Mods:Elite Dasher,Dasher,Area Health,Double Pop Gun,Elite Gamers Character:Choose Crown:none Weapon:double_pop_gun Seed:11695 Date:;2019-08-28;
+Mods:Damage Numbers,CoD Proper,Double Laser Minigun,Big Toothbrush,Detonator B Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:1613 Date:;2019-08-29;
