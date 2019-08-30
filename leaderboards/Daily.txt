@@ -1,1 +1,1 @@
-Mods:Damage Numbers,CoD Proper,Double Laser Minigun,Big Toothbrush,Detonator B Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:1613 Date:;2019-08-29;
+Mods:Cosmi,Chips,Defect,Cool Shadows,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:flame shotgun Seed:9359 Date:;2019-08-30;
