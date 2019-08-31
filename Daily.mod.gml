@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Car#  Doctor#  Big Toothbrush#  Fire Riders#  Challenge Mode#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Big Toothbrush#@pSeed@w=13430#Limited Tries:false*/
-/*|Car[Ever wanted to play#as a flying car?#No? TOO BAD!]|Doctor[The feathery, creepy,#totally-not-about-to-#stab-you-with-a-knife#doctor is in!]|Big Toothbrush[a big toothbrush for big mouths]|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|Challenge Mode[This run's weapons are like a box of chocolates -#you finally find one you like, then you don't have it anymore.]*/
+/*@rMods@w=#  Big Dog#  Cricket#  Challenge Mode#  Colored Projectiles#  Crazy Allies#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  Cricket#@pSeed@w=14328#Limited Tries:false*/
+/*|Big Dog[HE IS AWAKENED]|Cricket[Batter up!#...or whatever they say for cricket.]|Challenge Mode[This run's weapons are like a box of chocolates -#you finally find one you like, then you don't have it anymore.]|Colored Projectiles[Colors projectiles based on team color]|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 13430;
+global.seed = 14328;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,17 +98,64 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Car.race.gml");
-downloadmod("Doctor.race.gml");
-downloadmod("Big Toothbrush/Big Toothbrush.wep.gml");
-downloadmod("Big Toothbrush/Big Toothbrush.png");
-downloadmod("fireriders.race.gml");
+downloadmod("bigdog.mod.gml");
+downloadmod("cricket/Cricket.wep.gml");
+downloadmod("cricket/sprCricket.png");
 downloadmod("challengemode.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/Car.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Doctor.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/fireriders.race.gml"));
+downloadmod("Colored Projectiles/colored.mod.gml");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBouncerBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet1.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2Disappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergyShank.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlameBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGreenExplosion.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyNade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlug.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaser.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserEnd.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserStart.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLightning.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprMininade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprNuke.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallBig.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallHuge.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaImpact.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprRocket.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprStickyGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprToxicBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBoltTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraShell.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraSlash.png");
+downloadmod("crazyallies.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/bigdog.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cricket/Cricket.wep.gml"));
 wait mod_load(string_trim("data/Daily.mod/challengemode.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Colored Projectiles/colored.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/crazyallies.mod.gml"));
 
 
 global.ModNames = "";
@@ -137,11 +184,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode");
+trace("Mods=Big Dog,Cricket,Challenge Mode,Colored Projectiles,Crazy Allies");
 trace("Character:Choose");
 trace("Crown:crown of love");
-trace("Weapon:Big Toothbrush");
-trace("Seed:13430");
+trace("Weapon:Cricket");
+trace("Seed:14328");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -286,7 +333,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Big Toothbrush"));
+		give_wep(string_trim("Cricket"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -341,7 +388,7 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode" + " Character:Choose" + " Crown:crown of love" + " Weapon:Big Toothbrush" + " Seed:13430";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Big Dog,Cricket,Challenge Mode,Colored Projectiles,Crazy Allies" + " Character:Choose" + " Crown:crown of love" + " Weapon:Cricket" + " Seed:14328";
 	}
 	trace(score);
 	global.finished = true;
@@ -377,10 +424,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode" + " Character:Choose" + " Crown:crown of love" + " Weapon:Big Toothbrush" + " Seed:13430" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Big Dog,Cricket,Challenge Mode,Colored Projectiles,Crazy Allies" + " Character:Choose" + " Crown:crown of love" + " Weapon:Cricket" + " Seed:14328" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode" + " Character:Choose" + " Crown:crown of love" + " Weapon:Big Toothbrush" + " Seed:13430",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Big Dog,Cricket,Challenge Mode,Colored Projectiles,Crazy Allies" + " Character:Choose" + " Crown:crown of love" + " Weapon:Cricket" + " Seed:14328",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
