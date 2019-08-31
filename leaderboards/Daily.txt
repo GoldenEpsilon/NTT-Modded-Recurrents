@@ -1,1 +1,1 @@
-Mods:Cosmi,Chips,Defect,Cool Shadows,Ancient Hatred Character:Choose Crown:crown of ancient hatred Weapon:flame shotgun Seed:9359 Date:;2019-08-30;
+Mods:Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode Character:Choose Crown:crown of love Weapon:Big Toothbrush Seed:13430 Date:;2019-08-31;
