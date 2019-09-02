@@ -1,1 +1,1 @@
-Mods:brad,Colored Palace,B,Defect,CoD Proper Character:Choose Crown:crown of curses Weapon:nowep Seed:5728 Date:;2019-09-01;
+Mods:Defect,Crazy Traps,Bigger Bandit,Babylon Shotgun,Double Laser Minigun Character:Choose Crown:crown of hatred Weapon:Babylon Shotgun Seed:5611 Date:;2019-09-02;
