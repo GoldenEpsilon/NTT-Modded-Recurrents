@@ -1,2 +1,1 @@
-Mods:bow,Bandit Brute,Detonator B,Big Toothbrush,Drop Me Gun Character:detonatorb Crown:crown of haste Weapon:Big Toothbrush Seed:607 Date:;2019-08-25;
-|Oh That's Dylan: Area 1-1 L0 Kills: 8 Character:  |Oh That's Dylan: Area 1-1 L0 Kills: 14 Character:  
+Mods:Brimthrone,boys,Defect,Chrononaut,Croc Man Character:crocman Crown:crown of love Weapon:brimthrone Seed:17080 Date:;2019-09-01;
