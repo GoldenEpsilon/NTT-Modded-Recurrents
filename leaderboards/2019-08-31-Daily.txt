@@ -1,1 +1,1 @@
-Mods:Car,Doctor,Big Toothbrush,Fire Riders,Challenge Mode Character:Choose Crown:crown of love Weapon:Big Toothbrush Seed:13430 Date:;2019-08-31;
+Mods:Big Dog,Cricket,Challenge Mode,Colored Projectiles,Crazy Allies Character:Choose Crown:crown of love Weapon:Cricket Seed:14328 Date:;2019-08-31;

@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bow#  Bandit Brute#  Detonator B#  Big Toothbrush#  Drop Me Gun#@bCharacter@w=#  detonatorb#@yCrown@w=#  crown of haste#@gWeapon@w=#  Big Toothbrush#@pSeed@w=607#Limited Tries:false*/
-/*|bow[It's a bow.]|Bandit Brute[Randomly replaces bandits with Bandit Brutes]|Detonator B[Alternate version, where#active blows up#your bullets anywhere]|Big Toothbrush[a big toothbrush for big mouths]|Drop Me Gun[Hold "Pick up weapon"#for a couple seconds#to drop your weapon.]*/
+/*@rMods@w=#  Brimthrone#  boys#  Defect#  Chrononaut#  Croc Man#@bCharacter@w=#  crocman#@yCrown@w=#  crown of love#@gWeapon@w=#  brimthrone#@pSeed@w=17080#Limited Tries:false*/
+/*|Brimthrone[A portable throne, to#know how it feels to#zap people with that laser.]|boys[Instead of hit points, you have a 1hp clone per hit point, and max health basically doesn't exist.]|Defect[BEEP BOOP I AM ROBOT]|Chrononaut[Wibbley Wobbley#Timey Wimey]|Croc Man[From what I can tell you either#don't take damage from anything or#you die instantly because of that passive.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 607;
+global.seed = 17080;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "detonatorb";
+global.Race = "crocman";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,17 +98,59 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bow.wep.gml");
-downloadmod("BanditBrute.mod.gml");
-downloadmod("detonatorb.race.gml");
-downloadmod("Big Toothbrush/Big Toothbrush.wep.gml");
-downloadmod("Big Toothbrush/Big Toothbrush.png");
-downloadmod("dropMeGun.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/bow.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/BanditBrute.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/detonatorb.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/dropMeGun.mod.gml"));
+downloadmod("brimthrone.wep.gml");
+downloadmod("boys.mod.gml");
+downloadmod("defect.race.gml");
+downloadmod("chrononaut/chrononaut.race.gml");
+downloadmod("chrononaut/chrononaut_gui.mod.gml");
+downloadmod("chrononaut/idpdslugpistol.wep.gml");
+downloadmod("chrononaut/sprites/sprChrononautBigPortrait.png");
+downloadmod("chrononaut/sprites/sprChrononautCharSelect.png");
+downloadmod("chrononaut/sprites/sprChrononautDead.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyDead.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyHurt.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyMapIcon.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautExplo.png");
+downloadmod("chrononaut/sprites/sprChrononautGoSit.png");
+downloadmod("chrononaut/sprites/sprChrononautGroundFlame.png");
+downloadmod("chrononaut/sprites/sprChrononautGroundFlameDisappear.png");
+downloadmod("chrononaut/sprites/sprChrononautHologramIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautHologramWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautHurt.png");
+downloadmod("chrononaut/sprites/sprChrononautIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautLoadoutSkin.png");
+downloadmod("chrononaut/sprites/sprChrononautMapIcon.png");
+downloadmod("chrononaut/sprites/sprChrononautSit.png");
+downloadmod("chrononaut/sprites/sprChrononautSparkles.png");
+downloadmod("chrononaut/sprites/sprChrononautTrail.png");
+downloadmod("chrononaut/sprites/sprChrononautTrailBig.png");
+downloadmod("chrononaut/sprites/sprChrononautWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautWarp.png");
+downloadmod("chrononaut/sprites/sprIDPDPistolLoadout.png");
+downloadmod("chrononaut/sprites/sprIDPDSlugger.png");
+downloadmod("Croc_Man/crocman.race.gml");
+downloadmod("Croc_Man/Walk.png");
+downloadmod("Croc_Man/Ultras.png");
+downloadmod("Croc_Man/Teleport.png");
+downloadmod("Croc_Man/Teleport.ogg");
+downloadmod("Croc_Man/Select.png");
+downloadmod("Croc_Man/Radial.png");
+downloadmod("Croc_Man/Portrait.png");
+downloadmod("Croc_Man/Map.png");
+downloadmod("Croc_Man/Idle.png");
+downloadmod("Croc_Man/Hurt.png");
+downloadmod("Croc_Man/CrushHit.ogg");
+downloadmod("Croc_Man/Ankh.png");
+downloadmod("Croc_Man/Ankh.ogg");
+wait mod_load(string_trim("data/Weekly.mod/brimthrone.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/boys.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/defect.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/chrononaut/chrononaut.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/chrononaut/chrononaut_gui.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/chrononaut/idpdslugpistol.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Croc_Man/crocman.race.gml"));
 
 
 global.ModNames = "";
@@ -137,11 +179,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=bow,Bandit Brute,Detonator B,Big Toothbrush,Drop Me Gun");
-trace("Character:detonatorb");
-trace("Crown:crown of haste");
-trace("Weapon:Big Toothbrush");
-trace("Seed:607");
+trace("Mods=Brimthrone,boys,Defect,Chrononaut,Croc Man");
+trace("Character:crocman");
+trace("Crown:crown of love");
+trace("Weapon:brimthrone");
+trace("Seed:17080");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -286,7 +328,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Big Toothbrush"));
+		give_wep(string_trim("brimthrone"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -307,7 +349,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="detonatorb";
+			race="crocman";
 		}
 	}
 }
@@ -322,9 +364,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("detonatorb")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("crocman")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("detonatorb"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("crocman"))){
 					instance_destroy();
 				}
 				exit;
@@ -341,16 +383,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bow,Bandit Brute,Detonator B,Big Toothbrush,Drop Me Gun" + " Character:detonatorb" + " Crown:crown of haste" + " Weapon:Big Toothbrush" + " Seed:607";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Brimthrone,boys,Defect,Chrononaut,Croc Man" + " Character:crocman" + " Crown:crown of love" + " Weapon:brimthrone" + " Seed:17080";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-08-25 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-08-25 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-08-25 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-08-25 Weekly.txt");
+	if(file_exists(global.alias + " 2019-09-01 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-09-01 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-09-01 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-09-01 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-08-25 Weekly.txt");
+		string_save(score, global.alias + " 2019-09-01 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -377,10 +419,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bow,Bandit Brute,Detonator B,Big Toothbrush,Drop Me Gun" + " Character:detonatorb" + " Crown:crown of haste" + " Weapon:Big Toothbrush" + " Seed:607" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Brimthrone,boys,Defect,Chrononaut,Croc Man" + " Character:crocman" + " Crown:crown of love" + " Weapon:brimthrone" + " Seed:17080" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bow,Bandit Brute,Detonator B,Big Toothbrush,Drop Me Gun" + " Character:detonatorb" + " Crown:crown of haste" + " Weapon:Big Toothbrush" + " Seed:607",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Brimthrone,boys,Defect,Chrononaut,Croc Man" + " Character:crocman" + " Crown:crown of love" + " Weapon:brimthrone" + " Seed:17080",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -530,7 +572,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("detonatorb");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("crocman");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -539,7 +581,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of haste");
+name = string_trim("crown of love");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
