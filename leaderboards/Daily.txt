@@ -1,1 +1,1 @@
-Mods:Defect,Crazy Traps,Bigger Bandit,Babylon Shotgun,Double Laser Minigun Character:Choose Crown:crown of hatred Weapon:Babylon Shotgun Seed:5611 Date:;2019-09-02;
+Mods:Brimthrone,Elite Dasher,Big Toothbrush,Egg,Auto Revolver Character:Choose Crown:none Weapon:Auto Revolver Seed:4293 Date:;2019-09-03;
