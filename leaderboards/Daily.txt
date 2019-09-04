@@ -1,1 +1,1 @@
-Mods:Brimthrone,Elite Dasher,Big Toothbrush,Egg,Auto Revolver Character:Choose Crown:none Weapon:Auto Revolver Seed:4293 Date:;2019-09-03;
+Mods:Chaos Guns,Confuse,Carbine,Damage Numbers,Boltshard Character:Choose Crown:crown of destiny Weapon:Blunderbuss Seed:21548 Date:;2019-09-04;
