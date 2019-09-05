@@ -1,1 +1,1 @@
-Mods:Chaos Guns,Confuse,Carbine,Damage Numbers,Boltshard Character:Choose Crown:crown of destiny Weapon:Blunderbuss Seed:21548 Date:;2019-09-04;
+Mods:CoD Proper,CoDeath,Cosmi,Cool Dark,Dodge Roll Character:Choose Crown:CoDeath Weapon:golden laser pistol Seed:15509 Date:;2019-09-05;
