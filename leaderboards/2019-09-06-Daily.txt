@@ -1,0 +1,1 @@
+Mods:banditstack,Crazy Allies,Death Pit,Chaos Guns,Carpocalypse Character:Choose Crown:deathpit Weapon:Hyper Chaos Minigun Seed:3073 Date:;2019-09-06;

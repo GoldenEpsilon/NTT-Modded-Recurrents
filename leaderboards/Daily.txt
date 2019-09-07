@@ -1,1 +1,1 @@
-Mods:banditstack,Crazy Allies,Death Pit,Chaos Guns,Carpocalypse Character:Choose Crown:deathpit Weapon:Hyper Chaos Minigun Seed:3073 Date:;2019-09-06;
+Mods:Bloodking,Cool Dark,DIO,Bandit,Double Plasma Minigun Character:Choose Crown:crown of hatred Weapon:doubleplasma Seed:19559 Date:;2019-09-07;
