@@ -1,1 +1,1 @@
-Mods:Brimthrone,boys,Defect,Chrononaut,Croc Man Character:crocman Crown:crown of love Weapon:brimthrone Seed:17080 Date:;2019-09-01;
+Mods:boys,Chrononaut,Armageddon Cannon,Double Laser Minigun,Death Pit Character:chrononaut Crown:deathpit Weapon:doublelaser Seed:12055 Date:;2019-09-08;
