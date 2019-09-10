@@ -1,1 +1,1 @@
-Mods:Colored Projectiles,Big Dog,Auto Bullet Shotgun,Camper Boys,Babylon Shotgun Character:Choose Crown:crown of destiny Weapon:Auto Bullet Shotgun Seed:6606 Date:;2019-09-09;
+Mods:Champions,Determination,Babylon Shotgun,Elite Turrets 2,Elite Dasher Character:Choose Crown:crown of death Weapon:Babylon Shotgun Seed:11434 Date:;2019-09-10;
