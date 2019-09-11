@@ -1,1 +1,1 @@
-Mods:Champions,Determination,Babylon Shotgun,Elite Turrets 2,Elite Dasher Character:Choose Crown:crown of death Weapon:Babylon Shotgun Seed:11434 Date:;2019-09-10;
+Mods:!ARMAGGEDNN,boys,Druid,Champions,Big Dog Character:Choose Crown:crown of curses Weapon:Blood Shovel Seed:29839 Date:;2019-09-11;
