@@ -1,1 +1,1 @@
-Mods:Minecraft Area,Brimthrone,Assault Flak Cannon,Drop Me Gun,Director Character:Choose Crown:crown of haste Weapon:brimthrone Seed:10876 Date:;2019-09-13;
+Mods:Chips,Carbine,bossbar,Fire Riders,Crazy Traps Character:Choose Crown:crown of life Weapon:carbine Seed:30946 Date:;2019-09-14;
