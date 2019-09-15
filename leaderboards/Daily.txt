@@ -1,1 +1,1 @@
-Mods:Chips,Carbine,bossbar,Fire Riders,Crazy Traps Character:Choose Crown:crown of life Weapon:carbine Seed:30946 Date:;2019-09-14;
+Mods:Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut Character:Choose Crown:Pain Weapon:lightningflak Seed:6951 Date:;2019-09-15;

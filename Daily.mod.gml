@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Chips#  Carbine#  bossbar#  Fire Riders#  Crazy Traps#@bCharacter@w=#  Choose#@yCrown@w=#  crown of life#@gWeapon@w=#  carbine#@pSeed@w=30946#Limited Tries:false*/
-/*|Chips[Gives you a mutation every time you#beat the Throne or a Hyper Crystal]|Carbine[Pew Pew.]|bossbar[For when you want to know#just how close you were to looping]|Fire Riders[NOTE: when the gators on your back die,#you start taking damage.]|Crazy Traps[Not only does#this place flame traps everywhere,#they have random projectiles, too!#Have fun with disc traps....]*/
+/*@rMods@w=#  Auto Flame Crossbow#  Chest Bandits#  Clasweps#  Druid#  Chrononaut#@bCharacter@w=#  Choose#@yCrown@w=#  Pain#@gWeapon@w=#  lightningflak#@pSeed@w=6951#Limited Tries:false*/
+/*|Auto Flame Crossbow[If flames were good this would be better than just looking cool...]|Chest Bandits[Gets rid of bandits in random areas]|Clasweps[You got ultra weapons,#you got zappy weapons,#call now and you'll even get#some crowns thrown in for free!]|Druid[Not Getafix,#but he'll do.]|Chrononaut[Wibbley Wobbley#Timey Wimey]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 30946;
+global.seed = 6951;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,16 +98,861 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("chips.mod.gml");
-downloadmod("carbine.wep.gml");
-downloadmod("bossbar.mod.gml");
-downloadmod("fireriders.race.gml");
-downloadmod("crazytraps.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/chips.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/carbine.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/bossbar.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/fireriders.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/crazytraps.mod.gml"));
+downloadmod("AutoFlameCrossbow.wep.gml");
+downloadmod("chestbandits.mod.gml");
+downloadmod("clasweps/widesword.wep.gml");
+downloadmod("clasweps/ultrasuperdiscgun.wep.gml");
+downloadmod("clasweps/ultrasplinter.wep.gml");
+downloadmod("clasweps/ultraseeker.wep.gml");
+downloadmod("clasweps/ultrarifle.wep.gml");
+downloadmod("clasweps/ultrapopgun.wep.gml");
+downloadmod("clasweps/ultraplasmagun.wep.gml");
+downloadmod("clasweps/ultralightning.wep.gml");
+downloadmod("clasweps/ultradiscgun.wep.gml");
+downloadmod("clasweps/torch.wep.gml");
+downloadmod("clasweps/swiftsword.wep.gml");
+downloadmod("clasweps/splintergatling.wep.gml");
+downloadmod("clasweps/snl.wep.gml");
+downloadmod("clasweps/slc.wep.gml");
+downloadmod("clasweps/shrineroom.area.gml");
+downloadmod("clasweps/shine.wep.gml");
+downloadmod("clasweps/scorpionarm.wep.gml");
+downloadmod("clasweps/scorcher.wep.gml");
+downloadmod("clasweps/ringofplasma.wep.gml");
+downloadmod("clasweps/ringoffire.wep.gml");
+downloadmod("clasweps/racingthoughts.skill.gml");
+downloadmod("clasweps/quickdraw.wep.gml");
+downloadmod("clasweps/plasmashotty.wep.gml");
+downloadmod("clasweps/orbitalstriker.wep.gml");
+downloadmod("clasweps/orbitalbarrage.wep.gml");
+downloadmod("clasweps/multislicer.wep.gml");
+downloadmod("clasweps/multiflakcannon.wep.gml");
+downloadmod("clasweps/longsword.wep.gml");
+downloadmod("clasweps/lightningscrew.wep.gml");
+downloadmod("clasweps/lightningflak.wep.gml");
+downloadmod("clasweps/kirbyhammer.wep.gml");
+downloadmod("clasweps/iceslugger.wep.gml");
+downloadmod("clasweps/iceshotgun.wep.gml");
+downloadmod("clasweps/hypershotgun.wep.gml");
+downloadmod("clasweps/hyperrevolver.wep.gml");
+downloadmod("clasweps/hyperflare.wep.gml");
+downloadmod("clasweps/hyperflak.wep.gml");
+downloadmod("clasweps/heavywave.wep.gml");
+downloadmod("clasweps/heavystriker.wep.gml");
+downloadmod("clasweps/heavyshovel.wep.gml");
+downloadmod("clasweps/heavyshot.wep.gml");
+downloadmod("clasweps/goldscorpionarm.wep.gml");
+downloadmod("clasweps/goldenblazer.wep.gml");
+downloadmod("clasweps/funnyxd.wep.gml");
+downloadmod("clasweps/executioner.wep.gml");
+downloadmod("clasweps/evilsbane.wep.gml");
+downloadmod("clasweps/energywrench.wep.gml");
+downloadmod("clasweps/energyshovel.wep.gml");
+downloadmod("clasweps/energyjackhammer.wep.gml");
+downloadmod("clasweps/enemyloot.mod.gml");
+downloadmod("clasweps/doubleiceshotgun.wep.gml");
+downloadmod("clasweps/doghead.wep.gml");
+downloadmod("clasweps/crowns/slots.crown.gml");
+downloadmod("clasweps/crowns/Slaughter.crown.gml");
+downloadmod("clasweps/crowns/Pain.crown.gml");
+downloadmod("clasweps/crowns/Choice.crown.gml");
+downloadmod("clasweps/claswepsshit.mod.gml");
+downloadmod("clasweps/chimerashell.wep.gml");
+downloadmod("clasweps/chimeraexplosive.wep.gml");
+downloadmod("clasweps/chimeraenergy.wep.gml");
+downloadmod("clasweps/chimerabullet.wep.gml");
+downloadmod("clasweps/chimerabolt.wep.gml");
+downloadmod("clasweps/catalyst.wep.gml");
+downloadmod("clasweps/casey.wep.gml");
+downloadmod("clasweps/cannon.wep.gml");
+downloadmod("clasweps/brokenflak.wep.gml");
+downloadmod("clasweps/bossintros.mod.gml");
+downloadmod("clasweps/bloodyrifle.wep.gml");
+downloadmod("clasweps/bloodyrevolver.wep.gml");
+downloadmod("clasweps/blazer.wep.gml");
+downloadmod("clasweps/battleshovel.wep.gml");
+downloadmod("clasweps/autoiceshotgun.wep.gml");
+downloadmod("clasweps/autoburstshotty.wep.gml");
+downloadmod("clasweps/ZapMachineGun.wep.gml");
+downloadmod("clasweps/Zap shotgun.wep.gml");
+downloadmod("clasweps/Zap gun.wep.gml");
+downloadmod("clasweps/Zap Cannon.wep.gml");
+downloadmod("clasweps/Ultraflamethrower.wep.gml");
+downloadmod("clasweps/UltraSlug.wep.gml");
+downloadmod("clasweps/UltraFlak.wep.gml");
+downloadmod("clasweps/UltraBazook.wep.gml");
+downloadmod("clasweps/TurboLauncher.wep.gml");
+downloadmod("clasweps/TrailerPistol.wep.gml");
+downloadmod("clasweps/TrailerGun.wep.gml");
+downloadmod("clasweps/TrailerCannon.wep.gml");
+downloadmod("clasweps/Toxinballer.wep.gml");
+downloadmod("clasweps/ToxicShotty.wep.gml");
+downloadmod("clasweps/ToxicFlak.wep.gml");
+downloadmod("clasweps/ToxicDiscGun.wep.gml");
+downloadmod("clasweps/ToxicBlazer.wep.gml");
+downloadmod("clasweps/ToxicBazooka.wep.gml");
+downloadmod("clasweps/ThroneGun.wep.gml");
+downloadmod("clasweps/ThroneCannon.wep.gml");
+downloadmod("clasweps/ThroneBeam.wep.gml");
+downloadmod("clasweps/SuperIceFlakCannon.wep.gml");
+downloadmod("clasweps/SuperFocusedFlak.wep.gml");
+downloadmod("clasweps/SuperBurstShotty.wep.gml");
+downloadmod("clasweps/Sniper.wep.gml");
+downloadmod("clasweps/SlotMachine.wep.gml");
+downloadmod("clasweps/Ricochetcrossbow.wep.gml");
+downloadmod("clasweps/RapidPistol.wep.gml");
+downloadmod("clasweps/RageBlaster.wep.gml");
+downloadmod("clasweps/Poposcorcher.wep.gml");
+downloadmod("clasweps/PopoZapper.wep.gml");
+downloadmod("clasweps/PopoSpreader.wep.gml");
+downloadmod("clasweps/PopoSMG.wep.gml");
+downloadmod("clasweps/PopoRevolver.wep.gml");
+downloadmod("clasweps/PopoGuider.wep.gml");
+downloadmod("clasweps/PopoGenocide.wep.gml");
+downloadmod("clasweps/PopoFireballer.wep.gml");
+downloadmod("clasweps/PopoExplosionGun.wep.gml");
+downloadmod("clasweps/PopoCharger.wep.gml");
+downloadmod("clasweps/PopoBurstShotty.wep.gml");
+downloadmod("clasweps/PopoBADS.wep.gml");
+downloadmod("clasweps/PlasmaNuker.wep.gml");
+downloadmod("clasweps/PlasmaFlak.wep.gml");
+downloadmod("clasweps/PlasmaBazooka.wep.gml");
+downloadmod("clasweps/OmegaRevolver.wep.gml");
+downloadmod("clasweps/NecroMachine.wep.gml");
+downloadmod("clasweps/MiniNukeLauncher.wep.gml");
+downloadmod("clasweps/MineShotgun.wep.gml");
+downloadmod("clasweps/MineLauncher.wep.gml");
+downloadmod("clasweps/MegaNuker.wep.gml");
+downloadmod("clasweps/LilGunther.wep.gml");
+downloadmod("clasweps/LightningWrench.wep.gml");
+downloadmod("clasweps/Laserwave.wep.gml");
+downloadmod("clasweps/KingBlade.wep.gml");
+downloadmod("clasweps/InvCrystalLaser.wep.gml");
+downloadmod("clasweps/IceFlakCannon.wep.gml");
+downloadmod("clasweps/IceCannon.wep.gml");
+downloadmod("clasweps/HuntingRifle.wep.gml");
+downloadmod("clasweps/Hellfire.wep.gml");
+downloadmod("clasweps/HeavySMG.wep.gml");
+downloadmod("clasweps/HeavyLaser.wep.gml");
+downloadmod("clasweps/HeavyGlove.wep.gml");
+downloadmod("clasweps/HeavyFlare.wep.gml");
+downloadmod("clasweps/HeavyFlak.wep.gml");
+downloadmod("clasweps/GuiderShotty.wep.gml");
+downloadmod("clasweps/GuiderPistol.wep.gml");
+downloadmod("clasweps/GuiderMinigun.wep.gml");
+downloadmod("clasweps/GuiderBlaster.wep.gml");
+downloadmod("clasweps/GoldenFireballer.wep.gml");
+downloadmod("clasweps/GigaHammer.wep.gml");
+downloadmod("clasweps/Genocide.wep.gml");
+downloadmod("clasweps/GatlingNader.wep.gml");
+downloadmod("clasweps/GatlingMiniNader.wep.gml");
+downloadmod("clasweps/FocusedFlak.wep.gml");
+downloadmod("clasweps/FocusShotty.wep.gml");
+downloadmod("clasweps/Flamesword.wep.gml");
+downloadmod("clasweps/Fireballer.wep.gml");
+downloadmod("clasweps/ExplosionPistol.wep.gml");
+downloadmod("clasweps/ExplosionGun.wep.gml");
+downloadmod("clasweps/DemolitionsLauncher.wep.gml");
+downloadmod("clasweps/DartlingGun.wep.gml");
+downloadmod("clasweps/DartGun.wep.gml");
+downloadmod("clasweps/CrystalLaser.wep.gml");
+downloadmod("clasweps/ChargeSlugger.wep.gml");
+downloadmod("clasweps/ChargePlasma.wep.gml");
+downloadmod("clasweps/ChargeLaser.wep.gml");
+downloadmod("clasweps/ChargeGun.wep.gml");
+downloadmod("clasweps/ChargeFlamethrower.wep.gml");
+downloadmod("clasweps/ChargeFlak.wep.gml");
+downloadmod("clasweps/ChargeDisc.wep.gml");
+downloadmod("clasweps/ChargeCrossbow.wep.gml");
+downloadmod("clasweps/ChargeBlade.wep.gml");
+downloadmod("clasweps/ChargeBazooka.wep.gml");
+downloadmod("clasweps/BusterGun.wep.gml");
+downloadmod("clasweps/BurstShotty.wep.gml");
+downloadmod("clasweps/BoxingGlove.wep.gml");
+downloadmod("clasweps/BouncerFlak.wep.gml");
+downloadmod("clasweps/BluntHammer.wep.gml");
+downloadmod("clasweps/Bloodballer.wep.gml");
+downloadmod("clasweps/BloodMineLauncher.wep.gml");
+downloadmod("clasweps/BloodGenocide.wep.gml");
+downloadmod("clasweps/BloodExplosionGun.wep.gml");
+downloadmod("clasweps/BlinkSword.Wep.gml");
+downloadmod("clasweps/BigBlaster.wep.gml");
+downloadmod("clasweps/BanditBlaster.wep.gml");
+downloadmod("clasweps/BallMomBlaster.wep.gml");
+downloadmod("clasweps/BADS.wep.gml");
+downloadmod("clasweps/Acelauncher.wep.gml");
+downloadmod("clasweps/AccuserHand.wep.gml");
+downloadmod("clasweps/multislicer.wep.gml");
+downloadmod("clasweps/casey.wep.gml");
+downloadmod("clasweps/longsword.wep.gml");
+downloadmod("clasweps/widesword.wep.gml");
+downloadmod("clasweps/multiflakcannon.wep.gml");
+downloadmod("clasweps/Blazer.wep.gml");
+downloadmod("clasweps/scorcher.wep.gml");
+downloadmod("clasweps/poposcorcher.wep.gml");
+downloadmod("clasweps/goldenblazer.wep.gml");
+downloadmod("clasweps/torch.wep.gml");
+downloadmod("clasweps/flamesword.wep.gml");
+downloadmod("clasweps/lightningflak.wep.gml");
+downloadmod("clasweps/brokenflak.wep.gml");
+downloadmod("clasweps/focusedflak.wep.gml");
+downloadmod("clasweps/superfocusedflak.wep.gml");
+downloadmod("clasweps/zap gun.wep.gml");
+downloadmod("clasweps/zapmachinegun.wep.gml");
+downloadmod("clasweps/zap shotgun.wep.gml");
+downloadmod("clasweps/zap cannon.wep.gml");
+downloadmod("clasweps/popozapper.wep.gml");
+downloadmod("clasweps/ExplosionPistol.wep.gml");
+downloadmod("clasweps/ExplosionGun.wep.gml");
+downloadmod("clasweps/BloodExplosionGun.wep.gml");
+downloadmod("clasweps/popoexplosiongun.wep.gml");
+downloadmod("clasweps/MineLauncher.wep.gml");
+downloadmod("clasweps/MineShotgun.wep.gml");
+downloadmod("clasweps/BloodMineLauncher.wep.gml");
+downloadmod("clasweps/DemolitionsLauncher.wep.gml");
+downloadmod("clasweps/bouncerflak.wep.gml");
+downloadmod("clasweps/poporevolver.wep.gml");
+downloadmod("clasweps/popoSMG.wep.gml");
+downloadmod("clasweps/quickdraw.wep.gml");
+downloadmod("clasweps/hyperrevolver.wep.gml");
+downloadmod("clasweps/hypershotgun.wep.gml");
+downloadmod("clasweps/hyperflare.wep.gml");
+downloadmod("clasweps/hyperflak.wep.gml");
+downloadmod("clasweps/fireballer.wep.gml");
+downloadmod("clasweps/toxinballer.wep.gml");
+downloadmod("clasweps/bloodballer.wep.gml");
+downloadmod("clasweps/popofireballer.wep.gml");
+downloadmod("clasweps/goldenfireballer.wep.gml");
+downloadmod("clasweps/cannon.wep.gml");
+downloadmod("clasweps/BusterGun.wep.gml");
+downloadmod("clasweps/Catalyst.wep.gml");
+downloadmod("clasweps/EvilsBane.wep.gml");
+downloadmod("clasweps/kingblade.wep.gml");
+downloadmod("clasweps/popospreader.wep.gml");
+downloadmod("clasweps/slc.wep.gml");
+downloadmod("clasweps/battleshovel.wep.gml");
+downloadmod("clasweps/burstshotty.wep.gml");
+downloadmod("clasweps/autoburstshotty.wep.gml");
+downloadmod("clasweps/superburstshotty.wep.gml");
+downloadmod("clasweps/popoburstshotty.wep.gml");
+downloadmod("clasweps/guiderpistol.wep.gml");
+downloadmod("clasweps/guiderblaster.wep.gml");
+downloadmod("clasweps/guidershotty.wep.gml");
+downloadmod("clasweps/guiderminigun.wep.gml");
+downloadmod("clasweps/accuserhand.wep.gml");
+downloadmod("clasweps/popoguider.wep.gml");
+downloadmod("clasweps/chargegun.wep.gml");
+downloadmod("clasweps/chargeslugger.wep.gml");
+downloadmod("clasweps/chargeflak.wep.gml");
+downloadmod("clasweps/chargecrossbow.wep.gml");
+downloadmod("clasweps/chargedisc.wep.gml");
+downloadmod("clasweps/chargebazooka.wep.gml");
+downloadmod("clasweps/chargeflamethrower.wep.gml");
+downloadmod("clasweps/chargelaser.wep.gml");
+downloadmod("clasweps/chargeplasma.wep.gml");
+downloadmod("clasweps/chargeblade.wep.gml");
+downloadmod("clasweps/popocharger.wep.gml");
+downloadmod("clasweps/focusshotty.wep.gml");
+downloadmod("clasweps/bloodyrevolver.wep.gml");
+downloadmod("clasweps/bloodyrifle.wep.gml");
+downloadmod("clasweps/iceshotgun.wep.gml");
+downloadmod("clasweps/doubleiceshotgun.wep.gml");
+downloadmod("clasweps/autoiceshotgun.wep.gml");
+downloadmod("clasweps/iceslugger.wep.gml");
+downloadmod("clasweps/iceflakcannon.wep.gml");
+downloadmod("clasweps/supericeflakcannon.wep.gml");
+downloadmod("clasweps/icecannon.wep.gml");
+downloadmod("clasweps/trailerpistol.wep.gml");
+downloadmod("clasweps/trailergun.wep.gml");
+downloadmod("clasweps/trailercannon.wep.gml");
+downloadmod("clasweps/HeavySMG.wep.gml");
+downloadmod("clasweps/heavyFlare.wep.gml");
+downloadmod("clasweps/heavyshot.wep.gml");
+downloadmod("clasweps/heavyshovel.wep.gml");
+downloadmod("clasweps/energywrench.wep.gml");
+downloadmod("clasweps/energyshovel.wep.gml");
+downloadmod("clasweps/energyjackhammer.wep.gml");
+downloadmod("clasweps/lightningwrench.wep.gml");
+downloadmod("clasweps/lightningscrew.wep.gml");
+downloadmod("clasweps/Ricochetcrossbow.wep.gml");
+downloadmod("clasweps/laserwave.wep.gml");
+downloadmod("clasweps/heavywave.wep.gml");
+downloadmod("clasweps/plasmashotty.wep.gml");
+downloadmod("clasweps/plasmaflak.wep.gml");
+downloadmod("clasweps/plasmabazooka.wep.gml");
+downloadmod("clasweps/plasmanuker.wep.gml");
+downloadmod("clasweps/splintergatling.wep.gml");
+downloadmod("clasweps/gatlingnader.wep.gml");
+downloadmod("clasweps/gatlingmininader.wep.gml");
+downloadmod("clasweps/turboLauncher.wep.gml");
+downloadmod("clasweps/DartGun.wep.gml");
+downloadmod("clasweps/DartlingGun.wep.gml");
+downloadmod("clasweps/heavyflak.wep.gml");
+downloadmod("clasweps/orbitalbarrage.wep.gml");
+downloadmod("clasweps/scorpionarm.wep.gml");
+downloadmod("clasweps/goldscorpionarm.wep.gml");
+downloadmod("clasweps/huntingrifle.wep.gml");
+downloadmod("clasweps/BlinkSword.wep.gml");
+downloadmod("clasweps/BluntHammer.wep.gml");
+downloadmod("clasweps/GigaHammer.wep.gml");
+downloadmod("clasweps/Ringoffire.wep.gml");
+downloadmod("clasweps/Ringofplasma.wep.gml");
+downloadmod("clasweps/chimerabullet.wep.gml");
+downloadmod("clasweps/chimerashell.wep.gml");
+downloadmod("clasweps/chimerabolt.wep.gml");
+downloadmod("clasweps/chimeraexplosive.wep.gml");
+downloadmod("clasweps/chimeraenergy.wep.gml");
+downloadmod("clasweps/rageblaster.wep.gml");
+downloadmod("clasweps/slc.wep.gml");
+downloadmod("clasweps/meganuker.wep.gml");
+downloadmod("clasweps/mininukelauncher.wep.gml");
+downloadmod("clasweps/snl.wep.gml");
+downloadmod("clasweps/boxingglove.wep.gml");
+downloadmod("clasweps/heavyglove.wep.gml");
+downloadmod("clasweps/toxicshotty.wep.gml");
+downloadmod("clasweps/toxicbazooka.wep.gml");
+downloadmod("clasweps/toxicflak.wep.gml");
+downloadmod("clasweps/toxicdiscgun.wep.gml");
+downloadmod("clasweps/toxicblazer.wep.gml");
+downloadmod("clasweps/orbitalstriker.wep.gml");
+downloadmod("clasweps/heavystriker.wep.gml");
+downloadmod("clasweps/orbitalbarrage.wep.gml");
+downloadmod("clasweps/shine.wep.gml");
+downloadmod("clasweps/AceLauncher.wep.gml");
+downloadmod("clasweps/BADS.wep.gml");
+downloadmod("clasweps/popobads.wep.gml");
+downloadmod("clasweps/Hellfire.wep.gml");
+downloadmod("clasweps/Genocide.wep.gml");
+downloadmod("clasweps/BloodGenocide.wep.gml");
+downloadmod("clasweps/popogenocide.wep.gml");
+downloadmod("clasweps/banditblaster.wep.gml");
+downloadmod("clasweps/sniper.wep.gml");
+downloadmod("clasweps/rapidpistol.wep.gml");
+downloadmod("clasweps/bigblaster.wep.gml");
+downloadmod("clasweps/doghead.wep.gml");
+downloadmod("clasweps/lilgunther.wep.gml");
+downloadmod("clasweps/ballmomblaster.wep.gml");
+downloadmod("clasweps/crystallaser.wep.gml");
+downloadmod("clasweps/invcrystallaser.wep.gml");
+downloadmod("clasweps/NecroMachine.wep.gml");
+downloadmod("clasweps/omegarevolver.wep.gml");
+downloadmod("clasweps/thronegun.wep.gml");
+downloadmod("clasweps/thronecannon.wep.gml");
+downloadmod("clasweps/thronebeam.wep.gml");
+downloadmod("clasweps/ultrarifle.wep.gml");
+downloadmod("clasweps/ultraslug.wep.gml");
+downloadmod("clasweps/ultrasplinter.wep.gml");
+downloadmod("clasweps/ultrabazook.wep.gml");
+downloadmod("clasweps/ultraplasmagun.wep.gml");
+downloadmod("clasweps/ultradiscgun.wep.gml");
+downloadmod("clasweps/ultrapopgun.wep.gml");
+downloadmod("clasweps/ultraflak.wep.gml");
+downloadmod("clasweps/ultraseeker.wep.gml");
+downloadmod("clasweps/ultraflamethrower.wep.gml");
+downloadmod("clasweps/ultralightning.wep.gml");
+downloadmod("clasweps/ultrasuperdiscgun.wep.gml");
+downloadmod("clasweps/kirbyhammer.wep.gml");
+downloadmod("clasweps/slotmachine.wep.gml");
+downloadmod("clasweps/shrineroom.area.gml");
+downloadmod("clasweps/racingthoughts.skill.gml");
+downloadmod("clasweps/enemyloot.mod.gml");
+downloadmod("clasweps/claswepsshit.mod.gml");
+downloadmod("clasweps/crowns/choice.crown.gml");
+downloadmod("clasweps/crowns/slaughter.crown.gml");
+downloadmod("clasweps/crowns/pain.crown.gml");
+downloadmod("clasweps/crowns/slots.crown.gml");
+downloadmod("clasweps/widesword.png");
+downloadmod("clasweps/ultraseekerpro.png");
+downloadmod("clasweps/ultraplasmaproj.png");
+downloadmod("clasweps/ultraplasmaimpact.png");
+downloadmod("clasweps/ultramegaseeker.png");
+downloadmod("clasweps/ultraflame.png");
+downloadmod("clasweps/thoughtslightning.png");
+downloadmod("clasweps/swiftsword.png");
+downloadmod("clasweps/sprBaseball.png");
+downloadmod("clasweps/shine.ogg");
+downloadmod("clasweps/ringofplasma.png");
+downloadmod("clasweps/ringoffire.png");
+downloadmod("clasweps/racingthoughtsbutton.png");
+downloadmod("clasweps/orbitalstriker.png");
+downloadmod("clasweps/orbitalbarrage.png");
+downloadmod("clasweps/multiflakcannon.png");
+downloadmod("clasweps/longsword.png");
+downloadmod("clasweps/lightningshank.png");
+downloadmod("clasweps/lightningflak.png");
+downloadmod("clasweps/heavy shovel.png");
+downloadmod("clasweps/evilsbane.png");
+downloadmod("clasweps/crowns/Crown of Slots.png");
+downloadmod("clasweps/crowns/Crown of Slaughter.png");
+downloadmod("clasweps/crowns/Crown of Pain.png");
+downloadmod("clasweps/crowns/ChoiceBuddyWalk.png");
+downloadmod("clasweps/crowns/ChoiceBuddyIdle.png");
+downloadmod("clasweps/catalyst.png");
+downloadmod("clasweps/bulletcannon.png");
+downloadmod("clasweps/barragemarker.png");
+downloadmod("clasweps/bads.png");
+downloadmod("clasweps/ZapSlug.png");
+downloadmod("clasweps/ZapMG.png");
+downloadmod("clasweps/ZapBullet.png");
+downloadmod("clasweps/Zap Shotgun.png");
+downloadmod("clasweps/Zap Gun.png");
+downloadmod("clasweps/Zap Cannon.png");
+downloadmod("clasweps/Ultrasuperdiscgun.png");
+downloadmod("clasweps/UltraslugDissapear.png");
+downloadmod("clasweps/Ultradiscgun.png");
+downloadmod("clasweps/Ultrabazooka.png");
+downloadmod("clasweps/UltraSuperDisc.png");
+downloadmod("clasweps/UltraSplinterPro.png");
+downloadmod("clasweps/UltraSplinter.png");
+downloadmod("clasweps/UltraSmoke.png");
+downloadmod("clasweps/UltraSlugger.png");
+downloadmod("clasweps/UltraSlugHit.png");
+downloadmod("clasweps/UltraSlug.png");
+downloadmod("clasweps/UltraSeeker.png");
+downloadmod("clasweps/UltraRocketFlame.png");
+downloadmod("clasweps/UltraRocket.png");
+downloadmod("clasweps/UltraRifle.png");
+downloadmod("clasweps/UltraPop.png");
+downloadmod("clasweps/UltraPlasmaTrail.png");
+downloadmod("clasweps/UltraPlasma.png");
+downloadmod("clasweps/UltraMainRocket.png");
+downloadmod("clasweps/UltraLightning.png");
+downloadmod("clasweps/UltraFlamethrower.png");
+downloadmod("clasweps/UltraFlakBullet.png");
+downloadmod("clasweps/UltraFlak.png");
+downloadmod("clasweps/UltraDisc.png");
+downloadmod("clasweps/TurboRocket.png");
+downloadmod("clasweps/TurboLauncher.png");
+downloadmod("clasweps/TrueUltraSuperDiscGun.png");
+downloadmod("clasweps/TrailerPistol.png");
+downloadmod("clasweps/TrailerGun.png");
+downloadmod("clasweps/TrailerCannon.png");
+downloadmod("clasweps/ToxinBaller.png");
+downloadmod("clasweps/Toxicball.png");
+downloadmod("clasweps/ToxicShotty.png");
+downloadmod("clasweps/ToxicRocket.png");
+downloadmod("clasweps/ToxicFlak.png");
+downloadmod("clasweps/ToxicDiscGun.png");
+downloadmod("clasweps/ToxicDisc.png");
+downloadmod("clasweps/ToxicBlazer.png");
+downloadmod("clasweps/ToxicBazooka.png");
+downloadmod("clasweps/Torch.png");
+downloadmod("clasweps/ThroneGun.png");
+downloadmod("clasweps/ThroneCannon.png");
+downloadmod("clasweps/ThroneBeam.png");
+downloadmod("clasweps/SuperNukeLauncher.png");
+downloadmod("clasweps/SuperIceFlakCannon.png");
+downloadmod("clasweps/SuperIceFlakBullet.png");
+downloadmod("clasweps/SuperFocusedFlakCannon.png");
+downloadmod("clasweps/SuperBurstShotty.png");
+downloadmod("clasweps/Super Laser Cannon.png");
+downloadmod("clasweps/Strikemarker.png");
+downloadmod("clasweps/SniperBullet.png");
+downloadmod("clasweps/Sniper.png");
+downloadmod("clasweps/SlotMachine.png");
+downloadmod("clasweps/ShineMask.png");
+downloadmod("clasweps/Shine.png");
+downloadmod("clasweps/ScorpionArm.png");
+downloadmod("clasweps/Scorcher.png");
+downloadmod("clasweps/Ricochetcrossbow.png");
+downloadmod("clasweps/Ricochetbolt.png");
+downloadmod("clasweps/Reflector.png");
+downloadmod("clasweps/RapidPistol.png");
+downloadmod("clasweps/RageBlaster.png");
+downloadmod("clasweps/RacingThoughtsIcon.png");
+downloadmod("clasweps/Quickdraw.png");
+downloadmod("clasweps/PopoZapper.png");
+downloadmod("clasweps/PopoSpreader.png");
+downloadmod("clasweps/PopoScorcher.png");
+downloadmod("clasweps/PopoSMG.png");
+downloadmod("clasweps/PopoRevolver.png");
+downloadmod("clasweps/PopoGuider.png");
+downloadmod("clasweps/PopoGenocide.png");
+downloadmod("clasweps/PopoFireballer.png");
+downloadmod("clasweps/PopoFireball.png");
+downloadmod("clasweps/PopoExplosiongun.png");
+downloadmod("clasweps/PopoCharger.png");
+downloadmod("clasweps/PopoBurstShotty.png");
+downloadmod("clasweps/PopoBads.png");
+downloadmod("clasweps/PlasmaShotty.png");
+downloadmod("clasweps/PlasmaRocket.png");
+downloadmod("clasweps/PlasmaNukeLauncher.png");
+downloadmod("clasweps/PlasmaNuke.png");
+downloadmod("clasweps/PlasmaFlak.png");
+downloadmod("clasweps/PlasmaBazooka.png");
+downloadmod("clasweps/OmegaRevolver.png");
+downloadmod("clasweps/NecroMachine.png");
+downloadmod("clasweps/NecroAllyRez.png");
+downloadmod("clasweps/NecroAllyArea.png");
+downloadmod("clasweps/Multislicer.gif");
+downloadmod("clasweps/MiniNukeLauncher.png");
+downloadmod("clasweps/MiniNuke.png");
+downloadmod("clasweps/MiniMineBlink.png");
+downloadmod("clasweps/MiniMine.png");
+downloadmod("clasweps/MiniGrenadeGatling.png");
+downloadmod("clasweps/MineShotgun.png");
+downloadmod("clasweps/MineLaunchr.png");
+downloadmod("clasweps/Mine.png");
+downloadmod("clasweps/MegaNukeLauncher.png");
+downloadmod("clasweps/MegaNuke.png");
+downloadmod("clasweps/LilGunther.png");
+downloadmod("clasweps/LightningWrench.png");
+downloadmod("clasweps/LightningScrewdriver.png");
+downloadmod("clasweps/LightningFlakCannon.png");
+downloadmod("clasweps/LaserWave.png");
+downloadmod("clasweps/LULDisc.png");
+downloadmod("clasweps/KirbyHammer.png");
+downloadmod("clasweps/KingBladeSword.png");
+downloadmod("clasweps/KingBladeGhost.png");
+downloadmod("clasweps/Jab.png");
+downloadmod("clasweps/InvCrystalGun.png");
+downloadmod("clasweps/IceSlugger.png");
+downloadmod("clasweps/IceSlugHit.png");
+downloadmod("clasweps/IceSlugDissapear.png");
+downloadmod("clasweps/IceSlug.png");
+downloadmod("clasweps/IceShot.png");
+downloadmod("clasweps/IceShellHit.png");
+downloadmod("clasweps/IceShellDissapear.png");
+downloadmod("clasweps/IceShell.png");
+downloadmod("clasweps/IceShard.png");
+downloadmod("clasweps/IceFlakCannon.png");
+downloadmod("clasweps/IceFlakBullet.png");
+downloadmod("clasweps/IceCannon.png");
+downloadmod("clasweps/Hyper_Revolver.png");
+downloadmod("clasweps/HyperShotty.png");
+downloadmod("clasweps/HyperFlaregun.png");
+downloadmod("clasweps/HyperFlakCannon.png");
+downloadmod("clasweps/HuntingRifle.png");
+downloadmod("clasweps/Hellfire.png");
+downloadmod("clasweps/Heavystrikemarker.png");
+downloadmod("clasweps/HeavyWaveGun.png");
+downloadmod("clasweps/HeavyStriker.png");
+downloadmod("clasweps/HeavySMG.png");
+downloadmod("clasweps/HeavyLaser.png");
+downloadmod("clasweps/HeavyJab.png");
+downloadmod("clasweps/HeavyGlove.png");
+downloadmod("clasweps/HeavyFlaregun.png");
+downloadmod("clasweps/HeavyFlare.png");
+downloadmod("clasweps/HeavyFlak.png");
+downloadmod("clasweps/Heavy shotty.png");
+downloadmod("clasweps/GuidedShotty.png");
+downloadmod("clasweps/GuidedPistol.png");
+downloadmod("clasweps/GuidedMinigun.png");
+downloadmod("clasweps/GuidedBlaster.png");
+downloadmod("clasweps/Greensmallexplosion.png");
+downloadmod("clasweps/GoldenFireballer.png");
+downloadmod("clasweps/GoldenBlazer.png");
+downloadmod("clasweps/GoldScorpionArm.png");
+downloadmod("clasweps/GigaHammer.png");
+downloadmod("clasweps/Genocide.png");
+downloadmod("clasweps/GatlingSplinter.png");
+downloadmod("clasweps/GatlingLauncher.png");
+downloadmod("clasweps/FocusedFlakCannon.png");
+downloadmod("clasweps/FocusShotgun.png");
+downloadmod("clasweps/FlameSword.png");
+downloadmod("clasweps/Fireballer.png");
+downloadmod("clasweps/Explosiongun.png");
+downloadmod("clasweps/ExplosionPistol.png");
+downloadmod("clasweps/ExecutionerHand.png");
+downloadmod("clasweps/Executioner.png");
+downloadmod("clasweps/Evilsbanebeam.png");
+downloadmod("clasweps/Energy Wrench.png");
+downloadmod("clasweps/Energy Shovel.png");
+downloadmod("clasweps/Energy Jackhammer.png");
+downloadmod("clasweps/DoubleIceShot.png");
+downloadmod("clasweps/DogHead.png");
+downloadmod("clasweps/DemolitionsLauncher.png");
+downloadmod("clasweps/Demolitionbomb.png");
+downloadmod("clasweps/DartlingGun.png");
+downloadmod("clasweps/DartGun.png");
+downloadmod("clasweps/Dart.png");
+downloadmod("clasweps/CrystalGun.png");
+downloadmod("clasweps/ChimeraShell.png");
+downloadmod("clasweps/ChimeraExplosive.png");
+downloadmod("clasweps/ChimeraEnergy.png");
+downloadmod("clasweps/ChimeraBullet.png");
+downloadmod("clasweps/ChimeraBolt.png");
+downloadmod("clasweps/ChargeSlugger.png");
+downloadmod("clasweps/ChargePlasmagun.png");
+downloadmod("clasweps/ChargeLaser.png");
+downloadmod("clasweps/ChargeGun.png");
+downloadmod("clasweps/ChargeFlamethrower.png");
+downloadmod("clasweps/ChargeFlakCannon.png");
+downloadmod("clasweps/ChargeDiscGun.png");
+downloadmod("clasweps/ChargeCrossbow.png");
+downloadmod("clasweps/ChargeBlade.png");
+downloadmod("clasweps/ChargeBazooka.png");
+downloadmod("clasweps/Casey.png");
+downloadmod("clasweps/Cannon.png");
+downloadmod("clasweps/BusterGun.png");
+downloadmod("clasweps/BurstShotty.png");
+downloadmod("clasweps/BrokenFlakCannon.png");
+downloadmod("clasweps/BoxingGlove.png");
+downloadmod("clasweps/Bouncer Flak.png");
+downloadmod("clasweps/BluntHammer.png");
+downloadmod("clasweps/BloodyTrail.png");
+downloadmod("clasweps/BloodyRifle.png");
+downloadmod("clasweps/BloodyRevolver.png");
+downloadmod("clasweps/BloodyBullet.png");
+downloadmod("clasweps/BloodsuckerProj.png");
+downloadmod("clasweps/Bloodballer.png");
+downloadmod("clasweps/Bloodball.png");
+downloadmod("clasweps/BloodMineLauncher.png");
+downloadmod("clasweps/BloodMine.png");
+downloadmod("clasweps/BloodGenocide.png");
+downloadmod("clasweps/BloodFlame.png");
+downloadmod("clasweps/BloodExplosionGun.png");
+downloadmod("clasweps/BlinkSword.png");
+downloadmod("clasweps/Blazer.png");
+downloadmod("clasweps/BigBlaster.png");
+downloadmod("clasweps/Battleshovel.png");
+downloadmod("clasweps/BanditBlaster.png");
+downloadmod("clasweps/BallMomBlaster.png");
+downloadmod("clasweps/BADSRocket.png");
+downloadmod("clasweps/AutoIceShot.png");
+downloadmod("clasweps/AutoBurstShotty.png");
+downloadmod("clasweps/AceLauncher.png");
+downloadmod("clasweps/Ace.png");
+downloadmod("clasweps/AccuserHand.png");
+downloadmod("Druid_Race/druid.race.gml");
+downloadmod("Druid_Race/Storagething/Directionalswitch.ogg");
+downloadmod("Druid_Race/Storagething/DruidDeath.png");
+downloadmod("Druid_Race/Storagething/DruidHurt.png");
+downloadmod("Druid_Race/Storagething/DruidIcon.png");
+downloadmod("Druid_Race/Storagething/DruidIdle.png");
+downloadmod("Druid_Race/Storagething/DruidPoof.ogg");
+downloadmod("Druid_Race/Storagething/DruidPooff.ogg");
+downloadmod("Druid_Race/Storagething/DruidWalk.png");
+downloadmod("Druid_Race/Storagething/MechanicDead.png");
+downloadmod("Druid_Race/Storagething/MechanicHurt.png");
+downloadmod("Druid_Race/Storagething/MechanicIcon.png");
+downloadmod("Druid_Race/Storagething/MechanicIdle.png");
+downloadmod("Druid_Race/Storagething/MechanicMenu.png");
+downloadmod("Druid_Race/Storagething/MechanicTurret.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretA.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretAB.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretB.png");
+downloadmod("Druid_Race/Storagething/MechanicWalk.png");
+downloadmod("Druid_Race/Storagething/RobloxDyingBreath.ogg");
+downloadmod("Druid_Race/Storagething/Shatter.ogg");
+downloadmod("Druid_Race/Storagething/Silent.ogg");
+downloadmod("Druid_Race/Storagething/sprToast.png");
+downloadmod("Druid_Race/Storagething/ssss.mp3");
+downloadmod("Druid_Race/Storagething/UUHHN.ogg");
+downloadmod("chrononaut/chrononaut.race.gml");
+downloadmod("chrononaut/chrononaut_gui.mod.gml");
+downloadmod("chrononaut/idpdslugpistol.wep.gml");
+downloadmod("chrononaut/sprites/sprChrononautBigPortrait.png");
+downloadmod("chrononaut/sprites/sprChrononautCharSelect.png");
+downloadmod("chrononaut/sprites/sprChrononautDead.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyDead.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyHurt.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyMapIcon.png");
+downloadmod("chrononaut/sprites/sprChrononautEmptyWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautExplo.png");
+downloadmod("chrononaut/sprites/sprChrononautGoSit.png");
+downloadmod("chrononaut/sprites/sprChrononautGroundFlame.png");
+downloadmod("chrononaut/sprites/sprChrononautGroundFlameDisappear.png");
+downloadmod("chrononaut/sprites/sprChrononautHologramIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautHologramWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautHurt.png");
+downloadmod("chrononaut/sprites/sprChrononautIdle.png");
+downloadmod("chrononaut/sprites/sprChrononautLoadoutSkin.png");
+downloadmod("chrononaut/sprites/sprChrononautMapIcon.png");
+downloadmod("chrononaut/sprites/sprChrononautSit.png");
+downloadmod("chrononaut/sprites/sprChrononautSparkles.png");
+downloadmod("chrononaut/sprites/sprChrononautTrail.png");
+downloadmod("chrononaut/sprites/sprChrononautTrailBig.png");
+downloadmod("chrononaut/sprites/sprChrononautWalk.png");
+downloadmod("chrononaut/sprites/sprChrononautWarp.png");
+downloadmod("chrononaut/sprites/sprIDPDPistolLoadout.png");
+downloadmod("chrononaut/sprites/sprIDPDSlugger.png");
+wait mod_load(string_trim("data/Daily.mod/AutoFlameCrossbow.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/chestbandits.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/multislicer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/casey.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/longsword.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/widesword.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/multiflakcannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Blazer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/scorcher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/poposcorcher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/goldenblazer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/torch.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/flamesword.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lightningflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/brokenflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/focusedflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/superfocusedflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/zap gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/zapmachinegun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/zap shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/zap cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popozapper.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionPistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ExplosionGun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodExplosionGun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popoexplosiongun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MineLauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/MineShotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodMineLauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DemolitionsLauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bouncerflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/poporevolver.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popoSMG.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/quickdraw.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperrevolver.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hypershotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflare.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/hyperflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/fireballer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxinballer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bloodballer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popofireballer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/goldenfireballer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BusterGun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Catalyst.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/EvilsBane.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/kingblade.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popospreader.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/slc.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/battleshovel.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/burstshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/autoburstshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/superburstshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popoburstshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/guiderpistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/guiderblaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/guidershotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/guiderminigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/accuserhand.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popoguider.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargegun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargeslugger.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargeflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargecrossbow.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargedisc.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargebazooka.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargeflamethrower.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargelaser.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargeplasma.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chargeblade.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popocharger.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/focusshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrevolver.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bloodyrifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/iceshotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/doubleiceshotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/autoiceshotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/iceslugger.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/iceflakcannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/supericeflakcannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/icecannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/trailerpistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/trailergun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/trailercannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/HeavySMG.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyFlare.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshot.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyshovel.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energywrench.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energyshovel.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/energyjackhammer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lightningwrench.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lightningscrew.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Ricochetcrossbow.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/laserwave.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavywave.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/plasmashotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/plasmaflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/plasmabazooka.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/plasmanuker.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/splintergatling.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/gatlingnader.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/gatlingmininader.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/turboLauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DartGun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/DartlingGun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalbarrage.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/scorpionarm.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/goldscorpionarm.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/huntingrifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BlinkSword.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BluntHammer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/GigaHammer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Ringoffire.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Ringofplasma.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabullet.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerashell.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimerabolt.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraexplosive.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/chimeraenergy.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/rageblaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/slc.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/meganuker.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/mininukelauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/snl.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/boxingglove.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavyglove.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxicshotty.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxicbazooka.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxicflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxicdiscgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/toxicblazer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalstriker.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/heavystriker.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/orbitalbarrage.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/shine.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/AceLauncher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BADS.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popobads.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Hellfire.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/Genocide.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/BloodGenocide.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/popogenocide.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/banditblaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/sniper.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/rapidpistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/bigblaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/doghead.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/lilgunther.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ballmomblaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crystallaser.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/invcrystallaser.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/NecroMachine.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/omegarevolver.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/thronegun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/thronecannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/thronebeam.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrarifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraslug.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasplinter.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrabazook.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraplasmagun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultradiscgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrapopgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraflak.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraseeker.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultraflamethrower.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultralightning.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/ultrasuperdiscgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/kirbyhammer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/slotmachine.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/shrineroom.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/racingthoughts.skill.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/enemyloot.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/claswepsshit.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/choice.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/slaughter.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/pain.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/clasweps/crowns/slots.crown.gml"));
+wait mod_load(string_trim("data/Daily.mod/Druid_Race/druid.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/chrononaut/chrononaut.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/chrononaut/chrononaut_gui.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/chrononaut/idpdslugpistol.wep.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +981,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Chips,Carbine,bossbar,Fire Riders,Crazy Traps");
+trace("Mods=Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut");
 trace("Character:Choose");
-trace("Crown:crown of life");
-trace("Weapon:carbine");
-trace("Seed:30946");
+trace("Crown:Pain");
+trace("Weapon:lightningflak");
+trace("Seed:6951");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +1130,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("carbine"));
+		give_wep(string_trim("lightningflak"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -340,16 +1185,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Chips,Carbine,bossbar,Fire Riders,Crazy Traps" + " Character:Choose" + " Crown:crown of life" + " Weapon:carbine" + " Seed:30946";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut" + " Character:Choose" + " Crown:Pain" + " Weapon:lightningflak" + " Seed:6951";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-09-14 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-09-14 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-09-14 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-09-14 Daily.txt");
+	if(file_exists(global.alias + " 2019-09-15 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-09-15 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-09-15 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-09-15 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-09-14 Daily.txt");
+		string_save(score, global.alias + " 2019-09-15 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +1221,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Chips,Carbine,bossbar,Fire Riders,Crazy Traps" + " Character:Choose" + " Crown:crown of life" + " Weapon:carbine" + " Seed:30946" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut" + " Character:Choose" + " Crown:Pain" + " Weapon:lightningflak" + " Seed:6951" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Chips,Carbine,bossbar,Fire Riders,Crazy Traps" + " Character:Choose" + " Crown:crown of life" + " Weapon:carbine" + " Seed:30946",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut" + " Character:Choose" + " Crown:Pain" + " Weapon:lightningflak" + " Seed:6951",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -538,7 +1383,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of life");
+name = string_trim("Pain");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
