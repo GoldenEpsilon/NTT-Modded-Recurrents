@@ -1,1 +1,1 @@
-Mods:Auto Flame Crossbow,Chest Bandits,Clasweps,Druid,Chrononaut Character:Choose Crown:Pain Weapon:lightningflak Seed:6951 Date:;2019-09-15;
+Mods:Bandit,Assault Flak Cannon,Drama Kill,Chips,Cosmi Gun Enemies Character:Choose Crown:crown of curses Weapon:Assault Flak Cannon Seed:15998 Date:;2019-09-16;
