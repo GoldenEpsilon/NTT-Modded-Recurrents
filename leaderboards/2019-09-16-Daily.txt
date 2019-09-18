@@ -1,0 +1,1 @@
+Mods:Bandit,Assault Flak Cannon,Drama Kill,Chips,Cosmi Gun Enemies Character:Choose Crown:crown of curses Weapon:Assault Flak Cannon Seed:15998 Date:;2019-09-16;

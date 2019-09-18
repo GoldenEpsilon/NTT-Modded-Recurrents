@@ -1,1 +1,1 @@
-Mods:Bandit,Assault Flak Cannon,Drama Kill,Chips,Cosmi Gun Enemies Character:Choose Crown:crown of curses Weapon:Assault Flak Cannon Seed:15998 Date:;2019-09-16;
+Mods:Bandit Brute,Some Crowns,Cool Dust,DIO,Boltshard Character:Choose Crown:stamina Weapon:Boltshard Seed:22266 Date:;2019-09-18;
