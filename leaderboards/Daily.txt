@@ -1,1 +1,1 @@
-Mods:Carpocalypse,Champions,Bandit,banditstack,Assault Flak Cannon Character:Choose Crown:crown of destiny Weapon:Assault Flak Cannon Seed:32225 Date:;2019-09-19;
+Mods:Baldi,bow,Freak Arena,Clasweps,Brimthrone Character:Choose Crown:slots Weapon:chargedisc Seed:13333 Date:;2019-09-21;
