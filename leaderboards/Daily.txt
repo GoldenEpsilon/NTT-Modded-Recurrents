@@ -1,1 +1,1 @@
-Mods:Baldi,bow,Freak Arena,Clasweps,Brimthrone Character:Choose Crown:slots Weapon:chargedisc Seed:13333 Date:;2019-09-21;
+Mods:Challenge Mode,Double Time,Bioluminary Oscillator,Crypt Of The Necrodancer,Director Character:Choose Crown:crown of protection Weapon:Bioluminary Oscillator Seed:6340 Date:;2019-09-22;
