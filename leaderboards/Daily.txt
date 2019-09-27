@@ -1,1 +1,1 @@
-Mods:DIO,Cool Dust,Big Bandit,Bioluminary Oscillator,Cycle Character:Choose Crown:crown of hatred Weapon:Bioluminary Oscillator Seed:12920 Date:;2019-09-26;
+Mods:Detailer,Death Pit,!ARMAGGEDNN,Champions,Elite Turrets Character:Choose Crown:deathpit Weapon:Inspector Sword Seed:28962 Date:;2019-09-27;
