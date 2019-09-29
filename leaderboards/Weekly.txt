@@ -1,1 +1,1 @@
-Mods:Charge Template 2,Dumb Shells,Big Dog Snipers,Cool Dark,Dasher Character:dasher Crown:crown of death Weapon:charge_template Seed:9144 Date:;2019-09-22;
+Mods:Afterburn,Cursed Hyper Crystal,C Ultras,bossbar,Beamer Character:rebel Crown:crown of death Weapon:Beamer Seed:2748 Date:;2019-09-29;

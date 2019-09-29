@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Buff#  Beamer#  C Ultras#  Dasher x10#  Boltshard#@bCharacter@w=#  Choose#@yCrown@w=#  crown of guns#@gWeapon@w=#  smartgun#@pSeed@w=16353#Limited Tries:false*/
-/*|Buff[Buffs to various weapons,#ultras, mutations,#and more]|Beamer[BZAAAAAP]|C Ultras[Adds a C ultra to all#the vanilla characters]|Dasher x10[@qEXTREME DASHING]|Boltshard[If looking cool was good at killing,#this would one-shot the throne.]*/
+/*@rMods@w=#  Double Pop Gun#  Cosmi Gun Enemies#  Cool Shadows#  C Ultras#  Bullet Time#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  double_pop_gun#@pSeed@w=18464#Limited Tries:false*/
+/*|Double Pop Gun[Now you can tickle enemies#twice as fast!]|Cosmi Gun Enemies[RUN THEY HAVE REAL GUNS]|Cool Shadows[WHAT IS IT?#IT'S FOLLOWING MY EVERY MOVE!]|C Ultras[Adds a C ultra to all#the vanilla characters]|Bullet Time[The closer you are to bullets#the slower time moves]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 16353;
+global.seed = 18464;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,27 +98,9 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Buff/buff.mod.gml");
-downloadmod("Buff/gunwarrant.mod.gml");
-downloadmod("Buff/hardertokill.mod.gml");
-downloadmod("Buff/heavyauto.wep.gml");
-downloadmod("Buff/heavynadelauncher.wep.gml");
-downloadmod("Buff/hyperrifle.wep.gml");
-downloadmod("Buff/luckyshot.skill.gml");
-downloadmod("Buff/projectilestyle.mod.gml");
-downloadmod("Buff/rogueultras.mod.gml");
-downloadmod("Buff/sharpteeth.skill.gml");
-downloadmod("Buff/smartgun.wep.gml");
-downloadmod("Buff/steroidsultras.mod.gml");
-downloadmod("Buff/teleport.mod.gml");
-downloadmod("Buff/waterboost.mod.gml");
-downloadmod("beamer/beamer.wep.gml");
-downloadmod("beamer/mskBeam.png");
-downloadmod("beamer/sprBeam.png");
-downloadmod("beamer/sprBeamCharge.png");
-downloadmod("beamer/sprBeamEnd.png");
-downloadmod("beamer/sprBeamer.png");
-downloadmod("beamer/sprBeamStart.png");
+downloadmod("double_pop_gun.wep.gml");
+downloadmod("CosmiGunEnemies.mod.gml");
+downloadmod("coolshadows.mod.gml");
 downloadmod("cultra.mod.gml");
 downloadmod("C Ultras/crystal.skill.gml");
 downloadmod("C Ultras/eyes.skill.gml");
@@ -138,23 +120,10 @@ downloadmod("C Ultras/plantc.png");
 downloadmod("C Ultras/plantcicon.png");
 downloadmod("C Ultras/yvc.png");
 downloadmod("C Ultras/yvcicon.png");
-downloadmod("dasherx10.race.gml");
-downloadmod("Boltshard.wep.gml");
-wait mod_load(string_trim("data/Daily.mod/Buff/buff.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/gunwarrant.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/hardertokill.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/heavyauto.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/heavynadelauncher.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/hyperrifle.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/luckyshot.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/projectilestyle.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/rogueultras.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/sharpteeth.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/smartgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/steroidsultras.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/teleport.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Buff/waterboost.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/beamer/beamer.wep.gml"));
+downloadmod("bullettime.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/double_pop_gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/CosmiGunEnemies.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/coolshadows.mod.gml"));
 wait mod_load(string_trim("data/Daily.mod/cultra.mod.gml"));
 wait mod_load(string_trim("data/Daily.mod/C Ultras/crystal.skill.gml"));
 wait mod_load(string_trim("data/Daily.mod/C Ultras/eyes.skill.gml"));
@@ -162,8 +131,7 @@ wait mod_load(string_trim("data/Daily.mod/C Ultras/fish.skill.gml"));
 wait mod_load(string_trim("data/Daily.mod/C Ultras/melting.skill.gml"));
 wait mod_load(string_trim("data/Daily.mod/C Ultras/plant.skill.gml"));
 wait mod_load(string_trim("data/Daily.mod/C Ultras/yv.skill.gml"));
-wait mod_load(string_trim("data/Daily.mod/dasherx10.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Boltshard.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/bullettime.mod.gml"));
 
 
 global.ModNames = "";
@@ -192,11 +160,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Buff,Beamer,C Ultras,Dasher x10,Boltshard");
+trace("Mods=Double Pop Gun,Cosmi Gun Enemies,Cool Shadows,C Ultras,Bullet Time");
 trace("Character:Choose");
-trace("Crown:crown of guns");
-trace("Weapon:smartgun");
-trace("Seed:16353");
+trace("Crown:none");
+trace("Weapon:double_pop_gun");
+trace("Seed:18464");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -341,7 +309,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("smartgun"));
+		give_wep(string_trim("double_pop_gun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -396,16 +364,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Buff,Beamer,C Ultras,Dasher x10,Boltshard" + " Character:Choose" + " Crown:crown of guns" + " Weapon:smartgun" + " Seed:16353";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Double Pop Gun,Cosmi Gun Enemies,Cool Shadows,C Ultras,Bullet Time" + " Character:Choose" + " Crown:none" + " Weapon:double_pop_gun" + " Seed:18464";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-09-28 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-09-28 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-09-28 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-09-28 Daily.txt");
+	if(file_exists(global.alias + " 2019-09-29 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-09-29 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-09-29 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-09-29 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-09-28 Daily.txt");
+		string_save(score, global.alias + " 2019-09-29 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -432,10 +400,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Buff,Beamer,C Ultras,Dasher x10,Boltshard" + " Character:Choose" + " Crown:crown of guns" + " Weapon:smartgun" + " Seed:16353" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Double Pop Gun,Cosmi Gun Enemies,Cool Shadows,C Ultras,Bullet Time" + " Character:Choose" + " Crown:none" + " Weapon:double_pop_gun" + " Seed:18464" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Buff,Beamer,C Ultras,Dasher x10,Boltshard" + " Character:Choose" + " Crown:crown of guns" + " Weapon:smartgun" + " Seed:16353",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Double Pop Gun,Cosmi Gun Enemies,Cool Shadows,C Ultras,Bullet Time" + " Character:Choose" + " Crown:none" + " Weapon:double_pop_gun" + " Seed:18464",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -594,7 +562,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of guns");
+name = string_trim("none");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
