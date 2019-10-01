@@ -1,1 +1,1 @@
-Mods:Double Pop Gun,Brimthrone,Dummy,Chips,Bigger Bandit Character:Choose Crown:crown of curses Weapon:double_pop_gun Seed:5247 Date:;2019-09-30;
+Mods:Assault Flak Cannon,Elite Dasher,Double Plasma Minigun,Drop Me Gun,Bullet Time Character:Choose Crown:crown of curses Weapon:doubleplasma Seed:10923 Date:;2019-10-01;
