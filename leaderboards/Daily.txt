@@ -1,1 +1,1 @@
-Mods:Druid,Drop Me Gun,Cursed Hyper Crystal,Freak Arena,Cool Shadows Character:Choose Crown:none Weapon:splinter pistol Seed:7998 Date:;2019-10-04;
+Mods:Cool Flame,Charge Template,Damage Numbers,Bullet Time,Cannoner Character:Choose Crown:crown of hatred Weapon:cannoner Seed:22670 Date:;2019-10-05;
