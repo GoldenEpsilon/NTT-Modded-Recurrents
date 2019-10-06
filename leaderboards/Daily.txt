@@ -1,2 +1,1 @@
-Mods:Cool Flame,Charge Template,Damage Numbers,Bullet Time,Cannoner Character:Choose Crown:crown of hatred Weapon:cannoner Seed:22670 Date:;2019-10-05;
-|Luigi_Magi:a: Area 1-3 L0 Kills: 70 Character: melting |Luigi_Magi:a: Area 7-3 L0 Kills: 208 Character: rogue 
+Mods:Chaos Guns,CoD Proper,blstorm,Cool Shadows,brad Character:Choose Crown:crown of protection Weapon:Hyper Chaos Minigun Seed:11089 Date:;2019-10-06;

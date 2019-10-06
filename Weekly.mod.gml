@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Afterburn#  Cursed Hyper Crystal#  C Ultras#  bossbar#  Beamer#@bCharacter@w=#  rebel#@yCrown@w=#  crown of death#@gWeapon@w=#  Beamer#@pSeed@w=2748#Limited Tries:false*/
-/*|Afterburn[Massively Buffs Flames]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|C Ultras[Adds a C ultra to all#the vanilla characters]|bossbar[For when you want to know#just how close you were to looping]|Beamer[BZAAAAAP]*/
+/*@rMods@w=#  Ascension 15#  bosshudredux#  Cool Dust#  blstorm#  Airhorn#@bCharacter@w=#  eyes#@yCrown@w=#  crown of destiny#@gWeapon@w=#  blstorm#@pSeed@w=13549#Limited Tries:false*/
+/*|Ascension 15[@qASCENSION LEVEL#@q15/15]|bosshudredux[For knowing how bad your weapons are,#every once in a while]|Cool Dust[It's not just dust, it's#COOL DUST]|blstorm[BLEED YOURSELF DRY]|Airhorn[Ever wanted to use the airhorn with every character?##Now you can!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 2748;
+global.seed = 13549;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "rebel";
+global.Race = "eyes";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,46 +98,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("afterburn.mod.gml");
-downloadmod("cursedhypercrystal.mod.gml");
-downloadmod("cultra.mod.gml");
-downloadmod("C Ultras/crystal.skill.gml");
-downloadmod("C Ultras/eyes.skill.gml");
-downloadmod("C Ultras/fish.skill.gml");
-downloadmod("C Ultras/melting.skill.gml");
-downloadmod("C Ultras/plant.skill.gml");
-downloadmod("C Ultras/yv.skill.gml");
-downloadmod("C Ultras/crystalc.png");
-downloadmod("C Ultras/crystalcicon.png");
-downloadmod("C Ultras/eyesc.png");
-downloadmod("C Ultras/eyescicon.png");
-downloadmod("C Ultras/FishC.png");
-downloadmod("C Ultras/FishCicon.png");
-downloadmod("C Ultras/MeltingC.png");
-downloadmod("C Ultras/MeltingCicon.png");
-downloadmod("C Ultras/plantc.png");
-downloadmod("C Ultras/plantcicon.png");
-downloadmod("C Ultras/yvc.png");
-downloadmod("C Ultras/yvcicon.png");
-downloadmod("bossbar.mod.gml");
-downloadmod("beamer/beamer.wep.gml");
-downloadmod("beamer/mskBeam.png");
-downloadmod("beamer/sprBeam.png");
-downloadmod("beamer/sprBeamCharge.png");
-downloadmod("beamer/sprBeamEnd.png");
-downloadmod("beamer/sprBeamer.png");
-downloadmod("beamer/sprBeamStart.png");
-wait mod_load(string_trim("data/Weekly.mod/afterburn.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cursedhypercrystal.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cultra.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/crystal.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/eyes.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/fish.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/melting.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/plant.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/C Ultras/yv.skill.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bossbar.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/beamer/beamer.wep.gml"));
+downloadmod("ascension15.mod.gml");
+downloadmod("bosshudredux.mod.gml");
+downloadmod("cooldust.mod.gml");
+downloadmod("blstorm.wep.gml");
+downloadmod("airhorn.wep.gml");
+wait mod_load(string_trim("data/Weekly.mod/ascension15.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bosshudredux.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cooldust.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blstorm.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/airhorn.wep.gml"));
 
 
 global.ModNames = "";
@@ -166,11 +136,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Afterburn,Cursed Hyper Crystal,C Ultras,bossbar,Beamer");
-trace("Character:rebel");
-trace("Crown:crown of death");
-trace("Weapon:Beamer");
-trace("Seed:2748");
+trace("Mods=Ascension 15,bosshudredux,Cool Dust,blstorm,Airhorn");
+trace("Character:eyes");
+trace("Crown:crown of destiny");
+trace("Weapon:blstorm");
+trace("Seed:13549");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -315,7 +285,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Beamer"));
+		give_wep(string_trim("blstorm"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -336,7 +306,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="rebel";
+			race="eyes";
 		}
 	}
 }
@@ -351,9 +321,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("rebel")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("eyes")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("rebel"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("eyes"))){
 					instance_destroy();
 				}
 				exit;
@@ -370,16 +340,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Afterburn,Cursed Hyper Crystal,C Ultras,bossbar,Beamer" + " Character:rebel" + " Crown:crown of death" + " Weapon:Beamer" + " Seed:2748";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Ascension 15,bosshudredux,Cool Dust,blstorm,Airhorn" + " Character:eyes" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:13549";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-09-29 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-09-29 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-09-29 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-09-29 Weekly.txt");
+	if(file_exists(global.alias + " 2019-10-06 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-10-06 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-10-06 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-10-06 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-09-29 Weekly.txt");
+		string_save(score, global.alias + " 2019-10-06 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -406,10 +376,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Afterburn,Cursed Hyper Crystal,C Ultras,bossbar,Beamer" + " Character:rebel" + " Crown:crown of death" + " Weapon:Beamer" + " Seed:2748" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Ascension 15,bosshudredux,Cool Dust,blstorm,Airhorn" + " Character:eyes" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:13549" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Afterburn,Cursed Hyper Crystal,C Ultras,bossbar,Beamer" + " Character:rebel" + " Crown:crown of death" + " Weapon:Beamer" + " Seed:2748",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Ascension 15,bosshudredux,Cool Dust,blstorm,Airhorn" + " Character:eyes" + " Crown:crown of destiny" + " Weapon:blstorm" + " Seed:13549",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -559,7 +529,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("rebel");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("eyes");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -568,7 +538,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of death");
+name = string_trim("crown of destiny");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
