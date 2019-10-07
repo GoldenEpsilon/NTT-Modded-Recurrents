@@ -1,1 +1,1 @@
-Mods:Chaos Guns,CoD Proper,blstorm,Cool Shadows,brad Character:Choose Crown:crown of protection Weapon:Hyper Chaos Minigun Seed:11089 Date:;2019-10-06;
+Mods:Fire Riders,Double Pop Gun,Cosmi,Blood,basicgunallies Character:Choose Crown:crown of love Weapon:double_pop_gun Seed:6493 Date:;2019-10-07;
