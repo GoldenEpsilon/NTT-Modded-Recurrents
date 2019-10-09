@@ -1,1 +1,1 @@
-Mods:Ascension 10,blackholes,Some Crowns,Death Pit,Crazy Allies Character:Choose Crown:carnage Weapon:ultra shovel Seed:14801 Date:;2019-10-08;
+Mods:Cycle,Ascension 7,Dogfly,Blindness,Elite Rifle Character:Choose Crown:crown of guns Weapon:eliterifle Seed:8760 Date:;2019-10-09;
