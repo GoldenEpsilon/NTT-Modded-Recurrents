@@ -1,1 +1,1 @@
-Mods:Cycle,Ascension 7,Dogfly,Blindness,Elite Rifle Character:Choose Crown:crown of guns Weapon:eliterifle Seed:8760 Date:;2019-10-09;
+Mods:basicgunallies,Armageddon Cannon,Grappler,Adjustable Ammo,Elite Gamers Character:Choose Crown:crown of curses Weapon:Armageddon Cannon Seed:22079 Date:;2019-10-10;
