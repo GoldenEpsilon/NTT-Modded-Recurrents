@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Bear#  blaac48#  Cosmi Gun Enemies#  Croc Man#  DIO#@bCharacter@w=#  Choose#@yCrown@w=#  crown of life#@gWeapon@w=#  A Fucking Gun#@pSeed@w=15124#Limited Tries:false*/
-/*|Bear[4 da meeeeeeeeee#eeeeemez]|blaac48[The jungle is deeper]|Cosmi Gun Enemies[RUN THEY HAVE REAL GUNS]|Croc Man[From what I can tell you either#don't take damage from anything or#you die instantly because of that passive.]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]*/
+/*@rMods@w=#  Big Toothbrush#  Adjustable Ammo#  Elite Turrets 2#  Elite Minigun#  Dumb Shells#@bCharacter@w=#  Choose#@yCrown@w=#  crown of protection#@gWeapon@w=#  Big Toothbrush#@pSeed@w=31171#Limited Tries:false*/
+/*|Big Toothbrush[a big toothbrush for big mouths]|Adjustable Ammo[Push the limits#of ammo storage!]|Elite Turrets 2[Electric Boogaloo.#(affects Labs turrets)]|Elite Minigun[Man, it feels nice#using their own guns on them.]|Dumb Shells[And on that dumbshell,#it's time to start.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 15124;
+global.seed = 31171;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,63 +98,17 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bear/bear.race.gml");
-downloadmod("bear/beargun.wep.gml");
-downloadmod("bear/a fucking gun.png");
-downloadmod("bear/bear (1).png");
-downloadmod("bear/bearhurt.png");
-downloadmod("bear/bearidle.png");
-downloadmod("blaac48.area.gml");
-downloadmod("CosmiGunEnemies.mod.gml");
-downloadmod("Croc_Man/crocman.race.gml");
-downloadmod("Croc_Man/Walk.png");
-downloadmod("Croc_Man/Ultras.png");
-downloadmod("Croc_Man/Teleport.png");
-downloadmod("Croc_Man/Teleport.ogg");
-downloadmod("Croc_Man/Select.png");
-downloadmod("Croc_Man/Radial.png");
-downloadmod("Croc_Man/Portrait.png");
-downloadmod("Croc_Man/Map.png");
-downloadmod("Croc_Man/Idle.png");
-downloadmod("Croc_Man/Hurt.png");
-downloadmod("Croc_Man/CrushHit.ogg");
-downloadmod("Croc_Man/Ankh.png");
-downloadmod("Croc_Man/Ankh.ogg");
-downloadmod("DIO/DIO.race.gml");
-downloadmod("DIO/walk.png");
-downloadmod("DIO/sprUltras.png");
-downloadmod("DIO/sprTheWorld.png");
-downloadmod("DIO/sprSelect.png");
-downloadmod("DIO/sprPortrait.png");
-downloadmod("DIO/sprMuda.png");
-downloadmod("DIO/sprKnife.png");
-downloadmod("DIO/sprFist.png");
-downloadmod("DIO/sprArm.png");
-downloadmod("DIO/sndWry.ogg");
-downloadmod("DIO/sndWrld.ogg");
-downloadmod("DIO/sndStopTime.ogg");
-downloadmod("DIO/sndStand.ogg");
-downloadmod("DIO/sndRoadRoller.ogg");
-downloadmod("DIO/sndPunchUpgEnd.ogg");
-downloadmod("DIO/sndPunchUpg.ogg");
-downloadmod("DIO/sndPunch.ogg");
-downloadmod("DIO/sndLowH.ogg");
-downloadmod("DIO/sndLowA.ogg");
-downloadmod("DIO/sndLow.ogg");
-downloadmod("DIO/sndKnives.ogg");
-downloadmod("DIO/sndHurt.ogg");
-downloadmod("DIO/sndFreeze.ogg");
-downloadmod("DIO/sndDie.ogg");
-downloadmod("DIO/map.png");
-downloadmod("DIO/idle.png");
-downloadmod("DIO/hurt.png");
-downloadmod("DIO/dead.png");
-wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/blaac48.area.gml"));
-wait mod_load(string_trim("data/Daily.mod/CosmiGunEnemies.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Croc_Man/crocman.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/DIO/DIO.race.gml"));
+downloadmod("Big Toothbrush/Big Toothbrush.wep.gml");
+downloadmod("Big Toothbrush/Big Toothbrush.png");
+downloadmod("Adjustable Ammo.mod.gml");
+downloadmod("EliteTurret2.mod.gml");
+downloadmod("elitemini.wep.gml");
+downloadmod("dumbshells.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Adjustable Ammo.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/elitemini.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/dumbshells.mod.gml"));
 
 
 global.ModNames = "";
@@ -183,11 +137,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Bear,blaac48,Cosmi Gun Enemies,Croc Man,DIO");
+trace("Mods=Big Toothbrush,Adjustable Ammo,Elite Turrets 2,Elite Minigun,Dumb Shells");
 trace("Character:Choose");
-trace("Crown:crown of life");
-trace("Weapon:A Fucking Gun");
-trace("Seed:15124");
+trace("Crown:crown of protection");
+trace("Weapon:Big Toothbrush");
+trace("Seed:31171");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -332,7 +286,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("A Fucking Gun"));
+		give_wep(string_trim("Big Toothbrush"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -387,16 +341,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bear,blaac48,Cosmi Gun Enemies,Croc Man,DIO" + " Character:Choose" + " Crown:crown of life" + " Weapon:A Fucking Gun" + " Seed:15124";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Big Toothbrush,Adjustable Ammo,Elite Turrets 2,Elite Minigun,Dumb Shells" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:31171";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-10-12 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-10-12 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-10-12 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-10-12 Daily.txt");
+	if(file_exists(global.alias + " 2019-10-13 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-10-13 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-10-13 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-10-13 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-10-12 Daily.txt");
+		string_save(score, global.alias + " 2019-10-13 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -423,10 +377,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Bear,blaac48,Cosmi Gun Enemies,Croc Man,DIO" + " Character:Choose" + " Crown:crown of life" + " Weapon:A Fucking Gun" + " Seed:15124" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Big Toothbrush,Adjustable Ammo,Elite Turrets 2,Elite Minigun,Dumb Shells" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:31171" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Bear,blaac48,Cosmi Gun Enemies,Croc Man,DIO" + " Character:Choose" + " Crown:crown of life" + " Weapon:A Fucking Gun" + " Seed:15124",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Big Toothbrush,Adjustable Ammo,Elite Turrets 2,Elite Minigun,Dumb Shells" + " Character:Choose" + " Crown:crown of protection" + " Weapon:Big Toothbrush" + " Seed:31171",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -585,7 +539,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of life");
+name = string_trim("crown of protection");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

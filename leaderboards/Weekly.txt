@@ -1,1 +1,1 @@
-Mods:Ascension 15,bosshudredux,Cool Dust,blstorm,Airhorn Character:eyes Crown:crown of destiny Weapon:blstorm Seed:13549 Date:;2019-10-06;
+Mods:Colored Projectiles,Freak Arena,Cricket,Car,Bomber Character:Car Crown:crown of curses Weapon:Cricket Seed:22641 Date:;2019-10-13;
