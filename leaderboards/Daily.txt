@@ -1,1 +1,1 @@
-Mods:Big Toothbrush,Adjustable Ammo,Elite Turrets 2,Elite Minigun,Dumb Shells Character:Choose Crown:crown of protection Weapon:Big Toothbrush Seed:31171 Date:;2019-10-13;
+Mods:Belly,Cool Dust,Airhorn,Blaac's Weapon Mutations,Grappler Character:Choose Crown:crown of guns Weapon:Airhorn Seed:1426 Date:;2019-10-14;
