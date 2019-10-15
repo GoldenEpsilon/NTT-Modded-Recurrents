@@ -1,1 +1,1 @@
-Mods:Belly,Cool Dust,Airhorn,Blaac's Weapon Mutations,Grappler Character:Choose Crown:crown of guns Weapon:Airhorn Seed:1426 Date:;2019-10-14;
+Mods:bouncybolts,Cycle,Ash,Grappler,Death Pit Character:Choose Crown:deathpit Weapon:golden disc gun Seed:18592 Date:;2019-10-15;
