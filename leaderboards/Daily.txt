@@ -1,1 +1,1 @@
-Mods:Ash,Bandit Brute,Blood,CoDeath,Cool Hud Character:Choose Crown:CoDeath Weapon:sentry gun Seed:27103 Date:;2019-10-17;
+Mods:Crazy Bandits,Colored Projectiles,Brimthrone,Elite Minigun,Baller Character:Choose Crown:crown of blood Weapon:brimthrone Seed:9036 Date:;2019-10-18;
