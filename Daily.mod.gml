@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bouncybolts#  Detonator B#  Derpweps#  AllSkills#  Afterburn#@bCharacter@w=#  Choose#@yCrown@w=#  crown of curses#@gWeapon@w=#  thebolt#@pSeed@w=6689#Limited Tries:false*/
-/*|bouncybolts[Upgrade to Bolt Marrow]|Detonator B[Alternate version, where#active blows up#your bullets anywhere]|Derpweps[Derrrrrrrrrrrp]|AllSkills[Congratulations!#You just got the perfect#mutation set.]|Afterburn[Massively Buffs Flames]*/
+/*@rMods@w=#  Disk Marrow#  DIO#  Belly#  6 Weapons#  Cool Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of guns#@gWeapon@w=#  blood cannon#@pSeed@w=32528#Limited Tries:false*/
+/*|Disk Marrow[Now discs are counted as a bolt weapon#for bolt marrow to help!#It doesn't save you from stupidity, though.]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]|Belly[The only survivor of the#meme that is melee actives]|6 Weapons[Gives you one weapon slot#for each ammo type like DOOM]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 6689;
+global.seed = 32528;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,53 +98,56 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bouncybolts.mod.gml");
-downloadmod("detonatorb.race.gml");
-downloadmod("Derpweps/thesuperdiscbolt.wep.gml");
-downloadmod("Derpweps/thesuperbolt.wep.gml");
-downloadmod("Derpweps/thespraybolt.wep.gml");
-downloadmod("Derpweps/thediscbolt.wep.gml");
-downloadmod("Derpweps/thebolt.wep.gml");
-downloadmod("Derpweps/superplasmasnake.wep.gml");
-downloadmod("Derpweps/superlasersnake.wep.gml");
-downloadmod("Derpweps/supergrenadesnake.wep.gml");
-downloadmod("Derpweps/superflamesnake.wep.gml");
-downloadmod("Derpweps/plasmasnake.wep.gml");
-downloadmod("Derpweps/lasersnake.wep.gml");
-downloadmod("Derpweps/grenadesnake.wep.gml");
-downloadmod("Derpweps/flamesnake.wep.gml");
-downloadmod("Derpweps/thesuperdiscbolt.png");
-downloadmod("Derpweps/thesuperbolt.png");
-downloadmod("Derpweps/thespraybolt.png");
-downloadmod("Derpweps/thediscbolt.png");
-downloadmod("Derpweps/thebolt.png");
-downloadmod("Derpweps/superplasmasnake.png");
-downloadmod("Derpweps/superlasersnake.png");
-downloadmod("Derpweps/supergrenadesnake.png");
-downloadmod("Derpweps/superflamesnake.png");
-downloadmod("Derpweps/plasmasnake.png");
-downloadmod("Derpweps/lasersnake.png");
-downloadmod("Derpweps/grenadesnake.png");
-downloadmod("Derpweps/flamesnake.png");
-downloadmod("allskills.mod.gml");
-downloadmod("afterburn.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/bouncybolts.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/detonatorb.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/thesuperdiscbolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/thesuperbolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/thespraybolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/thediscbolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/thebolt.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/superplasmasnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/superlasersnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/supergrenadesnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/superflamesnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/plasmasnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/lasersnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/grenadesnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Derpweps/flamesnake.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/allskills.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/afterburn.mod.gml"));
+downloadmod("discmarrow.mod.gml");
+downloadmod("DIO/DIO.race.gml");
+downloadmod("DIO/walk.png");
+downloadmod("DIO/sprUltras.png");
+downloadmod("DIO/sprTheWorld.png");
+downloadmod("DIO/sprSelect.png");
+downloadmod("DIO/sprPortrait.png");
+downloadmod("DIO/sprMuda.png");
+downloadmod("DIO/sprKnife.png");
+downloadmod("DIO/sprFist.png");
+downloadmod("DIO/sprArm.png");
+downloadmod("DIO/sndWry.ogg");
+downloadmod("DIO/sndWrld.ogg");
+downloadmod("DIO/sndStopTime.ogg");
+downloadmod("DIO/sndStand.ogg");
+downloadmod("DIO/sndRoadRoller.ogg");
+downloadmod("DIO/sndPunchUpgEnd.ogg");
+downloadmod("DIO/sndPunchUpg.ogg");
+downloadmod("DIO/sndPunch.ogg");
+downloadmod("DIO/sndLowH.ogg");
+downloadmod("DIO/sndLowA.ogg");
+downloadmod("DIO/sndLow.ogg");
+downloadmod("DIO/sndKnives.ogg");
+downloadmod("DIO/sndHurt.ogg");
+downloadmod("DIO/sndFreeze.ogg");
+downloadmod("DIO/sndDie.ogg");
+downloadmod("DIO/map.png");
+downloadmod("DIO/idle.png");
+downloadmod("DIO/hurt.png");
+downloadmod("DIO/dead.png");
+downloadmod("belly/belly.race.gml");
+downloadmod("belly/sndBellyChst.ogg");
+downloadmod("belly/sndBellyCnfm.ogg");
+downloadmod("belly/sndBellyCrwn.ogg");
+downloadmod("belly/sndBellyDead.ogg");
+downloadmod("belly/sndBellyHurt.ogg");
+downloadmod("belly/sndBellyIDPD.ogg");
+downloadmod("belly/sndBellyLowA.ogg");
+downloadmod("belly/sndBellyLowH.ogg");
+downloadmod("belly/sndBellySlct.ogg");
+downloadmod("belly/sndBellySpch.ogg");
+downloadmod("belly/sndBellyValt.ogg");
+downloadmod("belly/sndBellyWrld.ogg");
+downloadmod("6weapons.mod.gml");
+downloadmod("cooltrails.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/discmarrow.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/DIO/DIO.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/belly/belly.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/6weapons.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
 
 
 global.ModNames = "";
@@ -173,11 +176,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=bouncybolts,Detonator B,Derpweps,AllSkills,Afterburn");
+trace("Mods=Disk Marrow,DIO,Belly,6 Weapons,Cool Trails");
 trace("Character:Choose");
-trace("Crown:crown of curses");
-trace("Weapon:thebolt");
-trace("Seed:6689");
+trace("Crown:crown of guns");
+trace("Weapon:blood cannon");
+trace("Seed:32528");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -322,7 +325,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("thebolt"));
+		give_wep(string_trim("blood cannon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -377,16 +380,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bouncybolts,Detonator B,Derpweps,AllSkills,Afterburn" + " Character:Choose" + " Crown:crown of curses" + " Weapon:thebolt" + " Seed:6689";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Disk Marrow,DIO,Belly,6 Weapons,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:blood cannon" + " Seed:32528";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-10-19 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-10-19 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-10-19 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-10-19 Daily.txt");
+	if(file_exists(global.alias + " 2019-10-20 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-10-20 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-10-20 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-10-20 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-10-19 Daily.txt");
+		string_save(score, global.alias + " 2019-10-20 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -413,10 +416,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bouncybolts,Detonator B,Derpweps,AllSkills,Afterburn" + " Character:Choose" + " Crown:crown of curses" + " Weapon:thebolt" + " Seed:6689" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Disk Marrow,DIO,Belly,6 Weapons,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:blood cannon" + " Seed:32528" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bouncybolts,Detonator B,Derpweps,AllSkills,Afterburn" + " Character:Choose" + " Crown:crown of curses" + " Weapon:thebolt" + " Seed:6689",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Disk Marrow,DIO,Belly,6 Weapons,Cool Trails" + " Character:Choose" + " Crown:crown of guns" + " Weapon:blood cannon" + " Seed:32528",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -575,7 +578,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of curses");
+name = string_trim("crown of guns");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

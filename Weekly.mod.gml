@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Colored Projectiles#  Freak Arena#  Cricket#  Car#  Bomber#@bCharacter@w=#  Car#@yCrown@w=#  crown of curses#@gWeapon@w=#  Cricket#@pSeed@w=22641#Limited Tries:false*/
-/*|Colored Projectiles[Colors projectiles based on team color]|Freak Arena[Do you think you can survive#in the @qFREAK ARENA???]|Cricket[Batter up!#...or whatever they say for cricket.]|Car[Ever wanted to play#as a flying car?#No? TOO BAD!]|Bomber[Bombs?]*/
+/*@rMods@w=#  Crazy Allies#  Baldi#  Cannoner#  Challenge Mode#  Cool Flame#@bCharacter@w=#  Baldi#@yCrown@w=#  crown of haste#@gWeapon@w=#  Baldi/ruler#@pSeed@w=129#Limited Tries:false*/
+/*|Crazy Allies[Changes rebel's active to#spawn allies with weapons,#but you need to be next to a weapon#to be able to use it]|Baldi[Baldi's Basics in Education and Learning#is a state-of-the-art, fully 3D interactive,#fun-time educational game that teaches a slew of subjects!]|Cannoner[EIGHT RADICAL SHOTS]|Challenge Mode[This run's weapons are like a box of chocolates -#you finally find one you like, then you don't have it anymore.]|Cool Flame[Make all those enemies liars!##What do you mean that's#not how that works?]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 22641;
+global.seed = 129;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "Car";
+global.Race = "Baldi";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,64 +98,42 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Colored Projectiles/colored.mod.gml");
-downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBulletHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBolt.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBouncerBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBullet1.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2Disappear.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprBulletHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprEnergyShank.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprEnergySlash.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprFlakBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprFlakHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprFlameBall.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprGreenExplosion.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprGrenade.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBolt.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBulletHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyEnergySlash.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyNade.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlug.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugDisappear.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprLaser.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprLaserEnd.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprLaserStart.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprLightning.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprMininade.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprNuke.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBall.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallBig.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallHuge.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaImpact.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaTrail.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprRocket.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprSlugBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprSlugDisappear.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprSlugHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprStickyGrenade.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprToxicBolt.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBolt.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBoltTrail.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBullet.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBulletHit.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraGrenade.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraShell.png");
-downloadmod("Colored Projectiles/coloredprojectiles/sprUltraSlash.png");
-downloadmod("freakarena_daily.mod.gml");
-downloadmod("cricket/Cricket.wep.gml");
-downloadmod("cricket/sprCricket.png");
-downloadmod("Car.race.gml");
-downloadmod("bomber.race.gml");
-wait mod_load(string_trim("data/Weekly.mod/Colored Projectiles/colored.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/freakarena_daily.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cricket/Cricket.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Car.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bomber.race.gml"));
+downloadmod("crazyallies.mod.gml");
+downloadmod("Baldi/baldi.race.gml");
+downloadmod("Baldi/ruler.wep.gml");
+downloadmod("Baldi/ultraruler.wep.gml");
+downloadmod("Baldi/aha.ogg");
+downloadmod("Baldi/baldi.png");
+downloadmod("Baldi/dead.png");
+downloadmod("Baldi/goodjob.ogg");
+downloadmod("Baldi/GoSit.png");
+downloadmod("Baldi/hurt.png");
+downloadmod("Baldi/mapicon.png");
+downloadmod("Baldi/nothing.ogg");
+downloadmod("Baldi/nothing.png");
+downloadmod("Baldi/Portrait.png");
+downloadmod("Baldi/reee.ogg");
+downloadmod("Baldi/ruler.png");
+downloadmod("Baldi/select.ogg");
+downloadmod("Baldi/select.png");
+downloadmod("Baldi/sit.png");
+downloadmod("Baldi/smack.ogg");
+downloadmod("Baldi/sprMapIcon.png");
+downloadmod("Baldi/ultraa.png");
+downloadmod("Baldi/ultrab.png");
+downloadmod("Baldi/ultraruler.png");
+downloadmod("Baldi/ultras.png");
+downloadmod("Baldi/wow.ogg");
+downloadmod("cannoner.wep.gml");
+downloadmod("challengemode.mod.gml");
+downloadmod("coolflame.mod.gml");
+wait mod_load(string_trim("data/Weekly.mod/crazyallies.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Baldi/baldi.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Baldi/ruler.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Baldi/ultraruler.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cannoner.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/challengemode.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/coolflame.mod.gml"));
 
 
 global.ModNames = "";
@@ -184,11 +162,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Colored Projectiles,Freak Arena,Cricket,Car,Bomber");
-trace("Character:Car");
-trace("Crown:crown of curses");
-trace("Weapon:Cricket");
-trace("Seed:22641");
+trace("Mods=Crazy Allies,Baldi,Cannoner,Challenge Mode,Cool Flame");
+trace("Character:Baldi");
+trace("Crown:crown of haste");
+trace("Weapon:Baldi/ruler");
+trace("Seed:129");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -333,7 +311,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Cricket"));
+		give_wep(string_trim("Baldi/ruler"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -354,7 +332,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="Car";
+			race="Baldi";
 		}
 	}
 }
@@ -369,9 +347,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("Car")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("Baldi")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("Car"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("Baldi"))){
 					instance_destroy();
 				}
 				exit;
@@ -388,16 +366,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Colored Projectiles,Freak Arena,Cricket,Car,Bomber" + " Character:Car" + " Crown:crown of curses" + " Weapon:Cricket" + " Seed:22641";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Allies,Baldi,Cannoner,Challenge Mode,Cool Flame" + " Character:Baldi" + " Crown:crown of haste" + " Weapon:Baldi/ruler" + " Seed:129";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-10-13 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-10-13 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-10-13 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-10-13 Weekly.txt");
+	if(file_exists(global.alias + " 2019-10-20 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-10-20 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-10-20 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-10-20 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-10-13 Weekly.txt");
+		string_save(score, global.alias + " 2019-10-20 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -424,10 +402,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Colored Projectiles,Freak Arena,Cricket,Car,Bomber" + " Character:Car" + " Crown:crown of curses" + " Weapon:Cricket" + " Seed:22641" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Crazy Allies,Baldi,Cannoner,Challenge Mode,Cool Flame" + " Character:Baldi" + " Crown:crown of haste" + " Weapon:Baldi/ruler" + " Seed:129" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Colored Projectiles,Freak Arena,Cricket,Car,Bomber" + " Character:Car" + " Crown:crown of curses" + " Weapon:Cricket" + " Seed:22641",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crazy Allies,Baldi,Cannoner,Challenge Mode,Cool Flame" + " Character:Baldi" + " Crown:crown of haste" + " Weapon:Baldi/ruler" + " Seed:129",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -577,7 +555,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("Car");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("Baldi");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -586,7 +564,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of curses");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
