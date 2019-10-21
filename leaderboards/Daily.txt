@@ -1,1 +1,1 @@
-Mods:Disk Marrow,DIO,Belly,6 Weapons,Cool Trails Character:Choose Crown:crown of guns Weapon:blood cannon Seed:32528 Date:;2019-10-20;
+Mods:Big Toothbrush,Egg,Fire Riders,Babylon Shotgun,Bandit Brute Character:Choose Crown:crown of death Weapon:Big Toothbrush Seed:903 Date:;2019-10-21;
