@@ -1,1 +1,1 @@
-Mods:Big Toothbrush,Egg,Fire Riders,Babylon Shotgun,Bandit Brute Character:Choose Crown:crown of death Weapon:Big Toothbrush Seed:903 Date:;2019-10-21;
+Mods:Ancient Hatred,Cool Hud,Bitpack,Cooler Hud,bossbar Character:Choose Crown:crown of ancient hatred Weapon:industrialshankgun Seed:30779 Date:;2019-10-22;
