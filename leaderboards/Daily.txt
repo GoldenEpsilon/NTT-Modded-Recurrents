@@ -1,1 +1,1 @@
-Mods:Discs,Airhorn,bosshudredux,Charge Template,Balls Character:Choose Crown:none Weapon:Disc Rifle Seed:29104 Date:;2019-10-28;
+Mods:Disk Marrow,Cannondemnation,Auto Bullet Shotgun,Camper Boys,Blood Character:Choose Crown:crown of luck Weapon:Auto Bullet Shotgun Seed:20269 Date:;2019-10-29;
