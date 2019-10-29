@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Chips#  brad#  Babylon Shotgun#  Beamer#  Cannondemnation#@bCharacter@w=#  Choose#@yCrown@w=#  crown of risk#@gWeapon@w=#  Babylon Shotgun#@pSeed@w=4345#Limited Tries:false*/
-/*|Chips[Gives you a mutation every time you#beat the Throne or a Hyper Crystal]|brad[Adds Brad from LISA: the Painful RPG]|Babylon Shotgun[So much destruction your enemies will babble-on]|Beamer[BZAAAAAP]|Cannondemnation[DOOM DEATH DESTRUCTION##AND LINKIN PARK]*/
+/*@rMods@w=#  Discs#  Airhorn#  bosshudredux#  Charge Template#  Balls#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Disc Rifle#@pSeed@w=29104#Limited Tries:false*/
+/*|Discs[Because, you know, we need#MORE discs killing us.]|Airhorn[Ever wanted to use the airhorn with every character?##Now you can!]|bosshudredux[For knowing how bad your weapons are,#every once in a while]|Charge Template[Hey, yes this is a#template, but it's#also a cool weapon.]|Balls[Boing. Thwakk. Boing. Boing. Thwakk. CRASH!!!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 4345;
+global.seed = 29104;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,71 +98,80 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("chips.mod.gml");
-downloadmod("brad/brad.mod.gml");
-downloadmod("brad/brad.race.gml");
-downloadmod("brad/nowep.wep.gml");
-downloadmod("brad/dead.ogg");
-downloadmod("brad/dead.png");
-downloadmod("brad/deadb.png");
-downloadmod("brad/get.ogg");
-downloadmod("brad/gun1.png");
-downloadmod("brad/hit.ogg");
-downloadmod("brad/hit.png");
-downloadmod("brad/hitb.png");
-downloadmod("brad/hjerky.png");
-downloadmod("brad/hurt.ogg");
-downloadmod("brad/hurt.png");
-downloadmod("brad/hurtb.png");
-downloadmod("brad/idle.png");
-downloadmod("brad/idleb.png");
-downloadmod("brad/itemframe.png");
-downloadmod("brad/joy.png");
-downloadmod("brad/joypickup.png");
-downloadmod("brad/loadout.png");
-downloadmod("brad/mapicon.png");
-downloadmod("brad/mjerky.png");
-downloadmod("brad/nothing.png");
-downloadmod("brad/pissed.ogg");
-downloadmod("brad/portrait.png");
-downloadmod("brad/rustle.ogg");
-downloadmod("brad/sack.png");
-downloadmod("brad/say.ogg");
-downloadmod("brad/select.ogg");
-downloadmod("brad/select.png");
-downloadmod("brad/text.ogg");
-downloadmod("brad/ultraa.ogg");
-downloadmod("brad/ultraa.png");
-downloadmod("brad/ultrab.ogg");
-downloadmod("brad/ultrab.png");
-downloadmod("brad/ultras.png");
-downloadmod("brad/unknownitem.png");
-downloadmod("brad/use.ogg");
-downloadmod("brad/walk.png");
-downloadmod("brad/walkb.png");
-downloadmod("brad/wep0.png");
-downloadmod("brad/wep1.png");
-downloadmod("brad/wep2.png");
-downloadmod("brad/wep3.png");
-downloadmod("brad/wep4.png");
-downloadmod("brad/wep5.png");
-downloadmod("brad/yell.ogg");
-downloadmod("babylon_shotgun.wep.gml");
-downloadmod("beamer/beamer.wep.gml");
-downloadmod("beamer/mskBeam.png");
-downloadmod("beamer/sprBeam.png");
-downloadmod("beamer/sprBeamCharge.png");
-downloadmod("beamer/sprBeamEnd.png");
-downloadmod("beamer/sprBeamer.png");
-downloadmod("beamer/sprBeamStart.png");
-downloadmod("cannondemnation.wep.gml");
-wait mod_load(string_trim("data/Daily.mod/chips.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/brad/brad.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/brad/brad.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/brad/nowep.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/babylon_shotgun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/beamer/beamer.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/cannondemnation.wep.gml"));
+downloadmod("discs/Toxic Disc Gun.wep.gml");
+downloadmod("discs/Bloody Disc Gun.wep.gml");
+downloadmod("discs/Disc Cannon.wep.gml");
+downloadmod("discs/Disc Gun.wep.gml");
+downloadmod("discs/Disc Launcher.wep.gml");
+downloadmod("discs/Disc Pistol.wep.gml");
+downloadmod("discs/Disc Rifle.wep.gml");
+downloadmod("discs/Disc Shotgun.wep.gml");
+downloadmod("discs/Flame Disc Gun.wep.gml");
+downloadmod("discs/Hyper Disc Gun.wep.gml");
+downloadmod("discs/Lightning Disc Gun.wep.gml");
+downloadmod("discs/Mini Disc Gun.wep.gml");
+downloadmod("discs/Seeker Disc Gun.wep.gml");
+downloadmod("discs/Splinter Gun Disc Gun.wep.gml");
+downloadmod("discs/Smart Disc Gun.wep.gml");
+downloadmod("discs/Disc Tools.mod.gml");
+downloadmod("discs/Disc Skill.skill.gml");
+downloadmod("discs/Big Disc.png");
+downloadmod("discs/Bloody Disc Gun.png");
+downloadmod("discs/Bloody Disc.png");
+downloadmod("discs/Disc Cannon.png");
+downloadmod("discs/Disc Gun.png");
+downloadmod("discs/Disc Launcher.png");
+downloadmod("discs/Disc Rifle.png");
+downloadmod("discs/Disc Shotgun.png");
+downloadmod("discs/Flame Disc Gun.png");
+downloadmod("discs/Flame Disc.png");
+downloadmod("discs/Hyper Disc Gun.png");
+downloadmod("discs/Hyper Disc' Glow.png");
+downloadmod("discs/Hyper Disc' Trail.png");
+downloadmod("discs/Hyper Disc.png");
+downloadmod("discs/Lightning Disc Gun.png");
+downloadmod("discs/Lightning Disc.png");
+downloadmod("discs/Mini Disc Gun.png");
+downloadmod("discs/Mini Disc.png");
+downloadmod("discs/Seeker Disc Gun.png");
+downloadmod("discs/Smart Disc Gun Lock.png");
+downloadmod("discs/Smart Disc Gun.png");
+downloadmod("discs/Smart Disc.png");
+downloadmod("discs/Splinter Gun Disc Gun.png");
+downloadmod("discs/Splinter Gun Disc.png");
+downloadmod("discs/Toxic Disc Gun.png");
+downloadmod("discs/Toxic Disc.png");
+downloadmod("airhorn.wep.gml");
+downloadmod("bosshudredux.mod.gml");
+downloadmod("ct.wep.gml");
+downloadmod("balls/balls.mod.gml");
+downloadmod("balls/laserwrench.wep.gml");
+downloadmod("balls/ball1.ogg");
+downloadmod("balls/ball2.ogg");
+downloadmod("balls/ball3.ogg");
+downloadmod("balls/ball4.ogg");
+wait mod_load(string_trim("data/Daily.mod/discs/Toxic Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Bloody Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Launcher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Pistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Rifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Flame Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Hyper Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Lightning Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Mini Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Seeker Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Splinter Gun Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Smart Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Tools.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Skill.skill.gml"));
+wait mod_load(string_trim("data/Daily.mod/airhorn.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/ct.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/balls/balls.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/balls/laserwrench.wep.gml"));
 
 
 global.ModNames = "";
@@ -191,11 +200,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Chips,brad,Babylon Shotgun,Beamer,Cannondemnation");
+trace("Mods=Discs,Airhorn,bosshudredux,Charge Template,Balls");
 trace("Character:Choose");
-trace("Crown:crown of risk");
-trace("Weapon:Babylon Shotgun");
-trace("Seed:4345");
+trace("Crown:none");
+trace("Weapon:Disc Rifle");
+trace("Seed:29104");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -340,7 +349,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Babylon Shotgun"));
+		give_wep(string_trim("Disc Rifle"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -395,16 +404,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Chips,brad,Babylon Shotgun,Beamer,Cannondemnation" + " Character:Choose" + " Crown:crown of risk" + " Weapon:Babylon Shotgun" + " Seed:4345";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Discs,Airhorn,bosshudredux,Charge Template,Balls" + " Character:Choose" + " Crown:none" + " Weapon:Disc Rifle" + " Seed:29104";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-10-26 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-10-26 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-10-26 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-10-26 Daily.txt");
+	if(file_exists(global.alias + " 2019-10-28 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-10-28 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-10-28 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-10-28 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-10-26 Daily.txt");
+		string_save(score, global.alias + " 2019-10-28 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -431,10 +440,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Chips,brad,Babylon Shotgun,Beamer,Cannondemnation" + " Character:Choose" + " Crown:crown of risk" + " Weapon:Babylon Shotgun" + " Seed:4345" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Discs,Airhorn,bosshudredux,Charge Template,Balls" + " Character:Choose" + " Crown:none" + " Weapon:Disc Rifle" + " Seed:29104" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Chips,brad,Babylon Shotgun,Beamer,Cannondemnation" + " Character:Choose" + " Crown:crown of risk" + " Weapon:Babylon Shotgun" + " Seed:4345",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Discs,Airhorn,bosshudredux,Charge Template,Balls" + " Character:Choose" + " Crown:none" + " Weapon:Disc Rifle" + " Seed:29104",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -593,7 +602,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of risk");
+name = string_trim("none");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
