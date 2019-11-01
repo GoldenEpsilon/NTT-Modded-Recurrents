@@ -1,1 +1,1 @@
-Mods:B,Elite Minigun,C Ultras,Dasher,Ascension 10 Character:Choose Crown:crown of risk Weapon:elitemini Seed:6271 Date:;2019-10-31;
+Mods:Challenge Test,Crazy Allies,Bigger Bandit,Chips,Egg Character:Choose Crown:crown of love Weapon:heavy auto crossbow Seed:20729 Date:;2019-11-01;
