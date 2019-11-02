@@ -1,1 +1,1 @@
-Mods:Challenge Test,Crazy Allies,Bigger Bandit,Chips,Egg Character:Choose Crown:crown of love Weapon:heavy auto crossbow Seed:20729 Date:;2019-11-01;
+Mods:Adjustable Ammo,Beamer,Double Time,Afterburn,Challenge Test Character:Choose Crown:crown of blood Weapon:Beamer Seed:4955 Date:;2019-11-02;
