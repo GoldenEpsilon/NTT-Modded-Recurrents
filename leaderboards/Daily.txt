@@ -1,1 +1,1 @@
-Mods:Adjustable Ammo,Beamer,Double Time,Afterburn,Challenge Test Character:Choose Crown:crown of blood Weapon:Beamer Seed:4955 Date:;2019-11-02;
+Mods:Dasher,Crazy Traps,Big Dog Snipers,Carmageddon,Auto Bullet Shotgun Character:Choose Crown:crown of life Weapon:Auto Bullet Shotgun Seed:4574 Date:;2019-11-03;
