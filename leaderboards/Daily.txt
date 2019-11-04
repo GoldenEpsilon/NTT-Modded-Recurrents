@@ -1,1 +1,1 @@
-Mods:Dasher,Crazy Traps,Big Dog Snipers,Carmageddon,Auto Bullet Shotgun Character:Choose Crown:crown of life Weapon:Auto Bullet Shotgun Seed:4574 Date:;2019-11-03;
+Mods:Bloodking,Bandit,blstorm,Colored Palace,Car Character:Choose Crown:crown of haste Weapon:blstorm Seed:15426 Date:;2019-11-04;
