@@ -1,1 +1,1 @@
-Mods:Bloodking,Bandit,blstorm,Colored Palace,Car Character:Choose Crown:crown of haste Weapon:blstorm Seed:15426 Date:;2019-11-04;
+Mods:Cycle,Blaac's Weapon Mutations,Cool Dust,blaac48,Boltshard Character:Choose Crown:crown of destiny Weapon:Boltshard Seed:7371 Date:;2019-11-05;
