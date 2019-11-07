@@ -1,1 +1,1 @@
-Mods:6 Weapons,Baller,Determination,CoDeath,Detonator Character:Choose Crown:CoDeath Weapon:toxic bow Seed:6573 Date:;2019-11-06;
+Mods:BAR,Baldi,BL2,BadEnd,Elite Turrets Character:Choose Crown:crown of luck Weapon:Big Ass Revolver Seed:30855 Date:;2019-11-07;
