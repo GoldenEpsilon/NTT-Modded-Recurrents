@@ -1,2 +1,2 @@
 Mods:BAR,Baldi,BL2,BadEnd,Elite Turrets Character:Choose Crown:crown of luck Weapon:Big Ass Revolver Seed:30855 Date:;2019-11-07;
-|Golden Epsilon: Area 1-1 L0 Kills: 4 Character: fish |Golden Epsilon: Area 1-1 L0 Kills: 3 Character: fish 
+|Golden Epsilon: Area 1-1 L0 Kills: 4 Character: fish |Golden Epsilon: Area 1-1 L0 Kills: 3 Character: fish |Golden Epsilon: Area 2-1 L0 Kills: 80 Character: fish 
