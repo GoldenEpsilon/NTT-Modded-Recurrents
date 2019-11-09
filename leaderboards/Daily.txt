@@ -1,1 +1,1 @@
-Mods:Detonator,Cannoner,Croc Man,Babylon Shotgun,Baller Character:Choose Crown:crown of hatred Weapon:cannoner Seed:24235 Date:;2019-11-08;
+Mods:Drop Me Gun,Grappler,Cannoner,Big Bandit,Double Plasma Minigun Character:Choose Crown:crown of love Weapon:cannoner Seed:23 Date:;2019-11-09;
