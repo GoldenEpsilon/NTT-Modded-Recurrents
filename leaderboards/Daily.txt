@@ -1,1 +1,1 @@
-Mods:Drop Me Gun,Grappler,Cannoner,Big Bandit,Double Plasma Minigun Character:Choose Crown:crown of love Weapon:cannoner Seed:23 Date:;2019-11-09;
+Mods:Bullet Time,Chicken Head,Chaos Guns,Adjustable Ammo,Confuse Character:Choose Crown:none Weapon:Blunderbuss Seed:24667 Date:;2019-11-10;
