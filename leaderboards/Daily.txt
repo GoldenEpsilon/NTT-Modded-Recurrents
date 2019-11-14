@@ -1,1 +1,1 @@
-Mods:Bandit Brute,Drop Me Gun,Devastator,Freak Arena,Druid Character:Choose Crown:crown of destiny Weapon:grenade launcher Seed:946 Date:;2019-11-13;
+Mods:Cannondemnation,bouncybolts,Cool Shadows,Balls,Colored Palace Character:Choose Crown:crown of life Weapon:cannondemnation Seed:6197 Date:;2019-11-14;
