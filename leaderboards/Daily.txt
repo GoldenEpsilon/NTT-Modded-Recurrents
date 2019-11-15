@@ -1,1 +1,1 @@
-Mods:Cannondemnation,bouncybolts,Cool Shadows,Balls,Colored Palace Character:Choose Crown:crown of life Weapon:cannondemnation Seed:6197 Date:;2019-11-14;
+Mods:AllSkills,Druid,Balls,Auto Flame Crossbow,Armageddon Cannon Character:Choose Crown:crown of guns Weapon:laserwrench Seed:30084 Date:;2019-11-15;
