@@ -1,2 +1,1 @@
-Mods:Charge Template 2,Ascension 15,Babylon Shotgun,Dummy,Cool Dark Character:dummy Crown:crown of death Weapon:Babylon Shotgun Seed:3951 Date:;2019-11-10;
-|Eric: Area 3-3 L0 Kills: 45 Character:  |DBien: Area 1-1 L0 Kills: 1 Character:  |Idiot0s: Area 5-3 L0 Kills: 124 Character:  
+Mods:Cosmi,Brimthrone,Babylon Shotgun,Hard Mode,Confuse Character:cosmi Crown:none Weapon:venuz shotgun Seed:31982 Date:;2019-11-17;

@@ -1,2 +1,1 @@
-Mods:Minecraft Area,bouncybolts,Damage Numbers,Crazy Bandits,Colored Projectiles Character:Choose Crown:crown of protection Weapon:black sword Seed:15673 Date:;2019-11-16;
-|Idiot0s: Area 3-2 L0 Kills: 45 Character: rebel |Idiot0s: Area 2hours-1 L0 Kills: 5 Character: horror |Idiot0s: Area 2hours-1 L0 Kills: 5 Character: horror |Idiot0s: Area 2hours-1 L0 Kills: 4 Character: melting |Idiot0s: Area 2hours-1 L0 Kills: 6 Character: melting |Idiot0s: Area 2hours-1 L0 Kills: 5 Character: melting |Idiot0s: Area 103-1 L0 Kills: 80 Character: crystal 
+Mods:Cursed Hyper Crystal,Cannoner,Detailer,Cool Trails,Bear Character:Choose Crown:crown of haste Weapon:cannoner Seed:19955 Date:;2019-11-17;
