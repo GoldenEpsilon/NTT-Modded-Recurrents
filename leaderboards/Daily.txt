@@ -1,1 +1,1 @@
-Mods:Cursed Hyper Crystal,Cannoner,Detailer,Cool Trails,Bear Character:Choose Crown:crown of haste Weapon:cannoner Seed:19955 Date:;2019-11-17;
+Mods:Bullet Time,Confuse,Cool Hud,Cricket,Car Character:Choose Crown:crown of destiny Weapon:Cricket Seed:26373 Date:;2019-11-18;
