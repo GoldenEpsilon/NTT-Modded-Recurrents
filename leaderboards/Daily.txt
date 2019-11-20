@@ -1,1 +1,1 @@
-Mods:Bullet Time,Confuse,Cool Hud,Cricket,Car Character:Choose Crown:crown of destiny Weapon:Cricket Seed:26373 Date:;2019-11-18;
+Mods:Grappler,Devastator,Cool Trails,Adjustable Ammo,All Is Minigun Character:Choose Crown:crown of death Weapon:seeker shotgun Seed:28354 Date:;2019-11-20;
