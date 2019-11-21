@@ -1,1 +1,1 @@
-Mods:Grappler,Devastator,Cool Trails,Adjustable Ammo,All Is Minigun Character:Choose Crown:crown of death Weapon:seeker shotgun Seed:28354 Date:;2019-11-20;
+Mods:Elite Rifle,CoDeath,Cannoner,Charge Template,Ascension 13 Character:Choose Crown:CoDeath Weapon:cannoner Seed:9268 Date:;2019-11-21;
