@@ -1,1 +1,1 @@
-Mods:Elite Rifle,CoDeath,Cannoner,Charge Template,Ascension 13 Character:Choose Crown:CoDeath Weapon:cannoner Seed:9268 Date:;2019-11-21;
+Mods:Cricket,Minecraft Area,Ascension 10,BL2,Elite Dasher Character:Choose Crown:crown of haste Weapon:Cricket Seed:946 Date:;2019-11-22;
