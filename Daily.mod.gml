@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Vanthro#  Detonator B#  Corsair#  Baller#  Double Maxigun#@bCharacter@w=#  Choose#@yCrown@w=#  crown of destiny#@gWeapon@w=#  Corsair#@pSeed@w=16887#Limited Tries:false*/
-/*|Vanthro[...blame 4chan.]|Detonator B[Alternate version, where#active blows up#your bullets anywhere]|Corsair[The Corsair from EtG#Plot A Course]|Baller[Fire burns...#me like fire...]|Double Maxigun[Because miniguns#aren't cool enough]*/
+/*@rMods@w=#  Team Attack#  BadEnd#  Area Health#  Airhorn#  Cycle#@bCharacter@w=#  Choose#@yCrown@w=#  crown of hatred#@gWeapon@w=#  Airhorn#@pSeed@w=13952#Limited Tries:false*/
+/*|Team Attack[Team Age Mutant#Ninja Mutants Go!]|BadEnd[For when you don't want a good end.#(sit after loop 3)]|Area Health[A nice mod that shows how many enemies are left.]|Airhorn[Ever wanted to use the airhorn with every character?##Now you can!]|Cycle[Makes it so you keep gaining mutations, but you only keep the last 10]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 16887;
+global.seed = 13952;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,22 +98,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("vanthro.race.gml");
-downloadmod("detonatorb.race.gml");
-downloadmod("corsair/chrg.wep.gml");
-downloadmod("corsair/corsair.png");
-downloadmod("corsair/corsair_pickup.png");
-downloadmod("baller.race.gml");
-downloadmod("double maxigun/Double Maxigun.wep.gml");
-downloadmod("double maxigun/big bullet hit.png");
-downloadmod("double maxigun/Big Bullet.png");
-downloadmod("double maxigun/Big Gun.png");
-downloadmod("double maxigun/Big Shell.png");
-wait mod_load(string_trim("data/Daily.mod/vanthro.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/detonatorb.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/corsair/chrg.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/baller.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/double maxigun/Double Maxigun.wep.gml"));
+downloadmod("teamattack.mod.gml");
+downloadmod("badend.mod.gml");
+downloadmod("area_health.mod.gml");
+downloadmod("airhorn.wep.gml");
+downloadmod("cycle.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/teamattack.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/badend.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/area_health.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/airhorn.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/cycle.mod.gml"));
 
 
 global.ModNames = "";
@@ -142,11 +136,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Vanthro,Detonator B,Corsair,Baller,Double Maxigun");
+trace("Mods=Team Attack,BadEnd,Area Health,Airhorn,Cycle");
 trace("Character:Choose");
-trace("Crown:crown of destiny");
-trace("Weapon:Corsair");
-trace("Seed:16887");
+trace("Crown:crown of hatred");
+trace("Weapon:Airhorn");
+trace("Seed:13952");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -291,7 +285,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Corsair"));
+		give_wep(string_trim("Airhorn"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -346,16 +340,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Vanthro,Detonator B,Corsair,Baller,Double Maxigun" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Corsair" + " Seed:16887";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Team Attack,BadEnd,Area Health,Airhorn,Cycle" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Airhorn" + " Seed:13952";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-11-23 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-11-23 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-11-23 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-11-23 Daily.txt");
+	if(file_exists(global.alias + " 2019-11-24 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-11-24 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-11-24 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-11-24 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-11-23 Daily.txt");
+		string_save(score, global.alias + " 2019-11-24 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -382,10 +376,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Vanthro,Detonator B,Corsair,Baller,Double Maxigun" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Corsair" + " Seed:16887" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Team Attack,BadEnd,Area Health,Airhorn,Cycle" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Airhorn" + " Seed:13952" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Vanthro,Detonator B,Corsair,Baller,Double Maxigun" + " Character:Choose" + " Crown:crown of destiny" + " Weapon:Corsair" + " Seed:16887",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Team Attack,BadEnd,Area Health,Airhorn,Cycle" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:Airhorn" + " Seed:13952",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -544,7 +538,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of destiny");
+name = string_trim("crown of hatred");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
