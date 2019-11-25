@@ -1,1 +1,1 @@
-Mods:Team Attack,BadEnd,Area Health,Airhorn,Cycle Character:Choose Crown:crown of hatred Weapon:Airhorn Seed:13952 Date:;2019-11-24;
+Mods:Dasher x10,AllSkills,Cool Shadows,Bloodking,Crazy Bandits Character:Choose Crown:none Weapon:hyper rifle Seed:28395 Date:;2019-11-25;
