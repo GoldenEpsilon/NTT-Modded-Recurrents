@@ -1,1 +1,1 @@
-Mods:All Is Minigun,Corsair,Double Pop Gun,Elite Turrets 2,Challenge Test Character:Choose Crown:crown of love Weapon:double_pop_gun Seed:24109 Date:;2019-11-27;
+Mods:Brimthrone,CoDeath,Boltshard,Charge Template,Crazy Traps Character:Choose Crown:CoDeath Weapon:brimthrone Seed:1023 Date:;2019-11-28;
