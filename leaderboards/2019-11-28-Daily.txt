@@ -1,0 +1,1 @@
+Mods:Brimthrone,CoDeath,Boltshard,Charge Template,Crazy Traps Character:Choose Crown:CoDeath Weapon:brimthrone Seed:1023 Date:;2019-11-28;
