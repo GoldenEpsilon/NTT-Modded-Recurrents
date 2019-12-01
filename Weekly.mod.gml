@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  bouncybolts#  Belly#  Challenge Mode#  B#  Bear#@bCharacter@w=#  Belly#@yCrown@w=#  crown of blood#@gWeapon@w=#  A Fucking Gun#@pSeed@w=2191#Limited Tries:false*/
-/*|bouncybolts[Upgrade to Bolt Marrow]|Belly[The only survivor of the#meme that is melee actives]|Challenge Mode[This run's weapons are like a box of chocolates -#you finally find one you like, then you don't have it anymore.]|B[B]|Bear[4 da meeeeeeeeee#eeeeemez]*/
+/*@rMods@w=#  Area Health#  Blindness#  BAR#  Double Pop Gun#  Bomber#@bCharacter@w=#  bomber#@yCrown@w=#  crown of life#@gWeapon@w=#  Big Ass Revolver#@pSeed@w=2410#Limited Tries:false*/
+/*|Area Health[A nice mod that shows how many enemies are left.]|Blindness[MY GLASSES! I BROKE MY GLASSES!]|BAR[A Big Ass Revolver.]|Double Pop Gun[Now you can tickle enemies#twice as fast!]|Bomber[Bombs?]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 2191;
+global.seed = 2410;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "Belly";
+global.Race = "bomber";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,36 +98,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bouncybolts.mod.gml");
-downloadmod("belly/belly.race.gml");
-downloadmod("belly/sndBellyChst.ogg");
-downloadmod("belly/sndBellyCnfm.ogg");
-downloadmod("belly/sndBellyCrwn.ogg");
-downloadmod("belly/sndBellyDead.ogg");
-downloadmod("belly/sndBellyHurt.ogg");
-downloadmod("belly/sndBellyIDPD.ogg");
-downloadmod("belly/sndBellyLowA.ogg");
-downloadmod("belly/sndBellyLowH.ogg");
-downloadmod("belly/sndBellySlct.ogg");
-downloadmod("belly/sndBellySpch.ogg");
-downloadmod("belly/sndBellyValt.ogg");
-downloadmod("belly/sndBellyWrld.ogg");
-downloadmod("challengemode.mod.gml");
-downloadmod("b/b.mod.gml");
-downloadmod("b/b.ini");
-downloadmod("b/redB.png");
-downloadmod("bear/bear.race.gml");
-downloadmod("bear/beargun.wep.gml");
-downloadmod("bear/a fucking gun.png");
-downloadmod("bear/bear (1).png");
-downloadmod("bear/bearhurt.png");
-downloadmod("bear/bearidle.png");
-wait mod_load(string_trim("data/Weekly.mod/bouncybolts.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/belly/belly.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/challengemode.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bear/beargun.wep.gml"));
+downloadmod("area_health.mod.gml");
+downloadmod("blindness.mod.gml");
+downloadmod("BAR.wep.gml");
+downloadmod("double_pop_gun.wep.gml");
+downloadmod("bomber.race.gml");
+wait mod_load(string_trim("data/Weekly.mod/area_health.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/blindness.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/BAR.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/double_pop_gun.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bomber.race.gml"));
 
 
 global.ModNames = "";
@@ -156,11 +136,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=bouncybolts,Belly,Challenge Mode,B,Bear");
-trace("Character:Belly");
-trace("Crown:crown of blood");
-trace("Weapon:A Fucking Gun");
-trace("Seed:2191");
+trace("Mods=Area Health,Blindness,BAR,Double Pop Gun,Bomber");
+trace("Character:bomber");
+trace("Crown:crown of life");
+trace("Weapon:Big Ass Revolver");
+trace("Seed:2410");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -305,7 +285,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("A Fucking Gun"));
+		give_wep(string_trim("Big Ass Revolver"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -326,7 +306,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="Belly";
+			race="bomber";
 		}
 	}
 }
@@ -341,9 +321,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("Belly")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("bomber")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("Belly"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("bomber"))){
 					instance_destroy();
 				}
 				exit;
@@ -360,16 +340,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:bouncybolts,Belly,Challenge Mode,B,Bear" + " Character:Belly" + " Crown:crown of blood" + " Weapon:A Fucking Gun" + " Seed:2191";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Area Health,Blindness,BAR,Double Pop Gun,Bomber" + " Character:bomber" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:2410";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-11-24 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-11-24 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-11-24 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-11-24 Weekly.txt");
+	if(file_exists(global.alias + " 2019-12-01 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-12-01 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-12-01 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-12-01 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-11-24 Weekly.txt");
+		string_save(score, global.alias + " 2019-12-01 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -396,10 +376,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:bouncybolts,Belly,Challenge Mode,B,Bear" + " Character:Belly" + " Crown:crown of blood" + " Weapon:A Fucking Gun" + " Seed:2191" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Area Health,Blindness,BAR,Double Pop Gun,Bomber" + " Character:bomber" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:2410" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":bouncybolts,Belly,Challenge Mode,B,Bear" + " Character:Belly" + " Crown:crown of blood" + " Weapon:A Fucking Gun" + " Seed:2191",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Area Health,Blindness,BAR,Double Pop Gun,Bomber" + " Character:bomber" + " Crown:crown of life" + " Weapon:Big Ass Revolver" + " Seed:2410",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -549,7 +529,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("Belly");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("bomber");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -558,7 +538,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of blood");
+name = string_trim("crown of life");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

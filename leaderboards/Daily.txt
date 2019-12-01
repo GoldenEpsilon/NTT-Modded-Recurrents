@@ -1,1 +1,1 @@
-Mods:Bitpack,Dummy,Colored Projectiles,Crazy Allies,CoDeath Character:Choose Crown:CoDeath Weapon:industrialshankgun Seed:10792 Date:;2019-11-30;
+Mods:Brimthrone,Disk Marrow,Carmageddon,Cool Flame,Dasher Character:Choose Crown:crown of destiny Weapon:brimthrone Seed:13544 Date:;2019-12-01;
