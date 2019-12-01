@@ -1,2 +1,1 @@
-Mods:bouncybolts,Belly,Challenge Mode,B,Bear Character:Belly Crown:crown of blood Weapon:A Fucking Gun Seed:2191 Date:;2019-11-24;
-|pokepok3: Area 5-2 L0 Kills: 283 Character:  |Stay Moist: Area 5-3 L0 Kills: 582 Character:  |Idiot0s: Area 6-1 L0 Kills: 322 Character:  |Golden Epsilon: Area 2-1 L0 Kills: 124 Character:  |ADMIN: Area 2-1 L0 Kills: 129 Character:  |inexis: Area 1-1 L0 Kills: 9 Character:  |@028;L: Area 3-2 L0 Kills: 164 Character:  
+Mods:Area Health,Blindness,BAR,Double Pop Gun,Bomber Character:bomber Crown:crown of life Weapon:Big Ass Revolver Seed:2410 Date:;2019-12-01;
