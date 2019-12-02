@@ -1,1 +1,1 @@
-Mods:Brimthrone,Disk Marrow,Carmageddon,Cool Flame,Dasher Character:Choose Crown:crown of destiny Weapon:brimthrone Seed:13544 Date:;2019-12-01;
+Mods:Carpocalypse,Double Laser Minigun,Chips,Bandit,C Ultras Character:Choose Crown:crown of risk Weapon:doublelaser Seed:23815 Date:;2019-12-02;
