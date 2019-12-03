@@ -1,1 +1,2 @@
 Mods:Area Health,Blindness,BAR,Double Pop Gun,Bomber Character:bomber Crown:crown of life Weapon:Big Ass Revolver Seed:2410 Date:;2019-12-01;
+|Lizard: Area 1-1 L0 Kills: 2 Character:  
