@@ -1,1 +1,1 @@
-Mods:Fire Riders,Damage Numbers,bouncermini,Blood,Champions Character:Choose Crown:crown of death Weapon:lightning rifle Seed:19324 Date:;2019-12-03;
+Mods:Clasweps,Cooler Hud,Double Maxigun,!ARMAGGEDNN,Damage Numbers Character:Choose Crown:slots Weapon:Ultra Screwdriver Seed:11033 Date:;2019-12-05;
