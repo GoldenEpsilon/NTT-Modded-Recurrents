@@ -1,1 +1,1 @@
-Mods:Clasweps,Cooler Hud,Double Maxigun,!ARMAGGEDNN,Damage Numbers Character:Choose Crown:slots Weapon:Ultra Screwdriver Seed:11033 Date:;2019-12-05;
+Mods:Armageddon Cannon,boys,Cool Shadows,BL2,Adjustable Ammo Character:Choose Crown:crown of love Weapon:Armageddon Cannon Seed:26972 Date:;2019-12-06;
