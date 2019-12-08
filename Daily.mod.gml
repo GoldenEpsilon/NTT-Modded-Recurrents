@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Adjustable Ammo#  Egg#  bosshudredux#  Charge Template#  Cosmi Gun Enemies#@bCharacter@w=#  Choose#@yCrown@w=#  crown of life#@gWeapon@w=#  ct#@pSeed@w=18628#Limited Tries:false*/
-/*|Adjustable Ammo[Push the limits#of ammo storage!]|Egg[You will GIVE#me an @qEGG]|bosshudredux[For knowing how bad your weapons are,#every once in a while]|Charge Template[Hey, yes this is a#template, but it's#also a cool weapon.]|Cosmi Gun Enemies[RUN THEY HAVE REAL GUNS]*/
+/*@rMods@w=#  betterLoops#  Drama Kill#  blstorm#  Cosmi#  Druid#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  blstorm#@pSeed@w=28961#Limited Tries:false*/
+/*|betterLoops[Less enemies, more health per enemy in loops.]|Drama Kill[For when you want#to feel really good#for defeating Big Bandit]|blstorm[BLEED YOURSELF DRY]|Cosmi[*insert *insert *insert self insert joke here* joke here* joke here*]|Druid[Not Getafix,#but he'll do.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 18628;
+global.seed = 28961;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,16 +98,40 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("Adjustable Ammo.mod.gml");
-downloadmod("Egg.mod.gml");
-downloadmod("bosshudredux.mod.gml");
-downloadmod("ct.wep.gml");
-downloadmod("CosmiGunEnemies.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/Adjustable Ammo.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Egg.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/bosshudredux.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/ct.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/CosmiGunEnemies.mod.gml"));
+downloadmod("betterLoops.mod.gml");
+downloadmod("dramakill.mod.gml");
+downloadmod("blstorm.wep.gml");
+downloadmod("cosmi.race.gml");
+downloadmod("Druid_Race/druid.race.gml");
+downloadmod("Druid_Race/Storagething/Directionalswitch.ogg");
+downloadmod("Druid_Race/Storagething/DruidDeath.png");
+downloadmod("Druid_Race/Storagething/DruidHurt.png");
+downloadmod("Druid_Race/Storagething/DruidIcon.png");
+downloadmod("Druid_Race/Storagething/DruidIdle.png");
+downloadmod("Druid_Race/Storagething/DruidPoof.ogg");
+downloadmod("Druid_Race/Storagething/DruidPooff.ogg");
+downloadmod("Druid_Race/Storagething/DruidWalk.png");
+downloadmod("Druid_Race/Storagething/MechanicDead.png");
+downloadmod("Druid_Race/Storagething/MechanicHurt.png");
+downloadmod("Druid_Race/Storagething/MechanicIcon.png");
+downloadmod("Druid_Race/Storagething/MechanicIdle.png");
+downloadmod("Druid_Race/Storagething/MechanicMenu.png");
+downloadmod("Druid_Race/Storagething/MechanicTurret.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretA.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretAB.png");
+downloadmod("Druid_Race/Storagething/MechanicTurretB.png");
+downloadmod("Druid_Race/Storagething/MechanicWalk.png");
+downloadmod("Druid_Race/Storagething/RobloxDyingBreath.ogg");
+downloadmod("Druid_Race/Storagething/Shatter.ogg");
+downloadmod("Druid_Race/Storagething/Silent.ogg");
+downloadmod("Druid_Race/Storagething/sprToast.png");
+downloadmod("Druid_Race/Storagething/ssss.mp3");
+downloadmod("Druid_Race/Storagething/UUHHN.ogg");
+wait mod_load(string_trim("data/Daily.mod/betterLoops.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dramakill.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/blstorm.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/cosmi.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/Druid_Race/druid.race.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +160,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Adjustable Ammo,Egg,bosshudredux,Charge Template,Cosmi Gun Enemies");
+trace("Mods=betterLoops,Drama Kill,blstorm,Cosmi,Druid");
 trace("Character:Choose");
-trace("Crown:crown of life");
-trace("Weapon:ct");
-trace("Seed:18628");
+trace("Crown:crown of love");
+trace("Weapon:blstorm");
+trace("Seed:28961");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +309,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("ct"));
+		give_wep(string_trim("blstorm"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -340,16 +364,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Adjustable Ammo,Egg,bosshudredux,Charge Template,Cosmi Gun Enemies" + " Character:Choose" + " Crown:crown of life" + " Weapon:ct" + " Seed:18628";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:betterLoops,Drama Kill,blstorm,Cosmi,Druid" + " Character:Choose" + " Crown:crown of love" + " Weapon:blstorm" + " Seed:28961";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-12-07 Daily.txt")){
-		prevScores = string_load(global.alias + " 2019-12-07 Daily.txt");
-		while(!file_loaded(global.alias + " 2019-12-07 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-12-07 Daily.txt");
+	if(file_exists(global.alias + " 2019-12-08 Daily.txt")){
+		prevScores = string_load(global.alias + " 2019-12-08 Daily.txt");
+		while(!file_loaded(global.alias + " 2019-12-08 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-12-08 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2019-12-07 Daily.txt");
+		string_save(score, global.alias + " 2019-12-08 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +400,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Adjustable Ammo,Egg,bosshudredux,Charge Template,Cosmi Gun Enemies" + " Character:Choose" + " Crown:crown of life" + " Weapon:ct" + " Seed:18628" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:betterLoops,Drama Kill,blstorm,Cosmi,Druid" + " Character:Choose" + " Crown:crown of love" + " Weapon:blstorm" + " Seed:28961" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Adjustable Ammo,Egg,bosshudredux,Charge Template,Cosmi Gun Enemies" + " Character:Choose" + " Crown:crown of life" + " Weapon:ct" + " Seed:18628",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":betterLoops,Drama Kill,blstorm,Cosmi,Druid" + " Character:Choose" + " Crown:crown of love" + " Weapon:blstorm" + " Seed:28961",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -538,7 +562,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of life");
+name = string_trim("crown of love");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
