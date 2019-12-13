@@ -1,1 +1,1 @@
-Mods:Bandit Brute,Ash,B,Armageddon Cannon,BadEnd Character:Choose Crown:crown of blood Weapon:Armageddon Cannon Seed:3123 Date:;2019-12-13;
+Mods:xefsstuff,AllSkills,banditstack,Colored Palace,Beamer Character:Choose Crown:crown of curses Weapon:pillbugs Seed:9873 Date:;2019-12-13;
