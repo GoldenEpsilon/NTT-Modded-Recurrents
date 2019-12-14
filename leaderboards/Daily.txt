@@ -1,1 +1,1 @@
-Mods:xefsstuff,AllSkills,banditstack,Colored Palace,Beamer Character:Choose Crown:crown of curses Weapon:pillbugs Seed:9873 Date:;2019-12-13;
+Mods:Derpweps,Balls,Cricket,betterLoops,Challenge Mode Character:Choose Crown:crown of luck Weapon:laserwrench Seed:22463 Date:;2019-12-14;
