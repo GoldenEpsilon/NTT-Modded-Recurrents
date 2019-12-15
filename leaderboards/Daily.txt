@@ -1,1 +1,1 @@
-Mods:Derpweps,Balls,Cricket,betterLoops,Challenge Mode Character:Choose Crown:crown of luck Weapon:laserwrench Seed:22463 Date:;2019-12-14;
+Mods:Doctor,Ally QOL,Detonator,Auto Flame Crossbow,B Character:Choose Crown:crown of protection Weapon:Auto Flame Crossbow Seed:580 Date:;2019-12-15;
