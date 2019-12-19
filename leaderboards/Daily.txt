@@ -1,1 +1,1 @@
-Mods:Detonator B,Vanthro,Dasher x10,Cannoner,Ash Character:Choose Crown:crown of curses Weapon:cannoner Seed:20902 Date:;2019-12-18;
+Mods:basicgunallies,blstorm,Armageddon Cannon,BL2,Ascension 10 Character:Choose Crown:crown of life Weapon:Armageddon Cannon Seed:16088 Date:;2019-12-19;
