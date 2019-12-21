@@ -1,1 +1,1 @@
-Mods:Chrononaut,Belly,Ascension 13,bow,Buff Character:Choose Crown:crown of love Weapon:idpdslugpistol Seed:538 Date:;2019-12-20;
+Mods:Cricket,Dasher,Carmageddon,Carbine,Bandit Brute Character:Choose Crown:crown of protection Weapon:carbine Seed:20010 Date:;2019-12-21;
