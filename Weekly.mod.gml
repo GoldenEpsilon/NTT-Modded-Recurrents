@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Carmageddon#  Hard Mode#  Death Pit#  Cursed Hyper Crystal#  Babylon Shotgun#@bCharacter@w=#  steroids#@yCrown@w=#  deathpit#@gWeapon@w=#  venuz minigun#@pSeed@w=28910#Limited Tries:false*/
-/*|Carmageddon[WARNING: May contain drifting]|Hard Mode[Blaac's Hard Mode.#Good luck.#@r@q@qYou'll need it.]|Death Pit[FIGHT TO THE DEATH#IN THIS SMALL SQUARE#WHEN YOU HAVE THIS CROWN#DO IT NOW]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Babylon Shotgun[So much destruction your enemies will babble-on]*/
+/*@rMods@w=#  Big Toothbrush#  Doctor#  Cannondemnation#  Belly#  bow#@bCharacter@w=#  Doctor#@yCrown@w=#  crown of protection#@gWeapon@w=#  cannondemnation#@pSeed@w=15099#Limited Tries:false*/
+/*|Big Toothbrush[a big toothbrush for big mouths]|Doctor[The feathery, creepy,#totally-not-about-to-#stab-you-with-a-knife#doctor is in!]|Cannondemnation[DOOM DEATH DESTRUCTION##AND LINKIN PARK]|Belly[The only survivor of the#meme that is melee actives]|bow[It's a bow.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 28910;
+global.seed = 15099;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "steroids";
+global.Race = "Doctor";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,113 +98,29 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("carmageddon.mod.gml");
-downloadmod("hardmode/areas/noyetihere.area.gml");
-downloadmod("hardmode/areas/icecave.area.gml");
-downloadmod("hardmode/areas/ravenboss.area.gml");
-downloadmod("hardmode/areas/scorpionboss.area.gml");
-downloadmod("hardmode/areas/turtles.area.gml");
-downloadmod("hardmode/areas/elevator.area.gml");
-downloadmod("hardmode/areas/HQ.area.gml");
-downloadmod("hardmode/areas/venuz.area.gml");
-downloadmod("hardmode/areas/oasis.area.gml");
-downloadmod("hardmode/areas/jungle.area.gml");
-downloadmod("hardmode/areas/cavesinv.area.gml");
-downloadmod("hardmode/bosses/scorpionboss.mod.gml");
-downloadmod("hardmode/bosses/turtles.mod.gml");
-downloadmod("hardmode/bosses/ratboss.mod.gml");
-downloadmod("hardmode/bosses/ravenboss.mod.gml");
-downloadmod("hardmode/bosses/gatorboss.mod.gml");
-downloadmod("hardmode/bosses/titank.mod.gml");
-downloadmod("hardmode/bosses/guardianboss.mod.gml");
-downloadmod("hardmode/bosses/throne.mod.gml");
-downloadmod("hardmode/bosses/gungod.mod.gml");
-downloadmod("hardmode/weapons/secretweapon1.wep.gml");
-downloadmod("hardmode/weapons/secretweapon2.wep.gml");
-downloadmod("hardmode/weapons/secretweapon3.wep.gml");
-downloadmod("hardmode/weapons/secretweaponi1.wep.gml");
-downloadmod("hardmode/weapons/secretweaponi2.wep.gml");
-downloadmod("hardmode/weapons/secretweaponi3.wep.gml");
-downloadmod("hardmode/weapons/secretweapong1.wep.gml");
-downloadmod("hardmode/weapons/secretweapong2.wep.gml");
-downloadmod("hardmode/weapons/secretweapong3.wep.gml");
-downloadmod("hardmode/weapons/secretweapong4.wep.gml");
-downloadmod("hardmode/weapons/secretweapong5.wep.gml");
-downloadmod("hardmode/areas/end.area.gml");
-downloadmod("hardmode/areas/throne.area.gml");
-downloadmod("hardmode/areas/palace.area.gml");
-downloadmod("hardmode/areas/labs.area.gml");
-downloadmod("hardmode/areas/city.area.gml");
-downloadmod("hardmode/areas/caves.area.gml");
-downloadmod("hardmode/areas/junkyard.area.gml");
-downloadmod("hardmode/areas/sewers.area.gml");
-downloadmod("hardmode/areas/nightdesert.area.gml");
-downloadmod("hardmode/maincode.mod.gml");
-downloadmod("hardmode/enemies.mod.gml");
-downloadmod("hardmode/props.mod.gml");
-downloadmod("hardmode/bosses/bossintros.mod.gml");
-downloadmod("hardmode/options.mod.gml");
-downloadmod("hardmode/music/scorpionexplode.ogg");
-downloadmod("hardmode/music/01 Godz Of Gunz.ogg");
-downloadmod("hardmode/music/02 Venus Supermax.ogg");
-downloadmod("hardmode/music/03 Deep In The Sewers.ogg");
-downloadmod("hardmode/music/04 Finest Wine Cellar.ogg");
-downloadmod("hardmode/music/05 Elevator Music.ogg");
-downloadmod("hardmode/music/06 Welcome To The Crib.ogg");
-downloadmod("hardmode/music/07 Highest Point Of Venus.ogg");
-downloadmod("hardmode/music/08 I Don't Need No Tricks To Kill.ogg");
-downloadmod("deathpit.crown.gml");
-downloadmod("cursedhypercrystal.mod.gml");
-downloadmod("babylon_shotgun.wep.gml");
-wait mod_load(string_trim("data/Weekly.mod/carmageddon.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/noyetihere.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/icecave.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/ravenboss.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/scorpionboss.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/turtles.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/elevator.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/HQ.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/venuz.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/oasis.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/jungle.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/cavesinv.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/scorpionboss.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/turtles.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/ratboss.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/ravenboss.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/gatorboss.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/titank.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/guardianboss.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/throne.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/gungod.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapon1.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapon2.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapon3.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweaponi1.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweaponi2.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweaponi3.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapong1.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapong2.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapong3.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapong4.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/weapons/secretweapong5.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/end.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/throne.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/palace.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/labs.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/city.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/caves.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/junkyard.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/sewers.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/areas/nightdesert.area.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/maincode.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/enemies.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/props.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/bosses/bossintros.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/hardmode/options.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/deathpit.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/cursedhypercrystal.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/babylon_shotgun.wep.gml"));
+downloadmod("Big Toothbrush/Big Toothbrush.wep.gml");
+downloadmod("Big Toothbrush/Big Toothbrush.png");
+downloadmod("Doctor.race.gml");
+downloadmod("cannondemnation.wep.gml");
+downloadmod("belly/belly.race.gml");
+downloadmod("belly/sndBellyChst.ogg");
+downloadmod("belly/sndBellyCnfm.ogg");
+downloadmod("belly/sndBellyCrwn.ogg");
+downloadmod("belly/sndBellyDead.ogg");
+downloadmod("belly/sndBellyHurt.ogg");
+downloadmod("belly/sndBellyIDPD.ogg");
+downloadmod("belly/sndBellyLowA.ogg");
+downloadmod("belly/sndBellyLowH.ogg");
+downloadmod("belly/sndBellySlct.ogg");
+downloadmod("belly/sndBellySpch.ogg");
+downloadmod("belly/sndBellyValt.ogg");
+downloadmod("belly/sndBellyWrld.ogg");
+downloadmod("bow.wep.gml");
+wait mod_load(string_trim("data/Weekly.mod/Big Toothbrush/Big Toothbrush.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Doctor.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/cannondemnation.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/belly/belly.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bow.wep.gml"));
 
 
 global.ModNames = "";
@@ -233,11 +149,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Carmageddon,Hard Mode,Death Pit,Cursed Hyper Crystal,Babylon Shotgun");
-trace("Character:steroids");
-trace("Crown:deathpit");
-trace("Weapon:venuz minigun");
-trace("Seed:28910");
+trace("Mods=Big Toothbrush,Doctor,Cannondemnation,Belly,bow");
+trace("Character:Doctor");
+trace("Crown:crown of protection");
+trace("Weapon:cannondemnation");
+trace("Seed:15099");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -382,7 +298,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("venuz minigun"));
+		give_wep(string_trim("cannondemnation"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -403,7 +319,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="steroids";
+			race="Doctor";
 		}
 	}
 }
@@ -418,9 +334,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("steroids")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("Doctor")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("steroids"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("Doctor"))){
 					instance_destroy();
 				}
 				exit;
@@ -437,16 +353,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Carmageddon,Hard Mode,Death Pit,Cursed Hyper Crystal,Babylon Shotgun" + " Character:steroids" + " Crown:deathpit" + " Weapon:venuz minigun" + " Seed:28910";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Big Toothbrush,Doctor,Cannondemnation,Belly,bow" + " Character:Doctor" + " Crown:crown of protection" + " Weapon:cannondemnation" + " Seed:15099";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2019-12-15 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2019-12-15 Weekly.txt");
-		while(!file_loaded(global.alias + " 2019-12-15 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2019-12-15 Weekly.txt");
+	if(file_exists(global.alias + " 2019-12-22 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2019-12-22 Weekly.txt");
+		while(!file_loaded(global.alias + " 2019-12-22 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2019-12-22 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2019-12-15 Weekly.txt");
+		string_save(score, global.alias + " 2019-12-22 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -473,10 +389,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Carmageddon,Hard Mode,Death Pit,Cursed Hyper Crystal,Babylon Shotgun" + " Character:steroids" + " Crown:deathpit" + " Weapon:venuz minigun" + " Seed:28910" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Big Toothbrush,Doctor,Cannondemnation,Belly,bow" + " Character:Doctor" + " Crown:crown of protection" + " Weapon:cannondemnation" + " Seed:15099" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Carmageddon,Hard Mode,Death Pit,Cursed Hyper Crystal,Babylon Shotgun" + " Character:steroids" + " Crown:deathpit" + " Weapon:venuz minigun" + " Seed:28910",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Big Toothbrush,Doctor,Cannondemnation,Belly,bow" + " Character:Doctor" + " Crown:crown of protection" + " Weapon:cannondemnation" + " Seed:15099",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -626,7 +542,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("steroids");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("Doctor");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -635,7 +551,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("deathpit");
+name = string_trim("crown of protection");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

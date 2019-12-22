@@ -1,1 +1,1 @@
-Mods:Cricket,Dasher,Carmageddon,Carbine,Bandit Brute Character:Choose Crown:crown of protection Weapon:carbine Seed:20010 Date:;2019-12-21;
+Mods:Elite Turrets 2,Cycle,Area Health,Doctor,Big Toothbrush Character:Choose Crown:crown of risk Weapon:Big Toothbrush Seed:1358 Date:;2019-12-22;
