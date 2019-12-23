@@ -1,1 +1,1 @@
-Mods:Elite Turrets 2,Cycle,Area Health,Doctor,Big Toothbrush Character:Choose Crown:crown of risk Weapon:Big Toothbrush Seed:1358 Date:;2019-12-22;
+Mods:Defect,AllCrowns,Bullet Time,Chrononaut,Ascension 13 Character:Choose Crown:crown of guns Weapon:idpdslugpistol Seed:25872 Date:;2019-12-23;
