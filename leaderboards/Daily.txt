@@ -1,1 +1,1 @@
-Mods:Big Toothbrush,blaac48,Druid,Bullet Time,Cosmi Gun Enemies Character:Choose Crown:crown of destiny Weapon:Big Toothbrush Seed:3314 Date:;2019-12-24;
+Mods:Bigger Bandit,BL2,Charge Template,Boltshard,Big Bandit Character:Choose Crown:crown of death Weapon:Boltshard Seed:4873 Date:;2019-12-25;
