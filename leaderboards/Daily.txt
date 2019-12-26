@@ -1,1 +1,1 @@
-Mods:Bigger Bandit,BL2,Charge Template,Boltshard,Big Bandit Character:Choose Crown:crown of death Weapon:Boltshard Seed:4873 Date:;2019-12-25;
+Mods:Doctor,brad,Big Dog Snipers,Adjustable Ammo,Bandit Brute Character:Choose Crown:crown of life Weapon:nowep Seed:8632 Date:;2019-12-26;
