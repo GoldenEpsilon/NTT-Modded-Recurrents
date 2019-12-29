@@ -1,1 +1,1 @@
-Mods:Ascension 5,Cannoner,boys,Disk Marrow,Cosmi Gun Enemies Character:Choose Crown:crown of hatred Weapon:cannoner Seed:31998 Date:;2019-12-28;
+Mods:AllCrowns,Dummy,Bear,Colored Palace,Chest Bandits Character:Choose Crown:crown of blood Weapon:A Fucking Gun Seed:9736 Date:;2019-12-29;
