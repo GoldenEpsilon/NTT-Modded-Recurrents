@@ -1,2 +1,1 @@
-Mods:AllCrowns,Dummy,Bear,Colored Palace,Chest Bandits Character:Choose Crown:crown of blood Weapon:A Fucking Gun Seed:9736 Date:;2019-12-29;
-|Golden Epsilon: Area 1-1 L0 Kills: 25 Character: steroids 
+Mods:Drop Me Gun,Blindness,Cool Flame,Ascension 5,Colored Projectiles Character:Choose Crown:crown of haste Weapon:rogue rifle Seed:26979 Date:;2019-12-30;
