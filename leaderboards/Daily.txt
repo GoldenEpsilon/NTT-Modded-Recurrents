@@ -1,1 +1,1 @@
-Mods:Drop Me Gun,Blindness,Cool Flame,Ascension 5,Colored Projectiles Character:Choose Crown:crown of haste Weapon:rogue rifle Seed:26979 Date:;2019-12-30;
+Mods:Detonator B,B,Cycle,Fire Riders,Dasher Character:Choose Crown:crown of haste Weapon:super disc gun Seed:2349 Date:;2019-12-31;
