@@ -1,1 +1,1 @@
-Mods:Detonator B,B,Cycle,Fire Riders,Dasher Character:Choose Crown:crown of haste Weapon:super disc gun Seed:2349 Date:;2019-12-31;
+Mods:!ARMAGGEDNN,Elite Turrets 2,Crazy Bandits,Big Bandit,Afterburn Character:Choose Crown:crown of protection Weapon:Explosive Shovel Seed:30245 Date:;2020-01-01;
