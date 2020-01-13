@@ -1,1 +1,1 @@
-Mods:!ARMAGGEDNN,Elite Turrets 2,Crazy Bandits,Big Bandit,Afterburn Character:Choose Crown:crown of protection Weapon:Explosive Shovel Seed:30245 Date:;2020-01-01;
+Mods:boys,Brimthrone,Death Pit,Cool Trails,B Character:Choose Crown:deathpit Weapon:brimthrone Seed:26510 Date:;2020-01-13;
