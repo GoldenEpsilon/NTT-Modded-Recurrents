@@ -1,2 +1,1 @@
-Mods:boys,Brimthrone,Death Pit,Cool Trails,B Character:Choose Crown:deathpit Weapon:brimthrone Seed:26510 Date:;2020-01-13;
-|Golden Epsilon: Area 1-2 L0 Kills: 49 Character: venuz 
+Mods:Double Pop Gun,Elite Turrets 2,Doctor,Beamer,Druid Character:Choose Crown:crown of haste Weapon:double_pop_gun Seed:30187 Date:;2020-01-15;
