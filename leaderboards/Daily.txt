@@ -1,1 +1,1 @@
-Mods:Double Pop Gun,Elite Turrets 2,Doctor,Beamer,Druid Character:Choose Crown:crown of haste Weapon:double_pop_gun Seed:30187 Date:;2020-01-15;
+Mods:Bloodking,Hard Mode,C Ultras,Carpocalypse,Elite Turrets 2 Character:Choose Crown:crown of death Weapon:harpoon gun Seed:15268 Date:;2020-01-17;

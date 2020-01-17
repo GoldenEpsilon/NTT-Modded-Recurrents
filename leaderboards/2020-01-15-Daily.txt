@@ -1,0 +1,1 @@
+Mods:Double Pop Gun,Elite Turrets 2,Doctor,Beamer,Druid Character:Choose Crown:crown of haste Weapon:double_pop_gun Seed:30187 Date:;2020-01-15;
