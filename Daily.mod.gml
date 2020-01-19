@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  blaac48#  Dumb Shells#  Drop Me Gun#  Bandit Brute#  CoDeath#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath#@gWeapon@w=#  rogue rifle#@pSeed@w=28603#Limited Tries:false*/
-/*|blaac48[The jungle is deeper]|Dumb Shells[And on that dumbshell,#it's time to start.]|Drop Me Gun[Hold "Pick up weapon"#for a couple seconds#to drop your weapon.]|Bandit Brute[Randomly replaces bandits with Bandit Brutes]|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]*/
+/*@rMods@w=#  Corsair#  Dodge Roll#  Carmageddon#  Assault Flak Cannon#  Bloodking#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Corsair#@pSeed@w=13110#Limited Tries:false*/
+/*|Corsair[The Corsair from EtG#Plot A Course]|Dodge Roll[Fish visited the Gungeon#on holiday and#came back with new tricks!]|Carmageddon[WARNING: May contain drifting]|Assault Flak Cannon[What do you expect an Assault Flak Cannon to do?]|Bloodking[Blood, pain, and a half-finished character.]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 28603;
+global.seed = 13110;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,16 +98,48 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("blaac48.area.gml");
-downloadmod("dumbshells.mod.gml");
-downloadmod("dropMeGun.mod.gml");
-downloadmod("BanditBrute.mod.gml");
-downloadmod("CoDeath.crown.gml");
-wait mod_load(string_trim("data/Daily.mod/blaac48.area.gml"));
-wait mod_load(string_trim("data/Daily.mod/dumbshells.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/dropMeGun.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/BanditBrute.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/CoDeath.crown.gml"));
+downloadmod("corsair/chrg.wep.gml");
+downloadmod("corsair/corsair.png");
+downloadmod("corsair/corsair_pickup.png");
+downloadmod("dodgeroll.mod.gml");
+downloadmod("carmageddon.mod.gml");
+downloadmod("Assault_Flak_Cannon.wep.gml");
+downloadmod("Bloodking/fishexample.race.gml");
+downloadmod("Bloodking/freaksummondead.png");
+downloadmod("Bloodking/freaksummonhurt.png");
+downloadmod("Bloodking/freaksummonidle.png");
+downloadmod("Bloodking/freaksummonwalk.png");
+downloadmod("Bloodking/sprBigPortrait.png");
+downloadmod("Bloodking/sprCharSelect.png");
+downloadmod("Bloodking/sprEGIconHUDA.png");
+downloadmod("Bloodking/sprEGIconHUDB.png");
+downloadmod("Bloodking/sprEGSkillIcon.png");
+downloadmod("Bloodking/sprgunallydead.png");
+downloadmod("Bloodking/sprgunallyhurt.png");
+downloadmod("Bloodking/sprgunallyidle.png");
+downloadmod("Bloodking/sprgunallywalk.png");
+downloadmod("Bloodking/sprLoadoutSkin.png");
+downloadmod("Bloodking/sprMapIcon.png");
+downloadmod("Bloodking/sprMutant1BDead.png");
+downloadmod("Bloodking/sprMutant1BGoSit.png");
+downloadmod("Bloodking/sprMutant1BHurt.png");
+downloadmod("Bloodking/sprMutant1BIdle.png");
+downloadmod("Bloodking/sprMutant1BSit.png");
+downloadmod("Bloodking/sprMutant1BWalk.png");
+downloadmod("Bloodking/sprMutant1Dead.png");
+downloadmod("Bloodking/sprMutant1GoSit.png");
+downloadmod("Bloodking/sprMutant1Hurt.png");
+downloadmod("Bloodking/sprMutant1Idle.png");
+downloadmod("Bloodking/sprMutant1Sit.png");
+downloadmod("Bloodking/sprMutant1Walk.png");
+downloadmod("Bloodking/sprRogueAmmochestopen.png");
+downloadmod("Bloodking/sprRogueAmmochest_strip7.png");
+downloadmod("Bloodking/sprRogueAmmo_strip7.png");
+wait mod_load(string_trim("data/Daily.mod/corsair/chrg.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/dodgeroll.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/carmageddon.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Assault_Flak_Cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/Bloodking/fishexample.race.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +168,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=blaac48,Dumb Shells,Drop Me Gun,Bandit Brute,CoDeath");
+trace("Mods=Corsair,Dodge Roll,Carmageddon,Assault Flak Cannon,Bloodking");
 trace("Character:Choose");
-trace("Crown:CoDeath");
-trace("Weapon:rogue rifle");
-trace("Seed:28603");
+trace("Crown:none");
+trace("Weapon:Corsair");
+trace("Seed:13110");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +317,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("rogue rifle"));
+		give_wep(string_trim("Corsair"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -340,16 +372,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:blaac48,Dumb Shells,Drop Me Gun,Bandit Brute,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:rogue rifle" + " Seed:28603";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Corsair,Dodge Roll,Carmageddon,Assault Flak Cannon,Bloodking" + " Character:Choose" + " Crown:none" + " Weapon:Corsair" + " Seed:13110";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-01-18 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-01-18 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-01-18 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-01-18 Daily.txt");
+	if(file_exists(global.alias + " 2020-01-19 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-01-19 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-01-19 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-01-19 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-01-18 Daily.txt");
+		string_save(score, global.alias + " 2020-01-19 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +408,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:blaac48,Dumb Shells,Drop Me Gun,Bandit Brute,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:rogue rifle" + " Seed:28603" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Corsair,Dodge Roll,Carmageddon,Assault Flak Cannon,Bloodking" + " Character:Choose" + " Crown:none" + " Weapon:Corsair" + " Seed:13110" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":blaac48,Dumb Shells,Drop Me Gun,Bandit Brute,CoDeath" + " Character:Choose" + " Crown:CoDeath" + " Weapon:rogue rifle" + " Seed:28603",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Corsair,Dodge Roll,Carmageddon,Assault Flak Cannon,Bloodking" + " Character:Choose" + " Crown:none" + " Weapon:Corsair" + " Seed:13110",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -538,7 +570,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath");
+name = string_trim("none");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
