@@ -1,1 +1,1 @@
-Mods:Some Crowns,Bear,Auto Bullet Shotgun,Cool Dust,blackholes Character:Choose Crown:bullethell Weapon:A Fucking Gun Seed:6474 Date:;2020-01-20;
+Mods:Buff,Charge Template,Chaos Guns,CoD Proper,Cricket Character:Choose Crown:crown of risk Weapon:smartgun Seed:32040 Date:;2020-01-21;
