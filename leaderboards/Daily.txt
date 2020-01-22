@@ -1,1 +1,1 @@
-Mods:Buff,Charge Template,Chaos Guns,CoD Proper,Cricket Character:Choose Crown:crown of risk Weapon:smartgun Seed:32040 Date:;2020-01-21;
+Mods:Cannondemnation,Brimthrone,Cursed Hyper Crystal,blackholes,Egg Character:Choose Crown:crown of guns Weapon:cannondemnation Seed:31464 Date:;2020-01-22;
