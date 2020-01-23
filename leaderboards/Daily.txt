@@ -1,1 +1,1 @@
-Mods:Cannondemnation,Brimthrone,Cursed Hyper Crystal,blackholes,Egg Character:Choose Crown:crown of guns Weapon:cannondemnation Seed:31464 Date:;2020-01-22;
+Mods:AllSkills,Dodge Roll,Colored Projectiles,Cool Dark,Damage Numbers Character:Choose Crown:crown of blood Weapon:golden screwdriver Seed:3114 Date:;2020-01-23;
