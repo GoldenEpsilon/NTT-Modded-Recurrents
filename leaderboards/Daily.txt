@@ -1,1 +1,1 @@
-Mods:Champions,Baller,Blaac's Weapon Mutations,Egg,Chaos Guns Character:Choose Crown:crown of protection Weapon:Super Blunderbuss Seed:1387 Date:;2020-01-24;
+Mods:Chicken Head,CoDeath,Bioluminary Oscillator,Camper Boys,Cooler Hud Character:Choose Crown:CoDeath Weapon:Bioluminary Oscillator Seed:9807 Date:;2020-01-25;
