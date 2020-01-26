@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Chicken Head#  CoDeath#  Bioluminary Oscillator#  Camper Boys#  Cooler Hud#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath#@gWeapon@w=#  Bioluminary Oscillator#@pSeed@w=9807#Limited Tries:false*/
-/*|Chicken Head[Chicken can now carry her head.#Gross.]|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]|Bioluminary Oscillator[TARGET AQUIRED]|Camper Boys[Convinces the vanilla mutants#to let the custom characters#warm up by the fire]|Cooler Hud[Symphony of the Throne]*/
+/*@rMods@w=#  Detonator#  Chicken Head#  Cannoner#  Disk Marrow#  Blindness#@bCharacter@w=#  Choose#@yCrown@w=#  crown of haste#@gWeapon@w=#  cannoner#@pSeed@w=13004#Limited Tries:false*/
+/*|Detonator[Active has a radius#where when you release#it blows up your bullets]|Chicken Head[Chicken can now carry her head.#Gross.]|Cannoner[EIGHT RADICAL SHOTS]|Disk Marrow[Now discs are counted as a bolt weapon#for bolt marrow to help!#It doesn't save you from stupidity, though.]|Blindness[MY GLASSES! I BROKE MY GLASSES!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 9807;
+global.seed = 13004;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,16 +98,26 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+downloadmod("Detonator/detonator.race.gml");
+downloadmod("Detonator/Sprites/sprDead.png");
+downloadmod("Detonator/Sprites/sprHurt.png");
+downloadmod("Detonator/Sprites/sprIcon.png");
+downloadmod("Detonator/Sprites/sprIdle.png");
+downloadmod("Detonator/Sprites/sprPort.png");
+downloadmod("Detonator/Sprites/sprSit1.png");
+downloadmod("Detonator/Sprites/sprSit2.png");
+downloadmod("Detonator/Sprites/sprSlct.png");
+downloadmod("Detonator/Sprites/sprUltSlct.png");
+downloadmod("Detonator/Sprites/sprWalk.png");
 downloadmod("chickenhead.mod.gml");
-downloadmod("CoDeath.crown.gml");
-downloadmod("Bioluminary_Oscillator.wep.gml");
-downloadmod("camperboys.mod.gml");
-downloadmod("coolerhud.mod.gml");
+downloadmod("cannoner.wep.gml");
+downloadmod("discmarrow.mod.gml");
+downloadmod("blindness.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/Detonator/detonator.race.gml"));
 wait mod_load(string_trim("data/Daily.mod/chickenhead.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/CoDeath.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/Bioluminary_Oscillator.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/camperboys.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/coolerhud.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cannoner.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discmarrow.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/blindness.mod.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +146,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Chicken Head,CoDeath,Bioluminary Oscillator,Camper Boys,Cooler Hud");
+trace("Mods=Detonator,Chicken Head,Cannoner,Disk Marrow,Blindness");
 trace("Character:Choose");
-trace("Crown:CoDeath");
-trace("Weapon:Bioluminary Oscillator");
-trace("Seed:9807");
+trace("Crown:crown of haste");
+trace("Weapon:cannoner");
+trace("Seed:13004");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +295,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Bioluminary Oscillator"));
+		give_wep(string_trim("cannoner"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -340,16 +350,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Chicken Head,CoDeath,Bioluminary Oscillator,Camper Boys,Cooler Hud" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Bioluminary Oscillator" + " Seed:9807";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Detonator,Chicken Head,Cannoner,Disk Marrow,Blindness" + " Character:Choose" + " Crown:crown of haste" + " Weapon:cannoner" + " Seed:13004";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-01-25 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-01-25 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-01-25 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-01-25 Daily.txt");
+	if(file_exists(global.alias + " 2020-01-26 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-01-26 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-01-26 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-01-26 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-01-25 Daily.txt");
+		string_save(score, global.alias + " 2020-01-26 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +386,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Chicken Head,CoDeath,Bioluminary Oscillator,Camper Boys,Cooler Hud" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Bioluminary Oscillator" + " Seed:9807" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Detonator,Chicken Head,Cannoner,Disk Marrow,Blindness" + " Character:Choose" + " Crown:crown of haste" + " Weapon:cannoner" + " Seed:13004" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Chicken Head,CoDeath,Bioluminary Oscillator,Camper Boys,Cooler Hud" + " Character:Choose" + " Crown:CoDeath" + " Weapon:Bioluminary Oscillator" + " Seed:9807",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Detonator,Chicken Head,Cannoner,Disk Marrow,Blindness" + " Character:Choose" + " Crown:crown of haste" + " Weapon:cannoner" + " Seed:13004",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -538,7 +548,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
