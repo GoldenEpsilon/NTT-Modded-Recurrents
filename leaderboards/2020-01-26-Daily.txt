@@ -1,0 +1,1 @@
+Mods:Detonator,Chicken Head,Cannoner,Disk Marrow,Blindness Character:Choose Crown:crown of haste Weapon:cannoner Seed:13004 Date:;2020-01-26;
