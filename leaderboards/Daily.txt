@@ -1,1 +1,1 @@
-Mods:Ascension 5,Chicken Head,boys,Team Attack,blaac48 Character:Choose Crown:crown of protection Weapon:laser minigun Seed:8362 Date:;2020-01-30;
+Mods:!ARMAGGEDNN,B,bossbar,blackholes,Area Health Character:Choose Crown:crown of death Weapon:Shielder Heavy Gun Seed:387 Date:;2020-01-31;
