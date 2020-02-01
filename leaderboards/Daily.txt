@@ -1,1 +1,1 @@
-Mods:!ARMAGGEDNN,B,bossbar,blackholes,Area Health Character:Choose Crown:crown of death Weapon:Shielder Heavy Gun Seed:387 Date:;2020-01-31;
+Mods:AllCrowns,bow,banditstack,Charge Template 2,brad Character:Choose Crown:crown of risk Weapon:charge_template Seed:6295 Date:;2020-02-01;
