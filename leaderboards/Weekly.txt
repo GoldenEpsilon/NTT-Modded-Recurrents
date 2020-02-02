@@ -1,1 +1,1 @@
-Mods:Armageddon Cannon,Chrononaut,Dasher,Brimthrone,Croc Man Character:dasher Crown:crown of life Weapon:Armageddon Cannon Seed:17995 Date:;2020-01-26;
+Mods:Ascension 13,Cool Trails,Crazy Traps,Drama Kill,Double Plasma Minigun Character:crystal Crown:crown of destiny Weapon:doubleplasma Seed:12298 Date:;2020-02-02;
