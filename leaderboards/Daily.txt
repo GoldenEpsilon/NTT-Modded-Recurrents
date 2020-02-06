@@ -1,1 +1,1 @@
-Mods:Ascension 15,Cool Hud,Armageddon Cannon,Bigger Bandit,Challenge Test Character:Choose Crown:crown of life Weapon:Armageddon Cannon Seed:22211 Date:;2020-02-05;
+Mods:Champions,CoD Proper,Challenge Test,Detonator B,Colored Projectiles Character:Choose Crown:crown of life Weapon:double minigun Seed:8849 Date:;2020-02-06;
