@@ -1,1 +1,1 @@
-Mods:Chaos Guns,Balls,Detonator,Cool Dark,Area Health Character:Choose Crown:crown of risk Weapon:Super Chaos Minigun Seed:11708 Date:;2020-02-12;
+Mods:Damage Numbers,Charge Template 2,Cool Dust,Ascension 5,Blaac's Weapon Mutations Character:Choose Crown:crown of curses Weapon:charge_template Seed:27798 Date:;2020-02-13;
