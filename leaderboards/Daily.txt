@@ -1,1 +1,1 @@
-Mods:Damage Numbers,Charge Template 2,Cool Dust,Ascension 5,Blaac's Weapon Mutations Character:Choose Crown:crown of curses Weapon:charge_template Seed:27798 Date:;2020-02-13;
+Mods:BadEnd,Elite Turrets 2,Chrononaut,Elite Gamers,Cool Hud Character:Choose Crown:crown of risk Weapon:idpdslugpistol Seed:20959 Date:;2020-02-14;
