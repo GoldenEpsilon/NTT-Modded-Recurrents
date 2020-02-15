@@ -1,1 +1,1 @@
-Mods:BadEnd,Elite Turrets 2,Chrononaut,Elite Gamers,Cool Hud Character:Choose Crown:crown of risk Weapon:idpdslugpistol Seed:20959 Date:;2020-02-14;
+Mods:Elite Turrets,DIO,B,Ally QOL,bouncermini Character:Choose Crown:crown of risk Weapon:seeker shotgun Seed:32415 Date:;2020-02-15;
