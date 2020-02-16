@@ -1,1 +1,1 @@
-Mods:Bioluminary Oscillator,bow,DIO,Crazy Bandits,Elite Minigun Character:DIO Crown:crown of hatred Weapon:Bioluminary Oscillator Seed:29408 Date:;2020-02-09;
+Mods:Vanthro,Crazy Bandits,Ally QOL,Auto Flame Crossbow,Carpocalypse Character:rebel Crown:crown of hatred Weapon:Auto Flame Crossbow Seed:24808 Date:;2020-02-16;

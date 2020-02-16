@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Elite Turrets#  DIO#  B#  Ally QOL#  bouncermini#@bCharacter@w=#  Choose#@yCrown@w=#  crown of risk#@gWeapon@w=#  seeker shotgun#@pSeed@w=32415#Limited Tries:false*/
-/*|Elite Turrets[V.2.0.maybe-we-#got-all-the-bugs-#this-time]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]|B[B]|Ally QOL[Makes allies look nicer.#Because this only#really affects Rebel,#rebel is more likely#for this recurrent.]|bouncermini[FILL THE SKIES WITH BULLETS]*/
+/*@rMods@w=#  Cool Shadows#  Elite Turrets#  AllSkills#  Discs#  DIO#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  Disc Pistol#@pSeed@w=28925#Limited Tries:false*/
+/*|Cool Shadows[WHAT IS IT?#IT'S FOLLOWING MY EVERY MOVE!]|Elite Turrets[V.2.0.maybe-we-#got-all-the-bugs-#this-time]|AllSkills[Congratulations!#You just got the perfect#mutation set.]|Discs[Because, you know, we need#MORE discs killing us.]|DIO[You thought it was Fish,#@qBUT IT WAS ME, DIO!]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 32415;
+global.seed = 28925;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,7 +98,52 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
+downloadmod("coolshadows.mod.gml");
 downloadmod("EliteTurrets.mod.gml");
+downloadmod("allskills.mod.gml");
+downloadmod("discs/Toxic Disc Gun.wep.gml");
+downloadmod("discs/Bloody Disc Gun.wep.gml");
+downloadmod("discs/Disc Cannon.wep.gml");
+downloadmod("discs/Disc Gun.wep.gml");
+downloadmod("discs/Disc Launcher.wep.gml");
+downloadmod("discs/Disc Pistol.wep.gml");
+downloadmod("discs/Disc Rifle.wep.gml");
+downloadmod("discs/Disc Shotgun.wep.gml");
+downloadmod("discs/Flame Disc Gun.wep.gml");
+downloadmod("discs/Hyper Disc Gun.wep.gml");
+downloadmod("discs/Lightning Disc Gun.wep.gml");
+downloadmod("discs/Mini Disc Gun.wep.gml");
+downloadmod("discs/Seeker Disc Gun.wep.gml");
+downloadmod("discs/Splinter Gun Disc Gun.wep.gml");
+downloadmod("discs/Smart Disc Gun.wep.gml");
+downloadmod("discs/Disc Tools.mod.gml");
+downloadmod("discs/Disc Skill.skill.gml");
+downloadmod("discs/Big Disc.png");
+downloadmod("discs/Bloody Disc Gun.png");
+downloadmod("discs/Bloody Disc.png");
+downloadmod("discs/Disc Cannon.png");
+downloadmod("discs/Disc Gun.png");
+downloadmod("discs/Disc Launcher.png");
+downloadmod("discs/Disc Rifle.png");
+downloadmod("discs/Disc Shotgun.png");
+downloadmod("discs/Flame Disc Gun.png");
+downloadmod("discs/Flame Disc.png");
+downloadmod("discs/Hyper Disc Gun.png");
+downloadmod("discs/Hyper Disc' Glow.png");
+downloadmod("discs/Hyper Disc' Trail.png");
+downloadmod("discs/Hyper Disc.png");
+downloadmod("discs/Lightning Disc Gun.png");
+downloadmod("discs/Lightning Disc.png");
+downloadmod("discs/Mini Disc Gun.png");
+downloadmod("discs/Mini Disc.png");
+downloadmod("discs/Seeker Disc Gun.png");
+downloadmod("discs/Smart Disc Gun Lock.png");
+downloadmod("discs/Smart Disc Gun.png");
+downloadmod("discs/Smart Disc.png");
+downloadmod("discs/Splinter Gun Disc Gun.png");
+downloadmod("discs/Splinter Gun Disc.png");
+downloadmod("discs/Toxic Disc Gun.png");
+downloadmod("discs/Toxic Disc.png");
 downloadmod("DIO/DIO.race.gml");
 downloadmod("DIO/walk.png");
 downloadmod("DIO/sprUltras.png");
@@ -128,19 +173,27 @@ downloadmod("DIO/map.png");
 downloadmod("DIO/idle.png");
 downloadmod("DIO/hurt.png");
 downloadmod("DIO/dead.png");
-downloadmod("b/b.mod.gml");
-downloadmod("b/b.ini");
-downloadmod("b/redB.png");
-downloadmod("Ally Colors.mod.gml");
-downloadmod("allynames.mod.gml");
-downloadmod("bouncermini/bouncermini.wep.gml");
-downloadmod("bouncermini/sprBouncerMinigun.png");
+wait mod_load(string_trim("data/Daily.mod/coolshadows.mod.gml"));
 wait mod_load(string_trim("data/Daily.mod/EliteTurrets.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/allskills.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Toxic Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Bloody Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Launcher.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Pistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Rifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Flame Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Hyper Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Lightning Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Mini Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Seeker Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Splinter Gun Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Smart Disc Gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Tools.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/discs/Disc Skill.skill.gml"));
 wait mod_load(string_trim("data/Daily.mod/DIO/DIO.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/b/b.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Ally Colors.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/allynames.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/bouncermini/bouncermini.wep.gml"));
 
 
 global.ModNames = "";
@@ -169,11 +222,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Elite Turrets,DIO,B,Ally QOL,bouncermini");
+trace("Mods=Cool Shadows,Elite Turrets,AllSkills,Discs,DIO");
 trace("Character:Choose");
-trace("Crown:crown of risk");
-trace("Weapon:seeker shotgun");
-trace("Seed:32415");
+trace("Crown:none");
+trace("Weapon:Disc Pistol");
+trace("Seed:28925");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -318,7 +371,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("seeker shotgun"));
+		give_wep(string_trim("Disc Pistol"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -373,16 +426,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Elite Turrets,DIO,B,Ally QOL,bouncermini" + " Character:Choose" + " Crown:crown of risk" + " Weapon:seeker shotgun" + " Seed:32415";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Cool Shadows,Elite Turrets,AllSkills,Discs,DIO" + " Character:Choose" + " Crown:none" + " Weapon:Disc Pistol" + " Seed:28925";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-02-15 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-02-15 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-02-15 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-02-15 Daily.txt");
+	if(file_exists(global.alias + " 2020-02-16 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-02-16 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-02-16 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-02-16 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-02-15 Daily.txt");
+		string_save(score, global.alias + " 2020-02-16 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -409,10 +462,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Elite Turrets,DIO,B,Ally QOL,bouncermini" + " Character:Choose" + " Crown:crown of risk" + " Weapon:seeker shotgun" + " Seed:32415" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Cool Shadows,Elite Turrets,AllSkills,Discs,DIO" + " Character:Choose" + " Crown:none" + " Weapon:Disc Pistol" + " Seed:28925" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Elite Turrets,DIO,B,Ally QOL,bouncermini" + " Character:Choose" + " Crown:crown of risk" + " Weapon:seeker shotgun" + " Seed:32415",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Cool Shadows,Elite Turrets,AllSkills,Discs,DIO" + " Character:Choose" + " Crown:none" + " Weapon:Disc Pistol" + " Seed:28925",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -571,7 +624,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of risk");
+name = string_trim("none");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

@@ -1,1 +1,1 @@
-Mods:Elite Turrets,DIO,B,Ally QOL,bouncermini Character:Choose Crown:crown of risk Weapon:seeker shotgun Seed:32415 Date:;2020-02-15;
+Mods:Cool Shadows,Elite Turrets,AllSkills,Discs,DIO Character:Choose Crown:none Weapon:Disc Pistol Seed:28925 Date:;2020-02-16;
