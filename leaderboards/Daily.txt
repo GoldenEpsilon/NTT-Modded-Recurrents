@@ -1,1 +1,1 @@
-Mods:Cool Shadows,Elite Turrets,AllSkills,Discs,DIO Character:Choose Crown:none Weapon:Disc Pistol Seed:28925 Date:;2020-02-16;
+Mods:Cannondemnation,Chest Bandits,Clasweps,Disk Marrow,Car Character:Choose Crown:Pain Weapon:popoexplosiongun Seed:5879 Date:;2020-02-17;
