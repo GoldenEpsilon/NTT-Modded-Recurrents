@@ -1,1 +1,1 @@
-Mods:Cannondemnation,Chest Bandits,Clasweps,Disk Marrow,Car Character:Choose Crown:Pain Weapon:popoexplosiongun Seed:5879 Date:;2020-02-17;
+Mods:C Ultras,Drop Me Gun,Cannondemnation,Dodge Roll,Double Laser Minigun Character:Choose Crown:crown of love Weapon:doublelaser Seed:9464 Date:;2020-02-18;
