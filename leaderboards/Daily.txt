@@ -1,1 +1,1 @@
-Mods:C Ultras,Drop Me Gun,Cannondemnation,Dodge Roll,Double Laser Minigun Character:Choose Crown:crown of love Weapon:doublelaser Seed:9464 Date:;2020-02-18;
+Mods:Double Plasma Minigun,boys,Ally QOL,Bitpack,blstorm Character:Choose Crown:crown of death Weapon:blstorm Seed:2977 Date:;2020-02-19;
