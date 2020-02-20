@@ -1,1 +1,1 @@
-Mods:Double Plasma Minigun,boys,Ally QOL,Bitpack,blstorm Character:Choose Crown:crown of death Weapon:blstorm Seed:2977 Date:;2020-02-19;
+Mods:Car,Chaos Guns,banditstack,Ally QOL,Ascension 15 Character:Choose Crown:crown of guns Weapon:Hyper Chaos Minigun Seed:3744 Date:;2020-02-20;
