@@ -1,1 +1,1 @@
-Mods:Cool Trails,Bandit,Blindness,Dummy,Doctor Character:Choose Crown:crown of haste Weapon:hyper slugger Seed:6839 Date:;2020-02-21;
+Mods:CoDeath,All Is Minigun,Cool Shadows,Adjustable Ammo,Elite Turrets 2 Character:Choose Crown:CoDeath Weapon:golden plasma gun Seed:9673 Date:;2020-02-22;
