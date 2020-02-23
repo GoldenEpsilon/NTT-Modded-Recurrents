@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  CoDeath#  All Is Minigun#  Cool Shadows#  Adjustable Ammo#  Elite Turrets 2#@bCharacter@w=#  Choose#@yCrown@w=#  CoDeath#@gWeapon@w=#  golden plasma gun#@pSeed@w=9673#Limited Tries:false*/
-/*|CoDeath[Adds a REAL crown of death#in addition to the existing CoD]|All Is Minigun[ALL WILL PERISH.#Inifinite fire rate,#no ammo concerns.]|Cool Shadows[WHAT IS IT?#IT'S FOLLOWING MY EVERY MOVE!]|Adjustable Ammo[Push the limits#of ammo storage!]|Elite Turrets 2[Electric Boogaloo.#(affects Labs turrets)]*/
+/*@rMods@w=#  Ash#  Cool Trails#  Dodge Roll#  Cursed Hyper Crystal#  Dasher x10#@bCharacter@w=#  Choose#@yCrown@w=#  crown of love#@gWeapon@w=#  laser cannon#@pSeed@w=299#Limited Tries:false*/
+/*|Ash[Guy from The End Is Nigh.]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]|Dodge Roll[Fish visited the Gungeon#on holiday and#came back with new tricks!]|Cursed Hyper Crystal[Adds a Cursed variant of the Hyper Crystal.#If you fight it you'll probably die,#but man does it look cool.]|Dasher x10[@qEXTREME DASHING]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 9673;
+global.seed = 299;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,16 +98,50 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("CoDeath.crown.gml");
-downloadmod("allisminigun.mod.gml");
-downloadmod("coolshadows.mod.gml");
-downloadmod("Adjustable Ammo.mod.gml");
-downloadmod("EliteTurret2.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/CoDeath.crown.gml"));
-wait mod_load(string_trim("data/Daily.mod/allisminigun.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/coolshadows.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/Adjustable Ammo.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml"));
+downloadmod("ash/ash.race.gml");
+downloadmod("ash/ashgosit.png");
+downloadmod("ash/ashidle_b.png");
+downloadmod("ash/AshUltraA.ogg");
+downloadmod("ash/AshUltraB.ogg");
+downloadmod("ash/Chest.ogg");
+downloadmod("ash/Damage.ogg");
+downloadmod("ash/Death.ogg");
+downloadmod("ash/IDPD.ogg");
+downloadmod("ash/Lowammo.ogg");
+downloadmod("ash/LowHealth.ogg");
+downloadmod("ash/menuash.png");
+downloadmod("ash/nothing.ogg");
+downloadmod("ash/Select.ogg");
+downloadmod("ash/Speech.ogg");
+downloadmod("ash/sprAshDead.png");
+downloadmod("ash/sprAshHurt.png");
+downloadmod("ash/sprAshIdle.png");
+downloadmod("ash/SprAshSit.png");
+downloadmod("ash/SprAshWalk.png");
+downloadmod("ash/sprBigPortrait.png");
+downloadmod("ash/sprEGIconHUDA.png");
+downloadmod("ash/sprEGIconHUDB.png");
+downloadmod("ash/sprEGSkillIcon.png");
+downloadmod("ash/sprLoadoutSkin.png");
+downloadmod("ash/sprMapIcon.png");
+downloadmod("ash/sprMutant1Dead.png");
+downloadmod("ash/sprMutant1GoSit.png");
+downloadmod("ash/sprMutant1Hurt.png");
+downloadmod("ash/sprMutant1Idle.png");
+downloadmod("ash/sprMutant1Sit.png");
+downloadmod("ash/sprMutant1Walk.png");
+downloadmod("ash/Tumor.ogg");
+downloadmod("ash/tumour.png");
+downloadmod("ash/tumourcounter.png");
+downloadmod("cooltrails.mod.gml");
+downloadmod("dodgeroll.mod.gml");
+downloadmod("cursedhypercrystal.mod.gml");
+downloadmod("dasherx10.race.gml");
+wait mod_load(string_trim("data/Daily.mod/ash/ash.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dodgeroll.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/cursedhypercrystal.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/dasherx10.race.gml"));
 
 
 global.ModNames = "";
@@ -136,11 +170,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=CoDeath,All Is Minigun,Cool Shadows,Adjustable Ammo,Elite Turrets 2");
+trace("Mods=Ash,Cool Trails,Dodge Roll,Cursed Hyper Crystal,Dasher x10");
 trace("Character:Choose");
-trace("Crown:CoDeath");
-trace("Weapon:golden plasma gun");
-trace("Seed:9673");
+trace("Crown:crown of love");
+trace("Weapon:laser cannon");
+trace("Seed:299");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -285,7 +319,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("golden plasma gun"));
+		give_wep(string_trim("laser cannon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -340,16 +374,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:CoDeath,All Is Minigun,Cool Shadows,Adjustable Ammo,Elite Turrets 2" + " Character:Choose" + " Crown:CoDeath" + " Weapon:golden plasma gun" + " Seed:9673";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Ash,Cool Trails,Dodge Roll,Cursed Hyper Crystal,Dasher x10" + " Character:Choose" + " Crown:crown of love" + " Weapon:laser cannon" + " Seed:299";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-02-22 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-02-22 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-02-22 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-02-22 Daily.txt");
+	if(file_exists(global.alias + " 2020-02-23 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-02-23 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-02-23 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-02-23 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-02-22 Daily.txt");
+		string_save(score, global.alias + " 2020-02-23 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -376,10 +410,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:CoDeath,All Is Minigun,Cool Shadows,Adjustable Ammo,Elite Turrets 2" + " Character:Choose" + " Crown:CoDeath" + " Weapon:golden plasma gun" + " Seed:9673" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Ash,Cool Trails,Dodge Roll,Cursed Hyper Crystal,Dasher x10" + " Character:Choose" + " Crown:crown of love" + " Weapon:laser cannon" + " Seed:299" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":CoDeath,All Is Minigun,Cool Shadows,Adjustable Ammo,Elite Turrets 2" + " Character:Choose" + " Crown:CoDeath" + " Weapon:golden plasma gun" + " Seed:9673",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Ash,Cool Trails,Dodge Roll,Cursed Hyper Crystal,Dasher x10" + " Character:Choose" + " Crown:crown of love" + " Weapon:laser cannon" + " Seed:299",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -538,7 +572,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("CoDeath");
+name = string_trim("crown of love");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

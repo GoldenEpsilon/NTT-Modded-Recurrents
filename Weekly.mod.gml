@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Vanthro#  Crazy Bandits#  Ally QOL#  Auto Flame Crossbow#  Carpocalypse#@bCharacter@w=#  rebel#@yCrown@w=#  crown of hatred#@gWeapon@w=#  Auto Flame Crossbow#@pSeed@w=24808#Limited Tries:false*/
-/*|Vanthro[...blame 4chan.]|Crazy Bandits[THEY HAVE GUNS]|Ally QOL[Makes allies look nicer.#Because this only#really affects Rebel,#rebel is more likely#for this recurrent.]|Auto Flame Crossbow[If flames were good this would be better than just looking cool...]|Carpocalypse[Beep Beep, motherf***er]*/
+/*@rMods@w=#  Carbine#  Dodge Roll#  Elite Rifle#  Ascension 10#  Big Dog#@bCharacter@w=#  chicken#@yCrown@w=#  crown of haste#@gWeapon@w=#  eliterifle#@pSeed@w=5311#Limited Tries:false*/
+/*|Carbine[Pew Pew.]|Dodge Roll[Fish visited the Gungeon#on holiday and#came back with new tricks!]|Elite Rifle[I'm just gonna grab that,#thank you very much.]|Ascension 10[ASCENSION LEVEL#10/15]|Big Dog[HE IS AWAKENED]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 24808;
+global.seed = 5311;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "rebel";
+global.Race = "chicken";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,18 +98,16 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("vanthro.race.gml");
-downloadmod("crazybandits.mod.gml");
-downloadmod("Ally Colors.mod.gml");
-downloadmod("allynames.mod.gml");
-downloadmod("AutoFlameCrossbow.wep.gml");
-downloadmod("carpocalypse.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/vanthro.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/crazybandits.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Ally Colors.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/allynames.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/AutoFlameCrossbow.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/carpocalypse.mod.gml"));
+downloadmod("carbine.wep.gml");
+downloadmod("dodgeroll.mod.gml");
+downloadmod("eliterifle.wep.gml");
+downloadmod("ascension10.mod.gml");
+downloadmod("bigdog.mod.gml");
+wait mod_load(string_trim("data/Weekly.mod/carbine.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/dodgeroll.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/eliterifle.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/ascension10.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/bigdog.mod.gml"));
 
 
 global.ModNames = "";
@@ -138,11 +136,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Vanthro,Crazy Bandits,Ally QOL,Auto Flame Crossbow,Carpocalypse");
-trace("Character:rebel");
-trace("Crown:crown of hatred");
-trace("Weapon:Auto Flame Crossbow");
-trace("Seed:24808");
+trace("Mods=Carbine,Dodge Roll,Elite Rifle,Ascension 10,Big Dog");
+trace("Character:chicken");
+trace("Crown:crown of haste");
+trace("Weapon:eliterifle");
+trace("Seed:5311");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -287,7 +285,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Auto Flame Crossbow"));
+		give_wep(string_trim("eliterifle"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -308,7 +306,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="rebel";
+			race="chicken";
 		}
 	}
 }
@@ -323,9 +321,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("rebel")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("chicken")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("rebel"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("chicken"))){
 					instance_destroy();
 				}
 				exit;
@@ -342,16 +340,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Vanthro,Crazy Bandits,Ally QOL,Auto Flame Crossbow,Carpocalypse" + " Character:rebel" + " Crown:crown of hatred" + " Weapon:Auto Flame Crossbow" + " Seed:24808";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Carbine,Dodge Roll,Elite Rifle,Ascension 10,Big Dog" + " Character:chicken" + " Crown:crown of haste" + " Weapon:eliterifle" + " Seed:5311";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-02-16 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2020-02-16 Weekly.txt");
-		while(!file_loaded(global.alias + " 2020-02-16 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-02-16 Weekly.txt");
+	if(file_exists(global.alias + " 2020-02-23 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2020-02-23 Weekly.txt");
+		while(!file_loaded(global.alias + " 2020-02-23 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-02-23 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2020-02-16 Weekly.txt");
+		string_save(score, global.alias + " 2020-02-23 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -378,10 +376,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Vanthro,Crazy Bandits,Ally QOL,Auto Flame Crossbow,Carpocalypse" + " Character:rebel" + " Crown:crown of hatred" + " Weapon:Auto Flame Crossbow" + " Seed:24808" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Carbine,Dodge Roll,Elite Rifle,Ascension 10,Big Dog" + " Character:chicken" + " Crown:crown of haste" + " Weapon:eliterifle" + " Seed:5311" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Vanthro,Crazy Bandits,Ally QOL,Auto Flame Crossbow,Carpocalypse" + " Character:rebel" + " Crown:crown of hatred" + " Weapon:Auto Flame Crossbow" + " Seed:24808",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Carbine,Dodge Roll,Elite Rifle,Ascension 10,Big Dog" + " Character:chicken" + " Crown:crown of haste" + " Weapon:eliterifle" + " Seed:5311",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -531,7 +529,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("rebel");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("chicken");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -540,7 +538,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of hatred");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
