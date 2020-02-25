@@ -1,1 +1,1 @@
-Mods:BadEnd,Carmageddon,bossbar,B,Team Attack Character:Choose Crown:crown of hatred Weapon:super bazooka Seed:14814 Date:;2020-02-24;
+Mods:B,Cool Trails,Confuse,Egg,Fire Riders Character:Choose Crown:crown of risk Weapon:hyper rifle Seed:29088 Date:;2020-02-25;
