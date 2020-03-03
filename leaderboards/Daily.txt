@@ -1,2 +1,1 @@
-Mods:Doctor,Balls,Vanthro,Blaac's Weapon Mutations,Chips Character:Choose Crown:crown of guns Weapon:laserwrench Seed:7596 Date:;2020-02-28;
-|DillJ1120: Area 7-1 L0 Kills: 443 Character: vanthro 
+Mods:Double Laser Minigun,Cuz,Cooler Hud,bossbar,Ascension 15 Character:Choose Crown:crown of curses Weapon:doublelaser Seed:6521 Date:;2020-03-03;
