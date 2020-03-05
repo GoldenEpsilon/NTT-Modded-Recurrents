@@ -1,1 +1,1 @@
-Mods:Bomber,Airhorn,Some Crowns,bow,!ARMAGGEDNN Character:Choose Crown:plague Weapon:ded Seed:21564 Date:;2020-03-04;
+Mods:Baldi,Bandit,bow,Defect,Crazy Allies Character:Choose Crown:crown of luck Weapon:bow Seed:974 Date:;2020-03-05;
