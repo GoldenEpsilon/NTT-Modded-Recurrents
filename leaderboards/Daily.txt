@@ -1,1 +1,1 @@
-Mods:Baldi,Bandit,bow,Defect,Crazy Allies Character:Choose Crown:crown of luck Weapon:bow Seed:974 Date:;2020-03-05;
+Mods:Cosmi,Bitpack,Chips,Devastator,Double Laser Minigun Character:Choose Crown:crown of blood Weapon:doublelaser Seed:1461 Date:;2020-03-06;
