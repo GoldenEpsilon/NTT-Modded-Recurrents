@@ -1,1 +1,1 @@
-Mods:Clasweps,Double Maxigun,Cool Trails,Elite Rifle,Fire Riders Character:Choose Crown:Choice Weapon:Ringoffire Seed:13396 Date:;2020-03-11;
+Mods:Dummy,Ascension 13,!ARMAGGEDNN,basicgunallies,Doctor Character:Choose Crown:crown of life Weapon:M16-Rifle Seed:31876 Date:;2020-03-12;
