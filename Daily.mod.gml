@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Bear#  Armageddon Cannon#  Elite Dasher#  Team Attack#  Cycle#@bCharacter@w=#  Choose#@yCrown@w=#  none#@gWeapon@w=#  A Fucking Gun#@pSeed@w=19124#Limited Tries:false*/
-/*|Bear[4 da meeeeeeeeee#eeeeemez]|Armageddon Cannon[Some people just want to watch the world burn...]|Elite Dasher[@qPICK UP ALL THE THINGS]|Team Attack[Team Age Mutant#Ninja Mutants Go!]|Cycle[Makes it so you keep gaining mutations, but you only keep the last 10]*/
+/*@rMods@w=#  betterLoops#  xefsstuff#  Challenge Mode#  Grappler#  Cool Trails#@bCharacter@w=#  Choose#@yCrown@w=#  crown of curses#@gWeapon@w=#  cloud minigun#@pSeed@w=11379#Limited Tries:false*/
+/*|betterLoops[Less enemies, more health per enemy in loops.]|xefsstuff[This has a bit of everything.#A bunch of weapons, a few characters,#a butler robot#buddy thingamijig that kills guys...#@qDON'T GIVE HIM A GRENADE LAUNCHER OH N-]|Challenge Mode[This run's weapons are like a box of chocolates -#you finally find one you like, then you don't have it anymore.]|Grappler[For when you really want to throw someone at someone else.]|Cool Trails[Bullet trails,#for when you want to feel#like you're in the matrix]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 19124;
+global.seed = 11379;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,22 +98,118 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("bear/bear.race.gml");
-downloadmod("bear/beargun.wep.gml");
-downloadmod("bear/a fucking gun.png");
-downloadmod("bear/bear (1).png");
-downloadmod("bear/bearhurt.png");
-downloadmod("bear/bearidle.png");
-downloadmod("Armageddon_Cannon.wep.gml");
-downloadmod("elitedasher.race.gml");
-downloadmod("teamattack.mod.gml");
-downloadmod("cycle.mod.gml");
-wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/Armageddon_Cannon.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/elitedasher.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/teamattack.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/cycle.mod.gml"));
+downloadmod("betterLoops.mod.gml");
+downloadmod("xefsstuff/Auditor.race.gml");
+downloadmod("xefsstuff/CopCar.mod.gml");
+downloadmod("xefsstuff/Patrol.race.gml");
+downloadmod("xefsstuff/poporobo.mod.gml");
+downloadmod("xefsstuff/xefsweps/boollista.wep.gml");
+downloadmod("xefsstuff/xefsweps/cannondemnation.wep.gml");
+downloadmod("xefsstuff/xefsweps/carbine.wep.gml");
+downloadmod("xefsstuff/xefsweps/cicada.wep.gml");
+downloadmod("xefsstuff/xefsweps/clinometer.wep.gml");
+downloadmod("xefsstuff/xefsweps/cricket.wep.gml");
+downloadmod("xefsstuff/xefsweps/flashlight.wep.gml");
+downloadmod("xefsstuff/xefsweps/flywheel gun.wep.gml");
+downloadmod("xefsstuff/xefsweps/MilkSnake.wep.gml");
+downloadmod("xefsstuff/xefsweps/Serpent.wep.gml");
+downloadmod("xefsstuff/xefsweps/skillshot.wep.gml");
+downloadmod("xefsstuff/xefsweps/slade warhammer.wep.gml");
+downloadmod("xefsstuff/xefsweps/superskillshot.wep.gml");
+downloadmod("xefsstuff/xefsweps/supper slugger.wep.gml");
+downloadmod("xefsstuff/xefsweps/thopha.wep.gml");
+downloadmod("xefsstuff/xefsweps/trimmer.wep.gml");
+downloadmod("xefsstuff/xefsweps/bullet/bullet gun.wep.gml");
+downloadmod("xefsstuff/xefsweps/bullet/bullet shield.wep.gml");
+downloadmod("xefsstuff/xefsweps/bullet/bullet spear.wep.gml");
+downloadmod("xefsstuff/xefsweps/bullet/bullet trident.wep.gml");
+downloadmod("xefsstuff/xefsweps/bullet/golden bullet spear.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud blaster.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud cannon.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud minigun.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud pistol.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud rifle.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/cloud shotgun.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/thunder cloud cannon.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/thunder cloud minigun.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/thunder cloud pistol.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/thunder cloud rifle.wep.gml");
+downloadmod("xefsstuff/xefsweps/cloud/thunder cloud shotgun.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/bouncer darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/golden darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/gun darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/heavy darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/hyper darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/poison darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/darts/triple darts.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/gun knuckles.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/heavy knuckles.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/knuckles.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/lead knuckles.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/lightning knuckles.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/pillbugs.wep.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/triggerknuckles.mod.gml");
+downloadmod("xefsstuff/xefsweps/knuckles/ultra knuckles.wep.gml");
+downloadmod("challengemode.mod.gml");
+downloadmod("grappler.race.gml");
+downloadmod("cooltrails.mod.gml");
+wait mod_load(string_trim("data/Daily.mod/betterLoops.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/Auditor.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/CopCar.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/Patrol.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/poporobo.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/boollista.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cannondemnation.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/carbine.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cicada.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/clinometer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cricket.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/flashlight.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/flywheel gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/MilkSnake.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/Serpent.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/skillshot.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/slade warhammer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/superskillshot.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/supper slugger.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/thopha.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/trimmer.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/bullet/bullet gun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/bullet/bullet shield.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/bullet/bullet spear.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/bullet/bullet trident.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/bullet/golden bullet spear.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud blaster.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud minigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud pistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud rifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/cloud shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/thunder cloud cannon.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/thunder cloud minigun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/thunder cloud pistol.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/thunder cloud rifle.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/cloud/thunder cloud shotgun.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/bouncer darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/golden darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/gun darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/heavy darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/hyper darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/poison darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/darts/triple darts.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/gun knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/heavy knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/lead knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/lightning knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/pillbugs.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/triggerknuckles.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/xefsstuff/xefsweps/knuckles/ultra knuckles.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/challengemode.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/grappler.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/cooltrails.mod.gml"));
 
 
 global.ModNames = "";
@@ -142,11 +238,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Bear,Armageddon Cannon,Elite Dasher,Team Attack,Cycle");
+trace("Mods=betterLoops,xefsstuff,Challenge Mode,Grappler,Cool Trails");
 trace("Character:Choose");
-trace("Crown:none");
-trace("Weapon:A Fucking Gun");
-trace("Seed:19124");
+trace("Crown:crown of curses");
+trace("Weapon:cloud minigun");
+trace("Seed:11379");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -291,7 +387,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("A Fucking Gun"));
+		give_wep(string_trim("cloud minigun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -346,16 +442,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Bear,Armageddon Cannon,Elite Dasher,Team Attack,Cycle" + " Character:Choose" + " Crown:none" + " Weapon:A Fucking Gun" + " Seed:19124";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:betterLoops,xefsstuff,Challenge Mode,Grappler,Cool Trails" + " Character:Choose" + " Crown:crown of curses" + " Weapon:cloud minigun" + " Seed:11379";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-03-14 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-03-14 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-03-14 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-03-14 Daily.txt");
+	if(file_exists(global.alias + " 2020-03-15 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-03-15 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-03-15 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-03-15 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-03-14 Daily.txt");
+		string_save(score, global.alias + " 2020-03-15 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -382,10 +478,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Bear,Armageddon Cannon,Elite Dasher,Team Attack,Cycle" + " Character:Choose" + " Crown:none" + " Weapon:A Fucking Gun" + " Seed:19124" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:betterLoops,xefsstuff,Challenge Mode,Grappler,Cool Trails" + " Character:Choose" + " Crown:crown of curses" + " Weapon:cloud minigun" + " Seed:11379" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Bear,Armageddon Cannon,Elite Dasher,Team Attack,Cycle" + " Character:Choose" + " Crown:none" + " Weapon:A Fucking Gun" + " Seed:19124",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":betterLoops,xefsstuff,Challenge Mode,Grappler,Cool Trails" + " Character:Choose" + " Crown:crown of curses" + " Weapon:cloud minigun" + " Seed:11379",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -544,7 +640,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("none");
+name = string_trim("crown of curses");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
