@@ -1,1 +1,1 @@
-Mods:Auto Bullet Shotgun,bouncybolts,Big Bandit,Fire Riders,Ascension 13 Character:Choose Crown:crown of love Weapon:Auto Bullet Shotgun Seed:22415 Date:;2020-03-16;
+Mods:Damage Numbers,Cannondemnation,Beamer,BadEnd,Dasher Character:Choose Crown:crown of life Weapon:Beamer Seed:28226 Date:;2020-03-17;
