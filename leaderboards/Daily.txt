@@ -1,1 +1,1 @@
-Mods:Damage Numbers,Cannondemnation,Beamer,BadEnd,Dasher Character:Choose Crown:crown of life Weapon:Beamer Seed:28226 Date:;2020-03-17;
+Mods:Druid,Director,Big Bandit,xefsstuff,Elite Minigun Character:Choose Crown:crown of life Weapon:cloud blaster Seed:27501 Date:;2020-03-18;
