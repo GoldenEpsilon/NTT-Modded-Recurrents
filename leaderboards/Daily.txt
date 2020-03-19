@@ -1,1 +1,1 @@
-Mods:Druid,Director,Big Bandit,xefsstuff,Elite Minigun Character:Choose Crown:crown of life Weapon:cloud blaster Seed:27501 Date:;2020-03-18;
+Mods:Double Time,Team Attack,Damage Numbers,bow,Baller Character:Choose Crown:crown of blood Weapon:bow Seed:12766 Date:;2020-03-19;
