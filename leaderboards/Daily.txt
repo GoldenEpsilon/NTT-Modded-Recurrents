@@ -1,1 +1,1 @@
-Mods:Buff,Chips,Hard Mode,DIO,Double Plasma Minigun Character:Choose Crown:crown of haste Weapon:hyperrifle Seed:10598 Date:;2020-03-21;
+Mods:Disk Marrow,blackholes,AllCrowns,bouncermini,Dumb Shells Character:Choose Crown:crown of death Weapon:laser minigun Seed:5513 Date:;2020-03-22;

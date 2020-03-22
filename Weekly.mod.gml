@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  BAR#  AllCrowns#  Bomber#  Some Crowns#  Adjustable Ammo#@bCharacter@w=#  bomber#@yCrown@w=#  carnage#@gWeapon@w=#  Big Ass Revolver#@pSeed@w=28186#Limited Tries:false*/
-/*|BAR[A Big Ass Revolver.]|AllCrowns[Lets you choose your crown#out of all crowns#at a crown vault.]|Bomber[Bombs?]|Some Crowns[Adds... Some Crowns.#dunno what you expected]|Adjustable Ammo[Push the limits#of ammo storage!]*/
+/*@rMods@w=#  Crazy Traps#  Champions#  Babylon Shotgun#  Disk Marrow#  B#@bCharacter@w=#  crystal#@yCrown@w=#  crown of haste#@gWeapon@w=#  Babylon Shotgun#@pSeed@w=15665#Limited Tries:false*/
+/*|Crazy Traps[Not only does#this place flame traps everywhere,#they have random projectiles, too!#Have fun with disc traps....]|Champions[weeeee are the buffed minionssss,#my frieeeeeendssss]|Babylon Shotgun[So much destruction your enemies will babble-on]|Disk Marrow[Now discs are counted as a bolt weapon#for bolt marrow to help!#It doesn't save you from stupidity, though.]|B[B]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 28186;
+global.seed = 15665;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "bomber";
+global.Race = "crystal";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,28 +98,18 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("BAR.wep.gml");
-downloadmod("allcrowns.mod.gml");
-downloadmod("bomber.race.gml");
-downloadmod("Some Crowns/balance.crown.gml");
-downloadmod("Some Crowns/bullethell.crown.gml");
-downloadmod("Some Crowns/carnage.crown.gml");
-downloadmod("Some Crowns/dogs.crown.gml");
-downloadmod("Some Crowns/plague.crown.gml");
-downloadmod("Some Crowns/stamina.crown.gml");
-downloadmod("Some Crowns/torment.crown.gml");
-downloadmod("Adjustable Ammo.mod.gml");
-wait mod_load(string_trim("data/Weekly.mod/BAR.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/allcrowns.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/bomber.race.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/balance.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/bullethell.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/carnage.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/dogs.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/plague.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/stamina.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Some Crowns/torment.crown.gml"));
-wait mod_load(string_trim("data/Weekly.mod/Adjustable Ammo.mod.gml"));
+downloadmod("crazytraps.mod.gml");
+downloadmod("champions.mod.gml");
+downloadmod("babylon_shotgun.wep.gml");
+downloadmod("discmarrow.mod.gml");
+downloadmod("b/b.mod.gml");
+downloadmod("b/b.ini");
+downloadmod("b/redB.png");
+wait mod_load(string_trim("data/Weekly.mod/crazytraps.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/champions.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/babylon_shotgun.wep.gml"));
+wait mod_load(string_trim("data/Weekly.mod/discmarrow.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
 
 
 global.ModNames = "";
@@ -148,11 +138,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=BAR,AllCrowns,Bomber,Some Crowns,Adjustable Ammo");
-trace("Character:bomber");
-trace("Crown:carnage");
-trace("Weapon:Big Ass Revolver");
-trace("Seed:28186");
+trace("Mods=Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B");
+trace("Character:crystal");
+trace("Crown:crown of haste");
+trace("Weapon:Babylon Shotgun");
+trace("Seed:15665");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -297,7 +287,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Big Ass Revolver"));
+		give_wep(string_trim("Babylon Shotgun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -318,7 +308,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="bomber";
+			race="crystal";
 		}
 	}
 }
@@ -333,9 +323,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("bomber")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("crystal")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("bomber"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("crystal"))){
 					instance_destroy();
 				}
 				exit;
@@ -352,16 +342,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:BAR,AllCrowns,Bomber,Some Crowns,Adjustable Ammo" + " Character:bomber" + " Crown:carnage" + " Weapon:Big Ass Revolver" + " Seed:28186";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-03-15 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2020-03-15 Weekly.txt");
-		while(!file_loaded(global.alias + " 2020-03-15 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-03-15 Weekly.txt");
+	if(file_exists(global.alias + " 2020-03-22 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2020-03-22 Weekly.txt");
+		while(!file_loaded(global.alias + " 2020-03-22 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-03-22 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2020-03-15 Weekly.txt");
+		string_save(score, global.alias + " 2020-03-22 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -388,10 +378,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:BAR,AllCrowns,Bomber,Some Crowns,Adjustable Ammo" + " Character:bomber" + " Crown:carnage" + " Weapon:Big Ass Revolver" + " Seed:28186" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":BAR,AllCrowns,Bomber,Some Crowns,Adjustable Ammo" + " Character:bomber" + " Crown:carnage" + " Weapon:Big Ass Revolver" + " Seed:28186",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -541,7 +531,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("bomber");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("crystal");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -550,7 +540,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("carnage");
+name = string_trim("crown of haste");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
