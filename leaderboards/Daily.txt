@@ -1,1 +1,1 @@
-Mods:Disk Marrow,blackholes,AllCrowns,bouncermini,Dumb Shells Character:Choose Crown:crown of death Weapon:laser minigun Seed:5513 Date:;2020-03-22;
+Mods:Freak Arena,Dogfly,Balls,Cool Hud,Doctor Character:Choose Crown:crown of protection Weapon:laserwrench Seed:19941 Date:;2020-03-23;
