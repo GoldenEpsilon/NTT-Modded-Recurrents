@@ -1,1 +1,1 @@
-Mods:AllCrowns,Cooler Hud,bow,Challenge Mode,Doctor Character:Choose Crown:crown of life Weapon:bow Seed:28940 Date:;2020-03-24;
+Mods:Double Time,Ancient Hatred,Derpweps,Colored Palace,BAR Character:Choose Crown:crown of ancient hatred Weapon:flamesnake Seed:25751 Date:;2020-03-25;
