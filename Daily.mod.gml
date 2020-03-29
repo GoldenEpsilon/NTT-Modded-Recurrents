@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Dasher#  Cool Shadows#  Charge Template 2#  Baller#  Colored Palace#@bCharacter@w=#  Choose#@yCrown@w=#  crown of guns#@gWeapon@w=#  charge_template#@pSeed@w=25004#Limited Tries:false*/
-/*|Dasher[Dash at thing#-> pick up thing#-> throw thing#-> repeat.]|Cool Shadows[WHAT IS IT?#IT'S FOLLOWING MY EVERY MOVE!]|Charge Template 2[Why aren't people more descriptive, like#"a shotgun that uses a pistol sprite that shoots#more bullets the more you charge that#happens to be a charge template"?]|Baller[Fire burns...#me like fire...]|Colored Palace[Gives a palace a#well-deserved paint job.]*/
+/*@rMods@w=#  Hard Mode#  Colored Projectiles#  Blood#  Elite Turrets 2#  Bear#@bCharacter@w=#  Choose#@yCrown@w=#  crown of hatred#@gWeapon@w=#  harpoon gun#@pSeed@w=4723#Limited Tries:false*/
+/*|Hard Mode[Blaac's Hard Mode.#Good luck.#@r@q@qYou'll need it.]|Colored Projectiles[Colors projectiles based on team color]|Blood[If Nuclear Throne had an M rating...]|Elite Turrets 2[Electric Boogaloo.#(affects Labs turrets)]|Bear[4 da meeeeeeeeee#eeeeemez]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,7 +56,7 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 25004;
+global.seed = 4723;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
@@ -98,24 +98,166 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("dasher.race.gml");
-downloadmod("coolshadows.mod.gml");
-downloadmod("charge_template.wep.gml");
-downloadmod("baller.race.gml");
-downloadmod("coloredpalace/coloredpalace.mod.gml");
-downloadmod("coloredpalace/sprDebris7_grey.png");
-downloadmod("coloredpalace/sprFloor7B_grey.png");
-downloadmod("coloredpalace/sprFloor7Explo_grey.png");
-downloadmod("coloredpalace/sprFloor7_grey.png");
-downloadmod("coloredpalace/sprWall7Bot_grey.png");
-downloadmod("coloredpalace/sprWall7Out_grey.png");
-downloadmod("coloredpalace/sprWall7Top_grey.png");
-downloadmod("coloredpalace/sprWall7Trans_grey.png");
-wait mod_load(string_trim("data/Daily.mod/dasher.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/coolshadows.mod.gml"));
-wait mod_load(string_trim("data/Daily.mod/charge_template.wep.gml"));
-wait mod_load(string_trim("data/Daily.mod/baller.race.gml"));
-wait mod_load(string_trim("data/Daily.mod/coloredpalace/coloredpalace.mod.gml"));
+downloadmod("hardmode/areas/noyetihere.area.gml");
+downloadmod("hardmode/areas/icecave.area.gml");
+downloadmod("hardmode/areas/ravenboss.area.gml");
+downloadmod("hardmode/areas/scorpionboss.area.gml");
+downloadmod("hardmode/areas/turtles.area.gml");
+downloadmod("hardmode/areas/elevator.area.gml");
+downloadmod("hardmode/areas/HQ.area.gml");
+downloadmod("hardmode/areas/venuz.area.gml");
+downloadmod("hardmode/areas/oasis.area.gml");
+downloadmod("hardmode/areas/jungle.area.gml");
+downloadmod("hardmode/areas/cavesinv.area.gml");
+downloadmod("hardmode/bosses/scorpionboss.mod.gml");
+downloadmod("hardmode/bosses/turtles.mod.gml");
+downloadmod("hardmode/bosses/ratboss.mod.gml");
+downloadmod("hardmode/bosses/ravenboss.mod.gml");
+downloadmod("hardmode/bosses/gatorboss.mod.gml");
+downloadmod("hardmode/bosses/titank.mod.gml");
+downloadmod("hardmode/bosses/guardianboss.mod.gml");
+downloadmod("hardmode/bosses/throne.mod.gml");
+downloadmod("hardmode/bosses/gungod.mod.gml");
+downloadmod("hardmode/weapons/secretweapon1.wep.gml");
+downloadmod("hardmode/weapons/secretweapon2.wep.gml");
+downloadmod("hardmode/weapons/secretweapon3.wep.gml");
+downloadmod("hardmode/weapons/secretweaponi1.wep.gml");
+downloadmod("hardmode/weapons/secretweaponi2.wep.gml");
+downloadmod("hardmode/weapons/secretweaponi3.wep.gml");
+downloadmod("hardmode/weapons/secretweapong1.wep.gml");
+downloadmod("hardmode/weapons/secretweapong2.wep.gml");
+downloadmod("hardmode/weapons/secretweapong3.wep.gml");
+downloadmod("hardmode/weapons/secretweapong4.wep.gml");
+downloadmod("hardmode/weapons/secretweapong5.wep.gml");
+downloadmod("hardmode/areas/end.area.gml");
+downloadmod("hardmode/areas/throne.area.gml");
+downloadmod("hardmode/areas/palace.area.gml");
+downloadmod("hardmode/areas/labs.area.gml");
+downloadmod("hardmode/areas/city.area.gml");
+downloadmod("hardmode/areas/caves.area.gml");
+downloadmod("hardmode/areas/junkyard.area.gml");
+downloadmod("hardmode/areas/sewers.area.gml");
+downloadmod("hardmode/areas/nightdesert.area.gml");
+downloadmod("hardmode/maincode.mod.gml");
+downloadmod("hardmode/enemies.mod.gml");
+downloadmod("hardmode/props.mod.gml");
+downloadmod("hardmode/bosses/bossintros.mod.gml");
+downloadmod("hardmode/options.mod.gml");
+downloadmod("hardmode/music/scorpionexplode.ogg");
+downloadmod("hardmode/music/01 Godz Of Gunz.ogg");
+downloadmod("hardmode/music/02 Venus Supermax.ogg");
+downloadmod("hardmode/music/03 Deep In The Sewers.ogg");
+downloadmod("hardmode/music/04 Finest Wine Cellar.ogg");
+downloadmod("hardmode/music/05 Elevator Music.ogg");
+downloadmod("hardmode/music/06 Welcome To The Crib.ogg");
+downloadmod("hardmode/music/07 Highest Point Of Venus.ogg");
+downloadmod("hardmode/music/08 I Don't Need No Tricks To Kill.ogg");
+downloadmod("Colored Projectiles/colored.mod.gml");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBouncerBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet1.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2Disappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergyShank.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlameBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGreenExplosion.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyNade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlug.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaser.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserEnd.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserStart.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLightning.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprMininade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprNuke.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallBig.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallHuge.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaImpact.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprRocket.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprStickyGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprToxicBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBoltTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraShell.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraSlash.png");
+downloadmod("blood.mod.gml");
+downloadmod("EliteTurret2.mod.gml");
+downloadmod("bear/bear.race.gml");
+downloadmod("bear/beargun.wep.gml");
+downloadmod("bear/a fucking gun.png");
+downloadmod("bear/bear (1).png");
+downloadmod("bear/bearhurt.png");
+downloadmod("bear/bearidle.png");
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/noyetihere.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/icecave.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/ravenboss.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/scorpionboss.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/turtles.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/elevator.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/HQ.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/venuz.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/oasis.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/jungle.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/cavesinv.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/scorpionboss.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/turtles.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/ratboss.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/ravenboss.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/gatorboss.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/titank.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/guardianboss.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/throne.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/gungod.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapon1.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapon2.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapon3.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweaponi1.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweaponi2.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweaponi3.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapong1.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapong2.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapong3.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapong4.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/weapons/secretweapong5.wep.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/end.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/throne.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/palace.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/labs.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/city.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/caves.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/junkyard.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/sewers.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/areas/nightdesert.area.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/maincode.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/enemies.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/props.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/bosses/bossintros.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/hardmode/options.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/Colored Projectiles/colored.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/blood.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/EliteTurret2.mod.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/bear.race.gml"));
+wait mod_load(string_trim("data/Daily.mod/bear/beargun.wep.gml"));
 
 
 global.ModNames = "";
@@ -144,11 +286,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Daily:");
-trace("Mods=Dasher,Cool Shadows,Charge Template 2,Baller,Colored Palace");
+trace("Mods=Hard Mode,Colored Projectiles,Blood,Elite Turrets 2,Bear");
 trace("Character:Choose");
-trace("Crown:crown of guns");
-trace("Weapon:charge_template");
-trace("Seed:25004");
+trace("Crown:crown of hatred");
+trace("Weapon:harpoon gun");
+trace("Seed:4723");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -293,7 +435,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("charge_template"));
+		give_wep(string_trim("harpoon gun"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -348,16 +490,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Dasher,Cool Shadows,Charge Template 2,Baller,Colored Palace" + " Character:Choose" + " Crown:crown of guns" + " Weapon:charge_template" + " Seed:25004";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Hard Mode,Colored Projectiles,Blood,Elite Turrets 2,Bear" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:harpoon gun" + " Seed:4723";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-03-28 Daily.txt")){
-		prevScores = string_load(global.alias + " 2020-03-28 Daily.txt");
-		while(!file_loaded(global.alias + " 2020-03-28 Daily.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-03-28 Daily.txt");
+	if(file_exists(global.alias + " 2020-03-29 Daily.txt")){
+		prevScores = string_load(global.alias + " 2020-03-29 Daily.txt");
+		while(!file_loaded(global.alias + " 2020-03-29 Daily.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-03-29 Daily.txt");
 	}else{
-		string_save(score, global.alias + " 2020-03-28 Daily.txt");
+		string_save(score, global.alias + " 2020-03-29 Daily.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -384,10 +526,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Dasher,Cool Shadows,Charge Template 2,Baller,Colored Palace" + " Character:Choose" + " Crown:crown of guns" + " Weapon:charge_template" + " Seed:25004" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Hard Mode,Colored Projectiles,Blood,Elite Turrets 2,Bear" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:harpoon gun" + " Seed:4723" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Dasher,Cool Shadows,Charge Template 2,Baller,Colored Palace" + " Character:Choose" + " Crown:crown of guns" + " Weapon:charge_template" + " Seed:25004",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Hard Mode,Colored Projectiles,Blood,Elite Turrets 2,Bear" + " Character:Choose" + " Crown:crown of hatred" + " Weapon:harpoon gun" + " Seed:4723",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -546,7 +688,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of guns");
+name = string_trim("crown of hatred");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //

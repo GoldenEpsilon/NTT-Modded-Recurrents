@@ -1,6 +1,6 @@
 
-/*@rMods@w=#  Crazy Traps#  Champions#  Babylon Shotgun#  Disk Marrow#  B#@bCharacter@w=#  crystal#@yCrown@w=#  crown of haste#@gWeapon@w=#  Babylon Shotgun#@pSeed@w=15665#Limited Tries:false*/
-/*|Crazy Traps[Not only does#this place flame traps everywhere,#they have random projectiles, too!#Have fun with disc traps....]|Champions[weeeee are the buffed minionssss,#my frieeeeeendssss]|Babylon Shotgun[So much destruction your enemies will babble-on]|Disk Marrow[Now discs are counted as a bolt weapon#for bolt marrow to help!#It doesn't save you from stupidity, though.]|B[B]*/
+/*@rMods@w=#  Colored Projectiles#  Dasher#  Chest Bandits#  Ascension 10#  B#@bCharacter@w=#  dasher#@yCrown@w=#  crown of luck#@gWeapon@w=#  dragon#@pSeed@w=18677#Limited Tries:false*/
+/*|Colored Projectiles[Colors projectiles based on team color]|Dasher[Dash at thing#-> pick up thing#-> throw thing#-> repeat.]|Chest Bandits[Gets rid of bandits in random areas]|Ascension 10[ASCENSION LEVEL#10/15]|B[B]*/
 #define init
 #macro weeklyButtonX 6
 #macro weeklyButtonY 41
@@ -56,11 +56,11 @@ global.weeklyScoreboardMax = 152;
 global.canStart = false;
 global.qualified = false;
 global.alias = "";
-global.seed = 15665;
+global.seed = 18677;
 global.start = true;
 global.finished = false;
 global.ModNames = "";
-global.Race = "crystal";
+global.Race = "dasher";
 while(!mod_sideload()){wait 1;}
 global.qualified = true;
 global.alias = "";
@@ -98,17 +98,64 @@ for(i = 0; array_length(mod_get_names("skill")) > 0; i=i){
 for(i = 0; array_length(mod_get_names("skin")) > 0; i=i){
 	mod_unload(mod_get_names("skin")[i]);
 }
-downloadmod("crazytraps.mod.gml");
-downloadmod("champions.mod.gml");
-downloadmod("babylon_shotgun.wep.gml");
-downloadmod("discmarrow.mod.gml");
+downloadmod("Colored Projectiles/colored.mod.gml");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprAllyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBouncerBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet1.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBullet2Disappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergyShank.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlakHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprFlameBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGreenExplosion.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyEnergySlash.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavyNade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlug.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprHeavySlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaser.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserEnd.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLaserStart.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprLightning.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprMininade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprNuke.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBall.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallBig.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaBallHuge.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaImpact.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprPlasmaTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprRocket.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugDisappear.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprSlugHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprStickyGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprToxicBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBolt.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBoltTrail.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBullet.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraBulletHit.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraGrenade.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraShell.png");
+downloadmod("Colored Projectiles/coloredprojectiles/sprUltraSlash.png");
+downloadmod("dasher.race.gml");
+downloadmod("chestbandits.mod.gml");
+downloadmod("ascension10.mod.gml");
 downloadmod("b/b.mod.gml");
 downloadmod("b/b.ini");
 downloadmod("b/redB.png");
-wait mod_load(string_trim("data/Weekly.mod/crazytraps.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/champions.mod.gml"));
-wait mod_load(string_trim("data/Weekly.mod/babylon_shotgun.wep.gml"));
-wait mod_load(string_trim("data/Weekly.mod/discmarrow.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/Colored Projectiles/colored.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/dasher.race.gml"));
+wait mod_load(string_trim("data/Weekly.mod/chestbandits.mod.gml"));
+wait mod_load(string_trim("data/Weekly.mod/ascension10.mod.gml"));
 wait mod_load(string_trim("data/Weekly.mod/b/b.mod.gml"));
 
 
@@ -138,11 +185,11 @@ for(i = 0; array_length(mod_get_names("skin")) > i; i++){
 }
 
 trace("Current Weekly:");
-trace("Mods=Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B");
-trace("Character:crystal");
-trace("Crown:crown of haste");
-trace("Weapon:Babylon Shotgun");
-trace("Seed:15665");
+trace("Mods=Colored Projectiles,Dasher,Chest Bandits,Ascension 10,B");
+trace("Character:dasher");
+trace("Crown:crown of luck");
+trace("Weapon:dragon");
+trace("Seed:18677");
 
 global.canStart = true;
 global.headers = ds_map_create();
@@ -287,7 +334,7 @@ repeat(4){
 if(global.start){
 	global.alias = "";
 	with(Player){
-		give_wep(string_trim("Babylon Shotgun"));
+		give_wep(string_trim("dragon"));
 		ammo[0] = 0;
 		ammo[1] = 0;
 		ammo[2] = 0;
@@ -308,7 +355,7 @@ if(!global.canStart){
 		instance_change(CustomObject, 0);
 		name=mod_current;
 		if(!ChooseCharacter){
-			race="crystal";
+			race="dasher";
 		}
 	}
 }
@@ -323,9 +370,9 @@ else{
 			visible=true;
 		}
 		if(instance_exists(self) && !ChooseCharacter){
-			if(string_lower(string_trim(race))!=string_lower(string_trim("crystal")) && fork()){
+			if(string_lower(string_trim(race))!=string_lower(string_trim("dasher")) && fork()){
 				wait(0);
-				if(string_lower(string_trim(race))!=string_lower(string_trim("crystal"))){
+				if(string_lower(string_trim(race))!=string_lower(string_trim("dasher"))){
 					instance_destroy();
 				}
 				exit;
@@ -342,16 +389,16 @@ else{
 if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 	var score = "";
 	with(GameCont){
-		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665";
+		score = global.alias + ": Area " + string(area) + "-" + string(subarea) + " L" + string(loops) + " Kills: " + string(kills) + " Character: " + (ChooseCharacter ? global.Race : "") + " Mods:Colored Projectiles,Dasher,Chest Bandits,Ascension 10,B" + " Character:dasher" + " Crown:crown of luck" + " Weapon:dragon" + " Seed:18677";
 	}
 	trace(score);
 	global.finished = true;
-	if(file_exists(global.alias + " 2020-03-22 Weekly.txt")){
-		prevScores = string_load(global.alias + " 2020-03-22 Weekly.txt");
-		while(!file_loaded(global.alias + " 2020-03-22 Weekly.txt")){wait 1;}
-		string_save(prevScores, global.alias + " 2020-03-22 Weekly.txt");
+	if(file_exists(global.alias + " 2020-03-29 Weekly.txt")){
+		prevScores = string_load(global.alias + " 2020-03-29 Weekly.txt");
+		while(!file_loaded(global.alias + " 2020-03-29 Weekly.txt")){wait 1;}
+		string_save(prevScores, global.alias + " 2020-03-29 Weekly.txt");
 	}else{
-		string_save(score, global.alias + " 2020-03-22 Weekly.txt");
+		string_save(score, global.alias + " 2020-03-29 Weekly.txt");
 	}
 	if(global.qualified){
 		headers = ds_map_create();
@@ -378,10 +425,10 @@ if(!global.finished && !instance_exists(Player) && !instance_exists(Menu)){
 			, "PUT", headers,
 			'{
 			"message":"Leaderboard Update",
-			"content":"'+base64("Mods:Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665" + "|" + string_split(score, "Mods:")[0])+'"
+			"content":"'+base64("Mods:Colored Projectiles,Dasher,Chest Bandits,Ascension 10,B" + " Character:dasher" + " Crown:crown of luck" + " Weapon:dragon" + " Seed:18677" + "|" + string_split(score, "Mods:")[0])+'"
 			}'
 			, "out.txt");
-		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Crazy Traps,Champions,Babylon Shotgun,Disk Marrow,B" + " Character:crystal" + " Crown:crown of haste" + " Weapon:Babylon Shotgun" + " Seed:15665",chr(10),""),chr(13),""))) > 1){
+		}else if(array_length(string_split(string_replace_all(string_replace_all(leaderboard,chr(10),""),chr(13),""), string_replace_all(string_replace_all(":Colored Projectiles,Dasher,Chest Bandits,Ascension 10,B" + " Character:dasher" + " Crown:crown of luck" + " Weapon:dragon" + " Seed:18677",chr(10),""),chr(13),""))) > 1){
 			var fail = 0;
 			for(var i = 0; i < array_length(string_split(global.alias, ",")); i++){
 				if(array_length(string_split(leaderboard, string_split(global.alias, ",")[i])) > 1){fail=1;}
@@ -531,7 +578,7 @@ global.finished = false;
 game_set_seed(global.seed);
 random_set_seed(global.seed);
 global.start = true;
-with(Player){if(!ChooseCharacter){race=string_trim("crystal");}else{global.Race = race;}}
+with(Player){if(!ChooseCharacter){race=string_trim("dasher");}else{global.Race = race;}}
 if(!ChooseCrown){give_crown();}
 
 //Stolen from YAL's debug mod.
@@ -540,7 +587,7 @@ cmd_crown_names = [
     "random", "none", "death", "life", "haste", "guns", "hatred",
     "blood", "destiny", "love", "luck", "curses", "risk", "protection"
 ];
-name = string_trim("crown of haste");
+name = string_trim("crown of luck");
 if(name == ""){return;}
 var lqn = string_lower(name);
 //
