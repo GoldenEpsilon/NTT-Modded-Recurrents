@@ -1,1 +1,1 @@
-Mods:Hard Mode,Colored Projectiles,Blood,Elite Turrets 2,Bear Character:Choose Crown:crown of hatred Weapon:harpoon gun Seed:4723 Date:;2020-03-29;
+Mods:Airhorn,Damage Numbers,Double Pop Gun,Ascension 15,Bioluminary Oscillator Character:Choose Crown:crown of curses Weapon:double_pop_gun Seed:6362 Date:;2020-03-30;
