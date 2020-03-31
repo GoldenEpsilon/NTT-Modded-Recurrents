@@ -1,1 +1,1 @@
-Mods:Airhorn,Damage Numbers,Double Pop Gun,Ascension 15,Bioluminary Oscillator Character:Choose Crown:crown of curses Weapon:double_pop_gun Seed:6362 Date:;2020-03-30;
+Mods:Cannoner,Elite Turrets,Dasher,Auto Flame Crossbow,Carpocalypse Character:Choose Crown:crown of blood Weapon:cannoner Seed:13495 Date:;2020-03-31;
