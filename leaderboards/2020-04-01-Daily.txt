@@ -1,0 +1,1 @@
+Mods:Detailer,bosshudredux,Cool Dust,bossbar,Discs Character:Choose Crown:crown of haste Weapon:Disc Gun Seed:17231 Date:;2020-04-01;

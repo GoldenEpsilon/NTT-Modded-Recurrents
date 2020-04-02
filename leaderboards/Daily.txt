@@ -1,1 +1,1 @@
-Mods:Detailer,bosshudredux,Cool Dust,bossbar,Discs Character:Choose Crown:crown of haste Weapon:Disc Gun Seed:17231 Date:;2020-04-01;
+Mods:Bigger Bandit,Discs,Cuz,Chest Bandits,Camper Boys Character:Choose Crown:crown of haste Weapon:Splinter Gun Disc Gun Seed:508 Date:;2020-04-02;
