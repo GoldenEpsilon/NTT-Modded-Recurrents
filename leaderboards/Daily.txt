@@ -1,1 +1,1 @@
-Mods:Bigger Bandit,Discs,Cuz,Chest Bandits,Camper Boys Character:Choose Crown:crown of haste Weapon:Splinter Gun Disc Gun Seed:508 Date:;2020-04-02;
+Mods:Auto Flame Crossbow,Big Toothbrush,blstorm,Bullet Time,Cosmi Gun Enemies Character:Choose Crown:crown of blood Weapon:blstorm Seed:15922 Date:;2020-04-03;
