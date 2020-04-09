@@ -1,1 +1,1 @@
-Mods:Crazy Traps,Boltshard,Detailer,Ancient Hatred,Cool Hud Character:Choose Crown:crown of ancient hatred Weapon:Boltshard Seed:30250 Date:;2020-04-08;
+Mods:Airhorn,Grappler,Charge Template,Fire Riders,!ARMAGGEDNN Character:Choose Crown:crown of protection Weapon:ct Seed:9480 Date:;2020-04-09;
