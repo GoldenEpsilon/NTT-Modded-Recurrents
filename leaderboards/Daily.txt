@@ -1,2 +1,2 @@
 Mods:Airhorn,Grappler,Charge Template,Fire Riders,!ARMAGGEDNN Character:Choose Crown:crown of protection Weapon:ct Seed:9480 Date:;2020-04-09;
-|Elvedhner: Area 5-2 L0 Kills: 219 Character: fireriders |Elvedhner: Area 1-1 L0 Kills: 3 Character: grappler 
+|Elvedhner: Area 5-2 L0 Kills: 219 Character: fireriders |Elvedhner: Area 1-1 L0 Kills: 3 Character: grappler |Elvedhner: Area 1-1 L0 Kills: 1 Character: grappler 
