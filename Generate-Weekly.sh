@@ -7,11 +7,12 @@ FORCEMODDEDWEAPON="true"
 FORCEMODDEDCROWN="true"
 FORCEMODDEDRACE="true"
 MOD=()
-cd D:/Documents/NTT-Weekly
+mkdir NTT-Weekly
+cd NTT-Weekly
 git fetch origin
 git reset --hard origin/master
 DATE=`date +%Y-%m-%d`
-cd D:/Documents/NTT-Weekly/WeeklyModDecider
+cd WeeklyModDecider
 RAND=$(shuf -en 1 *)
 COUNT=1
 FAIL=0
@@ -34,7 +35,7 @@ do
 	fi
 	FAIL=0
 done
-cd D:/Documents/NTT-Weekly
+cd ../
 CHARACTERS=("fish" "crystal" "eyes" "melting" "plant" "venuz" "steroids" "robot" "chicken" "rebel" "horror" "rogue" "skeleton" "frog")
 CROWNS=("none" "crown of death" "crown of life" "crown of haste" "crown of guns" "crown of hatred" "crown of blood" "crown of destiny" "crown of love" "crown of luck" "crown of curses" "crown of risk" "crown of protection")
 WEAPONS=("revolver" "triple machinegun" "wrench" "machinegun" "shotgun" "crossbow" "grenade launcher" "double shotgun" "minigun" "auto shotgun" "auto crossbow" "super crossbow" "shovel" "bazooka" "sticky launcher" "smg" "assault rifle" "disc gun" "laser pistol" "laser rifle" "slugger" "gatling slugger" "assault slugger" "energy sword" "super slugger" "hyper rifle" "screwdriver" "laser minigun" "blood launcher" "splinter gun" "toxic bow" "sentry gun" "wave gun" "plasma gun" "plasma cannon" "energy hammer" "jackhammer" "flak cannon" "golden revolver" "golden wrench" "golden machinegun" "golden shotgun" "golden crossbow" "golden grenade launcher" "golden laser pistol" "chicken sword" "nuke launcher" "ion cannon" "quadruple machinegun" "flamethrower" "dragon" "flare gun" "energy screwdriver" "hyper launcher" "laser cannon" "rusty revolver" "lightning pistol" "lightning rifle" "lightning shotgun" "super flak cannon" "sawed off shotgun" "splinter pistol" "super splinter gun" "lightning smg" "smart gun" "heavy crossbow" "blood hammer" "lightning cannon" "pop gun" "plasma rifle" "pop rifle" "toxic launcher" "flame cannon" "lightning hammer" "flame shotgun" "double flame shotgun" "auto flame shotgun" "cluster launcher" "grenade shotgun" "grenade rifle" "rogue rifle" "party gun" "double minigun" "gatling bazooka" "auto grenade shotgun" "ultra revolver" "ultra laser pistol" "sledgehammer" "heavy revolver" "heavy machinegun" "heavy slugger" "ultra shovel" "ultra shotgun" "ultra crossbow" "ultra grenade launcher" "plasma minigun" "devastator" "golden plasma gun" "golden slugger" "golden splinter gun" "golden screwdriver" "golden bazooka" "golden assault rifle" "super disc gun" "heavy auto crossbow" "heavy assault rifle" "blood cannon" "incinerator" "super plasma cannon" "seeker pistol" "seeker shotgun" "eraser" "guitar" "bouncer smg" "bouncer shotgun" "hyper slugger" "super bazooka" "frog pistol" "black sword" "golden nuke launcher" "golden disc gun" "heavy grenade launcher" "gun gun" "eggplant" "golden frog pistol")
@@ -47,7 +48,7 @@ DWL=""
 IFCHARACTER="0"
 IFCROWN="0"
 IFWEAPON="0"
-cd D:/Documents/NTT-Weekly/WeeklyModDecider
+cd WeeklyModDecider
 IFS=$'\n'
 COUNT="0"
 while [ "$((("${#MOD[@]}" - $COUNT) > 0))" = "1" ]
@@ -96,7 +97,7 @@ do
 	done
 	COUNT=$(($COUNT+1))
 done
-cd D:/Documents/NTT-Weekly
+cd ../
 for i in ${DOWNLOADS[@]}
 do
 	DWL+="downloadmod("'"'$i'"'");"$'\n'
