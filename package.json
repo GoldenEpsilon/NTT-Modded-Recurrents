@@ -1,0 +1,13 @@
+{
+  "name": "ntt-modded-recurrents",
+  "version": "1.0.0",
+  "engines": {
+          "node": "8.9.3"
+  },
+  "scripts": {
+    "weekly": "node weekly.js"
+  },
+  "dependencies": {
+    "node": "^12"
+  }
+}
