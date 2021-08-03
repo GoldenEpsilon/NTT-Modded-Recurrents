@@ -1,4 +1,4 @@
 Mods:DIO,Death Pit,Elite Dasher,Croc Man,Director Character:Choose Crown:deathpit Weapon:ultra revolver Seed:26375 Date:;2021-06-27;
 |Golden Epsilon: Area 1-2 L0 Kills: 15 Character: elitedasher |Golden Epsilon: Area 1-1 L0 Kills: 3 Character: elitedasher |Golden Epsilon: Area 1-1 L0 Kills: 6 Character: elitedasher |Golden Epsilon: Area 1-2 L0 Kills: 15 Character: elitedasher |mufina, Karmelyth, SpazProjects, Aevusonion: Area 5-3 L0 Kills: 181 Character: inmaterace |mufina, Karmelyth, SpazProjects, Aevusonion: Area 5-3 L0 Kills: 346 Character: rebel 
 |lexa: Area 1-1 L0 Kills: 1 Character: DIO |lexa: Area 1-2 L0 Kills: 20 Character: DIO |lexa: Area 1-2 L0 Kills: 39 Character: DIO |lexa: Area 1-1 L0 Kills: 4 Character: DIO |lexa: Area 1-1 L0 Kills: 4 Character: DIO 
-|ALI213: Area 1-1 L0 Kills: 2 Character: DIO |ALI213: Area 1-1 L0 Kills: 2 Character: DIO 
+|ALI213: Area 1-1 L0 Kills: 2 Character: DIO |ALI213: Area 1-1 L0 Kills: 2 Character: DIO |ALI213: Area 1-1 L0 Kills: 4 Character: elitedasher 
